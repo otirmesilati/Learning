@@ -1,0 +1,67 @@
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   LESSON 01: CLASSES XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+// -> classes: 2
+// 1. InlinePoint
+// 2. BasePoint
+// -> functions: 1
+// 1. class_points_main
+// 2. lecture_1_main
+
+// ----------------------------------------- Simple Applicative examples ----------------------------------------
+
+// ----------------------------------------------- Long examples ------------------------------------------------
+
+#pragma once
+#include <iostream>
+using namespace std;
+
+
+
+class Lecture1
+{
+
+public:
+
+	class InlinePoint
+	{
+
+	public:
+
+		bool set_x(int x_to_set) { x = x_to_set; return true; }
+		bool set_y(int y_to_set) { y = y_to_set; return true; }
+
+		int get_x() { return x; }
+		int get_y() { return y; }
+
+		bool show() { cout << "x = " << x << ", y = " << y << endl; return true; }
+
+	private:
+
+		int x;
+		int y;
+
+	};
+
+	class BasePoint
+	{
+
+	public:
+
+		bool set_x(int);
+		bool set_y(int);
+
+		int get_x();
+		int get_y();
+
+		bool show();
+
+	private:
+
+		int x, y;
+
+	};
+};
+
+
+int class_points_main();
+void lecture_1_main();
