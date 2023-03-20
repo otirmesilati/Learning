@@ -208,3 +208,63 @@ void lecture_2_main();
 #endif // !TWO_DIG
 #endif // !LECTURE 2
 
+
+#include "Lecture2.h"
+
+// point section //
+
+// Start: MyPoint
+
+MyPoint::MyPoint(): x(0), y(0) {}
+MyPoint::MyPoint(int x, int y) { this->x = x; this->y = y; }
+
+MyPoint::~MyPoint() {}
+
+void MyPoint::set_x(int x) { this->x = x; }
+void MyPoint::set_y(int y) { this->y = y; }
+
+int MyPoint::get_x() { return x; }
+int MyPoint::get_y() { return y; }
+
+void MyPoint::show() { cout << "(" << x << "," << y << ")" << endl; }
+
+// End: BasePoint
+
+
+// Start: MyLine
+
+MyLine::MyLine() { p1; p2; } // defualt Ctor
+MyLine::MyLine(int x_1, int x_2, int y_1, int y_2) { p1.set_x(x_1); p2.set_x(x_2); p1.set_y(y_1); p2.set_y(y_2); }
+MyLine::MyLine(const MyPoint& p1_copy, const MyPoint& p2_copy) { p1 = p1_copy; p2 = p2_copy; } // defualt copy constructor
+
+MyLine::~MyLine() {}
+
+void MyLine::set_line(int x_1, int y_1, int x_2, int y_2) { p1.set_x(x_1); p2.set_x(x_2); p1.set_y(y_1); p2.set_y(y_2); }
+void MyLine::set_line(const MyPoint& p1_copy, const MyPoint& p2_copy) { p1 = p1_copy; p2 = p2_copy; }
+
+// End: MyLine
+
+
+void lecture_2_main()
+{
+	TwoDigits td_1;
+	td_1.set_f('5'), td_1.set_s('4');
+	td_1.show();
+
+
+	// NoDefualtPoint p3; // compilation error : no defualt constructor exists for class "NoDefualtPoint" //
+	NoDefualtPoint p4(15, 12);
+	p4.show();
+
+	MyPoint p1, p2; // defualt Ctor
+	p1.set_x(15), p1.set_y(10);
+	p2.set_x(0); p2.set_y(0);
+
+	MyLine l1, l2; // defualt Ctor debug this to check for def ctors
+	l1.set_line(15, 10, 7, 6);
+	l1.show();
+	l2.set_line(p1, p2);
+	l2.show();
+
+}
+
