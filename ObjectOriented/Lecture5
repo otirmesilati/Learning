@@ -208,3 +208,21 @@ void lecture_5_main();
 #endif // !MANAGER_1
 #endif // !EMPLOYEE_1
 #endif // !DATE_H
+
+
+#include "Lecture5.h"
+
+void general_employee_pair(const Employee1& emloyee_to_add, const Manager1& manager_to_add)
+{
+	// what here ?? //
+	Employee1* my_pair = new Employee1[2];
+	my_pair[0] = emloyee_to_add;
+	// my_pair[1] = manager_to_add;   when manager inherits from employee //
+}
+
+void lecture_5_main()
+{
+	Employee1 my_employee;
+	Manager1 my_manager;
+	general_employee_pair(my_employee, my_manager);
+}
