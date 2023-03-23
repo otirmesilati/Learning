@@ -352,3 +352,89 @@ void lecture_6_main();
 #endif // !SECOND_LONG_EXAMPLE_A
 #endif // !FIRST_LONG_EXAMPLE_C
 #endif // !FIRST_LONG_EXAMPLE_B
+
+
+#include "Lecture6.h"
+
+// Start: MyShapeFactory //
+int MyShapeFactory::number_of_factory_shapes = 0;
+MyShape** MyShapeFactory::factory_shapes = nullptr;
+MyShape* MyShapeFactory::get_shape()
+{
+	MyShape** new_shape_array = new MyShape * [number_of_factory_shapes + (size_t)1];
+	if (number_of_factory_shapes != 0)
+	{
+		for (int copy_pointers_index = 0; copy_pointers_index < number_of_factory_shapes; ++copy_pointers_index) new_shape_array[copy_pointers_index] = factory_shapes[copy_pointers_index];
+		delete[] factory_shapes;
+	}
+
+	factory_shapes = new_shape_array;
+	++number_of_factory_shapes;
+	new_shape_array = nullptr; // end of scope could have taken care of the dual pointing two //
+
+	srand(time(NULL)); // seed for random //
+
+	int shape_pick = rand() % 3;
+	if (shape_pick == 0) factory_shapes[number_of_factory_shapes - 1] = new MyTriangle();
+	else if (shape_pick == 1) factory_shapes[number_of_factory_shapes - 1] = new MyRectangle();
+	else if (shape_pick == 2) factory_shapes[number_of_factory_shapes - 1] = new MyTrapezoid();
+
+	return factory_shapes[number_of_factory_shapes - 1];
+}
+
+void MyShapeFactory::return_shapes()
+{
+	if (number_of_factory_shapes != 0) for (int erase_index = 0; erase_index < number_of_factory_shapes - 1; ++erase_index) delete factory_shapes[erase_index];
+	delete[] factory_shapes;
+	factory_shapes = nullptr;
+	number_of_factory_shapes = 0;
+}
+ //End: MyShapeFactory
+
+void playing_with_diamond_inheritance()
+{
+	// regular diamond inheritance //
+	BaseClass b_1;
+	DerivedFromBaseClass1 d_1;
+	DerivedFromBaseClass2 d_2;
+	DerivedFromBoth d_b;
+
+	b_1.base_i_field = 1;
+	d_1.base_i_field = 1;
+	d_2.base_i_field = 1;
+	// d_b.base_i_field = 1; is an ambigious request //
+
+	BaseClass* p_b = &b_1;
+	BaseClass* p_d_1 = &d_1;
+	BaseClass* p_d_2 = &d_2;
+	// BaseClass* p_d_b = &d_b; also an ambigious request in up-casting //
+
+	// virtual diamond inheritance: no ambigious problem anymore //
+	BaseClass b_2;
+	VirtualDerived1 vd_1;
+	VirtualDerived2 vd_2;
+	VirtualBothDerive vd_b;
+
+	b_2.base_i_field = 2;
+	vd_1.base_i_field = 2;
+	vd_2.base_i_field = 2;
+	vd_b.base_i_field = 2; // only one copy after dynamic allocation, works also in up-casting //
+
+	cout << "------------------playing with diamond inheritance section end-----------------" << endl << endl;
+
+}
+void playing_with_factory_shape()
+{
+	MyShape* random_generated_shape = MyShapeFactory::get_shape();
+	random_generated_shape->my_draw();
+	MyShapeFactory::return_shapes();
+}
+void lecture_6_main()
+{
+
+	playing_with_diamond_inheritance();
+	playing_with_factory_shape();
+
+}
+
+
