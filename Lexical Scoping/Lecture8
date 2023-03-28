@@ -27,3 +27,34 @@ def init_instance(class_to_match, *args):
         init(instance, *args)
         return instance
 
+
+def my_instance(class_to_match):
+    instance_attributes = {}
+
+    def get_value(attribute_name):
+        if attribute_name in instance_attributes:
+            return instance_attributes[attribute_name]
+        else:
+            value = class_to_match["get_value"](attribute_name)
+            return bind_method(instance_dictionary, value)
+
+    def set_value(attribute_name, attribute_value):
+        instance_attributes[attribute_name] = attribute_value
+
+    instance_dictionary = {"get_value": get_value, "set_value": set_value}
+    return instance_dictionary
+
+
+def bind_method(instance, function):
+    if callable(function):
+        def method_maker(*args):
+            return function(instance, *args)
+        return method_maker
+    else:
+        return function
+
+
+def my_account():
+    def __init__(self, account_holder):
+        self["set_value"]("holder", account_holder)
+        self["set_value"]("balance", 0)
