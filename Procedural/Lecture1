@@ -1,0 +1,38 @@
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   LESSON 01: CLASSES XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+// -> functions: 1
+// 1. class_points_main
+// 2. lecture_1_main
+
+// ----------------------------------------- Simple Applicative examples ----------------------------------------
+# define _CRT_SECURE_NO_WARNINGS // use this in case of unwanted scanf_s and not needed warnings //
+#include <stdio.h>
+
+void input_main();
+int float_format_cutting();
+void variables_input_and_output();
+void up_casted_conversions();
+
+int lecture_1_main()
+{
+	// variable decleration (and non relevant value automatic assignment)
+	int x;
+	int i, j, k;
+	char c1, c2;
+	double _d1;
+
+	printf("hello world");
+	printf("hm?");
+
+	// variable assignment and inititation/ class instantiation //
+	c1 = 'A';
+	char c3 = 51; // the same as up above //
+	double pi_two_places = 3.14;
+	input_main();
+
+	int return_value_1 = float_format_cutting();
+	printf("%c",c3);
+	variables_input_and_output();
+	up_casted_conversions();
+
+	return 0;
