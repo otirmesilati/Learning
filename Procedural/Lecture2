@@ -1,0 +1,36 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+// prototypes here //
+void constant_functionality();
+int enum_implementation();
+void playing_with_conversions();
+int playing_with_control_flow();
+
+// ----------------------------------------- Simple Applicative examples ----------------------------------------
+
+int main()
+{
+	constant_functionality();
+	return 0;
+}
+
+void constant_functionality()
+{
+#define PI 3.145
+#define MAX_SIZE 10
+#define CLASS1 20
+
+	// run time constants: //
+
+	const int max_grade = 100;
+	const char end_char = '\0'; // the same as using NULL //
+	const class2 = 14;
+
+	// compile time constants //
+
+	// constexpr float e_number = 2.17  note: keyword not recognized //
+
+	printf("first: %d, second: %d", CLASS1 ,  class2);
+
+}
