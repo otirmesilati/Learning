@@ -84,3 +84,31 @@ void playing_with_conversions()
 	printf("value=%f\n", (int)f_var_2); // converting explicitly //
 
 }
+
+
+int playing_with_control_flow()
+{
+	int var = 5;
+    printf("%d",var++); // printing, and then incrementing //
+	printf("%d",++var); // incrementing, and then printing //
+
+	int x = 2, y = (x > 5) + 1 ,a = 2,b ;
+	printf(((b = 2) == a)); // boolean expressions built on assigment gets false if the assigned is 0, else 1 //
+
+
+	int val_1 = 0, val_2 = 2;
+	printf("the first value is %d\n", val_1);
+
+	{
+		// lexical scope the outside value, and show that the local scope is over //
+		// double d_1;
+		// printf("local variable: , non-local variable: ", );
+	}
+	// printf(); <-> show here that local variable is not accessable //
+
+	return NULL;
+}
+
+// switch case here //
+
+// TODO: make a main and call all the functions for tests //
