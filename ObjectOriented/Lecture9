@@ -13,3 +13,16 @@
 // TODO: tight up this file
 
 // ----------------------------------------- Simple Applicative examples ----------------------------------------
+
+#pragma once
+#include <iomanip>
+#include <iostream>
+#include <stdlib.h>
+#include <fstream>
+#include <string>
+using namespace std;
+
+
+
+void reading_and_writing_to_a_file_function();
+
