@@ -26,3 +26,59 @@ using namespace std;
 
 void reading_and_writing_to_a_file_function();
 
+// ----------------------------------------------- Long examples ------------------------------------------------
+
+#ifndef STUDENT_WITH_FILE
+
+#define STUDENT_WITH_FILE
+
+
+
+class StudentWithFile
+{
+
+public:
+
+	// patch this up //
+
+	StudentWithFile(): student_name(""), student_average(100) {}
+	StudentWithFile(const char* name, float average): student_name(name), student_average(average) {}
+	StudentWithFile(const StudentWithFile& other_student): student_name(other_student.student_name), student_average(other_student.student_average) {}
+
+	~StudentWithFile() {}
+
+	StudentWithFile& operator=(const StudentWithFile& other_student)
+	{
+		if (this != &other_student)
+		{
+			student_name = other_student.student_name;
+			student_average = other_student.student_average;
+		}
+	}
+
+	bool operator==(const StudentWithFile& other_student)
+	{
+		if (this != &other_student) { return student_name == other_student.student_name && other_student.student_average; }
+		else return true;
+	}
+	friend ostream& operator<<(ostream&, const StudentWithFile&);
+	friend istream& operator>>(istream&, StudentWithFile&);
+
+private:
+
+	string student_name;
+	float student_average;
+
+};
+
+class Lecture9{};
+
+
+
+void student_file_class_testing();
+void student_binary_file_testing();
+void lecture_9_main();
+
+
+
+#endif // !STUDENT_WITH_FILE
