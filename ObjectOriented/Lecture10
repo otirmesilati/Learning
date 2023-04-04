@@ -265,3 +265,42 @@ void array_sorting_testing()
 	type_bubble_sort<char>(my_char_array, arrays_length);
 	print_array(my_char_array, arrays_length);
 }
+
+void min_max_specification_testing()
+{
+	// specifications through calls //
+	int i_var = 3;
+	double d_var = 1.2;
+	cout << endl << "The maximum value of the two variables i_var(3) and d_var(1.2) is: " << type_max<double>(i_var, d_var) << endl;
+}
+
+char MyContainer<char>::upper_case()
+{
+
+	if (value >= 'a' && value <= 'z') value += ('A' - 'a');
+	return value;
+
+}
+
+void class_templates_testing()
+{
+	// array specialization //
+	MyStack<int> my_int_stack;
+	ConstArray<int, 5> i_5_array;
+	ConstArray<float, 100> f_100_array;
+
+	// container specialization //
+	MyContainer<int> cont_1(7);
+	MyContainer<char> cont_2('j');
+	cout << cont_1.increase() << endl;
+	cout << cont_2.upper_case() << endl;
+
+}
+
+void lecture_10_main()
+{
+	 swap_function_template_testing();
+	 array_sorting_testing();
+	 min_max_specification_testing();
+	 class_templates_testing();
+}
