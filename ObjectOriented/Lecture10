@@ -11,3 +11,58 @@
 // 1. lecture_2_main
 
 // TODO: tight up this file
+
+// ----------------------------------------- Simple Applicative examples ----------------------------------------
+#pragma once
+#include <iostream>
+using namespace std;
+
+
+
+template <class MyType>
+bool type_swap(MyType& first_variable, MyType& second_variable)
+{
+	MyType temporary_type = first_variable;
+	first_variable = second_variable;
+	second_variable = temporary_type;
+	return true;
+}
+
+template <typename MyType>
+void print_array(MyType array_to_print[], int array_length)
+{
+	cout << "The array elements are:\t";
+	for (int printing_index = 0; printing_index < array_length; ++printing_index) cout << array_to_print[printing_index] << "\t";
+	cout << endl;
+}
+
+template <class MyType>
+void type_bubble_sort(MyType array_to_sort[], int array_length)
+{
+	for (int sorting_index = array_length - 1; sorting_index >= 1; --sorting_index)
+	{
+		for (int inner_sorting_index = 0; inner_sorting_index < sorting_index; ++inner_sorting_index)
+		{
+			if (array_to_sort[inner_sorting_index] < array_to_sort[inner_sorting_index + 1])
+			{
+				type_swap<MyType>(array_to_sort[inner_sorting_index], array_to_sort[inner_sorting_index + 1]);
+			}
+		}
+	}
+}
+
+template<class MyType>
+const MyType& type_max(const MyType& left_operand, const MyType& right_operand) {return left_operand > right_operand ? left_operand : right_operand;}
+
+template<class MyType>
+const MyType& type_min(const MyType& left_operand, const MyType& right_operand) { return left_operand < right_operand ? left_operand : right_operand;}
+
+// two ways of definition specializing: overloaded style or templated style, needs to be inlined! //
+//const int& type_min(const int& left_operand, const int& right_operand) { return left_operand > right_operand ? right_operand : left_operand; }
+template<>
+inline const int& type_min<int>(const int& left_operand, const int& right_operand) { return left_operand > right_operand ? right_operand : left_operand; }
+
+
+void swap_function_template_testing();
+void array_sorting_testing();
+void min_max_specification_testing();
