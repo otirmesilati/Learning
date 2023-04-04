@@ -66,3 +66,154 @@ inline const int& type_min<int>(const int& left_operand, const int& right_operan
 void swap_function_template_testing();
 void array_sorting_testing();
 void min_max_specification_testing();
+
+// ----------------------------------------------- Long examples ------------------------------------------------
+
+#ifndef STACK_TEMPLATE
+#ifndef ARRAY_TEMPLATE
+#ifndef CONTAINER_TEMPLATE
+
+#define STACK_TEMPLATE
+#define ARRAY_TEMPLATE
+#define CONTAINER_TEMPLATE
+
+
+template <typename MyType>
+class MyStack
+{
+
+public:
+
+	MyStack(int = 10);
+
+	~MyStack() {}
+
+	bool push(const MyType&);
+	bool pop(MyType&);
+
+private:
+
+	bool is_empty() { return top - 1; }
+	bool is_full() { return top == size - 1; }
+
+	MyType* stack_pointer;
+	int top;
+	int size;
+
+};
+
+template <class MyType>
+class MyArray
+{
+
+public:
+
+	MyArray(int size): array_size(size), array_pointer(new MyType[array_size]) {}
+
+	~MyArray() { delete[] array_pointer; }
+
+	MyType& operator[] (int index) { return array_pointer[index]; }
+
+	void print() const;
+
+protected:
+
+	MyType* array_pointer;
+	int array_size;
+
+};
+
+template<class MyType, int input_size>
+class ConstArray
+{
+
+public:
+
+	ConstArray(): m_size(input_size), m_array() {}
+	MyType operator[](int index_to_retrieve) { return m_array[index_to_retrieve]; }
+
+private:
+
+	MyType m_array[input_size];
+	const int m_size;
+
+};
+
+template <typename MyType>
+class MyContainer
+{
+
+public:
+
+	MyContainer(MyType value) : value(value) {}
+	MyType increase() { return ++value;  }
+
+private:
+
+	MyType value;
+
+};
+
+template <> class MyContainer<char>
+{
+
+public:
+
+	MyContainer(char value): value(value) {}
+	char upper_case();
+
+private:
+
+	char value;
+
+};
+
+class Lecture10 {};
+
+template<class MyType>
+MyStack<MyType>::MyStack(int size)
+{
+	this->size = size > 0 ? size : 10;
+	top = 1;
+	stack_pointer = new MyType[size];
+}
+
+template <class MyType>
+bool MyStack<MyType>::push(const MyType& element_to_add)
+{
+	if (!is_full())
+	{
+		stack_pointer[++top] = element_to_add;
+		return true;
+	}
+	return false;
+}
+
+
+template <class MyType>
+bool MyStack<MyType>::pop(MyType& popped_value)
+{
+	if (!is_empty())
+	{
+		popped_value = stack_pointer[--top];
+		return true;
+	}
+	return false;
+}
+
+template<typename MyType>
+void MyArray<MyType>::print() const
+{ cout << "printing array elements: " << endl;
+  for (int printing_index = 0; printing_index < array_size; ++printing_index) cout << array_pointer[printing_index] << "\t";
+  cout << endl;
+}
+
+template <class MyType>
+
+
+void class_templates_testing();
+void lecture_10_main();
+
+#endif // !CONTAINER_TEMPLATE
+#endif // !ARRAY_TEMPLATE
+#endif // !STACK_TEMPLATE
