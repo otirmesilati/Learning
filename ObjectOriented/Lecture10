@@ -217,3 +217,51 @@ void lecture_10_main();
 #endif // !CONTAINER_TEMPLATE
 #endif // !ARRAY_TEMPLATE
 #endif // !STACK_TEMPLATE
+
+#include "Lecture10.h"
+
+void swap_function_template_testing()
+{
+	int i_var_1 = 1, i_var_2 = 2;
+    float f_var_1 = 3.0, f_var_2 = 4.0;
+	char c_var_1 = '5', c_var_2 = '6';
+
+	// swapping two ints //
+	cout << endl << "The first variable: " << i_var_1 << endl << "The second variable: " << i_var_2 << endl;
+	type_swap(i_var_1, i_var_2);
+	cout << endl << "The first variable: " << i_var_1 << endl << "The second variable: " << i_var_2 << endl;
+
+	// swapping two floats //
+	cout << endl << "The first variable: " << i_var_1 << endl << "The second variable: " << i_var_2 << endl;
+	type_swap(f_var_1, f_var_2);
+	cout << endl << "The first variable: " << i_var_1 << endl << "The second variable: " << i_var_2 << endl;
+
+	// swapping two characters //
+	cout << endl << "The first variable: " << i_var_1 << endl << "The second variable: " << i_var_2 << endl;
+	type_swap(c_var_1, c_var_2);
+	cout << endl << "The first variable: " << i_var_1 << endl << "The second variable: " << i_var_2 << endl;
+
+}
+
+void array_sorting_testing()
+{
+	const int arrays_length = 4;
+	int my_int_array[arrays_length] = { 21,12,31,4 };
+	float my_float_array[arrays_length] = { 14.5f, 7.8f, 23.2f, 45.0f};
+	char my_char_array[arrays_length] = { 'f','b','k','e' };
+
+	// swapping int arrays //
+	print_array(my_int_array, arrays_length);
+	type_bubble_sort<int>(my_int_array, arrays_length); // <> is part of the function name, though can be filled automatically //
+	print_array(my_int_array, arrays_length);
+
+	// swapping float arrays //
+	print_array(my_float_array, arrays_length);
+	type_bubble_sort(my_float_array, arrays_length); // omitting the type to be filled automatically //
+	print_array(my_float_array, arrays_length);
+
+	// swapping characters arrays //
+	print_array(my_char_array, arrays_length);
+	type_bubble_sort<char>(my_char_array, arrays_length);
+	print_array(my_char_array, arrays_length);
+}
