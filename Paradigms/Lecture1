@@ -26,6 +26,11 @@ import java.awt.Point;
 @SuppressWarnings("unused")
 public class Lecture1 {
 
+  public static class Ques_1
+	{
+
+	}
+
     public static class AccessTypes
     {
 		// notice the order! protected considered more broad than no modifier //
