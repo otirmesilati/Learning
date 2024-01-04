@@ -1,0 +1,16 @@
+
+#   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&   Workshop : 1            &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+#   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&   LANGUAGE: Python        &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+#   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&   Date: 04/01/2024        &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+#   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&   Author: Otir Mesilati   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+"""
+-> Functions: ?
+
+Function Specifications:
+
+1. add_Two_Numbers: " + " Calculator function
+   IN:   2 natural numbers to add.
+   OUT:  sum of the 2 numbers.
+
+"""
+
