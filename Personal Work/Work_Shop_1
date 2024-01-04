@@ -39,12 +39,28 @@ Function Specifications:
 typedef enum {ADD = 'a', Sub = 's', MUL = 'm', DIV = 'd' };
 
 
+// TBD: please tell us what is happening hereee //
 int main()
 {
+	/* Variables & Scope:
+	Two main - local variables for calculator operations
+	Success flag counter for scanf success
+	*/
+	int first_Number = 0, second_Number = 0;
+	int scanf_return_success = 0;
 
-	// local variables go here //
+
+	printf("Please enter two natural numbers:\n\n");
+	if (scanf("%d", &first_Number)) { ++scanf_return_success; }
+	if (scanf("%d", &second_Number)) { ++scanf_return_success; }
+	printf("\n\n");
+
 
 	// switch here //
+
+
+	printf("%d\n", first_Number);
+	printf("%d\n", second_Number);
 
 
 	return 0;
