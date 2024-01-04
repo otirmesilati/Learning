@@ -22,16 +22,16 @@ def make_3d_point(x_value, y_value, z_value):
     return x_value, y_value, z_value
 
 
-def get_x():
-    pass
+def get_x(point):
+    return point[0]
 
 
-def get_y():
-    pass
+def get_y(point):
+    return point[1]
 
 
-def get_z():
-    pass
+def get_z(point):
+    return point[2]
 
 
 # View
@@ -39,7 +39,9 @@ def get_z():
 
 # Testing will be done here
 def testing_function():
-    print("The point we created is: ", make_3d_point(1, 2, 3))
+    my_point = make_3d_point(1, 2, 3)
+    print("The point we created is: ", my_point)
+    print("x:", get_x(my_point), "  y:", get_y(my_point), "  z:", get_z(my_point))
 
 
 testing_function()  # let the testing COMMENCE!
