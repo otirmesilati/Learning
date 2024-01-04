@@ -4,6 +4,8 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   LANGUAGE: C            XXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   Date: 04/01/2024       XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   Author: Otir Mesilati  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
+NOTES: very fragile switch logic :( , if the input isn't a/s/m/d, pop goes the error!
+
 -> Functions: 4
 
 Function Specifications:
@@ -28,10 +30,25 @@ Function Specifications:
 1.
 
 */
-#define _CRT_SECURE_NO_WARNINGS // use this in case of unwanted scanf_s and not needed warnings //
-#include <stdio.h>
 
-int main() { return 0; }
+
+#define _CRT_SECURE_NO_WARNINGS // use this in case of unwanted scanf_s and not needed warnings //
+#include <stdio.h> // Standard C Library Usage for input and output //
+
+
+typedef enum {ADD = 'a', Sub = 's', MUL = 'm', DIV = 'd' };
+
+
+int main()
+{
+
+	// local variables go here //
+
+	// switch here //
+
+
+	return 0;
+}
 
 // Calculator functions prototypes(headers) //
 
