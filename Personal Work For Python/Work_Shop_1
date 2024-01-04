@@ -18,6 +18,24 @@ Function Specifications:
 
 
 # Inner function declarations and implementations ?
+def make_3d_point():
+    pass
+
+
+def get_x():
+    pass
+
+
+def get_y():
+    pass
+
+
+def get_z():
+    pass
+
+
+# View
+# Distance from another point
 
 
 # Main function ?
