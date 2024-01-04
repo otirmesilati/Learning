@@ -5,10 +5,24 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   Date: 04/01/2024       XXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   Author: Otir Mesilati  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 -> Functions: 4
-1. add_Two_Numbers
-2. subtract_Two_Numbers
-3. multiply_Two_Numbers
-4. divide_Two_Numbers
+
+Function Specifications:
+
+1. add_Two_Numbers: " + " Calculator function
+   IN:   2 natural numbers to add.
+   OUT:  sum of the 2 numbers.
+
+2. subtract_Two_Numbers: " - " Calculator function
+   IN:   2 natural numbers to subtract.
+   OUT:  difference of the 2 numbers.
+
+3. multiply_Two_Numbers: " × " Calculator function
+   IN:   2 natural numbers to multiply.
+   OUT:  mutiplication of the 2 numbers.
+
+4. divide_Two_Numbers: " ÷ " Calculator function
+   IN:   2 natural numbers to divide.
+   OUT:  division of the 2 numbers.
 
 ->> Scope: TBD
 1.
@@ -19,13 +33,27 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   Author: Otir Mesilati  XXXXXXXXX
 
 int main() { return 0; }
 
-int add_Two_Numbers(summand, addend);
-int subtract_Two_Numbers(minuend, subtrahend);
-int multiply_Two_Numbers(multiplier, multiplicand);
-int divide_Two_Numbers(dividend, divisor);
+// Calculator functions prototypes //
 
-int add_Two_Numbers(summand, addend) {}
-int subtract_Two_Numbers(minuend, subtrahend) {}
-int multiply_Two_Numbers(multiplier, multiplicand) {}
-int divide_Two_Numbers(dividend, divisor) {}
+int add_Two_Numbers(summand, addend); // " + " Function //
+int subtract_Two_Numbers(minuend, subtrahend); // " - " Function //
+int multiply_Two_Numbers(multiplier, multiplicand); // " × " Function //
+int divide_Two_Numbers(dividend, divisor); // " ÷ " Function //
 
+
+// Calculator functions implementation //
+
+int add_Two_Numbers(summand, addend) { return 0; }
+
+int subtract_Two_Numbers(minuend, subtrahend) { return 0; }
+
+int multiply_Two_Numbers(multiplier, multiplicand) { return 0; }
+
+int divide_Two_Numbers(dividend, divisor) { return 0; }
+
+/*
+TBD:
+1. Inner components: Scoping and logicing please thank you very much
+2. Main function: Scoping and logicing please thank you very much
+NOTICE: In the current version - the functions return 0.
+*/
