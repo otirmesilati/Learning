@@ -5,13 +5,27 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   Date: 04/01/2024       XXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   Author: Otir Mesilati  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 -> Functions: 4
-1. Add_2_Numbers
-2. Subtract_2_Numbers
-3. Multiply_2_Numbers
-4. Divide_2_Numbers
+1. add_Two_Numbers
+2. subtract_Two_Numbers
+3. multiply_Two_Numbers
+4. divide_Two_Numbers
 
-->> Scope:
+->> Scope: TBD
+1.
 
 */
 #define _CRT_SECURE_NO_WARNINGS // use this in case of unwanted scanf_s and not needed warnings //
 #include <stdio.h>
+
+int main() { return 0; }
+
+int add_Two_Numbers(summand, addend);
+int subtract_Two_Numbers(minuend, subtrahend);
+int multiply_Two_Numbers(multiplier, multiplicand);
+int divide_Two_Numbers(dividend, divisor);
+
+int add_Two_Numbers(summand, addend) {}
+int subtract_Two_Numbers(minuend, subtrahend) {}
+int multiply_Two_Numbers(multiplier, multiplicand) {}
+int divide_Two_Numbers(dividend, divisor) {}
+
