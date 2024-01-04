@@ -61,12 +61,13 @@ int main()
 	printf("Please enter the operation you would like to make:\n");
 	printf(" 1. 'a' for addition \n");
 	printf(" 2. 's' for subtraction \n");
-	// printf(" 'a' for addition \n"); //
-	// printf(" 'a' for addition \n"); //
+	printf(" 3. 'm' for addition \n"); //
+	printf(" 4. 'd' for addition \n\n"); //
 
 	if (scanf("%c", &space_cleaner)) { ++scanf_return_success; } // catching the pesky '\n';
 	if (scanf("%c", &calculator_function_switch_key)) { ++scanf_return_success; }
 
+	printf("\n\n");
 
 	switch (calculator_function_switch_key)
 	{
@@ -81,8 +82,12 @@ int main()
 		break;
 
 	case MUL:
+		calculation_result = multiply_Two_Numbers(first_Number, second_Number);
+		printf("The multiplication of the two numbers is: %d\n\n", calculation_result);
 		break;
 	case DIV:
+		calculation_result = divide_Two_Numbers(first_Number, second_Number);
+		printf("The division of the two numbers is: %d\n\n", calculation_result);
 		break;
 	default:
 		break;
@@ -110,9 +115,4 @@ int multiply_Two_Numbers(multiplier, multiplicand) { return multiplier * multipl
 
 int divide_Two_Numbers(dividend, divisor) { return dividend / divisor; }
 
-/*
-TBD:
-1. Main function: test Skeleton
-2. Main function: Connect inner components
-3. D-Day!
-*/
+
