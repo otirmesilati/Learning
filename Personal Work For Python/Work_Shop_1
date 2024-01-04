@@ -14,10 +14,15 @@ Function Specifications:
 
 """
 
-# Constraints ?
+# Constraints & Dependencies: Non.
 
 
 # Inner function declarations and implementations ?
 
 
 # Main function ?
+
+# TODO:
+# 1. Implement the Inner function Skeletons
+# 2. Finish the Inner function's Scope and logic
+# 3. Move on to Outer Functions
