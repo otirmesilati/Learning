@@ -26,8 +26,7 @@ Function Specifications:
    IN:   2 natural numbers to divide.
    OUT:  division of the 2 numbers.
 
-->> Scope: TBD
-1.
+->> Main function: TBD
 
 */
 
@@ -36,18 +35,21 @@ Function Specifications:
 #include <stdio.h> // Standard C Library Usage for input and output //
 
 
-typedef enum {ADD = 'a', Sub = 's', MUL = 'm', DIV = 'd' };
+typedef enum {ADD = 'a', SUB = 's', MUL = 'm', DIV = 'd' };
 
 
 // TBD: please tell us what is happening hereee //
 int main()
 {
 	/* Variables & Scope:
-	Two main - local variables for calculator operations
-	Success flag counter for scanf success
+	first_Number, second_Number: Two main - local variables for calculator operations
+	scanf_return_success: Main local variable for deciding the operation
+	NOTE: this variable is the fragile point!! hazards if not inputting a/s/m/d.
+	calculator_function_switch: Success flag counter for scanf success
 	*/
 	int first_Number = 0, second_Number = 0;
 	int scanf_return_success = 0;
+	int calculator_function_switch = 'a';
 
 
 	printf("Please enter two natural numbers:\n\n");
@@ -56,7 +58,19 @@ int main()
 	printf("\n\n");
 
 
-	// switch here //
+	switch (calculator_function_switch)
+	{
+	case ADD:
+		break;
+	case SUB:
+		break;
+	case MUL:
+		break;
+	case DIV:
+		break;
+	default:
+		break;
+	}
 
 
 	printf("%d\n", first_Number);
@@ -66,8 +80,8 @@ int main()
 	return 0;
 }
 
-// Calculator functions prototypes(headers) //
 
+// Calculator functions prototypes(headers) //
 int add_Two_Numbers(summand, addend); // " + " Function //
 int subtract_Two_Numbers(minuend, subtrahend); // " - " Function //
 int multiply_Two_Numbers(multiplier, multiplicand); // " × " Function //
@@ -75,7 +89,6 @@ int divide_Two_Numbers(dividend, divisor); // " ÷ " Function //
 
 
 // Calculator functions implementation //
-
 int add_Two_Numbers(summand, addend) { return summand + addend; }
 
 int subtract_Two_Numbers(minuend, subtrahend) { return minuend - subtrahend; }
@@ -86,9 +99,7 @@ int divide_Two_Numbers(dividend, divisor) { return dividend / divisor; }
 
 /*
 TBD:
-1. testing the Inner components
-2. Main function: Skeletoning
-3. Main function: test Skeleton
-4. Main function: Connect inner components
-5. Final Test
+1. Main function: test Skeleton
+2. Main function: Connect inner components
+3. D-Day!
 */
