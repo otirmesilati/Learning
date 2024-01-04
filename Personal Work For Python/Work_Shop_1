@@ -18,8 +18,8 @@ Function Specifications:
 
 
 # Inner function declarations and implementations ?
-def make_3d_point():
-    pass
+def make_3d_point(x_value, y_value, z_value):
+    return x_value, y_value, z_value
 
 
 def get_x():
@@ -37,10 +37,18 @@ def get_z():
 # View
 # Distance from another point
 
+# Testing will be done here
+def testing_function():
+    print("The point we created is: ", make_3d_point(1, 2, 3))
+
+
+testing_function()  # let the testing COMMENCE!
+
 
 # Main function ?
 
 # TODO:
-# 1. Implement the Inner function Skeletons
-# 2. Finish the Inner function's Scope and logic
-# 3. Move on to Outer Functions
+# 1. Finish comment Format
+# 2. Implement the Inner function Skeletons
+# 3. Finish the Inner function's Scope and logic
+# 4. Move on to Outer Functions
