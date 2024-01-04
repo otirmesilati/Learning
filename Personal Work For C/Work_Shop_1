@@ -38,7 +38,7 @@ Function Specifications:
 typedef enum {ADD = 'a', SUB = 's', MUL = 'm', DIV = 'd' };
 
 
-// TBD: please tell us what is happening hereee //
+// main function act's as a 1 to 4 Switch for each Arithmetic operation //
 int main()
 {
 	/* Variables & Scope:
