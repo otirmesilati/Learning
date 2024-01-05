@@ -34,7 +34,10 @@ def get_z(point):
     return point[2]
 
 
-# View
+def view_point(point):
+    print("3D point:", point)
+
+
 # Distance from another point
 
 # Testing will be done here
@@ -42,6 +45,7 @@ def testing_function():
     my_point = make_3d_point(1, 2, 3)
     print("The point we created is: ", my_point)
     print("x:", get_x(my_point), "  y:", get_y(my_point), "  z:", get_z(my_point))
+    view_point(my_point)
 
 
 testing_function()  # let the testing COMMENCE!
