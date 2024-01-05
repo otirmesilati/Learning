@@ -6,16 +6,34 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   Author: Otir Mesilati  XXXXXXXXX
 
 NOTES: very fragile switch logic :( , if the input isn't a/s/m/d, pop goes the error!
 
--> Functions: ?
+-> Functions: 5
 
 Function Specifications:
 
-1. ? : ?
+1. Simple_String: C'tor
+   IN:  char Array
+   OUT:  Simple_String Instance
+
+2. get_Simple_String : getter for the char Array
+   IN:   Simple_String Instance
+   OUT:  char Array
+
+3. ? : ?
+   IN:   ?
+   OUT:  ?
+
+4. ? : ?
+   IN:   ?
+   OUT:  ?
+
+5. ? : ?
    IN:   ?
    OUT:  ?
 
 
-->> Main function: TBD
+->> Classes: 1
+
+Class Specifications:
 
 */
 
@@ -30,7 +48,11 @@ using namespace std;
 
 
 // class members, headers, inlines //
-class Personal_String{};
+class Simple_String
+{
+	Simple_String(const char*);
+	const char* get_Simple_String(Simple_String) const;
+};
 
 
 class Personal_Works_1{};
