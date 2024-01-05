@@ -12,25 +12,25 @@ Function Specifications:
    IN:   3 numbers as coordinates
    OUT:  a three cell tuple
 
-2. get_x : A getter for the x parameter
-   IN:   A point
+2. get_x : A getter for the x parameter of a 3D point
+   IN:   a three cell tuple
    OUT:  the point's x value
 
-3. Function Name?: Small explanation?
-   IN:   ?
-   OUT:  ?
+3. get_y: A getter for the y parameter of a 3D point
+   IN:   a three cell tuple
+   OUT:  the point's y value
 
-4. Function Name?: Small explanation?
-   IN:   ?
-   OUT:  ?
+4. get_z: A getter for the z parameter of a 3D point
+   IN:   a three cell tuple
+   OUT:  the point's z value
 
-5. Function Name?: Small explanation?
-   IN:   ?
-   OUT:  ?
+5. view_point: value printing function for a 3D point
+   IN:   a three cell tuple
+   OUT:  a string containing the three cell tuple's parameters
 
-6. Function Name?: Small explanation?
-   IN:   ?
-   OUT:  ?
+6. distance_of_two_points: distance calculation function for 2 3D points
+   IN:   2 three cell tuples
+   OUT:  a three cell tuple of the points distance
 
 """
 
@@ -76,7 +76,7 @@ testing_function()  # let the testing COMMENCE!
 # Main function ?
 
 # TODO:
-# 1. Finish comment Format
-# 2. Implement the Inner function Skeletons
-# 3. Finish the Inner function's Scope and logic
-# 4. Move on to Outer Functions
+# 1. complete the last inner function's logic
+# 2. Outer function's skeleton
+# 3. Outer function's Scope and variables
+# 4. Outer function's logic
