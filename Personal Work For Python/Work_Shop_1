@@ -8,13 +8,13 @@
 
 Function Specifications:
 
-1. Function Name?: Small explanation?
-   IN:   ?
-   OUT:  ?
+1. make_3d_point: A constructor like function to make a 3D point
+   IN:   3 numbers as coordinates
+   OUT:  a three cell tuple
 
-2. Function Name?: Small explanation?
-   IN:   ?
-   OUT:  ?
+2. get_x : A getter for the x parameter
+   IN:   A point
+   OUT:  the point's x value
 
 3. Function Name?: Small explanation?
    IN:   ?
