@@ -4,11 +4,31 @@
 #   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&   Date: 04/01/2024        &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 #   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&   Author: Otir Mesilati   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 """
--> Functions: ?
+-> Functions: 6
 
 Function Specifications:
 
 1. Function Name?: Small explanation?
+   IN:   ?
+   OUT:  ?
+
+2. Function Name?: Small explanation?
+   IN:   ?
+   OUT:  ?
+
+3. Function Name?: Small explanation?
+   IN:   ?
+   OUT:  ?
+
+4. Function Name?: Small explanation?
+   IN:   ?
+   OUT:  ?
+
+5. Function Name?: Small explanation?
+   IN:   ?
+   OUT:  ?
+
+6. Function Name?: Small explanation?
    IN:   ?
    OUT:  ?
 
@@ -38,7 +58,9 @@ def view_point(point):
     print("3D point:", point)
 
 
-# Distance from another point
+def distance_of_two_points(first_point, second_point):
+    pass
+
 
 # Testing will be done here
 def testing_function():
