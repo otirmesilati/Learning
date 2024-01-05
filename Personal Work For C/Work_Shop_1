@@ -61,8 +61,8 @@ int main()
 	printf("Please enter the operation you would like to make:\n");
 	printf(" 1. 'a' for addition \n");
 	printf(" 2. 's' for subtraction \n");
-	printf(" 3. 'm' for addition \n"); //
-	printf(" 4. 'd' for addition \n\n"); //
+	printf(" 3. 'm' for multiplication \n"); //
+	printf(" 4. 'd' for division \n\n"); //
 
 	if (scanf("%c", &space_cleaner)) { ++scanf_return_success; } // catching the pesky '\n';
 	if (scanf("%c", &calculator_function_switch_key)) { ++scanf_return_success; }
