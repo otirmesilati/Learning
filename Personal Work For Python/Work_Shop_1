@@ -59,7 +59,8 @@ def view_point(point):
 
 
 def distance_of_two_points(first_point, second_point):
-    pass
+    return (get_x(second_point) - get_x(first_point), get_y(second_point) - get_y(first_point),
+            get_z(second_point) - get_z(first_point))
 
 
 # Testing will be done here
@@ -68,6 +69,8 @@ def testing_function():
     print("The point we created is: ", my_point)
     print("x:", get_x(my_point), "  y:", get_y(my_point), "  z:", get_z(my_point))
     view_point(my_point)
+    my_second_point = make_3d_point(4, 5, 6)
+    print("The distance is:", distance_of_two_points(my_point, my_second_point))
 
 
 testing_function()  # let the testing COMMENCE!
