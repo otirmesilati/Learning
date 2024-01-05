@@ -20,18 +20,18 @@ Function Specifications:
 */
 
 
-//Constraints//
+#pragma once
+#include <iostream>
+using namespace std;
 
-//inner headers and inlines//
 
-// class members, headers, inlines //
-
-// inner functions //
+// inner functions headers and inlines //
 //main function header//
 
 
-#pragma once
-class Personal_Works_1
-{
-};
+// class members, headers, inlines //
+class Personal_String{};
+
+
+class Personal_Works_1{};
 
