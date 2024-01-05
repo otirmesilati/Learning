@@ -30,8 +30,6 @@ Method Specifications:
    IN: char to find
    OUT: SUCCESSFUL -> index of the character, FAIL -> -1
 
-Operator Specifications:
-
 ->> Classes: 1
 
 Class Specifications:
@@ -54,7 +52,7 @@ class Simple_String
 	Simple_String(const char*);
 	const char* get_Simple_String(Simple_String) const;
 	void simple_Reverse();
-
+	int simple_String_Find();
 
 };
 
