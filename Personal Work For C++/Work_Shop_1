@@ -1,0 +1,37 @@
+/*
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   WORKSHOP 1 : String    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   LANGUAGE: C++          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   Date: 04/01/2024       XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   Author: Otir Mesilati  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+NOTES: very fragile switch logic :( , if the input isn't a/s/m/d, pop goes the error!
+
+-> Functions: ?
+
+Function Specifications:
+
+1. ? : ?
+   IN:   ?
+   OUT:  ?
+
+
+->> Main function: TBD
+
+*/
+
+
+//Constraints//
+
+//inner headers and inlines//
+
+// class members, headers, inlines //
+
+// inner functions //
+//main function header//
+
+
+#pragma once
+class Personal_Works_1
+{
+};
+
