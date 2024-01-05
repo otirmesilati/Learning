@@ -4,29 +4,29 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   LANGUAGE: C++          XXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   Date: 04/01/2024       XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   Author: Otir Mesilati  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-NOTES: very fragile switch logic :( , if the input isn't a/s/m/d, pop goes the error!
-
 -> Functions: 5
 
 Function Specifications:
 
-?
+1. first_Worsk_Shop_Main: the main function of this file
+   IN: Non.
+   OUT: Non.
 
 Method Specifications:
 
-1. Simple_String: C'tor
+2. Simple_String: C'tor
    IN:  char Array
    OUT:  Simple_String Instance
 
-2. get_Simple_String: getter for the char Array
+3. get_Simple_String: getter for the char Array
    IN:   Simple_String Instance
    OUT:  char Array
 
-3. simple_Reverse: Reversing the characters in the array
+4. simple_Reverse: Reversing the characters in the array
    IN:   Non.
    OUT:  Non.
 
-4. simple_String_Find: Character checking function in a Simple_String instance
+5. simple_String_Find: Character checking function in a Simple_String instance
    IN: char to find
    OUT: SUCCESSFUL -> index of the character, FAIL -> -1
 
@@ -56,6 +56,7 @@ class Simple_String
 
 };
 
+void first_Work_Shop_Main();
 
 class Personal_Works_1{};
 
