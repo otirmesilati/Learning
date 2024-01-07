@@ -3,11 +3,15 @@
 #   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&   Date: ?        &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 #   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&   Author: Otir Mesilati   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 """
--> Functions: 1
+-> Functions: 2
 
 Function Specifications:
 
 1. add_two_numbers: ?
+   IN:   ?
+   OUT:  ?
+
+1. sub_two_numbers: ?
    IN:   ?
    OUT:  ?
 
@@ -16,5 +20,9 @@ Function Specifications:
 """
 
 
-def add_two_numbers():
+def add_two_numbers(summand, addend):
+    pass
+
+
+def subtract_two_numbers(minuend, subtrahend):
     pass
