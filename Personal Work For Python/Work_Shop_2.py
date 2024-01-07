@@ -3,7 +3,7 @@
 #   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&   Date: ?        &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 #   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&   Author: Otir Mesilati   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 """
--> Functions: 2
+-> Functions: 3
 
 Function Specifications:
 
@@ -11,7 +11,11 @@ Function Specifications:
    IN:   ?
    OUT:  ?
 
-1. sub_two_numbers: ?
+2. subtract_two_numbers: ?
+   IN:   ?
+   OUT:  ?
+
+3. multiply_two_numbers: ?
    IN:   ?
    OUT:  ?
 
@@ -25,4 +29,8 @@ def add_two_numbers(summand, addend):
 
 
 def subtract_two_numbers(minuend, subtrahend):
+    pass
+
+
+def multiply_two_numbers(multiplier, multiplicand):
     pass
