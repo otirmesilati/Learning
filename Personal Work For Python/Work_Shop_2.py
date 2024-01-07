@@ -3,7 +3,7 @@
 #   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&   Date: ?        &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 #   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&   Author: Otir Mesilati   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 """
--> Functions: 3
+-> Functions: 5
 
 Function Specifications:
 
@@ -16,6 +16,14 @@ Function Specifications:
    OUT:  ?
 
 3. multiply_two_numbers: ?
+   IN:   ?
+   OUT:  ?
+
+4. divide_two_numbers: ?
+   IN:   ?
+   OUT:  ?
+
+5. factorial: ?
    IN:   ?
    OUT:  ?
 
@@ -37,4 +45,8 @@ def multiply_two_numbers(multiplier, multiplicand):
 
 
 def divide_two_numbers(dividend, divisor):
+    pass
+
+
+def factorial():
     pass
