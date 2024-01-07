@@ -34,3 +34,7 @@ def subtract_two_numbers(minuend, subtrahend):
 
 def multiply_two_numbers(multiplier, multiplicand):
     pass
+
+
+def divide_two_numbers(dividend, divisor):
+    pass
