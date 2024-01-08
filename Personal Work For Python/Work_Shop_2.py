@@ -45,6 +45,9 @@ Function Specifications:
    IN:
    OUT:
 
+10. absolute value: ?
+   IN:
+   OUT:
 
 ->> Classes: ?
 
