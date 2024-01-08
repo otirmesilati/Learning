@@ -7,9 +7,9 @@
 
 Function Specifications:
 
-1. add_two_numbers: ?
-   IN:   ?
-   OUT:  ?
+1. add_two_numbers: A summing of two numbers function
+   IN:   two variables, supposed to represent numbers
+   OUT:  the summation of the numbers
 
 2. subtract_two_numbers: ?
    IN:   ?
