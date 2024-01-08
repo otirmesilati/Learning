@@ -37,6 +37,10 @@ Function Specifications:
    IN:
    OUT:
 
+8. minimum of two numbers:: ?
+   IN:
+   OUT:
+
 
 ->> Classes: ?
 
