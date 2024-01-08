@@ -23,7 +23,11 @@ Function Specifications:
    IN:   two variables, supposed to represent numbers
    OUT:  the division of the numbers
 
-5. factorial: ?
+5. termial: ?
+   IN:
+   OUT:
+
+6. factorial: ?
    IN:   ?
    OUT:  ?
 
