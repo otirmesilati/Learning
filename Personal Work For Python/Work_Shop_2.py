@@ -3,7 +3,9 @@
 #   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&   Date: ?        &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 #   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&   Author: Otir Mesilati   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 """
--> Functions: 5
+-> Functions: 7
+
+TO BE DELETED: Design addition - Make a class for operations on numbers, and sequences!
 
 Function Specifications:
 
