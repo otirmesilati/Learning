@@ -49,13 +49,14 @@ Function Specifications:
    IN:
    OUT:
 
+11.
 ->> Classes: ?
 
 """
 
 
 def add_two_numbers(summand, addend):
-    pass
+    return summand + addend
 
 
 def subtract_two_numbers(minuend, subtrahend):
