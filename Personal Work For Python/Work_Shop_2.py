@@ -15,9 +15,9 @@ Function Specifications:
    IN:   two variables, supposed to represent numbers
    OUT:  the subtraction of the numbers
 
-3. multiply_two_numbers: ?
-   IN:   ?
-   OUT:  ?
+3. multiply_two_numbers: A multiplication of two numbers function
+   IN:   two variables, supposed to represent numbers
+   OUT:  the multiplication of the numbers
 
 4. divide_two_numbers: ?
    IN:   ?
