@@ -11,9 +11,9 @@ Function Specifications:
    IN:   two variables, supposed to represent numbers
    OUT:  the summation of the numbers
 
-2. subtract_two_numbers: ?
-   IN:   ?
-   OUT:  ?
+2. subtract_two_numbers: A subtraction of two numbers function
+   IN:   two variables, supposed to represent numbers
+   OUT:  the subtraction of the numbers
 
 3. multiply_two_numbers: ?
    IN:   ?
