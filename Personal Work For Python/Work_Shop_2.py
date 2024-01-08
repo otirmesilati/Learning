@@ -19,9 +19,9 @@ Function Specifications:
    IN:   two variables, supposed to represent numbers
    OUT:  the multiplication of the numbers
 
-4. divide_two_numbers: ?
-   IN:   ?
-   OUT:  ?
+4. divide_two_numbers: A division of two numbers function
+   IN:   two variables, supposed to represent numbers
+   OUT:  the division of the numbers
 
 5. factorial: ?
    IN:   ?
