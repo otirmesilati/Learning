@@ -31,6 +31,11 @@ Function Specifications:
    IN:   ?
    OUT:  ?
 
+7. Binomial Coefficient: ?
+   IN:
+   OUT:
+
+
 ->> Classes: ?
 
 """
