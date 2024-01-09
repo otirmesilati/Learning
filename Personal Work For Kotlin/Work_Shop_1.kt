@@ -53,4 +53,9 @@ class MathematicalOperations
     fun minimumOfTwoNumbers(firstNumber: Int, secondNumber: Int) = if(firstNumber > secondNumber) secondNumber else firstNumber
 }
 
+fun testingOperations()
+{
+    // A function to operate on the class //
+}
+
 
