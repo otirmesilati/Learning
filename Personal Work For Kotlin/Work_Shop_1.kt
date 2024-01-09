@@ -20,18 +20,19 @@ Function Specifications:
    IN:   2 integers that will be multiplied
    OUT:  int product
 
-3. divideTwoNumbers: division of 2 numbers function
+4. divideTwoNumbers: division of 2 numbers function
    IN:   2 integers that will be divided
    OUT:  int product
 
+5. maximumOfTwoNumbers: maximum of 2 numbers finding function
+   IN:   2 integers for checking maximum
+   OUT:  int maximum
 
 ->> Classes: ?
 
 */
 
 // Constraints & Dependencies: Non.
-
-// Class headers
 
 fun addTwoNumbers(summand: Int, addend: Int) = summand + addend
 
@@ -40,3 +41,5 @@ fun subtractTwoNumbers(minuend: Int, subtrahend: Int) = minuend - subtrahend
 fun multiplyTwoNumbers(multiplier: Int, multiplicand: Int) = multiplier * multiplicand
 
 fun divideTwoNumbers(dividend: Int, divisor: Int) = dividend / divisor
+
+fun maximumOfTwoNumbers(firstNumber: Int, secondNumber: Int) = if(firstNumber > secondNumber) firstNumber else secondNumber
