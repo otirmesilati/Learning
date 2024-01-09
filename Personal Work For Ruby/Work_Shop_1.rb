@@ -20,3 +20,16 @@ def get_numbers_stack(list)
   end
   output
 end
+
+def longest_repetition(string)
+  max = string
+          .chars
+          .chunk(&:itself)
+          .map(&:last)
+          .max_by(&:size)
+  max ? [max[0], max.size] : ["", 0]
+end
+
+def reverse_alternate(string)
+  string.gsub(/[^\s]+/).with_index { |w, idx| idx.even? ? w : w.reverse }
+end
