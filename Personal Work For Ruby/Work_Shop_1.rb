@@ -33,3 +33,10 @@ end
 def reverse_alternate(string)
   string.gsub(/[^\s]+/).with_index { |w, idx| idx.even? ? w : w.reverse }
 end
+
+def clean_string(str)
+  str
+    .chars
+    .each_with_object([]) { |ch, obj| ch == "#" ? obj.pop : obj << ch }
+    .join
+end
