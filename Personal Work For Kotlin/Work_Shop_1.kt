@@ -38,14 +38,19 @@ Function Specifications:
 
 // Constraints & Dependencies: Non.
 
-fun addTwoNumbers(summand: Int, addend: Int) = summand + addend
+class MathematicalOperations
+{
+    fun addTwoNumbers(summand: Int, addend: Int) = summand + addend
 
-fun subtractTwoNumbers(minuend: Int, subtrahend: Int) = minuend - subtrahend
+    fun subtractTwoNumbers(minuend: Int, subtrahend: Int) = minuend - subtrahend
 
-fun multiplyTwoNumbers(multiplier: Int, multiplicand: Int) = multiplier * multiplicand
+    fun multiplyTwoNumbers(multiplier: Int, multiplicand: Int) = multiplier * multiplicand
 
-fun divideTwoNumbers(dividend: Int, divisor: Int) = dividend / divisor
+    fun divideTwoNumbers(dividend: Int, divisor: Int) = dividend / divisor
 
-fun maximumOfTwoNumbers(firstNumber: Int, secondNumber: Int) = if(firstNumber > secondNumber) firstNumber else secondNumber
+    fun maximumOfTwoNumbers(firstNumber: Int, secondNumber: Int) = if(firstNumber > secondNumber) firstNumber else secondNumber
 
-fun minimumOfTwoNumbers(firstNumber: Int, secondNumber: Int) = if(firstNumber > secondNumber) secondNumber else firstNumber
+    fun minimumOfTwoNumbers(firstNumber: Int, secondNumber: Int) = if(firstNumber > secondNumber) secondNumber else firstNumber
+}
+
+
