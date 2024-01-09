@@ -1,3 +1,23 @@
-// TO BE DELETED: math operations file //
+/*
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&   Workshop ? : ?          &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&   LANGUAGE: Kotlin        &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&   Date: ?                 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&   Author: Otir Mesilati   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
-fun sum(a: Int, b: Int): Int{return a + b} // TESTING TESTING!!
+-> Functions: ?
+
+Function Specifications:
+
+1. ?: ?
+   IN:   ?
+   OUT:  ?
+
+->> Classes: ?
+
+*/
+
+// Constraints & Dependencies: Non.
+
+// Class headers
+
+// Function headers
