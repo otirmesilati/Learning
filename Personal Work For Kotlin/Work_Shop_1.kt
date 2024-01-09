@@ -8,9 +8,9 @@
 
 Function Specifications:
 
-1. ?: ?
-   IN:   ?
-   OUT:  ?
+1. add_Two_Numbers: summation of 2 numbers function
+   IN:   two integers
+   OUT:  integer
 
 ->> Classes: ?
 
@@ -20,4 +20,4 @@ Function Specifications:
 
 // Class headers
 
-// Function headers
+fun addTwoNumbers(firstNumber: Int, secondNumber: Int) = firstNumber + secondNumber;
