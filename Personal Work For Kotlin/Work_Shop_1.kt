@@ -28,6 +28,10 @@ Function Specifications:
    IN:   2 integers for checking maximum
    OUT:  int maximum
 
+6. minimumOfTwoNumbers: minimum of 2 numbers finding function
+   IN:   2 integers for checking minimum
+   OUT:  int minimum
+
 ->> Classes: ?
 
 */
@@ -43,3 +47,5 @@ fun multiplyTwoNumbers(multiplier: Int, multiplicand: Int) = multiplier * multip
 fun divideTwoNumbers(dividend: Int, divisor: Int) = dividend / divisor
 
 fun maximumOfTwoNumbers(firstNumber: Int, secondNumber: Int) = if(firstNumber > secondNumber) firstNumber else secondNumber
+
+fun minimumOfTwoNumbers(firstNumber: Int, secondNumber: Int) = if(firstNumber > secondNumber) secondNumber else firstNumber
