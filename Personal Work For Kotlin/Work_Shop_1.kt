@@ -13,8 +13,13 @@ Function Specifications:
    OUT:  int summation
 
 2. subtractTwoNumbers: subtraction of 2 numbers function
-   IN:   2 integers that will be summed
-   OUT:  int summation
+   IN:   2 integers that will be subtracted
+   OUT:  int difference
+
+3. multiplyTwoNumbers: multiplication of 2 numbers function
+   IN:   2 integers that will be multiplied
+   OUT:  int product
+
 
 ->> Classes: ?
 
@@ -27,3 +32,5 @@ Function Specifications:
 fun addTwoNumbers(summand: Int, addend: Int) = summand + addend
 
 fun subtractTwoNumbers(minuend: Int, subtrahend: Int) = minuend - subtrahend
+
+fun multiplyTwoNumbers(multiplier: Int, multiplicand: Int) = multiplier * multiplicand
