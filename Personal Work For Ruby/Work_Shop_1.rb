@@ -1,22 +1,22 @@
+=begin
 #   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&   Workshop ? : ?  &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-#   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&   LANGUAGE: Python        &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-#   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&   Date: ?        &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+#   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&   LANGUAGE: Ruby1        &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+#   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&   Date: 10/01/2024        &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 #   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&   Author: Otir Mesilati   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 """
 -> Functions: ?
 
 Function Specifications:
 
-1. ?: ?
-   IN:   ?
-   OUT:  ?
+1. AddTwoNumbers: Two numbers adding function
+   IN:   2 integers for summand and addend
+   OUT:  integer for summation of the numbers
 
 ->> Classes: ?
 
 """
 
-
-<<Control-Flow Skeleton>>
+=end
 
 # Constraints & Dependencies: Non.
 
