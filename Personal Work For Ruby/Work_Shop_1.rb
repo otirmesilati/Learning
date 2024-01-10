@@ -8,7 +8,7 @@
 
 Function Specifications:
 
-1. addTwoNumbers: Two numbers adding function
+1. add_two_numbers: Two numbers adding function
    IN:   2 integers for summand and addend
    OUT:  integer for summation of the numbers
 
@@ -34,4 +34,7 @@ Function Specifications:
 
 # Class headers
 
-# Function headers
+def add_two_numbers(summand, addend)
+   summand + addend
+end
+
