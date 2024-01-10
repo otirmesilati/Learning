@@ -20,6 +20,10 @@ Function Specifications:
    IN:   2 integers for multiplier and multiplicand
    OUT:  integer for product of the numbers
 
+4. divisionTwoNumbers: Two numbers dividing function
+   IN:   2 integers for dividend and divisor
+   OUT:  integer for quotient of the numbers
+
 ->> Classes: ?
 
 """
