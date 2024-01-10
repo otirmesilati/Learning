@@ -38,3 +38,6 @@ def add_two_numbers(summand, addend)
    summand + addend
 end
 
+def subtract_two_numbers(minuend, subtrahend)
+   minuend - subtrahend
+end
