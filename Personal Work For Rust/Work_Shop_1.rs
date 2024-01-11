@@ -1,4 +1,4 @@
 fn dont_fret()
 {
-    println("Coming soon~");
+    std::println!("Coming soon~");
 }
