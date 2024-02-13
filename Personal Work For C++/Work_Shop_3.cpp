@@ -4,7 +4,11 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   LANGUAGE: C++                   
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   Date: 13/02/2024                                XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   Author: Otir Mesilati                           XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-->> Constraints & dependencies:
+
+
+
+
+--->> Constraints & dependencies:
 
 Dependencies: (1)
 1. inputting and outputting to the console.
@@ -14,25 +18,31 @@ Constraints:
 1.1. Namespace std:
 1.1.1. IOStream Stream section
 
+
+
+
+
+--->> Structure & Procedures
+
 Function Specifications: (1)
 
 1. first_Worsk_Shop_Main: the main function of this file
    IN: Non.
    OUT: Non.
 
-1. add: A function for adding two integers
-   IN(2): Summand and Addend
-   OUT(1): Summation
+2. add: A function for adding two integers
+   IN(2): int Summand and int Addend
+   OUT(1): int Summation
 
-1. add: A function for adding two integers
-   IN(2): Summand and Addend
-   OUT(1): Summation
+3. add: A function for adding three integers
+   IN(3): three integers
+   OUT(1): int Summation
 
-1. add: A function for adding two integers
-   IN(2): Summand and Addend
-   OUT(1): Summation
+4. add: A function for adding two float
+   IN(2): float Summand and float Addend
+   OUT(1): float Summation
 
-1. add: A function for adding two integers
+5. add: A function for adding two integers
    IN(2): Summand and Addend
    OUT(1): Summation
 
@@ -42,13 +52,18 @@ Method Specifications: (1)
    IN:  char Array
    OUT:  Simple_String Instance
 
+
+
+
+
+--->> Classes and Objects
+
 Class Specifications: 1 In total
 
 Design TODOs:
-1. Use a lot of overloading
-2. Basic arithmetic functions
-3. develop from there to more functions
-4.
+1. Basic arithmetic functions
+2. develop from there to more functions
+3.
 
 */
 
@@ -56,12 +71,21 @@ Design TODOs:
 #include <iostream>
 using namespace std;
 
-int add(int, int) {}
+int add(int, int);
 int add(int, int, int){}
 float add(float, float) {}
 float add(float, float, float) {}
 
-// definitions go here //
+// definitions/implementation go here //
+int add(int augend, int summand) { return 0; } // finish adding the logic
+
+int add(int addend_1, int addend_2, int addend_3) { return 0; } // finish adding the logic
+
+float add(float augend, int summand) { return 0; } // finish adding the logic
+
+float add(float addend_1, float addend_2, float addend_3) { return 0; } // finish adding the logic
+
+// float 3
 
 int first_Worsk_Shop_Main() { return 0; }
 
