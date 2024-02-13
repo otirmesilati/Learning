@@ -67,9 +67,13 @@ Design TODOs:
 
 */
 
+
+
 #pragma once
 #include <iostream>
 using namespace std;
+
+
 
 int add(int, int);
 int add(int, int, int);
@@ -77,15 +81,20 @@ float add(float, float);
 float add(float, float, float);
 double add(double, double);
 double add(double, double, double);
+int sub(int, int);
+int sub(int, int, int);
+float sub(float, float);
+float sub(float, float, float);
+double sub(double, double);
+double sub(double, double, double);
 
-// definitions/implementation go here //
+
 int add(int augend, int summand) { return augend + summand; } // finish adding the logic
 int add(int addend_1, int addend_2, int addend_3) { return addend_1 + addend_2 + addend_3; } // finish adding the logic
 float add(float augend, float summand) { return augend + summand; } // finish adding the logic
 float add(float addend_1, float addend_2, float addend_3) { return addend_1 + addend_2 + addend_3; } // finish adding the logic
 double add(double augend, double summand) { return augend + summand; } // finish adding the logic
 double add(double addend_1, double addend_2, double addend_3) { return addend_1 + addend_2 + addend_3; } // finish adding the logic
-
 int first_Worsk_Shop_Main() { return 0; }
 
 /* Implementation TODOs:
