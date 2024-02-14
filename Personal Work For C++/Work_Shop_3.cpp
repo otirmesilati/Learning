@@ -89,6 +89,11 @@ double sub(double, double);
 double sub(double, double, double);
 float div(float, float);
 double div(double, double);
+int sum(int);
+int termial(int);
+int prod(int);
+int fact(int);
+
 
 
 int add(int augend, int summand) { return augend + summand; }
