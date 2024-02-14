@@ -97,6 +97,8 @@ double add(double augend, double summand) { return augend + summand; }
 double add(double addend_1, double addend_2, double addend_3) { return addend_1 + addend_2 + addend_3; }
 int sub(int minuend, int subtrahend) { return minuend - subtrahend; }
 int sub(int minuend, int subtrahend_1, int subtrahend_2) { return minuend - subtrahend_1 - subtrahend_2; }
+float sub(float minuend, float subtrahend) { return minuend - subtrahend; }
+float sub(float minuend, float subtrahend_1, float subtrahend_2) { return minuend - subtrahend_1 - subtrahend_2; }
 int first_Worsk_Shop_Main() { return 0; }
 
 /* Implementation TODOs:
