@@ -87,6 +87,8 @@ float sub(float, float);
 float sub(float, float, float);
 double sub(double, double);
 double sub(double, double, double);
+float div(float, float);
+double div(double, double);
 
 
 int add(int augend, int summand) { return augend + summand; }
@@ -99,6 +101,10 @@ int sub(int minuend, int subtrahend) { return minuend - subtrahend; }
 int sub(int minuend, int subtrahend_1, int subtrahend_2) { return minuend - subtrahend_1 - subtrahend_2; }
 float sub(float minuend, float subtrahend) { return minuend - subtrahend; }
 float sub(float minuend, float subtrahend_1, float subtrahend_2) { return minuend - subtrahend_1 - subtrahend_2; }
+float div(float dividend, float divisor) { return 0; } // finish adding the logic
+double div(double dividend, double divisor) { return 0; } //finish adding the logic
+
+
 int first_Worsk_Shop_Main() { return 0; }
 
 /* Implementation TODOs:
