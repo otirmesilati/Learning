@@ -15,6 +15,7 @@ void main() {
 
   // const variables are compile-time constants
   const double d = 44.00;
+  const int j = 12;
   print(d);
 
   // declare an integer
