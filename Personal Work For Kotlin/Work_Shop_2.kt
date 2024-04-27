@@ -12,4 +12,11 @@ class FirstClass
 
         return firstVal + secondVal
     }
+
+    fun fourthFunction() : Int {
+
+        val x = 4
+        return x
+
+    }
 }
