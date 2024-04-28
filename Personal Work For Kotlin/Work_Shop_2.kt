@@ -2,7 +2,7 @@ class FirstClass
 {
     fun firstFunction() = 1
 
-    fun secondFunction(x : Int) : Unit {
+    fun secondFunction(x : Int)  {
 
         println("Input passed: $x")
 
@@ -19,4 +19,5 @@ class FirstClass
         return x
 
     }
+
 }
