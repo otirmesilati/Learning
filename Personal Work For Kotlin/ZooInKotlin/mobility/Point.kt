@@ -21,8 +21,7 @@ class Point (xToSet : Int, yToSet : Int)
     fun getY() : Int = yValue
     fun setX(x : Int) { xValue = x }
     fun setY(y : Int) { yValue = y }
-
-// TODO: selectors for location
+    fun toString(xValue : Int, yValue : Int) : String = "($xValue ,$yValue)"
 
 }
 
