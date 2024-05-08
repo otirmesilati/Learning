@@ -1,2 +1,6 @@
-public fun setLocation(): Unit {}
-public fun getLocation(): Unit {}
+interface MyInterface
+{
+    public fun setLocation(): Unit {}
+    public fun getLocation(): Unit {}
+}
+
