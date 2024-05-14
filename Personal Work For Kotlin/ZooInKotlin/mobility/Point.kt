@@ -1,3 +1,20 @@
+/*  &&&&&&&&&&&&&&&&&&&&&&&&&&&&&   Workshop ? : ?  &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+    &&&&&&&&&&&&&&&&&&&&&&&&&&&&&   LANGUAGE: Kotlin        &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+    &&&&&&&&&&&&&&&&&&&&&&&&&&&&&   Date: ?        &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+    &&&&&&&&&&&&&&&&&&&&&&&&&&&&&   Author: Otir Mesilati   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+-> Functions: ?
+
+Function Specifications:
+
+1. ?: ?
+   IN:   ?
+   OUT:  ?
+
+->> Classes: ?
+
+*/
+
 package mobility
 
 // TODO: touch up on magic numbers, errors and friends
