@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-root',
-    template: `
+  selector: 'app-root',
+  template: `
     Hello Universe
   `,
-    styles: `
+  styles: `
     :host {
       color: #a144eb;
     }
   `,
-    standalone: true,
+  standalone: true,
 })
 export class AppComponent { }
