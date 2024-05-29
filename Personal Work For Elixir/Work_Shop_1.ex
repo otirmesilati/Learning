@@ -3,7 +3,9 @@ defmodule Hello do
 
   def world do
 
-  IO.puts("Hello world Elixir")
+    {error, reason} = {:error, "file not found"}
+
+    IO.puts("Hello world Elixir")
 
   end
 
