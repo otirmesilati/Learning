@@ -4,6 +4,9 @@ defmodule Hello do
   def world do
 
     {error, reason} = {:error, "file not found"}
+    reason
+    {:ok ,msg} = {:ok, "statuse 200 ok"}
+    msg
 
     IO.puts("Hello world Elixir")
 
