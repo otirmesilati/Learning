@@ -111,4 +111,13 @@ case Enum.at(my_list,2) do
   _ -> "Catch all"
 end
 
+defmodule Post do
+  defstruct(
+    id: nil,
+    title: "",
+    description: "",
+    author: ""
+  )
+end
+
 end
