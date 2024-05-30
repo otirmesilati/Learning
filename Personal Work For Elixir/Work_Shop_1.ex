@@ -19,7 +19,7 @@ a = 1
 [a,a] = [1,1]
 [a,b] = [1,2]
 
-# 1.3: Strings
+# 1.3: Strings, and pattern matching on raw representation of binaries
 "My" <> rest = "My String"
 rest
 i("abc") # checking the information for the binary string
@@ -35,5 +35,9 @@ name
 <<head, rest::binary>> = name
 head
 head == ?O
+<<"Ot", rest::binary>> = name
+rest
+<<head::binary-size(2), rest::binary>> = name
+head
 
 end
