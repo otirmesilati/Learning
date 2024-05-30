@@ -53,11 +53,25 @@ Enum.at(my_list, 0)
 second
 [_, _, third] = ["a" , "b", "c"]
 third
+hd(my_list)
+tl(my_list)
 
 # .Enum to check the rich API
 # h(Enum.at) for documentation
 
 my_pid = self()
 my_pid
+
+# 1.5: Tuples and key-word list
+
+{a, b} = {1, 2}
+a
+
+{:reply, msg, state} = {:reply, "Otir", [1, 2]}
+msg
+State
+
+data = [a: 1, b: 2]
+[{:a, 1}] = [a: 1]
 
 end
