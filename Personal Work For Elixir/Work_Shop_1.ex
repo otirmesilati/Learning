@@ -103,7 +103,7 @@ username
 
 %{user1 | age: 21}
 
-# 1.8: cases
+# 1.8: cases and conds
 
 case Enum.at(my_list,2) do
   1 -> "This won't print"
@@ -118,6 +118,21 @@ defmodule Post do
     description: "",
     author: ""
   )
+end
+
+case post1 do
+  %{author: "Otir"} -> "Got a post from Otir"
+  %{author: "Tzadik"} -> "Got a post from Tzadik"
+  _ -> "Got a post from#{post1.author}"
+
+end
+
+%{post1 | author: "Tzadik"}
+
+cond do
+  post1.author == "Tzadik" -> "Editing a post from Tzadik"
+  post1.author == "Otir" -> "Editing a post from Otir"
+  true -> "This is a catch all"
 end
 
 end
