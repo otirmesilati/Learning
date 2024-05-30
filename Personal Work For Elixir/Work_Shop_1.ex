@@ -22,6 +22,13 @@ a = 1
 # 1.3: Strings
 "My" <> rest = "My String"
 rest
+i("abc") # checking the information for the binary string
+?a
+?b
 
+name = "Otir"
+name
+is_binary(name)
+msg = "Hello " <> name
 
 end
