@@ -30,5 +30,10 @@ name = "Otir"
 name
 is_binary(name)
 msg = "Hello " <> name
+"Hello " <> name = msg
+name
+<<head, rest::binary>> = name
+head
+head == ?O
 
 end
