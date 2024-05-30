@@ -62,7 +62,7 @@ tl(my_list)
 my_pid = self()
 my_pid
 
-# 1.5: Tuples and key-word list
+# 1.5/6: Tuples, key-word list and maps
 
 {a, b} = {1, 2}
 a
@@ -76,5 +76,22 @@ data = [a: 1, b: 2]
 data[:a]
 
 my_map = %{a: 1, b: 2, c: 3}
+%{a: first, b: second, c: third} = my_map
+second
+%{b: second} = my_map
+second
+
+my_map.a
+
+map2 = %{"a" => 1, "b" => 2, "c" => 3}
+
+%{"c" => c} = map2
+c
+%{map2 | "c" => 4}
+my_map = %{my_map | c: 4}
+
+# 1.7: structures
+
+
 
 end
