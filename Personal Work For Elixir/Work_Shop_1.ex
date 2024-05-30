@@ -92,6 +92,15 @@ my_map = %{my_map | c: 4}
 
 # 1.7: structures
 
+defmodule User do
+  defstruct username: "", email: "", age: nil
+end
 
+user1 = %User{username: "Samy", age: 13, email: "octobot@sample.com"}
+
+%{username: username} = user1
+username
+
+%{user1 | age: 21}
 
 end
