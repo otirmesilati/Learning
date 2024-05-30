@@ -40,4 +40,24 @@ rest
 <<head::binary-size(2), rest::binary>> = name
 head
 
+
+# 1.4: charlist and proccesses
+
+chars = 'Otir'
+'Hello ' ++ chars
+is_list(chars)
+
+my_list = ["a", "b", "c"]
+Enum.at(my_list, 0)
+[first, second, third] = my_list
+second
+[_, _, third] = ["a" , "b", "c"]
+third
+
+# .Enum to check the rich API
+# h(Enum.at) for documentation
+
+my_pid = self()
+my_pid
+
 end
