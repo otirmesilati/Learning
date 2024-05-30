@@ -103,4 +103,12 @@ username
 
 %{user1 | age: 21}
 
+# 1.8: cases
+
+case Enum.at(my_list,2) do
+  1 -> "This won't print"
+  2 -> "3 is a match"
+  _ -> "Catch all"
+end
+
 end
