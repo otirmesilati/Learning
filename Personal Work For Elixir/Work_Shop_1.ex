@@ -135,4 +135,15 @@ cond do
   true -> "This is a catch all"
 end
 
+cond do
+  hd(my_list) == 1 -> "Got a 1"
+  true -> "head is #{hd(my_list)}"
+end
+
+if true do
+  "This will work"
+else
+  "This will work"
+end
+
 end
