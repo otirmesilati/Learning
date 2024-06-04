@@ -19,26 +19,28 @@ package mobility
 
 // TODO: touch up on magic numbers, errors and friends
 
-class Point (xToSet : Int, yToSet : Int)
+class Point (xToSet : Float, yToSet : Float)
 {
 
-    private var xValue : Int = 0
-    private var yValue : Int = 0
+    private var xValue : Float = 0.0F
+    private var yValue : Float = 0.0F
 
     init {
-        if (xValue > 800 || yValue > 600)
+        if (xValue > 900.00 || yValue > 700.00)
         {
-            println("Tried to place in location: [ $xValue , $yValue ]")
-            xValue = 0 ; yValue = 0
+            println("Tried to place in location: [ $xValue , $yValue ], putting in origin")
+            xValue = 0.0F ; yValue = 0.0F
         }
         else {xValue = xToSet ; yValue = yToSet}
     }
 
-    fun getX() : Int = xValue
-    fun getY() : Int = yValue
-    fun setX(x : Int) { xValue = x }
-    fun setY(y : Int) { yValue = y }
-    fun toString(xValue : Int, yValue : Int) : String = "($xValue ,$yValue)"
+
+
+    // fun getX() : Int = xValue
+    // fun getY() : Int = yValue
+    // fun setX(x : Int) { xValue = x }
+    // fun setY(y : Int) { yValue = y }
+    // fun toString(xValue : Int, yValue : Int) : String = "($xValue ,$yValue)"
 
 }
 
