@@ -34,6 +34,8 @@ class Point (xToSet : Float, yToSet : Float)
         else {xValue = xToSet ; yValue = yToSet}
     }
 
+    fun updateLocation() {}
+
 
 
     // fun getX() : Int = xValue
