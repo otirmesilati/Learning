@@ -3,15 +3,24 @@
     &&&&&&&&&&&&&&&&&&&&&&&&&&&&&   Date: 4/6/24             &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
     &&&&&&&&&&&&&&&&&&&&&&&&&&&&&   Author: Otir Mesilati    &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
--> Functions: ?
+->> Classes: 1
+
+-> Functions: 3
 
 Function Specifications:
 
-1. ?: ?
+1. Primary Constructor
+   IN:   2 <Float> primitives for the point's coordinates
+   OUT:  a <Point> object
+
+2. ?: ?
    IN:   ?
    OUT:  ?
 
-->> Classes: ?
+3. ?: ?
+   IN:   ?
+   OUT:  ?
+
 
 */
 
