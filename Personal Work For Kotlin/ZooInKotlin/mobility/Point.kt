@@ -34,7 +34,10 @@ class Point (xToSet : Float, yToSet : Float)
         else {xValue = xToSet ; yValue = yToSet}
     }
 
-    fun updateLocation() {}
+    fun updateLocation(xPosition: Float, yPosition: Float)
+    {
+        // condition to check if the position is valid and nothing more
+    }
 
 
 
