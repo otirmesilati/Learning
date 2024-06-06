@@ -37,7 +37,7 @@ class Point (xToSet : Float, yToSet : Float)
     fun updateLocation(xPosition: Float, yPosition: Float)
     {
         if (xPosition > 900.00 || yPosition < 700) { println("\"Tried to place in location: [ $xValue , $yValue ], staying in place") }
-        else {} // change the position
+        else {xValue = xPosition ; yValue = yPosition} 
     }
 
 
