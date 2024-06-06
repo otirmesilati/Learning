@@ -34,10 +34,12 @@ class Point (xToSet : Float, yToSet : Float)
         else {xValue = xToSet ; yValue = yToSet}
     }
 
+    fun getXCoordinate() : Float {return 0.0F} // change the implementation from the placeholder
+
     fun updateLocation(xPosition: Float, yPosition: Float)
     {
         if (xPosition > 900.00 || yPosition < 700) { println("\"Tried to place in location: [ $xValue , $yValue ], staying in place") }
-        else {xValue = xPosition ; yValue = yPosition} 
+        else {xValue = xPosition ; yValue = yPosition}
     }
 
 
