@@ -35,7 +35,7 @@ class Point (xToSet : Float, yToSet : Float)
     }
 
     fun getXCoordinate() : Float {return xValue}
-    // Add the y selector here
+    fun getYCoordinate() : Float {return yValue}
 
     fun updateLocation(xPosition: Float, yPosition: Float)
     {
