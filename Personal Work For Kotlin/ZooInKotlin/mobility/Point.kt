@@ -36,6 +36,9 @@ class Point (xToSet : Float, yToSet : Float)
 
     fun updateLocation(xPosition: Float, yPosition: Float)
     {
+        if (xPosition > 900.00 || yPosition < 700)
+        {} // output a message
+        else {} // change the position
         // condition to check if the position is valid and nothing more
     }
 
