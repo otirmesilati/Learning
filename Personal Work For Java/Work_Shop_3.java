@@ -46,4 +46,9 @@ public class Work_Shop_3
 
 protected void finalize() throws Throwable {} // Nothing to do here 
 
+public static void main(String[] args) 
+{
+    // Let's test the static singleton print //
+}
+
 }
