@@ -17,11 +17,6 @@ public class Work_Shop_3
 	 */
 	private static class theSingleton
 	{
-		/**
-		 * Private C'tor (Encapsulation: thus IMMUTABLE)
-		 * 
-		 */
-		private theSingleton() {}
 		
 		/**
 		 * Get instance method for the singleton instance 
@@ -36,13 +31,22 @@ public class Work_Shop_3
 		
 		public static void printSingleton() 
 		{
-			if(wrappedInstance == null) System.out.println("No singleton yet!");
+			if(wrappedInstance == null) 
+			{
+				System.out.println("No singleton yet!");
+			    wrappedInstance = new theSingleton();
+			}
 			else System.out.println("The singleton was created :)");
 		}
-
-        private static final theSingleton wrappedInstance = new theSingleton();
+		
+		/**
+		 * Private C'tor (Encapsulation: thus IMMUTABLE)
+		 * 
+		 */
+		private theSingleton() {}
+		
+		private static theSingleton wrappedInstance;
 	}
-}
 
 protected void finalize() throws Throwable {} // Nothing to do here 
 
@@ -56,4 +60,5 @@ public static void main(String[] args)
 
 }
 
+ }
 }
