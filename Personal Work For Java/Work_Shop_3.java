@@ -51,6 +51,9 @@ public static void main(String[] args)
    // theSingleton.printSingleton(); <-- Caused problems in VSC
    Work_Shop_3.UnClassicSingleton.theSingleton.printSingleton();
    // Let's test the static singleton print //
+   Work_Shop_3.UnClassicSingleton.theSingleton.getInstance();
+   Work_Shop_3.UnClassicSingleton.theSingleton.printSingleton();
+
 }
 
 }
