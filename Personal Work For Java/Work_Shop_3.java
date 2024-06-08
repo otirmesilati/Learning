@@ -48,7 +48,9 @@ protected void finalize() throws Throwable {} // Nothing to do here
 
 public static void main(String[] args) 
 {
-    // Let's test the static singleton print //
+   // theSingleton.printSingleton(); <-- Caused problems in VSC
+   Work_Shop_3.UnClassicSingleton.theSingleton.printSingleton();
+   // Let's test the static singleton print //
 }
 
 }
