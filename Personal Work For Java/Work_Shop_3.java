@@ -23,8 +23,6 @@ public class Work_Shop_3
 		 */
 		private theSingleton() {}
 		
-		private static final theSingleton wrappedInstance = new theSingleton();
-		
 		/**
 		 * Get instance method for the singleton instance 
 		 * 
@@ -41,7 +39,11 @@ public class Work_Shop_3
 			if(wrappedInstance == null) System.out.println("No singleton yet!");
 			else System.out.println("The singleton was created :)");
 		}
+
+        private static final theSingleton wrappedInstance = new theSingleton();
 	}
 }
+
+protected void finalize() throws Throwable {} // Nothing to do here 
 
 }
