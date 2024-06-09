@@ -7,6 +7,15 @@ public class Work_Shop_4 {
             return super.clone();
         }
     }
+
+    public static void main(String[] args)
+    {
+        try 
+        {
+            System.out.println("Hi");
+            cloneableClass clon = new cloneableClass();
+            clon.clone(); // trying to clone //
+        } catch (CloneNotSupportedException e){}
+    }
 }
 
-public static void main(String[] args){}
