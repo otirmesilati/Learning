@@ -66,7 +66,7 @@ int class_points_main();
 void lecture_1_main();
 
 
-#include "Lecture1.h"
+// #include "Lecture1.h"
 
 // Start: BasePoint
 
