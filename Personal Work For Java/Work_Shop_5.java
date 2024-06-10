@@ -10,8 +10,12 @@ public class Work_Shop_5
 
          private static class ConcreteProductA implements Product
          {
+            private ConcreteProductA() {asField = 1;}
+
             public void productMethodOne(){}
 		    public void productMethodTwo(){}
+
+            private int asField;
          }
 
          private static class ConcreteProductB implements Product 
