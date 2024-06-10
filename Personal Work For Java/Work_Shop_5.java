@@ -5,7 +5,7 @@ public class Work_Shop_5
          public static interface Product 
          {
             public void productMethodOne();
-		    public void productMethodTwo();
+		        public void productMethodTwo();
          }
 
          private static class ConcreteProductA implements Product
@@ -13,7 +13,7 @@ public class Work_Shop_5
             private ConcreteProductA() {asField = 1;}
 
             public void productMethodOne(){}
-		    public void productMethodTwo(){}
+		        public void productMethodTwo(){}
 
             private int asField;
          }
@@ -21,19 +21,19 @@ public class Work_Shop_5
          private static class ConcreteProductB implements Product 
          {
             public void productMethodOne(){}
-		    public void productMethodTwo(){}
+		        public void productMethodTwo(){}
          }
 
          private static class ConcreteProductC implements Product 
          {
             public void productMethodOne(){}
-		    public void productMethodTwo(){}
+		        public void productMethodTwo(){}
          }
 
          private static class ConcreteProductD implements Product 
          {
             public void productMethodOne(){}
-		    public void productMethodTwo(){}
+		        public void productMethodTwo(){}
          }
 
          public static class ConcreteFactoryClassA {}
