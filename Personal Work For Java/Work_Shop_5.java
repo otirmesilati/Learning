@@ -18,6 +18,6 @@ public class Work_Shop_5
 
          private static class ConcreteProductD implements Product {}
 
-         // factory method
+         public static class ConcreteFactoryClassA {}
     }
 }
