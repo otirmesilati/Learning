@@ -19,5 +19,7 @@ public class Work_Shop_5
          private static class ConcreteProductD implements Product {}
 
          public static class ConcreteFactoryClassA {}
+
+         private static class FactoryMethodClient {}
     }
 }
