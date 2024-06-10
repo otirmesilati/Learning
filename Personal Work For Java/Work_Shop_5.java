@@ -4,19 +4,33 @@ public class Work_Shop_5
     {
          public static interface Product 
          {
-            
+            public void productMethodOne();
+		    public void productMethodTwo();
          }
 
          private static class ConcreteProductA implements Product
          {
-
+            public void productMethodOne(){}
+		    public void productMethodTwo(){}
          }
 
-         private static class ConcreteProductB implements Product {}
+         private static class ConcreteProductB implements Product 
+         {
+            public void productMethodOne(){}
+		    public void productMethodTwo(){}
+         }
 
-         private static class ConcreteProductC implements Product {}
+         private static class ConcreteProductC implements Product 
+         {
+            public void productMethodOne(){}
+		    public void productMethodTwo(){}
+         }
 
-         private static class ConcreteProductD implements Product {}
+         private static class ConcreteProductD implements Product 
+         {
+            public void productMethodOne(){}
+		    public void productMethodTwo(){}
+         }
 
          public static class ConcreteFactoryClassA {}
 
