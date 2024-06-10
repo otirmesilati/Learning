@@ -12,6 +12,12 @@ public class Work_Shop_5
 
          }
 
-         // CONPROB
+         private static class ConcreteProductB implements Product {}
+
+         private static class ConcreteProductC implements Product {}
+
+         private static class ConcreteProductD implements Product {}
+
+         // factory method
     }
 }
