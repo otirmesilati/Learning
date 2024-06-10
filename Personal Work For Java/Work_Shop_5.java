@@ -6,5 +6,12 @@ public class Work_Shop_5
          {
             
          }
+
+         private static class ConcreteProductA implements Product
+         {
+
+         }
+
+         // CONPROB
     }
 }
