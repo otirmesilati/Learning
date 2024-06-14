@@ -22,7 +22,10 @@ public class Work_Shop_5
          private static class ConcreteProductB implements Product 
          {
             public void productMethodOne(){}
-		        public void productMethodTwo(){}
+		      public void productMethodTwo(){}
+            public void bsMethod() {}
+            public String toString() {return "ConcreteProductB";}
+            private int bsField;
          }
 
          private static class ConcreteProductC implements Product 
