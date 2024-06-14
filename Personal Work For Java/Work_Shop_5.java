@@ -31,7 +31,10 @@ public class Work_Shop_5
          private static class ConcreteProductC implements Product 
          {
             public void productMethodOne(){}
-		        public void productMethodTwo(){}
+		      public void productMethodTwo(){}
+            public void csMethod() {}
+            public String toString() {return "ConcreteProductC";}
+            private int csField;
          }
 
          private static class ConcreteProductD implements Product 
