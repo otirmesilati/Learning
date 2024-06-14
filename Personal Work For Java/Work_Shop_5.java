@@ -5,7 +5,7 @@ public class Work_Shop_5
          public static interface Product 
          {
             public void productMethodOne();
-		        public void productMethodTwo();
+		      public void productMethodTwo();
          }
 
          private static class ConcreteProductA implements Product
@@ -13,8 +13,9 @@ public class Work_Shop_5
             private ConcreteProductA() {asField = 1;}
 
             public void productMethodOne(){}
-		        public void productMethodTwo(){}
-
+		      public void productMethodTwo(){}
+            public void asMethod(){}
+            public String toString(){return "ConcreteProductA";}
             private int asField;
          }
 
