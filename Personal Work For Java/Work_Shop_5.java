@@ -37,7 +37,7 @@ public class Work_Shop_5
             private int csField;
          }
 
-  d       private static class ConcreteProductD implements Product 
+         private static class ConcreteProductD implements Product 
          {
             public void productMethodOne(){}
 		      public void productMethodTwo(){}
@@ -50,6 +50,12 @@ public class Work_Shop_5
          public static class ConcreteFactoryClassA 
          {
             Product createdProduct;
+
+            public Product getInstance(String productType)
+            {
+               // checking
+               return createdProduct;
+            }
          }
 
          private static class FactoryMethodClient {}
