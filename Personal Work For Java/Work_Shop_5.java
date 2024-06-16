@@ -47,7 +47,10 @@ public class Work_Shop_5
             private int dsField;
          }
 
-         public static class ConcreteFactoryClassA {}
+         public static class ConcreteFactoryClassA 
+         {
+            Product createdProduct;
+         }
 
          private static class FactoryMethodClient {}
     }
