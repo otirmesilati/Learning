@@ -4,5 +4,6 @@ echo "Hello World!"
 
 echo hi
 echo:
+rem this is a comment
 
 pause
