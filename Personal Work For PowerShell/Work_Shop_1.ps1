@@ -5,5 +5,6 @@ Get-ChildItem
 
 $Env:USERNAME
 $Env:HOMEDRIVE
+$Env:HOMEPATH
 
 Clear-Host
