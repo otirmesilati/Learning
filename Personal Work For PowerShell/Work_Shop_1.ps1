@@ -7,5 +7,6 @@ $Env:USERNAME
 $Env:HOMEDRIVE
 $Env:HOMEPATH
 $Env:windir
+$Env:SystemDrive
 
 Clear-Host
