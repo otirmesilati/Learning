@@ -4,4 +4,6 @@ Get-Date
 
 Get-ChildItem
 
+$Env:USERNAME
+
 Clear-Host
