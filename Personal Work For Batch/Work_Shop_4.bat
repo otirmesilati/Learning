@@ -17,7 +17,8 @@ set sum=10+10
 ::this will generate a string
 
 set /a sum=10+10
+::this will do what we wanted
 
-
+echo %sum%
 
 pause
