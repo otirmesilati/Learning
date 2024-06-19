@@ -11,4 +11,6 @@ set statement2="This is the second statement"
 
 set statement3=%statement1% %statement2% 
 
+echo %statement3%
+
 pause
