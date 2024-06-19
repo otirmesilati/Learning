@@ -1,1 +1,4 @@
 @echo off 
+
+cd %SYSTEMROOT%
+
