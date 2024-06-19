@@ -9,6 +9,6 @@ echo %COMSPEC%
 set statement1="This is the first statement"
 set statement2="This is the second statement"
 
-set 
+set statement3=%statement1% %statement2% 
 
 pause
