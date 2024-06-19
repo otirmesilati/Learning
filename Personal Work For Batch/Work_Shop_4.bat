@@ -2,6 +2,8 @@
 
 cd %SYSTEMROOT%
 
-echo "Let's enter CMD"
+echo "CMD path below"
+
+echo %COMSPEC%
 
 pause
