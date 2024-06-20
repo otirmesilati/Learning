@@ -24,4 +24,6 @@ echo %sum%
 echo "please enter a name"
 set /p name=
 
+echo "and now please enter a number"
+
 pause
