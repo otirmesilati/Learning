@@ -21,4 +21,8 @@ set /a sum=10+10
 
 echo %sum%
 
+set /p name=
+
+
+
 pause
