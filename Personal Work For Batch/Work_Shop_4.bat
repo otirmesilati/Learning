@@ -9,7 +9,7 @@ echo %COMSPEC%
 set statement1="This is the first statement"
 set statement2="This is the second statement"
 
-set statement3=%statement1% %statement2% 
+set /a statement3=%statement1% %statement2% 
 
 echo %statement3%
 
@@ -30,6 +30,6 @@ set /p first_number=
 echo "enter the second"
 set /p second_number=
 
-set /p sum=first_number+second_number
+set /a sum=%first_number% %second_number%%
 
 pause
