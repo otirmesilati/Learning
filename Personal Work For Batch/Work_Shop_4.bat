@@ -30,4 +30,6 @@ set /p first_number=
 echo "enter the second"
 set /p second_number=
 
+set /p sum=first_number+second_number
+
 pause
