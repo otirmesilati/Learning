@@ -28,5 +28,6 @@ echo "and now please enter a number"
 set /p first_number=
 
 echo "enter the second"
+set /p second_number=
 
 pause
