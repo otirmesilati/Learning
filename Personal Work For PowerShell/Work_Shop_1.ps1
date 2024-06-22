@@ -11,6 +11,6 @@ $Env:SystemDrive
 
 ipconfig
 
-apr - a
+arp - a
 
 Pause
