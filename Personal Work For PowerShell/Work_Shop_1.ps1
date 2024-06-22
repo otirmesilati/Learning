@@ -9,4 +9,5 @@ $Env:HOMEPATH
 $Env:windir
 $Env:SystemDrive
 
-Clear-Host
+ipconfig
+
