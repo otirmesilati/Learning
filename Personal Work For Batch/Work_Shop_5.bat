@@ -2,4 +2,6 @@
 
 dir c:\
 
+vol
+
 pause
