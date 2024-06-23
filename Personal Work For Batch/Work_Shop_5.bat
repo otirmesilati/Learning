@@ -4,4 +4,6 @@ dir c:\
 
 vol
 
+vol d:
+
 pause
