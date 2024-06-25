@@ -10,4 +10,6 @@ echo "hi"
 :fun2
 echo "bye"
 
+call :fun1
+
 pause
