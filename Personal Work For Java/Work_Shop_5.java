@@ -53,8 +53,12 @@ public class Work_Shop_5
 
             public Product getInstance(String productType)
             {
-               // checking
+               if(productType == "ConcreteProductA")
                return createdProduct;
+               else
+               {
+                  return null; // change this
+               }
             }
          }
 
