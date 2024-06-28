@@ -9,6 +9,7 @@ goto :fun2
 :fun1
 echo "hi"
 timeout 15
+exit 
 
 :fun2
 echo "bye"
