@@ -13,9 +13,10 @@ call :main 60 90
 goto :displayname
 
 :displayname
+setlocal
 set /P my_name=Enter your name
 echo Your name is %my_name%
-
+endlocal
 goto :eof
 
 pause
