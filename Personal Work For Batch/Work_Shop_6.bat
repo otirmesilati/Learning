@@ -10,9 +10,12 @@ goto :eof
 set /P number1=please enter number
 call :main 60 90
 
+goto :displayname
 
 :displayname
 set /P my_name=Enter your name
 echo Your name is %my_name%
+
+goto :eof
 
 pause
