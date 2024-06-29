@@ -66,11 +66,14 @@ public class Work_Shop_5
                }
                
                else if(productType == "ConcreteProductC")
-               return createdProduct;
+               {
+                  createdProduct = new ConcreteProductC();
+                  return createdProduct;
+               }
 
                else
                {
-                  createdProduct = new ConcreteProductC();
+                  createdProduct = new ConcreteProductD();
                   return createdProduct;
                }
             }
