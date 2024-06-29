@@ -54,7 +54,10 @@ public class Work_Shop_5
             public Product getInstance(String productType)
             {
                if(productType == "ConcreteProductA")
-               return createdProduct;
+               {
+                  createdProduct = new ConcreteProductA();
+                  return createdProduct;
+               }
                
                else if(productType == "ConcreteProductB")
                return createdProduct;
