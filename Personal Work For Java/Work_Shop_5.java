@@ -55,6 +55,11 @@ public class Work_Shop_5
             {
                if(productType == "ConcreteProductA")
                return createdProduct;
+               
+               if(productType == "ConcreteProductB")
+               return createdProduct;
+               
+               
                else
                {
                   return null; // change this
