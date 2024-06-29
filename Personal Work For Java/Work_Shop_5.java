@@ -83,5 +83,13 @@ public class Work_Shop_5
     }
 
 
-private static class FactoryMethodClient{} // test the class here
+private static class FactoryMethodClient{
+
+   public static void main(String[]args)
+   {
+      System.out.println("Let's create some items");
+      // what's next?
+   }
+
+}
 }
