@@ -81,4 +81,7 @@ public class Work_Shop_5
 
          private static class FactoryMethodClient {}
     }
+
+
+private static class FactoryMethodClient{} // test the class here
 }
