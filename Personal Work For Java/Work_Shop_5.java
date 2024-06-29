@@ -60,7 +60,10 @@ public class Work_Shop_5
                }
                
                else if(productType == "ConcreteProductB")
-               return createdProduct;
+               {
+                  createdProduct = new ConcreteProductB();
+                  return createdProduct;
+               }
                
                else if(productType == "ConcreteProductC")
                return createdProduct;
