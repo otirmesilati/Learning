@@ -1,5 +1,3 @@
-import Work_Shop_5.ClassicFactoryMethod.ConcreteFactoryClassA;
-
 public class Work_Shop_5 
 {
     public class ClassicFactoryMethod
