@@ -2,5 +2,11 @@
 #include <iostream> // IO
 using namespace std; // stding!
 
-// hmm //
+class My_Class 
+{
+    public: // Rich API
+    private: // Encapsulation
+};
+
+
 
