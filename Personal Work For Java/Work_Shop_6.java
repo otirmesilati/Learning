@@ -19,5 +19,13 @@ public class Work_Shop_6 {
         {
             public String getTypeCModel();
         }
+
+        private static interface ProductTypeD extends BaseProduct
+        {
+            public String getTypeDModel();
+        }
+
+        
+        
      }
 }
