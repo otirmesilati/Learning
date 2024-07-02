@@ -35,10 +35,12 @@ public class Work_Shop_6 {
 
         private static class FirstProductTypeC implements ProductTypeC
         {
-            public FirstProductTypeC(){}
+            public FirstProductTypeC(){cNumOne = 2;}
             public int getProductNumber() {return 3;}
             public String getTypeCModel(){return "Model 1";}
+            int cNumOne;
         }
         
+        // here comes the second Type c //
      }
 }
