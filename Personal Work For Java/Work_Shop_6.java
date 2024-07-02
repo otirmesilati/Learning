@@ -32,6 +32,13 @@ public class Work_Shop_6 {
             public String getTypeBModel(){return "Model 1";}
             private int bNumOne;
         }
+
+        private static class FirstProductTypeC implements ProductTypeC
+        {
+            public FirstProductTypeC(){}
+            public int getProductNumber() {return 3;}
+            public String getTypeCModel(){return "Model 1";}
+        }
         
      }
 }
