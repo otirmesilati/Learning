@@ -25,7 +25,11 @@ public class Work_Shop_6 {
             public String getTypeDModel();
         }
 
-        
+        private static class FirstProductTypeB implements ProductTypeB
+        {
+            public int getProductNumber() {return 2;}
+            public String getTypeBModel(){return "Model 1";}
+        }
         
      }
 }
