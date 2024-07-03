@@ -43,7 +43,8 @@ public class Work_Shop_6 {
         
         private static class SecondProductTypeC
         {
-            public SecondProductTypeC() {}
+            public SecondProductTypeC() {cNumTwo = 3;}
+            int cNumTwo;
         }
      }
 }
