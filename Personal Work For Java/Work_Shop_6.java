@@ -41,6 +41,9 @@ public class Work_Shop_6 {
             int cNumOne;
         }
         
-        // here comes the second Type c //
+        private static class SecondProductTypeC
+        {
+            public SecondProductTypeC() {}
+        }
      }
 }
