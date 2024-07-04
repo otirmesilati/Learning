@@ -56,6 +56,9 @@ public class Work_Shop_6 {
             int dNumOne;
         }
 
-        
+        private static class SecondProductTypeD
+        {
+            
+        }
      }
 }
