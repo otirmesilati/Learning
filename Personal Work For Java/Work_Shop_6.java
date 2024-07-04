@@ -49,6 +49,11 @@ public class Work_Shop_6 {
             int cNumTwo;
         }
 
+        private static class FirstProductTypeD
+        {
+            int dNumOne;
+        }
+
         
      }
 }
