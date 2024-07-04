@@ -44,7 +44,11 @@ public class Work_Shop_6 {
         private static class SecondProductTypeC
         {
             public SecondProductTypeC() {cNumTwo = 3;}
+            public int getProductNumber() {return 3;}
+            public String getTypeBModel() {return "Model 2";}
             int cNumTwo;
         }
+
+        
      }
 }
