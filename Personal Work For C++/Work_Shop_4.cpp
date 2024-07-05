@@ -7,11 +7,13 @@ class My_Class
     class My_Inline_Point // all definitions will be inside the header //
     {
         public:
-        // rich API//
         bool set_my_x(int x_to_set){ my_x = x_to_set; return true;} // starting with void as default logic //
         bool set_my_y(int y_to_set){ my_y = y_to_set; return true;} // starting with void as default logic //
         
-        private: // Encapsulations
+        int get_my_x(){return my_x;}
+        int get_my_y(){return my_y;}
+
+        private: // When CPPing, think dependencies! IE encapsulation
         int my_x;
         int my_y;
     };
