@@ -8,8 +8,8 @@ class My_Class
     {
         public:
         // rich API//
-        void set_my_x(int x_to_set){} // starting with void as default logic //
-        void set_my_y(int y_to_set){} // starting with void as default logic //
+        bool set_my_x(int x_to_set){ my_x = x_to_set; return true;} // starting with void as default logic //
+        bool set_my_y(int y_to_set){ my_y = y_to_set; return true;} // starting with void as default logic //
         
         private: // Encapsulations
         int my_x;
