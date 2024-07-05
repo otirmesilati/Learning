@@ -30,7 +30,10 @@ class My_Class
     class My_Point
     {
         public:
+        void set_my_x(int x_to_set); // change to boolean
+        // do the same for y //
         
+
         private:
 
         int my_x;
