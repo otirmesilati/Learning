@@ -10,6 +10,10 @@ class My_Class
         bool set_my_x(int x_to_set){ my_x = x_to_set; return true;} // starting with void as default logic //
         bool set_my_y(int y_to_set){ my_y = y_to_set; return true;} // starting with void as default logic //
         
+        bool is_x_Bigger_then_5() {return true;} // default logic
+        int factor_y() {} //default logic
+        float rational_number() {return 0.0f;} // defualt logic
+
         int get_my_x(){return my_x;}
         int get_my_y(){return my_y;}
 
