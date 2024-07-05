@@ -65,7 +65,7 @@ public class Work_Shop_6 {
 
         private static class ThirdProductTypeD
         {
-
+            public int getProductNumber() {return 3;}
         }
      }
 }
