@@ -3,7 +3,11 @@ using namespace std; // stding!
 
 class My_Class 
 {
-    public: // This whole class will be used as a container for more classes //
+    public: 
+    // OOP: this whole My_Class class is a contrainer for 
+    // other classes that deliver ideas. 
+
+    // idea: Inline functions
     class My_Inline_Point // all definitions will be inside the header //
     {
         public:
@@ -21,6 +25,14 @@ class My_Class
         int my_x;
         int my_y;
     };
+
+    class My_Point
+    {
+        public:
+        private:
+    };
+
+
 };
 
 
