@@ -30,9 +30,11 @@ class My_Class
     class My_Point
     {
         public:
-        void set_my_x(int x_to_set); // change to boolean
-        // do the same for y //
-        
+        bool set_my_x(int x_to_set);
+        bool set_my_y(int y_to_set);
+
+        // selectors here //
+
 
         private:
 
