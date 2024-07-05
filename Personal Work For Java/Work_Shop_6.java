@@ -66,6 +66,8 @@ public class Work_Shop_6 {
         private static class ThirdProductTypeD
         {
             public int getProductNumber() {return 3;}
+            public String getTypeBModel() {return "Model 3";}
+            int dNumThree;
         }
      }
 }
