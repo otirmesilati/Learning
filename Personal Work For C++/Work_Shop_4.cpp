@@ -22,6 +22,7 @@ class My_Class
         int get_my_y(){return my_y;}
 
         private: // When CPPing, think dependencies! IE encapsulation
+        
         int my_x;
         int my_y;
     };
@@ -29,7 +30,12 @@ class My_Class
     class My_Point
     {
         public:
+        
         private:
+
+        int my_x;
+        int my_y;
+        // So, Basically going for the same ideas, just not inlined this time //
     };
 
 
