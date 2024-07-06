@@ -33,7 +33,9 @@ class My_Class
         bool set_my_x(int x_to_set);
         bool set_my_y(int y_to_set);
 
-        // selectors here //
+        
+        int get_my_x();
+        int get_my_y();
 
 
         private:
