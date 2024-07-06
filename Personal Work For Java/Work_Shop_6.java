@@ -69,5 +69,10 @@ public class Work_Shop_6 {
             public String getTypeBModel() {return "Model 3";}
             int dNumThree;
         }
+
+        private static interface  Ifactory {} {
+        
+            
+        }
      }
 }
