@@ -53,7 +53,7 @@ bool My_Class::My_Point::set_my_x(int x_to_set){ my_x = x_to_set; return true;}
 bool My_Class::My_Point::set_my_y(int y_to_set){ my_y = y_to_set; return true;}
 
 int My_Class::My_Point::get_my_x(){return my_x;}
-// do the same for y //
+int My_Class::My_Point::get_my_y(){} // finish the logic //
 
 
 

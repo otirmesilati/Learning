@@ -4,7 +4,14 @@ public class Work_Shop_7
     {
         private interface Product
         {
-            
+
         }
+
+        private interface Component
+        {
+
+        }
+
+        // let's create the first component //
     }    
 }
