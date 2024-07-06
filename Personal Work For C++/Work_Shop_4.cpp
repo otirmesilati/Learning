@@ -21,6 +21,8 @@ class My_Class
         int get_my_x(){return my_x;}
         int get_my_y(){return my_y;}
 
+        bool show(){return true;} // finish this //
+
         private: // When CPPing, think dependencies! IE encapsulation
         
         int my_x;
@@ -42,9 +44,11 @@ class My_Class
 
         int my_x;
         int my_y;
-        // So, Basically going for the same ideas, just not inlined this time //
+
     };
 
+
+// here goes the cpp files code //
 
 };
 
