@@ -47,12 +47,15 @@ class My_Class
         int my_y;
 
     };
-
+};
 void my_Class_main();
 
 // here goes the cpp files code //
 
-};
+// cpp the setters //
+bool My_Class::My_Point::set_my_x(int x_to_set){return false;} // changing the logic asap
+
+
 
 
 
