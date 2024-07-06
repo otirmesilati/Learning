@@ -70,9 +70,6 @@ public class Work_Shop_6 {
             int dNumThree;
         }
 
-        private static interface  Ifactory {} {
-        
-            
-        }
+        public static interface  IFactory {public BaseProduct getInstrance(String prodType);} 
      }
 }
