@@ -48,6 +48,7 @@ class My_Class
 
     };
 
+void my_Class_main();
 
 // here goes the cpp files code //
 
