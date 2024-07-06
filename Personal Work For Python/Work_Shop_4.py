@@ -2,7 +2,8 @@
 
 def math_playground():
     
-    # let's scope some addition fun
+    def adding(summand, addend):
+        pass # let's scope some addition fun
 
     # and here let's scope some multiplication 
     
