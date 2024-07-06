@@ -1,4 +1,5 @@
 #pragma once // contrain the header only once //
+#include <iostream> // IO 
 using namespace std; // stding!
 
 class My_Class 
@@ -21,9 +22,9 @@ class My_Class
         int get_my_x(){return my_x;}
         int get_my_y(){return my_y;}
 
-        bool show(){return true;} // finish this //
+        bool show(){ cout << "x = " << my_x << ", y = " << my_y << endl; return true;} // finish this //
 
-        private: // When CPPing, think dependencies! IE encapsulation
+        private:
         
         int my_x;
         int my_y;
