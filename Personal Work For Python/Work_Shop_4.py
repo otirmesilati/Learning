@@ -8,7 +8,8 @@ def math_playground():
     # adding three times
 
     def termial(number_to_termiate):
-        pass
+        for i in range(number_to_termiate):
+            pass
 
     # and here let's scope some multiplication 
     
