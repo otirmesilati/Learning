@@ -9,6 +9,7 @@ public class Work_Shop_7
 
         private interface Component
         {
+            public String toString();
 
         }
 
