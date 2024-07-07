@@ -39,6 +39,7 @@ class My_Class
         int get_my_x();
         int get_my_y();
 
+        bool show();
 
         private:
 
@@ -55,5 +56,5 @@ bool My_Class::My_Point::set_my_y(int y_to_set){ my_y = y_to_set; return true;}
 int My_Class::My_Point::get_my_x(){return my_x;}
 int My_Class::My_Point::get_my_y(){return my_y;}
 
-
+bool My_Class::My_Point::show(){} // finish the logic
 
