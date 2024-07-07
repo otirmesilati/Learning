@@ -70,7 +70,7 @@ int class_points_main()
     My_Class::My_Point second_point;
     second_point.set_my_x(4);
     second_point.set_my_y(5);
-    // add the show function
+    second_point.show();
 
     return 0;
 }
