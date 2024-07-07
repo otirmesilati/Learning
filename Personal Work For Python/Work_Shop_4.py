@@ -10,7 +10,7 @@ def math_playground():
     def termial(number_to_termiate):
         accumulator = 0
         for i in range(number_to_termiate):
-            pass
+            accumulator += number_to_termiate
 
     # and here let's scope some multiplication 
     
