@@ -6,7 +6,7 @@ def math_playground():
         summand + addend
 
     def adding_plus(summand, first_addend, second_addend):
-        pass
+        adding(summand, first_addend) + second_addend
 
     def termial(number_to_termiate):
         accumulator = 0
