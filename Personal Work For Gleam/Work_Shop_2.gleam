@@ -7,6 +7,7 @@ pub fn main()
 
     io.println("Hello, Avi!")
     io.println(text.reverse("Hello, Benny!"))
+    io.prinln("conc" <> "at")
     println("Unqualified fashion for declarations")
 
     // number printing //
