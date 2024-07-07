@@ -60,5 +60,7 @@ bool My_Class::My_Point::show(){ cout << " x = " << my_x << " , y = " << my_y;}
 
 int class_points_main()
 {
-    // add the main logic here //
+    cout << "printing two points";
+
+    return 0;
 }
