@@ -65,6 +65,7 @@ int class_points_main()
     My_Class::My_Inline_Point first_point;
     first_point.set_my_x(15);
     first_point.set_my_y(10);
+    first_point.show();
 
     return 0;
 }
