@@ -18,5 +18,9 @@ pub fn main()
     io.debug(0o27) // octal //
     io.debug(0xF) // hexa //
     io.debug(7.0e-5) //scientific notation //
-    
+
+    // Assignments //
+    let first_var = 5
+    let second_var = "hi"
+    io.println(second_var)    
 }
