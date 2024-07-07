@@ -68,7 +68,9 @@ int class_points_main()
     first_point.show();
 
     My_Class::My_Point second_point;
-    // changing the values //
+    second_point.set_my_x(4);
+    second_point.set_my_y(5);
+    // add the show function
 
     return 0;
 }
