@@ -25,6 +25,8 @@ public class Work_Shop_7
     {
         public String toString() {return (super.toString()).concat(firstImplementationAddon);}
 
+        public void ComponentsFirstMethod() {System.out.println("First Component's, model 1m first operation.");}
+
         private String firstImplementationAddon = ", Model 1";
     }
 }
