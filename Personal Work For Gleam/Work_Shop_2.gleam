@@ -16,5 +16,6 @@ pub fn main()
     io.debug(0b011) // binary //
     io.debug(0o27) // octal //
     io.debug(0xF) // hexa //
+    io.debug(7.0e-5) //scientific notation //
     
 }
