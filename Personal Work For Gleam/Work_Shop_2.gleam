@@ -5,4 +5,5 @@ pub fn main()
 {
     io.println("Hello, Avi!")
     io.println(text.reverse("Hello, Benny!"))
+    println("Unqualified fashion for declarations")
 }
