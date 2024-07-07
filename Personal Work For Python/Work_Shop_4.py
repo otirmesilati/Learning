@@ -3,7 +3,12 @@
 def math_playground():
     
     def adding(summand, addend):
-        pass # let's scope some addition fun
+        summand + addend
+
+    # adding three times
+
+    def termial():
+        pass
 
     # and here let's scope some multiplication 
     
