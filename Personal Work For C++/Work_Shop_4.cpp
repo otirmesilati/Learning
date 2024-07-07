@@ -58,3 +58,7 @@ int My_Class::My_Point::get_my_y(){return my_y;}
 
 bool My_Class::My_Point::show(){ cout << " x = " << my_x << " , y = " << my_y;} 
 
+int class_points_main()
+{
+    // add the main logic here //
+}
