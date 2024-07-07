@@ -12,5 +12,6 @@ pub fn main()
     // number printing //
     io.debug(1)
     debug(2) // unqualified //
+    io.debug(1.0 + 1.5) // No conversions! 
     
 }
