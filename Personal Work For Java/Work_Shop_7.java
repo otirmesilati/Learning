@@ -23,6 +23,8 @@ public class Work_Shop_7
 
     private static class FirstComponentFirstConcrete extends FirstComponent
     {
-        // hmmm //
+        public String toString() {return (super.toString()).concat(firstImplementationAddon);}
+
+        private String firstImplementationAddon = ", Model 1";
     }
 }
