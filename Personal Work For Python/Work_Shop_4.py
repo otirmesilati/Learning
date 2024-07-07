@@ -8,6 +8,7 @@ def math_playground():
     # adding three times
 
     def termial(number_to_termiate):
+        accumulator = 0
         for i in range(number_to_termiate):
             pass
 

@@ -63,6 +63,7 @@ int class_points_main()
     cout << "printing two points";
 
     My_Class::My_Inline_Point first_point;
+    first_point.set_my_x(15);
 
     return 0;
 }
