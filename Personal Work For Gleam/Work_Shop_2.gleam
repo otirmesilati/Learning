@@ -23,5 +23,6 @@ pub fn main()
     let first_var = 5
     let second_var = "hi"
     io.println(second_var)
-    let first_var = second_var    
+    let first_var = second_var
+    let _third_var = 2    
 }
