@@ -13,7 +13,7 @@ pub fn main()
     // number printing //
     io.debug(1)
     debug(2) // unqualified //
-    io.debug(1.0 + 1.5) // No conversions! 
+    io.debug(1.0 + 1.5) // No conversions! // 
     io.debug(0b011) // binary //
     io.debug(0o27) // octal //
     io.debug(0xF) // hexa //
@@ -24,5 +24,5 @@ pub fn main()
     let second_var = "hi"
     io.println(second_var)
     let first_var = second_var
-    let _third_var = 2    
+    let _third_var : String = 2    
 }
