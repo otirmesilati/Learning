@@ -1,3 +1,7 @@
 
+pub type Id = Int
 
-bub fn main(){} // we will start with type aliases //
+pub fn main()
+{
+    let first_var: Id = 1
+} 
