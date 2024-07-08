@@ -5,8 +5,8 @@ class My_Class
     {
         public:
 
-        bool set_first() {return true;} // finish //
-        // the implementation and do the second aswell //
+        bool set_first(char input_to_set) {first = input_to_set; return true;}
+        bool set_second(char input_to_set) {second = input_to_set; return true;}
 
         private:
 
