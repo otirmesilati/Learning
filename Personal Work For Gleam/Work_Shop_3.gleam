@@ -11,4 +11,5 @@ pub fn main()
 
     let my_list = [1,2,3,4,5]
     io.debug(my_list)
+    let my_second_list = [0, ..my_list]
 } 

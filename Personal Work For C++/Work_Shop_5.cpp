@@ -1,3 +1,9 @@
+#pragma once
+using namespace std;
+
+//if not define macro goes here //
+#define TWO_DIG
+
 class My_First_Class
 {
 
@@ -17,4 +23,4 @@ class My_First_Class
 
 };
 
-inline void My_Class::Two_Digits::show() {}
+inline void My_First_Class::Two_Digits::show() {} // finish implementation here //
