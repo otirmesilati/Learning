@@ -24,5 +24,6 @@ pub fn main()
     let second_var = "hi"
     io.println(second_var)
     let first_var = second_var
-    let _third_var : String = 2    
+    let _third_var : String = 2
+        
 }
