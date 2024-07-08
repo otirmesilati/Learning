@@ -24,3 +24,13 @@ class My_First_Class
 };
 
 inline void My_First_Class::Two_Digits::show() {} // finish implementation here //
+
+class No_Default_Point
+{
+
+    
+
+    private:
+
+    int my_x, my_y;
+};
