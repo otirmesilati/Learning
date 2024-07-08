@@ -209,7 +209,7 @@ void lecture_2_main();
 #endif // !LECTURE 2
 
 
-#include "Lecture2.h"
+// #include "Lecture2.h"
 
 // point section //
 

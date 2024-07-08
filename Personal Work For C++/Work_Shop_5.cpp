@@ -1,1 +1,7 @@
-class My_Class{};
+class My_Class
+{
+
+    class Two_Digits{};
+
+
+};
