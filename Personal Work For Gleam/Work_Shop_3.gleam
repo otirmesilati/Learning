@@ -17,3 +17,10 @@ pub fn main()
     let my_second_list = [0, ..my_list]
 
 } 
+
+// function access modifier in gleam is private //
+
+fn my_doubling(first_var: Int) -> Int
+{
+    // this function is going to double the number //
+}

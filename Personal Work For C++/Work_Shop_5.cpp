@@ -28,7 +28,7 @@ inline void My_First_Class::Two_Digits::show() {} // finish implementation here 
 class No_Default_Point
 {
 
-    
+    No_Default_Point(int x_input, int y_input) { my_x = x_input; my_y = y_input; } 
 
     private:
 
