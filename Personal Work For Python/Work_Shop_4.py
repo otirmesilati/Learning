@@ -13,7 +13,8 @@ def math_playground():
         for i in range(number_to_termiate):
             accumulator += number_to_termiate
 
-    # and here let's scope some multiplication 
+    def multiplication(multiplier, multiplicand):
+        pass
     
     def squaring(number_2_b_squared):
         return number_2_b_squared ** 2
