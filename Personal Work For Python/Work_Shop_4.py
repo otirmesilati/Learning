@@ -14,7 +14,7 @@ def math_playground():
             accumulator += number_to_termiate
 
     def multiplication(multiplier, multiplicand):
-        pass
+        multiplicand * multiplier
     
     def squaring(number_2_b_squared):
         return number_2_b_squared ** 2
