@@ -22,5 +22,6 @@ pub fn main()
     // Assignments //
     let first_var = 5
     let second_var = "hi"
-    io.println(second_var)    
+    io.println(second_var)
+    let first_var = second_var    
 }

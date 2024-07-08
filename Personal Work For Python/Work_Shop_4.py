@@ -15,6 +15,8 @@ def math_playground():
 
     def multiplication(multiplier, multiplicand):
         multiplicand * multiplier
+
+    # more multiplication
     
     def squaring(number_2_b_squared):
         return number_2_b_squared ** 2
