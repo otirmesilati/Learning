@@ -47,5 +47,5 @@ pub fn do_once(inc_var: Int) -> Int
 
 pub fn do_twice(argu: Int, func: fn(Int) -> Int) -> Int
 {
-    
+  func(func(argu))  
 } 
