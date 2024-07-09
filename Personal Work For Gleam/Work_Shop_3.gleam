@@ -25,7 +25,10 @@ fn addition(mand: Int, gend: Int) -> Int
     mand + gend
 }
 
-fn addition_three_numbers(first, second, third) -> Int{}
+fn addition_three_numbers(first, second, third) -> Int
+{
+    first + second + third
+}
 
 fn multiply(plier: Int, plicand: Int) -> Int
 {
@@ -36,3 +39,9 @@ fn my_doubling(first_var: Int) -> Int
 {
     multiply(first_var * 2)
 }
+
+pub fn do_once(inc_var: Int) -> Int
+{
+    inc_var + 1
+}
+
