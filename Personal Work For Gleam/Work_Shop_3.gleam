@@ -20,6 +20,11 @@ pub fn main()
 
 // function access modifier in gleam is private //
 
+fn addition(mand: Int, gend: Int) -> Int
+{
+    mand + gend
+}
+
 fn multiply(plier: Int, plicand: Int) -> Int
 {
     plier * plicand
