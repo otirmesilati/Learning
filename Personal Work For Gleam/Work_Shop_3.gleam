@@ -45,3 +45,4 @@ pub fn do_once(inc_var: Int) -> Int
     inc_var + 1
 }
 
+pub fn do_twice() -> Int{} // higher order function //
