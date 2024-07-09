@@ -27,5 +27,5 @@ fn multiply(plier: Int, plicand: Int) -> Int
 
 fn my_doubling(first_var: Int) -> Int
 {
-    // use multiply here //
+    multiply(first_var * 2)
 }
