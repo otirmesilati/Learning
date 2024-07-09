@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 using namespace std;
 
 //if not define macro goes here //
@@ -30,6 +31,7 @@ class No_Default_Point
 
     No_Default_Point(int x_input, int y_input) { my_x = x_input; my_y = y_input; } 
 
+    bool show() { cout << "(" << my_x << "," << my_y << ")" << endl ; return true;}
     private:
 
     int my_x, my_y;
