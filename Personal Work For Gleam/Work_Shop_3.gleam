@@ -25,6 +25,8 @@ fn addition(mand: Int, gend: Int) -> Int
     mand + gend
 }
 
+fn addition_three_numbers(first, second, third) -> Int{}
+
 fn multiply(plier: Int, plicand: Int) -> Int
 {
     plier * plicand
