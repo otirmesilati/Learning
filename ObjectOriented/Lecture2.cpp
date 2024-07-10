@@ -61,7 +61,7 @@ private:
 
 inline void TwoDigits::show() { cout << "The number is: " << tens << ones << endl << endl; }
 
-
+	
 class NoDefualtPoint
 {
 
