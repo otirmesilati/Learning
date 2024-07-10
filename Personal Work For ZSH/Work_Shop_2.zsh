@@ -13,5 +13,8 @@ touch styles.css script.js
 
 cd zsh_test
 rm index.html
+rm style.css
+rm script.js
+
 
 # absolute and relative paths are available
