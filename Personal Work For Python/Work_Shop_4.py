@@ -15,10 +15,10 @@ def math_playground():
         return accumulator
 
     def multiplication(multiplier, multiplicand):
-        multiplicand * multiplier
+        return multiplicand * multiplier
 
     def multiplication_plus(multiplicand, first_multiplier, second_multiplier):
-        multiplicand * first_multiplier * second_multiplier
+        return multiplicand * first_multiplier * second_multiplier
     
     def squaring(number_2_b_squared):
         return number_2_b_squared ** 2

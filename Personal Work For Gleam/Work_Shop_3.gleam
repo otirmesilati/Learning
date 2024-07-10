@@ -9,6 +9,7 @@ pub fn main()
 {
     let first_var: Id = 1
     let second_var: Int = 2
+    let my_func = fn(x) {x + 1}
 
     // lists // 
 
