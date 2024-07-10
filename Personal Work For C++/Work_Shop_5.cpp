@@ -36,3 +36,8 @@ class No_Default_Point
 
     int my_x, my_y;
 };
+
+class Yes_Defualt_Point
+{
+    
+};
