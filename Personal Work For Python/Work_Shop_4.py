@@ -26,8 +26,8 @@ def math_playground():
     def sum_of_squares(first_to_square, second_to_square): 
         return squaring(first_to_square) + squaring(second_to_square)
 
-    def multiplication_of_squares():
-        pass # Finish the logic
+    def multiplication_of_squares(first, second):
+        return squaring(first) * squaring(second)
     
   
 
