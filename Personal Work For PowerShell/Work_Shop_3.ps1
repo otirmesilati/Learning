@@ -1,6 +1,4 @@
-set
-
-echo %username%
+Write-Output $Env:USERNAME
 
 echo %homedrive%
 

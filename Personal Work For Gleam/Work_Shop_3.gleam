@@ -10,11 +10,12 @@ pub fn main()
     let first_var: Id = 1
     let second_var: Int = 2
     let my_func = fn(x) {x + 1}
-    // here will go the function capture //
+    let my_func2 = addition(2, x)
 
     // lists // 
 
     let my_list = [1,2,3,4,5]
+    io.debug(3)
     io.debug(my_list)
     let my_second_list = [0, ..my_list]
 
