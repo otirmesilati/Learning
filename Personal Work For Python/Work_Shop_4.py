@@ -11,7 +11,8 @@ def math_playground():
     def termial(number_to_termiate):
         accumulator = 0
         for i in range(number_to_termiate):
-            accumulator += number_to_termiate
+            accumulator = accumulator + number_to_termiate
+        return accumulator
 
     def multiplication(multiplier, multiplicand):
         multiplicand * multiplier
