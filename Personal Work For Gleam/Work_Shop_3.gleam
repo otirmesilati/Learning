@@ -10,6 +10,7 @@ pub fn main()
     let first_var: Id = 1
     let second_var: Int = 2
     let my_func = fn(x) {x + 1}
+    // here will go the function capture //
 
     // lists // 
 
@@ -49,4 +50,5 @@ pub fn do_once(inc_var: Int) -> Int
 pub fn do_twice(argu: Int, func: fn(Int) -> Int) -> Int
 {
   func(func(argu))  
+  // some high level functioning
 } 
