@@ -16,5 +16,6 @@ rm index.html
 rm style.css
 rm script.js
 
+rmdir zsh_test zsh_testim
 
 # absolute and relative paths are available
