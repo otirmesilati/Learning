@@ -1,8 +1,6 @@
 Write-Output $Env:USERNAME
-
 Write-Output $Env:COMPUTERNAME
-
-echo %homedrive%
+Write-Output $Env:HOMEDRIVE
 
 echo %homepath% 
 

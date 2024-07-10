@@ -28,6 +28,9 @@ def math_playground():
 
     def multiplication_of_squares(first, second):
         return squaring(first) * squaring(second)
-    
+
+    # Scoping inside to use the functions 
+        
     print(adding(1,2))
     print(adding_plus(1,2,3))
+    print(termial(3))
