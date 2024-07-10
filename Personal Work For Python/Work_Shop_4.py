@@ -29,5 +29,4 @@ def math_playground():
     def multiplication_of_squares(first, second):
         return squaring(first) * squaring(second)
     
-  
-
+    print(adding(1,2))
