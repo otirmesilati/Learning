@@ -30,3 +30,4 @@ def math_playground():
         return squaring(first) * squaring(second)
     
     print(adding(1,2))
+    print(adding_plus(1,2,3))

@@ -39,5 +39,6 @@ class No_Default_Point
 
 class Yes_Defualt_Point
 {
-    
+    public:
+    private:
 };
