@@ -10,6 +10,8 @@ start code.exe
 :: diffrentiation (opening last conf size probably best) 
 
 
-:: networking 
+:: networking
+ping google.com -t 
+::CTRL+C to stop run and regain user control 
 ipconfig 
 arp -a
