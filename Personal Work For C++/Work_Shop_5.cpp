@@ -60,7 +60,9 @@ class Yes_Default_Point
     void set_y(int);
 
     // point selectors //
-    
+    int get_x();
+    int get_y();
+
     private:
 
     int my_x, my_y;
