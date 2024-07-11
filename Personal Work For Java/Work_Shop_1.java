@@ -27,7 +27,13 @@ public class Work_Shop_1 {
 		System.out.println(oe.myField);
 	}
 	
-	
+	/* so here we'll explain the design pttaerns:
+	 * 1. CREATIONAL:
+	 * 
+	 * 2. BEHAVIOURAL:
+	 * 
+	 * 3. CONCURRENT:
+	 */
 	
 
 }
