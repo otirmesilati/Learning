@@ -55,6 +55,12 @@ class Yes_Default_Point
 
     ~Yes_Default_Point();
 
+    // point mutators //
+    void set_x(int);
+    void set_y(int);
+
+    // point selectors //
+    
     private:
 
     int my_x, my_y;
