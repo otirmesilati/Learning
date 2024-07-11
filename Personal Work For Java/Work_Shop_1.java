@@ -40,10 +40,7 @@ public class Work_Shop_1 {
 	 
 	 // package MorePatterns // 
 	  
-	  interface My_Cloneable extends Cloneable 
-	  {
-		 // ?? //
-	  }
+	  interface My_Cloneable extends Cloneable { Object clone() throws CloneNotSupportedException; }
 	
 
 }
