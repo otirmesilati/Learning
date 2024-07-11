@@ -50,6 +50,8 @@ public class Work_Shop_1 {
 		{
 			return super.clone();
 		}
-	  }	
+	  }
+	  
+	  class My_Singleton {}
 
 }

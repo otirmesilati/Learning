@@ -11,6 +11,8 @@ start code.exe
 
 
 :: networking
+ping google.com
+ping /n 9 google.com
 ping google.com -t 
 ::CTRL+C to stop run and regain user control 
 ipconfig 
