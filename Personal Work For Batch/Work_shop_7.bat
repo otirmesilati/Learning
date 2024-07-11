@@ -2,9 +2,11 @@ systeminfo
 
 :: playing with start
 
-start /separate cmd
-start /shared cmd
+start /separate notepad
+start /shared notepad
+
+start /low notepad
 
 start "jerry" cmd
-start /max cmd
-start /min cmd
+start /max notepad
+start /min notepad
