@@ -12,6 +12,8 @@ start code.exe
 
 :: networking
 ping google.com
+ping /4 google.com 
+:: pinging with IPV4 - preaty similar to defualt
 ping /n 9 google.com
 ping google.com -t 
 ::CTRL+C to stop run and regain user control 
