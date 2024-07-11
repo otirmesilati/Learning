@@ -1,0 +1,1 @@
+start "jerry" cmd
