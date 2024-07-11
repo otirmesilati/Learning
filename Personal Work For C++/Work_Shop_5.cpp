@@ -26,6 +26,8 @@ class My_First_Class
 
 inline void My_First_Class::Two_Digits::show() {} // finish implementation here //
 
+// Point class with no default C'tor 
+
 class No_Default_Point
 {
 
@@ -37,8 +39,17 @@ class No_Default_Point
     int my_x, my_y;
 };
 
-class Yes_Defualt_Point
+// Point class with: defualt C'tor 
+
+class Yes_Default_Point
 {
+
     public:
+
+    Yes_Default_Point(); // def C'tor
+    Yes_Default_Point(int, int); // x/y C'tor 
+
     private:
+
+    int my_x, my_y;
 };
