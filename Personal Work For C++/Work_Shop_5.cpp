@@ -6,6 +6,7 @@ using namespace std;
 //if not define macro goes here //
 #ifndef TWO_DIG
 #ifndef NO_CTOR_POINT
+#ifndef YES_CTOR_POINT
 
 #define TWO_DIG
 #define NO_CTOR_POINT
@@ -63,12 +64,21 @@ class Yes_Default_Point
     int get_x();
     int get_y();
 
+    bool show();
+
     private:
 
     int my_x, my_y;
 };
 
+// Composation of C'tor + D'tor point into line class //
+
+#endif // YES_CTOR_POINT
 #endif // NO_CTOR_POINT
 #endif // TWO_DIG
 
 inline void My_First_Class::Two_Digits::show() {} // finish implementation here //
+
+Yes_Default_Point::Yes_Default_Point(){ my_x = 0; my_y = 0; }
+
+// implementation of point with C'tor and D'tor
