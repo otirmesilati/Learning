@@ -16,5 +16,7 @@ start /normal notepad
 start /high notepad
 start /realtime notepad
 
+start /wait notepad
+
 start /abovenormal notepad
 start /belownormal notepad
