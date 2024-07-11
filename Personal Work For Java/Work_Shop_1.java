@@ -29,11 +29,21 @@ public class Work_Shop_1 {
 	
 	/* so here we'll explain the design pttaerns:
 	 * 1. CREATIONAL:
-	 * 
+	 * - Clonable: classes implementing the clone behavior 
+	 * an interface which includes a clone method
+	 * - Singleton: ??
 	 * 2. BEHAVIOURAL:
 	 * 
 	 * 3. CONCURRENT:
 	 */
+
+	 
+	 // package MorePatterns // 
+	  
+	  interface My_Cloneable extends Cloneable 
+	  {
+		 // ?? //
+	  }
 	
 
 }
