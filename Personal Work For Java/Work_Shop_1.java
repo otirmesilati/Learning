@@ -1,6 +1,8 @@
 import java.awt.Point;
 import java.util.Random;
 
+import javax.lang.model.type.NullType;
+
 @SuppressWarnings ("unused")
 public class Work_Shop_1 {
 	
@@ -56,7 +58,16 @@ public class Work_Shop_1 {
 	  {
 		// get instance should be public //
 
-		// c'tor should be private //
+		public static My_Singleton getInstance() 
+		{
+			return wrappedInstance;
+		}
+
+		// here goes the printing function //
+
+		private My_Singleton(){}
+
+		private static My_Singleton wrappedInstance;
 	  }
 
 }
