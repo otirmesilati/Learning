@@ -56,7 +56,6 @@ public class Work_Shop_1 {
 	  
 	  class My_Singleton 
 	  {
-		// get instance should be public //
 
 		public static My_Singleton getInstance() 
 		{
