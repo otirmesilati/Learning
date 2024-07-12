@@ -52,6 +52,11 @@ public class Work_Shop_1 {
 		}
 	  }
 	  
-	  class My_Singleton {}
+	  class My_Singleton 
+	  {
+		// get instance should be public //
+
+		// c'tor should be private //
+	  }
 
 }
