@@ -86,6 +86,6 @@ Yes_Default_Point::Yes_Default_Point(int x_to_set, int y_to_set)
     my_x = x_to_set;
     my_y = y_to_set;
 }
-
+bool Yes_Default_Point::set_x(int x_to_set){} // finish implementation
 
 // implementation of point with C'tor and D'tor
