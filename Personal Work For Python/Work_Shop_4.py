@@ -34,3 +34,7 @@ def math_playground():
     print(adding(1,2))
     print(adding_plus(1,2,3))
     print(termial(3))
+    print(multiplication(2,3))
+    print(multiplication_plus(2,3,4))
+    
+    # Going after each of the functions defined above    
