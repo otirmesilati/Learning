@@ -57,8 +57,8 @@ class Yes_Default_Point
     ~Yes_Default_Point();
 
     // point mutators //
-    void set_x(int);
-    void set_y(int);
+    bool set_x(int);
+    bool set_y(int);
 
     // point selectors //
     int get_x();
@@ -86,4 +86,6 @@ Yes_Default_Point::Yes_Default_Point(int x_to_set, int y_to_set)
     my_x = x_to_set;
     my_y = y_to_set;
 }
+
+
 // implementation of point with C'tor and D'tor
