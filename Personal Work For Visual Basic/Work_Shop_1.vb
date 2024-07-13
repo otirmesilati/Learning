@@ -6,4 +6,8 @@ Public Class Form1
     MsgBox("I hope you are well")
 
     End Sub
+
+    Private Sub btnGo_Click(sender As Object, e As EventArgs) Handles btnGo_Click
+
+    End Sub
 End Class
