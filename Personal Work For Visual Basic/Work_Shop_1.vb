@@ -14,7 +14,10 @@ Public Class Form1
     End Sub
 
     Private Sub varBtn_Click(sender As Object, e As EventArgs) Handles varBtn_Click
-
+        
+        Dim stFirstName As String
+        stFirstName = "Kevin"
+    
     End Sub
 
 
