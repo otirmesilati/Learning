@@ -23,7 +23,9 @@ Public Class Form1
 
     Private Sub btnDaTypes_Click(sender As Object, e As EventArgs) Handles btnDaTypes.Click
 
-    
+    Dim stMake As String
+
+    stMake = "Ford"
 
     End Sub
 
