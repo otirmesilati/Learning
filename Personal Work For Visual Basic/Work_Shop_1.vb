@@ -1,5 +1,5 @@
 Public Class Form1
-    Private Sub brnStart_Click(sender As Object, e As EventArgs) Handles BtnStart.brnStart_Click
+    Private Sub brnStart_Click(sender As Object, e As EventArgs) Handles BtnStart.brnStart.Click
     
     MsgBox("Hello World")
     MsgBox("How Are you?")
@@ -7,19 +7,24 @@ Public Class Form1
 
     End Sub
 
-    Private Sub btnGo_Click(sender As Object, e As EventArgs) Handles btnGo_Click
+    Private Sub btnGo_Click(sender As Object, e As EventArgs) Handles btnGo.Click
 
     MessageBox.Show("Hi")
 
     End Sub
 
-    Private Sub varBtn_Click(sender As Object, e As EventArgs) Handles varBtn_Click
+    Private Sub varBtn_Click(sender As Object, e As EventArgs) Handles varBtn.Click
         
         Dim stFirstName As String
         stFirstName = "Kevin"
-        MessageBox.Show(stFirstName)
+        MessageBox.Show("Hello" & stFirstName)
     
     End Sub
 
+    Private Sub btnDaTypes_Click(sender As Object, e As EventArgs) Handles btnDaTypes.Click
+
+    
+
+    End Sub
 
 End Class
