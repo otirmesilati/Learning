@@ -25,9 +25,12 @@ Public Class Form1
 
     Dim stMake As String
     Dim stModel As String
+    Dim iDoors As Integer
 
     stMake = "Ford"
     stModel - "Escort"
+    iDoors = 4
+
     End Sub
 
 End Class
