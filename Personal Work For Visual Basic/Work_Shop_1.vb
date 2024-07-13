@@ -26,10 +26,12 @@ Public Class Form1
     Dim stMake As String
     Dim stModel As String
     Dim iDoors As Integer
+    Dim stColor As String
 
     stMake = "Ford"
     stModel - "Escort"
     iDoors = 4
+    stColor = "red"
 
     End Sub
 
