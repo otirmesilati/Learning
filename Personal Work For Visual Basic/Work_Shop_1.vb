@@ -10,6 +10,12 @@ Public Class Form1
     Private Sub btnGo_Click(sender As Object, e As EventArgs) Handles btnGo_Click
 
     MessageBox.Show("Hi")
-    
+
     End Sub
+
+    Private Sub varBtn_Click(sender As Object, e As EventArgs) Handles varBtn_Click
+
+    End Sub
+
+
 End Class
