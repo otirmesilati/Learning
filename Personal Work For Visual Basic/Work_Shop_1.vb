@@ -17,6 +17,7 @@ Public Class Form1
         
         Dim stFirstName As String
         stFirstName = "Kevin"
+        MessageBox.Show(stFirstName)
     
     End Sub
 
