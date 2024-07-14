@@ -76,6 +76,14 @@ class My_Line
 {
     public:
 
+    // C'tors //
+    My_Line();
+    My_Line(Yes_Default_Point, Yes_Default_Point);
+
+    // Imp. Inline D'tor //
+    ~My_Line() {}
+
+
 
     private:
 
