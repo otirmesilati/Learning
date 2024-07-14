@@ -28,6 +28,8 @@ Public Class Form1
     Dim iDoors As Integer
     Dim stColor As String
     Dim iEngineSize As Integer
+    Dim decPrice As Decimal
+    Dim dtDateRegistered As Date
 
 
     stMake = "Ford"
@@ -35,6 +37,8 @@ Public Class Form1
     iDoors = 4
     stColor = "red"
     iEngineSize = 1200
+    decPrice = 999.99
+    dtDateRegistered = #11/2/2020#
 
     End Sub
 
