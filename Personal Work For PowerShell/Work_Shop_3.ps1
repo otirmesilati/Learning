@@ -1,8 +1,7 @@
 Write-Output $Env:USERNAME
 Write-Output $Env:COMPUTERNAME
 Write-Output $Env:HOMEDRIVE
-
-echo %homepath% 
+Write-Output $Env:HOMEPATH
 
 echo %windir%
 
