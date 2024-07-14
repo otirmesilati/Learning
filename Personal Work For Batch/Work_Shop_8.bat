@@ -1,5 +1,6 @@
 @echo off
 
+start Desktop
 start chrome.exe
 start githubdesktop.exe
 start eclipse.exe
@@ -20,3 +21,5 @@ ping google.com -t
 ::CTRL+C to stop run and regain user control 
 ipconfig 
 arp -a
+
+:: no need to pause on scripts
