@@ -65,8 +65,12 @@ public class Work_Shop_1 {
 		public static boolean printSingleton()
 		{
 			if(wrappedInstance == null) 
-			{} // print NO SINGLETON //
-			// Make a new singleton instance // 
+			{
+				System.out.println("Singleton? maybe later :)");
+			    // wrappedInstance = new My_Singleton();
+                return true;
+			} 
+			
 			return true;
 		}
 
