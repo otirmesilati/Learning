@@ -27,11 +27,14 @@ Public Class Form1
     Dim stModel As String
     Dim iDoors As Integer
     Dim stColor As String
+    Dim iEngineSize As Integer
+
 
     stMake = "Ford"
     stModel - "Escort"
     iDoors = 4
     stColor = "red"
+    iEngineSize = 1200
 
     End Sub
 
