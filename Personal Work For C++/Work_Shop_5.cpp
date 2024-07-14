@@ -79,6 +79,8 @@ class Yes_Default_Point
 
 inline void My_First_Class::Two_Digits::show() {} // finish implementation here //
 
+
+// implementation of point with C'tor and D'tor
 // overriding the default c'tor creation //
 Yes_Default_Point::Yes_Default_Point(){ my_x = 0; my_y = 0; }
 Yes_Default_Point::Yes_Default_Point(int x_to_set, int y_to_set)
@@ -89,4 +91,5 @@ Yes_Default_Point::Yes_Default_Point(int x_to_set, int y_to_set)
 bool Yes_Default_Point::set_x(int x_to_set){ my_x = x_to_set; return true; }
 bool Yes_Default_Point::set_y(int y_to_set){ my_y = y_to_set; return true; }
 
-// implementation of point with C'tor and D'tor
+bool Yes_Default_Point::show(){ cout << "(" <<  my_x << "," << my_y << ")" << endl; return true;}
+
