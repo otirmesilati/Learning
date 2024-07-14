@@ -64,6 +64,8 @@ public class Work_Shop_1 {
 
 		// here goes the printing function //
 
+		public static boolean printSingleton(){ return true;}
+
 		private My_Singleton(){}
 
 		private static My_Singleton wrappedInstance;
