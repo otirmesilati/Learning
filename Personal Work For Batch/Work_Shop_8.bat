@@ -1,5 +1,6 @@
 @echo off
 
+start chrome.exe
 start githubdesktop.exe
 start eclipse.exe
 start pycharm64.exe
