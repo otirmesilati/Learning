@@ -19,6 +19,8 @@ pub fn main()
     io.debug(my_list)
     let my_second_list = [0, ..my_list]
 
+    // higher order function use //
+
 } 
 
 // function access modifier in gleam is private //
@@ -61,6 +63,11 @@ pub fn zero_level_abstraction_1(to_inc: Int) -> Int
 
 pub fn zero_level_abstraction_2(to_conc: string) -> string
 {
-    // concat here //
+    to_conc <> "!"
 }
-// level one abstraction - will work on int and string // 
+
+pub fn first_level_abstraction(my_func: fn, argu: value) -> value  
+{ 
+    my_func(argu) // Abstracting - composing the input function //
+}
+
