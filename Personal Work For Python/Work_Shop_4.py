@@ -28,8 +28,6 @@ def math_playground():
 
     def multiplication_of_squares(first, second):
         return squaring(first) * squaring(second)
-
-    # Scoping inside to use the functions 
         
     print(adding(1,2))
     print(adding_plus(1,2,3))
@@ -38,5 +36,14 @@ def math_playground():
     print(multiplication_plus(2,3,4))
     print(squaring(4))
     print(sum_of_squares(2,3))
+    print(multiplication_of_squares(4,5))
+
+    # First Order functions - sent as parameters
+
+    # A function for summing
+    # A function for multiplication
+    # The Composite function
+
+    # first Order functions - returned as data
+
     
-    # Going after each of the functions defined above    
