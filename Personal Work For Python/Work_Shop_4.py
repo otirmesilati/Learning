@@ -39,7 +39,20 @@ def math_playground():
     print(multiplication_of_squares(4,5))
 
     # First Order functions - sent as parameters
+def fof_functioning():
 
+    def inc(argu):
+        return argu + 1
+    
+    def inc_fof():
+        pass
+
+    def sum_f():
+        pass
+
+    def mult_f():
+        pass
+    
     # A function for summing
     # A function for multiplication
     # The Composite function
