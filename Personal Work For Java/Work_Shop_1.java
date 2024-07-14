@@ -62,9 +62,13 @@ public class Work_Shop_1 {
 			return wrappedInstance;
 		}
 
-		// here goes the printing function //
-
-		public static boolean printSingleton(){ return true;}
+		public static boolean printSingleton()
+		{
+			if(wrappedInstance == null) 
+			{} // print NO SINGLETON //
+			// Make a new singleton instance // 
+			return true;
+		}
 
 		private My_Singleton(){}
 
