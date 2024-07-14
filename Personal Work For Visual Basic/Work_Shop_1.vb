@@ -40,6 +40,10 @@ Public Class Form1
     decPrice = 999.99
     dtDateRegistered = #11/2/2020#
 
+    MessageBox.Show("The car is " & stMake & vbNewLine & stModel & vbNewLine &
+                        iDoors & vbNewLine & stColor & vbNewLine & bTaxed & vbNewLine &
+                        iEngineSize & vbNewLine & decPrice & vbNewLine & dtDateRegistered)
+
     End Sub
 
 End Class
