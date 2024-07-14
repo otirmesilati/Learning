@@ -4,6 +4,7 @@ using namespace std;
 
 
 //if not define macro goes here //
+// Make dependencies pre-proc references for line //
 #ifndef TWO_DIG
 #ifndef NO_CTOR_POINT
 #ifndef YES_CTOR_POINT
@@ -69,6 +70,16 @@ class Yes_Default_Point
     private:
 
     int my_x, my_y;
+};
+
+class My_Line
+{
+    public:
+
+
+    private:
+
+    Yes_Default_Point first_point, second_point;
 };
 
 // Composation of C'tor + D'tor point into line class //
