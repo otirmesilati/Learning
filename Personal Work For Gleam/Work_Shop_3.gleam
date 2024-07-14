@@ -10,7 +10,7 @@ pub fn main()
     let first_var: Id = 1
     let second_var: Int = 2
     let my_func = fn(x) {x + 1}
-    let my_func2 = addition(2, x)
+    let my_func2 = addition(2, _)
 
     // lists // 
 
@@ -53,3 +53,11 @@ pub fn do_twice(argu: Int, func: fn(Int) -> Int) -> Int
   func(func(argu))  
   // some high level functioning
 } 
+
+pub fn zero_level_abstraction_1(argu: Int) -> Int 
+{
+    // add one to the number //
+}
+
+// another zero layer function - will handle strings //
+// level one abstraction - will work on int and string // 
