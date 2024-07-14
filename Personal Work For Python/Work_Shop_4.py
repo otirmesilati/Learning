@@ -37,5 +37,6 @@ def math_playground():
     print(multiplication(2,3))
     print(multiplication_plus(2,3,4))
     print(squaring(4))
+    print(sum_of_squares(2,3))
     
     # Going after each of the functions defined above    
