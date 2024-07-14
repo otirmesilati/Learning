@@ -36,5 +36,6 @@ def math_playground():
     print(termial(3))
     print(multiplication(2,3))
     print(multiplication_plus(2,3,4))
+    print(squaring(4))
     
     # Going after each of the functions defined above    
