@@ -71,12 +71,25 @@ public class Work_Shop_1 {
                 return true;
 			} 
 			
+			else System.out.println("Created");
+
 			return true;
 		}
 
 		private My_Singleton(){}
 
 		private static My_Singleton wrappedInstance;
+	  }
+
+	  class My_Factory
+	  {
+		// ?? //
+	  }
+
+	  class My_builder
+	  {
+		// Build components //
+		// build concrete class //
 	  }
 
 }
