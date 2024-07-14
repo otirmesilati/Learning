@@ -54,10 +54,13 @@ pub fn do_twice(argu: Int, func: fn(Int) -> Int) -> Int
   // some high level functioning
 } 
 
-pub fn zero_level_abstraction_1(argu: Int) -> Int 
+pub fn zero_level_abstraction_1(to_inc: Int) -> Int 
 {
-    // add one to the number //
+    to_inc + 1
 }
 
-// another zero layer function - will handle strings //
+pub fn zero_level_abstraction_2(to_conc: string) -> string
+{
+    // concat here //
+}
 // level one abstraction - will work on int and string // 
