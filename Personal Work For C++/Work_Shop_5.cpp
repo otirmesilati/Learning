@@ -8,10 +8,12 @@ using namespace std;
 #ifndef TWO_DIG
 #ifndef NO_CTOR_POINT
 #ifndef YES_CTOR_POINT
+#ifndef MY_LINE
 
 #define TWO_DIG
 #define NO_CTOR_POINT
 #define YES_CTOR_POINT
+#define MY_LINE
 
 class My_First_Class
 {
@@ -83,15 +85,18 @@ class My_Line
     // Imp. Inline D'tor //
     ~My_Line() {}
 
+    Yes_Default_Point get_first();
+    Yes_Default_Point get_second();
 
+    bool set_first(Yes_Default_Point);
+    bool set_second(Yes_Default_Point);
 
     private:
 
     Yes_Default_Point first_point, second_point;
 };
 
-// Composation of C'tor + D'tor point into line class //
-
+#endif // MY_LINE
 #endif // YES_CTOR_POINT
 #endif // NO_CTOR_POINT
 #endif // TWO_DIG
@@ -112,3 +117,4 @@ bool Yes_Default_Point::set_y(int y_to_set){ my_y = y_to_set; return true; }
 
 bool Yes_Default_Point::show(){ cout << "(" <<  my_x << "," << my_y << ")" << endl; return true;}
 
+// here goes the definitions of line declarations //
