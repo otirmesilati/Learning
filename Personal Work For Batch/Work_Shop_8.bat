@@ -2,6 +2,8 @@
 
 :: Usual Starting position
 
+echo Starting procedure:
+
 start Desktop
 start chrome.exe
 start githubdesktop.exe
