@@ -29,7 +29,7 @@ pub fn main()
     // Piping some lines here //
     "Hello, Rose!"
     |> string.drop_right(1)
-    // do the same for the exclamation mark - updated position to 7 //
+    |> string.drop_left(7)
 } 
 
 // function access modifier in gleam is private //
