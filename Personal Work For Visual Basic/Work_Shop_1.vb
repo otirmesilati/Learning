@@ -46,4 +46,6 @@ Public Class Form1
 
     End Sub
 
+    ' Adding the textboxes here '
+
 End Class
