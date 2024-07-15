@@ -2,6 +2,13 @@
 #include <iostream>
 using namespace std;
 
+// Pedantic?
+// p; ->
+// p(); ->
+// p = new point; ->
+// p = new 
+
+
 
 //if not define macro goes here //
 // Make dependencies pre-proc references for line //
@@ -122,9 +129,14 @@ bool Yes_Default_Point::set_y(int y_to_set){ my_y = y_to_set; return true; }
 
 bool Yes_Default_Point::show(){ cout << "(" <<  my_x << "," << my_y << ")" << endl; return true;}
 
-// here goes the definitions of line declarations //
-// defualt ctor //
-// two parameters C'tor //
+My_Line::My_Line()
+{first_point; second_point;}
+My_Line::My_Line(Yes_Default_Point f_p, Yes_Default_Point s_p)
+{
+    first_point = f_p;
+    second_point = s_p;
+}
+
 // No need for D'tor //
 // selectors //
 // mutators //
