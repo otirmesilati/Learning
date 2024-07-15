@@ -1,4 +1,5 @@
 import gleam/io
+import gleam/string
 
 pub type Id = Int
 
@@ -20,7 +21,15 @@ pub fn main()
     let my_second_list = [0, ..my_list]
 
     // higher order function use //
-
+    let fof_first_var = 3: Int
+    let fof_second_var = "Hi": string
+    first_level_abstraction(zero_level_abstraction_1, fof_first_var)
+    // do the same for the concating function //
+    
+    // Piping some lines here //
+    "Hello, Rose!"
+    |> string.drop_right(1)
+    // do the same for the exclamation mark - updated position to 7 //
 } 
 
 // function access modifier in gleam is private //
@@ -70,4 +79,3 @@ pub fn first_level_abstraction(my_func: fn, argu: value) -> value
 { 
     my_func(argu) // Abstracting - composing the input function //
 }
-
