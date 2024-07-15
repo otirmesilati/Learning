@@ -10,4 +10,15 @@ x = 3 ** 2
 y = 4 ** 2
 Math.sqrt(x + y)
 
+def hi
+puts "hello"
+end
+
+hi
+
+def hi(name)
+  puts "Hello, #{name}!"
+end
+
+hi("John")
 
