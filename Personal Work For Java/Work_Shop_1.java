@@ -83,11 +83,21 @@ public class Work_Shop_1 {
 
 	  class My_Factory
 	  {
-		// ?? //
+		// 1. Product Interface //
+		// 2.1. - 2.?. Implementing behaviour classes //
+		// 3. Factory class - creates instances for each //
+		// of the 2. classes //
+		// And that's it pretty much //
+
 	  }
 
 	  class My_builder
 	  {
+		// 1. Product Interface //
+		// 2. Component Interface //
+		// 3. Product Implementing classes //
+		// what more ?? //
+
 		// Build components //
 		// build concrete class //
 	  }
