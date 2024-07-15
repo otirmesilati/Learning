@@ -91,6 +91,11 @@ class My_Line
     bool set_first(Yes_Default_Point);
     bool set_second(Yes_Default_Point);
 
+    int get_perimeter();
+    int get_Area();
+
+    bool to_string();
+
     private:
 
     Yes_Default_Point first_point, second_point;
@@ -118,3 +123,9 @@ bool Yes_Default_Point::set_y(int y_to_set){ my_y = y_to_set; return true; }
 bool Yes_Default_Point::show(){ cout << "(" <<  my_x << "," << my_y << ")" << endl; return true;}
 
 // here goes the definitions of line declarations //
+// defualt ctor //
+// two parameters C'tor //
+// No need for D'tor //
+// selectors //
+// mutators //
+// perimeter and area //
