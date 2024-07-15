@@ -44,14 +44,17 @@ def fof_functioning():
     def inc(argu):
         return argu + 1
     
-    def inc_fof():
-        pass
+    def inc_fof(argu, func):
+        return func(argu)
 
-    def sum_f():
-        pass
+    def sum_f(f_var, s_var):
+        return f_var + s_var
 
-    def mult_f():
-        pass
+    def mult_f(f_var, s_var):
+        return f_var * s_var
+
+    def sum_n_mult_fof():
+        pass # use both the previous functions
     
     # A function for summing
     # A function for multiplication
