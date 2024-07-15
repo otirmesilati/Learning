@@ -1,5 +1,10 @@
 # Printing some of the host's local data 
 
+timedate.cpl
+Get-TimeZone
+
+Get-Service Spooler
+
 Write-Output $Env:USERNAME
 Write-Output $Env:COMPUTERNAME
 Write-Output $Env:HOMEDRIVE
