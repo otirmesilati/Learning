@@ -84,7 +84,20 @@ public class Work_Shop_1 {
 	  class My_Factory
 	  {
 		// 1. Product Interface //
+		public  static interface Product 
+		{
+			public void productMethodOne();
+		}
+		
 		// 2.1. - 2.?. Implementing behaviour classes //
+		public static class ConcreteProductA implements Product
+		{
+
+			@Override
+			public void productMethodOne() 
+			{} // empty implementation for example
+			
+		}
 		// 3. Factory class - creates instances for each //
 		// of the 2. classes //
 		// And that's it pretty much //
