@@ -53,13 +53,9 @@ def fof_functioning():
     def mult_f(f_var, s_var):
         return f_var * s_var
 
-    def sum_n_mult_fof():
-        pass # use both the previous functions
+    def mult_n_inc_fof(arg_1, arg_2, func_1, func_2):
+        return func_2(func_1(arg_1, arg_2))
     
-    # A function for summing
-    # A function for multiplication
-    # The Composite function
-
     # first Order functions - returned as data
 
     
