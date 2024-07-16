@@ -56,6 +56,12 @@ def fof_functioning():
     def mult_n_inc_fof(arg_1, arg_2, func_1, func_2):
         return func_2(func_1(arg_1, arg_2))
     
+    
     # first Order functions - returned as data
+    
+
+    # lambda anonymous function
+    def lam(a):
+        return lambda b: a + b
 
     
