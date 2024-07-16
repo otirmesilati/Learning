@@ -79,3 +79,10 @@ pub fn first_level_abstraction(my_func: fn, argu: value) -> value
 { 
     my_func(argu) // Abstracting - composing the input function //
 }
+
+// label using: //
+
+fn calc(value: Int, add: addend: Int, multiply multiplier: Int)
+{
+    value * multiplier + addend
+}
