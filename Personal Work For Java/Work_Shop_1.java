@@ -104,6 +104,14 @@ public class Work_Shop_1 {
 			public void productMethodOne() {} // empty implementation for example		
 		    public String toString(){return "B";}
 		}
+
+		public static class ConcreteProductC implements Product
+		{
+			public void productMethodOne() {} // empty implementation for example
+		    public String toString(){return "C";}
+		}
+
+		public static class my_factory{} // finish this //
 		// 3. Factory class - creates instances for each //
 		// of the 2. classes //
 		// And that's it pretty much //
