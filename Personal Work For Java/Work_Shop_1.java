@@ -94,15 +94,21 @@ public class Work_Shop_1 {
 		{
 
 			@Override
-			public void productMethodOne() 
-			{} // empty implementation for example
-			
+			public void productMethodOne() {} // empty implementation for example
+			public String toString(){return "A";}
+		}
+
+		public static class ConcreteProductB implements Product
+		{
+			@Override
+			public void productMethodOne() {} // empty implementation for example		
+		    public String toString(){return "B";}
 		}
 		// 3. Factory class - creates instances for each //
 		// of the 2. classes //
 		// And that's it pretty much //
 
-	  }
+	}
 
 	  class My_builder
 	  {
