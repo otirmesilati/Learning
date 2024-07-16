@@ -1,1 +1,6 @@
-// Commenting 
+// Commenting
+
+fn main()
+{
+    println!("Hello World!")
+}
