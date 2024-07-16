@@ -1,6 +1,10 @@
 import gleam/io
 import gleam/string
 
+// regular comments
+/// type docs
+//// module docs
+
 pub type Id = Int
 
 const ints: List(Int) = [4,5,6]
