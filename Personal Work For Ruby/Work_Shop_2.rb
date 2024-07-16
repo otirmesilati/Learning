@@ -31,3 +31,6 @@ class Greeter
     puts "Hello, #{@name}!"
   end
 
+  def say_bye
+    puts "Goodbye, #{@name}!"
+  end
