@@ -140,8 +140,12 @@ My_Line::My_Line(Yes_Default_Point f_p, Yes_Default_Point s_p)
 Yes_Default_Point My_Line::get_first(){ return first_point; }
 Yes_Default_Point My_Line::get_second(){ return second_point; }
 
-bool My_Line::set_first(Yes_Default_Point p_to_set){return true;}
-// finish this and the next set //
+bool My_Line::set_first(Yes_Default_Point p_to_set){ first_point = p_to_set; return true; }
+bool My_Line::set_second(Yes_Default_Point s_to_set){ second_point = s_to_set; return true; }   
+
+// finish the logic + implementation //
+int My_Line::get_perimeter(){return 0;}
+int My_Line::get_Area(){return 0;}
 
 // No need for D'tor //
 // selectors //
