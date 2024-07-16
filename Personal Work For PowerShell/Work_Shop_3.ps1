@@ -7,6 +7,8 @@ Get-TimeZone
 
 Get-Service Spooler
 
+ipconfig
+
 Write-output Outputting the macros: 
 
 Write-Output $Env:USERNAME
