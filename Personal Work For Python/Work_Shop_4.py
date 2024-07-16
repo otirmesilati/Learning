@@ -58,7 +58,22 @@ def fof_functioning():
     
     
     # first Order functions - returned as data
+    def ret_10():
+        return 10
     
+    def ret_me():
+        print(ret_10())
+        return ret_me
+    
+    def print_10():
+        func = ret_me
+        func()
+
+    # FoF - returned as data and keeping locals
+    
+    
+    # what function will be used to send another? 
+    # think about changing state rather than code 
 
     # lambda anonymous function
     def lam(a):
