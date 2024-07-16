@@ -48,6 +48,13 @@ Public Class Form1
 
     Public Sub pshBtn_Click (sender As Object,e As EventArgs) Handles pshBtn.Click
 
+    Dim stFirstName As String
+    Dim strLastName As String
+
+    stFirstName = fText.Text
+    stLastName = lText.Text
+
+
     End Sub
 
     
