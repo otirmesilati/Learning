@@ -1,6 +1,6 @@
 # Printing some of the host's local data 
 
-
+Set-Location ~
 
 timedate.cpl
 Get-TimeZone
