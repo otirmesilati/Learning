@@ -98,8 +98,7 @@ class My_Line
     bool set_first(Yes_Default_Point);
     bool set_second(Yes_Default_Point);
 
-    int get_perimeter();
-    int get_Area();
+    int get_length();
 
     bool to_string();
 
@@ -144,8 +143,11 @@ bool My_Line::set_first(Yes_Default_Point p_to_set){ first_point = p_to_set; ret
 bool My_Line::set_second(Yes_Default_Point s_to_set){ second_point = s_to_set; return true; }   
 
 // finish the logic + implementation //
-int My_Line::get_perimeter(){return 0;}
-int My_Line::get_Area(){return 0;}
+int My_Line::get_length() { return first_point.get_y() - second_point.get_x();}
+// what if the sum will be negative? //
+
+bool My_Line::to_string(){ cout << "(" << first_point.get_x() << "," << first_point.get_y() << ") , (" << 
+second_point.get_x() << "," <<second_point.get_y() << ")"; return true; }
 
 // No need for D'tor //
 // selectors //
