@@ -15,6 +15,7 @@ start code.exe
 :: priority (self manage scheduler) and window size
 :: diffrentiation (opening last conf size probably best) 
 
+systeminfo
 tasklist
 cls
 
