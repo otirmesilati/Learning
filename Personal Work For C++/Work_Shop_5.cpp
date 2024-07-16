@@ -137,6 +137,12 @@ My_Line::My_Line(Yes_Default_Point f_p, Yes_Default_Point s_p)
     second_point = s_p;
 }
 
+Yes_Default_Point My_Line::get_first(){ return first_point; }
+Yes_Default_Point My_Line::get_second(){ return second_point; }
+
+bool My_Line::set_first(Yes_Default_Point p_to_set){return true;}
+// finish this and the next set //
+
 // No need for D'tor //
 // selectors //
 // mutators //
