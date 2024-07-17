@@ -15,11 +15,13 @@ using namespace std;
 #ifndef TWO_DIG
 #ifndef NO_CTOR_POINT
 #ifndef YES_CTOR_POINT
+#ifndef WHOLE_POINT
 #ifndef MY_LINE
 
 #define TWO_DIG
 #define NO_CTOR_POINT
 #define YES_CTOR_POINT
+#define WHOLE_POINT
 #define MY_LINE
 
 class My_First_Class
@@ -81,6 +83,28 @@ class Yes_Default_Point
     int my_x, my_y;
 };
 
+class Whole_Point
+{
+    public:
+
+    Whole_Point();
+    Whole_Point(int, int);
+    Whole_Point(const Whole_Point&);
+    ~Whole_Point();
+
+    int get_x();
+    int get_y();
+    bool set_x(int);
+    bool set_y(int);
+
+    bool to_string();
+
+
+    private:
+
+    int my_x, my_y;
+};
+
 class My_Line
 {
     public:
@@ -100,7 +124,8 @@ class My_Line
 
     int get_length();
 
-    bool to_string();
+    bool to_string(); // full implementation
+    bool show(); // using point's API
 
     private:
 
@@ -108,6 +133,7 @@ class My_Line
 };
 
 #endif // MY_LINE
+#endif // WHOLE_POINT
 #endif // YES_CTOR_POINT
 #endif // NO_CTOR_POINT
 #endif // TWO_DIG
@@ -149,7 +175,5 @@ int My_Line::get_length() { return first_point.get_y() - second_point.get_x();}
 bool My_Line::to_string(){ cout << "(" << first_point.get_x() << "," << first_point.get_y() << ") , (" << 
 second_point.get_x() << "," <<second_point.get_y() << ")"; return true; }
 
-// No need for D'tor //
-// selectors //
-// mutators //
-// perimeter and area //
+bool My_Line::show() {cout << first_point.show() << "," << second_point.show() << endl; return true;}
+
