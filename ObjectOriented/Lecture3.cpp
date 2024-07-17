@@ -150,7 +150,7 @@ void lecture_3_main();
 
 
 
-#include "Lecture3.h"
+// #include "Lecture3.h"
 
 // Start: MyString2
 
