@@ -111,11 +111,30 @@ public class Work_Shop_1 {
 		    public String toString(){return "C";}
 		}
 
-		public static class my_factory{} // finish this //
 		// 3. Factory class - creates instances for each //
-		// of the 2. classes //
-		// And that's it pretty much //
+		public static class my_factory
+		{
+			Product createdProduct;
 
+			public Product factoryCreation(String productType)
+			{
+				if(productType == "A")
+				{
+					createdProduct = new ConcreteProductA();
+					return createdProduct;
+				}
+				else if(productType == "B")
+				{
+					createdProduct = new ConcreteProductB();
+                    return createdProduct;
+				}
+				else
+				{
+					createdProduct = new ConcreteProductC();
+                    return createdProduct;
+				}
+			}
+		}
 	}
 
 	  class My_builder
