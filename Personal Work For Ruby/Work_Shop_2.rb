@@ -34,3 +34,7 @@ class Greeter
   def say_bye
     puts "Goodbye, #{@name}!"
   end
+
+greeter = Greeter.new("Alice")
+greeter.say_hi
+greeter.say_bye
