@@ -50,10 +50,11 @@ Public Class Form1
 
     Dim stFirstName As String
     Dim strLastName As String
-
+    
     stFirstName = fText.Text
     stLastName = lText.Text
 
+    MessageBox.Text("") 'finish the message with the values'
 
     End Sub
 
