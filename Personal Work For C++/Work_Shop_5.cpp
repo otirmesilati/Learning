@@ -154,6 +154,21 @@ bool Yes_Default_Point::set_y(int y_to_set){ my_y = y_to_set; return true; }
 
 bool Yes_Default_Point::show(){ cout << "(" <<  my_x << "," << my_y << ")" << endl; return true;}
 
+// adding CCt'or to point //
+
+Whole_Point::Whole_Point(){ my_x = 0; my_y = 0; }
+Whole_Point::Whole_Point(int x_val, int y_val){ my_x = x_val; my_y = y_val; }
+Whole_Point::Whole_Point(const Whole_Point& pnt_cpy){ my_x = pnt_cpy.my_x; my_y = pnt_cpy.my_y; }
+
+int Whole_Point::get_x(){ return my_x; }
+int Whole_Point::get_y(){ return my_y;}
+bool Whole_Point::set_x(int x_to_set){ my_x = x_to_set; return true; }
+bool Whole_Point::set_y(int y_to_set){ my_y = y_to_set; return true; }
+
+bool Whole_Point::to_string(){ cout << "(" << my_x << "," << my_y << ")" << endl ;return true; }
+
+// composing point class - line
+
 My_Line::My_Line()
 {first_point; second_point;}
 My_Line::My_Line(Yes_Default_Point f_p, Yes_Default_Point s_p)
