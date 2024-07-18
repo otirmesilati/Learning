@@ -76,7 +76,7 @@ def fof_functioning():
                 return sum_f(arg1, arg2)
             elif choosing == 1:
                 return mult_f(arg1, arg2)
-            return d_func
+        return d_func
         
     def using_d_func():
         arguments_to_operate = add_or_mult(4,5)
@@ -86,13 +86,20 @@ def fof_functioning():
 
     #FoF - keeping locals
 
-    # Logic: the same as before just keeping an updated variable inside
-    # something like :
-    # somefunction(argument_to_INC):
-    #  Dispatch function():
-    #  do the changes here and they will stick
-    #  thanks to the lexical scoping
-
+    def inc_my_var():
+        
+        encp_var = 0
+        
+        def d_func(choosing):
+            if choosing == 0:
+                encp_var = encp_var + 1
+            elif choosing == 1:
+                encp_var = encp_var - 1
+            else:
+                encp_var = encp_var * 2
+            return encp_var
+        return d_func
+    
     # what function will be used to send another? 
     # think about changing state rather than code 
 
