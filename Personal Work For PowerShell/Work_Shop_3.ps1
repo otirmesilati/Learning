@@ -1,3 +1,7 @@
+# Setting up the basics
+
+Start-Process Code.exe
+
 # Printing some of the host's local data 
 
 Set-Location ~
