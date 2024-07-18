@@ -139,13 +139,16 @@ public class Work_Shop_1 {
 
 	  class My_builder
 	  {
-		// 1. Product Interface //
-		// 2. Component Interface //
-		// 3. Product Implementing classes //
-		// what more ?? //
 
-		// Build components //
-		// build concrete class //
+		// 1. Product Interface //
+		private interface product{} 
+		// 2. Component Interface //
+		private interface component{}
+
+		// here will go the components //
+		// product maker class //
+		// builder class // 
+		
 	  }
 
 }
