@@ -1,4 +1,5 @@
 import gleam/io
+import gleam/int // this is relevant for random function // 
 import gleam/string
 
 // regular comments
@@ -6,7 +7,6 @@ import gleam/string
 //// module docs
 
 pub type Id = Int
-
 const ints: List(Int) = [4,5,6]
 const floats = [7.0, 8.2, 9.7] 
 
@@ -34,6 +34,9 @@ pub fn main()
     "Hello, Rose!"
     |> string.drop_right(1)
     |> string.drop_left(7)
+
+    // using the case expressions //
+    
 } 
 
 // function access modifier in gleam is private //
