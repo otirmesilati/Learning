@@ -38,3 +38,6 @@ class Greeter
 greeter = Greeter.new("Alice")
 greeter.say_hi
 greeter.say_bye
+
+Greeter.instance_methods()
+Greeter.instance_methods(false)
