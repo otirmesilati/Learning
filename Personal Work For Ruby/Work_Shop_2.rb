@@ -34,6 +34,7 @@ class Greeter
   def say_bye
     puts "Goodbye, #{@name}!"
   end
+end
 
 greeter = Greeter.new("Alice")
 greeter.say_hi
@@ -41,3 +42,8 @@ greeter.say_bye
 
 Greeter.instance_methods()
 Greeter.instance_methods(false)
+
+greeter.respond_to?("nigh") # False - nothing close to it
+greeter.respond_to?("name") # False - attributes not ref like this
+greeter.respond_to?("say_hi") # True
+greeter.respond_to?("say_bye") # True
