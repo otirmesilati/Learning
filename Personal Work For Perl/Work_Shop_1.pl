@@ -26,3 +26,10 @@ my $color = "green";
 print "I like the color " . $color . "\n";
 
 # playing with scopes 
+$another_color = "purple";
+print "this color is " . $another_color . "\n";
+{
+    my $another_color = "pink";
+    print "this color is " . $another_color . "\n";
+}
+
