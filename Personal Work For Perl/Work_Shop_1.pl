@@ -2,7 +2,8 @@ use warnings;
 print("Hi");
 
 
-#Literals
+#Literals? Scalars!
+
 10
 20.2
 
@@ -18,3 +19,4 @@ $a = 4;
 $b = 5;
 print($a + $b);
 
+$port_number = 5500;
