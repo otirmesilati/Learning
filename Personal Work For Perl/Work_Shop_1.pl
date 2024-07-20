@@ -1,8 +1,9 @@
 use warnings;
+use strict;
+
 print("Hi");
 
-
-#Literals? Scalars!
+# Literals? Scalars!
 
 10
 20.2
@@ -20,3 +21,8 @@ $b = 5;
 print($a + $b);
 
 $port_number = 5500;
+
+my $color = "green";
+print "I like the color " . $color . "\n";
+
+# playing with scopes 
