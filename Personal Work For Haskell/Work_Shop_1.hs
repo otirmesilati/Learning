@@ -16,3 +16,10 @@ double 3
 :}
 map (+1) [1,2,3]
 
+-- load files and import libraries 
+:load hello.hs
+main
+
+:import Data.Bits
+shiftL 32 1
+clearBit 33 0 
