@@ -47,3 +47,11 @@ greeter.respond_to?("nigh") # False - nothing close to it
 greeter.respond_to?("name") # False - attributes not ref like this
 greeter.respond_to?("say_hi") # True
 greeter.respond_to?("say_bye") # True
+
+greeter = Greeter.new("Andy")
+class Greeter # now we will access name 
+  attr_accessor :name 
+end
+
+greeter.respond_to?("name") # True
+
