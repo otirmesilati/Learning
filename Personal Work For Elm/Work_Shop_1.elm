@@ -9,3 +9,9 @@ greet name = -- function definition
 
 greet "Alice"
 greet "Bob"
+
+names =
+ ["Alice", "Bob", "Charlie"]
+ 
+List.isEmpty names
+List.length names
