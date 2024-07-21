@@ -23,3 +23,6 @@ main
 :import Data.Bits
 shiftL 32 1
 clearBit 33 0 
+
+-- reflector API
+:type putStrLn
