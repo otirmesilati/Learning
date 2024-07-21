@@ -33,3 +33,7 @@ print "this color is " . $another_color . "\n";
     print "this color is " . $another_color . "\n";
 }
 
+# some String interpolation!
+my $amount = 20;
+my $s = "The amount is $amount\n";
+print($s);
