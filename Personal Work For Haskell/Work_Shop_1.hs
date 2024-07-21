@@ -32,3 +32,4 @@ clearBit 33 0
 
 -- reflector API
 :type putStrLn
+:t 'a' 
