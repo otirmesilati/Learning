@@ -41,7 +41,8 @@ print "this color is " . $another_color . "\n";
 
 # strings
 my $first_str = "Hi, this is a string";
-print(length($first_str), "\n");
+print(length($first_str), "\n"); # finding the length of the string
+print(uc(), "\n", lc(), "\n"); # upper and lower case
 
 # some String interpolation!
 my $amount = 20;
