@@ -2,3 +2,10 @@
 1
 2 + 3
 "hi " ++ "you"
+
+greet name = -- function definition
+ "Hello " ++ name ++ "!"
+ -- empty space for end of the function
+
+greet "Alice"
+greet "Bob"
