@@ -22,6 +22,10 @@ print($a + $b);
 
 $port_number = 5500;
 
+# big numbers? underscores
+my $first_var = 123_456;
+print($first_var, "\n");
+
 my $color = "green";
 print "I like the color " . $color . "\n";
 
