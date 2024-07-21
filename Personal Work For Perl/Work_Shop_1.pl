@@ -48,3 +48,9 @@ print(uc(), "\n", lc(), "\n"); # upper and lower case
 my $amount = 20;
 my $s = "The amount is $amount\n";
 print($s);
+
+
+# operators
+my $second_var = "3";
+my $third_var = "4";
+print($second_var * $third_var);
