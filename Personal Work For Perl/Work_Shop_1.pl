@@ -7,14 +7,16 @@ print("Hi");
 
 10
 20.2
+0b1100 # binary 
+0o12 # octal
+0xc # hexa
 
-'hi'
-
-"Strings"
+'hi' # regular string
+"Strings" # macro string
 
 $x = 1;
 $y = 3.3;
-$s = "some string";
+$s = 'some string';
 
 $a = 4;
 $b = 5;
@@ -26,16 +28,20 @@ $port_number = 5500;
 my $first_var = 123_456;
 print($first_var, "\n");
 
-my $color = "green";
-print "I like the color " . $color . "\n";
+my $color = 'green';
+print 'I like the color ' . $color . '\n';
 
 # playing with scopes 
-$another_color = "purple";
+$another_color = 'purple';
 print "this color is " . $another_color . "\n";
 {
     my $another_color = "pink";
     print "this color is " . $another_color . "\n";
 }
+
+# strings
+my $first_str = "Hi, this is a string";
+print(length($first_str), "\n");
 
 # some String interpolation!
 my $amount = 20;
