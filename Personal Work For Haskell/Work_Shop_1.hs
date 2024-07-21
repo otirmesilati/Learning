@@ -1,6 +1,12 @@
 main :: IO ()
 main = putStrLn "hi"
 
+-- stack/cabal concurrent and say libraries 
+
+import Control.Concurrent.Async
+import Say
+concurrently_ (sayString "Hello") (sayString "World")
+
 -- GHCI playing around 
 1 + 1
 putStrLn "well done"
