@@ -21,3 +21,7 @@ strings
 # Lists and Tuples are implemented differently, but are similar
 [1 ,"Hi", :an_atom]
 {1, "Hi", :an_atom}
+
+first_var = 6
+second_var = 7.8
+third_var = "Hi"
