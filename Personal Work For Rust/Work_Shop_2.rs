@@ -24,6 +24,6 @@ fn main()
 
     println!("{number:>5}", number = 2); // right justify by 5 places //
     // left justifying is like printing regularly //
-    // justify right with zeros //
-    // justify left with zeros //
+    println!("{number:0>5}", number = 2); // justify right with zeros //
+    println!("{number:0<5}", number = 2); // justify left with zeros //
 }
