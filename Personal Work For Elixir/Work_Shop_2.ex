@@ -19,3 +19,5 @@ strings
 << 65, 66 , 67 >> # Printing ABC
 
 # Lists and Tuples are implemented differently, but are similar
+[1 ,"Hi", :an_atom]
+{1, "Hi", :an_atom}
