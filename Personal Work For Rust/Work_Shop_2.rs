@@ -22,8 +22,12 @@ fn main()
     println!("binary: {:b}", 1234);
     // paragraphing - justifying and adding zeros //
 
-    println!("{number:>5}", number = 2); // right justify by 5 places //
+    println!("{number:>5}", number = 2); // right justify by 4 places (the last taken by the 2) //
     // left justifying is like printing regularly //
     println!("{number:0>5}", number = 2); // justify right with zeros //
     println!("{number:0<5}", number = 2); // justify left with zeros //
+    println!("{number:0>width$}", number = 2, width = 5);
+    let number : f64 = 2.0;
+    let width : usize = 5;
+    println!("{number:>width$}"); // right justify with zeros and limit decimal places //
 }
