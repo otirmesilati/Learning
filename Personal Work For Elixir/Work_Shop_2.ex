@@ -39,4 +39,7 @@ IO.puts third_var
 # string interpolation
 
 first_str = "world"
-second_str = "hello #{first_str}
+second_str = "hello #{first_str}"
+third_str = "hello" <> "world"
+IO.puts(String.length("hello"))
+IO.puts(String.reverse("world"))
