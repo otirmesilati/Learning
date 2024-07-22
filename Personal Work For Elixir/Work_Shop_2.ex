@@ -6,3 +6,11 @@ IO.puts "Hi"
 0xc
 0o14
 0b1100
+
+:hello
+true
+false
+"""
+multi line
+strings
+"""
