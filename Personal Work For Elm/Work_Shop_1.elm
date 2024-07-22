@@ -39,7 +39,7 @@ isGoodName name =
 
 isGoodName "Tom"
 
--- Record
+-- Record and record accessingqupdating after creation
 John =
  { First = "John"
  , last = "hobson"
@@ -49,3 +49,4 @@ John =
 john.last
 .last john
 
+john = { first = "john", last = "Hobson", age = 56 } -- updating the whole record
