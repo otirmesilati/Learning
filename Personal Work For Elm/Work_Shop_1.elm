@@ -56,3 +56,5 @@ john = { first = "john", last = "Hobson", age = 56 } -- creating new record
 
 celebrateBD = 
  { person | age = person.age + 1}
+ 
+celebrateBD john
