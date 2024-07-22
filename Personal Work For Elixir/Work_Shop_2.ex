@@ -35,3 +35,8 @@ IO.puts third_var
 # Pattern Matching
 
 [v_1, v_2] = [1, 2]
+
+# string interpolation
+
+first_str = "world"
+second_str = "hello #{first_str}
