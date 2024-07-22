@@ -30,3 +30,10 @@ incrament n =
 List.map incrament numbers -- piping/mapping
 
 -- Tuples
+
+isGoodName name = 
+ if String.length name <= 20 then
+  (True, "Name Accepted!")
+ else
+  (False, "Name Declined!")
+
