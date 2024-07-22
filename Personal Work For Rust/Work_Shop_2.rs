@@ -20,9 +20,10 @@ fn main()
     println!("hexa: {:x}", 1234);
     println("octal: {:o}", 1234);
     println!("binary: {:b}", 1234);
-    // all the others //
+    // paragraphing - justifying and adding zeros //
 
-    // add here:
-    // left/right justify
-    // adding zeros 
+    println!("{number:>5}", number = 2); // right justify by 5 places //
+    // left justifying is like printing regularly //
+    // justify right with zeros //
+    // justify left with zeros //
 }
