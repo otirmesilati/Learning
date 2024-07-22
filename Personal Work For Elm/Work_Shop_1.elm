@@ -49,4 +49,8 @@ John =
 john.last
 .last john
 
-john = { first = "john", last = "Hobson", age = 56 } -- updating the whole record
+john = { first = "john", last = "Hobson", age = 56 } -- updating record
+{ john | last = "Adams"} -- updating record attribute
+{ john | last = "Hobson" }
+-- { john | hi = "hi" } will be a compilation mistake 
+
