@@ -46,3 +46,6 @@ John =
  , age = 52
  }
 
+john.last
+.last john
+
