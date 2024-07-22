@@ -16,6 +16,9 @@ fn main()
     // no order significance //
     println!("{subject} {verb} {object}", object = "the lazy dog", subject = "the quick brown fox", verb = "jumps over")
 
+    println!(); // decimal //
+    // all the others //
+    
     // add here:
     // left/right justify
     // adding zeros 
