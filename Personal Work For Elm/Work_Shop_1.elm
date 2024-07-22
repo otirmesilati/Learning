@@ -37,3 +37,12 @@ isGoodName name =
  else
   (False, "Name Declined!")
 
+isGoodName "Tom"
+
+-- Record
+John =
+ { First = "John"
+ , last = "hobson"
+ , age = 52
+ }
+
