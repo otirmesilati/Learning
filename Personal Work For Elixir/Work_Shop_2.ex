@@ -22,7 +22,8 @@ strings
 
 # Lists and Tuples are implemented differently, but are similar
 
-[1 ,"Hi", :an_atom]
+[1 ,"Hi", :an_atom] # list
+'Hello' # Char-List
 {1, "Hi", :an_atom}
 
 # Variables
@@ -46,5 +47,3 @@ second_str = "hello #{first_str}"
 third_str = "hello" <> "world"
 IO.puts(String.length("hello"))
 IO.puts(String.reverse("world"))
-
-# char lists
