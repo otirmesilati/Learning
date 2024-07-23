@@ -16,10 +16,11 @@ multi line
 strings
 """
 
-# Operators on the literals
+# Operators on the literals and lists
 
 1 + 2
 'Hi ' ++ 'Bye'
+[1, 2] ++ [3]
 
 # bits and bytes coded into ASCII
 
