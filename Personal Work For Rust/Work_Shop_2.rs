@@ -32,7 +32,9 @@ fn main()
     println!("{number:>width$}"); // right justify with zeros and limit decimal places //
 
     let fir_var = true;
-    let fir_var: bool = false;
+    let fir_var: bool = false; // type annotation
+    let sec_var: f64 = 4.5; // type annotation
+    let third_var = 5i32; // sufixed type annotation
 
 
 
