@@ -17,7 +17,10 @@ public class Work_Shop_7
         private static abstract class SecondComponent implements Work_Shop_7.ClassicBuilder.Component { public String toString() { return "second component";}}
         private static abstract class ThirdComponent implements Work_Shop_7.ClassicBuilder.Component { public String toString() { return "third component";}}
 
-        private static class FirstComponentFirstConcrete extends FirstComponent{}
+        private static class FirstComponentFirstConcrete extends FirstComponent
+        {
+            // get all the following methods here //
+        }
                 
         public String toString() {return (super.toString()).concat(firstImplementationAddon);}
 
