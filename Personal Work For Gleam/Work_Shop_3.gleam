@@ -36,6 +36,8 @@ pub fn main()
     |> string.drop_left(7)
 
     // using the case expressions //
+    let x = 1
+    let result = case x {} // complete this
     
 } 
 
