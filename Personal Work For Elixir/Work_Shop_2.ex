@@ -24,7 +24,10 @@ strings
 
 [1 ,"Hi", :an_atom] # list
 'Hello' # Char-List
-{1, "Hi", :an_atom}
+IO.puts(is_list(to_char_list("hełło"))) # converting to list
+IO.puts(is_binary(to_string('hełło'))) # converting from list (to binary)
+
+{1, "Hi", :an_atom} # Tuples
 
 # Variables
 
