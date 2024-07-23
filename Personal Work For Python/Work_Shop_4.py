@@ -106,5 +106,8 @@ def fof_functioning():
     # lambda anonymous function
     def lam(a):
         return lambda b: a + b
+    
+    def lam_1(a, b):
+        return lambda: a + b
 
     
