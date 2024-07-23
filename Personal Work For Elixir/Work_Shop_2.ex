@@ -16,12 +16,18 @@ multi line
 strings
 """
 
+# Operators on the literals
+
+1 + 2
+'Hi ' ++ 'Bye'
+
 # bits and bytes coded into ASCII
 
 << 65, 66 , 67 >> # Printing ABC
 
 # Lists and Tuples are implemented differently, but are similar
 
+# both can have a myriad of types
 [1 ,"Hi", :an_atom] # list
 'Hello' # Char-List
 IO.puts(is_list(to_char_list("hełło"))) # converting to list
