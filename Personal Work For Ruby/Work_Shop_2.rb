@@ -54,4 +54,6 @@ class Greeter # now we will access name
 end
 
 greeter.respond_to?("name") # True
-
+greeter.respond_to?("name=") # True
+greeter.name = "Betty"
+greeter.name
