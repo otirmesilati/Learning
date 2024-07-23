@@ -2,6 +2,7 @@
 1
 2 + 3
 "hi " ++ "you"
+pi
 
 greet name = -- function definition
  "Hello " ++ name ++ "!"
