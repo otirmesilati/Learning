@@ -32,6 +32,7 @@ fn main()
     println!("{number:>width$}"); // right justify with zeros and limit decimal places //
 
     let fir_var = true;
+    let fir_var: bool = false;
 
 
 
