@@ -27,6 +27,9 @@ fn main()
     println!("{number:0>5}", number = 2); // justify right with zeros //
     println!("{number:0<5}", number = 2); // justify left with zeros //
     println!("{number:0>width$}", number = 2, width = 5);
+    
+    // immutable variables //
+    
     let number : f64 = 2.0;
     let width : usize = 5;
     println!("{number:>width$}"); // right justify with zeros and limit decimal places //
@@ -35,6 +38,8 @@ fn main()
     let fir_var: bool = false; // type annotation
     let sec_var: f64 = 4.5; // type annotation
     let third_var = 5i32; // sufixed type annotation
+
+    // mutable variables //
 
 
 
