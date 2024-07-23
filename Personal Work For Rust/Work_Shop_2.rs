@@ -30,4 +30,11 @@ fn main()
     let number : f64 = 2.0;
     let width : usize = 5;
     println!("{number:>width$}"); // right justify with zeros and limit decimal places //
+
+    let fir_var = true;
+
+
+
+
+
 }
