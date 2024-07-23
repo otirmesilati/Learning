@@ -41,6 +41,9 @@ fn main()
 
     // mutable variables //
 
+    let mut fort_var: f64 = 67.23;
+    fort_var = 25.47f64; 
+
 
 
 
