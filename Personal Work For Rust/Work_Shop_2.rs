@@ -44,6 +44,8 @@ fn main()
     let mut fort_var: f64 = 67.23;
     fort_var = 25.47f64; 
 
+    println!("{}", 1u32 + 2);
+    println!("{}", 1i32 - 2);
 
 
 
