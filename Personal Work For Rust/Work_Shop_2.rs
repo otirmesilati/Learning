@@ -49,6 +49,7 @@ fn main()
     println!("{}", 1u32 + 2);
     println!("{}", 1i32 - 2);
     println!("{}", 1e4);
+    println!("{}", 1e5 - 1e4);
 
 
 
