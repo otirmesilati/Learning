@@ -156,9 +156,10 @@ bool Yes_Default_Point::show(){ cout << "(" <<  my_x << "," << my_y << ")" << en
 
 // adding CCt'or to point //
 
-Whole_Point::Whole_Point(){ my_x = 0; my_y = 0; }
-Whole_Point::Whole_Point(int x_val, int y_val){ my_x = x_val; my_y = y_val; }
-Whole_Point::Whole_Point(const Whole_Point& pnt_cpy){ my_x = pnt_cpy.my_x; my_y = pnt_cpy.my_y; }
+// Let's add the init list
+Whole_Point::Whole_Point(): my_x(0), my_y(0) { }
+Whole_Point::Whole_Point(int x_val, int y_val): my_x(x_val), my_y(y_val) { }
+Whole_Point::Whole_Point(const Whole_Point& pnt_cpy): my_x(pnt_cpy.my_x), my_y(pnt_cpy.my_y) { }
 
 int Whole_Point::get_x(){ return my_x; }
 int Whole_Point::get_y(){ return my_y;}
