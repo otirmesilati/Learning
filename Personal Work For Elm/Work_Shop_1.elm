@@ -1,8 +1,15 @@
--- let's start with the literals 
+-- literals 
+
 1
 2 + 3
 "hi " ++ "you"
 pi
+
+-- variable binding 
+
+myVar = 2
+
+
 
 greet name = -- function definition
  "Hello " ++ name ++ "!"
