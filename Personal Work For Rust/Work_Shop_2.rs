@@ -27,7 +27,7 @@ fn main()
     println!("{number:0>5}", number = 2); // justify right with zeros //
     println!("{number:0<5}", number = 2); // justify left with zeros //
     println!("{number:0>width$}", number = 2, width = 5);
-    
+
     // immutable variables //
     
     let number : f64 = 2.0;
@@ -44,9 +44,11 @@ fn main()
     let mut fort_var: f64 = 67.23;
     fort_var = 25.47f64; 
 
+    // operators and literals
+
     println!("{}", 1u32 + 2);
     println!("{}", 1i32 - 2);
-
+    println!("{}", 1e4);
 
 
 
