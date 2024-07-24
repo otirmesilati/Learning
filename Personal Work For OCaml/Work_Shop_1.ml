@@ -17,6 +17,11 @@ let u = [1; 2; 3; 4];;
 
 (* localizing variables*)
 let y = 50 in y * y;;
+(*Adding a y evaluation here will give an error*)
+
+let a = 1 in
+let b = 2 in
+ a + b;;
 
 
 
