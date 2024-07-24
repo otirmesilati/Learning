@@ -19,15 +19,16 @@ public class Work_Shop_7
 
         private static class FirstComponentFirstConcrete extends FirstComponent
         {
-            // get all the following methods here //
+            private String firstImplementationAddon = ", Model 1";
+            public String toString() {return (super.toString()).concat(firstImplementationAddon);}
         }
                 
-        public String toString() {return (super.toString()).concat(firstImplementationAddon);}
+        
 
         public void ComponentsFirstMethod() {System.out.println("First Component's, model 1, first operation.");}
         public void ComponentsSecondMethod() {System.out.println("Second Component's, model 1, second operation.");}
         public void ComponentsThirdMethod() {System.out.println("Third Component's, model 1, third operation.");}
 
-        private String firstImplementationAddon = ", Model 1";
+        
     }
 }
