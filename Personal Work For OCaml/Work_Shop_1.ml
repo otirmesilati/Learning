@@ -15,7 +15,8 @@ let u = [1; 2; 3; 4];;
 (* if as an expression!*)
 2 * if "hello" = "world" then 3 else 5;;
 
-
+(* localizing variables*)
+let y = 50 in y * y;;
 
 
 
