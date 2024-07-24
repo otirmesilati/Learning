@@ -57,3 +57,6 @@ second_str = "hello #{first_str}"
 third_str = "hello" <> "world"
 IO.puts(String.length("hello"))
 IO.puts(String.reverse("world"))
+
+# Keyword Lists
+list = [{:a,1}, {:b,2}]
