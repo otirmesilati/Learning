@@ -109,5 +109,8 @@ def fof_functioning():
     
     def lam_1(a, b):
         return lambda: a + b
-
+    
+    def lam_2():
+        return lambda x: x
+    
     
