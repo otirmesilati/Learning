@@ -172,11 +172,7 @@ bool Whole_Point::to_string(){ cout << "(" << my_x << "," << my_y << ")" << endl
 
 My_Line::My_Line()
 {first_point; second_point;}
-My_Line::My_Line(Yes_Default_Point f_p, Yes_Default_Point s_p)
-{
-    first_point = f_p;
-    second_point = s_p;
-}
+My_Line::My_Line(Yes_Default_Point f_p, Yes_Default_Point s_p): first_point(f_p), second_point(s_p) {}
 
 Yes_Default_Point My_Line::get_first(){ return first_point; }
 Yes_Default_Point My_Line::get_second(){ return second_point; }
