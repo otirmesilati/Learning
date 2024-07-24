@@ -8,7 +8,7 @@ pi
 -- variable binding 
 
 myVar = 2
-
+myVar = 3
 
 
 greet name = -- function definition
