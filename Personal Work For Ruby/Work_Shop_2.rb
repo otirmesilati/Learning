@@ -57,3 +57,7 @@ greeter.respond_to?("name") # True
 greeter.respond_to?("name=") # True
 greeter.name = "Betty"
 greeter.name
+
+class MegaGreeter
+  attr_accessor :names
+
