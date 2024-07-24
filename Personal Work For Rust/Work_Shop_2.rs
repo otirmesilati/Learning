@@ -7,6 +7,16 @@ Comments
 
 fn main()
 {
+    // literals:
+    12;
+    45.6;
+    "Hi";
+    true;
+
+    // oprators:
+     3.4 + 5.6;
+     true && false;
+    
     // Note the printing is MACRO based, :o/b/x for diffrent radixes //
     println!("Hello World!")
 
@@ -50,6 +60,7 @@ fn main()
     println!("{}", 1i32 - 2);
     println!("{}", 1e4);
     println!("{}", 1e5 - 1e4);
+
 
 
 
