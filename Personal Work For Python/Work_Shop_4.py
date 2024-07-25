@@ -113,4 +113,7 @@ def fof_functioning():
     def lam_2():
         return lambda x: x
     
+    def lam_3(my_func):
+        return lambda x: my_func(x)
+    
     
