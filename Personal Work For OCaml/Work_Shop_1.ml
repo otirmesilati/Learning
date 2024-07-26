@@ -23,6 +23,8 @@ let a = 1 in
 let b = 2 in
  a + b;;
 
+(* =? assignment and eqality test *)
+let as_and_eq = "hi" = "hello";;
 
 
 
