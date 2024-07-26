@@ -13,6 +13,9 @@ fn main()
     "Hi";
     true;
 
+    // tuples:
+    (1u32, 2u32, 4.3f32, 5.4f32);
+
     // oprators:
      3.4 + 5.6;
      true && false;
@@ -48,7 +51,8 @@ fn main()
     let fir_var: bool = false; // type annotation
     let sec_var: f64 = 4.5; // type annotation
     let third_var = 5i32; // sufixed type annotation
-
+    let fist_tuple = ("hi", "bye");
+    
     // mutable variables //
 
     let mut fort_var: f64 = 67.23;
