@@ -17,12 +17,14 @@ using namespace std;
 #ifndef YES_CTOR_POINT
 #ifndef WHOLE_POINT
 #ifndef MY_LINE
+#ifndef MY_STRING
 
 #define TWO_DIG
 #define NO_CTOR_POINT
 #define YES_CTOR_POINT
 #define WHOLE_POINT
 #define MY_LINE
+#define MY_STRING
 
 class My_First_Class
 {
@@ -133,11 +135,14 @@ class My_Line
     Yes_Default_Point first_point, second_point;
 };
 
-#endif // MY_LINE
-#endif // WHOLE_POINT
-#endif // YES_CTOR_POINT
-#endif // NO_CTOR_POINT
-#endif // TWO_DIG
+// my string class goes here //
+
+#endif // MY_STRING!
+#endif // MY_LINE!
+#endif // WHOLE_POINT! 
+#endif // YES_CTOR_POINT!
+#endif // NO_CTOR_POINT!
+#endif // TWO_DIG!
 
 inline void My_First_Class::Two_Digits::show() {} // finish implementation here //
 

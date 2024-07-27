@@ -23,12 +23,13 @@ using namespace std;
 #ifndef MY_POINT_3
 #ifndef MY_STRING_3
 #ifndef STUDENT_1
+#ifndef MY_STRING
 
 #define MY_STRING_2
 #define MY_POINT_3
 #define MY_STRING_3
 #define STUDENT_1
-
+#define MY_STRING
 
 
 class MyString2
@@ -143,6 +144,7 @@ void lecture_3_main();
 
 
 
+#endif // !MY_STRING
 #endif // !STUDENT_1
 #endif // !MY_STRING_3
 #endif // My_POINT_3
