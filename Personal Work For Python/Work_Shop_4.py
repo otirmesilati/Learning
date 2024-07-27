@@ -91,10 +91,11 @@ def fof_functioning():
         print(add_result, mult_result)
 
     #FoF - keeping locals
+    encp_var = 0
 
     def inc_my_var():
         
-        encp_var = 0
+        nonlocal encp_var
         
         def d_func(choosing):
             if choosing == 0:
@@ -104,10 +105,7 @@ def fof_functioning():
             else:
                 encp_var = encp_var * 2
             return encp_var
-        return d_func
-    
-    # what function will be used to send another? 
-    # think about changing state rather than code 
+        return d_func 
 
     # lambda anonymous function
     def lam(a):
