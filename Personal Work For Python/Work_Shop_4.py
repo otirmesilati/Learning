@@ -1,3 +1,9 @@
+# lists - mutable
+[1 , 2 , 3 , 4] 
+
+# tuples - immutable
+(1, 2, 3, 4)
+
 # Playing with scopes
 
 def math_playground():
