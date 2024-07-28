@@ -135,7 +135,8 @@ class My_Line
     Yes_Default_Point first_point, second_point;
 };
 
-// my string class goes here //
+class My_String{}; // finish this
+
 
 #endif // MY_STRING!
 #endif // MY_LINE!
