@@ -1,3 +1,5 @@
+(* Literals and Operators*)
+
 50 * 50 ;;
 6.28;;
 
@@ -26,5 +28,7 @@ let b = 2 in
 (* =? assignment and eqality test *)
 let as_and_eq = "hi" = "hello";;
 
-
+(*Functions As Values in OCaml*)
+let square x = x * x;;
+square 50;;
 
