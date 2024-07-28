@@ -29,7 +29,7 @@ class Greeter
 
   def say_hi
     puts "Hello, #{@name}!"
-  end
+   end
 
   def say_bye
     puts "Goodbye, #{@name}!"
@@ -61,3 +61,10 @@ greeter.name
 class MegaGreeter
   attr_accessor :names
 
+  def initialize(names = "World")
+    @names = names
+  end
+
+  def say_hi
+    # what here ?
+  end
