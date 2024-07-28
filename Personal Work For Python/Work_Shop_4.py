@@ -4,6 +4,9 @@
 # tuples - immutable
 (1, 2, 3, 4)
 
+# dictonaries (single and double quotes are the same)
+{"hi" : 1, 'Bye': 2}
+
 # Playing with scopes
 
 def math_playground():
