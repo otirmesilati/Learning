@@ -47,6 +47,14 @@ def math_playground():
     print(sum_of_squares(2,3))
     print(multiplication_of_squares(4,5))
 
+    # Classes
+
+    class Account():
+        def __init__(self):
+            pass
+        # Finish this
+        # what about access modifiers?
+
     # First Order functions - sent as parameters
 def fof_functioning():
 
@@ -122,5 +130,4 @@ def fof_functioning():
     
     def lam_3(my_func):
         return lambda x: my_func(x)
-    
     
