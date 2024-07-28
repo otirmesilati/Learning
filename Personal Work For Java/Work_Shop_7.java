@@ -27,6 +27,8 @@ public class Work_Shop_7
 
         }
 
+        // the second component goes here //
+
         
         
     }
