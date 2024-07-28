@@ -27,27 +27,34 @@ List.isEmpty names
 List.length names
 List.reverse names
 
+-- functions
+
 numbers =
  [1, 2, 3, 4, 5]
 
 List.sort numbers
-
 incrament n = 
  n + 1
 
+is_bigger_than_5 number = 
+ if number > 5 then 
+  "yay"
+ else
+  "nay"
+
 List.map incrament numbers -- piping/mapping
 
--- Tuples
+-- Tuples and conditional expressions
 
 isGoodName name = 
  if String.length name <= 20 then
   (True, "Name Accepted!")
- else
+ else -- else is a must in elm
   (False, "Name Declined!")
 
 isGoodName "Tom"
 
--- Record and record accessingqupdating after creation
+-- Record and record accessing/updating after creation
 John =
  { First = "John"
  , last = "hobson"
