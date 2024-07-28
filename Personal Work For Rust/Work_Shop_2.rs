@@ -15,6 +15,10 @@ fn main()
 
     // tuples:
     (1u32, 2u32, 4.3f32, 5.4f32);
+    let my_tuple = (1u32, 2u32, 3u32, 4.3f32, 5.4f32);
+    // add the tuple of tuples here 
+    println!("first: {}", my_tuple.0);
+    // print the tuple of tuples
 
     // oprators:
      3.4 + 5.6;
