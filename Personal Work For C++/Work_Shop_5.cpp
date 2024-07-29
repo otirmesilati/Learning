@@ -135,7 +135,15 @@ class My_Line
     Yes_Default_Point first_point, second_point;
 };
 
-class My_String{}; // finish this
+class My_String
+{
+    public:
+
+    private:
+
+    // going tro field in the two ways of char arrays
+       
+}; // finish this
 
 
 #endif // MY_STRING!
