@@ -49,11 +49,18 @@ def math_playground():
 
     # Classes
 
-    class Account():
-        def __init__(self):
+    class greeter():
+        def __init__(self, name):
+            self.name = name
+        
+        def say_hi(self):
             pass
-        # Finish this
-        # what about access modifiers?
+
+        def say_bye(self):
+            pass
+
+        # Finish the class
+
 
     # First Order functions - sent as parameters
 def fof_functioning():
