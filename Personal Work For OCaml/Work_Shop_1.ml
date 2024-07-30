@@ -32,3 +32,5 @@ let as_and_eq = "hi" = "hello";;
 let square x = x * x;;
 square 50;;
 
+(* Anon functions *)
+fun x -> x * x;;
