@@ -139,9 +139,12 @@ class My_String
 {
     public:
 
+    // add C'tor D'tor and print
+
     private:
 
-    // going tro field in the two ways of char arrays
+    char* p_str;
+    char a_str[250];
        
 }; // finish this
 
