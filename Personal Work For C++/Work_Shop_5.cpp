@@ -139,7 +139,11 @@ class My_String
 {
     public:
 
-    // add C'tor D'tor and print
+    My_String(const char* str = NULL);
+
+    ~My_String(); // this will be implemented
+
+    // printing function
 
     private:
 
