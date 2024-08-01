@@ -40,3 +40,7 @@ ipconfig /all
 arp -a
 
 :: no need to pause on scripts
+
+:: some classics - playing with test folders
+cd .. ; cd "test_folder_2" 
+:: changing fromfolder 1 to folder 2
