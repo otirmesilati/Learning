@@ -49,3 +49,6 @@ echo. 2>folder_2_text_1.txt
 :: new line, 2 for err stream, and the file name)
 copy folder_2_text_1.txt "C:\Users\otirm_2hwnj4i\desktop\explorer testing\test_folder_1" 
 :: copying a file to another folder
+cd .. && cd test_folder_1
+del folder_2_text_1.txt
+:: going to the second folder and deleting the copy
