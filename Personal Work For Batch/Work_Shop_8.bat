@@ -44,3 +44,6 @@ arp -a
 :: some classics - playing with test folders
 cd .. ; cd "test_folder_2" 
 :: changing fromfolder 1 to folder 2
+echo. 2>folder_2_text_1.txt
+:: creating an empty text folder (echo. for 
+:: new line, 2 for err stream, and the file name)
