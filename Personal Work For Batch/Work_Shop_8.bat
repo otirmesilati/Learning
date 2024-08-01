@@ -52,3 +52,7 @@ copy folder_2_text_1.txt "C:\Users\otirm_2hwnj4i\desktop\explorer testing\test_f
 cd .. && cd test_folder_1
 del folder_2_text_1.txt
 :: going to the second folder and deleting the copy
+echo. 2>folder1_text_2.txt
+:: renaming the files
+ren folder_1_text_2.txt hi.txt
+rename hi.txt folder_1_text_2.txt
