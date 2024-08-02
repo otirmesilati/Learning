@@ -4,3 +4,4 @@
 
 ;; operations (similar to prefix notation)
 (+ 1 1) ;; 2
+(+ 1 (* 2 3)) ;; 7
