@@ -1,5 +1,6 @@
 create table student_table (
-    -- defining student ID
-    student_id INT
-    
+    -- defining student ID + it's primary
+    student_id int primary key,
+    -- 
+
 );
