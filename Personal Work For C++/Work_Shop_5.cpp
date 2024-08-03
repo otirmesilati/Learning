@@ -139,7 +139,7 @@ class My_String
 {
     public:
 
-    My_String(const char* str = NULL);
+    My_String(const char*);
 
     ~My_String(); // this will be implemented
 
@@ -216,3 +216,12 @@ second_point.get_x() << "," <<second_point.get_y() << ")"; return true; }
 bool My_Line::show() {cout << first_point.show() << "," << second_point.show() << endl; return true;}
 
 // my string implementation //
+My_String::My_String(const char* str_to_inp = NULL)
+{
+    // check if null
+    // yes -> nothing
+    // no -> allocate memory + copy list of characters
+}
+// C'tor
+// D'tor
+// to string
