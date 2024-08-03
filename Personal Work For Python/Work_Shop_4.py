@@ -41,6 +41,9 @@ split_to_sub_strings.split(".")
 # f-strings
 ami_name = "ami"
 name_sentence = f"name is {ami_name}"
+add_two_zeros = 12
+adding_them = f"{add_two_zeros:2.f}"
+code_modify_fstring = f"result: {20 * 30}"
 
 # randoming from module
 import random
