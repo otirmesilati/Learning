@@ -33,4 +33,8 @@ update student_table
 set student_major = 'Bio'
 where student_major = 'Biology';
 
+update student_table
+set student_major = 'Comp Sci'
+where student_major = 'Computer Science';
+
 select * from student_table;
