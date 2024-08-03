@@ -145,14 +145,12 @@ class My_String
 
     bool to_string();
 
-    // printing function
-
     private:
 
     char* p_str;
     char a_str[250];
        
-}; // finish this
+}; 
 
 
 #endif // MY_STRING!
@@ -162,10 +160,13 @@ class My_String
 #endif // NO_CTOR_POINT!
 #endif // TWO_DIG!
 
-inline void My_First_Class::Two_Digits::show() {} // finish implementation here //
+inline void My_First_Class::Two_Digits::show() 
+{
+    cout << "first : " << first << ",second : " << second << ",third : " << "\n";
+} 
 
 
-// implementation of point with C'tor and D'tor
+// implementation of point with C'tor and D'tor (no init list)
 // overriding the default c'tor creation //
 Yes_Default_Point::Yes_Default_Point(){ my_x = 0; my_y = 0; }
 Yes_Default_Point::Yes_Default_Point(int x_to_set, int y_to_set)
@@ -214,3 +215,4 @@ second_point.get_x() << "," <<second_point.get_y() << ")"; return true; }
 
 bool My_Line::show() {cout << first_point.show() << "," << second_point.show() << endl; return true;}
 
+// my string implementation //
