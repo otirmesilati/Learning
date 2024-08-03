@@ -21,11 +21,16 @@ describe student_table;
 -- insert into student_table values(4, 'Jack', 'Biology');
 -- insert into student_table values(5, 'Mike', 'Computer Science');
 
+-- using the auto insertions
 insert into student_table (student_name, student_major) values ('Jack', 'Biology');
 insert into student_table (student_name, student_major) values ('Kate', 'Sociology');
 insert into student_table (student_name, student_major) values ('Claire', 'Chemistry');
 insert into student_table (student_name, student_major) values ('Jack', 'Biology');
 insert into student_table (student_name, student_major) values ('Mike', 'Computer Science');
 
+-- modifying the data 
+update student_table
+set student_major = 'Bio'
+where student_major = 'Biology';
 
 select * from student_table;
