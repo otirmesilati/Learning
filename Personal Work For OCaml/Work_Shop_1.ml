@@ -1,4 +1,6 @@
 (* Literals and Operators*)
+(*comments*)
+(**docstrings*)
 
 50 * 50 ;;
 6.28;;
@@ -13,7 +15,7 @@ my_int;;
 let u = [1; 2; 3; 4];;
 ["this"; "is"; "nice"];;
 
-9::u;;
+9::u;; (*concat to the list*)
 (* if as an expression!*)
 2 * if "hello" = "world" then 3 else 5;;
 
@@ -34,3 +36,4 @@ square 50;;
 
 (* Anon functions *)
 fun x -> x * x;;
+(fun x -> x * x) 20;;
