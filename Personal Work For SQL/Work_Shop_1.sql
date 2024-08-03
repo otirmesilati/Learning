@@ -36,5 +36,7 @@ where student_major = 'Biology';
 update student_table
 set student_major = 'Comp Sci'
 where student_major = 'Computer Science';
+-- set student_name = 'Tom', student_major = 'undecided'
+-- where student_major = 'Bio' or student_major = 'Chemistry';
 
 select * from student_table;
