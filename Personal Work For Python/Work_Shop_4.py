@@ -27,6 +27,17 @@ to_slice = "abcdefg"
 to_slice[:5]
 to_slice[2:]
 to_slice[2:5]
+to_slice[-5:-2] # going from the end, though still left to right
+# modifying string
+up_and_down = "wow"
+up_and_down.upper()
+up_and_down.lower()
+leave_out_starting_space = " wow"
+leave_out_starting_space.strip()
+replace_me = "replace"
+replace_me.replace("replace","me")
+split_to_sub_strings = "split.me"
+split_to_sub_strings.split(".")
 
 
 # randoming from module
