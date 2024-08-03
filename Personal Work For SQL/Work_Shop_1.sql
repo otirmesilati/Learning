@@ -10,3 +10,5 @@ create table student_table (
 
 -- checking the current schema
 describe student_table;
+-- modifying the table after creation
+alter table student_table add gpa decimal(3 ,2);
