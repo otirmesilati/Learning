@@ -227,9 +227,15 @@ My_String::My_String(const char* str_to_inp = NULL)
         2.1. add 1 character for null in char list
         2.2. converting from size_t to int
         */
-        p_str = new char[(int)(strlen(str_to_inp +1))];
-        // we'll copy the characters once with a loop
-        // and once with the strcpy function
+        int size_for_copy_plus_one = (int)(strlen(str_to_inp +1));
+        p_str = new char[size_for_copy_plus_one];
+        // we'll copy the characters once with strcpy function
+        // and once with a loop
+        // strcpy here //
+        for(int i = 0; i < (size_for_copy_plus_one - 1) ; i++)
+        {
+            // finish this
+        }
 
     }
     
