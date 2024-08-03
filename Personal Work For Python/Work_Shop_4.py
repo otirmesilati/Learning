@@ -11,7 +11,9 @@ multiple line comments
 
 # variable types are inferred in runtime
 x = 6
+x = int(6) # compile time type declaration
 y = "Hi"
+whats_the_type = type(x)
 
 # multi-assignment
 y, x = "Hi", 6
