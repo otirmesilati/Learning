@@ -216,12 +216,21 @@ second_point.get_x() << "," <<second_point.get_y() << ")"; return true; }
 bool My_Line::show() {cout << first_point.show() << "," << second_point.show() << endl; return true;}
 
 // my string implementation //
+// we can init here! finish this//
 My_String::My_String(const char* str_to_inp = NULL)
 {
     if(str_to_inp != nullptr) // same as if(str)
     {
-        // no -> nothing -> no need for else
-        // yes -> allocate memory + copy list of characters
+        /*p_str memory allocation:
+        1. new keyword
+        size finding:
+        2.1. add 1 character for null in char list
+        2.2. converting from size_t to int
+        */
+        p_str = new char[(int)(strlen(str_to_inp +1))];
+        // we'll copy the characters once with a loop
+        // and once with the strcpy function
+
     }
     
 }
