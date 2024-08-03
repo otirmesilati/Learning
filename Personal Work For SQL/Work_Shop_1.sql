@@ -12,3 +12,8 @@ create table student_table (
 describe student_table;
 -- modifying the table after creation
 alter table student_table add gpa decimal(3 ,2);
+
+-- handling insertions: order inserting matters
+insert into student_table values (
+
+);
