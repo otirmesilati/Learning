@@ -6,8 +6,17 @@ multiple line comments
 # literals 
 1
 2.3
+1 + 2j
 'Hi'
 "Hi"
+{1: "Hi", 2: "bye"}
+{1,2,3}
+frozenset({1,2,3})
+[1, 2, 3]
+(1, 2, 3)
+range(3)
+b"Hi"
+None
 
 # operations
 1 + 2
