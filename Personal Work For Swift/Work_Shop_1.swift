@@ -8,4 +8,8 @@
  3
  4.5
  "hi"
- 
+
+ // stopped at keywords 
+ // https://www.tutorialspoint.com/swift/swift_basic_syntax.htm
+ // emulator: 
+ // https://swiftplayground.run/

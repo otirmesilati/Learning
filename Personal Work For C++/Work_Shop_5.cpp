@@ -143,6 +143,8 @@ class My_String
 
     ~My_String(); // this will be implemented
 
+    bool to_string();
+
     // printing function
 
     private:
