@@ -1,3 +1,9 @@
+# literals 
+1
+2.3
+'Hi'
+"Hi"
+
 # lists - mutable
 [1 , 2 , 3 , 4] 
 
@@ -54,7 +60,7 @@ def math_playground():
             self.name = name
         
         def say_hi(self):
-            pass
+            print("Hi {}")
 
         def say_bye(self):
             pass
