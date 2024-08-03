@@ -15,5 +15,6 @@ describe student_table;
 
 -- handling insertions: order inserting matters
 insert into student_table values (1, 'Jack', 'Biology');
+insert into student_table values(2, 'Kate', 'Sociology');
 
 select * from student_table;
