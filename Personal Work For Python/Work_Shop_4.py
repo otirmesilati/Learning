@@ -1,8 +1,14 @@
+# single line comments 
+"""
+multiple line comments
+"""
+
 # literals 
 1
 2.3
 'Hi'
 "Hi"
+
 
 # lists - mutable
 [1 , 2 , 3 , 4] 
