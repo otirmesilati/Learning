@@ -35,7 +35,10 @@ x, y = [1, 2]
 
 # scopes
 def global_func():
-    global x
+    global x 
+    # one difference between nonlocal and global here :)
+    # no requirement for prebinding! (nonlocal requires
+    #it in the outer block)
     x = 5
 
 print(x) # Error
