@@ -9,6 +9,10 @@ multiple line comments
 'Hi'
 "Hi"
 
+# operations
+1 + 2
+"Hi " + "Bye"
+
 # variable types are inferred in runtime
 x = 6
 x = int(6) # compile time type declaration
@@ -17,7 +21,8 @@ whats_the_type = type(x)
 
 # multi-assignment
 y, x = "Hi", 6
-
+x = y = 2 
+x, y = [1, 2]
 
 # lists - mutable
 [1 , 2 , 3 , 4] 
