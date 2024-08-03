@@ -33,8 +33,13 @@ let as_and_eq = "hi" = "hello";;
 (*Functions As Values in OCaml*)
 let square x = x * x;;
 square 50;;
-let concat a b = a ^ " " ^ b;;
+let concat a b = a ^ " " ^ b;; (*partial application*)
+concat "hi"
+let cat_hi = concat "friend";;
 
 (* Anon functions *)
 fun x -> x * x;;
 (fun x -> x * x) 20;;
+
+(*https://ocaml.org/docs/tour-of-ocaml*)
+(*type parameters and higher-order functions*)

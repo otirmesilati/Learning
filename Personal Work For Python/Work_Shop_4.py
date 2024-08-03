@@ -53,7 +53,7 @@ if 5 > 3:
     "yay"
 else:
     "nay"
-    
+
 # randoming from module
 import random
 print(random.randrange(1, 10))
@@ -72,6 +72,9 @@ whats_the_type = type(x)
 y, x = "Hi", 6
 x = y = 2 
 x, y = [1, 2]
+
+# https://www.w3schools.com/python/python_booleans.asp
+# "Most values are true"
 
 # lists - mutable
 [1 , 2 , 3 , 4] 
