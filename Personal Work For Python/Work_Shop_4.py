@@ -9,6 +9,13 @@ multiple line comments
 'Hi'
 "Hi"
 
+# variable types are inferred in runtime
+x = 6
+y = "Hi"
+
+# multi-assignment
+y, x = "Hi", 6
+
 
 # lists - mutable
 [1 , 2 , 3 , 4] 
