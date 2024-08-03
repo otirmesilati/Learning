@@ -18,5 +18,7 @@ insert into student_table values (1, 'Jack', 'Biology');
 insert into student_table values(2, 'Kate', 'Sociology');
 -- partial insertion
 insert into student_table (student_id, student_name) values (3, 'Claire');
+insert into student_table values(4, 'Jack', 'Biology');
+insert into student_table values(5, 'Mike', 'Computer Science');
 
 select * from student_table;
