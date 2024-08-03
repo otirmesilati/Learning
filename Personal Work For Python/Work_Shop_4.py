@@ -38,7 +38,9 @@ replace_me = "replace"
 replace_me.replace("replace","me")
 split_to_sub_strings = "split.me"
 split_to_sub_strings.split(".")
-
+# f-strings
+ami_name = "ami"
+name_sentence = f"name is {ami_name}"
 
 # randoming from module
 import random
