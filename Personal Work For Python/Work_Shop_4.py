@@ -19,9 +19,15 @@ b"Hi"
 None
 
 # strings - no chars in python!
-a = "hi"
-h_letter = a[0]
-# length? 
+my_str = "hi"
+h_letter = my_str[0]
+str_length = len(my_str)
+# slicing a string
+to_slice = "abcdefg" 
+to_slice[:5]
+to_slice[2:]
+to_slice[2:5]
+
 
 # randoming from module
 import random
