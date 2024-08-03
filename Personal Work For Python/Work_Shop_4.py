@@ -33,8 +33,18 @@ x, y = [1, 2]
 # dictonaries (single and double quotes are the same)
 {"hi" : 1, 'Bye': 2}
 
-# Playing with scopes
+# scopes
+def global_func():
+    global x
+    x = 5
 
+print(x) # Error
+global_func() # a call for binding x
+print(x) # 5
+
+
+
+# playing with functions
 def math_playground():
     
     def adding(summand, addend):
