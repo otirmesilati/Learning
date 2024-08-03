@@ -218,10 +218,12 @@ bool My_Line::show() {cout << first_point.show() << "," << second_point.show() <
 // my string implementation //
 My_String::My_String(const char* str_to_inp = NULL)
 {
-    // check if null
-    // yes -> nothing
-    // no -> allocate memory + copy list of characters
+    if(str_to_inp != nullptr) // same as if(str)
+    {
+        // no -> nothing -> no need for else
+        // yes -> allocate memory + copy list of characters
+    }
+    
 }
-// C'tor
 // D'tor
 // to string
