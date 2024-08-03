@@ -33,6 +33,7 @@ let as_and_eq = "hi" = "hello";;
 (*Functions As Values in OCaml*)
 let square x = x * x;;
 square 50;;
+let concat a b = a ^ " " ^ b;;
 
 (* Anon functions *)
 fun x -> x * x;;
