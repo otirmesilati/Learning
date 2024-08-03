@@ -18,6 +18,11 @@ range(3)
 b"Hi"
 None
 
+# strings - no chars in python!
+a = "hi"
+h_letter = a[0]
+# length? 
+
 # randoming from module
 import random
 print(random.randrange(1, 10))
