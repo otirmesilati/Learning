@@ -18,6 +18,10 @@ range(3)
 b"Hi"
 None
 
+# randoming from module
+import random
+print(random.randrange(1, 10))
+
 # operations
 1 + 2
 "Hi " + "Bye"
