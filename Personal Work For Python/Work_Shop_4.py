@@ -42,7 +42,9 @@ third_list.extend(["f", "g"]) # -> ["a", "b", "c", "d", "e", "f", "g"] extend = 
 third_list.extend(("h", "i")) # -> ["a", "b", "c", "d", "e", "f", "g", "h", "i"] extend also works on any sequence
 fourth_list = ["1", "2", "3", "2"] 
 fourth_list.remove("2") # -> ["1", "3", "2"] gets rid of the first occurence when duplicates exist
-
+fifth_list = ["alpha", "beta", "gamma"]
+scnd_elm = fifth_list.pop(1) # -> ["alpha", "gamma"]
+fifth_list.pop() # -> ["alpha"] removes last item
 
 # tuples - immutable
 (1, 2, 3, 4)
