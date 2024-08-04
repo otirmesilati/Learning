@@ -39,4 +39,7 @@ where student_major = 'Computer Science';
 -- set student_name = 'Tom', student_major = 'undecided'
 -- where student_major = 'Bio' or student_major = 'Chemistry';
 
+-- Querying the whole table
 select * from student_table;
+-- Querying the student's names
+select student_name from student_table;
