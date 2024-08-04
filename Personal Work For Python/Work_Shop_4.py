@@ -37,7 +37,9 @@ second_list[1:2] = [6, 7] # -> [1, 6, 7, 3] returns a bigger list
 second_list[1:3] = [8] # -> [1, 8, 3] returns a smaller list
 third_list = ["a", "b", "d"]
 third_list.insert(2, "c") # -> ["a", "b", "c", "d"] adds "c" element
-
+third_list.append("e") # -> ["a", "b", "c", "d", "e"] inserts to the end
+third_list.extend(["f", "g"]) # -> ["a", "b", "c", "d", "e", "f", "g"] extend = appending a list of items
+third_list.extend(("h", "i")) # -> ["a", "b", "c", "d", "e", "f", "g", "h", "i"] extend also works on any sequence
 
 # tuples - immutable
 (1, 2, 3, 4)
