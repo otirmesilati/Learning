@@ -219,7 +219,7 @@ bool My_Line::show() {cout << first_point.show() << "," << second_point.show() <
 // we can init here! finish this//
 My_String::My_String(const char* str_to_inp = NULL)
 {
-    if(str_to_inp != nullptr) // same as if(str)
+    if(str_to_inp != nullptr) // same as if(str_to_inp)
     {
         /*p_str memory allocation:
         1. new keyword
@@ -236,9 +236,12 @@ My_String::My_String(const char* str_to_inp = NULL)
         {
             a_str[i] = str_to_inp[i];
         }
-
     }
-    
 }
-// D'tor
-// to string
+My_String::~My_String()
+{
+    // check if not null //
+    // delete the memory //
+    // repoint the adress to null to avoid dangling pointer //
+}
+// to string //
