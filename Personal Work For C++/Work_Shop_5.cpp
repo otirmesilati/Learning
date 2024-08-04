@@ -223,7 +223,6 @@ My_String::My_String(const char* str_to_inp = NULL)
     {
         /*p_str memory allocation:
         1. new keyword
-        size finding:
         2.1. add 1 character for null in char list
         2.2. converting from size_t to int
         */
@@ -233,10 +232,9 @@ My_String::My_String(const char* str_to_inp = NULL)
         // we'll copy the characters once with strcpy_s function
         // and once with a loop
         strcpy_s(p_str, size_for_copy_plus_one * sizeof(char), str_to_inp);
-        // fix the size condition to be a max of 250
-        for(int i = 0; i < (size_for_copy_plus_one - 1) ; i++)
+        for(int i = 0; i < (size_for_copy_plus_one - 1) && i < 250 ; ++i)
         {
-            // finish this
+            a_str[i] = str_to_inp[i];
         }
 
     }

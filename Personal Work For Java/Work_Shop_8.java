@@ -31,4 +31,6 @@ public class Work_Shop_8 {
     // run the my_runnable wrapped in a thread //
     // run the my_thread //
 
+    // stopped page 16 of the threads PP //
+
 }
