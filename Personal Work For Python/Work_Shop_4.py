@@ -45,6 +45,9 @@ fourth_list.remove("2") # -> ["1", "3", "2"] gets rid of the first occurence whe
 fifth_list = ["alpha", "beta", "gamma"]
 scnd_elm = fifth_list.pop(1) # -> ["alpha", "gamma"]
 fifth_list.pop() # -> ["alpha"] removes last item
+del fifth_list["alpha"] # -> [] returns an empty list
+del third_list[""] # -> deletes whole list
+
 
 # tuples - immutable
 (1, 2, 3, 4)
@@ -127,8 +130,8 @@ y, x = "Hi", 6
 x = y = 2 
 x, y = [1, 2]
 
-# https://www.w3schools.com/python/python_lists.asp
-# list items
+# https://www.w3schools.com/python/python_lists_loop.asp
+# Loop Through the Index Numbers
 
 # scopes
 def global_func():
