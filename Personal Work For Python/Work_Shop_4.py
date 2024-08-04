@@ -18,6 +18,22 @@ range(3)
 b"Hi"
 None
 
+# sets
+{1, 2, 3}
+# {1, {2}} error - unhashable type
+
+# lists - mutable
+[1 , 2 , 3 , 4]
+[1, [2]] 
+
+# tuples - immutable
+(1, 2, 3, 4)
+(1, (2))
+
+# dictonaries (single and double quotes are the same)
+{"hi" : 1, 'Bye': 2}
+
+
 # false converting values
 bool("")
 bool(0)
@@ -37,8 +53,9 @@ x &= 3 # 0 bitwise operation that suprisingly outs 0
 # ^= , <<= , := - what are these?
 5 == 5 # true
 5 is 5 # error (not an object)
-z is z # true
-
+x is x # true
+1 in {1, 2} # true
+{1, 2} in {1, 2} # false
 
 # strings - no chars in python!
 my_str = "hi"
@@ -93,15 +110,6 @@ x, y = [1, 2]
 
 # https://www.w3schools.com/python/python_booleans.asp
 # "Most values are true"
-
-# lists - mutable
-[1 , 2 , 3 , 4] 
-
-# tuples - immutable
-(1, 2, 3, 4)
-
-# dictonaries (single and double quotes are the same)
-{"hi" : 1, 'Bye': 2}
 
 # scopes
 def global_func():
