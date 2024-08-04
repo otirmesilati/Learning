@@ -41,5 +41,8 @@ let cat_hi = concat "friend";;
 fun x -> x * x;;
 (fun x -> x * x) 20;;
 
+List.map();;
+List.map (fun x -> x * x) [0; 1; 2; 3;];; (* int list = [0, 1, 4, 9]*)
+
 (*https://ocaml.org/docs/tour-of-ocaml*)
 (*type parameters and higher-order functions*)
