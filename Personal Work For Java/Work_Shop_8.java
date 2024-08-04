@@ -2,7 +2,14 @@ public class Work_Shop_8 {
     
     // this section will be used for the basics of //
     // inheritence, implementation, IO, files etc... //
-    
+    public class my_Class {}
+    public interface my_Interface {}
+    // let's DFS into the nuances: //
+    // playing with modifiers and narrowings //
+    // playing with static //
+    // playing with abstract methods //
+    // playing with fields //
+
     // let's have some fun with threads //
 
     // 1st technique of parallelism - creating runnable blocks
