@@ -35,6 +35,10 @@ x = 60
 x /= 3 # 20
 x &= 3 # 0 bitwise operation that suprisingly outs 0
 # ^= , <<= , := - what are these?
+5 == 5 # true
+5 is 5 # error (not an object)
+z is z # true
+
 
 # strings - no chars in python!
 my_str = "hi"
