@@ -47,7 +47,11 @@ scnd_elm = fifth_list.pop(1) # -> ["alpha", "gamma"]
 fifth_list.pop() # -> ["alpha"] removes last item
 del fifth_list["alpha"] # -> [] returns an empty list
 del third_list[""] # -> deletes whole list
-second_list.clear() # -> [] does the same as del on list
+second_list.clear() # -> [] does the same as del on list\
+sixth_list = [3, 4, 5]
+for n in sixth_list:
+    sixth_list[n] += 1
+
 
 # tuples - immutable
 (1, 2, 3, 4)
