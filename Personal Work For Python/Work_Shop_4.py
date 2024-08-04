@@ -22,9 +22,15 @@ None
 # sets
 {1, 2, 3}
 # {1, {2}} error - unhashable type
-# lists - mutable
+
+# lists - ordered + mutable + duplicates
 [1 , 2 , 3 , 4]
 [1, [2]] 
+first_list = [1, 2, 3, 2]
+first_length = len(first_list)
+second_list = [1, "2", True]
+
+
 # tuples - immutable
 (1, 2, 3, 4)
 (1, (2))

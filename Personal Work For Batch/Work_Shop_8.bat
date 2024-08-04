@@ -56,3 +56,4 @@ echo. 2>folder1_text_2.txt
 :: renaming the files
 ren folder_1_text_2.txt hi.txt
 rename hi.txt folder_1_text_2.txt
+:: entering text 
