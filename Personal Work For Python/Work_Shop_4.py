@@ -40,6 +40,9 @@ third_list.insert(2, "c") # -> ["a", "b", "c", "d"] adds "c" element
 third_list.append("e") # -> ["a", "b", "c", "d", "e"] inserts to the end
 third_list.extend(["f", "g"]) # -> ["a", "b", "c", "d", "e", "f", "g"] extend = appending a list of items
 third_list.extend(("h", "i")) # -> ["a", "b", "c", "d", "e", "f", "g", "h", "i"] extend also works on any sequence
+fourth_list = ["1", "2", "3", "2"] 
+fourth_list.remove("2") # -> ["1", "3", "2"] gets rid of the first occurence when duplicates exist
+
 
 # tuples - immutable
 (1, 2, 3, 4)
