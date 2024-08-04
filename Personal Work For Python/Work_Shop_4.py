@@ -29,7 +29,12 @@ None
 first_list = [1, 2, 3, 2]
 first_length = len(first_list)
 second_list = [1, "2", True]
-
+tuple_to_list = list((2, 3, 4))
+scnd_elm = first_list[1] # same as [-1]
+first_list[1] = "changing value in list"
+second_list[1:3] = [2, 3] # changing a range of item values -> [1, 2 , 3]
+second_list[1:2] = [6, 7] # -> [1, 6, 7, 3] returns a bigger list
+second_list[1:3] = [8] # -> [1, 8, 3] returns a smaller list
 
 # tuples - immutable
 (1, 2, 3, 4)
