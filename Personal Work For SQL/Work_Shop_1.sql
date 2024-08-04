@@ -43,3 +43,6 @@ where student_major = 'Computer Science';
 select * from student_table;
 -- Querying the student's names
 select student_name from student_table;
+select student_table.student_name, -- notice the alternative modular writing
+ student_table.student_major from student_table
+ order by student_table.student_name;
