@@ -24,6 +24,18 @@ bool(0)
 bool(())
 bool([])
 
+
+# operations and assignments
+1 + 2
+"Hi " + "Bye"
+2 ** 3 # 8
+10 / 3 # 3.333...
+10 // 3 # 3
+x = 60
+x /= 3 # 20
+x &= 3 # 0 bitwise operation that suprisingly outs 0
+# ^= , <<= , := - what are these?
+
 # strings - no chars in python!
 my_str = "hi"
 h_letter = my_str[0]
@@ -63,10 +75,6 @@ else:
 # randoming from module
 import random
 print(random.randrange(1, 10))
-
-# operations
-1 + 2
-"Hi " + "Bye"
 
 # variable types are inferred in runtime
 x = 6
