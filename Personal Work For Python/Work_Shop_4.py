@@ -47,7 +47,7 @@ scnd_elm = fifth_list.pop(1) # -> ["alpha", "gamma"]
 fifth_list.pop() # -> ["alpha"] removes last item
 del fifth_list["alpha"] # -> [] returns an empty list
 del third_list[""] # -> deletes whole list
-
+second_list.clear() # -> [] does the same as del on list
 
 # tuples - immutable
 (1, 2, 3, 4)
