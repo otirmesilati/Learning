@@ -18,6 +18,12 @@ range(3)
 b"Hi"
 None
 
+# false converting values
+bool("")
+bool(0)
+bool(())
+bool([])
+
 # strings - no chars in python!
 my_str = "hi"
 h_letter = my_str[0]
