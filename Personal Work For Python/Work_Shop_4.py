@@ -18,18 +18,16 @@ range(3)
 b"Hi"
 None
 
+# data collections 
 # sets
 {1, 2, 3}
 # {1, {2}} error - unhashable type
-
 # lists - mutable
 [1 , 2 , 3 , 4]
 [1, [2]] 
-
 # tuples - immutable
 (1, 2, 3, 4)
 (1, (2))
-
 # dictonaries (single and double quotes are the same)
 {"hi" : 1, 'Bye': 2}
 
@@ -108,8 +106,8 @@ y, x = "Hi", 6
 x = y = 2 
 x, y = [1, 2]
 
-# https://www.w3schools.com/python/python_booleans.asp
-# "Most values are true"
+# https://www.w3schools.com/python/python_lists.asp
+# list items
 
 # scopes
 def global_func():
