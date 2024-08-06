@@ -59,6 +59,7 @@ for n in range(len(seventh_list)): # using for + len
 count = 0
 while count < len(seventh_list): # using while + len
     count += 1
+[print(n) for n in seventh_list]
 
 # tuples - immutable
 (1, 2, 3, 4)
