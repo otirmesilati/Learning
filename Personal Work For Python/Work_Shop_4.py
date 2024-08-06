@@ -62,6 +62,8 @@ while count < len(seventh_list): # using while + len
 [print(n) for n in seventh_list]
 fruit_list = ["apple", "banana", "cherry", "kiwi", "mango"]
 [fruit for fruit in fruit_list if "a" in fruit] # [expression for item in iterable if condition == True]
+eighth_list = [x for x in range(10)  if x < 5] # comprehension and outcome
+
 
 # tuples - immutable
 (1, 2, 3, 4)
