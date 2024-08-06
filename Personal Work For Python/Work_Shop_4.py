@@ -51,7 +51,10 @@ second_list.clear() # -> [] does the same as del on list\
 sixth_list = [3, 4, 5]
 for n in sixth_list:
     sixth_list[n] += 1
-
+count = 0
+seventh_list = [1, 2, 3]
+for n in range(len(seventh_list)): # using for + len
+    count += 1
 
 # tuples - immutable
 (1, 2, 3, 4)
