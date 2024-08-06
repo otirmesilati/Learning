@@ -1,0 +1,7 @@
+/* Adding A style/declaration for changing the color of the
+ paragraph and the size of the font */
+
+p {
+  font-size: 64px;
+  color: purple;
+}
