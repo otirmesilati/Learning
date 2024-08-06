@@ -28,3 +28,7 @@ p {
 
 /* Grouping selectors, typing h1 h2 is different
 for looking through nested elements (& rather than |) */
+h1,
+h2 {
+  color: blue;
+}
