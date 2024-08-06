@@ -22,3 +22,9 @@ p {
 }
 
 /* ID Selection */
+#second {
+  font-style: italic;
+}
+
+/* Grouping selectors, typing h1 h2 is different
+for looking through nested elements (& rather than |) */
