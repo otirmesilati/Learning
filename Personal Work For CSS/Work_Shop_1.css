@@ -5,3 +5,13 @@ p {
   font-size: 64px;
   color: purple;
 }
+
+/* Element selector - inheritance */
+body {
+  font-size: 22px;
+}
+
+/* Specific element selection*/
+p {
+  color: purple;
+}
