@@ -38,3 +38,9 @@ p span {
   text-transform: uppercase;
   background-color: gold;
 }
+
+/* better way of doing the same thing - reusable */
+.highlight {
+  text-transform: uppercase;
+  background-color: gold;
+}
