@@ -11,6 +11,11 @@ p {
   color: purple;
 }
 
+/* A semantic element used once per page - header will only be affected if it's inside the block */
+main {
+  font-family: monospace;
+}
+
 /* Element selector - inheritance */
 /* Unlike universal selector which selects all, the rest of the elements*/
 /* inherit from body in case of font related properties, though some will be */
@@ -28,7 +33,6 @@ p {
 /* CSS cascading DOWN -> last rule applied, classes override */
 /* Check out the precedance -> inspect the page for the element, p{color: red;} */
 /* is crossed out */
-
 .gray {
   color: gray;
 }
