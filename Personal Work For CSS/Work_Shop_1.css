@@ -32,3 +32,9 @@ h1,
 h2 {
   color: blue;
 }
+
+/* AND group selectopn*/
+p span {
+  text-transform: uppercase;
+  background-color: gold;
+}
