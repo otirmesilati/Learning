@@ -67,6 +67,9 @@ eighth_list = [x for x in range(10)  if x < 5] # comprehension and outcome
 eighth_list = [x.upper() for x in fruit_list] # comprehensions - changing outcome
 eighth_list = ["Hello" for x in fruit_list] # comprehension - changing outcome
 eighth_list = [x if x != "banana" else "orange" for x in fruit_list] # comprehension - alternative way to condition and outcome
+ninth_list = ["Benny", "Avi", "Donald", "Charlie"]
+ninth_list.sort() # Wil be done Alpha_Numerically
+# sorting ["Benny", "Avi", "Donald", "Charlie", 67] will error - the sorter can't handle multiple types
 
 # tuples - immutable
 (1, 2, 3, 4)
