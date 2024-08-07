@@ -26,6 +26,7 @@ body {
   line-height: 1.5;
   background-color: papayawhip; /* It's important to choose a good contrast between font and bkg colors */
   color: darkblue;
+  color: rgb(255, 0, 0); /* rgba - guides transperency with alpha channel */
 }
 
 /* Specific element selection*/
