@@ -26,8 +26,9 @@ body {
   line-height: 1.5;
   background-color: papayawhip; /* It's important to choose a good contrast between font and bkg colors */
   color: rgb(255, 0, 0); /* rgba - guides transperency with alpha channel */
-  /* color: #000000 - black #FFFFFF - white FF0000 - red 
-    00FF00 - green, 0000FF - blue*/
+  /* color: #000000 - black #FFFFFF - white #FF0000 - red 
+    #00FF00 - green, #0000FF - blue* can all be shorthanded to
+    #000, #FFF #F00 #0F0 and #00F */
 }
 
 /* Specific element selection*/
