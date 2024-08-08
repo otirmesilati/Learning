@@ -11,6 +11,9 @@ p {
   color: purple;
   color: #333; /* is a nice light black color */
   /* hsl: hue(color spectrum)-saturation(color potency)-light(black/white) */
+  /* hue: 0 (or 365) for red, 120 for green, 240 for blue */
+  /* light: 100 is white, 0 is black, all colors are in between not including these values */
+  /* 100 saturation is for strong colors */
 }
 
 /* A semantic element used once per page - header will only be affected if it's inside the block */
