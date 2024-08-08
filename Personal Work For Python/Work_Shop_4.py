@@ -70,6 +70,9 @@ eighth_list = [x if x != "banana" else "orange" for x in fruit_list] # comprehen
 ninth_list = ["Benny", "Avi", "Donald", "Charlie"]
 ninth_list.sort() # Wil be done Alpha_Numerically
 # sorting ["Benny", "Avi", "Donald", "Charlie", 67] will error - the sorter can't handle multiple types
+# sorting is case sensitive 
+first_sort_list = [11, 23, 35, 48]
+first_sort_list.sort(reverse = True)
 
 # tuples - immutable
 (1, 2, 3, 4)
