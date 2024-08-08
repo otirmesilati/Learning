@@ -9,6 +9,8 @@
 p {
   font-size: 64px;
   color: purple;
+  color: #333; /* is a nice light black color */
+  /* hsl: hue(color spectrum)-saturation(color potency)-light(black/white) */
 }
 
 /* A semantic element used once per page - header will only be affected if it's inside the block */
