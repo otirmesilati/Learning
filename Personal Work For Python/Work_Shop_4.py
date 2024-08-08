@@ -73,6 +73,9 @@ ninth_list.sort() # Wil be done Alpha_Numerically
 # sorting is case sensitive 
 first_sort_list = [11, 23, 35, 48]
 first_sort_list.sort(reverse = True)
+def my_sort_logic():
+    return n - 1
+first_sort_list.sirt(key = my_sort_logic)
 
 # tuples - immutable
 (1, 2, 3, 4)
