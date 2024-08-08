@@ -56,12 +56,15 @@ p {
 
 /* Grouping selectors, typing h1 h2 is different
   for looking through nested elements (& rather than |) */
+/* we won't usualy take away the choice of manually playing */
+/* with the size from the user */
 h1,
 h2 {
   color: blue;
+  border: 2px dashed red;
 }
 
-/* AND group selectopn*/
+/* AND group selectoin*/
 p span {
   text-transform: uppercase;
   background-color: gold;
