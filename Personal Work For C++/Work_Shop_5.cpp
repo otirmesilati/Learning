@@ -216,8 +216,7 @@ second_point.get_x() << "," <<second_point.get_y() << ")"; return true; }
 bool My_Line::show() {cout << first_point.show() << "," << second_point.show() << endl; return true;}
 
 // my string implementation //
-// we can init here! finish this//
-My_String::My_String(const char* str_to_inp = NULL)
+My_String::My_String(const char* str_to_inp = NULL): p_str(nullptr), a_str()
 {
     if(str_to_inp != nullptr) // same as if(str_to_inp)
     {
