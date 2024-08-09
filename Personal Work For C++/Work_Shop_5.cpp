@@ -242,4 +242,8 @@ My_String::~My_String()
     if(p_str) delete [] p_str; // erasing what could be there //
     p_str = nullptr; // avoiding dangling pointer //
 }
-// to string //
+bool My_String::to_string()
+{
+    // we'll do once for pointer (with 250 letter cond)
+    // and once for array //
+}
