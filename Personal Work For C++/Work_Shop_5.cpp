@@ -239,7 +239,7 @@ My_String::My_String(const char* str_to_inp = NULL): p_str(nullptr), a_str()
 }
 My_String::~My_String()
 {
-    if(p_str) delete [] p_str;
-    // repoint the adress to null to avoid dangling pointer //
+    if(p_str) delete [] p_str; // erasing what could be there //
+    p_str = nullptr; // avoiding dangling pointer //
 }
 // to string //
