@@ -244,6 +244,12 @@ My_String::~My_String()
 }
 bool My_String::to_string()
 {
+    // add an if not null here //
+    {
+        int size_plus_one = (int)(strlen(p_str));
+    }
+    // what next ? //
+
     // we'll do once for pointer (with 250 letter cond)
     // and once for array //
 }
