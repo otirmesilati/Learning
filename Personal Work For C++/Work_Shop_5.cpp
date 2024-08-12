@@ -244,9 +244,14 @@ My_String::~My_String()
 }
 bool My_String::to_string()
 {
-    // add an if not null here //
+    if(p_str)
     {
         int size_plus_one = (int)(strlen(p_str));
+        if(size_plus_one > 250) size_plus_one = 250;
+        
+        // cout what string is
+        // go over a loop and print the letters
+        
     }
     // what next ? //
 
