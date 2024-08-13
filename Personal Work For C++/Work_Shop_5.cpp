@@ -247,13 +247,17 @@ bool My_String::to_string()
     if(p_str)
     {
         int size_plus_one = (int)(strlen(p_str));
-        if(size_plus_one > 250) size_plus_one = 250;
+        if(size_plus_one > 249) size_plus_one = 249;
         
-        // cout what string is
-        // go over a loop and print the letters
-        
+        cout << "String is: " << endl;
+        for(int prnt_ind = 0; prnt_ind < size_plus_one; prnt_ind++)
+        {
+            cout << p_str[prnt_ind];
+        }
+        cout << endl << endl;
+
+        // array section here - solves the 250 char problem? //
     }
-    // what next ? //
 
     // we'll do once for pointer (with 250 letter cond)
     // and once for array //
