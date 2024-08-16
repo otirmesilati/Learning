@@ -1,2 +1,2 @@
-# Initializing the project - React
-npm init -y
+# 1. Initializing the project - React
+npm init -y 

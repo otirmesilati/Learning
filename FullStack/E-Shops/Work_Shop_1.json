@@ -1,0 +1,5 @@
+{
+  "comment_1": "2.1 Add this in between description and main in package json",
+  "comment_2": "it will allow to use ecmascript syntax(import/export)",
+  "type": "module"
+}
