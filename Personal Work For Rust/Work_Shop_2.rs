@@ -4,28 +4,29 @@ More
 Comments
  */
 
+// literals: 
+12;
+45.6;
+"Hi";
+true;
+(1u32, 2u32, 4.3f32, 5.4f32);
+
+// oprators 
+3.4 + 5.6;
+true && false;
+
+// string formatting - Note the printing is MACRO based, :o/b/x for diffrent radixes //
+println!("first: {}", my_tuple.0);
 
 fn main()
 {
     // literals:
-    12;
-    45.6;
-    "Hi";
-    true;
-
-    // tuples:
-    (1u32, 2u32, 4.3f32, 5.4f32);
-    let my_tuple = (1u32, 2u32, 3u32, 4.3f32, 5.4f32);
-    // add the tuple of tuples here 
-    println!("first: {}", my_tuple.0);
-    // print the tuple of tuples
-
-    // oprators:
-     3.4 + 5.6;
-     true && false;
     
-    // Note the printing is MACRO based, :o/b/x for diffrent radixes //
-    println!("Hello World!")
+    // tuples:
+    
+    let my_tuple = (1u32, 2u32, 3u32, 4.3f32, 5.4f32);     
+    
+    
 
     // incremental //
     print!("{0}, this is {1}. {1}, this is {0}", "Alice", "Bob")
@@ -69,7 +70,7 @@ fn main()
     println!("{}", 1e4);
     println!("{}", 1e5 - 1e4);
 
-
-
-
 }
+
+// https://doc.rust-lang.org/rust-by-example/variable_bindings/mut.html
+// Variable Bindings - mutability 
