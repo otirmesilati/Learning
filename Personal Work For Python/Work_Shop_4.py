@@ -38,6 +38,12 @@ second_list[1:3] = [8] # -> [1, 8, 3] returns a smaller list
 third_list = ["a", "b", "d"]
 third_list.insert(2, "c") # -> ["a", "b", "c", "d"] adds "c" element
 third_list.append("e") # -> ["a", "b", "c", "d", "e"] inserts to the end
+# Copying lists as anser to binding rather than copy
+copied_list = [1, 2, 3]
+copy_list = copied_list.copy()
+# also Works - Continue from here 
+
+
 third_list.extend(["f", "g"]) # -> ["a", "b", "c", "d", "e", "f", "g"] extend = appending a list of items
 third_list.extend(("h", "i")) # -> ["a", "b", "c", "d", "e", "f", "g", "h", "i"] extend also works on any sequence
 fourth_list = ["1", "2", "3", "2"] 
@@ -75,11 +81,13 @@ first_sort_list = [11, 23, 35, 48]
 first_sort_list.sort(reverse = True)
 def my_sort_logic():
     return n - 1
-first_sort_list.sirt(key = my_sort_logic)
+first_sort_list.sort(key = my_sort_logic)
+
 
 # tuples - immutable
 (1, 2, 3, 4)
 (1, (2))
+
 # dictonaries (single and double quotes are the same)
 {"hi" : 1, 'Bye': 2}
 
