@@ -1,9 +1,16 @@
+-- this seems a bit lacking - go from the begining !!
+
 -- literals 
 
 1
+2.4
+"hi"
+pi
+
+-- operators
+
 2 + 3
 "hi " ++ "you"
-pi
 
 -- variable binding 
 
@@ -73,3 +80,6 @@ celebrateBD =
  { person | age = person.age + 1}
  
 celebrateBD john
+
+-- https://elmprogramming.com/elm-repl.html
+-- elm repl

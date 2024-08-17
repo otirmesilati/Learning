@@ -71,3 +71,4 @@ class MegaGreeter
 
   # https://www.ruby-lang.org/en/documentation/quickstart/3/
   # Mega-greeter class : say_hi function 
+  # later - we'll find a more comprehensive tutorial and standardize the tutorial work-shop
