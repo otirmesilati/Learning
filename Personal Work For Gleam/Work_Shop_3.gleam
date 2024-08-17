@@ -6,6 +6,13 @@ import gleam/string
 /// type docs
 //// module docs
 
+// literals
+1
+2.4
+"Hi"
+
+// Continue from here
+
 pub type Id = Int
 const ints: List(Int) = [4,5,6]
 const floats = [7.0, 8.2, 9.7] 
@@ -95,3 +102,7 @@ fn calc(value: Int, add: addend: Int, multiply multiplier: Int)
 {
     value * multiplier + addend
 }
+
+// https://tour.gleam.run/basics/ints/
+// Ints
+// Like elm - maybe start over or find a new tutorial - DFS the subjects better
