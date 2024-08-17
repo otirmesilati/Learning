@@ -68,3 +68,6 @@ class MegaGreeter
   def say_hi
     # what here ?
   end
+
+  # https://www.ruby-lang.org/en/documentation/quickstart/3/
+  # Mega-greeter class : say_hi function 
