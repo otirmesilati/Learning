@@ -244,6 +244,7 @@ My_String::~My_String()
 }
 bool My_String::to_string()
 {
+    // Pointer to_string implementation //
     if(p_str)
     {
         int size_plus_one = (int)(strlen(p_str));
@@ -256,7 +257,14 @@ bool My_String::to_string()
         }
         cout << endl << endl;
 
-        // array section here - solves the 250 char problem? //
+        // return ? //
+
+    }
+
+    // Array to_string implementation //
+    if(a_str)
+    {
+        int size_plus_one = (int)(strlen(a_str));
     }
 
     // we'll do once for pointer (with 250 letter cond)
