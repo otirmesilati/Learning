@@ -1,13 +1,9 @@
-# Hello
-IO.puts "Hi"
-
 # literals
 
 12
 0xc
 0o14
 0b1100
-
 :hello
 true
 false
@@ -15,21 +11,23 @@ false
 multi line
 strings
 """
+"Hi" # list
+[1, 2, 3]
+[1 ,"Hi", :an_atom]
+'Hello' # char-list
+<< 65, 66 , 67 >> # Printing ABC
 
-# Operators on the literals and lists
+# Operators
 
 1 + 2
 'Hi ' ++ 'Bye'
 [1, 2] ++ [3]
 
-# bits and bytes coded into ASCII
-
-<< 65, 66 , 67 >> # Printing ABC
+# Continue organization from here
 
 # Lists and Tuples are implemented differently, but are similar
-
 # both can have a myriad of types
-[1 ,"Hi", :an_atom] # list
+
 'Hello' # Char-List
 IO.puts(is_list(to_char_list("hełło"))) # converting to list
 IO.puts(is_binary(to_string('hełło'))) # converting from list (to binary)
@@ -61,3 +59,7 @@ IO.puts(String.reverse("world"))
 # Keyword Lists
 list = [{:a,1}, {:b,2}]
 [a : 1, b : 2] # the same as the previous keyword list
+
+
+# https://www.tutorialspoint.com/elixir/elixir_data_types.htm
+# Data types
