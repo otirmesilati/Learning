@@ -257,7 +257,7 @@ bool My_String::to_string()
         }
         cout << endl << endl;
 
-        // return ? //
+        return true;
 
     }
 
@@ -265,8 +265,10 @@ bool My_String::to_string()
     if(a_str)
     {
         int size_plus_one = (int)(strlen(a_str));
+        
+        // cout //
+        // for used for inputting to cells //
+        // return //
     }
 
-    // we'll do once for pointer (with 250 letter cond)
-    // and once for array //
 }
