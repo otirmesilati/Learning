@@ -1,14 +1,23 @@
-(*comments*)
+(*   & & & & & & Commenting & & & & & &  *)
 
-(*literals*)
+(* Single and 
+multi line comments *)
+
+(*   Literals   *)
+
 2;;
 3.4;;
+
 'h';;
 (*int_of_char 'h';; to find out ASCII value*)
 "Bye";;
+
 false;;
 
-(* Operators *)
+(*   Operators   *)
+
+(*   String Formatting   *)
+
 2 + 4;;
 3 * 2;;
 3.2 +. 2.0;; (* different operators for different types operators (float operators)*)
