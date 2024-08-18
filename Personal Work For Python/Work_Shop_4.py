@@ -1,14 +1,18 @@
-# single line comments 
+#   & & & & & &  Single line comments & & & & & & 
+
 """
 multiple line comments
 """
 
-# literals 
+#   & & & & & & Literals & & & & & & 
+
 1
 2.3
 1 + 2j
+
 'Hi'
 "Hi"
+
 {1: "Hi", 2: "bye"}
 {1,2,3}
 frozenset({1,2,3})
@@ -17,6 +21,14 @@ frozenset({1,2,3})
 range(3)
 b"Hi"
 None
+
+#   & & & & & & Operators & & & & & &
+
+#   & & & & & & String Formatting & & & & & &
+
+#   & & & & & & Python-specific: Lists & & & & & &
+
+#   & & & & & & Python-specific: Tupples & & & & & &
 
 # data collections 
 # sets
@@ -41,7 +53,7 @@ third_list.append("e") # -> ["a", "b", "c", "d", "e"] inserts to the end
 # Copying lists as anser to binding rather than copy
 copied_list = [1, 2, 3]
 copy_list = copied_list.copy()
-# also Works - Continue from here 
+# also Works - using the 
 
 
 third_list.extend(["f", "g"]) # -> ["a", "b", "c", "d", "e", "f", "g"] extend = appending a list of items
