@@ -1,5 +1,17 @@
 -- this seems a bit lacking - go from the begining !!
 
+--   & & & & & & Comments & & & & & &  
+
+--   & & & & & & Literals & & & & & & 
+
+--   & & & & & & Operators & & & & & & 
+
+--   & & & & & & String Formatting & & & & & & 
+
+--   & & & & & & Conditional Statements & & & & & & 
+
+--   & & & & & & Loops & & & & & & 
+
 -- literals 
 
 1
@@ -82,4 +94,6 @@ celebrateBD =
 celebrateBD john
 
 -- https://elmprogramming.com/elm-repl.html
--- elm repl
+
+-- https://www.tutorialspoint.com/elm/index.htm
+-- Home
