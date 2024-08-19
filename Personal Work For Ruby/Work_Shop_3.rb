@@ -1,4 +1,15 @@
-# comments
+#   & & & & & & Comments & & & & & &  
+
+#   & & & & & & Literals & & & & & &  
+
+#   & & & & & & Operators & & & & & &  
+
+#   & & & & & & String Formatting & & & & & &  
+
+#   & & & & & & Conditional Statemenets & & & & & &  
+
+#   & & & & & & Loops & & & & & &  
+
 =begin
 multi-line 
 comments 
