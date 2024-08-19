@@ -1,4 +1,15 @@
-# literals
+#   & & & & & & Comments & & & & & &
+
+#   & & & & & & Literals & & & & & &
+
+#   & & & & & & Operators & & & & & &
+
+#   & & & & & & String Formatting & & & & & &
+
+#   & & & & & & Conditional Statements & & & & & &
+
+#   & & & & & & Loops & & & & & &
+
 
 12
 0xc
