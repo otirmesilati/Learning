@@ -1,4 +1,17 @@
-// comments
+//   & & & & & & Comments & & & & & & //
+
+//   & & & & & & Literals & & & & & & 
+
+//   & & & & & & Operators & & & & & &
+
+//   & & & & & & String Formatting & & & & & &
+
+//   & & & & & & Conditional Statements & & & & & &
+
+//   & & & & & & Loops & & & & & & 
+
+// Single Line comment
+
 /* multi
 line comments
 */
