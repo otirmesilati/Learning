@@ -2,9 +2,21 @@ import gleam/io
 import gleam/int // this is relevant for random function // 
 import gleam/string
 
+//   & & & & & & Comments & & & & & &   // 
+
 // regular comments
 /// type docs
 //// module docs
+
+//   & & & & & & Literals  & & & & & & 
+
+//   & & & & & & Operators & & & & & &
+
+//   & & & & & & String Formatting & & & & & &
+
+//   & & & & & & Conditional Statements & & & & & & 
+
+//   & & & & & & Loops & & & & & & 
 
 // literals
 1
