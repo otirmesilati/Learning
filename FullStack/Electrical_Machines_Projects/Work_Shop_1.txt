@@ -1,5 +1,21 @@
 & & & & & & & & & &  Simple Calculator & & & & & & & & &
 
-Synopsis:
+Summary: You were asked by Caly's Calculated Classroom to build
+A calculator Backend logic for the class, that will be later be taken
+by Frankie the Fullstck developer and turned into a full blown
+Web application.
 
-testing...
+Objectives: output the result of a binomial calculation for the operations:
+1. Plus
+2. Minus
+3. Times
+4. Obelus
+5. Power
+
+Milestones:
+1. Fully Operational Basic Menu for the Operations.
+2. Addition functionality works.
+3. functionality works.
+3. functionality works.
+3. functionality works.
+3. functionality works.
