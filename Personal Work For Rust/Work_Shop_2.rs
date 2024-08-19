@@ -1,23 +1,32 @@
-// Commenting
+//   & & & & & & Comments & & & & & &   //
+
+// Single line comment
+
 /* 
-More
-Comments
+Multi Line Comment
  */
 
-// literals: 
+//   & & & & & & Literals & & & & & &   // 
+
 12;
 45.6;
 "Hi";
 true;
 (1u32, 2u32, 4.3f32, 5.4f32);
 
-// oprators 
+//   & & & & & & Operators & & & & & &  
 3.4 + 5.6;
 true && false;
 
-// string formatting - Note the printing is MACRO based, :o/b/x for diffrent radixes //
+//   & & & & & & String Formatting & & & & & &   // 
+// - Note the printing is MACRO based, :o/b/x for diffrent radixes //
 println!("first: {}", my_tuple.0);
 
+//   & & & & & & Conditional Statements & & & & & &   // 
+
+//   & & & & & & Loops & & & & & &   //
+
+//
 fn main()
 {
     // literals:
