@@ -1,4 +1,15 @@
-// comments
+//   & & & & & & Comments & & & & & & //
+
+//   & & & & & & Literals & & & & & &
+
+//   & & & & & & Operators & & & & & &
+
+//   & & & & & & String Formatting & & & & & &
+
+//   & & & & & & Conditional Statements & & & & & &
+
+//   & & & & & & Loops & & & & & &
+
 /* multi- line comments */
 
 // https://www.w3schools.com/js/js_statements.asp
