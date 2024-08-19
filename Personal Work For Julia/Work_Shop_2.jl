@@ -1,3 +1,16 @@
+#   & & & & & & Comments & & & & & & 
+
+#   & & & & & & Literals & & & & & &
+
+#   & & & & & & Operators & & & & & &
+
+#   & & & & & & String Formatting & & & & & &
+
+#   & & & & & & Conditional Statements & & & & & & 
+
+#   & & & & & & Loops & & & & & &
+
+
 # single line comments
 
 #=
