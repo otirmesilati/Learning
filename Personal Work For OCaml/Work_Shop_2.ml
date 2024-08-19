@@ -1,9 +1,9 @@
-(*   & & & & & & Commenting & & & & & &  *)
+(*   & & & & & & Commenting & & & & & &   *)
 
 (* Single and 
 multi line comments *)
 
-(*   Literals   *)
+(*   & & & & & & Literals & & & & & &   *)
 
 2;;
 3.4;;
@@ -14,9 +14,13 @@ multi line comments *)
 
 false;;
 
-(*   Operators   *)
+(*   & & & & & & Operators & & & & & &   *)
 
-(*   String Formatting   *)
+(*   & & & & & & String Formatting & & & & & &   *)
+
+(*   & & & & & & Conditional Statements & & & & & &   *)
+
+(*   & & & & & & Loops & & & & & &   *)
 
 2 + 4;;
 3 * 2;;
