@@ -1,3 +1,15 @@
+//   & & & & & & Comments & & & & & & 
+
+//   & & & & & & Literals & & & & & &   
+
+//   & & & & & & Operators & & & & & &   
+
+//   & & & & & & String Formatting & & & & & &   
+
+//   & & & & & & Conditional Statements & & & & & &   
+
+//   & & & & & & Loops & & & & & &   
+
 // literals
 3 + 3
 
