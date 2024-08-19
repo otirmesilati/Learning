@@ -1,5 +1,13 @@
 #   & & & & & & Comments & & & & & &  
 
+# Single Line Comments
+
+=begin
+Multi Line
+Comments
+=end
+
+
 #   & & & & & & Literals & & & & & &  
 
 #   & & & & & & Operators & & & & & &  
@@ -15,8 +23,5 @@ multi-line
 comments 
 =end
 
-# literals
-
-# operators
-
-# and on and on ..
+# https://www.tutorialspoint.com/ruby/ruby_comments.htm
+# Next: Synatx? Variables? wherever the literals are hiding
