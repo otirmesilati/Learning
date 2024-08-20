@@ -1,3 +1,6 @@
+# https://www.w3schools.com/python/python_lists_loop.asp
+# Loop Through the Index Numbers
+
 #   & & & & & &  Single line comments & & & & & & 
 
 """
@@ -7,8 +10,11 @@ multiple line comments
 #   & & & & & & Literals & & & & & & 
 
 1
+-2
 2.3
 1 + 2j
+
+5e7 # 5000000
 
 'Hi'
 "Hi"
@@ -21,6 +27,8 @@ frozenset({1,2,3})
 range(3)
 b"Hi"
 None
+
+# type conversions
 
 #   & & & & & & Operators & & & & & &
 
@@ -178,8 +186,6 @@ y, x = "Hi", 6
 x = y = 2 
 x, y = [1, 2]
 
-# https://www.w3schools.com/python/python_lists_loop.asp
-# Loop Through the Index Numbers
 
 # scopes
 def global_func():

@@ -1,3 +1,6 @@
+(* https://ocaml.org/manual/5.2/lex.html#sss:stringliterals *)
+(* Lexical conventions *)
+
 (*   & & & & & & Commenting & & & & & &   *)
 
 (* Single and 
@@ -34,5 +37,5 @@ false;;
 (1 < 2);;
 "Hello " ^ " " ^ "World";;
 
-(* https://ocaml.org/manual/5.2/coreexamples.html *)
-(* Stopped At : "Predefined data structures include tuples, arrays, and.."*)
+
+
