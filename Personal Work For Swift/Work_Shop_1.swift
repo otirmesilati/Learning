@@ -1,3 +1,6 @@
+// https://www.tutorialspoint.com/swift/swift_basic_syntax.htm
+// Literals
+
 //   & & & & & & Comments & & & & & & 
 
 // Single line comment
@@ -17,6 +20,10 @@ comments!
 
 //   & & & & & & Literals & & & & & & 
 
+// integers
+// floats
+// strings
+
 //   & & & & & & Operators & & & & & & 
 
 //   & & & & & & String Format & & & & & & 
@@ -35,11 +42,5 @@ comments!
  3
  4.5
  "hi"
-
- // stopped at keywords 
- // https://www.tutorialspoint.com/swift/swift_basic_syntax.htm
  
 // type "swift" in a shell to open the REPL
-
- // emulator: 
- // https://swiftplayground.run/
