@@ -1,3 +1,6 @@
+# https://www.tutorialspoint.com/ruby/ruby_variables.htm
+# variables
+
 #   & & & & & & Comments & & & & & &  
 
 # Single Line Comments
@@ -9,6 +12,13 @@ Comments
 
 
 #   & & & & & & Literals & & & & & &  
+
+# ints
+# floats
+# strings
+# arrays
+# hashes
+# ranges
 
 #   & & & & & & Operators & & & & & &  
 
@@ -23,5 +33,3 @@ multi-line
 comments 
 =end
 
-# https://www.tutorialspoint.com/ruby/ruby_comments.htm
-# Next: Synatx? Variables? wherever the literals are hiding
