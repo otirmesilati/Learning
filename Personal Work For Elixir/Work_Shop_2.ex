@@ -1,6 +1,16 @@
+# https://www.tutorialspoint.com/elixir/elixir_data_types.htm
+# Data types
+
 #   & & & & & & Comments & & & & & &
 
 #   & & & & & & Literals & & & & & &
+
+# numericals
+# atoms
+# bools
+# binaries
+# lists
+# tuples
 
 #   & & & & & & Operators & & & & & &
 
@@ -70,7 +80,3 @@ IO.puts(String.reverse("world"))
 # Keyword Lists
 list = [{:a,1}, {:b,2}]
 [a : 1, b : 2] # the same as the previous keyword list
-
-
-# https://www.tutorialspoint.com/elixir/elixir_data_types.htm
-# Data types
