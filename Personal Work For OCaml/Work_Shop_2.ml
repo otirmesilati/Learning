@@ -3,6 +3,12 @@
 (* Single and 
 multi line comments *)
 
+(*
+Nested
+(* Comments within *)
+Other comments
+*)
+
 (*   & & & & & & Literals & & & & & &   *)
 
 2;;
