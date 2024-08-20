@@ -1,4 +1,12 @@
+// https://www.w3schools.com/cs/cs_variables.php
+// Variables
+
 //   & & & & & & Comments & & & & & & //
+
+// Single Line comments
+/* Multi Line
+Comments
+*/
 
 //   & & & & & & Literals & & & & & & 
 
@@ -16,5 +24,3 @@
 line comments
 */
 
-// https://www.w3schools.com/cs/cs_intro.php
-// a bit of annoying theory but we'll catch up quickly :)
