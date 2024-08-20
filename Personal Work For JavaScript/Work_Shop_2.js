@@ -1,4 +1,13 @@
+// https://www.w3schools.com/js/js_syntax.asp
+// Syntax (rolling message: redo HOME to output later after to connect js to HTML and CSS)
+
 //   & & & & & & Comments & & & & & & //
+
+// Single Line comments //
+
+/* Multi Line
+Comments
+ */
 
 //   & & & & & & Literals & & & & & &
 
@@ -11,6 +20,3 @@
 //   & & & & & & Loops & & & & & &
 
 /* multi- line comments */
-
-// https://www.w3schools.com/js/js_statements.asp
-// Js Statements (rolling message: redo HOME to output later after to connect js to HTML and CSS)

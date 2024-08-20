@@ -1,5 +1,5 @@
-# https://www.w3schools.com/python/python_lists_loop.asp
-# Loop Through the Index Numbers
+# https://www.w3schools.com/python/python_numbers.asp
+# Type conversions
 
 #   & & & & & &  Single line comments & & & & & & 
 
@@ -28,7 +28,7 @@ range(3)
 b"Hi"
 None
 
-# type conversions
+# type conversions - what about unsigned? signed? (more hard coded literals)
 
 #   & & & & & & Operators & & & & & &
 
