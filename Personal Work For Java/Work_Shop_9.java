@@ -1,5 +1,11 @@
 //   & & & & & & Comments & & & & & &   // 
 
+// Single Line Comment
+
+/* Multi-Line 
+Comments
+ */
+
 //   & & & & & & Literals & & & & & &   //
 
 //   & & & & & & Operators & & & & & &   // 

@@ -10,6 +10,11 @@ using namespace std;
 comments
 */
 
+/* Nested
+// Single line one kind //
+and multi line 
+for other kind of comments */
+
 void fun_hi(){cout << "Hi" /* Comments within statemenets */ << "bye";}
 
 //   & & & & & & Literals & & & & & &
@@ -21,3 +26,7 @@ void fun_hi(){cout << "Hi" /* Comments within statemenets */ << "bye";}
 //   & & & & & & Conditional Statements & & & & & &
 
 //   & & & & & & Loops & & & & & &
+
+
+// https://www.tutorialspoint.com/cplusplus/cpp_comments.htm
+// next : basic syntax 
