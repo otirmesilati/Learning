@@ -1,3 +1,6 @@
+// https://www.tutorialspoint.com/rust/rust_data_types.htm
+// Data Types
+
 //   & & & & & & Comments & & & & & &   //
 
 // Single line comment
@@ -8,6 +11,11 @@ Comment
  */
 
 //   & & & & & & Literals & & & & & &   // 
+
+// integer
+// floating point
+// bools
+// chars
 
 12;
 45.6;
@@ -82,7 +90,4 @@ fn main()
     println!("{}", 1e4);
     println!("{}", 1e5 - 1e4);
 
-}
-
-// https://doc.rust-lang.org/rust-by-example/variable_bindings/mut.html
-// Variable Bindings - mutability 
+} 
