@@ -1,3 +1,6 @@
+// https://tour.gleam.run/basics/ints/
+// Ints
+
 import gleam/io
 import gleam/int // this is relevant for random function // 
 import gleam/string
@@ -7,8 +10,19 @@ import gleam/string
 // regular comments
 /// type docs
 //// module docs
+// maybe move the docs?
+
 
 //   & & & & & & Literals  & & & & & & 
+
+// ints
+// floats
+// number formats
+// strings
+// bools
+// lists
+// tuples
+// records
 
 //   & & & & & & Operators & & & & & &
 
@@ -115,6 +129,3 @@ fn calc(value: Int, add: addend: Int, multiply multiplier: Int)
     value * multiplier + addend
 }
 
-// https://tour.gleam.run/basics/ints/
-// Ints
-// Like elm - maybe start over or find a new tutorial - DFS the subjects better
