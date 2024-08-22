@@ -5,6 +5,8 @@
 
 ' & & & & & & Literals & & & & & & '
 
+'https://www.youtube.com/watch?v=EjE2soZn0MI for thorough DFS on literals'
+
 ' & & & & & & Operators & & & & & & '
 
 ' & & & & & & String Formatting & & & & & & '
