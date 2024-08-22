@@ -2,6 +2,9 @@
 #include <iostream>
 using namespace std;
 
+// https://www.tutorialspoint.com/cplusplus/cpp_comments.htm
+// next : data types, syno: theres a lot of types, they have modifiers, from "The size of variables..."" 
+
 //   & & & & & & Comments & & & & & &
 
 // Single Line comment
@@ -19,6 +22,12 @@ void fun_hi(){cout << "Hi" /* Comments within statemenets */ << "bye";}
 
 //   & & & & & & Literals & & & & & &
 
+
+//   & Types & (finish this)
+
+// ^ ^ ^ ^ ^ Type Modifiers ^ ^ ^ ^ ^
+// sign, unsign, short, long
+
 //   & & & & & & Operators & & & & & &
 
 //   & & & & & & String Formatting & & & & & &
@@ -26,7 +35,3 @@ void fun_hi(){cout << "Hi" /* Comments within statemenets */ << "bye";}
 //   & & & & & & Conditional Statements & & & & & &
 
 //   & & & & & & Loops & & & & & &
-
-
-// https://www.tutorialspoint.com/cplusplus/cpp_comments.htm
-// next : basic syntax 
