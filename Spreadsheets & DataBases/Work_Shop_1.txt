@@ -11,3 +11,6 @@ Navigation:
 
 Launchers:
 1. Move or Copy: ->ALT+E+M
+
+Edit:
+1. Add row/column (depends on focus):CTRL++

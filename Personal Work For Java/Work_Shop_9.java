@@ -1,3 +1,6 @@
+// https://www.w3schools.com/java/java_comments.asp
+// Syntax
+
 //   & & & & & & Comments & & & & & &   // 
 
 // Single Line Comment
@@ -7,6 +10,10 @@ Comments
  */
 
 //   & & & & & & Literals & & & & & &   //
+
+// https://www.baeldung.com/java-literals for the basics
+// https://www.geeksforgeeks.org/literals-in-java/ for unicode and maybe more
+// https://www.javatpoint.com/literals-in-java for escape  keys
 
 //   & & & & & & Operators & & & & & &   // 
 
@@ -20,5 +27,3 @@ public class Work_Shop_9 {
     
 }
 
-// https://www.w3schools.com/java/java_comments.asp
-// Syntax
