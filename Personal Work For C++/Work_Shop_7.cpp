@@ -5,6 +5,8 @@ using namespace std;
 // https://www.tutorialspoint.com/cplusplus/cpp_comments.htm
 // next : data types, syno: theres a lot of types, they have modifiers, from "The size of variables..."" 
 
+// where to put bitmasking?
+
 //   & & & & & & Comments & & & & & &
 
 // Single Line comment

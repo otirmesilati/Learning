@@ -3,9 +3,20 @@
 
 #   & & & & & & Comments & & & & & &
 
+
 #   & & & & & & Literals & & & & & &
 
-# numericals
+#   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
+123
+4_273
+-34
+
+#   ^ ^ ^ ^ Integers: Type Modifiers ^ ^ ^ ^
+0xF5
+0o12
+0b110
+
+# floats?
 # atoms
 # bools
 # binaries
