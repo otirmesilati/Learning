@@ -14,14 +14,20 @@ Other comments
 
 (*   & & & & & & Literals & & & & & &   *)
 
+
 2;;
 3.4;;
+
 
 'h';;
 (*int_of_char 'h';; to find out ASCII value*)
 "Bye";;
 
 false;;
+
+(* ^ ^ ^ ^ ^ Different Radixes ^ ^ ^ ^ ^*)
+
+(*x/o/b adding in the end of the literal, give examples*)
 
 (*   & & & & & & Operators & & & & & &   *)
 
