@@ -11,8 +11,21 @@ Comment
  */
 
 //   & & & & & & Literals & & & & & &   // 
+// integers ? what comes before unsigned?
 
-// integer
+//   ^ ^ ^ ^  Integers: Unsigned  ^ ^ ^ ^ 
+
+11u8
+12u16
+13u32
+14u64
+15u128
+16usize
+
+//   ^ ^ ^ ^ Integers: Signed ^ ^ ^ ^
+
+// ?
+
 // floating point
 // bools
 // chars
