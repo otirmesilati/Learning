@@ -1,5 +1,5 @@
 // https://www.w3schools.com/js/js_syntax.asp
-// Syntax (rolling message: redo HOME to output later after to connect js to HTML and CSS)
+// Syntax (rolling message: redo HOME to output sections later after to connect js to HTML and CSS)
 
 //   & & & & & & Comments & & & & & & //
 
@@ -10,6 +10,8 @@ Comments
  */
 
 //   & & & & & & Literals & & & & & &
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types finaly a thourgh source
 
 //   & & & & & & Operators & & & & & &
 
