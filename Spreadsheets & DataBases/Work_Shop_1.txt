@@ -14,3 +14,5 @@ Launchers:
 
 Edit:
 1. Add row/column (depends on focus):CTRL++
+
+NeoVim Keyboard Shortcuts: (move this)
