@@ -9,10 +9,14 @@ multiple line comments
 
 #   & & & & & & Literals & & & & & & 
 
+# https://docs.python.org/3/reference/lexical_analysis.html#numeric-literals
+
 1
 -2
 2.3
 1 + 2j
+
+# ^ ^ Scientific notation ^ (finish this properly)
 
 5e7 # 5000000
 

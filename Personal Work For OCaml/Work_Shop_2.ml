@@ -1,5 +1,5 @@
 (* https://ocaml.org/manual/5.2/lex.html#sss:stringliterals *)
-(* Lexical conventions *)
+(* Lexical conventions, syno: went over the logic of radix, go on from "An integer literal" *)
 
 (*   & & & & & & Commenting & & & & & &   *)
 
