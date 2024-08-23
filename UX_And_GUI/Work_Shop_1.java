@@ -1,6 +1,8 @@
 package UX_And_GUI;
 
+import javax.swing.JDialog;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 public class Work_Shop_1 {
 
@@ -15,10 +17,16 @@ public class Work_Shop_1 {
 
         //   ^ ^ ^ ^ ^ Components: java.swing
 
-        //   ^ ^ ^ ^ Panels
+        //   ^ ^ ^ ^ Panels ^ ^ ^ ^
+        JPanel myJPanel = new JPanel();
+
+        //   ^ ^ ^ ^ Layouts
 
         //   ^ ^ ^ ^ Windows
-        JFrame myJFrame = new JFrame();
+        JFrame myJFrame = new JFrame(); // Main window
+        JDialog myJDialog = new JDialog(); // sub-window, of a JFrame usually, classicaly meant for alerts
+
+        // 
 
         //   ^ ^ ^ ^ java specific(?): callbacking GUI ^ ^ ^ ^
     }
