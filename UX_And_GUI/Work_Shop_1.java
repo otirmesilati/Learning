@@ -1,5 +1,7 @@
 package UX_And_GUI;
 
+import javax.swing.JFrame;
+
 public class Work_Shop_1 {
 
     public class GUIElements
@@ -11,7 +13,14 @@ public class Work_Shop_1 {
 
         //   & & & & & & Components
 
-        //   & & & & & & Components: java.swing
+        //   ^ ^ ^ ^ ^ Components: java.swing
+
+        //   ^ ^ ^ ^ Panels
+
+        //   ^ ^ ^ ^ Windows
+        JFrame myJFrame = new JFrame();
+
+        //   ^ ^ ^ ^ java specific(?): callbacking GUI ^ ^ ^ ^
     }
 
 }
