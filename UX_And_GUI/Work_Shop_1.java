@@ -29,10 +29,12 @@ public class Work_Shop_1 {
 
         //   ^ ^ ^ ^ Components (Window Elements)
 
+        //   ^ ^ ^ Components: Menu ^ ^ ^ 
+
         //   ^ ^ ^  Components: Buttons
         JButton myJButton = new JButton();
 
-        //   ^ ^ ^ ^ Components : Boxes
+        //   ^ ^ ^ Components : Boxes
 
         // ?
 

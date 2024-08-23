@@ -11,16 +11,30 @@ Comment
  */
 
 //   & & & & & & Literals & & & & & &   // 
-// integers ? what comes before unsigned?
+//   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
+
+123;
+4_273;
+42_73;
+427_3;
+-34;
+
+
+//  ^ ^ ^ ^ Integers: Type Modifiers ^ ^ ^ ^
+
+0xF5;
+0o12;
+0b110;
+
 
 //   ^ ^ ^ ^  Integers: Unsigned  ^ ^ ^ ^ 
 
-11u8
-12u16
-13u32
-14u64
-15u128
-16usize
+11u8;
+12u16;
+13u32;
+14u64;
+15u128;
+16usize;
 
 //   ^ ^ ^ ^ Integers: Signed ^ ^ ^ ^
 
