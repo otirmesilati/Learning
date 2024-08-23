@@ -9,9 +9,20 @@
 Comments
  */
 
-//   & & & & & & Literals & & & & & &
+//   & & & & & & Literals (Values in javaScript) & & & & & &   //
 
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types finaly a thourgh source
+//   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
+
+// no literals in js, only assigment values
+
+// 123;
+//-34;
+
+//  ^ ^ ^ ^ Integers: Type Modifiers ^ ^ ^ ^
+
+// 0xF5;
+// 0o12;
+// 0b110;
 
 //   & & & & & & Operators & & & & & &
 
