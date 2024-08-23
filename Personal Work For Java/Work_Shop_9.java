@@ -26,6 +26,7 @@ public void fun_literals(){
     // no literals in java, only assigment values
 
     // 123;
+    // no underscore format!
     //-34;
     
     //  ^ ^ ^ ^ Integers: Type Modifiers ^ ^ ^ ^

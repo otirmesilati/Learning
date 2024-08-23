@@ -7,8 +7,19 @@
 
 #   & & & & & & Literals & & & & & & 
 
-# Numeric
-# Integer
+#   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
+
+123
+# no underscore format! 
+-34
+
+
+#  ^ ^ ^ ^ Integers: Type Modifiers ^ ^ ^ ^
+
+0xF5
+# no support for octal/binary literals
+
+
 # Complex
 # Character
 # Logical
