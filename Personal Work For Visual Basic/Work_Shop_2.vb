@@ -1,11 +1,23 @@
 ' https://www.tutorialspoint.com/vb.net/vb.net_program_structure.htm ' 
 ' Program Structure '
 
-' & & & & & & Comments & & & & & & '
+'   & & & & & & Comments & & & & & &   '
 
-' & & & & & & Literals & & & & & & '
+'   & & & & & & Literals (Values in VB) & & & & & &   '
 
-'https://www.youtube.com/watch?v=EjE2soZn0MI for thorough DFS on literals'
+    
+'   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^   '
+    
+    ' no literals in VB, only assigment values '
+
+    ' 123; '
+    '-34; '
+    
+'   ^ ^ ^ ^ Integers: Type Modifiers ^ ^ ^ ^ '
+    
+    ' &HF5; '
+    ' &B110; '
+    
 
 ' & & & & & & Operators & & & & & & '
 
