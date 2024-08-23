@@ -11,8 +11,23 @@ multiple line comments
 
 # https://docs.python.org/3/reference/lexical_analysis.html#numeric-literals
 
-1
--2
+#   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
+
+123
+4_273
+42_73
+427_3 
+-34
+
+
+#  ^ ^ ^ ^ Integers: Type Modifiers ^ ^ ^ ^
+
+0xF5
+0o12 
+0b110
+
+# floats? what more ?
+
 2.3
 1 + 2j
 
