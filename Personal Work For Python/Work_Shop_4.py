@@ -20,11 +20,16 @@ multiple line comments
 -34
 
 
-#  ^ ^ ^ ^ Integers: Type Modifiers ^ ^ ^ ^
+#  ^ ^ ^ ^ Integers: Coding Modifiers ^ ^ ^ ^
 
 0xF5
 0o12 
 0b110
+
+# No int coding suffixes in python
+
+
+
 
 # floats? what more ?
 

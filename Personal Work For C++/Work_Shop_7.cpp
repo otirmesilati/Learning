@@ -38,13 +38,13 @@ void fun_literals(){
 -34;
 
 
-//  ^ ^ ^ ^ Integers: Type Modifiers ^ ^ ^ ^
+//  ^ ^ ^ ^ Integers: Coding Modifiers ^ ^ ^ ^
 
 0xF5;
 012; // octal literals written without o //
 0b110;
 
-//  ^ ^ ^ ^ Integers: Signed/UnSigned and Long codings ^ ^ ^ ^
+//  ^ ^ ^ ^ Integers: Signed/Long Conding Modifying Suffixes  ^ ^ ^ ^
 
 1u;
 -2U; // will be translated: 2's complement on the value -> new unsigned value
