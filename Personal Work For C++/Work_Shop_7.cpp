@@ -23,8 +23,11 @@ for other kind of comments */
 
 void fun_hi(){cout << "Hi" /* Comments within statemenets */ << "bye";}
 
-void fun_literals(){
 //   & & & & & & Literals & & & & & &
+
+// Literals dependent on scopes within function
+void fun_literals(){
+
 
 // https://web.archive.org/web/20130807052041/http://cpp.comsci.us/etymology/literals.html
 
@@ -41,7 +44,18 @@ void fun_literals(){
 012; // octal literals written without o //
 0b110;
 
+//  ^ ^ ^ ^ Integers: Signed/UnSigned and Long codings ^ ^ ^ ^
+
+1u;
+-2U; // will be translated: 2's complement on the value -> new unsigned value
+3l;
+-4L;
+
 }
+
+
+
+
 
 //   & Types & (finish this)
 
