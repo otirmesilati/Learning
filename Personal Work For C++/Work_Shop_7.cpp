@@ -6,8 +6,8 @@ using namespace std;
 // next : signed, unsigned, short long notation with u/l/ll in the end 
 // data types, syno: theres a lot of types, they have modifiers, from "The size of variables..."" 
 
-// where to put bitmasking?
-
+// where to put bitmasking? watch video below:
+// https://www.youtube.com/watch?v=wvtFGa6XJDU
 //   & & & & & & Comments & & & & & &
 
 // Single Line comment
