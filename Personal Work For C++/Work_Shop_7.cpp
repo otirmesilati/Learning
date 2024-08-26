@@ -2,9 +2,8 @@
 #include <iostream>
 using namespace std;
 
-// https://www.tutorialspoint.com/cplusplus/cpp_comments.htm
-// next : signed, unsigned, short long notation with u/l/ll in the end 
-// data types, syno: theres a lot of types, they have modifiers, from "The size of variables..."" 
+// https://www.tutorialspoint.com/cplusplus/cpp_comments.htm 
+// syno: theres a lot of types, they have modifiers, from "The size of variables..."" 
 
 // where to put bitmasking? watch video below:
 // https://www.youtube.com/watch?v=wvtFGa6XJDU
@@ -50,11 +49,21 @@ void fun_literals(){
 -2U; // will be translated: 2's complement on the value -> new unsigned value
 3l;
 -4L;
+5ll;
+6LL;
+
+
+//   ^ ^ ^ ^ ^ Floats ^ ^ ^ ^ ^
+
+//   ^ ^ ^ ^ ^ Exponents ^ ^ ^ ^ ^
+1e2;
+1e-3;
+
+// Let's combine type modifyers and exponents! //
+
+// https://en.cppreference.com/w/cpp/language/floating_literal //
 
 }
-
-
-
 
 
 //   & Types & (finish this)
