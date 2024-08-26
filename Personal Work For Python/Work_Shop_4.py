@@ -20,7 +20,7 @@ multiple line comments
 -34
 
 
-#  ^ ^ ^ ^ Integers: Coding Modifiers ^ ^ ^ ^
+#   ^ ^ ^ ^ Integers: Coding Modifiers ^ ^ ^ ^
 
 0xF5
 0o12 
@@ -28,8 +28,9 @@ multiple line comments
 
 # No int coding suffixes in python
 
-
-
+#   ^ ^ ^ ^ Sceientific Notation Encoding ^ ^ ^ ^
+1e2
+1e-3
 
 # floats? what more ?
 
