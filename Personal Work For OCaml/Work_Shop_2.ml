@@ -1,5 +1,5 @@
 (* https://ocaml.org/manual/5.2/lex.html#sss:stringliterals *)
-(* Lexical conventions, syno: went over the logic of radix, go on from "An integer literal" *)
+(* syno: went over suffix encoding, continue to floats *)
 
 (*   & & & & & & Commenting & & & & & &   *)
 
@@ -29,6 +29,10 @@ Other comments
 0o12;;
 0b110;;
 
+(* No signed unsigned coding suffixes in python *) 
+1l;;(*32int*) 
+1L;;(*64int*)
+1n;;(*nativeint*)
 
 2;;
 3.4;;
