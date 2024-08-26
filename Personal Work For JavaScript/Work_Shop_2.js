@@ -18,11 +18,13 @@ Comments
 // 123;
 //-34;
 
-//  ^ ^ ^ ^ Integers: Type Modifiers ^ ^ ^ ^
+//  ^ ^ ^ ^ Integers: Suffix Modifier Encodings ^ ^ ^ ^
 
 // 0xF5;
 // 0o12;
 // 0b110;
+
+// No signed/unsigned shenanigans
 
 //   & & & & & & Operators & & & & & &
 
