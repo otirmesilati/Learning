@@ -13,11 +13,15 @@
     ' 123; '
     '-34; '
     
-'   ^ ^ ^ ^ Integers: Type Modifiers ^ ^ ^ ^ '
+'   ^ ^ ^ ^ Integers: Suffix Modifier Encodings ^ ^ ^ ^ '
     
     ' &HF5; '
     ' &B110; '
-    
+
+    ' 10L; '
+    ' 10UI; '    
+
+'   ^ ^ ^ ^ Integers: Signed/Long Conding Modifying Suffixes   ^ ^ ^ ^  '
 
 ' & & & & & & Operators & & & & & & '
 
