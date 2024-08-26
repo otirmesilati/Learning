@@ -34,7 +34,10 @@ public void fun_literals(){
     // 0xF5;
     // 012;
     // 0b110;
+
+    // All Literals pre-built to be signed
     
+
     }
     
     //   & & & & & & Operators & & & & & &   // 

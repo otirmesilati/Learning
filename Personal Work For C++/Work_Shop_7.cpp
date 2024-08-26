@@ -55,7 +55,7 @@ void fun_literals(){
 
 //   ^ ^ ^ ^ ^ Floats ^ ^ ^ ^ ^
 
-//   ^ ^ ^ ^ ^ Exponents ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Sceientific Notation Encoding ^ ^ ^ ^ ^
 1e2;
 1e-3;
 
