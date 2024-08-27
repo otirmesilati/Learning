@@ -1,12 +1,6 @@
 package UX_And_GUI;
 
-import javax.swing.JButton;
-import javax.swing.JCheckBox;
-import javax.swing.JDialog;
-import javax.swing.JFrame;
-import javax.swing.JMenu;
-import javax.swing.JPanel;
-import javax.swing.JRadioButton;
+import javax.swing.*;
 
 public class Work_Shop_1 {
 
@@ -64,12 +58,21 @@ public class Work_Shop_1 {
         JCheckBox MyCheckBox = new JCheckBox();
 
 
-        //   ^ ^ ^ Components : Text Spaces - ?^ ^ ^
+        //   ^ ^ ^ Components : Text Spaces ^ ^ ^
 
-        //   ^ ^ Text Spaces: JTextField - ?^ ^
+        //   ^ ^ Text Spaces: JTextField ^ ^
+
+        JTextField myTextField = new JTextField();
+
+        //   ^ ^ Text Spaces: JPasswordField - letters replaced by dots ^ ^
         
-        //   ^ ^ Text Spaces: JPasswordField - ?^ ^
+        JPasswordField myPassword = new JPasswordField();
 
+        //   ^ ^ Text Spaces: JSpinner - added up/down arrow buttons ^ ^
+        JSpinner mySpinner = new JSpinner();
+
+
+        //   ^ ^ ^ Components: DropDowns ^ ^ ^ //
 
         //   ^ ^ ^ Components : Boxes ^ ^ ^
 
