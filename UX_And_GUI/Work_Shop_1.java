@@ -1,10 +1,12 @@
 package UX_And_GUI;
 
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JPanel;
+import javax.swing.JRadioButton;
 
 public class Work_Shop_1 {
 
@@ -52,15 +54,18 @@ public class Work_Shop_1 {
 
         //   ^ ^ ^  Components: Clickers ^ ^ ^
 
-        //   ^ ^ Clickers: JButton ^ ^
-
-        //   ^ ^ Clickers: JButton ^ ^
-
-        //   ^ ^ Clickers: JButton ^ ^
-
+        //   ^ ^ Clickers: JButton ^ ^ - simple push button 
         JButton myJButton = new JButton();
 
-        //   ^ ^ ^ Components : Boxes ^ ^ ^
+        //   ^ ^ Clickers: JRadioButton - circular check button ^ ^
+        JRadioButton myRadioButton = new JRadioButton();
+
+        //   ^ ^ Clickers: JCheckBox - v sign check button ^ ^
+        JCheckBox MyCheckBox = new JCheckBox();
+
+
+
+        //   ^ ^ ^ Components : Text Spaces ^ ^ ^
 
         //   ^ ^ ^ Components : Boxes ^ ^ ^
 
