@@ -23,10 +23,13 @@ public class Work_Shop_1 {
         JPanel myJPanel = new JPanel();
 
         // https://examples.javacodegeeks.com/java-swing-layouts-example/
-        
+
         //   ^ ^ ^ ^ Layouts ^ ^ ^ ^
+        
         // FlowLayout
+
         // BorderLayout
+        
         // Box
         // CardLayou
         // Gridayout
@@ -40,22 +43,43 @@ public class Work_Shop_1 {
         JDialog myJDialog = new JDialog(); // sub-window, of a JFrame usually, classicaly meant for alerts
 
         //   ^ ^ ^ ^ Components (Window Elements) ^ ^ ^ ^
+        // https://web.mit.edu/6.005/www/sp14/psets/ps4/java-6-tutorial/components.html
 
-        //   ^ ^ ^ Components: Menu ^ ^ ^ 
+        //   ^ ^ ^ Components: Menu ^ ^ ^
+
+        //   ^ ^ Menu: JMenu ^ ^ //
         JMenu myJMenu = new JMenu();
 
-        //   ^ ^ ^  Components: Buttons ^ ^ ^
+        //   ^ ^ ^  Components: Clickers ^ ^ ^
+
+        //   ^ ^ Clickers: JButton ^ ^
+
+        //   ^ ^ Clickers: JButton ^ ^
+
+        //   ^ ^ Clickers: JButton ^ ^
+
         JButton myJButton = new JButton();
 
         //   ^ ^ ^ Components : Boxes ^ ^ ^
 
-        // ?
+        //   ^ ^ ^ Components : Boxes ^ ^ ^
+
+        //   ^ ^ ^ Components : Boxes ^ ^ ^
+
+        //   ^ ^ ^ Components : Boxes ^ ^ ^
+
+        //   ^ ^ ^ Components : Boxes ^ ^ ^
+
+        //   ^ ^ ^ Components : Boxes ^ ^ ^
 
         //   ^ ^ ^ ^ java specific(?): callbacking GUI ^ ^ ^ ^
     }
     
     /*   & & & & & & GUI dependencies & & & & & */
-    
+
+    // want to see the window? - setVisible to true //
+    // Want to see the window close? - dispose on close invoking //
+
     // this next part will be about regular GUI use vs defining manually the use through overriding //
     //   ^ ^ ^ ^ ^ Java Specific: Encapsulating elements logic ^ ^ ^ ^ ^
     // Main question is this: (finish this)
