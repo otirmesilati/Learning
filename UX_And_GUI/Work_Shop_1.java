@@ -64,8 +64,12 @@ public class Work_Shop_1 {
         JCheckBox MyCheckBox = new JCheckBox();
 
 
+        //   ^ ^ ^ Components : Text Spaces - ?^ ^ ^
 
-        //   ^ ^ ^ Components : Text Spaces ^ ^ ^
+        //   ^ ^ Text Spaces: JTextField - ?^ ^
+        
+        //   ^ ^ Text Spaces: JPasswordField - ?^ ^
+
 
         //   ^ ^ ^ Components : Boxes ^ ^ ^
 
