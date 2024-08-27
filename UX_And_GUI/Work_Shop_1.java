@@ -10,7 +10,7 @@ public class Work_Shop_1 {
 
     public class GUIElements
     {
-        /*   & & & & & & Libraries
+        /*   & & & & & & Libraries & & & & &
          java.awt - GUI tools library, platform dependent
          java swing - built upon awt
          */
@@ -42,5 +42,10 @@ public class Work_Shop_1 {
 
         //   ^ ^ ^ ^ java specific(?): callbacking GUI ^ ^ ^ ^
     }
-
+    
+    /*   & & & & & & GUI dependencies & & & & & */
+    //   ^ ^ ^ ^ ^ Scopes ^ ^ ^ ^ ^ //
+    // is this class static or not? (getting a "free" pointer as this/self) //
+    // is this class inheriting? maybe a friend class? //
+    // interfaces for behaviour? //
 }
