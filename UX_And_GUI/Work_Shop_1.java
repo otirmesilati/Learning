@@ -91,6 +91,12 @@ public class Work_Shop_1 {
         //   ^ ^ Bars : JSlider ^ ^ - ? //
 
 
+        // Java GUI: https://web.mit.edu/6.005/www/sp14/psets/ps4/java-6-tutorial/components.html
+        // C GUI: https://www.wxwidgets.org/
+        // Python GUI: https://docs.python.org/3/library/tkinter.html
+        // 
+
+
         //   ^ ^ DropDowns : JList ^ ^ - Classic dropdown //
 
         //   ^ ^ ^ Components : Boxes ^ ^ ^
