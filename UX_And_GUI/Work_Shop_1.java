@@ -74,8 +74,15 @@ public class Work_Shop_1 {
 
         //   ^ ^ ^ Components: DropDowns ^ ^ ^ //
 
-        //   ^ ^ ^ Components : Boxes ^ ^ ^
+        //   ^ ^ DropDowns : JMenu ^ ^ - upper ruler menu + dropdown //
+        JMenu myMenu = new JMenu();
 
+        //   ^ ^ DropDowns : JComboBox - SelectionBar + DropDown ^ ^ - upper ruler menu + dropdown //
+        JComboBox myComboBox = new JComboBox(); // needs to add items // 
+
+        //   ^ ^ DropDowns : JList ^ ^ - Classic dropdown //
+        JList MyDropList = new JList(); // needs to add items //
+        
         //   ^ ^ ^ Components : Boxes ^ ^ ^
 
         //   ^ ^ ^ Components : Boxes ^ ^ ^
