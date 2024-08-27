@@ -83,7 +83,15 @@ public class Work_Shop_1 {
         //   ^ ^ DropDowns : JList ^ ^ - Classic dropdown //
         JList MyDropList = new JList(); // needs to add items //
         
-        //   ^ ^ ^ Components : Boxes ^ ^ ^
+        
+        //   ^ ^ ^ Components: Bars ^ ^ ^ //
+
+        //   ^ ^ Bars : JProgressBar ^ ^ - ? //
+        
+        //   ^ ^ Bars : JSlider ^ ^ - ? //
+
+
+        //   ^ ^ DropDowns : JList ^ ^ - Classic dropdown //
 
         //   ^ ^ ^ Components : Boxes ^ ^ ^
 
