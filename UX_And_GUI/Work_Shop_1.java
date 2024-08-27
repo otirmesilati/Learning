@@ -22,7 +22,18 @@ public class Work_Shop_1 {
         //   ^ ^ ^ ^ Panels ^ ^ ^ ^
         JPanel myJPanel = new JPanel();
 
+        // https://examples.javacodegeeks.com/java-swing-layouts-example/
+        
         //   ^ ^ ^ ^ Layouts ^ ^ ^ ^
+        // FlowLayout
+        // BorderLayout
+        // Box
+        // CardLayou
+        // Gridayout
+        // GridBagLayout
+        // Group
+        // Overlay
+        // Spring
 
         //   ^ ^ ^ ^ Windows ^ ^ ^ ^
         JFrame myJFrame = new JFrame(); // Main window
@@ -44,6 +55,11 @@ public class Work_Shop_1 {
     }
     
     /*   & & & & & & GUI dependencies & & & & & */
+    
+    // this next part will be about regular GUI use vs defining manually the use through overriding //
+    //   ^ ^ ^ ^ ^ Java Specific: Encapsulating elements logic ^ ^ ^ ^ ^
+    // Main question is this: (finish this)
+    
     //   ^ ^ ^ ^ ^ Scopes ^ ^ ^ ^ ^ //
     // is this class static or not? (getting a "free" pointer as this/self) //
     // is this class inheriting? maybe a friend class? //
