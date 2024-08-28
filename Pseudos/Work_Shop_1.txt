@@ -4,7 +4,7 @@ Procedural - building upon previous work:
 
 ^ ^ ^ ^ ^ Arithmetical ^ ^ ^ ^ ^
 
-
+1. addition 
 
 ^ ^ ^ ^ ^ Conditional ^ ^ ^ ^ ^
 
@@ -30,7 +30,9 @@ OUT:
 
 1.2. Average function
 
-2.
+2.2 (use 1. function from arith)multiplying function
+.3 power function
+
 
 ^ ^ ^ ^ ^ Recursion ^ ^ ^ ^ ^
 

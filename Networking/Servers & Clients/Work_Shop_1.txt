@@ -1,0 +1,33 @@
+DNS Protocol
+
+- Human readable 
+- Asking a DNS server for IP adress of <site>
+
+server acts as forwarding agent
+
+- ipconfig
+- ipconfig /all
+- ipconfig /displaydns
+
+NestJS RESTful API
+- popular for scalable server side applications
+- nodejs framework
+
+TCP VS UDP
+
+(ReWrite The following)
+TCP: connection oriented protocol 
+-> best for high reliability
+-> implements three way handshake
+- UDP: connectionless protocol-> streaming service
+-> DNS 
+-> VoIP
+
+PuTTY
+- a client-server program, used to remotely access servers, mostly SSHing and Telneting into.
+- pscp -P 22 demo-file.zip () <sender part of the CLI command>
+- root@<ipadress>:/root
+
+WebSite Inspector:
+-console CLI
+printing through pop up: alert(hello world)
