@@ -20,6 +20,18 @@ OUT: an answer if it was a digit or not
 IN:
 OUT:
 
+3.1 two numbers
+
+3.2 three numbers
+
+^ ^ ^ ^ ^ Iterations ^ ^ ^ ^ ^
+
+1. Termial function
+
+2. 
+
+^ ^ ^ ^ ^ Recursion ^ ^ ^ ^ ^
+
 ^ ^ ^ ^ ^ Arrays ^ ^ ^ ^ ^
 searching?
 sorting?

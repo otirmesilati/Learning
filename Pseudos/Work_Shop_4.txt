@@ -1,0 +1,18 @@
+Linear Data Structures
+
+list
+
+stack
+
+queue
+
+Non-Linear Data Structures
+
+graph
+
+tree
+
+hash-map
+
+
+https://en.wikipedia.org/wiki/List_of_data_structures
