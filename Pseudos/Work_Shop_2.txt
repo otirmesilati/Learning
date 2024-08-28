@@ -1,1 +1,14 @@
-OOP:
+Object Oriented - different relationships and communications
+
+Composition
+
+Inheritance
+
+-virt
+-casting and slicing
+
+Interface And Abstract Inheritance
+
+Association
+
+ADT implementation

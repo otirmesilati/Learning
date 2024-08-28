@@ -1,4 +1,4 @@
-Procedural:
+Procedural - building upon previous work:
 
 & & & & & & Basics & & & & & &
 
@@ -26,9 +26,11 @@ OUT:
 
 ^ ^ ^ ^ ^ Iterations ^ ^ ^ ^ ^
 
-1. Termial function
+1.1. Termial function
 
-2. 
+1.2. Average function
+
+2.
 
 ^ ^ ^ ^ ^ Recursion ^ ^ ^ ^ ^
 
