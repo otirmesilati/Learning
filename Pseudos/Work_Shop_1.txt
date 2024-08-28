@@ -8,6 +8,18 @@ Procedural:
 
 ^ ^ ^ ^ ^ Conditional ^ ^ ^ ^ ^
 
+1. is_A_Poisitve?
+IN:
+OUT:
+
+2.1 is_A_Digit?
+IN: symbol
+OUT: an answer if it was a digit or not
+
+2.2. if_A_Digit_Inc
+IN:
+OUT:
+
 ^ ^ ^ ^ ^ Arrays ^ ^ ^ ^ ^
 searching?
 sorting?
