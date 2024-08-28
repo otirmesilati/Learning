@@ -31,3 +31,4 @@ PuTTY
 WebSite Inspector:
 -console CLI
 printing through pop up: alert(hello world)
+removes everything and leaves text: document.body.innerHTML = 'hello';

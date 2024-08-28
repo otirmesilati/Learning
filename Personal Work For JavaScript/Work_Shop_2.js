@@ -35,3 +35,10 @@ Comments
 //   & & & & & & Loops & & & & & &
 
 /* multi- line comments */
+
+// from javascript tutorial:
+// - brackets for order
+// order of operations
+// control flow
+//
+//
