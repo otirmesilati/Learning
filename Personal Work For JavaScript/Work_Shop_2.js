@@ -37,8 +37,15 @@ Comments
 /* multi- line comments */
 
 // from javascript tutorial:
-// - brackets for order
+// machine percision
+// - 0.1 + 0.2 -> 0.3000...04??
+// -- how to trigger machine precision?
+// -- it's a floating point algoritm built in "bug"
 // order of operations
+// - brackets for order
+// - wierd Arith behaviour
+// --
+//
 // control flow
 //
 //

@@ -4,7 +4,24 @@ Procedural - building upon previous work:
 
 ^ ^ ^ ^ ^ Arithmetical ^ ^ ^ ^ ^
 
-1. addition 
+^ ^ ^ ^ Arithmetical Coding ^ ^ ^ ^
+
+-- problems from converting from one radix to another? 
+
+^ ^ ^ Dimensional Analysis ^ ^ ^
+
+-- maybe add in the notebook problems like 
+converting cents to dollars? shekels to Agurot?
+
+2.1 calculating a final price for a purchase
+2.2 Calculating a precent discount 
+2.3 calculating final + discount
+
+
+1. addition
+
+
+3. 
 
 ^ ^ ^ ^ ^ Conditional ^ ^ ^ ^ ^
 
