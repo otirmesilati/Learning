@@ -1,5 +1,7 @@
 Linear Data Structures
 
+record (add after the later ones)
+
 list
 
 stack
@@ -7,6 +9,8 @@ stack
 queue
 
 Non-Linear Data Structures
+
+tablle (add after the later ones)
 
 graph
 
