@@ -17,6 +17,10 @@ converting cents to dollars? shekels to Agurot?
 2.2 Calculating a precent discount 
 2.3 calculating final + discount
 
+-- move in the notebook the place of roundings
+from elementary analysis to Arithmatic
+specifically: to Arith Coding
+After Dimensional analysis
 
 1. addition
 
