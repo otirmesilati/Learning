@@ -13,7 +13,8 @@ package FullStack.Full_Composite_Projects;
 // - parseInteger needs conversion to string of the number 
 
 /*
- Code-Design:
+ Code-Design(never to be read again only if have to?):
+ 1. Copy the pseudo code, put it in the bottom so it can be glanced at
  1. It's Java - import the Integer class - full path
  2. still java - make the work shop class
  3. java - main is static, make a static main
@@ -25,6 +26,8 @@ package FullStack.Full_Composite_Projects;
  5.1. a to d is abstracted! yay! celebrate internally
  5.2. Taking care of the small dependency - into stringDecimal put toString of the decimal 
  5.3 parseInt the decimalNumber and put it in nonDecimalNumber
+ 6. return the NonDecumalNumber and finish the program
+ 7. delete the pseudo code, READY FOR TESTING!
  */
 
 import java.lang.Integer;
@@ -32,30 +35,14 @@ import java.lang.Integer;
 public class Work_Shop_1
 {
 
-    int convertDecimalToNonDecimal(int decimal_Number, int destination_Radix)
+    int convertDecimalToNonDecimal(int decimalNumber, int destinationRadix)
     {
-        String stringDecimal = Integer.toString(decimal_Number);
-        //nonDecimalNumber = Integer.parseInt(null, destination_Radix)
-        return 0;
+        String stringDecimal = Integer.toString(decimalNumber);
+        int nonDecimalNumber = Integer.parseInt(stringDecimal, destinationRadix);
+        return nonDecimalNumber;
     }
 
     public static void main(String[] args) {
         
     }
 }
-
-// implement a public static class here //
-
-/*
- 
-a. Position <- 0
-b. Non_Decimal_Number <- 0
-c. Copy_Of_Decimal <- Decimal_Number
-d. WHILE(are_digits_left(Decimal_Number) NOT FALSE)
-d.a. Non_Decimal_Number <- Add_Two_Integers(Non_Decimal_Number ,Multiply_Two_Integers(Copy_Of_Decimal % 10, Power_Number(Destination_Radix, Position))
-d.b Copy_Of_Decimal / 10
-d.c Position <- Position + 1
-e. RETURN Non_Decimal_Number
-
-
- */
