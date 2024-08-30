@@ -31,8 +31,13 @@ EOF
 
 TLDR: while the number is not 0, keep dividing by the destination radix
 
+// what will be the number returned here?
 a. WHILE(Non_Decimal_Number NOT FALSE)
-a.a. // do the division
+a.a. quotient <- Non_Decimal_Number / Destination_Radix
+a.b reminder <- Non_Decimal_Number % Destination_Radix 
+// need a number store the digits work on 
+
+// do the division
 // check the reminder
 // what's next?
 
