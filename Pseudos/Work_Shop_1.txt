@@ -26,9 +26,23 @@ a. str_decimal_number <- toInteger(decimal_number)
 b. wanted_number <- parseInt(str_decimal_number, r)
 EOF
 
+2. Non_Decimal_To_Decimal(Non_Decimal_Number, Source_Radix)
+
+a. Position <- 0
+b. Non_Decimal_Number <- 0
+c. Copy_Of_Decimal <- Decimal_Number
+d. WHILE(are_digits_left(Decimal_Number) NOT FALSE)
+d.a. Non_Decimal_Number <- Add_Two_Integers(Non_Decimal_Number ,Multiply_Two_Integers(Copy_Of_Decimal % 10, Power_Number(Destination_Radix, Position))
+d.b Copy_Of_Decimal / 10
+d.c Position <- Position + 1
+e. RETURN Non_Decimal_Number
+
+GIVEN: <int>decimal_number, <int>destination radix
+a. str_decimal_number <- toInteger(decimal_number)
+b. wanted_number <- parseInt(str_decimal_number, r)
+EOF
 
 
-2. from non decimal to decimal
 3. fast conversion from power radixi
 
 -- problems from converting from one radix to another? 

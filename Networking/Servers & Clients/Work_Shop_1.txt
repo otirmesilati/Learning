@@ -32,6 +32,6 @@ WebSite Inspector:
 -console CLI
 printing through pop up: alert(hello world)
 removes everything and leaves text: document.body.innerHTML = 'hello';
-suppress pasting warning: allow pasting 
+`suppress pasting warning: allow pasting 
 -styles:
 image inspection: margin in orange, green is padding, and the blue is the element
