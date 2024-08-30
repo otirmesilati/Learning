@@ -8,7 +8,23 @@ Procedural - building upon previous work:
 
 ^ ^ ^ ^ Arithmetical Coding ^ ^ ^ ^
 
-1. from decimal to non decimal:
+1. Decimal_To_Non_Decimal:
+
+TLDR: While there are still digits, add powers of digits by radix.
+
+a. are_digits_left(number):
+a.a IF number > 0
+a.a.a. TRUE
+a.a.b FALSE
+
+b. 
+
+add(to_The_Power)
+
+GIVEN: decimal number, destination radix
+
+
+
 
 <Abstraction dependencies> 
 - Conversion opperation : <int>(String, int)parseInt
