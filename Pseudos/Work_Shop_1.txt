@@ -8,17 +8,18 @@ Procedural - building upon previous work:
 
 ^ ^ ^ ^ Arithmetical Coding ^ ^ ^ ^
 
-1. Decimal_To_Non_Decimal(decimal_number, destination_radix):
+1. Decimal_To_Non_Decimal(Decimal_Number, Destination_Radix):
 
 TLDR: While there are still digits, add powers of digits by radix.
 
-GIVEN: decimal number, destination radix
-
-
-
-
-<Abstraction dependencies> 
-- Conversion opperation : <int>(String, int)parseInt
+a. Position <- 0
+b. Non_Decimal_Number <- 0
+c. Copy_Of_Decimal <- Decimal_Number
+d. WHILE(are_digits_left(Decimal_Number) NOT FALSE)
+d.a. Non_Decimal_Number <- Add_Two_Integers(Non_Decimal_Number ,Multiply_Two_Integers(Copy_Of_Decimal % 10, Power_Number(Destination_Radix, Position))
+d.b Copy_Of_Decimal / 10
+d.c Position <- Position + 1
+e. RETURN Non_Decimal_Number
 
 GIVEN: <int>decimal_number, <int>destination radix
 a. str_decimal_number <- toInteger(decimal_number)
@@ -57,7 +58,7 @@ After Dimensional analysis
 TLDR: While there are still digits, add current digits together
 
 a. Summed_Number <- 0
-b. while(are_digits_left(number) NOT FALSE)
+b. WHILE(are_digits_left(number) NOT FALSE)
 b.a. Summed_Number <- first_number % 10 + second_number % 10
 c. RETURN Summed_Number 
 
@@ -71,6 +72,8 @@ a. are_digits_left(number):
 a.a IF number > 0
 a.a.a. TRUE
 a.a.b FALSE
+
+2. Power_number
 
 
 1. is_A_Poisitve?
