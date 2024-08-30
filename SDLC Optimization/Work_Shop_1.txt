@@ -1,4 +1,11 @@
-Problems Coming up in the process:
+& & & & & & Problems Coming up in the process & & & & & &
+
+^ ^ ^ ^ ^ Requirements ^ ^ ^ ^ ^
+
+^ ^ ^ ^ ^ Design ^ ^ ^ ^ ^
+
+^ ^ ^ ^ ^ Testing ^ ^ ^ ^ ^
+
 
 1. UnClear Goals
 2. Missed Goals
@@ -9,9 +16,9 @@ Problems Coming up in the process:
 5. Help The Developer while they are stuck
 6. 
 
-Top of the head solutions:
+Top of the head solutions
 
  Establishing a communication line (Team chat) 
  Having the team meetup and catch up on further Goals (Daily)
 
-Crowd's input:
+Crowd's input

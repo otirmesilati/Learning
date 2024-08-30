@@ -8,6 +8,8 @@ Procedural - building upon previous work:
 
 ^ ^ ^ ^ Arithmetical Coding ^ ^ ^ ^
 
+----------------------------------------------------------------------------------------------------------------------------------------
+
 1. Non_Decimal_To_Decimal(Decimal_Number, Source_Radix):
 
 TLDR: While there are still digits, add powers of digits by radix.
@@ -21,11 +23,9 @@ d.b Copy_Of_Decimal / 10
 d.c Position <- Position + 1
 e. RETURN Non_Decimal_Number
 
-GIVEN: <int>decimal_number, <int>destination radix
-a. str_decimal_number <- toInteger(decimal_number)
-b. wanted_number <- parseInt(str_decimal_number, r)
-EOF
+---------------------------------------------------------------------------------------------------------------------------------------
 
+---------------------------------------------------------------------------------------------------------------------------------------
 2. Decimal_To_Non_Decimal(Non_Decimal_Number, Destination_Radix)
 
 TLDR: while the number is not 0, keep dividing by the destination radix
