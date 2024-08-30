@@ -3,8 +3,11 @@ Problems Coming up in the process:
 1. UnClear Goals
 2. Missed Goals
 3. Communication problems
-4. Lack of visualization tools
+4. Lack of visualization tools:
+4.1. Have Visual Tools one the first meet up
+4.2. Have The visual tools accesible through out the code desgin process
 5. Help The Developer while they are stuck
+6. 
 
 Top of the head solutions:
 
