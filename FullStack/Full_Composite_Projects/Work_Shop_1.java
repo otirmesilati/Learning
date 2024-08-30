@@ -6,7 +6,11 @@ package FullStack.Full_Composite_Projects;
 // Environment: Eclipse
 // Pseudo: Decimal_To_Non_Decimal 
 // Abstraction-Delegation: a to d is abstracted by Integer.parseInt()
-// dependencies: Integer library, work-shop class, function has to be static to run in main
+// dependencies:
+// - Integer library, 
+// - work-shop class
+// - function has to be static to run in main
+// - parseInteger needs conversion to string of the number 
 
 /*
  Code-Design:
@@ -17,7 +21,10 @@ package FullStack.Full_Composite_Projects;
  4.1 start with the name - it's in red and compiler's complaining!
  4.2 add the return type - still red 
  4.3 return 0 to make him happy and get rid of the reds
- 5. 
+ 5. glance at the pseudo code, and then at abstract-Delegation:
+ 5.1. a to d is abstracted! yay! celebrate internally
+ 5.2. Taking care of the small dependency - into stringDecimal put toString of the decimal 
+ 5.3 parseInt the decimalNumber and put it in nonDecimalNumber
  */
 
 import java.lang.Integer;
@@ -27,7 +34,8 @@ public class Work_Shop_1
 
     int convertDecimalToNonDecimal(int decimal_Number, int destination_Radix)
     {
-        // what now ? //
+        String stringDecimal = Integer.toString(decimal_Number);
+        //nonDecimalNumber = Integer.parseInt(null, destination_Radix)
         return 0;
     }
 
