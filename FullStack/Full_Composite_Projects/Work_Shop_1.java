@@ -1,12 +1,25 @@
 package FullStack.Full_Composite_Projects;
 
+
 // Syntax: Java
+// convertDecimalToNonDecimal
 // Environment: Eclipse
 // Pseudo: Decimal_To_Non_Decimal 
 // Abstraction-Delegation: a to d is abstracted by Integer.parseInt()
-// dependencies: Integer library
+// dependencies: Integer library, work-shop class, function has to be static to run in main
 
 import java.lang.Integer;
+
+public class Work_Shop_1
+{
+
+    // make the function here //
+
+    public static void main(String[] args) {
+        
+    }
+}
+
 // implement a public static class here //
 
 /*
