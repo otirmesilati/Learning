@@ -51,7 +51,15 @@ public class Work_Shop_1
         if (and_this_needs_to_be_fourteen == 14) System.out.println("Yay!");
         else System.out.println("😔"); 
 
-        // After Testing: ? //
+        // Test 1 results: FAIL!!! reason: parseInt does not do what it's supposed to!
+        // what it does? it takes a number from the specified radix and turns it into decimal
+        // Possible fixes: 
+        // 1. Go with Another function
+        // 2. Chane the abstract delegation to take it the way it is
+        
+        
+        
+        // Test 2 results: ? //
 
     }
 }
