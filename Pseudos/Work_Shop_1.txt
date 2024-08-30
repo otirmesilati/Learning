@@ -47,10 +47,14 @@ Procedural - building upon previous work:
 
 TLDR: While there are still digits, add powers of digits by radix.
 
+variables to add: position of a digit for calculations,
+and the number to return after all additions
 
 a. Position <- 0
 
 b. Non_Decimal_Number <- 0
+
+
 
 c. Copy_Of_Decimal <- Decimal_Number
 
@@ -80,14 +84,17 @@ e. RETURN Non_Decimal_Number
 
 
 
-2. Decimal_To_Non_Decimal(Non_Decimal_Number, Destination_Radix)
+2. Decimal_To_Non_Decimal(Decimal_Number, Destination_Radix)
+
 
 TLDR: while the number is not 0, keep dividing by the destination radix
 
+
 // what will be the number returned here?
+a. Non_Decimal_Number <- 0
 a. WHILE(Non_Decimal_Number NOT FALSE)
-a.a. quotient <- Non_Decimal_Number / Destination_Radix
-a.b reminder <- Non_Decimal_Number % Destination_Radix 
+a.a. reminder <- Non_Decimal_Number % Destination_Radix 
+a.b. Decimal_Number <- Decimal_Number / Destination_Radix
 // need a number store the digits work on 
 
 // do the division

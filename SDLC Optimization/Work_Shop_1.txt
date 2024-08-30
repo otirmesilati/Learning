@@ -4,6 +4,15 @@
 
 ^ ^ ^ ^ ^ Design ^ ^ ^ ^ ^
 
+
+(leave this portion here in optimization? 
+or rather transfer it to Design/language skill codex?)
+^ ^ ^ ^ Arithmatic Code Design Skills ^ ^ ^ ^
+
+1. Know how to manipulate numbers:
+- how to cut digits
+- how to add digits
+
 ^ ^ ^ ^ ^ Testing ^ ^ ^ ^ ^
 
 
