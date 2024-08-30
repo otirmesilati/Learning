@@ -35,7 +35,7 @@ import java.lang.Integer;
 public class Work_Shop_1
 {
 
-    int convertDecimalToNonDecimal(int decimalNumber, int destinationRadix)
+    static int convertDecimalToNonDecimal(int decimalNumber, int destinationRadix)
     {
         String stringDecimal = Integer.toString(decimalNumber);
         int nonDecimalNumber = Integer.parseInt(stringDecimal, destinationRadix);
@@ -44,5 +44,12 @@ public class Work_Shop_1
 
     public static void main(String[] args) {
         
+        // Testing the convertDecimalToNonCeimal function:
+        // 12 in decimal is 14 in octal
+        int this_is_twelve = 12;
+        int and_this_needs_to_be_fourteen = convertDecimalToNonDecimal(this_is_twelve, 8);
+        if (and_this_needs_to_be_fourteen == 14) System.out.println("Yay!");
+        else System.out.println("😔"); 
+
     }
 }
