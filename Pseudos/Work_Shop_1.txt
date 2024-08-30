@@ -1,3 +1,5 @@
+(TODO: Patch this up a bit)
+
 Procedural - building upon previous work:
 
 & & & & & & Basics & & & & & &
@@ -6,9 +8,26 @@ Procedural - building upon previous work:
 
 ^ ^ ^ ^ Arithmetical Coding ^ ^ ^ ^
 
+1. from decimal to non decimal:
+
+<Abstraction dependencies> 
+- Conversion opperation : <int>(String, int)parseInt
+
+GIVEN: <int>decimal_number, <int>destination radix
+a. str_decimal_number <- toInteger(decimal_number)
+b. wanted_number <- parseInt(str_decimal_number, r)
+EOF
+
+
+
+2. from non decimal to decimal
+3. fast conversion from power radixi
+
 -- problems from converting from one radix to another? 
 
 ^ ^ ^ Dimensional Analysis ^ ^ ^
+
+1. cents to dollars
 
 -- maybe add in the notebook problems like 
 converting cents to dollars? shekels to Agurot?
@@ -22,12 +41,15 @@ from elementary analysis to Arithmatic
 specifically: to Arith Coding
 After Dimensional analysis
 
-1. addition
+^ ^ ^ Algorismics ^ ^ ^
 
+1. addition of two numbers - no input
+
+2. addition of three numbers - no input
 
 3. 
 
-^ ^ ^ ^ ^ Conditional ^ ^ ^ ^ ^
+^ ^ ^ ^ ^ Number theory ^ ^ ^ ^ ^
 
 1. is_A_Poisitve?
 IN:
@@ -41,7 +63,7 @@ OUT: an answer if it was a digit or not
 IN:
 OUT:
 
-3.1 two numbers
+3.1 which of two numbers is bigger?
 
 3.2 three numbers
 
