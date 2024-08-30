@@ -53,11 +53,14 @@ public class Work_Shop_1
 
         // Test 1 results: FAIL!!! reason: parseInt does not do what it's supposed to!
         // what it does? it takes a number from the specified radix and turns it into decimal
+        
+        // FIXING Test 1 Failure:
         // Possible fixes: 
         // 1. Go with Another function
         // 2. Chane the abstract delegation to take it the way it is
         
-        
+        // Checking if there is a built in function that does the decimal to non decimal part:
+        // ?
         
         // Test 2 results: ? //
 
