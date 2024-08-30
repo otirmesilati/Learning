@@ -90,12 +90,23 @@ e. RETURN Non_Decimal_Number
 TLDR: while the number is not 0, keep dividing by the destination radix
 
 
-// what will be the number returned here?
+Problem:
+before: 1
+after : 01
+we need to input the 0, but we cant simply add it to the number
+so let's hold a counter for zeros, so if we get a string of 3 zeros
+and then a 1:
+counter = 3
+before: 1
+after: 1,000(10 ^ counter) + 1
+that's the basic idea
+
 a. Non_Decimal_Number <- 0
 a. WHILE(Non_Decimal_Number NOT FALSE)
 a.a. reminder <- Non_Decimal_Number % Destination_Radix 
 a.b. Decimal_Number <- Decimal_Number / Destination_Radix
-// need a number store the digits work on 
+a.c Non_Decimal_Number <- Non_Decimal_Number
+// what about the zeros problem? 
 
 // do the division
 // check the reminder
