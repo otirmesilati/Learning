@@ -8,12 +8,28 @@ package FullStack.Full_Composite_Projects;
 // Abstraction-Delegation: a to d is abstracted by Integer.parseInt()
 // dependencies: Integer library, work-shop class, function has to be static to run in main
 
+/*
+ Code-Design:
+ 1. It's Java - import the Integer class - full path
+ 2. still java - make the work shop class
+ 3. java - main is static, make a static main
+ 4. make the function signature:
+ 4.1 start with the name - it's in red and compiler's complaining!
+ 4.2 add the return type - still red 
+ 4.3 return 0 to make him happy and get rid of the reds
+ 5. 
+ */
+
 import java.lang.Integer;
 
 public class Work_Shop_1
 {
 
-    // make the function here //
+    int convertDecimalToNonDecimal(int decimal_Number, int destination_Radix)
+    {
+        // what now ? //
+        return 0;
+    }
 
     public static void main(String[] args) {
         
