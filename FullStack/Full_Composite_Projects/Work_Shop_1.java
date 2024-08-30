@@ -60,7 +60,7 @@ public class Work_Shop_1
         // 2. Chane the abstract delegation to take it the way it is
         
         // Checking if there is a built in function that does the decimal to non decimal part:
-        // ?
+        // There is!! ITS TO STRING!!! :D !!!!!!
         
         // Test 2 results: ? //
 
