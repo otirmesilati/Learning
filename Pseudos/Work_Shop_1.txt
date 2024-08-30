@@ -8,18 +8,9 @@ Procedural - building upon previous work:
 
 ^ ^ ^ ^ Arithmetical Coding ^ ^ ^ ^
 
-1. Decimal_To_Non_Decimal:
+1. Decimal_To_Non_Decimal(decimal_number, destination_radix):
 
 TLDR: While there are still digits, add powers of digits by radix.
-
-a. are_digits_left(number):
-a.a IF number > 0
-a.a.a. TRUE
-a.a.b FALSE
-
-b. 
-
-add(to_The_Power)
 
 GIVEN: decimal number, destination radix
 
@@ -59,13 +50,28 @@ After Dimensional analysis
 
 ^ ^ ^ Algorismics ^ ^ ^
 
-1. addition of two numbers - no input
+
+
+2. Add_Two_Integers(first_number, second_number):
+
+TLDR: While there are still digits, add current digits together
+
+a. Summed_Number <- 0
+b. while(are_digits_left(number) NOT FALSE)
+b.a. Summed_Number <- first_number % 10 + second_number % 10
+c. RETURN Summed_Number 
 
 2. addition of three numbers - no input
 
 3. 
 
 ^ ^ ^ ^ ^ Number theory ^ ^ ^ ^ ^
+
+a. are_digits_left(number):
+a.a IF number > 0
+a.a.a. TRUE
+a.a.b FALSE
+
 
 1. is_A_Poisitve?
 IN:
