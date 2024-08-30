@@ -22,8 +22,13 @@ or rather transfer it to Design/language skill codex?)
 4. Lack of visualization tools:
 4.1. Have Visual Tools one the first meet up
 4.2. Have The visual tools accesible through out the code desgin process
+4.3. Right After Getting done building a pseudo code:
+4.3.1. Explain it to yourself, visualise the compilation
+4.3.2. try to break the idea down 
 5. Help The Developer while they are stuck
-6. 
+6. Each developer takes pseudo code and interperts it his own way:
+6.1. though they differ in peudoing and translating their ideas to viable code, they should reach similar end points of Design
+6.2 maybe a tool to ease the two proccesses of PSEUDO + TRANSLATE IDEAS?
 
 Top of the head solutions
 
