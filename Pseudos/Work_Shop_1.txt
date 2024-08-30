@@ -8,6 +8,7 @@ Procedural - building upon previous work:
 
 ^ ^ ^ ^ Arithmetical Coding ^ ^ ^ ^
 
+FIX THIS: Non_Decimal_To_Decimal
 1. Decimal_To_Non_Decimal(Decimal_Number, Destination_Radix):
 
 TLDR: While there are still digits, add powers of digits by radix.
@@ -26,7 +27,14 @@ a. str_decimal_number <- toInteger(decimal_number)
 b. wanted_number <- parseInt(str_decimal_number, r)
 EOF
 
-2. Non_Decimal_To_Decimal(Non_Decimal_Number, Source_Radix)
+2. Decimal_To_Non_Decimal(Non_Decimal_Number, Destination_Radix)
+
+TLDR: while the number is not 0, keep dividing by the destination radix
+
+a. WHILE(Non_Decimal_Number NOT FALSE)
+a.a. // do the division
+// check the reminder
+// what's next?
 
 a. Position <- 0
 b. Non_Decimal_Number <- 0
