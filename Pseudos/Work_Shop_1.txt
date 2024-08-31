@@ -1,4 +1,8 @@
-(TODO: Patch this up a bit)
+Mathematical Imperative Code Design Skills:
+- Deciding to allocate more variables (usually from needed behaviour)
+- translating requirements, from "reqirement story" to "code story"
+- Preforming manipulations on numbers
+
 
 Procedural - building upon previous work:
 
@@ -98,7 +102,7 @@ a. Non_Decimal_Number <- 0
 b. zeros_counter <- 0
 
 
-<- logical section: getting th digits for the non decimal number->
+<- Number manipulation: getting the digits for the non decimal number->
 
 
 a. WHILE(Non_Decimal_Number NOT 0)
