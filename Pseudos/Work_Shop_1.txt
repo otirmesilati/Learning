@@ -1,4 +1,4 @@
-Mathematical Imperative Code Design Skills:
+Imperative Mathematical Code Design Skills:
 - Deciding to allocate more variables (usually from needed behaviour):
 -- storage
 -- counters

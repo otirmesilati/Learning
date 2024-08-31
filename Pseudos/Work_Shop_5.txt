@@ -1,3 +1,13 @@
+Imperative GUI Code Design Skills:
+- Ability to visualize the component
+
+where will these go?
+- counter Dialouge
+- login page Dialouge
+- multiple text field form Dialouge
+- GUI menu
+
+
 Top Menu 
 
 Windows
