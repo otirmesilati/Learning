@@ -1,5 +1,11 @@
 Imperative GUI Code Design Skills:
-- Ability to visualize the component
+- Ability to visualize the component:
+-- Style
+--- Layouts? 
+--- Components?
+-- Functionality
+--- On Action Events
+--- Awaiting events
 
 where will these go?
 
