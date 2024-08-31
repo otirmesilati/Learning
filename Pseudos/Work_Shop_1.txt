@@ -1,4 +1,6 @@
 Imperative Mathematical Code Design Skills:
+- The process has to start AFTER the mathematical solution was APPLIED + UNDERSTOOD
+- story telling and simplifying mathematical problems through a simple story
 - Deciding to allocate more variables (usually from needed behaviour):
 -- storage
 -- counters
@@ -130,7 +132,82 @@ a.c. Decimal_Number <- Decimal_Number / Destination_Radix
 ----------------------------------------------------------------------------------------------------------------
 
 
-3. fast conversion from power radixi
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------
+
+
+
+3. Fast_Straight_Conversion(Source_Radix, Destination_Radix, Original_Number)
+
+
+TLDR: finding out the exponent which connects the two radixi,
+and according to it - we'll translate the digits from the original number
+into the digits of the new number.
+
+
+Problem: the operation will be different according to if
+the destination radix is bigger than the source,
+and different if it is smaller! what's the solution here?
+
+
+<- Variables ->
+a. Transition_Exponent <- N_Root(Source_Radix, Destination_Radix)
+
+
+
+
+
+make new number
+take digit - modulo 10 in a loop
+translate digit - 
+
+
+
+
+
+
+
+<- Number manipulation: getting the digits for the non decimal number->
+
+
+
+
+
+
+a. WHILE(Non_Decimal_Number NOT 0)
+
+a.a. reminder <- Non_Decimal_Number % Destination_Radix 
+
+a.b. IF(remainder IS 0)
+
+a.b.a. TRUE: 
+
+a.b.a.a. zeros_counter <- zeros_counter + 1
+
+a.b.b. FALSE:
+
+a.b.b.a. Non_Decimal_Number <- Multiply_Two_Integers(remainder ,Power_Number(10, zeros_counter)) + Non_Decimal_Number
+
+a.b.b.b. zeros_counter <- 0
+
+a.c. Decimal_Number <- Decimal_Number / Destination_Radix
+
+
+
+
+
+
+
+
+
+
+
 
 -- problems from converting from one radix to another? 
 
