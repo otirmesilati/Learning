@@ -6,7 +6,9 @@
 
 //   ^ ^ ^ ^ java.lang.Integer ^ ^ ^ ^ 
 
-//   ^ ^ ^ java.lang.Integer : parseInt() ^ ^ ^
+import java.lang.Integer;
+
+//   <String> parseInteger(<int> number_to_conver, <int> source_radix) - returns a function radixed in Decimal)
 
 
 
