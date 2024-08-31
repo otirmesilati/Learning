@@ -1,5 +1,7 @@
 Mathematical Imperative Code Design Skills:
-- Deciding to allocate more variables (usually from needed behaviour)
+- Deciding to allocate more variables (usually from needed behaviour):
+-- storage
+-- counters
 - translating requirements, from "reqirement story" to "code story"
 - Preforming manipulations on numbers
 
@@ -46,7 +48,7 @@ Procedural - building upon previous work:
 
 
 
-1. Non_Decimal_To_Decimal(Decimal_Number, Source_Radix):
+->> 1. Non_Decimal_To_Decimal(Decimal_Number, Source_Radix): <<-
 
 
 TLDR: While there are still digits, add powers of digits by radix.
@@ -117,7 +119,7 @@ a.b.a.a. zeros_counter <- zeros_counter + 1
 
 a.b.b. FALSE:
 
-a.b.b.a. Non_Decimal_Number <- Multiply_Two_Integers(remainder ,Power_Number(10, zeros_counter))
+a.b.b.a. Non_Decimal_Number <- Multiply_Two_Integers(remainder ,Power_Number(10, zeros_counter)) + Non_Decimal_Number
 
 a.b.b.b. zeros_counter <- 0
 
