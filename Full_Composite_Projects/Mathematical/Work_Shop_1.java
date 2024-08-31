@@ -1,4 +1,4 @@
-package FullStack.Full_Composite_Projects;
+package Full_Composite_Projects.Mathematical;
 
 
 // Syntax: Java
@@ -35,11 +35,19 @@ import java.lang.Integer;
 public class Work_Shop_1
 {
 
-    static int convertDecimalToNonDecimal(int decimalNumber, int destinationRadix)
+    static int convertToNonDecimal(int decimalNumber, int destinationRadix)
     {
+        // Test 1 Bud: does the opposite - returns decimal
         String stringDecimal = Integer.toString(decimalNumber);
         int nonDecimalNumber = Integer.parseInt(stringDecimal, destinationRadix);
+        // return nonDecimalNumber; - only greened out so no compilation reds
+
+        // after fixing:
+        stringDecimal = Integer.toString(decimalNumber);
+        String Non_Decimal_String = java.lang.Integer.toString(decimalNumber, destinationRadix);
         return nonDecimalNumber;
+
+
     }
 
     public static void main(String[] args) {
@@ -47,7 +55,7 @@ public class Work_Shop_1
         // Testing the convertDecimalToNonCeimal function:
         // 12 in decimal is 14 in octal //
         int this_is_twelve = 12;
-        int and_this_needs_to_be_fourteen = convertDecimalToNonDecimal(this_is_twelve, 8);
+        int and_this_needs_to_be_fourteen = convertToNonDecimal(this_is_twelve, 8);
         if (and_this_needs_to_be_fourteen == 14) System.out.println("Yay!");
         else System.out.println("😔"); 
 
@@ -60,9 +68,9 @@ public class Work_Shop_1
         // 2. Chane the abstract delegation to take it the way it is
         
         // Checking if there is a built in function that does the decimal to non decimal part:
-        // There is!! ITS TO STRING!!! :D !!!!!!
-        
-        // Test 2 results: ? //
+        // the function we looked for - toString()! does the to different radix conversion
+
+        // Test 2 results: Success! //
 
     }
 }
