@@ -151,10 +151,25 @@ and according to it - we'll translate the digits from the original number
 into the digits of the new number.
 
 
+
+
 Problem: the operation will be different according to if
 the destination radix is bigger than the source,
 and different if it is smaller! what's the solution here?
 
+
+Fix: Conditioning the control flow
+if the source is bigger - we'll *expend
+if the source is lower - we'll **shorten
+
+
+
+
+
+
+
+*expend: making an exponent long number and adding it to the initial number
+** shorten: on the exponent long number of digits - invoke the decimal conversion 
 
 <- Variables ->
 a. Transition_Exponent <- N_Root(Source_Radix, Destination_Radix)
