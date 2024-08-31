@@ -29,6 +29,9 @@ or rather transfer it to Design/language skill codex?)
 6. Each developer takes pseudo code and interperts it his own way:
 6.1. though they differ in peudoing and translating their ideas to viable code, they should reach similar end points of Design
 6.2 maybe a tool to ease the two proccesses of PSEUDO + TRANSLATE IDEAS?
+7. sluggish proedures:
+7.1. slow idea transferring
+7.2. unclear instructions
 
 Top of the head solutions
 

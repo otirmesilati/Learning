@@ -1,5 +1,23 @@
 // Language Docs: https://docs.oracle.com/javase/8/docs/api/overview-summary.html
 
+//   & & & & & & Libraries & & & & & &
+
+//   ^ ^ ^ ^ ^ java.lang ^ ^ ^ ^ ^
+
+//   ^ ^ ^ ^ java.lang.Integer ^ ^ ^ ^ 
+
+//   ^ ^ ^ java.lang.Integer : parseInt() ^ ^ ^
+
+
+
+
+
+
+
+
+
+
+
 /* retype this in my own words:
  
 java.lang - type wrappers
