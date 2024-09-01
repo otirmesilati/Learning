@@ -22,7 +22,7 @@ where will these go?
 
 
 
-->> 1. Login_Window(): <<-
+->> 1. Login_Dialog(): <<-
 
 Visualization schematic:
 
@@ -31,6 +31,16 @@ __________________
 |                |
 |pass:   ___     |
 |________________|
+
+
+Layout: 2x2 table
+components: 2 labels and text fields
+
+
+
+
+
+
 
 TLDR: While there are still digits, add powers of digits by radix.
 
