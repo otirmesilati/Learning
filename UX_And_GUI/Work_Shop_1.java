@@ -109,6 +109,12 @@ public class Work_Shop_1 {
 
         //   ^ ^ ^ ^ java specific(?): callbacking GUI ^ ^ ^ ^
     }
+
+    public class LoginWindow
+    {
+        // So here will the the code for making a Login Window
+    }
+
     
     /*   & & & & & & GUI dependencies & & & & & */
 
@@ -124,3 +130,4 @@ public class Work_Shop_1 {
     // is this class inheriting? maybe a friend class? //
     // interfaces for behaviour? //
 }
+
