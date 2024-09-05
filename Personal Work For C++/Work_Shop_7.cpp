@@ -27,9 +27,15 @@ void fun_hi(){cout << "Hi" /* Comments within statemenets */ << "bye";}
 
 //   & & & & & & Literals (defined literal operators) & & & & & &
 
-// Literals dependent on scopes within function
-void fun_literals(){
 
+void fun_literals(){ // Literals dependent on scopes within function
+
+// Going over the available space for literals will have a reseting effect:
+// unsigned short cap: 65535
+unsigned short hi = 65000; // 65,00
+unsigned short hi = 66000; // 464
+
+// signed short cap: 
 
 // https://web.archive.org/web/20130807052041/http://cpp.comsci.us/etymology/literals.html
 
