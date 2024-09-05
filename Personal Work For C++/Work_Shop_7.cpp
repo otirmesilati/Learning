@@ -49,20 +49,22 @@ void fun_literals(){
 //  ^ ^ ^ ^ Integers: Signed/Long Conding Modifying Suffixes  ^ ^ ^ ^
 
 1u;
--2U; // will be translated: 2's complement on the value -> new unsigned value
+-2U; // will work sometimes and sometimes not: will be translated: 2's complement on the value -> new unsigned value
 3l;
 -4L;
 5ll;
 6LL;
 
-
 //   ^ ^ ^ ^ ^ Floats ^ ^ ^ ^ ^
 
-//   ^ ^ ^ ^ ^ Sceientific Notation Encoding ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ Floats: Sceientific Notation Encoding  ^ ^ ^ ^
 1e2;
 1e-3;
 
-// Let's combine type modifyers and exponents! //
+// can combine exponent and long encondings //
+1e2l;
+
+//   ^ ^ ^ ^ ^ Overloading literal operators ^ ^ ^ ^ ^
 
 // https://en.cppreference.com/w/cpp/language/floating_literal //
 
