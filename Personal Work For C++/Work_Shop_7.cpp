@@ -33,9 +33,11 @@ void fun_literals(){ // Literals dependent on scopes within function
 // Going over the available space for literals will have a reseting effect:
 // unsigned short cap: 65535
 unsigned short hi = 65000; // 65,00
-unsigned short hi = 66000; // 464
+unsigned short hi = 66000; // 464 (Got back to zero going up)
 
-// signed short cap: 
+// signed short cap: 32767
+short hi = 32000; // 32000
+short hi = 35000; // -30536 (Got to -32767 going to zero)
 
 // https://web.archive.org/web/20130807052041/http://cpp.comsci.us/etymology/literals.html
 
