@@ -2,8 +2,11 @@
 #include <iostream>
 using namespace std;
 
-// https://www.tutorialspoint.com/cplusplus/cpp_comments.htm 
-// syno: theres a lot of types, they have modifiers, from "The size of variables..."" 
+
+//   & & & & & & Libraries & & & & & &
+// ?
+
+//   & & & & & Comments & & & & &
 
 // where to put bitmasking? watch video below:
 // https://www.youtube.com/watch?v=wvtFGa6XJDU
@@ -22,7 +25,7 @@ for other kind of comments */
 
 void fun_hi(){cout << "Hi" /* Comments within statemenets */ << "bye";}
 
-//   & & & & & & Literals & & & & & &
+//   & & & & & & Literals (defined literal operators) & & & & & &
 
 // Literals dependent on scopes within function
 void fun_literals(){
