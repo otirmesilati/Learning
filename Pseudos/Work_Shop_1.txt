@@ -6,6 +6,15 @@ Imperative Mathematical Code Design Skills:
 -- counters
 - Preforming manipulations on variables
 
+
+
+
+
+
+   & & & & & & C Lectures & & & & & &  
+
+   ^ ^ ^ ^ ^ Lecture 3 ^ ^ ^ ^ ^ 
+   
 Lecture Problem Ideas:
 1. IN: Test grade
 OUT: Test grade + 5 points
@@ -16,6 +25,15 @@ OUT: boolean answer - is the number even?
 3. 
 
 
+   & & & & & & C++ Lectures & & & & & &
+
+   ^ ^ ^ ^ ^ Lectue 1 ^ ^ ^ ^ ^
+
+
+
+   & & & & & & Python Lectures & & & & & &
+
+   & & & & & & Java Lectures & & & & & &
 
 
 
