@@ -72,21 +72,26 @@ short hi = 35000; // -30536 (Got to -32767 going to zero)
 // can combine exponent and long encondings //
 1e2l;
 
-//   ^ ^ ^ ^ ^ Overloading literal operators ^ ^ ^ ^ ^
+
 
 // https://en.cppreference.com/w/cpp/language/floating_literal //
 
 }
 
 
-//   & Types & (finish this)
-
-// ^ ^ ^ ^ ^ Type Modifiers ^ ^ ^ ^ ^
-// sign, unsign, short, long
-
 //   & & & & & & Operators & & & & & &
+//   Overloading literal operators: https://en.cppreference.com/w/cpp/language/user_literal
+
 
 //   & & & & & & String Formatting & & & & & &
+//   ^ ^ ^ ^ ^ Format Specifiers ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ Format Specifiers: parameter ^ ^ ^ ^ ^
+//   flags
+//   width
+//   precision (the .2f goes here )
+//   length field
+//   type field
+// complete this section from here: https://en.wikipedia.org/wiki/Printf 
 
 //   & & & & & & Conditional Statements & & & & & &
 
