@@ -104,8 +104,16 @@ printf("The first value %d, second value %.2lf.")
 
 
 //   & & & & & & Operators & & & & & &
+// need to touch on lvalue, rvalue, gvalue: 
+// for the wiki tldr: https://en.wikipedia.org/wiki/Value_(computer_science)
+// for the famous lval/rval/gval/xval graph: https://stackoverflow.com/questions/3601602/what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues
+// lecture's coverage: lval is left and changing, and rval is right, WOW!
+
 //   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
+// lecture's coverage: int x = 5;
+// x = x + 2;
 //   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^ ^
+
 //   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
 
 //   Overloading literal operators: https://en.cppreference.com/w/cpp/language/user_literal
