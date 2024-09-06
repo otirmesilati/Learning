@@ -79,10 +79,6 @@ short hi = 35000; // -30536 (Got to -32767 going to zero)
 }
 
 
-//   & & & & & & Operators & & & & & &
-//   Overloading literal operators: https://en.cppreference.com/w/cpp/language/user_literal
-
-
 //   & & & & & & String Formatting & & & & & &
 //   ^ ^ ^ ^ ^ Format Specifiers ^ ^ ^ ^ ^
 //   ^ ^ ^ ^ Format Specifiers: parameter ^ ^ ^ ^ ^
@@ -102,7 +98,17 @@ printf("The first value %d, second value %.2lf.")
 
 }
 
+
 */
+
+
+
+//   & & & & & & Operators & & & & & &
+//   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
+
+//   Overloading literal operators: https://en.cppreference.com/w/cpp/language/user_literal
 
 // complete this section from here: https://en.wikipedia.org/wiki/Printf 
 
