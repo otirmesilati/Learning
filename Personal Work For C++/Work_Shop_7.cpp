@@ -143,3 +143,12 @@ printf("The first value %d, second value %.2lf.")
 //   ^ ^ ^ ^ ^ Flo cont: Conditional Statements & & & & & &
 
 //   ^ ^ ^ ^ ^ Flo : loops
+
+
+//   & & & & & & Functions & & & & & & 
+
+//   ^ ^ ^ ^ ^ Prototyping 
+
+//inlining functions
+
+//   ^ ^ ^ ^ ^ Function Overloading
