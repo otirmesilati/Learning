@@ -129,6 +129,17 @@ printf("The first value %d, second value %.2lf.")
 
 // complete this section from here: https://en.wikipedia.org/wiki/Printf 
 
-//   & & & & & & Conditional Statements & & & & & &
+//   & & & & & & Variables 
 
-//   & & & & & & Loops & & & & & &
+//   ^ ^ ^ ^ ^ Constants
+
+//   ^ ^ ^ ^ Constants: Pre-Processor Macros 
+
+//   ^ ^ ^ ^ Constants: Immutables 
+
+
+//   & & & & & & Flow Control
+
+//   ^ ^ ^ ^ ^ Flo cont: Conditional Statements & & & & & &
+
+//   ^ ^ ^ ^ ^ Flo : loops
