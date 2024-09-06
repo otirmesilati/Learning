@@ -1,17 +1,19 @@
 Imperative Mathematical Code Design Skills:
-- The process has to start AFTER the mathematical solution was APPLIED + UNDERSTOOD
-- story telling and simplifying mathematical problems through a simple story
+- Solve the matematical problem
+- simplify story tell the math solution 
 - Deciding to allocate more variables (usually from needed behaviour):
 -- storage
 -- counters
-- translating requirements, from "reqirement story" to "code story"
-- Preforming manipulations on numbers
+- Preforming manipulations on variables
 
+Lecture Problem Ideas:
+1. IN: Test grade
+OUT: Test grade + 5 points
 
-Procedural - building upon previous work:
+2. IN: int number
+OUT: boolean answer - is the number even?
 
-
-
+3. 
 
 
 

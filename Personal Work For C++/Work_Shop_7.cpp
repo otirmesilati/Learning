@@ -136,7 +136,7 @@ printf("The first value %d, second value %.2lf.")
 //   ^ ^ ^ ^ Constants: Pre-Processor Macros 
 
 //   ^ ^ ^ ^ Constants: Immutables 
-
+// highlight the difference of const (run time) vs constexpr (compile time)
 
 //   & & & & & & Flow Control
 
