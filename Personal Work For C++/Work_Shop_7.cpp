@@ -91,6 +91,19 @@ short hi = 35000; // -30536 (Got to -32767 going to zero)
 //   precision (the .2f goes here )
 //   length field
 //   type field
+//   custom field 
+/* The lecture's coverage: formatting to two places after the dot:
+int main()
+{
+
+int number = 3;
+double dvalue = 2.3484444;
+printf("The first value %d, second value %.2lf.")
+
+}
+
+*/
+
 // complete this section from here: https://en.wikipedia.org/wiki/Printf 
 
 //   & & & & & & Conditional Statements & & & & & &
