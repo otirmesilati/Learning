@@ -4,7 +4,8 @@ using namespace std;
 
 
 //   & & & & & & Libraries & & & & & &
-// ?
+// iostream?
+// pragma once? namespace ? (finish mapping this)
 
 //   & & & & & Comments & & & & &
 
@@ -111,8 +112,16 @@ printf("The first value %d, second value %.2lf.")
 
 //   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
 // lecture's coverage: int x = 5;
-// x = x + 2;
+// x = x + 2; x += 2
 //   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^ ^
+// x + 2;
+// x++;
+/// ++x;
+
+//   ^ ^ ^ ^ Arithmetical Operators: Narrowing/Widening type Casting ^ ^ ^ ^
+//   ^ ^ ^ Implicit/Explicit type casting ^ ^ ^
+// lecture's coverage: not a good one, skipped over the literal subject and jumped into combining both casting and not even mentioning it!!!! 
+// what it should be like: exp cast 2/2(double);    imp cast 2/2.000 (was that so hard lecturer?????)
 
 //   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
 
