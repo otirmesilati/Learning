@@ -116,10 +116,16 @@ printf("The first value %d, second value %.2lf.")
 //   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^ ^
 // x + 2;
 // x++;
-/// ++x;
+// ++x;
+/* Lecture's example: 
+int a = 5, b;
+b = ++a; // a = b = 6;
+b = a++; // a = 6, b = 5
+
+*/
 
 //   ^ ^ ^ ^ Arithmetical Operators: Narrowing/Widening type Casting ^ ^ ^ ^
-//   ^ ^ ^ Implicit/Explicit type casting ^ ^ ^
+//   ^ ^ ^ type casting ^ ^ ^
 // No Automatic casting to wide in c++? a set of rules: https://www.youtube.com/watch?v=uI10H1jzw00
 // lecture's coverage: not a good one, skipped over the literal subject and jumped into combining both casting and not even mentioning it!!!! 
 // includes: implicit conversion of assigning a narrowed type (double) <- (int), and arithmetic conversion (double)/(int)
@@ -132,6 +138,10 @@ printf("The first value %d, second value %.2lf.")
 int b = 3, c = 4;
 c = a + b;
 The question to be asked in temp variable arithmetic is: how much temps in here? same or demotion or promotion temps? and who are they? answer: b' - promotion, (a + b')' - same, ((a + b')')' - demotion  
+
+//   ^ ^ ^ Object Cast ^ ^ ^ 
+// up casting
+// down casting
 
 same procedure for the following code:
 int a = 3, b = 4;
