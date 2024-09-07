@@ -122,6 +122,7 @@ printf("The first value %d, second value %.2lf.")
 //   ^ ^ ^ Implicit/Explicit type casting ^ ^ ^
 // No Automatic casting to wide in c++? a set of rules: https://www.youtube.com/watch?v=uI10H1jzw00
 // lecture's coverage: not a good one, skipped over the literal subject and jumped into combining both casting and not even mentioning it!!!! 
+// includes: implicit conversion of assigning a narrowed type (double) <- (int), and arithmetic conversion (double)/(int)
 // what it should be like: exp cast 2/2(double);    imp cast 2/2.000 (was that so hard lecturer?????)
 
 //   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
@@ -135,6 +136,31 @@ printf("The first value %d, second value %.2lf.")
 //   ^ ^ ^ ^ ^ Constants
 
 //   ^ ^ ^ ^ Constants: Pre-Processor Macros 
+//   ^ ^ ^ defines ^ ^ ^
+// lecture's coverage:
+//   ^ ^ ^ Almost pre-processor: enums ^ ^ ^
+// lecture's coverage: 
+/*
+Example 1: Making a boolean logic
+enum boolean {NO, YES}
+
+Example 2: Days without typedef
+enum Day {SUN = 1, MON, TUE, WED, THU, FRI, SAT};
+
+int main() 
+{
+
+enum Day d1,d2;
+d1 = SUN;
+d2 = THU;
+
+}
+
+Example 3: Days with typedef
+
+
+
+*/ 
 
 //   ^ ^ ^ ^ Constants: Immutables 
 // highlight the difference of const (run time) vs constexpr (compile time)
