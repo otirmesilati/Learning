@@ -144,20 +144,30 @@ printf("The first value %d, second value %.2lf.")
 Example 1: Making a boolean logic
 enum boolean {NO, YES}
 
-Example 2: Days without typedef
+Example 2: Days without typedef (typing enum more than once)
 enum Day {SUN = 1, MON, TUE, WED, THU, FRI, SAT};
 
 int main() 
 {
 
-enum Day d1,d2;
+enum Day d1,d2; // the second  enum is here 
 d1 = SUN;
 d2 = THU;
 
 }
 
-Example 3: Days with typedef
+Example 3: Days with typedef (typing enum once)
 
+typedef enum Day {SUN = 1, MON, TUE, WED, THU, FRI, SAT};
+
+int main() 
+{
+
+Day d1,d2;
+d1 = SUN;
+d2 = THU;
+
+}
 
 
 */ 
