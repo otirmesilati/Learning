@@ -124,7 +124,26 @@ printf("The first value %d, second value %.2lf.")
 // lecture's coverage: not a good one, skipped over the literal subject and jumped into combining both casting and not even mentioning it!!!! 
 // includes: implicit conversion of assigning a narrowed type (double) <- (int), and arithmetic conversion (double)/(int)
 // what it should be like: exp cast 2/2(double);    imp cast 2/2.000 (was that so hard lecturer?????)
+//   ^ ^ temps ^ ^ 
+// a tool used in type cast
+// putting wrong format variable type in printf/scanf WILL NOT GIVE TEMPS! It's undefined behaviour!
+// Make temp variable arithmetic in tablet and map building upon these scenarios: 
+/* double a = 12.5;
+int b = 3, c = 4;
+c = a + b;
+The question to be asked in temp variable arithmetic is: how much temps in here? same or demotion or promotion temps? and who are they? answer: b' - promotion, (a + b')' - same, ((a + b')')' - demotion  
 
+same procedure for the following code:
+int a = 3, b = 4;
+int result;
+result = (float) a/b;
+answer: a' b' (a'/b')', ((a'/b')')'
+
+trick question (becuase it has undefined behaviour in it once):
+int main() {}
+
+
+*/
 //   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
 
 //   Overloading literal operators: https://en.cppreference.com/w/cpp/language/user_literal
