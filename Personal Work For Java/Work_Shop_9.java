@@ -85,6 +85,8 @@ public void fun_literals(){
     
     //   & & & & & & Operators & & & & & &   // 
     
+    //auto casting to widening in java
+    
     //   & & & & & & String Formatting & & & & & &   //
     
     //   & & & & & & Conditional Statements & & & & & &   //

@@ -120,6 +120,7 @@ printf("The first value %d, second value %.2lf.")
 
 //   ^ ^ ^ ^ Arithmetical Operators: Narrowing/Widening type Casting ^ ^ ^ ^
 //   ^ ^ ^ Implicit/Explicit type casting ^ ^ ^
+// No Automatic casting to wide in c++? a set of rules: https://www.youtube.com/watch?v=uI10H1jzw00
 // lecture's coverage: not a good one, skipped over the literal subject and jumped into combining both casting and not even mentioning it!!!! 
 // what it should be like: exp cast 2/2(double);    imp cast 2/2.000 (was that so hard lecturer?????)
 
