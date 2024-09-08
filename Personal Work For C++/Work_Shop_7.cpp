@@ -259,7 +259,14 @@ return 0;
 /*
 int main()
 {
+int relat_glob = 1;
+{
+int relat_loc = 2;
+printf("can print both here");
+}
+printf("can print only one here");
 
+return 0;
 }
 
 */
