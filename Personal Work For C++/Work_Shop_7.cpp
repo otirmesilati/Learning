@@ -184,7 +184,9 @@ return 0;
 //   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
 // == and != are the least in the order of operations, maybe finish the operations order ladder?
 // false and true are exactly 0 and 1
-// 
+// int five = 5, three = 3, zero = 0;
+// five != 2;
+// (three < five || three < zero) && five < zero;
 
 // combining logical and arith: (arithmetic operators take precedence)
 /* lecture's example:
@@ -251,9 +253,23 @@ return 0;
 //   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^
 //   ^ ^ ^ ^ Blocks ^ ^ ^ ^ 
 //   ^ ^ ^ Blocks: Variable Scope ^ ^ ^
+
+//   ^ ^ Global: relative to and environment variables ^ ^
+//   lecture's coverage: global relative to inner blocks
+/*
+int main()
+{
+
+}
+
+*/
+
+//
+
+
 //   ^ ^ ^ Blocks: Variable Life-Time ^ ^ ^
 
-//   ^ ^ ^ ^ ^ Flo cont: Conditional Statements & & & & & &
+//   ^ ^ ^ ^ ^ Conditional Statements & & & & & &
 //   map to the tablet - new skill for relations, building a graph under constraints (number of maximum relation checks on members, like finding the max of 3 numbers(linear relation) in no more than 3 tries)
 
 //   ^ ^ ^ ^ ^ Flo : loops
