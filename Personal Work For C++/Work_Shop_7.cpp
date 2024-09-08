@@ -286,6 +286,8 @@ return 0;
 //   ^ ^ ^ ^ ^ Flo : loops
 // lecture's coverage:
 /*
+
+Example one: digit checking
 int main()
 {
 char input;
@@ -303,7 +305,24 @@ print
 
 return 0;
 }
+
+Example two: bigger number finding:
+int main()
+{
+
+int n1, n2;
+printf("2 ints: \n");
+scanf(" %d %d ", &n1, &n2);
+print("bigger: \n")
+if(n1 > n2) printf("n1 \n");
+else printf("n2 \n");
+
+return 0;
+
+}
+
 */
+
 
 //   & & & & & & Functions & & & & & & 
 
