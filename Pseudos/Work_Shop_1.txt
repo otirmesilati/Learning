@@ -17,13 +17,19 @@ Imperative Mathematical Code Design Skills:
    
 Lecture Problem Ideas:
 1. IN: Test grade
-OUT: Test grade + 5 points
+OUT: print test grade + 5 points
 
 2. IN: int number
-OUT: boolean answer - is the number even?
+OUT: print boolean answer - is the number even?
 
 3. IN: character
 OUT: is it a digit? on not? 
+
+4. IN: integer
+OUT: print - negative or positive?
+
+5. IN: two integers
+OUT: print the biggest
 
 
    & & & & & & C++ Lectures & & & & & &
