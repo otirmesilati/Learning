@@ -22,7 +22,8 @@ OUT: Test grade + 5 points
 2. IN: int number
 OUT: boolean answer - is the number even?
 
-3. 
+3. IN: character
+OUT: is it a digit? on not? 
 
 
    & & & & & & C++ Lectures & & & & & &
@@ -32,7 +33,7 @@ OUT: boolean answer - is the number even?
 1. IN: None
 OUT: Termial ( Power(all numbers from 1 to 100, power of 5) )
 
-2. 
+2.
 
 
    & & & & & & Python Lectures & & & & & &

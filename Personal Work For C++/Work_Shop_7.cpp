@@ -284,7 +284,26 @@ return 0;
 //    - - - - -| condition 1  | - - - - - (when theres else-if the split is more than two - 3 + )
 //             - - - - - - - - 
 //   ^ ^ ^ ^ ^ Flo : loops
+// lecture's coverage:
+/*
+int main()
+{
+char input;
 
+printf("digit plz: %c \n", );
+
+scanf("%c", &input)
+
+if(input >= '0' %% input <= '9')
+{
+printf("yes");
+}
+
+print
+
+return 0;
+}
+*/
 
 //   & & & & & & Functions & & & & & & 
 
