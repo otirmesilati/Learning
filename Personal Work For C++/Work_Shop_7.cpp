@@ -182,6 +182,19 @@ return 0;
 
 */
 //   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
+// == and != are the least in the order of operations, maybe finish the operations order ladder?
+// false and true are exactly 0 and 1
+// 
+
+// combining logical and arith: (arithmetic operators take precedence)
+/* lecture's example:
+int x = 2;
+int y = (x > 5) + 1; // (x > 5) -> 0 -> 0 + 1 = 1
+
+int a = 2, b;
+((b = 2) == a) // (b = 2) -> (2) -> 2 == 2 -> 1, trick question: a wierd behaviour of c family languages - assignment returns the assign value, acts as arithmetic
+
+*/
 
 //   Overloading literal operators: https://en.cppreference.com/w/cpp/language/user_literal
 
@@ -233,9 +246,15 @@ return 0;
 //   ^ ^ ^ ^ Constants: Immutables 
 // highlight the difference of const (run time) vs constexpr (compile time)
 
-//   & & & & & & Flow Control
+//   & & & & & & Flow Control & & & & & &
+
+//   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ Blocks ^ ^ ^ ^ 
+//   ^ ^ ^ Blocks: Variable Scope ^ ^ ^
+//   ^ ^ ^ Blocks: Variable Life-Time ^ ^ ^
 
 //   ^ ^ ^ ^ ^ Flo cont: Conditional Statements & & & & & &
+//   map to the tablet - new skill for relations, building a graph under constraints (number of maximum relation checks on members, like finding the max of 3 numbers(linear relation) in no more than 3 tries)
 
 //   ^ ^ ^ ^ ^ Flo : loops
 
