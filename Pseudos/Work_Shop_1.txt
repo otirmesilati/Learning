@@ -45,6 +45,12 @@ OUT: print - biggest integer
 9. IN: integer
 OUT: print - negative? positive? or 0?
 
+10. IN: integer
+OUT: print - is the number one? maybe two? three? or four?
+
+11. IN:
+OUT:
+
    ^ ^ ^ ^ ^ Lecture 5 ^ ^ ^ ^ ^ ^
 
    & & & & & & C++ Lectures & & & & & &
