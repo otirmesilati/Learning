@@ -48,12 +48,23 @@ OUT: print - negative? positive? or 0?
 10. IN: integer
 OUT: print - is the number one? maybe two? three? or four?
 
-11. IN:
-OUT:
+11. IN: char, 2 ints
+OUT: if + -> retun the sum, do the same for - and *.
 
    ^ ^ ^ ^ ^ Lecture 5 ^ ^ ^ ^ ^ ^
 
+12. IN: nothing
+OUT: print the number that is termial(150) - termial(10)
+
    & & & & & & C++ Lectures & & & & & &
+
+13. IN: nothing
+OUT: print all divisors 3 between 1 to 100
+
+14. IN:
+OUT: 
+
+15. 
 
    ^ ^ ^ ^ ^ Lectue 1 ^ ^ ^ ^ ^
 

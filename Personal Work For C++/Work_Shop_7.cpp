@@ -213,7 +213,7 @@ int a = 2, b;
 // lecture's coverage: 
 /*
 Example 1: Making a boolean logic
-enum boolean {NO, YES}
+enum boolean {NO, YES};
 
 Example 2: Days without typedef (typing enum more than once)
 enum Day {SUN = 1, MON, TUE, WED, THU, FRI, SAT};
@@ -229,7 +229,7 @@ d2 = THU;
 
 Example 3: Days with typedef (typing enum once)
 
-typedef enum Day {SUN = 1, MON, TUE, WED, THU, FRI, SAT};
+typedef enum {SUN = 1, MON, TUE, WED, THU, FRI, SAT} Day;
 
 int main() 
 {
@@ -341,6 +341,8 @@ else printf("negative");
 return 0;
 }
 
+Example four: biggest number out of three
+
 #include <stdio.h>
 
 int main()
@@ -368,14 +370,90 @@ return 0;
 
 //   ^ ^ ^ ^ Switch ^ ^ ^ ^ ^
 
-main
-int
-print
-scan
+Example five: printing one/two/three/four according to the input
+
+main()
+{
+
+int num;
+printf("num pls")
+scanf("%d", &num);
+switch(num)
+{
+case 1: printf("one\n"); break;
+case 2: printf("two\n"); break;
+case 3: printf("three\n"); break;
+case 4: printf("four\n"); break;
+
+default: printf("another value\n"); break;
+
+}
+
+return 0;
+
+}
+
+Example six: +/-/* calculator
+
+#include <stdio.h>
+typedef enum {ADD = 'A', ADD_S = 'a', SUB = 'S', SUB_S = 's',  MUL = 'M', MUL_S = "m"} Operator;
+
+int main()
+{
+
+// inputs
+
+printf("two nums\n");
+scanf("%d %d", &n1, %n2);
+printf("operator now\n");
+
+switch()
+// finish this 
+
+return 0;
+}
+
+
+//   ^ ^ ^ ^ Switch ^ ^ ^ ^ ^
+
+//   ^ ^ ^ ^ ^ Loops ^ ^ ^ ^ ^ 
+//   ^ ^ ^ ^ For Loops ^ ^ ^ ^
+
+//   ^ ^ ^ Up-Counter For loops ^ ^ ^
+Lectures example:
+1. Example one: printing hello world with iteration number three times
+
+int main()
+{
+
+for(int i = 0; i < 3; ++i) printf("Hello world, Iteration: %d \n", i+1);
+
+return 0;
+
+}
+
+2. Example two: summing number from 10 to 150 through iterations
+
+int main()
+{
+
+for (int i = 10; sum = 0; i <= 150 ; sum += i ; ++i ) {} 
+
+}
+
+//   ^ ^ ^ Halving Counter For loops ^ ^ ^
+3. int main()
+{
+
+printf("The twos power from 32 to 1 are:\n")
+for (int i = 32; i >= 1 ; i/2) print("%d \n", &d);
+
+return 0;
+
+}
 
 */
 
-//   ^ ^ ^ ^ ^ Flo : loops
 
 //   & & & & & & Functions & & & & & & 
 
