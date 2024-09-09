@@ -4,7 +4,7 @@ using namespace std;
 
 
 //   & & & & & & Libraries & & & & & &
-// iostream?
+// iostream? stdio.h?
 // pragma once? namespace ? (finish mapping this)
 
 //   & & & & & Comments & & & & &
@@ -335,6 +335,29 @@ scanf("%d", &input);
 if(((input >= LOW_LIMIT) && (input <= HIGH_LIMIT)) && (input >= -1*HIGHER_LIMIT) && (input <= -1*LOW_LIMIT))) printf("3 digits");
 if(input >= 0) printf("positive");
 else printf("negative");
+
+return 0;
+}
+
+#include <stdio.h>
+
+int main()
+{
+int n1, n2, n3;
+printf("");
+scanf("");
+printf("");
+
+if(n1 > n2)
+{
+if(n1 > n3) printf("");
+else printf("");
+}
+else
+{
+if() printf("");
+else
+}
 
 return 0;
 }
