@@ -28,6 +28,8 @@ OUT: print - is it a digit? on not?
 4. IN: integer
 OUT: print - negative or positive?
 
+   ^ ^ ^ ^ ^ Lecture 4 ^ ^ ^ ^ ^
+
 5. IN: two integers
 OUT: print the biggest
 
@@ -40,10 +42,10 @@ OUT: print - does the number have three digits? and - is it positive or negitive
 8. IN: three integers
 OUT: print - biggest integer
 
-9. IN:
-OUT:
+9. IN: integer
+OUT: print - negative? positive? or 0?
 
-
+   ^ ^ ^ ^ ^ Lecture 5 ^ ^ ^ ^ ^ ^
 
    & & & & & & C++ Lectures & & & & & &
 
