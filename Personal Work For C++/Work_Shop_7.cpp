@@ -321,6 +321,24 @@ return 0;
 
 }
 
+Example three: three digit number checking
+
+#include <stdio.h>
+#define LOW_LIMIT 100
+#define HIGH_LIMIT 999
+
+int main()
+{
+int input;
+printf("num please");
+scanf("%d", &input);
+if(((input >= LOW_LIMIT) && (input <= HIGH_LIMIT)) && (input >= -1*HIGHER_LIMIT) && (input <= -1*LOW_LIMIT))) printf("3 digits");
+if(input >= 0) printf("positive");
+else printf("negative");
+
+return 0;
+}
+
 */
 
 
