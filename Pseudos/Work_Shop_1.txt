@@ -23,7 +23,7 @@ OUT: print test grade + 5 points
 OUT: print boolean answer - is the number even?
 
 3. IN: character
-OUT: is it a digit? on not? 
+OUT: print - is it a digit? on not? 
 
 4. IN: integer
 OUT: print - negative or positive?
@@ -31,6 +31,13 @@ OUT: print - negative or positive?
 5. IN: two integers
 OUT: print the biggest
 
+6. IN: integer
+OUT: print - even or odd?
+
+7. IN: integer
+OUT: print - does the number have three digits? and - is it positive or negitive?
+
+8. 
 
    & & & & & & C++ Lectures & & & & & &
 
