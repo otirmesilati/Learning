@@ -61,10 +61,16 @@ OUT: print the number that is termial(150) - termial(10)
 13. IN: nothing
 OUT: print all divisors 3 between 1 to 100
 
-14. IN:
-OUT: 
+14. IN: positive integer
+OUT: rectangle built of stars according to the input
 
-15. 
+15. IN: a sequence of characters representing name, ended by space
+OUT: print - the name
+
+16. IN: a sequence of grades 
+OUT: average grade
+
+17. 
 
    ^ ^ ^ ^ ^ Lectue 1 ^ ^ ^ ^ ^
 

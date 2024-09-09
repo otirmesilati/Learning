@@ -417,7 +417,13 @@ return 0;
 //   ^ ^ ^ ^ Switch ^ ^ ^ ^ ^
 
 //   ^ ^ ^ ^ ^ Loops ^ ^ ^ ^ ^ 
+
 //   ^ ^ ^ ^ For Loops ^ ^ ^ ^
+
+
+//   ^ ^ ^ ^ Empty portions in for loop ^ ^ ^ ^
+// no init? not condition? no counter?
+
 
 //   ^ ^ ^ Up-Counter For loops ^ ^ ^
 Lectures example:
@@ -451,6 +457,32 @@ for (int i = 32; i >= 1 ; i/2) print("%d \n", &d);
 return 0;
 
 }
+
+//   ^ ^ ^ ^ While Loops ^ ^ ^ ^
+
+Lecture examples
+1. Example one inputting a name:
+
+#include <stdio.h>
+
+int main()
+{
+
+char input;
+printf("enter it")
+scanf("%c", &input)
+while(input != ' ')
+{
+
+printf("%c", input);
+scanf("%c", &input);
+
+}
+
+return 0;
+}
+
+
 
 */
 
