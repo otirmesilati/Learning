@@ -67,13 +67,17 @@ OUT: rectangle built of stars according to the input
 15. IN: a sequence of characters representing name, ended by space
 OUT: print - the name
 
-16. IN: a sequence of grades 
+16. IN: a sequence of grades ending with -1
 OUT: average grade
 
-17. IN: sequence of integers
+17. IN: sequence of integers ending with -1
 OUT: maximum decimal
 
-18. 
+18. IN: 
+OUT: 
+
+19. IN: 
+OUT:
 
    ^ ^ ^ ^ ^ Lectue 1 ^ ^ ^ ^ ^
 

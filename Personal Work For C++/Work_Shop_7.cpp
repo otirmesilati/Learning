@@ -510,17 +510,23 @@ Example three - finding the maximum number
 
 #include 
 
-main
-int
-max
+int main()
+{
+
+int num;
+int max = 0;
 do
-print
-scan
-if
-while
-print
+{
+printf("num");
+scanf("%d", &num);
+if(num > max) max = num;
+}
+while(num != -1);
+printf("max: %d\n", max);
+
 return 0;
 
+}
 */
 
 
