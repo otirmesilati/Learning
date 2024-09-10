@@ -482,7 +482,30 @@ scanf("%c", &input);
 return 0;
 }
 
+1. Example two - average grade calculation:
 
+int main()
+{
+
+int sum = 0, counter = 0, grade; 
+float average;
+printf("grade\n")
+scanf("%d", &grade)
+while(grade != -1)
+{
+sum += grade;
+++counter;
+scanf("%d", &grade)
+}
+
+avg = (float)sum / counter;
+printf("%f\n", avg);
+
+return 0;
+
+}
+
+//   ^ ^ ^ Do-While Loops ^ ^ ^
 
 */
 
