@@ -70,7 +70,10 @@ OUT: print - the name
 16. IN: a sequence of grades 
 OUT: average grade
 
-17. 
+17. IN: sequence of integers
+OUT: maximum decimal
+
+18. 
 
    ^ ^ ^ ^ ^ Lectue 1 ^ ^ ^ ^ ^
 

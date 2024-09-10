@@ -506,6 +506,20 @@ return 0;
 }
 
 //   ^ ^ ^ Do-While Loops ^ ^ ^
+Example three - finding the maximum number
+
+#include 
+
+main
+int
+max
+do
+print
+scan
+if
+while
+print
+return 0;
 
 */
 
