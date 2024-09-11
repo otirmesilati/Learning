@@ -571,6 +571,24 @@ return pow_num;
 
 }
 
+Example two: printing stars
+#include <stdio.h>
+
+print_stars
+main
+int
+print
+scan
+print
+print_stars
+return 0;
+
+print_stars
+int
+for
+print
+print
+
 */
 
 //inlining functions
