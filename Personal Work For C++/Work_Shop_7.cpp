@@ -533,6 +533,7 @@ return 0;
 */
 
 //   ^ ^ ^ ^ ^ Functions ^ ^ ^ ^ ^ 
+// add to tablet: dynamic heap allocation in function calls 1. memory allocation, 2. term evaluation, 3. temp variables in function run
 // Lecture's coverage:
 /*
 1. Example one:
@@ -574,20 +575,32 @@ return pow_num;
 Example two: printing stars
 #include <stdio.h>
 
-print_stars
-main
-int
-print
-scan
-print
-print_stars
+void print_stars(int, int)
+
+int main()
+{
+
+int len, wid;
+printf("%d %d\n", len, wid);
+scanf("%d %d", &wid, &len);
+print_stars();
 return 0;
 
-print_stars
-int
-for
-print
-print
+}
+
+void print_stars(int w, int l)
+{
+
+for(int i=0; i < l; ++i) {
+
+for(int j=0; j < w; ++j) printf("*");
+printf("\n");
+
+}
+
+return;
+
+}
 
 */
 
