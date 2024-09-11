@@ -447,8 +447,11 @@ for (int i = 10; sum = 0; i <= 150 ; sum += i ; ++i ) {}
 
 }
 
+3. Example three: 
+
 //   ^ ^ ^ Halving Counter For loops ^ ^ ^
-3. int main()
+4. Example four printing the powers of 2 from 32 to 1
+ int main()
 {
 
 printf("The twos power from 32 to 1 are:\n")
@@ -529,10 +532,46 @@ return 0;
 }
 */
 
+//   ^ ^ ^ ^ ^ Functions ^ ^ ^ ^ ^ 
+// Lecture's coverage:
+/*
+1. Example one:
+*/
 
-//   & & & & & & Functions & & & & & & 
+//   ^ ^ ^ ^ Function prototyping ^ ^ ^ ^
+// Lecture's coverage: 
+/*
+1. Example one : powered numbers
 
-//   ^ ^ ^ ^ ^ Prototyping 
+#include <stdio.h>
+
+int power(int, int);
+
+int main()
+{
+
+int n = 5;
+int r1 = power(2, n);
+int r2 = power(3, n);
+
+printf("results %d %d\n", r1, r2);
+
+return 0;
+
+}
+
+int power(int base, int exp)
+{
+
+int pow_num = base;
+
+for(int i = 1; i <= exp; ++i) pow_num = pow_num *= base;
+
+return pow_num;
+
+}
+
+*/
 
 //inlining functions
 
