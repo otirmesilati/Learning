@@ -602,21 +602,26 @@ return;
 
 Example Three: summing two numbers
 
-sum_two();
+#include <stdio.h>
+
+sum_two(int, int);
 
 main
 {
-int
-adding
+
+int n1 = 3, n2 = 4, adding;
+adding = sum_two(n1, n2);
 return 0;
+
 }
 
 
-sum_two
+sum_two (int d1, int d2)
 {
-int
-sum
-return
+
+int sum = d1 + d2;
+return sum;
+
 }
 
 */
