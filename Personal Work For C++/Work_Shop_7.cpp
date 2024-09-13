@@ -204,12 +204,57 @@ int a = 2, b;
 
 //   & & & & & & Variables & & & & & &
 
-//   ^ ^ ^ ^ ^ Constants
+//   ^ ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ Global Variables ^ ^ ^ ^
+/* Lecture coverage: 
+1. Example one: changing global value in main
 
-//   ^ ^ ^ ^ Constants: Pre-Processor Macros 
+#include <stdio.h>
+
+int my_glob = 4;
+
+int main()
+{
+
+printf("num: %d", my_glob);
+glob = 7;
+printf("num now: %d", my_glob);
+
+return 0;
+
+}
+*/ 
+
+
+//   ^ ^ ^ ^ Static Variables ^ ^ ^ ^
+/* Lecture's Coverage:
+1. Example one: scoping inside a function
+
+include
+
+func
+
+main
+
+int
+for
+func
+
+func
+static
+int
+print
+
+*/
+
+
+
+//   ^ ^ ^ ^ ^ Constants ^ ^ ^ ^ ^
+
+//   ^ ^ ^ ^ Pre-Processor Macros ^ ^ ^ ^
 //   ^ ^ ^ defines ^ ^ ^
 // lecture's coverage:
-//   ^ ^ ^ Almost pre-processor: enums ^ ^ ^
+//   ^ ^ ^ Enums(Almost pre-processor) ^ ^ ^
 // lecture's coverage: 
 /*
 Example 1: Making a boolean logic
@@ -531,7 +576,7 @@ return 0;
 */
 
 //   ^ ^ ^ ^ ^ Functions ^ ^ ^ ^ ^ 
-// add to tablet: dynamic heap allocation in function calls 1. memory allocation, 2. term evaluation, 3. temp variables in function run
+// add to tablet: 1. static stack segment layout (building the stack) + dynamic stack segment allocation in function calls (changing the values and releasing the layout parts) 
 // Lecture's coverage:
 /*
 1. Example one:
