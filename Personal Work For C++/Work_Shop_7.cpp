@@ -4,7 +4,7 @@ using namespace std;
 
 
 //   & & & & & & Libraries & & & & & &
-// iostream? stdio.h?
+// iostream? stdio.h? GUI libraries?
 // pragma once? namespace ? (finish mapping this)
 
 //   & & & & & Comments & & & & &
@@ -202,7 +202,7 @@ int a = 2, b;
 
 // complete this section from here: https://en.wikipedia.org/wiki/Printf 
 
-//   & & & & & & Variables 
+//   & & & & & & Variables & & & & & &
 
 //   ^ ^ ^ ^ ^ Constants
 
@@ -414,8 +414,6 @@ return 0;
 }
 
 
-//   ^ ^ ^ ^ Switch ^ ^ ^ ^ ^
-
 //   ^ ^ ^ ^ ^ Loops ^ ^ ^ ^ ^ 
 
 //   ^ ^ ^ ^ For Loops ^ ^ ^ ^
@@ -602,8 +600,34 @@ return;
 
 }
 
+Example Three: summing two numbers
+
+sum_two();
+
+main
+{
+int
+adding
+return 0;
+}
+
+
+sum_two
+{
+int
+sum
+return
+}
+
 */
+
+//   ^ ^ ^ ^ Recursive Functions ^ ^ ^ ^
 
 //inlining functions
 
 //   ^ ^ ^ ^ ^ Function Overloading
+
+
+//   & & & & & & Structs & & & & & &
+
+//   & & & & & & Classes & & & & & &
