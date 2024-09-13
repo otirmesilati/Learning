@@ -217,7 +217,7 @@ int main()
 {
 
 printf("num: %d", my_glob);
-glob = 7;
+my_glob = 7;
 printf("num now: %d", my_glob);
 
 return 0;
@@ -230,20 +230,31 @@ return 0;
 /* Lecture's Coverage:
 1. Example one: scoping inside a function
 
-include
+#include <stdio.h>
 
-func
+void func();
 
-main
+int main()
+{
 
-int
-for
-func
+for(int i = 0; i < 3; ++i) func();
 
-func
-static
-int
-print
+return 0;
+
+}
+
+void func()
+{
+
+static int my_stat;
+int local = 0;
+++my_stat;
+++local;
+printf("%d %d",my_stat, local);
+
+return;
+
+}
 
 */
 
@@ -645,7 +656,7 @@ return;
 
 }
 
-Example Three: summing two numbers
+3. Example Three: summing two numbers
 
 #include <stdio.h>
 
@@ -668,6 +679,9 @@ int sum = d1 + d2;
 return sum;
 
 }
+
+4. Example four: 
+
 
 */
 
