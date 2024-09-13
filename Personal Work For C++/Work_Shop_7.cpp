@@ -680,7 +680,25 @@ return sum;
 
 }
 
-4. Example four: 
+4. Example four: multiplying function
+
+include 
+
+multiply
+
+main
+int
+print
+print
+return
+
+multiply
+int
+print
+scan
+print
+scan
+return
 
 
 */
