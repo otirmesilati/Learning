@@ -310,11 +310,35 @@ return 0;
 //   ^ ^ ^ ^ Blocks ^ ^ ^ ^ 
 //   ^ ^ ^ Blocks: Variable Scope ^ ^ ^
 // Lecture's coverage:
-/* Example 1: function local variables
+/* Example 1: function local variables - not changing the original values
 
+#include <stdio.h>
 
+void swap(int, int);
 
-Example 2: block local variables
+int main()
+{
+
+int n1 = 1, int n2 = 2;
+
+printf("%d %d\n", n1, n2);
+swap(n1, n2)
+printf("%d %d\n", n1, n2)
+
+return 0;
+
+}
+
+void swap(int f, int s)
+{
+
+int temp = f;
+f = s;
+s = temp;
+
+}
+
+Example 2: block local variables - not changing the original values
 
 */
 
