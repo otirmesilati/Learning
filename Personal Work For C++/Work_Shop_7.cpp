@@ -309,6 +309,15 @@ return 0;
 //   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^
 //   ^ ^ ^ ^ Blocks ^ ^ ^ ^ 
 //   ^ ^ ^ Blocks: Variable Scope ^ ^ ^
+// Lecture's coverage:
+/* Example 1: function local variables
+
+
+
+Example 2: block local variables
+
+*/
+
 
 //   ^ ^ Global: relative to and environment variables ^ ^
 //   lecture's coverage: global relative to inner blocks
@@ -682,23 +691,29 @@ return sum;
 
 4. Example four: multiplying function
 
-include 
+#include <stdio.h>
 
-multiply
+int multiply(int, int);
 
-main
-int
-print
-print
-return
+int main()
+{
 
-multiply
-int
-print
-scan
-print
-scan
-return
+int n1 = 2, int n2 = 3;
+print("%d", multiply(n1, n2));
+int n1 = 3, int n2 = 4;
+print("%d", multiply(n1, n2));
+
+return 0;
+
+}
+
+int multiply(int f, int s)
+return f*s;
+
+5. Example five:  
+#include <stdio.h>
+
+
 
 
 */
