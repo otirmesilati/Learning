@@ -122,6 +122,11 @@ int a = 5, b;
 b = ++a; // a = b = 6;
 b = a++; // a = 6, b = 5
 
+//   ^ ^ ^ ^ multiple assignment ^ ^ ^ ^
+// lecture's coverage: int x = 1;
+int y = 2;
+x = y = 3; 
+
 */
 
 //   ^ ^ ^ ^ Arithmetical Operators: Narrowing/Widening type Casting ^ ^ ^ ^
