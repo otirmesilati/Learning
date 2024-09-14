@@ -1,0 +1,27 @@
+// & & & & & & & & & & Windows Terminal Shortcuts & & & & & & & & & &
+
+// ^ ^ ^ ^ ^ ^ Navigation ^ ^ ^ ^ ^ ^
+1. Launch shell tab via order: ->CTRL+SHFT+<Number>
+2. Launch duplicate shell tab: -> CTRL+SHFT+D
+2. Launch defualt pane shell tab : ->CTRL+SHFT+T
+3. Close pane shell tab : ->CTRL+SHFT+W
+4. Zoom In / Enlarge and decrese text: -> CTRL+plus/minus
+5. Search text: CTRL+SHFT+F
+5. Duplicate into two half panes (Sessions): -> ALT+SHFT+D
+6. Launch shell window: -> CTRL+SHFT+N
+
+-- Stopped at Next Tab --
+
+// & & & & & & & & & & NeoVim & & & & & & & & & &
+
+// ^ ^ ^ ^ ^ Vim ^ ^ ^ ^ ^
+1. one line jump navigation: j(DOWN)/k(UP)
+2. multiple line jump navigation: <Number> + j(DOWN)/k(UP)
+
+// ^ ^ ^ ^ Dependencies: ? ^ ^ ^ ^ 
+
+// ^ ^ ^ ^ ^ ^ Tmux ^ ^ ^ ^ ^ ^ 
+
+// ^ ^ ^ ^ ^ ^ Configurations ^ ^ ^ ^ ^ ^ 
+
+1. 

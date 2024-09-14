@@ -18,8 +18,8 @@ using namespace std;
 
 
 #ifndef FIRST_CLASS
-#ifndef SECOND_CLASS
 #ifndef THIRD_CLASS
+#ifndef SECOND_CLASS
 #ifndef MY_PET_2
 #ifndef MY_CAT
 #ifndef My_DOG
