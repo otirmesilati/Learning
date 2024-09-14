@@ -207,7 +207,7 @@ class Lecture7{};
 #endif // !FIRST_CLASS
 
 
-#include "Lecture7.h"
+// #include "Lecture7.h"
 #include <typeinfo>
 
 void static_conversion_example()

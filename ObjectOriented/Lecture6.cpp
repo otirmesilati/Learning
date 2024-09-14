@@ -354,7 +354,7 @@ void lecture_6_main();
 #endif // !FIRST_LONG_EXAMPLE_B
 
 
-#include "Lecture6.h"
+// #include "Lecture6.h"
 
 // Start: MyShapeFactory //
 int MyShapeFactory::number_of_factory_shapes = 0;
