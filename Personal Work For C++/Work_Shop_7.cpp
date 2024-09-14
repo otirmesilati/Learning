@@ -125,7 +125,8 @@ b = a++; // a = 6, b = 5
 */
 
 //   ^ ^ ^ ^ Arithmetical Operators: Narrowing/Widening type Casting ^ ^ ^ ^
-//   ^ ^ ^ type casting ^ ^ ^
+// map from this more about casts: https://stackoverflow.com/questions/28002/regular-cast-vs-static-cast-vs-dynamic-cast
+//   ^ ^ ^ type casting/C-casting ^ ^ ^
 // No Automatic casting to wide in c++? a set of rules: https://www.youtube.com/watch?v=uI10H1jzw00
 // lecture's coverage: not a good one, skipped over the literal subject and jumped into combining both casting and not even mentioning it!!!! 
 // includes: implicit conversion of assigning a narrowed type (double) <- (int), and arithmetic conversion (double)/(int)
