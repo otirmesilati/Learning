@@ -258,6 +258,79 @@ return;
 
 */
 
+/* Example 1: function local variables - not changing the original values
+
+#include <stdio.h>
+
+void swap(int, int);
+
+int main()
+{
+
+int n1 = 1, int n2 = 2;
+
+printf("%d %d\n", n1, n2);
+swap(n1, n2)
+printf("%d %d\n", n1, n2)
+
+return 0;
+
+}
+
+void swap(int f, int s)
+{
+
+int temp = f;
+f = s;
+s = temp;
+
+}
+
+Example 2: block local variables - not changing the original values
+
+#include <stdio.h>
+
+int main()
+{
+
+int x = 1; 
+int y = 2;
+
+{
+
+x = 3;
+printf("%d\n", x);
+
+}
+
+printf("%d\n", x);
+
+return 0;
+
+}
+
+*/
+
+//   ^ ^ Global: relative to and environment variables ^ ^
+//   lecture's coverage: global relative to inner blocks
+/*
+
+int main()
+{
+int relat_glob = 1;
+{
+int relat_loc = 2;
+printf("can print both here");
+}
+printf("can print only one here");
+
+return 0;
+}
+
+*/
+
+//
+
 
 
 //   ^ ^ ^ ^ ^ Constants ^ ^ ^ ^ ^
@@ -308,63 +381,6 @@ return 0;
 
 //   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^
 //   ^ ^ ^ ^ Blocks ^ ^ ^ ^ 
-//   ^ ^ ^ Blocks: Variable Scope ^ ^ ^
-// Lecture's coverage:
-/* Example 1: function local variables - not changing the original values
-
-#include <stdio.h>
-
-void swap(int, int);
-
-int main()
-{
-
-int n1 = 1, int n2 = 2;
-
-printf("%d %d\n", n1, n2);
-swap(n1, n2)
-printf("%d %d\n", n1, n2)
-
-return 0;
-
-}
-
-void swap(int f, int s)
-{
-
-int temp = f;
-f = s;
-s = temp;
-
-}
-
-Example 2: block local variables - not changing the original values
-
-*/
-
-
-//   ^ ^ Global: relative to and environment variables ^ ^
-//   lecture's coverage: global relative to inner blocks
-/*
-
-int main()
-{
-int relat_glob = 1;
-{
-int relat_loc = 2;
-printf("can print both here");
-}
-printf("can print only one here");
-
-return 0;
-}
-
-*/
-
-//
-
-
-//   ^ ^ ^ Blocks: Variable Life-Time ^ ^ ^
 
 //   ^ ^ ^ ^ ^ Conditional Statements & & & & & &
 //   ^ ^ ^ ^ If & Else ^ ^ ^ ^ ^
