@@ -1,6 +1,8 @@
+/*   < < < < < < < <   Language Principles   > > > > > > > >   */
+
+
 #define CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
 
 //   & & & & & & Libraries & & & & & &
 // iostream? stdio.h? GUI libraries?
@@ -773,3 +775,25 @@ return f*s;
 //   & & & & & & Structs & & & & & &
 
 //   & & & & & & Classes & & & & & &
+
+
+/*   < < < < < < < <   Design Principles   > > > > > > > >   */
+
+//   & & & & & & Procedural Design & & & & & &  
+
+
+/* 1.1. function decleration:
+
+1.1.1. function prototype:
+
+int my_function(int);
+
+1.1.2. function header + body:
+
+int my_function (int my par)
+{
+return 0;
+}
+
+
+*/
