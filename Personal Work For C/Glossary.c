@@ -781,19 +781,9 @@ return f*s;
 
 //   & & & & & & Procedural Design & & & & & &  
 
-
-/* 1.1. function decleration:
-
-1.1.1. function prototype:
-
-int my_function(int);
-
-1.1.2. function header + body:
-
-int my_function (int my par)
-{
-return 0;
-}
-
-
-*/
+//   ^ ^ ^ ^ ^ Procedures: Implemented as Functions ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Sequence control: Control Flow's section tools (if,else-if, for etc...) ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Single Responsibility: one function for each functional requirement
+//   ^ ^ ^ ^ ^ Message Passing: Function invocation
+//   ^ ^ ^ ^ ^ Supports TDD: using the function, and then impementing
+//   ^ ^ ^ ^ ^ 
