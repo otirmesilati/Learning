@@ -782,8 +782,10 @@ return f*s;
 //   & & & & & & Procedural Design & & & & & &  
 
 //   ^ ^ ^ ^ ^ Procedures: Implemented as Functions ^ ^ ^ ^ ^
-//   ^ ^ ^ ^ ^ Sequence control: Control Flow's section tools (if,else-if, for etc...) ^ ^ ^ ^ ^
-//   ^ ^ ^ ^ ^ Single Responsibility: one function for each functional requirement
-//   ^ ^ ^ ^ ^ Message Passing: Function invocation
+//   ^ ^ ^ ^ ^ Sequence/Execution control: Control Flow section's tools (if,else-if, for etc...) ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Scope Modularity(?): Each function variable has a local scope ^ ^ ^ ^ ^ 
+//   ^ ^ ^ ^ ^ Single Responsibility Modularity: one function takes care of one functional requirement ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Message Passing: Function invocation ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Abstraction: each function invocation is a black box ^ ^ ^ ^ ^
 //   ^ ^ ^ ^ ^ Supports TDD: using the function, and then impementing
-//   ^ ^ ^ ^ ^ 
+
