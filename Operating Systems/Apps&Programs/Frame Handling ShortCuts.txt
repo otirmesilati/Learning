@@ -15,10 +15,50 @@
 // & & & & & & & & & & NeoVim & & & & & & & & & &
 
 // ^ ^ ^ ^ ^ Vim ^ ^ ^ ^ ^
+
 1. one line jump navigation: j(DOWN)/k(UP)
 2. multiple line jump navigation: <Number> + j(DOWN)/k(UP)
+3. [smartcase dependent]Searching-vim level: /<Search Term> 
+
+// line commands:
+
+1. w: save
+2. q: close
+3. save and close: wq
+
+// ^ ^ ^ ^ Key-Binds ^ ^ ^ ^
+
+// ^ ^ ^ Inner file manipulation ^ ^ ^
+
+1. [insert mode] exit -> j + k
+2. [normal mode] clear file search highlights -> <leader> + n + h
+3. [normal mode] incerment/decrement -> <leader>++ 
+
+// ^ ^ ^ Nvim Panes ^ ^ ^
+
+1. [normal mode] New vertical pane -> <leader> + s + v
+2. [normal mode] New Horizontal pane -> <leader> + s + h
+3. [normal mode] Close Focused pane -> <leader> + s + x
+
+// ^ ^ ^ Nvim Tabs ^ ^ ^
+
+4. [normal mode] New Tab -> <leader> + t + o
+5. [normal mode] Next Tab -> <leader> + t + n
+6. [normal mode] Previous Tab -> <leader> + t + p
+7. [normal mode] Close Tab -> <leader> + t + x
+
+
 
 // ^ ^ ^ ^ Dependencies: ? ^ ^ ^ ^ 
+
+// ^ ^ ^ vim-level functionality ^ ^ ^
+1. relative numbers printed on the editor -> opt.relativenumber
+2. tab space jumps -> opt.tabstop
+3. in-file vim level search -> opt.smartcase
+4. line highlight -> opt.cursorline
+5.
+6.
+7.
 
 // ^ ^ ^ ^ ^ ^ Tmux ^ ^ ^ ^ ^ ^ 
 
