@@ -29,6 +29,22 @@
 
 
 #   & & & & & & Comments & & & & & & 
+
+
+# No multi line comments 
+# So we just concat single line comments
+
+
+""" 
+Documentation
+Annotation
+"""
+
+
+# Single Line comments
+
+
+
 """
 
 #include <stdio.h> // C IO Library Files 

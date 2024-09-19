@@ -1,11 +1,3 @@
-# https://www.w3schools.com/python/python_numbers.asp
-# Type conversions
-
-#   & & & & & &  Single line comments & & & & & & 
-
-"""
-multiple line comments
-"""
 
 #   & & & & & & Literals & & & & & & 
 
