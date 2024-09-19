@@ -72,6 +72,10 @@ def fun_literals():
     0o12
     0b110011
 
+#   No Un-signed Modifier Suffix Operators 
+
+    pass
+
 
 """
 
