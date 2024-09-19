@@ -490,7 +490,15 @@ return 0;
 
 
 
+
+
+
 //   & & & & & & Flow Control & & & & & &
+
+
+void fun_flow_control()
+{
+
 
 //   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^
 //   ^ ^ ^ ^ Blocks ^ ^ ^ ^ 
@@ -876,6 +884,10 @@ return f*s;
 //inlining functions
 
 //   ^ ^ ^ ^ ^ Function Overloading
+
+
+}
+
 
 
 //   & & & & & & Structs & & & & & &
