@@ -1,6 +1,11 @@
+// C Online Emulator: https://www.onlinegdb.com/online_c_compiler
+
+
 
 // where to put bitmasking? watch video below:
 // https://www.youtube.com/watch?v=wvtFGa6XJDU
+
+
 
 /*   < < < < < < < <   Language Principles   > > > > > > > >   */
 
@@ -45,20 +50,23 @@ void fun_literals(){
 
 //  ^ ^ ^ ^ Coding Modifiers ^ ^ ^ ^
 
-//  ^ ^ ^ 
+//  ^ ^ ^ Radixed modifiers ^ ^ ^
 
 0x12AB;
 012; // octal literals written without o //
 0b110011;
 
-//  ^ ^ ^ ^ Integers: Signed/Long Conding Modifying Suffixes  ^ ^ ^ ^
+//   ^ ^ ^ Un-Signed Modifier Suffixes ^ ^ ^
 
 1u;
 -2U; // will work sometimes and sometimes not: will be translated: 2's complement on the value -> new unsigned value
-3l;
--4L;
-5ll;
-6LL;
+
+//   ^ ^ ^ Long Modifier Suffixes
+
+1l;
+-2L;
+3ll;
+4LL;
 
 //   ^ ^ ^ ^ ^ Floats ^ ^ ^ ^ ^
 
