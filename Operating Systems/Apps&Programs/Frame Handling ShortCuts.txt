@@ -5,11 +5,12 @@
 1. Launch Run command: ->super+r
 2. Launch TaskManager: -> ctrl+shft+esc
 3. Launch n-th pinned Icon in TaskBar: ->super+<Number>
-4. Open
+4. 
 
-//   ^ ^ ^ ^ ^ CLI-Windows-Navigation
+//   ^ ^ ^ ^ ^  Posh-Windows-Navigation
 
-1. 
+1. Launch chrome in certian URL: Start-Process chrome <URL>
+2. 
 
 //   ^ ^ ^ ^ ^ ^ Linux-Navigation ^ ^ ^ ^ ^ ^
 
@@ -21,9 +22,12 @@
 6. Search text: CTRL+SHFT+F
 7. Duplicate into two half panes (Sessions): -> ALT+SHFT+D
 8. Launch shell window: -> CTRL+SHFT+N
+9. 
 
 //   ^ ^ ^ ^ ^ Browsers
+
 1. Open a new tab: -> ctrl+t
+2.
 
 -- Stopped at Next Tab --
 
@@ -34,6 +38,7 @@
 1. one line jump navigation: j(DOWN)/k(UP)
 2. multiple line jump navigation: <Number> + j(DOWN)/k(UP)
 3. [smartcase dependent]Searching-vim level: /<Search Term> 
+4.
 
 // line commands:
 
@@ -48,20 +53,22 @@
 1. [insert mode] exit -> j + k
 2. [normal mode] clear file search highlights -> <leader> + n + h
 3. [normal mode] incerment/decrement -> <leader>++ 
+4.
 
 // ^ ^ ^ Nvim Panes ^ ^ ^
 
 1. [normal mode] New vertical pane -> <leader> + s + v
 2. [normal mode] New Horizontal pane -> <leader> + s + h
 3. [normal mode] Close Focused pane -> <leader> + s + x
+4.
 
 // ^ ^ ^ Nvim Tabs ^ ^ ^
 
-4. [normal mode] New Tab -> <leader> + t + o
-5. [normal mode] Next Tab -> <leader> + t + n
-6. [normal mode] Previous Tab -> <leader> + t + p
-7. [normal mode] Close Tab -> <leader> + t + x
-
+1. [normal mode] New Tab -> <leader> + t + o
+2. [normal mode] Next Tab -> <leader> + t + n
+3. [normal mode] Previous Tab -> <leader> + t + p
+4. [normal mode] Close Tab -> <leader> + t + x
+5. 
 
 
 // ^ ^ ^ ^ Dependencies: ? ^ ^ ^ ^ 
