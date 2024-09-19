@@ -6,6 +6,11 @@
 
 //   ^ ^ ^ ^ ^ Windows-Navigation ^ ^ ^ ^ ^ 
 
+//   ^ ^ ^ ^ Taskbar ^ ^ ^ ^ 
+
+1. Focus on Hidden Items on TaskBar: -> super + b
+2. 
+
 1. Launch Run command: ->super+r
 2. Launch TaskManager: -> ctrl+shft+esc
 3. Launch n-th pinned Icon in TaskBar: ->super+<Number>
