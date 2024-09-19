@@ -9,7 +9,8 @@
 //   ^ ^ ^ ^ Taskbar ^ ^ ^ ^ 
 
 1. Focus on Hidden Items on TaskBar: -> super + b
-2. 
+2. Write in Serch Box: -> super
+3.  
 
 1. Launch Run command: ->super+r
 2. Launch TaskManager: -> ctrl+shft+esc
