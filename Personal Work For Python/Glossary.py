@@ -59,14 +59,13 @@ def fun_literals():
 
 #   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
     
+    123
+    1_234
+    -123
     pass
 
+
 """
-
-123;
-// no underscore format for numbers like 1,234! 
--123;
-
 
 //  ^ ^ ^ ^ Coding Modifiers ^ ^ ^ ^
 
