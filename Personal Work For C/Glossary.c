@@ -198,8 +198,9 @@ first++;
 ++first;
 
 
-//   ^ ^ ^ ^ Order of operator evaluation ^ ^ ^ ^ 
-// what here ?
+//   ^ ^ ^ ^ Order of operation evaluation ^ ^ ^ ^ 
+// what here ? what comes before what? 
+
 
 //   ^ ^ ^ ^ Prefix vs Postfix ^ ^ ^ ^
 first_check = 1;
@@ -211,15 +212,11 @@ first_check = ++second_check; // first_check = second_check = 3
 first_multi_assign = second_multi_assign = 1;
 
 
-// lecture's coverage: int x = 1;
-// int y = 2;
-// x = y = 3; 
-
-
-
 //   ^ ^ ^ ^ Arithmetical Operators: Narrowing/Widening type Casting ^ ^ ^ ^
-// map from this more about casts: https://stackoverflow.com/questions/28002/regular-cast-vs-static-cast-vs-dynamic-cast
+
+
 //   ^ ^ ^ type casting/C-casting ^ ^ ^
+
 // No Automatic casting to wide in c++? a set of rules: https://www.youtube.com/watch?v=uI10H1jzw00
 // lecture's coverage: not a good one, skipped over the literal subject and jumped into combining both casting and not even mentioning it!!!! 
 // includes: implicit conversion of assigning a narrowed type (double) <- (int), and arithmetic conversion (double)/(int)
@@ -233,6 +230,7 @@ int b = 3, c = 4;
 c = a + b;
 The question to be asked in temp variable arithmetic is: how much temps in here? same or demotion or promotion temps? and who are they? answer: b' - promotion, (a + b')' - same, ((a + b')')' - demotion  
 
+ 
 
 //   ^ ^ ^ Object Cast ^ ^ ^ 
 // up casting
@@ -274,6 +272,10 @@ printf(" \n");
 return 0;
 
 }
+
+
+// More Material: 
+// map from this more about casts: https://stackoverflow.com/questions/28002/regular-cast-vs-static-cast-vs-dynamic-cast
 
 
 //   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
