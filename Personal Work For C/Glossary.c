@@ -9,10 +9,19 @@
 
 
 
+
+
+
+
+
 /*   < < < < < < < <   Language Principles   > > > > > > > >   */
 
 
 #define CRT_SECURE_NO_WARNINGS
+
+
+
+
 
 
 
@@ -26,6 +35,15 @@
 // iostream? stdio.h? GUI libraries?
 // pragma once? namespace ? (finish mapping this)
 
+
+
+
+
+
+
+
+
+
 //   & & & & & & Comments & & & & & &
 
 // Single Line comment
@@ -37,6 +55,10 @@ comments
 /* Nested
 // Comments //
 are available */
+
+
+
+
 
 
 
@@ -97,47 +119,43 @@ void fun_literals(){
 
 
 
+
+
+
 //   & & & & & & String Formatting & & & & & &
 
 
 
 void fun_string_formats(){
 
-int number = 3;
-double dvalue = 2.3484444;
-
+int number = 1;
+double dvalue = 2.344444;
 
 
 
 //   ^ ^ ^ ^ ^ Format Specifiers ^ ^ ^ ^ ^
 
+
+
 //   ^ ^ ^ ^ Flags ^ ^ ^ ^
+
+
 
 //   ^ ^ ^ ^ Precision ^ ^ ^ ^
 
 printf("%d %.2lf", number, dvalue); // two digits left of decimal point 
 
-}
 
-
-
-
-//   ^ ^ ^ ^ Format Specifiers: parameter ^ ^ ^ ^ ^
-//   flags
 //   width
-//   precision (the .2f goes here )
 //   length field
 //   type field
 //   custom field 
-/* The lecture's coverage: formatting to two places after the dot:
-int main()
-{
-
 
 }
 
 
-*/
+
+
 
 
 
