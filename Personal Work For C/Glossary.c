@@ -203,15 +203,10 @@ first_check = second_check++; // first_check = 1, second_check = 2
 first_check = ++second_check; // first_check = second_check = 3
 
 
-
-/* Lecture's example: 
-b = ++a; // a = b = 6;
-b = a++; // a = 6, b = 5
-
 //   ^ ^ ^ ^ multiple assignment ^ ^ ^ ^
 // lecture's coverage: int x = 1;
-int y = 2;
-x = y = 3; 
+// int y = 2;
+// x = y = 3; 
 
 
 
