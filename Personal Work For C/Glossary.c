@@ -154,6 +154,10 @@ printf("%d %.2lf", number, dvalue); // two digits left of decimal point
 }
 
 
+// More Material: 
+// complete this section from here: https://en.wikipedia.org/wiki/Printf 
+
+
 
 
 
@@ -163,6 +167,10 @@ printf("%d %.2lf", number, dvalue); // two digits left of decimal point
 
 //   & & & & & & Operators & & & & & &
 
+
+
+void fun_operators()
+{
 
 
 // need to touch on lvalue, rvalue, gvalue: 
@@ -188,14 +196,10 @@ int a = 5, b;
 b = ++a; // a = b = 6;
 b = a++; // a = 6, b = 5
 
-
-
 //   ^ ^ ^ ^ multiple assignment ^ ^ ^ ^
 // lecture's coverage: int x = 1;
 int y = 2;
 x = y = 3; 
-
-*/
 
 
 
@@ -210,10 +214,11 @@ x = y = 3;
 // a tool used in type cast
 // putting wrong format variable type in printf/scanf WILL NOT GIVE TEMPS! It's undefined behaviour!
 // Make temp variable arithmetic in tablet and map building upon these scenarios: 
-/* double a = 12.5;
+double a = 12.5;
 int b = 3, c = 4;
 c = a + b;
 The question to be asked in temp variable arithmetic is: how much temps in here? same or demotion or promotion temps? and who are they? answer: b' - promotion, (a + b')' - same, ((a + b')')' - demotion  
+
 
 //   ^ ^ ^ Object Cast ^ ^ ^ 
 // up casting
@@ -256,7 +261,6 @@ return 0;
 
 }
 
-*/
 
 //   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
 // == and != are the least in the order of operations, maybe finish the operations order ladder?
@@ -266,7 +270,7 @@ return 0;
 // (three < five || three < zero) && five < zero;
 
 // combining logical and arith: (arithmetic operators take precedence)
-/* lecture's example:
+lecture's example:
 int x = 2;
 int y = (x > 5) + 1; // (x > 5) -> 0 -> 0 + 1 = 1
 
@@ -277,7 +281,13 @@ int a = 2, b;
 
 //   Overloading literal operators: https://en.cppreference.com/w/cpp/language/user_literal
 
-// complete this section from here: https://en.wikipedia.org/wiki/Printf 
+
+}
+
+
+
+
+
 
 
 
