@@ -31,6 +31,9 @@
 #   & & & & & & Comments & & & & & & 
 
 
+# Single Line comments
+
+
 # No multi line comments 
 # So we just concat single line comments
 
@@ -40,28 +43,7 @@ Documentation
 Annotation
 """
 
-
-# Single Line comments
-
-
-
 """
-
-#include <stdio.h> // C IO Library Files 
-
-// Single Line comment
-
-/* multiple line
-comments
-*/
-
-/* Nested
-// Comments //
-are available */
-
-
-
-
 
 
 //   & & & & & & Literals (+ defined unary literal operators) & & & & & &
