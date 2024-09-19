@@ -76,10 +76,9 @@ def fun_literals():
 
     pass
 
+#   ^ ^ ^ ^ ^ Floats ^ ^ ^ ^ ^
 
 """
-
-//   ^ ^ ^ ^ ^ Floats ^ ^ ^ ^ ^
 
 //   ^ ^ ^ ^ Floats: Sceientific Notation Encoding  ^ ^ ^ ^
 1e2;
