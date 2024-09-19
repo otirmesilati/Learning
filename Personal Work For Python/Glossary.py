@@ -74,8 +74,6 @@ def fun_literals():
 
 #   No Integer Suffix Operators in python 
 
-    pass
-
 #   ^ ^ ^ ^ ^ Floats ^ ^ ^ ^ ^
 
 #   ^ ^ ^ ^ Scientific Notation Encoding ^ ^ ^ ^
@@ -84,23 +82,18 @@ def fun_literals():
     1e-3
 
 
+
+
+
+
+
+
+
+#   & & & & & & String Formatting & & & & & &
+
+
+
 """
-
-// More Material:
-// https://web.archive.org/web/20130807052041/http://cpp.comsci.us/etymology/literals.html
-// https://en.cppreference.com/w/cpp/language/floating_literal //
-
-
-
-
-
-
-
-
-
-//   & & & & & & String Formatting & & & & & &
-
-
 
 void fun_string_formats(){
 
