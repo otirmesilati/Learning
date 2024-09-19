@@ -98,21 +98,17 @@ def fun_literals():
 #   & & & & & & String Formatting & & & & & &
 
 def fun_string_formats():
+    
+    number = 1
+    d_number = 2.344444
+
     pass
 
 
+#   ^ ^ ^ ^ ^ Format Specifiers ^ ^ ^ ^ ^
+
+
 """
-
-void fun_string_formats(){
-
-int number = 1;
-double dvalue = 2.344444;
-
-
-
-//   ^ ^ ^ ^ ^ Format Specifiers ^ ^ ^ ^ ^
-
-
 
 //   ^ ^ ^ ^ Flags ^ ^ ^ ^
 
