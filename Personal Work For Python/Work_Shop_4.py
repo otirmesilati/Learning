@@ -1,34 +1,5 @@
 
-#   & & & & & & Literals & & & & & & 
-
-# https://docs.python.org/3/reference/lexical_analysis.html#numeric-literals
-
-#   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
-
-123
-4_273
-42_73
-427_3 
--34
-
-
-#   ^ ^ ^ ^ Integers: Coding Modifiers ^ ^ ^ ^
-
-0xF5
-0o12 
-0b110
-
-# No int coding suffixes in python
-
-#   ^ ^ ^ ^ Sceientific Notation Encoding ^ ^ ^ ^
-1e2
-1e-3
-
-# floats? what more ?
-
 2.3
-1 + 2j
-
 # ^ ^ Scientific notation ^ (finish this properly)
 
 5e7 # 5000000

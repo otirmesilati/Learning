@@ -62,7 +62,10 @@ def fun_literals():
     123
     1_234
     -123
+    1 +2j # There are also complex number "Integers"!
     pass
+
+
 
 #   ^ ^ ^ ^ Coding Modifiers ^ ^ ^ ^
 
@@ -91,6 +94,8 @@ def fun_literals():
 
 #   & & & & & & String Formatting & & & & & &
 
+def fun_string_formats():
+    pass
 
 
 """
