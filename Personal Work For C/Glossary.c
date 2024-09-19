@@ -172,6 +172,7 @@ printf("%d %.2lf", number, dvalue); // two digits left of decimal point
 void fun_operators()
 {
 int first_check, second_check;
+int first_multi_assign, second_multi_assign;
 
 // need to touch on lvalue, rvalue, gvalue: 
 // lecture's coverage: lval is left and changing, and rval is right, WOW!
@@ -197,13 +198,19 @@ first++;
 ++first;
 
 
+//   ^ ^ ^ ^ Order of operator evaluation ^ ^ ^ ^ 
+// what here ?
+
 //   ^ ^ ^ ^ Prefix vs Postfix ^ ^ ^ ^
 first_check = 1;
 first_check = second_check++; // first_check = 1, second_check = 2 
 first_check = ++second_check; // first_check = second_check = 3
 
 
-//   ^ ^ ^ ^ multiple assignment ^ ^ ^ ^
+//   ^ ^ ^ ^ Multiple Assignment ^ ^ ^ ^
+first_multi_assign = second_multi_assign = 1;
+
+
 // lecture's coverage: int x = 1;
 // int y = 2;
 // x = y = 3; 
@@ -221,7 +228,7 @@ first_check = ++second_check; // first_check = second_check = 3
 // a tool used in type cast
 // putting wrong format variable type in printf/scanf WILL NOT GIVE TEMPS! It's undefined behaviour!
 // Make temp variable arithmetic in tablet and map building upon these scenarios: 
-double a = 12.5;
+/*double a = 12.5;
 int b = 3, c = 4;
 c = a + b;
 The question to be asked in temp variable arithmetic is: how much temps in here? same or demotion or promotion temps? and who are they? answer: b' - promotion, (a + b')' - same, ((a + b')')' - demotion  
