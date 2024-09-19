@@ -79,6 +79,9 @@ def fun_literals():
 
 #   ^ ^ ^ ^ ^ Floats ^ ^ ^ ^ ^
 
+    1.2
+    -3.4
+
 #   ^ ^ ^ ^ Scientific Notation Encoding ^ ^ ^ ^
 
     1e2
