@@ -171,7 +171,7 @@ printf("%d %.2lf", number, dvalue); // two digits left of decimal point
 
 void fun_operators()
 {
-
+int first_check, second_check;
 
 // need to touch on lvalue, rvalue, gvalue: 
 // lecture's coverage: lval is left and changing, and rval is right, WOW!
@@ -185,14 +185,26 @@ void fun_operators()
 
 
 //   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
-// lecture's coverage: int x = 5;
-// x = x + 2; x += 2
+int first = 1;
+first = 2;
+
+
 //   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^ ^
-// x + 2;
-// x++;
-// ++x;
+first = first + 3;
+first += 3;
+first = first + 1;
+first++;
+++first;
+
+
+//   ^ ^ ^ ^ Prefix vs Postfix ^ ^ ^ ^
+first_check = 1;
+first_check = second_check++; // first_check = 1, second_check = 2 
+first_check = ++second_check; // first_check = second_check = 3
+
+
+
 /* Lecture's example: 
-int a = 5, b;
 b = ++a; // a = b = 6;
 b = a++; // a = 6, b = 5
 
