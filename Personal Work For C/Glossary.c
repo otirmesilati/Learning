@@ -144,7 +144,7 @@ double dvalue = 2.344444;
 //   ^ ^ ^ ^ Precision ^ ^ ^ ^
 
 printf("%d %.2lf", number, dvalue); // two digits left of decimal point 
-
+// what about two digits to the right? 
 
 //   width
 //   length field
@@ -162,10 +162,19 @@ printf("%d %.2lf", number, dvalue); // two digits left of decimal point
 
 
 //   & & & & & & Operators & & & & & &
+
+
+
 // need to touch on lvalue, rvalue, gvalue: 
+// lecture's coverage: lval is left and changing, and rval is right, WOW!
+
+
+
+// More Material:
 // for the wiki tldr: https://en.wikipedia.org/wiki/Value_(computer_science)
 // for the famous lval/rval/gval/xval graph: https://stackoverflow.com/questions/3601602/what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues
-// lecture's coverage: lval is left and changing, and rval is right, WOW!
+
+
 
 //   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
 // lecture's coverage: int x = 5;
@@ -179,12 +188,16 @@ int a = 5, b;
 b = ++a; // a = b = 6;
 b = a++; // a = 6, b = 5
 
+
+
 //   ^ ^ ^ ^ multiple assignment ^ ^ ^ ^
 // lecture's coverage: int x = 1;
 int y = 2;
 x = y = 3; 
 
 */
+
+
 
 //   ^ ^ ^ ^ Arithmetical Operators: Narrowing/Widening type Casting ^ ^ ^ ^
 // map from this more about casts: https://stackoverflow.com/questions/28002/regular-cast-vs-static-cast-vs-dynamic-cast
