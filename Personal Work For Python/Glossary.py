@@ -72,24 +72,12 @@ def fun_literals():
     0o12
     0b110011
 
-#   No Un-signed Modifier Suffix Operators 
+#   No Integer Suffix Operators in python 
 
     pass
 
 
 """
-
-//   ^ ^ ^ Un-Signed Modifier Suffix operators ^ ^ ^
-
-1u;
--2U; // will work sometimes and sometimes not: will be translated: 2's complement on the value -> new unsigned value
-
-//   ^ ^ ^ Long Modifier Suffix operators
-
-1l;
--2L;
-3ll;
-4LL;
 
 //   ^ ^ ^ ^ ^ Floats ^ ^ ^ ^ ^
 
