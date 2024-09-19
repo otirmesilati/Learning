@@ -1,3 +1,7 @@
+
+// where to put bitmasking? watch video below:
+// https://www.youtube.com/watch?v=wvtFGa6XJDU
+
 /*   < < < < < < < <   Language Principles   > > > > > > > >   */
 
 
@@ -13,10 +17,6 @@
 // iostream? stdio.h? GUI libraries?
 // pragma once? namespace ? (finish mapping this)
 
-//   & & & & & Comments & & & & &
-
-// where to put bitmasking? watch video below:
-// https://www.youtube.com/watch?v=wvtFGa6XJDU
 //   & & & & & & Comments & & & & & &
 
 // Single Line comment
@@ -26,40 +26,30 @@ comments
 */
 
 /* Nested
-// Single line one kind //
-and multi line 
-for other kind of comments */
+// Comments //
+are available */
 
-// void fun_hi(){cout << "Hi" /* Comments within statemenets */ << "bye";}
+
 
 //   & & & & & & Literals (defined literal operators) & & & & & &
 
 
-void fun_literals(){ // Literals dependent on scopes within function
-
-// Going over the available space for literals will have a reseting effect:
-// unsigned short cap: 65535
-unsigned short hi = 65000; // 65,00
-unsigned short hi = 66000; // 464 (Got back to zero going up)
-
-// signed short cap: 32767
-short hi = 32000; // 32000
-short hi = 35000; // -30536 (Got to -32767 going to zero)
-
-// https://web.archive.org/web/20130807052041/http://cpp.comsci.us/etymology/literals.html
+void fun_literals(){ 
 
 
 //   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
 123;
-// no underscore format! 
--34;
+// no underscore format for numbers like 1,234! 
+-123;
 
 
-//  ^ ^ ^ ^ Integers: Coding Modifiers ^ ^ ^ ^
+//  ^ ^ ^ ^ Coding Modifiers ^ ^ ^ ^
 
-0xF5;
+//  ^ ^ ^ 
+
+0x12AB;
 012; // octal literals written without o //
-0b110;
+0b110011;
 
 //  ^ ^ ^ ^ Integers: Signed/Long Conding Modifying Suffixes  ^ ^ ^ ^
 
@@ -85,6 +75,9 @@ short hi = 35000; // -30536 (Got to -32767 going to zero)
 
 }
 
+
+// More Material:
+// https://web.archive.org/web/20130807052041/http://cpp.comsci.us/etymology/literals.html
 
 //   & & & & & & String Formatting & & & & & &
 //   ^ ^ ^ ^ ^ Format Specifiers ^ ^ ^ ^ ^
@@ -215,6 +208,16 @@ int a = 2, b;
 // complete this section from here: https://en.wikipedia.org/wiki/Printf 
 
 //   & & & & & & Variables & & & & & &
+
+
+// unsigned short cap: 65535
+unsigned short hi = 65000; // 65,00
+unsigned short hi = 66000; // 464 (Got back to zero going up)
+
+// signed short cap: 32767
+short hi = 32000; // 32000
+short hi = 35000; // -30536 (Got to -32767 going to zero)
+
 
 //   ^ ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^ ^
 //   ^ ^ ^ ^ Global Variables ^ ^ ^ ^
