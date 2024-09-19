@@ -1,5 +1,9 @@
 //   & & & & & & & & & & Windows Terminal Shortcuts & & & & & & & & & &
 
+
+
+
+
 //   ^ ^ ^ ^ ^ Windows-Navigation ^ ^ ^ ^ ^ 
 
 1. Launch Run command: ->super+r
@@ -7,10 +11,18 @@
 3. Launch n-th pinned Icon in TaskBar: ->super+<Number>
 4. 
 
+
+
+
+
 //   ^ ^ ^ ^ ^  Posh-Windows-Navigation
 
 1. Launch chrome in certian URL: Start-Process chrome <URL>
 2. 
+
+
+
+
 
 //   ^ ^ ^ ^ ^ ^ Linux-Navigation ^ ^ ^ ^ ^ ^
 
@@ -24,10 +36,22 @@
 8. Launch shell window: -> CTRL+SHFT+N
 9. 
 
+
+
+
+
 //   ^ ^ ^ ^ ^ Browsers
 
 
+
+
+
 //   ^ ^ ^ ^ ^ Editors
+
+
+
+
+
 
 //   ^ ^ ^ ^ Visual Studio Code
 

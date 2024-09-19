@@ -7,10 +7,14 @@
 
 
 
+
+
 /*   < < < < < < < <   Language Principles   > > > > > > > >   */
 
 
 #define CRT_SECURE_NO_WARNINGS
+
+
 
 
 
@@ -33,6 +37,8 @@ comments
 /* Nested
 // Comments //
 are available */
+
+
 
 
 
@@ -80,14 +86,28 @@ void fun_literals(){
 
 
 
+
+
 // More Material:
 // https://web.archive.org/web/20130807052041/http://cpp.comsci.us/etymology/literals.html
 // https://en.cppreference.com/w/cpp/language/floating_literal //
 
 
 
+
+
+
 //   & & & & & & String Formatting & & & & & &
+
+
+
+void fun_string_formats(){
+    
+}
+
+
 //   ^ ^ ^ ^ ^ Format Specifiers ^ ^ ^ ^ ^
+
 //   ^ ^ ^ ^ Format Specifiers: parameter ^ ^ ^ ^ ^
 //   flags
 //   width
@@ -107,6 +127,8 @@ printf("The first value %d, second value %.2lf.")
 
 
 */
+
+
 
 
 
@@ -193,6 +215,7 @@ return 0;
 }
 
 */
+
 //   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
 // == and != are the least in the order of operations, maybe finish the operations order ladder?
 // false and true are exactly 0 and 1
@@ -213,6 +236,10 @@ int a = 2, b;
 //   Overloading literal operators: https://en.cppreference.com/w/cpp/language/user_literal
 
 // complete this section from here: https://en.wikipedia.org/wiki/Printf 
+
+
+
+
 
 //   & & & & & & Variables & & & & & &
 
@@ -398,6 +425,10 @@ return 0;
 
 //   ^ ^ ^ ^ Constants: Immutables 
 // highlight the difference of const (run time) vs constexpr (compile time)
+
+
+
+
 
 //   & & & & & & Flow Control & & & & & &
 
