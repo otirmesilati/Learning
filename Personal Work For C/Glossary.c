@@ -2,9 +2,14 @@
 
 
 #define CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
+
+
 
 //   & & & & & & Libraries & & & & & &
+#include <stdio.h> // C IO Library Files 
+
+
+
 // iostream? stdio.h? GUI libraries?
 // pragma once? namespace ? (finish mapping this)
 

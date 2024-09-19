@@ -26,6 +26,14 @@
 
 //   ^ ^ ^ ^ ^ Browsers
 
+
+//   ^ ^ ^ ^ ^ Editors
+
+//   ^ ^ ^ ^ Visual Studio Code
+
+1. Focus on specific tab: alt + <Number> 
+2. 
+
 1. Open a new tab: -> ctrl+t
 2.
 
