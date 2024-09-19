@@ -296,6 +296,10 @@ int a = 2, b;
 //   & & & & & & Variables & & & & & &
 
 
+void fun_variables()
+{
+
+
 // unsigned short cap: 65535
 unsigned short hi = 65000; // 65,00
 unsigned short hi = 66000; // 464 (Got back to zero going up)
@@ -477,6 +481,10 @@ return 0;
 
 //   ^ ^ ^ ^ Constants: Immutables 
 // highlight the difference of const (run time) vs constexpr (compile time)
+
+
+}
+
 
 
 
