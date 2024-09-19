@@ -2,8 +2,6 @@
 2.3
 # ^ ^ Scientific notation ^ (finish this properly)
 
-5e7 # 5000000
-
 'Hi'
 "Hi"
 
