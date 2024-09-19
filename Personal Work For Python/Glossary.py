@@ -43,16 +43,25 @@ Documentation
 Annotation
 """
 
+
+
+
+
+
+
+
+
+#   & & & & & & Literals & & & & & & 
+
+
+def fun_literals():
+    
+
+#   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
+    
+    pass
+
 """
-
-
-//   & & & & & & Literals (+ defined unary literal operators) & & & & & &
-
-
-void fun_literals(){ 
-
-
-//   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
 
 123;
 // no underscore format for numbers like 1,234! 
