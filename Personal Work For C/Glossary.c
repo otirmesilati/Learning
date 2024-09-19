@@ -102,11 +102,25 @@ void fun_literals(){
 
 
 void fun_string_formats(){
-    
-}
+
+int number = 3;
+double dvalue = 2.3484444;
+
+
 
 
 //   ^ ^ ^ ^ ^ Format Specifiers ^ ^ ^ ^ ^
+
+//   ^ ^ ^ ^ Flags ^ ^ ^ ^
+
+//   ^ ^ ^ ^ Precision ^ ^ ^ ^
+
+printf("%d %.2lf", number, dvalue); // two digits left of decimal point 
+
+}
+
+
+
 
 //   ^ ^ ^ ^ Format Specifiers: parameter ^ ^ ^ ^ ^
 //   flags
@@ -119,9 +133,6 @@ void fun_string_formats(){
 int main()
 {
 
-int number = 3;
-double dvalue = 2.3484444;
-printf("The first value %d, second value %.2lf.")
 
 }
 
