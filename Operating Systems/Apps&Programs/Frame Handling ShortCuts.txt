@@ -1,6 +1,10 @@
 // & & & & & & & & & & Windows Terminal Shortcuts & & & & & & & & & &
 
-// ^ ^ ^ ^ ^ ^ Navigation ^ ^ ^ ^ ^ ^
+// ^ ^ ^ ^ ^ ^ Windows-Navigation ^ ^ ^ ^ ^ ^
+1. Open n-th pinned Icon in TaskBar: Super+<Number>
+2. 
+
+// ^ ^ ^ ^ ^ ^ Linux-Navigation ^ ^ ^ ^ ^ ^
 1. Launch shell tab via order: ->CTRL+SHFT+<Number>
 2. Launch duplicate shell tab: -> CTRL+SHFT+D
 2. Launch defualt pane shell tab : ->CTRL+SHFT+T
