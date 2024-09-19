@@ -46,13 +46,13 @@
 
 
 
-//   ^ ^ ^ ^ ^ Browsers
+//   ^ ^ ^ ^ ^ Browsers ^ ^ ^ ^ ^
 
 
 
 
 
-//   ^ ^ ^ ^ ^ Editors
+//   ^ ^ ^ ^ ^ Editors ^ ^ ^ ^ ^
 
 
 
@@ -65,8 +65,9 @@
 2. Round-Robin focus between open tabs: ctrl + tab
 3.
 
-1. Open a new tab: -> ctrl+t
-2.
+1. Open a new tab: -> ctrl + t
+2. Close a tab: -> ctrl + w
+3. 
 
 -- Stopped at Next Tab --
 
