@@ -78,18 +78,13 @@ def fun_literals():
 
 #   ^ ^ ^ ^ ^ Floats ^ ^ ^ ^ ^
 
+#   ^ ^ ^ ^ Scientific Notation Encoding ^ ^ ^ ^
+
+    1e2
+    1e-3
+
+
 """
-
-//   ^ ^ ^ ^ Floats: Sceientific Notation Encoding  ^ ^ ^ ^
-1e2;
-1e-3;
-1e4L;   // combining //
-
-}
-
-
-
-
 
 // More Material:
 // https://web.archive.org/web/20130807052041/http://cpp.comsci.us/etymology/literals.html

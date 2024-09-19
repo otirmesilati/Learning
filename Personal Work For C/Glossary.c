@@ -99,7 +99,8 @@ void fun_literals(){
 
 //   ^ ^ ^ ^ ^ Floats ^ ^ ^ ^ ^
 
-//   ^ ^ ^ ^ Floats: Sceientific Notation Encoding  ^ ^ ^ ^
+//   ^ ^ ^ ^ Sceientific Notation Encoding  ^ ^ ^ ^
+
 1e2;
 1e-3;
 1e4L;   // combining //
