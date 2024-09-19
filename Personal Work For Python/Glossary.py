@@ -1,55 +1,37 @@
+# Python online emulator: https://www.programiz.com/python-programming/online-compiler/ 
 
 
 
+
+
+
+
+
+
+#    < < < < < < < <   Language Principles   > > > > > > > >   
+
+
+
+
+
+
+
+
+
+#   & & & & & & Libraries & & & & & & 
+# GUI? 
+
+
+
+
+
+
+
+
+#   & & & & & & Comments & & & & & & 
 """
 
-// C Online Emulator: https://www.onlinegdb.com/online_c_compiler
-
-
-
-// where to put bitmasking? watch video below:
-// https://www.youtube.com/watch?v=wvtFGa6XJDU
-
-
-
-
-
-
-
-
-
-
-/*   < < < < < < < <   Language Principles   > > > > > > > >   */
-
-
-#define CRT_SECURE_NO_WARNINGS
-
-
-
-
-
-
-
-
-
-//   & & & & & & Libraries & & & & & &
 #include <stdio.h> // C IO Library Files 
-
-
-
-// iostream? stdio.h? GUI libraries?
-// pragma once? namespace ? (finish mapping this)
-
-
-
-
-
-
-
-
-
-
-//   & & & & & & Comments & & & & & &
 
 // Single Line comment
 
@@ -60,9 +42,6 @@ comments
 /* Nested
 // Comments //
 are available */
-
-
-
 
 
 
