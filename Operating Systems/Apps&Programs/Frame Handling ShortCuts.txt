@@ -1,20 +1,23 @@
-// & & & & & & & & & & Windows Terminal Shortcuts & & & & & & & & & &
+//   & & & & & & & & & & Windows Terminal Shortcuts & & & & & & & & & &
 
-// ^ ^ ^ ^ ^ ^ Windows-Navigation ^ ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Windows-Navigation ^ ^ ^ ^ ^ 
 1. Launch Run command: ->super+r
-1. Launch TaskManager: -> ctrl+shft+esc
-1. Open n-th pinned Icon in TaskBar: ->super+<Number>
-2. Open 
+2. Launch TaskManager: -> ctrl+shft+esc
+3. Launch n-th pinned Icon in TaskBar: ->super+<Number>
+4. Open
+
+//   ^ ^ ^ ^ ^ CLI-Windows-Navigation
+1. 
 
 // ^ ^ ^ ^ ^ ^ Linux-Navigation ^ ^ ^ ^ ^ ^
 1. Launch shell tab via order: ->ctrl+shft+<Number>
 2. Launch duplicate shell tab: -> ctrl+SHFT+D
-2. Launch defualt pane shell tab : ->CTRL+SHFT+T
-3. Close pane shell tab : ->CTRL+SHFT+W
-4. Zoom In / Enlarge and decrese text: -> CTRL+plus/minus
-5. Search text: CTRL+SHFT+F
-5. Duplicate into two half panes (Sessions): -> ALT+SHFT+D
-6. Launch shell window: -> CTRL+SHFT+N
+3. Launch defualt pane shell tab : ->CTRL+SHFT+T
+4. Close pane shell tab : ->CTRL+SHFT+W
+5. Zoom In / Enlarge and decrese text: -> CTRL+plus/minus
+6. Search text: CTRL+SHFT+F
+7. Duplicate into two half panes (Sessions): -> ALT+SHFT+D
+8. Launch shell window: -> CTRL+SHFT+N
 
 -- Stopped at Next Tab --
 
