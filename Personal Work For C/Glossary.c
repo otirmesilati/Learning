@@ -36,13 +36,14 @@ are available */
 
 
 
-//   & & & & & & Literals (defined literal operators) & & & & & &
+//   & & & & & & Literals (+ defined unary literal operators) & & & & & &
 
 
 void fun_literals(){ 
 
 
 //   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
+
 123;
 // no underscore format for numbers like 1,234! 
 -123;
@@ -50,18 +51,18 @@ void fun_literals(){
 
 //  ^ ^ ^ ^ Coding Modifiers ^ ^ ^ ^
 
-//  ^ ^ ^ Radixed modifiers ^ ^ ^
+//  ^ ^ ^ Radixed modifier ^ ^ ^
 
 0x12AB;
 012; // octal literals written without o //
 0b110011;
 
-//   ^ ^ ^ Un-Signed Modifier Suffixes ^ ^ ^
+//   ^ ^ ^ Un-Signed Modifier Suffix operators ^ ^ ^
 
 1u;
 -2U; // will work sometimes and sometimes not: will be translated: 2's complement on the value -> new unsigned value
 
-//   ^ ^ ^ Long Modifier Suffixes
+//   ^ ^ ^ Long Modifier Suffix operators
 
 1l;
 -2L;
@@ -73,19 +74,17 @@ void fun_literals(){
 //   ^ ^ ^ ^ Floats: Sceientific Notation Encoding  ^ ^ ^ ^
 1e2;
 1e-3;
-
-// can combine exponent and long encondings //
-1e2l;
-
-
-
-// https://en.cppreference.com/w/cpp/language/floating_literal //
+1e4L;   // combining //
 
 }
 
 
+
 // More Material:
 // https://web.archive.org/web/20130807052041/http://cpp.comsci.us/etymology/literals.html
+// https://en.cppreference.com/w/cpp/language/floating_literal //
+
+
 
 //   & & & & & & String Formatting & & & & & &
 //   ^ ^ ^ ^ ^ Format Specifiers ^ ^ ^ ^ ^
