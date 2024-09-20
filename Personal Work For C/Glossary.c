@@ -152,15 +152,17 @@ printf("%d %.2lf", number, dvalue); // two digits left of decimal point
 
 
 //   width
-//   length field
+//   ^ ^ ^ ^ Length ^ ^ ^ ^
+
+printf("%ld", 1); // long
+printf("%lf", 2.34); // double
+
 //   ^ ^ ^ ^ Types ^ ^ ^ ^
 
-printf("%c", 'a');
-int my_int;
-long my_long;
-float my_float;
-double my_double;
-// more types not covered?
+printf("%c", 'a'); // char
+printf("%d", 1); // int
+printf("%f", 2.3); // float
+
 
 
 printf("%c", undef_behav); // wrong type field - undefined behaviour!
