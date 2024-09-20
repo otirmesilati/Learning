@@ -127,23 +127,19 @@ def fun_string_formats():
     print(f"{number} {d_number:.2f}")
     # to the right of the decimal point? 
 
+
+
+
+
+
+
+
+
+#   & & & & & & Operators & & & & & & 
+
+
+
 """
-
-
-// More Material: 
-// complete this section from here: https://en.wikipedia.org/wiki/Printf 
-
-
-
-
-
-
-
-
-
-//   & & & & & & Operators & & & & & &
-
-
 
 void fun_operators()
 {
