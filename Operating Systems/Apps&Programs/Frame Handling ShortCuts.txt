@@ -99,7 +99,7 @@
 
 1. Check git version: git --version[Windows] / ?[bash]
 2. Check enabled git status: git status
-3.
+3. Launching Git tracking: git init
 
 // & & & & & & & & & & NeoVim & & & & & & & & & &
 
