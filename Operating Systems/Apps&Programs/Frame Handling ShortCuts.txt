@@ -25,6 +25,10 @@
 
 //   ^ ^ ^ ^ ^ CLI 
 
+//   ^ ^ ^ ^ CMD ^ ^ ^ ^
+
+1. 
+
 //   ^ ^ ^ ^ PowerShell ^ ^ ^ ^
 
 1. Launch chrome in certian URL: Start-Process chrome <URL>
