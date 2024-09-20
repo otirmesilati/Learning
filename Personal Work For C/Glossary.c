@@ -202,7 +202,7 @@ first++;
 ++first;
 
 
-//   ^ ^ ^ ^ Order of operation evaluation ^ ^ ^ ^ 
+//   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^ 
 // what here ? what comes before what? 
 
 
@@ -283,6 +283,7 @@ return 0;
 
 
 //   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
+// order of operations ?
 // == and != are the least in the order of operations, maybe finish the operations order ladder?
 // false and true are exactly 0 and 1
 // int five = 5, three = 3, zero = 0;
