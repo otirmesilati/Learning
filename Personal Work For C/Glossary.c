@@ -233,24 +233,6 @@ first_multi_assign = second_multi_assign = 1;
 
 //   ^ ^ ^ type casting/C-casting ^ ^ ^
 
-/*
-
-n4 = n2; / n1; // 15 -> 15.0, 3 -> 3.0, 15.0 / 3.0 -> 5.0
-printf(" %f \n", n4); // 5.00000 is the correct answer
-printf(" %d \n", n4); // unmatched format specifier - undefined behaviour, underfined answer
-printf(" %d \n", (int)n4); // 5.0 -> 5, 5 is the correct answer
-
-n4 = 
-printf(" \n");
-
-n4 = 
-printf(" \n");
-n4 = 
-printf(" \n");
-
-return 0;
-*/
-
 //   ^ ^ Implicit conversion - mismatching variables in opeartion ^ ^
 
 sum_temps = first_temp + second_temp; // first is promoted to double in widening implicit c type conversion
