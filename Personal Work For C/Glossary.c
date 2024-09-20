@@ -183,6 +183,7 @@ int first_check, second_check;
 int first_multi_assign, second_multi_assign;
 int first_temp = 1;
 double sum_temps, second_temp = 2.00;
+int five = 5, three = 3, zero = 0;
 
 int first_explicit_conv, second_explicit_conv;
 int explicit_conv_assignment;
@@ -243,17 +244,17 @@ first_explicit_conv = 3, second_explicit_conv = 4;
 explicit_conv_assignment = (float)(first_explicit_conv / second_explicit_conv); // both exp conv scenarios, order: 1. int result temp 2. float result temp, 3. int assignment temp
 
 
-/*
+
 
  
-}
+
 
 
 // More Material: 
 // map from this more about casts: https://stackoverflow.com/questions/28002/regular-cast-vs-static-cast-vs-dynamic-cast
 // No Automatic casting to wide in c++? a set of rules: https://www.youtube.com/watch?v=uI10H1jzw00
 // Make temp variable arithmetic in tablet and map building upon these scenarios: 
- answer: b' - promotion, (a + b')' - same, ((a + b')')' - demotion  
+// answer: b' - promotion, (a + b')' - same, ((a + b')')' - demotion  
 
 
 
@@ -267,11 +268,12 @@ explicit_conv_assignment = (float)(first_explicit_conv / second_explicit_conv); 
 // order of operations ?
 // == and != are the least in the order of operations, maybe finish the operations order ladder?
 // false and true are exactly 0 and 1
-// int five = 5, three = 3, zero = 0;
-// five != 2;
+
+five == 2;
 // (three < five || three < zero) && five < zero;
 
 // combining logical and arith: (arithmetic operators take precedence)
+/*
 lecture's example:
 int x = 2;
 int y = (x > 5) + 1; // (x > 5) -> 0 -> 0 + 1 = 1
@@ -279,11 +281,11 @@ int y = (x > 5) + 1; // (x > 5) -> 0 -> 0 + 1 = 1
 int a = 2, b;
 ((b = 2) == a) // (b = 2) -> (2) -> 2 == 2 -> 1, trick question: a wierd behaviour of c family languages - assignment returns the assign value, acts as arithmetic
 
-*/
+
 
 //   Overloading literal operators: https://en.cppreference.com/w/cpp/language/user_literal
 
-
+*/
 }
 
 
