@@ -305,6 +305,11 @@ int a = 2, b;
 
 void fun_variables()
 {
+    
+int my_int;
+float my_float;
+double my_double;
+
 
 
 // unsigned short cap: 65535
