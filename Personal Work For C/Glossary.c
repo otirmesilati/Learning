@@ -139,9 +139,7 @@ double dvalue = 2.344444;
 int undef_behav = 4;
 
 
-//   ^ ^ ^ ^ ^ Format Specifiers ^ ^ ^ ^ ^
-
-
+//   ^ ^ ^ ^ ^ Format Specifier Fields ^ ^ ^ ^ ^
 
 //   ^ ^ ^ ^ Flags ^ ^ ^ ^
 
@@ -155,7 +153,15 @@ printf("%d %.2lf", number, dvalue); // two digits left of decimal point
 
 //   width
 //   length field
-//   ^ ^ ^ ^ type field ^ ^ ^ ^
+//   ^ ^ ^ ^ Types ^ ^ ^ ^
+
+printf("%c", 'a');
+int my_int;
+long my_long;
+float my_float;
+double my_double;
+// more types not covered?
+
 
 printf("%c", undef_behav); // wrong type field - undefined behaviour!
 
