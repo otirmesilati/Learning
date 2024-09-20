@@ -98,7 +98,8 @@
 //   ^ ^ ^ ^ Git Commands ^ ^ ^ ^
 
 1. Check git version: git --version[Windows] / ?[bash]
-2. 
+2. Check enabled git status: git status
+3.
 
 // & & & & & & & & & & NeoVim & & & & & & & & & &
 
