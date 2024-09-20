@@ -9,9 +9,9 @@
 1. Launch Run command: -> super + r
 2. Launch TaskManager: -> ctrl + shft + esc
 3. Launch n-th pinned Icon in TaskBar: ->super+<Number>
-4. Round-Robin focus between open windows: alt + tab
-5. Round-Robin focus between open windows in reverse: shft + alt + tab
-6. here goes open windows menu
+4. Round-Robin focus between open windows: ->alt + tab
+5. Round-Robin focus between open windows in reverse: ->shft + alt + tab
+6. Open active/open window menu: ->super + tab 
 7.
 
 
