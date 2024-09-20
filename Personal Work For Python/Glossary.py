@@ -121,7 +121,7 @@ def fun_string_formats():
     
 #   ^ ^ ^ ^ ^ Format Specifiers ^ ^ ^ ^ ^
 
-# flags? width? length? type? custom?
+# flags? width? length? type(wrong type field - same behavior as C)? custom? 
 
 #   ^ ^ ^ ^ Precision ^ ^ ^ ^ 
     

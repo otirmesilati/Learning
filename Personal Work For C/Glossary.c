@@ -134,7 +134,7 @@ void fun_string_formats(){
 
 int number = 1;
 double dvalue = 2.344444;
-
+int undef_behav = 4;
 
 
 //   ^ ^ ^ ^ ^ Format Specifiers ^ ^ ^ ^ ^
@@ -150,9 +150,13 @@ double dvalue = 2.344444;
 printf("%d %.2lf", number, dvalue); // two digits left of decimal point 
 // what about two digits to the right? 
 
+
 //   width
 //   length field
-//   type field
+//   ^ ^ ^ ^ type field ^ ^ ^ ^
+
+printf("%c", undef_behav); // wrong type field - undefined behaviour!
+
 //   custom field 
 
 }
@@ -230,19 +234,6 @@ first_multi_assign = second_multi_assign = 1;
 //   ^ ^ ^ type casting/C-casting ^ ^ ^
 
 /*
-trick long question (becuase it has undefined behaviour in it once):
-int main() {
-int n1 = 3;
-int n2 = 15;
-float n3 = 5.7;
-float n4;
-
-print(" %f \n", n3); // no temps, 5.700000 is the correct answer
-print(" %d \n", n3); // unmatched format specifier - undefined behaviour, underfined answer
-sum = (int)13.2; // (13.2)' -> ((13.2)')'
-print(" %f \n", n3); //  13.00000 is the correct answer
-sum = (int)5.7 + 13.2; 
-print(" %f\n", n3); // this is a bit complicated: 5.7 -> 5 -> 5.0 -> 5.0 + 13.2 -> 18.2 is the correct answer
 
 n4 = n2; / n1; // 15 -> 15.0, 3 -> 3.0, 15.0 / 3.0 -> 5.0
 printf(" %f \n", n4); // 5.00000 is the correct answer
