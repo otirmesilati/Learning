@@ -19,6 +19,7 @@
 
 
 #   & & & & & & Libraries & & & & & & 
+#   Standard Library is built in, not need to be imported
 # GUI? 
 
 
@@ -136,23 +137,17 @@ def fun_string_formats():
 
 
 #   & & & & & & Operators & & & & & & 
+# lvalue? rvalue? more values?
 
 def fun_operators():
     pass
 
+#   ^ ^ ^ ^ ^ Binding operator ^ ^ ^ ^ ^
+
+first = 1
+
 
 """
-
-
-// More Material:
-// for the wiki tldr: https://en.wikipedia.org/wiki/Value_(computer_science)
-// for the famous lval/rval/gval/xval graph: https://stackoverflow.com/questions/3601602/what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues
-
-
-
-//   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
-int first = 1;
-first = 2;
 
 
 //   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^ ^
