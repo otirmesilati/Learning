@@ -177,8 +177,15 @@ void fun_operators()
 {
 int first_check, second_check;
 int first_multi_assign, second_multi_assign;
-int first_temp = 1, second_temp = 2;
-double sum_temps;
+int first_temp = 1;
+double sum_temps, second_temp = 2.00;
+//same procedure for the following code:
+//int a = 3, b = 4;
+//int result;
+//result = (float) a/b;
+//answer: a' b' (a'/b')', ((a'/b')')'
+
+
 
 // need to touch on lvalue, rvalue, gvalue: 
 // lecture's coverage: lval is left and changing, and rval is right, WOW!
@@ -223,22 +230,17 @@ first_multi_assign = second_multi_assign = 1;
 
 //   ^ ^ ^ type casting/C-casting ^ ^ ^
 
-//   ^ ^ Implicit conversion ^ ^
+//   ^ ^ Implicit conversion - mismatching variables in opeartion ^ ^
 
-sum_temps = first_temp + second_temp; // the sum is promoted to double in widening implicit c type conversion
+sum_temps = first_temp + second_temp; // first is promoted to double in widening implicit c type conversion
 
-//   ^ ^ Explicit conversion ^ ^ 
+//   ^ ^ Explicit conversion - assigned to different type OR different type written in parantheses ^ ^ 
+
 
 
 /*
 
  
-same procedure for the following code:
-int a = 3, b = 4;
-int result;
-result = (float) a/b;
-answer: a' b' (a'/b')', ((a'/b')')'
-
 trick long question (becuase it has undefined behaviour in it once):
 int main() {
 int n1 = 3;
