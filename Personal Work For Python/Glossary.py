@@ -137,18 +137,11 @@ def fun_string_formats():
 
 #   & & & & & & Operators & & & & & & 
 
+def fun_operators():
+    pass
 
 
 """
-
-void fun_operators()
-{
-int first_check, second_check;
-int first_multi_assign, second_multi_assign;
-
-// need to touch on lvalue, rvalue, gvalue: 
-// lecture's coverage: lval is left and changing, and rval is right, WOW!
-
 
 
 // More Material:
