@@ -173,7 +173,7 @@ first += 3
 # no INC unary operator :(
 
 #   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^
-# general case?
+# general case? * before / in C?
 
 
 """

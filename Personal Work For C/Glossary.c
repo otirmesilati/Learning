@@ -213,7 +213,7 @@ first++;
 
 
 //   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^ 
-// what here ? what comes before what? 
+// what here ? what comes before what? * before / in C?  
 
 
 //   ^ ^ ^ ^ Prefix vs Postfix inc/dec operator ^ ^ ^ ^
@@ -254,6 +254,12 @@ explicit_conv_assignment = (float)(first_explicit_conv / second_explicit_conv); 
 // No Automatic casting to wide in c++? a set of rules: https://www.youtube.com/watch?v=uI10H1jzw00
 // Make temp variable arithmetic in tablet and map building upon these scenarios: 
  answer: b' - promotion, (a + b')' - same, ((a + b')')' - demotion  
+
+
+
+
+
+
 
 
 
