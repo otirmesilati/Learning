@@ -21,11 +21,6 @@
 
 
 
-//   ^ ^ ^ ^ ^  Posh-Windows-Navigation
-
-1. Launch chrome in certian URL: Start-Process chrome <URL>
-2. 
-
 
 
 
@@ -44,6 +39,17 @@
 
 
 
+
+
+
+
+
+
+
+//   ^ ^ ^ ^ ^  Posh-Windows-Navigation
+
+1. Launch chrome in certian URL: Start-Process chrome <URL>
+2. 
 
 
 //   ^ ^ ^ ^ ^ Browsers ^ ^ ^ ^ ^
@@ -70,6 +76,19 @@
 3. 
 
 
+
+
+
+
+
+
+
+//   ^ ^ ^ ^ Git ^ ^ ^ ^
+
+//   ^ ^ ^ Git Commands ^ ^ ^
+
+1. Check git version: git --version[Windows] / ?[bash]
+2. 
 
 // & & & & & & & & & & NeoVim & & & & & & & & & &
 
