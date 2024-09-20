@@ -231,15 +231,8 @@ sum_temps = first_temp + second_temp; // the sum is promoted to double in wideni
 
 
 /*
-// Make temp variable arithmetic in tablet and map building upon these scenarios: 
- answer: b' - promotion, (a + b')' - same, ((a + b')')' - demotion  
 
  
-
-//   ^ ^ ^ Object Cast ^ ^ ^ 
-// up casting
-// down casting
-
 same procedure for the following code:
 int a = 3, b = 4;
 int result;
@@ -281,6 +274,8 @@ return 0;
 // More Material: 
 // map from this more about casts: https://stackoverflow.com/questions/28002/regular-cast-vs-static-cast-vs-dynamic-cast
 // No Automatic casting to wide in c++? a set of rules: https://www.youtube.com/watch?v=uI10H1jzw00
+// Make temp variable arithmetic in tablet and map building upon these scenarios: 
+ answer: b' - promotion, (a + b')' - same, ((a + b')')' - demotion  
 
 
 
