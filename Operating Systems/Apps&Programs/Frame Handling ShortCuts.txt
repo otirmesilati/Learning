@@ -15,9 +15,9 @@
 7.
 
 
-//   ^ ^ ^ ^ ^ GUI
+//   ^ ^ ^ ^ ^ GUI ^ ^ ^ ^ ^
 
-//   ^ ^ ^ ^ Taskbar ^ ^ ^ 
+//   ^ ^ ^ ^ Taskbar ^ ^ ^ ^
 
 1. Focus on Hidden Items on TaskBar: -> super + b
 2. Write in Serch Box: -> super
