@@ -299,6 +299,7 @@ int a = 2, b;
 
 
 //   & & & & & & Variables & & & & & &
+// finish writing primitive types ?
 
 
 void fun_variables()
