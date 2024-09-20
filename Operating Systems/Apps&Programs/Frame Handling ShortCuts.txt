@@ -23,7 +23,7 @@
 2. Write in Serch Box: -> super
 3.  
 
-//   ^ ^ ^ ^ ^ CLI 
+//   ^ ^ ^ ^ ^ CLI ^ ^ ^ ^ ^ 
 
 //   ^ ^ ^ ^ CMD ^ ^ ^ ^
 
@@ -38,7 +38,8 @@
 2. Check directories and files in a directory: Get-ChildItem
 3. Check hidden directries and files: Get-ChildItem -Force
 4. Change into a directory: cd <Directory Name>
-5.
+5. Print a string: Write-Output <String> 
+6.
 
 //   ^ ^ ^ ^ Bash ^ ^ ^ ^
 
