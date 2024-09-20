@@ -28,7 +28,8 @@
 //   ^ ^ ^ ^ CMD ^ ^ ^ ^
 
 1. Check directories and files in a directory: dir
-2. 
+2. change to a directory: cd <Directory Name>
+3. 
 
 //   ^ ^ ^ ^ PowerShell ^ ^ ^ ^
 
