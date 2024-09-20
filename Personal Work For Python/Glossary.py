@@ -146,11 +146,11 @@ def fun_operators():
 
 first = 1
 
+#   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^
+
 
 """
 
-
-//   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^ ^
 first = first + 3;
 first += 3;
 first = first + 1;
