@@ -6,6 +6,15 @@
 
 //   & & & & & & Windows-Navigation ^ ^ ^ ^ ^ 
 
+1. Launch Run command: -> super + r
+2. Launch TaskManager: -> ctrl + shft + esc
+3. Launch n-th pinned Icon in TaskBar: ->super+<Number>
+4. Round-Robin focus between open windows: alt + tab
+5. here goes reverse
+6. here goes open windows menu
+7.
+
+
 //   ^ ^ ^ ^ ^ GUI
 
 //   ^ ^ ^ ^ Taskbar ^ ^ ^ 
@@ -14,17 +23,13 @@
 2. Write in Serch Box: -> super
 3.  
 
-1. Launch Run command: ->super+r
-2. Launch TaskManager: -> ctrl+shft+esc
-3. Launch n-th pinned Icon in TaskBar: ->super+<Number>
-4. 
-
 //   ^ ^ ^ ^ ^ CLI 
 
 //   ^ ^ ^ ^ PowerShell ^ ^ ^ ^
 
-1. Check hidden directries and files: Get-ChildItem -Force
-2.
+1. Launch chrome in certian URL: Start-Process chrome <URL>
+2. Check hidden directries and files: Get-ChildItem -Force
+3.
 
 
 //   ^ ^ ^ ^ Bash
@@ -58,7 +63,7 @@
 
 //   ^ ^ ^ ^ ^  Posh-Windows-Navigation
 
-1. Launch chrome in certian URL: Start-Process chrome <URL>
+
 2. 
 
 
@@ -100,6 +105,7 @@
 1. Check git version: git --version[Windows] / ?[bash]
 2. Check enabled git status: git status
 3. Launching Git tracking: git init
+4. 
 
 // & & & & & & & & & & NeoVim & & & & & & & & & &
 
