@@ -148,14 +148,11 @@ first = 1
 
 #   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^
 
+first = first + 3
+first += 3
+# no INC unary operator :(
 
 """
-
-first = first + 3;
-first += 3;
-first = first + 1;
-first++;
-++first;
 
 
 //   ^ ^ ^ ^ Order of operation evaluation ^ ^ ^ ^ 
