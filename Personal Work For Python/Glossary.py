@@ -102,10 +102,9 @@ def fun_string_formats():
     number = 1
     d_number = 2.344444
     ami_name = "Ami"
-
-    add_two_zeros = 12
-    adding_them = f"{add_two_zeros:2.f}"
-    code_modify_fstring = f"result: {20 * 30}"
+    
+    print(f"{number} {d_number:.2f}")
+    # code_modify_fstring = f"result: {20 * 30}"
 
     pass
 
