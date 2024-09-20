@@ -28,6 +28,7 @@
 //   ^ ^ ^ ^ PowerShell ^ ^ ^ ^
 
 1. Launch chrome in certian URL: Start-Process chrome <URL>
+2. Check directories and files in a directory: Get-ChildItem
 2. Check hidden directries and files: Get-ChildItem -Force
 3.
 
