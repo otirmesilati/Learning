@@ -300,13 +300,15 @@ int a = 2, b;
 
 
 //   & & & & & & Variables & & & & & &
-// finish writing primitive types ?
+// after writing primitive types, add the string formatting type flags?
 
 
 void fun_variables()
 {
-    
+
+char my_char;
 int my_int;
+long my_long;
 float my_float;
 double my_double;
 
