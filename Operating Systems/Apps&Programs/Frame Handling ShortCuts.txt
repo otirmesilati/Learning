@@ -27,7 +27,8 @@
 
 //   ^ ^ ^ ^ CMD ^ ^ ^ ^
 
-1. 
+1. Check directories and files in a directory: dir
+2. 
 
 //   ^ ^ ^ ^ PowerShell ^ ^ ^ ^
 
@@ -39,8 +40,8 @@
 
 //   ^ ^ ^ ^ Bash
 
-1. Check directorie and files: ls
-2. Check hidden directories and files: ls -la
+1. Check directories and files in a directory: ls
+2. Check hidden directories and files in a directory: ls -la
 3. 
 
 
