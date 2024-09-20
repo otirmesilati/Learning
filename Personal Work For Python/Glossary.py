@@ -128,6 +128,8 @@ def fun_string_formats():
     print(f"{number} {d_number:.2f}")
     # to the right of the decimal point? 
 
+# types? list all the primitive types?
+
 
 
 
@@ -173,7 +175,7 @@ first += 3
 # no INC unary operator :(
 
 #   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^
-# general case? * before / in C?
+# general case? * before / in Python?
 
 
 """

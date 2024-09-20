@@ -308,7 +308,6 @@ int a = 2, b;
 
 
 //   & & & & & & Variables & & & & & &
-// after writing primitive types, add the string formatting type flags?
 
 
 void fun_variables()
