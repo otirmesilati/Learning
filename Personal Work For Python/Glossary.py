@@ -103,20 +103,21 @@ def fun_string_formats():
     d_number = 2.344444
     ami_name = "Ami"
 
-    
+    # Alternative 1
+
     number_formatting = f"result: {20}"
     string_formatting = f"name is {ami_name}"
     
+    # Alternative 2
+
     number_formatting = "result: {}".format(20)
     string_formatting = "name is {}".format(ami_name)
 
+    # Alternative 3
 
-    # second = "{} {}.format"(lname, fname) # concat strings - this was a typo!!! 
+    number_formatting = "result: %d" % (20)
+    string_formatting = "name is %s" % (ami_name)
     
-    third = f"{lname} {fname}"
-    forth = "%s %s" % (lname, fname)
-    
-
 #   ^ ^ ^ ^ ^ Format Specifiers ^ ^ ^ ^ ^
 
     
