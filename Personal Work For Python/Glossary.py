@@ -102,17 +102,22 @@ def fun_string_formats():
     number = 1
     d_number = 2.344444
     ami_name = "Ami"
+
     
-    print(f"{number} {d_number:.2f}")
-    # code_modify_fstring = f"result: {20 * 30}"
+    number_formatting = f"result: {20}"
+    string_formatting = f"name is {ami_name}"
+    
 
-    pass
 
+    second = "{} {}.format"(lname, fname) # concat strings
+    third = f"{lname} {fname}"
+    forth = "%s %s" % (lname, fname)
+    
 
 #   ^ ^ ^ ^ ^ Format Specifiers ^ ^ ^ ^ ^
 
-    name_sentence = f"name is {ami_name}"
-
+    
+    print(f"{number} {d_number:.2f}")
 
 """
 
