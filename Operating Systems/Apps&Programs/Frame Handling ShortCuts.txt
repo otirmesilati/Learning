@@ -29,7 +29,8 @@
 
 1. Check directories and files in a directory: dir
 2. Change into a directory: cd <Directory Name>
-3. 
+3. Print a string: echo <String>
+4. 
 
 //   ^ ^ ^ ^ PowerShell ^ ^ ^ ^
 
