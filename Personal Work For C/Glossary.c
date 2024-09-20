@@ -35,6 +35,7 @@
 
 // iostream? stdio.h? GUI libraries?
 // pragma once? namespace ? (finish mapping this)
+// rich API? primitives and objects API? collections?
 
 
 
