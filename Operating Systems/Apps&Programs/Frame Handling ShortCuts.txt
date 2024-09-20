@@ -34,8 +34,9 @@
 
 //   ^ ^ ^ ^ Bash
 
-1. Check hidden directories and files: ls -la
-2. 
+1. Check directorie and files: ls
+2. Check hidden directories and files: ls -la
+3. 
 
 
 
