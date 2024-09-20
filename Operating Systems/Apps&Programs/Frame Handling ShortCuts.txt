@@ -4,9 +4,11 @@
 
 
 
-//   ^ ^ ^ ^ ^ Windows-Navigation ^ ^ ^ ^ ^ 
+//   & & & & & & Windows-Navigation ^ ^ ^ ^ ^ 
 
-//   ^ ^ ^ ^ Taskbar ^ ^ ^ ^ 
+//   ^ ^ ^ ^ ^ GUI
+
+//   ^ ^ ^ ^ Taskbar ^ ^ ^ 
 
 1. Focus on Hidden Items on TaskBar: -> super + b
 2. Write in Serch Box: -> super
@@ -17,8 +19,12 @@
 3. Launch n-th pinned Icon in TaskBar: ->super+<Number>
 4. 
 
+//   ^ ^ ^ ^ ^ CLI 
 
+//   ^ ^ ^ ^ PowerShell ^ ^ ^ ^
 
+1. Check hidden Folders: Get-ChildItem -Force
+2.
 
 
 
@@ -83,9 +89,9 @@
 
 
 
-//   ^ ^ ^ ^ Git ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Git ^ ^ ^ ^ ^
 
-//   ^ ^ ^ Git Commands ^ ^ ^
+//   ^ ^ ^ ^ Git Commands ^ ^ ^ ^
 
 1. Check git version: git --version[Windows] / ?[bash]
 2. 
