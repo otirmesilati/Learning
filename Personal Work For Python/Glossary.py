@@ -138,6 +138,26 @@ def fun_string_formats():
 
 #   & & & & & & Operators & & & & & & 
 # lvalue? rvalue? more values?
+# which operations are available? on what types? categories : numbers, string operators...
+# map this:
+"""
+
+1 + 2
+"Hi " + "Bye"
+2 ** 3 # 8
+10 / 3 # 3.333...
+10 // 3 # 3
+x = 60
+x /= 3 # 20
+x &= 3 # 0 bitwise operation that suprisingly outs 0
+# ^= , <<= , := - what are these?
+5 == 5 # true
+5 is 5 # error (not an object)
+x is x # true
+1 in {1, 2} # true
+{1, 2} in {1, 2} # false
+
+"""
 
 def fun_operators():
     pass

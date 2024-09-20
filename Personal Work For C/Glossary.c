@@ -170,7 +170,7 @@ printf("%d %.2lf", number, dvalue); // two digits left of decimal point
 
 
 //   & & & & & & Operators & & & & & &
-
+// which operations are available? one what types? categories : numbers, string operators...
 
 
 void fun_operators()
