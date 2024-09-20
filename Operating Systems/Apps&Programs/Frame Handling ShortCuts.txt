@@ -40,11 +40,12 @@
 4. Change into a directory: cd <Directory Name>
 5.
 
-//   ^ ^ ^ ^ Bash
+//   ^ ^ ^ ^ Bash ^ ^ ^ ^
 
 1. Check directories and files in a directory: ls
 2. Check hidden directories and files in a directory: ls -la
-3. 
+3. Print a string: echo <String>
+4. 
 
 
 
