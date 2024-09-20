@@ -179,12 +179,9 @@ int first_check, second_check;
 int first_multi_assign, second_multi_assign;
 int first_temp = 1;
 double sum_temps, second_temp = 2.00;
-//same procedure for the following code:
-//int a = 3, b = 4;
-//int result;
-//result = (float) a/b;
-//answer: a' b' (a'/b')', ((a'/b')')'
 
+int first_explicit_conv, second_explicit_conv;
+int explicit_conv_assignment;
 
 
 // need to touch on lvalue, rvalue, gvalue: 
@@ -222,7 +219,9 @@ first_check = ++second_check; // first_check = second_check = 3
 
 
 //   ^ ^ ^ ^ Multiple Assignment ^ ^ ^ ^
+
 first_multi_assign = second_multi_assign = 1;
+
 
 
 //   ^ ^ ^ ^ Arithmetical Operators: Narrowing/Widening type Casting ^ ^ ^ ^
@@ -236,6 +235,8 @@ sum_temps = first_temp + second_temp; // first is promoted to double in widening
 
 //   ^ ^ Explicit conversion - assigned to different type OR different type written in parantheses ^ ^ 
 
+first_explicit_conv = 3, second_explicit_conv = 4;
+explicit_conv_assignment = (float)(first_explicit_conv / second_explicit_conv); // both exp conv scenarios, order: 1. left temp, 2. right temp 3. float result temp, 4. int conversion of result
 
 
 /*
