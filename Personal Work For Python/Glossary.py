@@ -120,26 +120,14 @@ def fun_string_formats():
     
 #   ^ ^ ^ ^ ^ Format Specifiers ^ ^ ^ ^ ^
 
+# flags? width? length? type? custom?
+
+#   ^ ^ ^ ^ Precision ^ ^ ^ ^ 
     
     print(f"{number} {d_number:.2f}")
+    # to the right of the decimal point? 
 
 """
-
-//   ^ ^ ^ ^ Flags ^ ^ ^ ^
-
-
-
-//   ^ ^ ^ ^ Precision ^ ^ ^ ^
-
-printf("%d %.2lf", number, dvalue); // two digits left of decimal point 
-// what about two digits to the right? 
-
-//   width
-//   length field
-//   type field
-//   custom field 
-
-}
 
 
 // More Material: 
