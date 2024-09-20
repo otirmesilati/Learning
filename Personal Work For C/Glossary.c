@@ -177,6 +177,8 @@ void fun_operators()
 {
 int first_check, second_check;
 int first_multi_assign, second_multi_assign;
+int first_temp = 1, second_temp = 2;
+double sum_temps;
 
 // need to touch on lvalue, rvalue, gvalue: 
 // lecture's coverage: lval is left and changing, and rval is right, WOW!
@@ -206,7 +208,7 @@ first++;
 // what here ? what comes before what? 
 
 
-//   ^ ^ ^ ^ Prefix vs Postfix ^ ^ ^ ^
+//   ^ ^ ^ ^ Prefix vs Postfix inc/dec operator ^ ^ ^ ^
 first_check = 1;
 first_check = second_check++; // first_check = 1, second_check = 2 
 first_check = ++second_check; // first_check = second_check = 3
@@ -221,18 +223,16 @@ first_multi_assign = second_multi_assign = 1;
 
 //   ^ ^ ^ type casting/C-casting ^ ^ ^
 
-// No Automatic casting to wide in c++? a set of rules: https://www.youtube.com/watch?v=uI10H1jzw00
-// lecture's coverage: not a good one, skipped over the literal subject and jumped into combining both casting and not even mentioning it!!!! 
-// includes: implicit conversion of assigning a narrowed type (double) <- (int), and arithmetic conversion (double)/(int)
-// what it should be like: exp cast 2/2(double);    imp cast 2/2.000 (was that so hard lecturer?????)
-//   ^ ^ temps ^ ^ 
-// a tool used in type cast
-// putting wrong format variable type in printf/scanf WILL NOT GIVE TEMPS! It's undefined behaviour!
+//   ^ ^ Implicit conversion ^ ^
+
+sum_temps = first_temp + second_temp; // the sum is promoted to double in widening implicit c type conversion
+
+//   ^ ^ Explicit conversion ^ ^ 
+
+
+/*
 // Make temp variable arithmetic in tablet and map building upon these scenarios: 
-/*double a = 12.5;
-int b = 3, c = 4;
-c = a + b;
-The question to be asked in temp variable arithmetic is: how much temps in here? same or demotion or promotion temps? and who are they? answer: b' - promotion, (a + b')' - same, ((a + b')')' - demotion  
+ answer: b' - promotion, (a + b')' - same, ((a + b')')' - demotion  
 
  
 
@@ -280,6 +280,8 @@ return 0;
 
 // More Material: 
 // map from this more about casts: https://stackoverflow.com/questions/28002/regular-cast-vs-static-cast-vs-dynamic-cast
+// No Automatic casting to wide in c++? a set of rules: https://www.youtube.com/watch?v=uI10H1jzw00
+
 
 
 //   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
