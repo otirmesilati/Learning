@@ -4,6 +4,7 @@
 
 // where to put bitmasking? watch video below:
 // https://www.youtube.com/watch?v=wvtFGa6XJDU
+// Add the material from the self made "Nekodot summary" if it still exists :)
 
 
 
@@ -270,7 +271,7 @@ explicit_conv_assignment = (float)(first_explicit_conv / second_explicit_conv); 
 // false and true are exactly 0 and 1
 
 five == 2;
-// (three < five || three < zero) && five < zero;
+(three < five || three < zero);
 
 // combining logical and arith: (arithmetic operators take precedence)
 /*
