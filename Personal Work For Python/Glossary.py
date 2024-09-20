@@ -107,9 +107,12 @@ def fun_string_formats():
     number_formatting = f"result: {20}"
     string_formatting = f"name is {ami_name}"
     
+    number_formatting = "result: {}".format(20)
+    string_formatting = "name is {}".format(ami_name)
 
 
-    second = "{} {}.format"(lname, fname) # concat strings
+    # second = "{} {}.format"(lname, fname) # concat strings - this was a typo!!! 
+    
     third = f"{lname} {fname}"
     forth = "%s %s" % (lname, fname)
     
