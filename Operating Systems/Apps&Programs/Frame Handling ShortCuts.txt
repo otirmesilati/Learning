@@ -28,16 +28,16 @@
 //   ^ ^ ^ ^ CMD ^ ^ ^ ^
 
 1. Check directories and files in a directory: dir
-2. change to a directory: cd <Directory Name>
+2. Change into a directory: cd <Directory Name>
 3. 
 
 //   ^ ^ ^ ^ PowerShell ^ ^ ^ ^
 
 1. Launch chrome in certian URL: Start-Process chrome <URL>
 2. Check directories and files in a directory: Get-ChildItem
-2. Check hidden directries and files: Get-ChildItem -Force
-3.
-
+3. Check hidden directries and files: Get-ChildItem -Force
+4. Change into a directory: cd <Directory Name>
+5.
 
 //   ^ ^ ^ ^ Bash
 
