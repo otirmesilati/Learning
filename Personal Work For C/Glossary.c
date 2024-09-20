@@ -229,19 +229,7 @@ first_multi_assign = second_multi_assign = 1;
 
 //   ^ ^ ^ type casting/C-casting ^ ^ ^
 
-//   ^ ^ Implicit conversion - mismatching variables in opeartion ^ ^
-
-sum_temps = first_temp + second_temp; // first is promoted to double in widening implicit c type conversion
-
-//   ^ ^ Explicit conversion - assigned to different type OR different type written in parantheses ^ ^ 
-
-first_explicit_conv = 3, second_explicit_conv = 4;
-explicit_conv_assignment = (float)(first_explicit_conv / second_explicit_conv); // both exp conv scenarios, order: 1. left temp, 2. right temp 3. float result temp, 4. int conversion of result
-
-
 /*
-
- 
 trick long question (becuase it has undefined behaviour in it once):
 int main() {
 int n1 = 3;
@@ -270,7 +258,21 @@ n4 =
 printf(" \n");
 
 return 0;
+*/
 
+//   ^ ^ Implicit conversion - mismatching variables in opeartion ^ ^
+
+sum_temps = first_temp + second_temp; // first is promoted to double in widening implicit c type conversion
+
+//   ^ ^ Explicit conversion - assigned to different type OR different type written in parantheses ^ ^ 
+
+first_explicit_conv = 3, second_explicit_conv = 4;
+explicit_conv_assignment = (float)(first_explicit_conv / second_explicit_conv); // both exp conv scenarios, order: 1. int result temp 2. float result temp, 3. int assignment temp
+
+
+/*
+
+ 
 }
 
 
