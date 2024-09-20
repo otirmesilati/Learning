@@ -23,10 +23,14 @@
 
 //   ^ ^ ^ ^ PowerShell ^ ^ ^ ^
 
-1. Check hidden Folders: Get-ChildItem -Force
+1. Check hidden directries and files: Get-ChildItem -Force
 2.
 
 
+//   ^ ^ ^ ^ Bash
+
+1. Check hidden directories and files: ls -la
+2. 
 
 
 
