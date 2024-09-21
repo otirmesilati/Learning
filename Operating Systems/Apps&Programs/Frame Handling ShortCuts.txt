@@ -76,13 +76,14 @@
 
 //   ^ ^ ^ ^ ^  Posh-Windows-Navigation
 
-
+1.
 2. 
 
 
 //   ^ ^ ^ ^ ^ Browsers ^ ^ ^ ^ ^
 
-
+1. Copy tab: ctrl + d + entr
+2.
 
 
 
