@@ -1056,6 +1056,7 @@ private:
 
 //
 
+// tablet skills: add OO graphing? probably it has something to do with behavioral UML?
 // Three class dependency: Manager --[inherits]--> Employee --[composites]--> Date
 class My_Date
 {
