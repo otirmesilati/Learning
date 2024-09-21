@@ -1013,6 +1013,7 @@ public:
 	{
 		if (other_array) // checking either the other array is empty (null pointer check) or not
 		{
+            // entered -> there is an array -> go over and copy the int elements
 			array_length = size;
 			elements = new int[array_length];
 			for (int init_index = 0; init_index < array_length; ++init_index) this->elements[init_index] = other_array[init_index];
