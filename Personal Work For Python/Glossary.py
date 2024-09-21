@@ -307,6 +307,8 @@ short hi = 35000; // -30536 (Got to -32767 going to zero)
 
 //   ^ ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^ ^
 //   ^ ^ ^ ^ Global Variables ^ ^ ^ ^
+// nonlocal/global keywords
+
 /* Lecture coverage: 
 1. Example one: changing global value in main
 
