@@ -1023,6 +1023,12 @@ def composed_function(composing, composed, value):
 #   ^ ^ ^ ^ ^ Pure Functions ^ ^ ^ ^ ^
 
 
+# More Material:
+
+# All subjects: https://www.google.com/search?q=functional+programming+principles&rlz=1C1GCEU_enIL934IL934&oq=functional+programming+pri&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyBggBEEUYOTIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIICAcQABgWGB4yCAgIEAAYFhgeMggICRAAGBYYHtIBCDU3MzZqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8
+# transparency thing: https://medium.com/swlh/understand-the-key-functional-programming-concepts-bca440f1bcd6
+# On pure functions: https://en.wikipedia.org/wiki/Pure_function
+
 #   & & & & & & Functional Design & & & & & &
 
 # pipeline somwhere? 
