@@ -1031,3 +1031,13 @@ black_box_summing()
 #   & & & & & & Functional Design & & & & & &
 
 # pipeline somwhere? 
+
+
+
+
+
+
+
+
+
+#   & & & & & & Object Oriented Design & & & & & &  
