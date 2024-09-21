@@ -1067,7 +1067,7 @@ public:
 	My_Date(int year, int month, int day): year(year), month(month), day(day) {}
 	My_Date(const My_Date& other_date): My_Date(other_date.year, other_date.month, other_date.day){} // C'tor delegation / chaining 
 
-	~My_Date() {}
+	~My_Date() {} // no dynamically allocated attributes
 
 	My_Date& operator=(const My_Date& other_date)
 	{
