@@ -1035,7 +1035,8 @@ public:
 			elements = new int[array_length];
 			for (int copy_index = 0; copy_index < array_length; ++copy_index) elements[copy_index] = other_array.elements[copy_index];
 		}
-		return *this;
+
+		return *this; // return the value -> can allow for multi assignment (pipeline behaviour)
 	}
 
 	void print() { cout << "array is: "; for (int printing_index = 0; printing_index < array_length; ++printing_index) { cout << elements[printing_index] << " "; } cout << endl; }
