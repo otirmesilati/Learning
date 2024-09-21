@@ -1101,7 +1101,7 @@ class Employee1
 
 public:
 
-	Employee1(): full_name(nullptr), hiring_date(), id(NULL), department_id(NULL) {}
+	Employee1(): full_name(nullptr), hiring_date(), id(NULL), department_id(NULL) {} // attribute cleanup //
 	Employee1(const Employee1& other_employee) : full_name(nullptr), hiring_date(other_employee.hiring_date), id(other_employee.id), department_id(other_employee.department_id)
 	{
 		if (other_employee.full_name)
