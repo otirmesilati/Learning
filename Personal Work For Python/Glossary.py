@@ -908,3 +908,10 @@ return f*s;
 """
 
 #   & & & & & & Functional Design & & & & & &
+
+# first order
+
+# composition functions
+
+# pure functions
+
