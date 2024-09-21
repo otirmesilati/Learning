@@ -1009,7 +1009,7 @@ public:
 
 	MyArray(): elements(nullptr), array_length(NULL){} // pointers: init list to null (avoid dangling pointers)
     // NULL = 0, nullptr has a std::nullptr_t type, it's implicitly convertible to any pointer type
-	MyArray(int* other_array, int size) : MyArray() // using the defualt C'tor for the first allocation handling //
+	MyArray(int* other_array, int size) : MyArray() // invoking the default C'tor as a "cleanup" procedure //
 	{
 		if (other_array)
 		{
