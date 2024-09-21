@@ -1021,7 +1021,7 @@ public:
 	}
 	MyArray(const MyArray& other_array): MyArray(other_array.elements, other_array.array_length){} // C'tor delegation/chaining again
 
-	~MyArray() { delete elements; }
+	~MyArray() { delete elements; } // D'tor deletes - there are dynamic allocations
 
 	MyArray& operator=(const MyArray& other_array)
 	{
