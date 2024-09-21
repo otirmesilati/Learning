@@ -1,11 +1,4 @@
-// C Online Emulator: https://www.onlinegdb.com/online_c_compiler
-
-
-
-// where to put bitmasking? watch video below:
-// https://www.youtube.com/watch?v=wvtFGa6XJDU
-// Add the material from the self made "Nekodot summary" if it still exists :)
-
+// C++ Online Emulator: https://www.programiz.com/cpp-programming/online-compiler/
 
 
 
