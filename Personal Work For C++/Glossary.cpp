@@ -933,6 +933,29 @@ return f*s;
 
 // < - - - - - Header file - - - - - > //
 
+/*
+class MyPoint4
+{
+
+public:
+
+ 	MyPoint4(int x=NULL, int y=NULL): x(x), y(y) {}
+	MyPoint4(const MyPoint4& other_point):MyPoint4(other_point.x, other_point.y) {}
+
+	~MyPoint4() {}
+
+	friend bool equals(const MyPoint4&, const MyPoint4&);
+	friend class MyLine2;
+
+	void print() { cout << "(" << x << "," << y << ")"; }
+
+private:
+
+	int x, y;
+
+};*/
+
+
 // < - - - - - Cpp file - - - - - > //
 
 
