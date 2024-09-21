@@ -912,19 +912,13 @@ return f*s;
 
 #   ^ ^ ^ ^ ^ First Order Function ^ ^ ^ ^ ^
 
-def first_order_functions():
-
-
+def first_order_functions(x, y, fun): # Getting the functions as arguments 
+    
+    result = fun(x, y)
+    return result
 
     """
 
-
-
-
-
-
-def composing_functions_version_2(first_logic, second_logic):
-    return lambda value: first_logic(second_logic(value))
 
 
 # as the error says: instead os assigning a lambda, a function should have a name for assignment
@@ -1059,6 +1053,9 @@ def iterative_fibonacci(number_of_cell_in_the_sequence):
     for i in range(number_of_cell_in_the_sequence):
         previous, current = current, previous + current
     return previous
+
+def composing_functions_version_2(first_logic, second_logic):
+    return lambda value: first_logic(second_logic(value))
 
 
 """
