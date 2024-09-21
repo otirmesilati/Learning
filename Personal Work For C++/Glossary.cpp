@@ -1025,7 +1025,7 @@ public:
 
 	MyArray& operator=(const MyArray& other_array) // same with CC'tor - Deep copy required
 	{
-		if (this != &other_array)
+		if (this != &other_array) // checking for double pointing  
 		{
 			array_length = other_array.array_length;
 			delete elements;
