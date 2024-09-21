@@ -162,16 +162,16 @@ x is x # true
 """
 
 def fun_operators():
-    pass
+    
 
 #   ^ ^ ^ ^ ^ Binding operator ^ ^ ^ ^ ^
 
-first = 1
+    first = 1
 
 #   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^
 
-first = first + 3
-first += 3
+    first = first + 3
+    first += 3
 # no INC unary operator :(
 
 #   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^
@@ -907,11 +907,13 @@ return f*s;
 
 """
 
+#   ^ ^ ^ ^ ^ First Order Function ^ ^ ^ ^ ^
+
+#   ^ ^ ^ ^ ^ Function Composition ^ ^ ^ ^ ^
+
+#   ^ ^ ^ ^ ^ Pure Function ^ ^ ^ ^ ^
+
+
 #   & & & & & & Functional Design & & & & & &
 
-# first order
-
-# composition functions
-
-# pure functions
 
