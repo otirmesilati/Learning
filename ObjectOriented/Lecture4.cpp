@@ -121,7 +121,8 @@ class MyLine2
 public:
 
 	MyLine2(): starting_point(), ending_point() { }
-	MyLine2(const MyPoint4& first_point, const MyPoint4& second_point): starting_point(first_point), ending_point(second_point) {}
+	
+	MyLine2(const MyPoint4& first_point, const MyPoint4& second_point): starting_point(first_point), ending_point(second_point) {} // Composed points - tight copled to the class, when the object releases, so do they // 
 
 	~MyLine2() {}
 
@@ -131,7 +132,7 @@ public:
 
 private:
 
-	MyPoint4 starting_point, ending_point;
+	MyPoint4 starting_point, ending_point; 
 
 };
 
