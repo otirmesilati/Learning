@@ -82,8 +82,9 @@
 
 //   ^ ^ ^ ^ ^ Browsers ^ ^ ^ ^ ^
 
-1. Copy tab: ctrl + d + entr
-2.
+1. Duplicate tab: ctrl + d + entr
+2. Move tab left/right: ctrl + shft + PgUp/PgDn
+3. 
 
 
 
