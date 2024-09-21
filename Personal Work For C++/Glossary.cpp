@@ -1102,6 +1102,9 @@ class Employee1
 public:
 
 	Employee1(): full_name(nullptr), hiring_date(), id(NULL), department_id(NULL) {} // attribute cleanup //
+
+    // No delegation C'tor? :'(
+
 	Employee1(const Employee1& other_employee) : full_name(nullptr), hiring_date(other_employee.hiring_date), id(other_employee.id), department_id(other_employee.department_id) // dangling pointer handling //
 	{
 		if (other_employee.full_name)
