@@ -923,8 +923,15 @@ return f*s;
 
 // -------------------------------------------//
 
-// < - - - - - Header file - - - - - > //
 
+
+
+
+
+
+
+
+// < - - - - - Header file - - - - - > //
 
 class MyPoint4
 {
@@ -956,11 +963,9 @@ private: // Data encapsulation: Abstraction + Access strict Message Passing
 inline bool equals(const MyPoint4& first_point, const MyPoint4& second_point) { return first_point.x == second_point.x && first_point.y == second_point.y; }
 
 
+// < - - - - - Header file - - - - - > //
 
-
-
-
-
+// < - - - - - Cpp file - - - - - > //
 
 
 
