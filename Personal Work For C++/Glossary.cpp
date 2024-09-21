@@ -1007,7 +1007,7 @@ class MyArray
 {
 public:
 
-	MyArray(): elements(nullptr), array_length(NULL){}
+	MyArray(): elements(nullptr), array_length(NULL){} // good practice - always set pointer attributes to NULL upon first use
 	MyArray(int* other_array, int size) : MyArray() // using the defualt C'tor for the first allocation handling //
 	{
 		if (other_array)
