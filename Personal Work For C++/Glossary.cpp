@@ -1054,7 +1054,7 @@ private:
 // empty! //
 
 
-//
+// < - - - - - Header file - - - - - > //
 
 // tablet skills: add OO graphing? probably it has something to do with behavioral UML?
 // Three class dependency: Manager --[inherits]--> Employee --[composites]--> Date
@@ -1085,6 +1085,12 @@ private:
 	int year, month, day;
 
 };
+
+
+// < - - - - - CPP file - - - - - > //
+
+
+// < - - - - - Header file - - - - - > //
 
 
 class Employee1
@@ -1133,6 +1139,13 @@ private:
 	short department_id;
 
 };
+
+
+// < - - - - - CPP file - - - - - > //
+
+
+// < - - - - - Header file - - - - - > //
+
 
 class Manager1 // : public Employee1 to inherit from empoyee
 {
