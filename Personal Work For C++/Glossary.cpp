@@ -1137,7 +1137,7 @@ public:
 private:
 
 	char* full_name;
-	My_Date hiring_date;
+	My_Date hiring_date; // compose/agregate/associate relation (dependent on C'tors mostly)
 	int id;
 	short department_id;
 
