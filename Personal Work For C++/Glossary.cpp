@@ -931,6 +931,8 @@ class MyPoint4
 
 public:
 
+    // API mentioned in the header file: 4 C'tors, included: default C'tor and a CC'tor + 1 D'tor
+
  	MyPoint4(int x=NULL, int y=NULL): x(x), y(y) {}
 	MyPoint4(const MyPoint4& other_point):MyPoint4(other_point.x, other_point.y) {}
 
