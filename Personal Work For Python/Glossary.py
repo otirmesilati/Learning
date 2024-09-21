@@ -1015,12 +1015,12 @@ black_box_summing()
 
 #   ^ ^ ^ ^ ^ Function Composition ^ ^ ^ ^ ^
 
-def composed_function(first_logic, second_logic, value):
+def composed_function(composing, composed, value):
     
-    return first_logic(second_logic(value))
+    return composing(composed(value))
 
 
-#   ^ ^ ^ ^ ^ Pure Function ^ ^ ^ ^ ^
+#   ^ ^ ^ ^ ^ Pure Functions ^ ^ ^ ^ ^
 
 
 #   & & & & & & Functional Design & & & & & &
