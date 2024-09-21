@@ -1007,7 +1007,8 @@ class MyArray
 {
 public:
 
-	MyArray(): elements(nullptr), array_length(NULL){} // good practice - always set pointer attributes to NULL upon first use
+	MyArray(): elements(nullptr), array_length(NULL){} // pointers: init list to null (avoid dangling pointers)
+    // NULL = 0, nullptr has a std::nullptr_t type, it's implicitly convertible to any pointer type
 	MyArray(int* other_array, int size) : MyArray() // using the defualt C'tor for the first allocation handling //
 	{
 		if (other_array)
