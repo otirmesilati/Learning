@@ -931,6 +931,8 @@ return f*s;
 
 
 
+// defs? ifndefs?
+
 // < - - - - - Header file - - - - - > //
 
 class MyPoint4
@@ -997,6 +999,57 @@ inline void MyLine2::shrink()
 // < - - - - - Cpp file - - - - - > //
 
 // empty! //
+
+
+// < - - - - - Header file - - - - - > //
+
+class MyArray
+{
+public:
+
+	MyArray(): elements(nullptr), array_length(NULL){}
+	MyArray(int* other_array, int size) : MyArray() // using the defualt C'tor for the first allocation handling //
+	{
+		if (other_array)
+		{
+			array_length = size;
+			elements = new int[array_length];
+			for (int init_index = 0; init_index < array_length; ++init_index) this->elements[init_index] = other_array[init_index];
+		}
+	}
+	MyArray(const MyArray& other_array): MyArray(other_array.elements, other_array.array_length){}
+
+	~MyArray() { delete elements; }
+
+	MyArray& operator=(const MyArray& other_array)
+	{
+		if (this != &other_array)
+		{
+			array_length = other_array.array_length;
+			delete elements;
+			elements = new int[array_length];
+			for (int copy_index = 0; copy_index < array_length; ++copy_index) elements[copy_index] = other_array.elements[copy_index];
+		}
+		return *this;
+	}
+
+	void print() { cout << "array is: "; for (int printing_index = 0; printing_index < array_length; ++printing_index) { cout << elements[printing_index] << " "; } cout << endl; }
+
+private:
+
+	int* elements;
+	int array_length;
+
+};
+
+
+// < - - - - - Cpp file - - - - - > //
+
+
+
+
+
+
 
 
 
