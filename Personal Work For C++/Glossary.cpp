@@ -1009,7 +1009,7 @@ public:
 
 	MyArray(): elements(nullptr), array_length(NULL){} // pointers: init list to null (avoid dangling pointers)
     // NULL = 0, nullptr has a std::nullptr_t type, it's implicitly convertible to any pointer type
-	MyArray(int* other_array, int size) : MyArray() // invoking the default C'tor as a "cleanup" procedure //
+	MyArray(int* other_array, int size) : MyArray() // C'tor chaining: invoking the default C'tor as a "cleanup" procedure //
 	{
 		if (other_array) // checking either the other array is empty (null pointer check) or not
 		{
@@ -1019,7 +1019,7 @@ public:
 			for (int init_index = 0; init_index < array_length; ++init_index) this->elements[init_index] = other_array[init_index]; // deep copy the elements
 		}
 	}
-	MyArray(const MyArray& other_array): MyArray(other_array.elements, other_array.array_length){}
+	MyArray(const MyArray& other_array): MyArray(other_array.elements, other_array.array_length){} // C'tor chaining again
 
 	~MyArray() { delete elements; }
 
