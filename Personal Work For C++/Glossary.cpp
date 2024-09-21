@@ -1078,7 +1078,8 @@ public:
 			month = other_date.month;
 			day = other_date.day;
 		}
-		return *this;
+
+		return *this; // pipeline of multi-asignment
 	}
 
 private:
