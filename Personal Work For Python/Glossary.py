@@ -1025,8 +1025,8 @@ black_box_summing()
 #   ^ ^ ^ ^ ^ Function Composition ^ ^ ^ ^ ^
 
 def composed_function(first_logic, second_logic, value):
-    def composed_return():
-        return first_logic(second_logic(value))
+    
+    return first_logic(second_logic(value))
 
 
 #   ^ ^ ^ ^ ^ Pure Function ^ ^ ^ ^ ^
