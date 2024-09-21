@@ -18,7 +18,6 @@
 /*   < < < < < < < <   Language Principles   > > > > > > > >   */
 
 
-#define CRT_SECURE_NO_WARNINGS
 
 
 
@@ -29,7 +28,7 @@
 
 
 //   & & & & & & Libraries & & & & & &
-#include <stdio.h> // C IO Library Files 
+#include <iostream> // C IO Library Files 
 
 
 
