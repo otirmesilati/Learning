@@ -1027,8 +1027,11 @@ public:
 	{
 		if (this != &other_array) // checking for double pointing  
 		{
+            // first part - wipe out existing data
 			array_length = other_array.array_length;
 			delete elements;
+
+            // second part - do the deep copy
 			elements = new int[array_length];
 			for (int copy_index = 0; copy_index < array_length; ++copy_index) elements[copy_index] = other_array.elements[copy_index];
 		}
