@@ -1023,7 +1023,7 @@ public:
 
 	~MyArray() { delete elements; } // D'tor deletes - there are dynamic allocations
 
-	MyArray& operator=(const MyArray& other_array)
+	MyArray& operator=(const MyArray& other_array) // same with CC'tor - Deep copy required
 	{
 		if (this != &other_array)
 		{
