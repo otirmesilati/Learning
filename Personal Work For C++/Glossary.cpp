@@ -1056,8 +1056,7 @@ private:
 
 //
 
-// Three class dependency
-
+// Three class dependency: Manager --[inherits]--> Employee --[composites]--> Date
 class My_Date
 {
 
