@@ -943,7 +943,7 @@ public:
 
 	void print() { cout << "(" << x << "," << y << ")"; }  // Implicitly inlining the print function
 
-private:
+private: // Data encapsulation: Abstraction + Access strict Message Passing
 
 	int x, y;
 
