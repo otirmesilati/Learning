@@ -934,7 +934,7 @@ return f*s;
 // defs? ifndefs?
 
 // < - - - - - Header file - - - - - > //
-
+// Three class dependency: Line --[Friends + Composites]--> point
 class MyPoint4
 {
 
