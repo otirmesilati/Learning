@@ -126,7 +126,7 @@ public:
 
 	~MyLine2() {}
 
-	void shrink(); // a function for setting the to point to be duplicate as from point //
+	void shrink();
 
 	void print() { cout << "( "; starting_point.print(); cout << " , "; ending_point.print(); cout << " )" << endl; }
 

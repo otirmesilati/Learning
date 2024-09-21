@@ -972,7 +972,7 @@ class MyLine2
 public:
 
 	MyLine2(): starting_point(), ending_point() { }
-	MyLine2(const MyPoint4& first_point, const MyPoint4& second_point): starting_point(first_point), ending_point(second_point) {}
+	MyLine2(const MyPoint4& first_point, const MyPoint4& second_point): starting_point(first_point), ending_point(second_point) {} // Composed points - tight copled to the class, when the object releases, so do they // 
 
 	~MyLine2() {}
 
@@ -988,7 +988,7 @@ private:
 
 inline void MyLine2::shrink()
 {
-	ending_point.x = starting_point.x;
+	ending_point.x = starting_point.x; // Has access to the private hidden data
 	ending_point.y = starting_point.y;
 }
 
