@@ -873,6 +873,8 @@ return f*s;
 
 */
 
+// function nesting
+
 //   ^ ^ ^ ^ Recursive Functions ^ ^ ^ ^
 
 //inlining functions
@@ -905,9 +907,14 @@ return f*s;
 
 """
 
+
 #   ^ ^ ^ ^ ^ First Order Function ^ ^ ^ ^ ^
 
-"""
+def first_order_functions():
+
+
+
+    """
 
 
 def iterative_fibonacci(number_of_cell_in_the_sequence):
