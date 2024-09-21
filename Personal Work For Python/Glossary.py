@@ -919,9 +919,6 @@ def first_order_functions():
 
 
 
-def composing_functions_version_1(first_logic, second_logic, value):
-    def composed_return():
-        return first_logic(second_logic(value))
 
 
 def composing_functions_version_2(first_logic, second_logic):
@@ -1027,12 +1024,19 @@ black_box_summing()
 
 #   ^ ^ ^ ^ ^ Function Composition ^ ^ ^ ^ ^
 
+def composed_function(first_logic, second_logic, value):
+    def composed_return():
+        return first_logic(second_logic(value))
+
+
 #   ^ ^ ^ ^ ^ Pure Function ^ ^ ^ ^ ^
 
 
 #   & & & & & & Functional Design & & & & & &
 
 # pipeline somwhere? 
+
+# abstraction - nested function dispatch functions
 
 
 
@@ -1043,6 +1047,8 @@ black_box_summing()
 
 
 #   & & & & & & Object Oriented Design & & & & & &  
+
+
 
 """ More Mapping needed:
 
