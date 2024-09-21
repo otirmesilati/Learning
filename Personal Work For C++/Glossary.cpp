@@ -1107,8 +1107,9 @@ public:
 
 	Employee1(const Employee1& other_employee) : full_name(nullptr), hiring_date(other_employee.hiring_date), id(other_employee.id), department_id(other_employee.department_id) // dangling pointer handling //
 	{
-		if (other_employee.full_name)
+		if (other_employee.full_name) // null pointer check
 		{
+            // Deep copy: find the length through while (don't know how long is name is), and of course copy cells //
 			int name_length = 0;
 			while (other_employee.full_name[name_length] != '\0') ++name_length;
 			full_name = new char[name_length];
