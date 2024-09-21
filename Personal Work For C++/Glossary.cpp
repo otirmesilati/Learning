@@ -1065,7 +1065,7 @@ public:
 
 	My_Date(): year(2020), month(2), day (2) {}
 	My_Date(int year, int month, int day): year(year), month(month), day(day) {}
-	My_Date(const My_Date& other_date): year(other_date.year), month(other_date.month), day(other_date.day) {}
+	My_Date(const My_Date& other_date): My_Date(other_date.year, other_date.month, other_date.day){} // C'tor delegation / chaining 
 
 	~My_Date() {}
 
