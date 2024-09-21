@@ -1037,7 +1037,7 @@ public:
 
 private:
 
-	int* elements;
+	int* elements; // a dynamically meant to be allocated element - can be either AGGREGATED or COMPOSED
 	int array_length;
 
 };
