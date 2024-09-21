@@ -941,7 +941,7 @@ public:
 	friend bool equals(const MyPoint4&, const MyPoint4&); // friend langauge tool - delegating the equals functionality permissions outside 
 	friend class MyLine2;  // Delegating Permissions to the my line class
 
-	void print() { cout << "(" << x << "," << y << ")"; }
+	void print() { cout << "(" << x << "," << y << ")"; }  // Implicitly inlining the print function
 
 private:
 
