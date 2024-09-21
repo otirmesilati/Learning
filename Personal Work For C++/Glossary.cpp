@@ -11,7 +11,7 @@
 /*   < < < < < < < <   Language Principles   > > > > > > > >   */
 
 
-
+#pragma once // have the header included once at maximum
 
 
 
@@ -22,7 +22,7 @@
 
 //   & & & & & & Libraries & & & & & &
 #include <iostream> // C IO Library Files 
-
+using namespace std;
 
 
 // iostream? stdio.h? GUI libraries?
@@ -925,7 +925,7 @@ return f*s;
 
 // < - - - - - Header file - - - - - > //
 
-/*
+
 class MyPoint4
 {
 
@@ -945,7 +945,7 @@ private:
 
 	int x, y;
 
-};*/
+};
 
 
 // < - - - - - Cpp file - - - - - > //
