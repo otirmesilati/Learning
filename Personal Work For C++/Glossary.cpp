@@ -952,6 +952,8 @@ private: // Data encapsulation: Abstraction + Access strict Message Passing
 
 // < - - - - - Cpp file - - - - - > //
 
+// Explicit inline the equals implementation
+inline bool equals(const MyPoint4& first_point, const MyPoint4& second_point) { return first_point.x == second_point.x && first_point.y == second_point.y; }
 
 
 
