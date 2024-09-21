@@ -1,16 +1,51 @@
-#pragma once
-#include <iostream>
-using namespace std;
+// C Online Emulator: https://www.onlinegdb.com/online_c_compiler
 
 
-//   & & & & & & Libraries & & & & & &
-// iostream? stdio.h? GUI libraries?
-// pragma once? namespace ? (finish mapping this)
-
-//   & & & & & Comments & & & & &
 
 // where to put bitmasking? watch video below:
 // https://www.youtube.com/watch?v=wvtFGa6XJDU
+// Add the material from the self made "Nekodot summary" if it still exists :)
+
+
+
+
+
+
+
+
+
+
+/*   < < < < < < < <   Language Principles   > > > > > > > >   */
+
+
+#define CRT_SECURE_NO_WARNINGS
+
+
+
+
+
+
+
+
+
+//   & & & & & & Libraries & & & & & &
+#include <stdio.h> // C IO Library Files 
+
+
+
+// iostream? stdio.h? GUI libraries?
+// pragma once? namespace ? (finish mapping this)
+// rich API? primitives and objects API? collections?
+
+
+
+
+
+
+
+
+
+
 //   & & & & & & Comments & & & & & &
 
 // Single Line comment
@@ -20,18 +55,272 @@ comments
 */
 
 /* Nested
-// Single line one kind //
-and multi line 
-for other kind of comments */
-
-void fun_hi(){cout << "Hi" /* Comments within statemenets */ << "bye";}
-
-//   & & & & & & Literals (defined literal operators) & & & & & &
+// Comments //
+are available */
 
 
-void fun_literals(){ // Literals dependent on scopes within function
 
-// Going over the available space for literals will have a reseting effect:
+
+
+
+
+
+
+//   & & & & & & Literals (+ defined unary literal operators) & & & & & &
+
+
+void fun_literals(){ 
+
+
+//   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
+
+123;
+// no underscore format for numbers like 1,234! 
+-123;
+
+
+//  ^ ^ ^ ^ Coding Modifiers ^ ^ ^ ^
+
+//  ^ ^ ^ Radixed modifier ^ ^ ^
+
+0x12AB;
+012; // octal literals written without o //
+0b110011;
+
+//   ^ ^ ^ Un-Signed Modifier Suffix operators ^ ^ ^
+
+1u;
+-2U; // will work sometimes and sometimes not: will be translated: 2's complement on the value -> new unsigned value
+
+//   ^ ^ ^ Long Modifier Suffix operators
+
+1l;
+-2L;
+3ll;
+4LL;
+
+//   ^ ^ ^ ^ ^ Floats ^ ^ ^ ^ ^
+
+1.2;
+-3.4;
+
+//   ^ ^ ^ ^ Sceientific Notation Encoding  ^ ^ ^ ^
+
+1e2;
+1e-3;
+1e4L;   // combining //
+
+}
+
+
+
+
+
+// More Material:
+// https://web.archive.org/web/20130807052041/http://cpp.comsci.us/etymology/literals.html
+// https://en.cppreference.com/w/cpp/language/floating_literal //
+
+
+
+
+
+
+
+
+
+//   & & & & & & String Formatting & & & & & &
+
+
+
+void fun_string_formats(){
+
+int number = 1;
+double dvalue = 2.344444;
+int undef_behav = 4;
+
+
+//   ^ ^ ^ ^ ^ Format Specifier Fields ^ ^ ^ ^ ^
+
+//   ^ ^ ^ ^ Flags ^ ^ ^ ^
+
+
+
+//   ^ ^ ^ ^ Precision ^ ^ ^ ^
+
+printf("%d %.2lf", number, dvalue); // two digits left of decimal point 
+// what about two digits to the right? 
+
+
+//   width
+//   ^ ^ ^ ^ Length ^ ^ ^ ^
+
+printf("%ld", 1); // long
+printf("%lf", 2.34); // double
+
+//   ^ ^ ^ ^ Types ^ ^ ^ ^
+
+printf("%c", 'a'); // char
+printf("%d", 1); // int
+printf("%f", 2.3); // float
+
+
+
+printf("%c", undef_behav); // wrong type field - undefined behaviour!
+
+//   custom field 
+
+}
+
+
+// More Material: 
+// complete this section from here: https://en.wikipedia.org/wiki/Printf 
+
+
+
+
+
+
+
+
+
+//   & & & & & & Operators & & & & & &
+// which operations are available? one what types? categories : numbers, string operators...
+
+
+void fun_operators()
+{
+int first_check, second_check;
+int first_multi_assign, second_multi_assign;
+int first_temp = 1;
+double sum_temps, second_temp = 2.00;
+int five = 5, three = 3, zero = 0;
+
+int first_explicit_conv, second_explicit_conv;
+int explicit_conv_assignment;
+
+
+// need to touch on lvalue, rvalue, gvalue: 
+// lecture's coverage: lval is left and changing, and rval is right, WOW!
+
+
+
+// More Material:
+// for the wiki tldr: https://en.wikipedia.org/wiki/Value_(computer_science)
+// for the famous lval/rval/gval/xval graph: https://stackoverflow.com/questions/3601602/what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues
+
+
+
+//   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
+int first = 1;
+first = 2;
+
+
+//   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^ ^
+first = first + 3;
+first += 3;
+first = first + 1;
+first++;
+++first;
+
+
+//   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^ 
+// what here ? what comes before what? * before / in C?  
+
+
+//   ^ ^ ^ ^ Prefix vs Postfix inc/dec operator ^ ^ ^ ^
+first_check = 1;
+first_check = second_check++; // first_check = 1, second_check = 2 
+first_check = ++second_check; // first_check = second_check = 3
+
+
+//   ^ ^ ^ ^ Multiple Assignment ^ ^ ^ ^
+
+first_multi_assign = second_multi_assign = 1;
+
+
+
+//   ^ ^ ^ ^ Arithmetical Operators: Narrowing/Widening type Casting ^ ^ ^ ^
+
+
+//   ^ ^ ^ type casting/C-casting ^ ^ ^
+
+//   ^ ^ Implicit conversion - mismatching variables in opeartion ^ ^
+
+sum_temps = first_temp + second_temp; // first is promoted to double in widening implicit c type conversion
+
+//   ^ ^ Explicit conversion - assigned to different type OR different type written in parantheses ^ ^ 
+
+first_explicit_conv = 3, second_explicit_conv = 4;
+explicit_conv_assignment = (float)(first_explicit_conv / second_explicit_conv); // both exp conv scenarios, order: 1. int result temp 2. float result temp, 3. int assignment temp
+
+
+
+
+ 
+
+
+
+// More Material: 
+// map from this more about casts: https://stackoverflow.com/questions/28002/regular-cast-vs-static-cast-vs-dynamic-cast
+// No Automatic casting to wide in c++? a set of rules: https://www.youtube.com/watch?v=uI10H1jzw00
+// Make temp variable arithmetic in tablet and map building upon these scenarios: 
+// answer: b' - promotion, (a + b')' - same, ((a + b')')' - demotion  
+
+
+
+
+
+
+
+
+
+//   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
+// order of operations ?
+// == and != are the least in the order of operations, maybe finish the operations order ladder?
+// false and true are exactly 0 and 1
+
+five == 2;
+(three < five || three < zero);
+
+// combining logical and arith: (arithmetic operators take precedence)
+/*
+lecture's example:
+int x = 2;
+int y = (x > 5) + 1; // (x > 5) -> 0 -> 0 + 1 = 1
+
+int a = 2, b;
+((b = 2) == a) // (b = 2) -> (2) -> 2 == 2 -> 1, trick question: a wierd behaviour of c family languages - assignment returns the assign value, acts as arithmetic
+
+
+
+//   Overloading literal operators: https://en.cppreference.com/w/cpp/language/user_literal
+
+*/
+}
+
+
+
+
+
+
+
+
+
+
+//   & & & & & & Variables & & & & & &
+
+
+void fun_variables()
+{
+
+char my_char;
+int my_int;
+long my_long;
+float my_float;
+double my_double;
+
+
+
 // unsigned short cap: 65535
 unsigned short hi = 65000; // 65,00
 unsigned short hi = 66000; // 464 (Got back to zero going up)
@@ -40,175 +329,6 @@ unsigned short hi = 66000; // 464 (Got back to zero going up)
 short hi = 32000; // 32000
 short hi = 35000; // -30536 (Got to -32767 going to zero)
 
-// https://web.archive.org/web/20130807052041/http://cpp.comsci.us/etymology/literals.html
-
-
-//   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
-123;
-// no underscore format! 
--34;
-
-
-//  ^ ^ ^ ^ Integers: Coding Modifiers ^ ^ ^ ^
-
-0xF5;
-012; // octal literals written without o //
-0b110;
-
-//  ^ ^ ^ ^ Integers: Signed/Long Conding Modifying Suffixes  ^ ^ ^ ^
-
-1u;
--2U; // will work sometimes and sometimes not: will be translated: 2's complement on the value -> new unsigned value
-3l;
--4L;
-5ll;
-6LL;
-
-//   ^ ^ ^ ^ ^ Floats ^ ^ ^ ^ ^
-
-//   ^ ^ ^ ^ Floats: Sceientific Notation Encoding  ^ ^ ^ ^
-1e2;
-1e-3;
-
-// can combine exponent and long encondings //
-1e2l;
-
-
-
-// https://en.cppreference.com/w/cpp/language/floating_literal //
-
-}
-
-
-//   & & & & & & String Formatting & & & & & &
-//   ^ ^ ^ ^ ^ Format Specifiers ^ ^ ^ ^ ^
-//   ^ ^ ^ ^ Format Specifiers: parameter ^ ^ ^ ^ ^
-//   flags
-//   width
-//   precision (the .2f goes here )
-//   length field
-//   type field
-//   custom field 
-/* The lecture's coverage: formatting to two places after the dot:
-int main()
-{
-
-int number = 3;
-double dvalue = 2.3484444;
-printf("The first value %d, second value %.2lf.")
-
-}
-
-
-*/
-
-
-
-//   & & & & & & Operators & & & & & &
-// need to touch on lvalue, rvalue, gvalue: 
-// for the wiki tldr: https://en.wikipedia.org/wiki/Value_(computer_science)
-// for the famous lval/rval/gval/xval graph: https://stackoverflow.com/questions/3601602/what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues
-// lecture's coverage: lval is left and changing, and rval is right, WOW!
-
-//   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
-// lecture's coverage: int x = 5;
-// x = x + 2; x += 2
-//   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^ ^
-// x + 2;
-// x++;
-// ++x;
-/* Lecture's example: 
-int a = 5, b;
-b = ++a; // a = b = 6;
-b = a++; // a = 6, b = 5
-
-//   ^ ^ ^ ^ multiple assignment ^ ^ ^ ^
-// lecture's coverage: int x = 1;
-int y = 2;
-x = y = 3; 
-
-*/
-
-//   ^ ^ ^ ^ Arithmetical Operators: Narrowing/Widening type Casting ^ ^ ^ ^
-// map from this more about casts: https://stackoverflow.com/questions/28002/regular-cast-vs-static-cast-vs-dynamic-cast
-//   ^ ^ ^ type casting/C-casting ^ ^ ^
-// No Automatic casting to wide in c++? a set of rules: https://www.youtube.com/watch?v=uI10H1jzw00
-// lecture's coverage: not a good one, skipped over the literal subject and jumped into combining both casting and not even mentioning it!!!! 
-// includes: implicit conversion of assigning a narrowed type (double) <- (int), and arithmetic conversion (double)/(int)
-// what it should be like: exp cast 2/2(double);    imp cast 2/2.000 (was that so hard lecturer?????)
-//   ^ ^ temps ^ ^ 
-// a tool used in type cast
-// putting wrong format variable type in printf/scanf WILL NOT GIVE TEMPS! It's undefined behaviour!
-// Make temp variable arithmetic in tablet and map building upon these scenarios: 
-/* double a = 12.5;
-int b = 3, c = 4;
-c = a + b;
-The question to be asked in temp variable arithmetic is: how much temps in here? same or demotion or promotion temps? and who are they? answer: b' - promotion, (a + b')' - same, ((a + b')')' - demotion  
-
-//   ^ ^ ^ Object Cast ^ ^ ^ 
-// up casting
-// down casting
-
-same procedure for the following code:
-int a = 3, b = 4;
-int result;
-result = (float) a/b;
-answer: a' b' (a'/b')', ((a'/b')')'
-
-trick long question (becuase it has undefined behaviour in it once):
-int main() {
-int n1 = 3;
-int n2 = 15;
-float n3 = 5.7;
-float n4;
-
-print(" %f \n", n3); // no temps, 5.700000 is the correct answer
-print(" %d \n", n3); // unmatched format specifier - undefined behaviour, underfined answer
-sum = (int)13.2; // (13.2)' -> ((13.2)')'
-print(" %f \n", n3); //  13.00000 is the correct answer
-sum = (int)5.7 + 13.2; 
-print(" %f\n", n3); // this is a bit complicated: 5.7 -> 5 -> 5.0 -> 5.0 + 13.2 -> 18.2 is the correct answer
-
-n4 = n2; / n1; // 15 -> 15.0, 3 -> 3.0, 15.0 / 3.0 -> 5.0
-printf(" %f \n", n4); // 5.00000 is the correct answer
-printf(" %d \n", n4); // unmatched format specifier - undefined behaviour, underfined answer
-printf(" %d \n", (int)n4); // 5.0 -> 5, 5 is the correct answer
-
-n4 = 
-printf(" \n");
-
-n4 = 
-printf(" \n");
-n4 = 
-printf(" \n");
-
-return 0;
-
-}
-
-*/
-//   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
-// == and != are the least in the order of operations, maybe finish the operations order ladder?
-// false and true are exactly 0 and 1
-// int five = 5, three = 3, zero = 0;
-// five != 2;
-// (three < five || three < zero) && five < zero;
-
-// combining logical and arith: (arithmetic operators take precedence)
-/* lecture's example:
-int x = 2;
-int y = (x > 5) + 1; // (x > 5) -> 0 -> 0 + 1 = 1
-
-int a = 2, b;
-((b = 2) == a) // (b = 2) -> (2) -> 2 == 2 -> 1, trick question: a wierd behaviour of c family languages - assignment returns the assign value, acts as arithmetic
-
-*/
-
-//   Overloading literal operators: https://en.cppreference.com/w/cpp/language/user_literal
-
-// complete this section from here: https://en.wikipedia.org/wiki/Printf 
-
-//   & & & & & & Variables & & & & & &
 
 //   ^ ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^ ^
 //   ^ ^ ^ ^ Global Variables ^ ^ ^ ^
@@ -383,7 +503,23 @@ return 0;
 //   ^ ^ ^ ^ Constants: Immutables 
 // highlight the difference of const (run time) vs constexpr (compile time)
 
+
+}
+
+
+
+
+
+
+
+
+
 //   & & & & & & Flow Control & & & & & &
+
+
+void fun_flow_control()
+{
+
 
 //   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^
 //   ^ ^ ^ ^ Blocks ^ ^ ^ ^ 
@@ -771,6 +907,41 @@ return f*s;
 //   ^ ^ ^ ^ ^ Function Overloading
 
 
+}
+
+
+
 //   & & & & & & Structs & & & & & &
 
 //   & & & & & & Classes & & & & & &
+
+
+/*   < < < < < < < <   Design Principles   > > > > > > > >   */
+
+//   & & & & & & Object Oriented Design & & & & & &  
+// what would replace the below ?
+
+//   ^ ^ ^ ^ ^ Procedures: Implemented as Functions ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Sequence/Execution control: Control Flow section's tools (if,else-if, for etc...) ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Scope Modularity(?): Each function variable has a local scope ^ ^ ^ ^ ^ 
+//   ^ ^ ^ ^ ^ Single Responsibility Modularity: one function takes care of one functional requirement ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Message Passing: Function invocation ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Abstraction: each function invocation is a black box ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Supports TDD: using the function, and then impementing
+
+// -------------------------------------------//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
