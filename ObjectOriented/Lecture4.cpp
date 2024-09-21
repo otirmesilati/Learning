@@ -110,7 +110,7 @@ private:
 
 };
 
-// a friend function can access the private areas: //
+
 inline bool equals(const MyPoint4& first_point, const MyPoint4& second_point) { return first_point.x == second_point.x && first_point.y == second_point.y; } // no validity check //
 
 
@@ -121,25 +121,24 @@ class MyLine2
 public:
 
 	MyLine2(): starting_point(), ending_point() { }
-	
-	MyLine2(const MyPoint4& first_point, const MyPoint4& second_point): starting_point(first_point), ending_point(second_point) {} // Composed points - tight copled to the class, when the object releases, so do they // 
+	MyLine2(const MyPoint4& first_point, const MyPoint4& second_point): starting_point(first_point), ending_point(second_point) {}
 
 	~MyLine2() {}
 
-	void shrink();
+	void shrink(); // a function for setting the to point to be duplicate as from point //
 
 	void print() { cout << "( "; starting_point.print(); cout << " , "; ending_point.print(); cout << " )" << endl; }
 
 private:
 
-	MyPoint4 starting_point, ending_point; 
+	MyPoint4 starting_point, ending_point;
 
 };
 
 inline void MyLine2::shrink()
 {
-	ending_point.x = starting_point.x; // Has access to the private hidden data
-	ending_point.y = starting_point.y; // Has access to the private hidden data
+	ending_point.x = starting_point.x; 
+	ending_point.y = starting_point.y; 
 }
 
 class MyArray
