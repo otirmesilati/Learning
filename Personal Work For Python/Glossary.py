@@ -917,11 +917,6 @@ def first_order_functions():
     """
 
 
-def iterative_fibonacci(number_of_cell_in_the_sequence):
-    previous, current = 0, 1
-    for i in range(number_of_cell_in_the_sequence):
-        previous, current = current, previous + current
-    return previous
 
 
 def composing_functions_version_1(first_logic, second_logic, value):
@@ -1048,3 +1043,14 @@ black_box_summing()
 
 
 #   & & & & & & Object Oriented Design & & & & & &  
+
+""" More Mapping needed:
+
+def iterative_fibonacci(number_of_cell_in_the_sequence):
+    previous, current = 0, 1
+    for i in range(number_of_cell_in_the_sequence):
+        previous, current = current, previous + current
+    return previous
+
+
+"""
