@@ -933,10 +933,10 @@ public:
 
     // API mentioned in the header file: 4 C'tors, included: default C'tor and a CC'tor + 1 D'tor
 
- 	MyPoint4(int x=NULL, int y=NULL): x(x), y(y) {}
-	MyPoint4(const MyPoint4& other_point):MyPoint4(other_point.x, other_point.y) {}
+ 	MyPoint4(int x=NULL, int y=NULL): x(x), y(y) {} // Default Values function overloading: defualt C'tor in one of the 3 C'tors defined here
+	MyPoint4(const MyPoint4& other_point):MyPoint4(other_point.x, other_point.y) {} // CC'tor doesn't deep copy - there are no dynamic allocations
 
-	~MyPoint4() {}
+	~MyPoint4() {} // D'tor is empty - there are no dynamic allocations
 
 	friend bool equals(const MyPoint4&, const MyPoint4&);
 	friend class MyLine2;
