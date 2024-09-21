@@ -113,6 +113,8 @@ private:
 // a friend function can access the private areas: //
 inline bool equals(const MyPoint4& first_point, const MyPoint4& second_point) { return first_point.x == second_point.x && first_point.y == second_point.y; } // no validity check //
 
+
+// the friend class//
 class MyLine2
 {
 
@@ -135,8 +137,8 @@ private:
 
 inline void MyLine2::shrink()
 {
-	ending_point.x = starting_point.x;
-	ending_point.y = starting_point.y;
+	ending_point.x = starting_point.x; // Has access to the private hidden data
+	ending_point.y = starting_point.y; // Has access to the private hidden data
 }
 
 class MyArray
