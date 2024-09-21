@@ -1200,3 +1200,4 @@ private:
 
 //   & & & & & & Object Oriented Design & & & & & &  
 // what would replace the below ?
+// for the java glossary (delete this from here later) - package hirerchy? are there complex relations?
