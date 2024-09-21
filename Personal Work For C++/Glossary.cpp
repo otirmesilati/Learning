@@ -938,7 +938,7 @@ public:
 
 	~MyPoint4() {} // D'tor is empty - there are no dynamic allocations
 
-	friend bool equals(const MyPoint4&, const MyPoint4&);
+	friend bool equals(const MyPoint4&, const MyPoint4&); // friend langauge tool - delegating the equals functionality outside 
 	friend class MyLine2;
 
 	void print() { cout << "(" << x << "," << y << ")"; }
