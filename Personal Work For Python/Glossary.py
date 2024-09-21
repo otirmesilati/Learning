@@ -142,6 +142,8 @@ def fun_string_formats():
 # lvalue? rvalue? more values?
 # which operations are available? on what types? categories : numbers, string operators...
 # map this:
+
+
 """
 
 1 + 2
@@ -161,6 +163,7 @@ x is x # true
 
 """
 
+
 def fun_operators():
     
 
@@ -179,13 +182,6 @@ def fun_operators():
 
 
 """
-
-
-//   ^ ^ ^ ^ Prefix vs Postfix ^ ^ ^ ^
-first_check = 1;
-first_check = second_check++; // first_check = 1, second_check = 2 
-first_check = ++second_check; // first_check = second_check = 3
-
 
 //   ^ ^ ^ ^ Multiple Assignment ^ ^ ^ ^
 first_multi_assign = second_multi_assign = 1;
