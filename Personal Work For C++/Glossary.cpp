@@ -1071,8 +1071,9 @@ public:
 
 	My_Date& operator=(const My_Date& other_date)
 	{
-		if (this != &other_date)
+		if (this != &other_date) // checking for double pointing
 		{
+            // Shallow copy, no need for deep copy : primitive attributes
 			year = other_date.year;
 			month = other_date.month;
 			day = other_date.day;
