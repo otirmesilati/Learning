@@ -1011,7 +1011,7 @@ public:
     // NULL = 0, nullptr has a std::nullptr_t type, it's implicitly convertible to any pointer type
 	MyArray(int* other_array, int size) : MyArray() // invoking the default C'tor as a "cleanup" procedure //
 	{
-		if (other_array)
+		if (other_array) // checking either the other array is empty (null pointer check) or not
 		{
 			array_length = size;
 			elements = new int[array_length];
