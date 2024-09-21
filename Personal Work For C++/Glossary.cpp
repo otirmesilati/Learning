@@ -918,8 +918,8 @@ return f*s;
 
 /*   < < < < < < < <   Design Principles   > > > > > > > >   */
 
-//   & & & & & & Object Oriented Design & & & & & &  
-// what would replace the below ?
+
+//   & & & & & & Procedural Design & & & & & &  
 
 //   ^ ^ ^ ^ ^ Procedures: Implemented as Functions ^ ^ ^ ^ ^
 //   ^ ^ ^ ^ ^ Sequence/Execution control: Control Flow section's tools (if,else-if, for etc...) ^ ^ ^ ^ ^
@@ -945,3 +945,5 @@ return f*s;
 
 
 
+//   & & & & & & Object Oriented Design & & & & & &  
+// what would replace the below ?
