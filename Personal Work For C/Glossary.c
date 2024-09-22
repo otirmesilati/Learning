@@ -370,6 +370,7 @@ first_level_local = 3;
 
 #define CRT_SECURE_NO_WARNINGS
 #define ZERO 0
+#define PI 3.1415
 
 //   ^ ^ ^ Enums(Almost pre-processor) ^ ^ ^
 
@@ -377,7 +378,13 @@ enum boolean {NO, YES};
 typedef enum {TRUE = 1, FALSE = 0} Boolean;
 
 //   ^ ^ ^ ^ Constants: Immutables 
-// highlight the difference of const (run time) vs constexpr (compile time)
+
+//   ^ ^ ^ Const ^ ^ ^
+// add the constexpr in C++, mention compile time vs run time, and delte this comment
+
+const int max_grade = 100;
+
+// add constants from the power point presentation
 
 }
 
@@ -395,8 +402,8 @@ typedef enum {TRUE = 1, FALSE = 0} Boolean;
 void fun_flow_control()
 {
 
-
 //   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^
+
 //   ^ ^ ^ ^ Blocks ^ ^ ^ ^ 
 
 //   ^ ^ ^ ^ ^ Conditional Statements & & & & & &
