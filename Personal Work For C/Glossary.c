@@ -318,8 +318,8 @@ int my_int;
 long my_long;
 float my_float;
 double my_double;
-int imagine_this_is_out_of_any_function = 0;
-
+int imagine_this_is_out_of_any_function_global = 0;
+static int my_static = 0;
 
 // unsigned short cap: 65535
 unsigned short hi = 65000; // 65,00
@@ -334,22 +334,17 @@ short hi = 35000; // -30536 (Got to -32767 going to zero)
 
 //   ^ ^ ^ ^ Global Variables ^ ^ ^ ^
 
-imagine_this_is_out_of_any_function = 4;
+imagine_this_is_out_of_any_function_global = 4;
 
 { // and imagine this is the main function
 
-    printf("global is accessible: %d", imagine_this_is_out_of_any_function);    
-    imagine_this_is_out_of_any_function = 7; // and mutable //
+    printf("global is accessible: %d", imagine_this_is_out_of_any_function_global);    
+    imagine_this_is_out_of_any_function_global = 7; // and mutable //
 
 }  
 
 //   ^ ^ ^ ^ Static Variables ^ ^ ^ ^
-/* Lecture's Coverage:
-1. Example one: scoping inside a function
-
-#include <stdio.h>
-
-void func();
+/* 
 
 int main()
 {
