@@ -402,12 +402,12 @@ const int max_grade = 100;
 void fun_flow_control()
 {
 
-//   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^
-
-//   ^ ^ ^ ^ Blocks ^ ^ ^ ^ 
+//   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^ 
 
 //   ^ ^ ^ ^ ^ Conditional Statements & & & & & &
+
 //   ^ ^ ^ ^ If & Else ^ ^ ^ ^ ^
+
 // map to the tablet - new skill for relations, building a graph under constraints (number of maximum relation checks on members, like finding the max of 3 numbers(linear relation) in no more than 3 tries)
 // and also - mapping the control flow diagram - a straight line digram that splits whenever theres a conditional statement:
 //             - - - - - - - -
