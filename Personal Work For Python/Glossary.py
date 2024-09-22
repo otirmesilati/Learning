@@ -171,6 +171,8 @@ def fun_operators():
 
     first = 1
 
+#   ^ ^ ^ Multiple Binding ^ ^ ^
+
 #   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^
 
     first = first + 3
@@ -179,6 +181,16 @@ def fun_operators():
 
 #   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^
 # general case? * before / in Python?
+
+
+
+
+
+# Alternative 1
+
+y, x = "Hi", 6
+x = y = 2 
+x, y = [1, 2]
 
 
 """
@@ -917,20 +929,6 @@ def first_order_functions(x_arg, y_arg, fun_arg): # Getting the functions as arg
     result = fun_arg(x_arg, y_arg)
     return result
 
-    """
-
-
-
-
-
-# ------------------------------------------ Tests -----------------------------------------
-
-
-print("The fifth cell in the fibonacci series is:", iterative_fibonacci(5))
-black_box_summing()
-
-
-"""
 
 #   ^ ^ ^ ^ ^ Function Composition ^ ^ ^ ^ ^
 
@@ -1061,6 +1059,9 @@ def black_box_summing():
 
         print("Enclosing on the value of golden ratio:", iter_improve(golden_update, golden_test))
     improving_golden_ratio()
+
+    print("The fifth cell in the fibonacci series is:", iterative_fibonacci(5))
+    black_box_summing()
 
 
 """
