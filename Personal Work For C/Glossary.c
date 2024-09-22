@@ -336,25 +336,12 @@ short hi = 35000; // -30536 (Got to -32767 going to zero)
 
 imagine_this_is_out_of_any_function = 4;
 
+{ // and imagine this is the main function
 
-/* 
-1. Example one: changing global value in main
+    printf("global is accessible: %d", imagine_this_is_out_of_any_function);    
+    imagine_this_is_out_of_any_function = 7; // and mutable //
 
-
-int my_glob = 4;
-
-int main()
-{
-
-printf("num: %d", my_glob);
-my_glob = 7;
-printf("num now: %d", my_glob);
-
-return 0;
-
-}
-*/ 
-
+}  
 
 //   ^ ^ ^ ^ Static Variables ^ ^ ^ ^
 /* Lecture's Coverage:
