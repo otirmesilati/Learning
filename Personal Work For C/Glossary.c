@@ -354,32 +354,15 @@ int this_wont_be_changed_local = 2;
     int second_level_local = 3;
     this_wont_be_changed_local = 4;
 
+    {
+        int third_level_local = 5;
+    }
+
 }
 
 first_level_local = 3;
 // second_level_local = 4; -> not possible, it's local to the block
 // this won't be changed -> changed to 4
-
-//   ^ ^ Global: relative to and environment variables ^ ^
-//   lecture's coverage: global relative to inner blocks
-/*
-
-int main()
-{
-int relat_glob = 1;
-{
-int relat_loc = 2;
-printf("can print both here");
-}
-printf("can print only one here");
-
-return 0;
-}
-
-*/
-
-//
-
 
 
 //   ^ ^ ^ ^ ^ Constants ^ ^ ^ ^ ^
