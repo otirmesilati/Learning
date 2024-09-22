@@ -318,7 +318,7 @@ int my_int;
 long my_long;
 float my_float;
 double my_double;
-
+int imagine_this_is_out_of_any_function = 0;
 
 
 // unsigned short cap: 65535
@@ -331,11 +331,15 @@ short hi = 35000; // -30536 (Got to -32767 going to zero)
 
 
 //   ^ ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^ ^
+
 //   ^ ^ ^ ^ Global Variables ^ ^ ^ ^
-/* Lecture coverage: 
+
+imagine_this_is_out_of_any_function = 4;
+
+
+/* 
 1. Example one: changing global value in main
 
-#include <stdio.h>
 
 int my_glob = 4;
 
