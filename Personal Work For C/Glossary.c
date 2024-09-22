@@ -335,7 +335,7 @@ short hi = 35000; // -30536 (Got to -32767 going to zero)
 
 imagine_this_is_out_of_any_function_global = 4;
 
-{ // and imagine this is void function my_func
+{ // imagine this is void function my_func
 
     printf("global is accessible: %d", imagine_this_is_out_of_any_function_global);    
     imagine_this_is_out_of_any_function_global = 7; // and mutable //
@@ -344,11 +344,10 @@ imagine_this_is_out_of_any_function_global = 4;
 
 // but even though it's lifetime is the same as the global variable - trying to access the static variable from main - is a compilation error
 
+
 //   ^ ^ ^ ^ Local variables ^ ^ ^ ^
 
-/* Example 1: function local variables - not changing the original values
-
-#include <stdio.h>
+/* 
 
 void swap(int, int);
 
