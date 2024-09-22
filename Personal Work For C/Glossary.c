@@ -319,7 +319,6 @@ long my_long;
 float my_float;
 double my_double;
 int imagine_this_is_out_of_any_function_global = 0;
-static int my_static = 0;
 
 // unsigned short cap: 65535
 unsigned short hi = 65000; // 65,00
@@ -336,39 +335,16 @@ short hi = 35000; // -30536 (Got to -32767 going to zero)
 
 imagine_this_is_out_of_any_function_global = 4;
 
-{ // and imagine this is the main function
+{ // and imagine this is void function my_func
 
     printf("global is accessible: %d", imagine_this_is_out_of_any_function_global);    
     imagine_this_is_out_of_any_function_global = 7; // and mutable //
-
+    static int my_static = 0; // static variable accessible in my_func
 }  
 
+// but even though it's lifetime is the same as the global variable - trying to access the static variable from main - is a compilation error
+
 //   ^ ^ ^ ^ Static Variables ^ ^ ^ ^
-/* 
-
-int main()
-{
-
-for(int i = 0; i < 3; ++i) func();
-
-return 0;
-
-}
-
-void func()
-{
-
-static int my_stat;
-int local = 0;
-++my_stat;
-++local;
-printf("%d %d",my_stat, local);
-
-return;
-
-}
-
-*/
 
 /* Example 1: function local variables - not changing the original values
 
