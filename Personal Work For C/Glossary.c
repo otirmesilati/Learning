@@ -348,22 +348,17 @@ imagine_this_is_out_of_any_function_global = 4;
 //   ^ ^ ^ ^ Local variables ^ ^ ^ ^
 
 int first_level_local = 1;
-
+int this_wont_be_changed_local = 2;
 { 
 
-    int second_level_local = 2;
+    int second_level_local = 3;
+    this_wont_be_changed_local = 4;
 
 }
 
 first_level_local = 3;
 // second_level_local = 4; -> not possible, it's local to the block
-
-/* 
-
-int main()
-{
-
-*/
+// this won't be changed -> changed to 4
 
 //   ^ ^ Global: relative to and environment variables ^ ^
 //   lecture's coverage: global relative to inner blocks
