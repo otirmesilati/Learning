@@ -409,14 +409,14 @@ void fun_flow_control()
 //   ^ ^ ^ ^ If & Else ^ ^ ^ ^ ^
 
 int condition = 1;
-int outer_condition = 1;
-int inner_condition = 0;
+int outer_condition = 0;
 int elif_condition = 1;
 
 if(condition)
 {
     // condition TRUE -> first logic
 }
+
 else
 {
     // condition FALSE -> second logic
@@ -424,7 +424,15 @@ else
 
 //   ^ ^ ^ ^ Nested Ifs(and If-Else) ^ ^ ^ ^ ^
 
+if(outer_condition)
+{
 
+}
+else
+{
+    if(elif_condition)
+    {}
+}
 
 // map to the tablet - new skill for relations, building a "order relation" graph under constraints (number of maximum relation checks on members, like finding the max of 3 numbers(linear relation) in no more than 3 tries)
 // and also - mapping the control flow diagram - a straight line digram that splits whenever theres a conditional statement:
@@ -433,67 +441,6 @@ else
 //             - - - - - - - - 
 // lecture's coverage:
 /*
-
-
-
-Example two: bigger number finding:
-int main()
-{
-
-int n1, n2;
-printf("2 ints: \n");
-scanf(" %d %d ", &n1, &n2);
-print("bigger: \n")
-if(n1 > n2) printf("n1 \n");
-else printf("n2 \n");
-
-return 0;
-
-}
-
-Example three: three digit number checking
-
-#include <stdio.h>
-#define LOW_LIMIT 100
-#define HIGH_LIMIT 999
-
-int main()
-{
-int input;
-printf("num please");
-scanf("%d", &input);
-if(((input >= LOW_LIMIT) && (input <= HIGH_LIMIT)) && (input >= -1*HIGHER_LIMIT) && (input <= -1*LOW_LIMIT))) printf("3 digits");
-if(input >= 0) printf("positive");
-else printf("negative");
-
-return 0;
-}
-
-Example four: biggest number out of three
-
-#include <stdio.h>
-
-int main()
-{
-int n1, n2, n3;
-printf("Enter 3 nums\n");
-scanf("%d %d %d", &n1, &n2, &n3);
-printf("biggest");
-
-if(n1 > n2)
-{
-if(n1 > n3) printf("n1");
-else printf("n3");
-}
-else
-{
-if(n2 > n3) printf("n2");
-else printf("n3")
-}
-
-return 0;
-}
-
 
 
 //   ^ ^ ^ ^ Switch ^ ^ ^ ^ ^
