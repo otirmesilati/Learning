@@ -355,12 +355,11 @@ int first_level_local = 1;
 
 }
 
+first_level_local = 3;
+// second_level_local = 4; -> not possible, it's local to the block
+
 /* 
 
-void swap(int, int);
-
-int main()
-{
 
 int n1 = 1, int n2 = 2;
 
