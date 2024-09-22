@@ -374,44 +374,10 @@ first_level_local = 3;
 //   ^ ^ ^ Enums(Almost pre-processor) ^ ^ ^
 
 enum boolean {NO, YES};
-
-/*
-Example 1: Making a boolean logic
-
-
-Example 2: Days without typedef (typing enum more than once)
-enum Day {SUN = 1, MON, TUE, WED, THU, FRI, SAT};
-
-int main() 
-{
-
-enum Day d1,d2; // the second  enum is here 
-d1 = SUN;
-d2 = THU;
-
-}
-
-Example 3: Days with typedef (typing enum once)
-
-typedef enum {SUN = 1, MON, TUE, WED, THU, FRI, SAT} Day;
-
-int main() 
-{
-
-Day d1,d2;
-d1 = SUN;
-d2 = THU;
-
-return 0;
-
-}
-
-
-*/ 
+typedef enum {TRUE = 1, FALSE = 0} Boolean;
 
 //   ^ ^ ^ ^ Constants: Immutables 
 // highlight the difference of const (run time) vs constexpr (compile time)
-
 
 }
 
