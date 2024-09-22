@@ -919,8 +919,66 @@ def first_order_functions(x_arg, y_arg, fun_arg): # Getting the functions as arg
 
     """
 
-# -------------------------------------- Long examples -------------------------------------
 
+
+
+
+# ------------------------------------------ Tests -----------------------------------------
+
+
+print("The fifth cell in the fibonacci series is:", iterative_fibonacci(5))
+black_box_summing()
+
+
+"""
+
+#   ^ ^ ^ ^ ^ Function Composition ^ ^ ^ ^ ^
+
+def composed_function(composing, composed, value):
+    
+    return composing(composed(value))
+
+
+#   ^ ^ ^ ^ ^ Pure Functions ^ ^ ^ ^ ^
+
+
+# More Material:
+
+# All subjects: https://www.google.com/search?q=functional+programming+principles&rlz=1C1GCEU_enIL934IL934&oq=functional+programming+pri&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyBggBEEUYOTIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIICAcQABgWGB4yCAgIEAAYFhgeMggICRAAGBYYHtIBCDU3MzZqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8
+# transparency thing: https://medium.com/swlh/understand-the-key-functional-programming-concepts-bca440f1bcd6
+# On pure functions: https://en.wikipedia.org/wiki/Pure_function
+
+#   & & & & & & Functional Design & & & & & &
+
+# pipeline somwhere? 
+
+# abstraction - nested function dispatch functions
+
+
+
+
+
+
+
+
+
+#   & & & & & & Object Oriented Design & & & & & &  
+
+# maybe take a litlle bit of this for mapping pipelining?
+
+""" More Mapping needed:
+
+def iterative_fibonacci(number_of_cell_in_the_sequence):
+    previous, current = 0, 1
+    for i in range(number_of_cell_in_the_sequence):
+        previous, current = current, previous + current
+    return previous
+
+def composing_functions_version_2(first_logic, second_logic):
+    return lambda value: first_logic(second_logic(value))
+
+# as the error says: instead os assigning a lambda, a function should have a name for assignment
+composing_functions_version_3 = lambda first, second: lambda value: first(second(value))
 
 def black_box_summing():
     def sum_sequence_implementation_1(limit_index):
@@ -1004,61 +1062,5 @@ def black_box_summing():
         print("Enclosing on the value of golden ratio:", iter_improve(golden_update, golden_test))
     improving_golden_ratio()
 
-# ------------------------------------------ Tests -----------------------------------------
-
-
-print("The fifth cell in the fibonacci series is:", iterative_fibonacci(5))
-black_box_summing()
-
-
-"""
-
-#   ^ ^ ^ ^ ^ Function Composition ^ ^ ^ ^ ^
-
-def composed_function(composing, composed, value):
-    
-    return composing(composed(value))
-
-
-#   ^ ^ ^ ^ ^ Pure Functions ^ ^ ^ ^ ^
-
-
-# More Material:
-
-# All subjects: https://www.google.com/search?q=functional+programming+principles&rlz=1C1GCEU_enIL934IL934&oq=functional+programming+pri&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyBggBEEUYOTIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIICAcQABgWGB4yCAgIEAAYFhgeMggICRAAGBYYHtIBCDU3MzZqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8
-# transparency thing: https://medium.com/swlh/understand-the-key-functional-programming-concepts-bca440f1bcd6
-# On pure functions: https://en.wikipedia.org/wiki/Pure_function
-
-#   & & & & & & Functional Design & & & & & &
-
-# pipeline somwhere? 
-
-# abstraction - nested function dispatch functions
-
-
-
-
-
-
-
-
-
-#   & & & & & & Object Oriented Design & & & & & &  
-
-
-
-""" More Mapping needed:
-
-def iterative_fibonacci(number_of_cell_in_the_sequence):
-    previous, current = 0, 1
-    for i in range(number_of_cell_in_the_sequence):
-        previous, current = current, previous + current
-    return previous
-
-def composing_functions_version_2(first_logic, second_logic):
-    return lambda value: first_logic(second_logic(value))
-
-# as the error says: instead os assigning a lambda, a function should have a name for assignment
-composing_functions_version_3 = lambda first, second: lambda value: first(second(value))
 
 """
