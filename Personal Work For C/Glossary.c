@@ -331,7 +331,7 @@ short hi = 35000; // -30536 (Got to -32767 going to zero)
 
 //   ^ ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^ ^
 
-//   ^ ^ ^ ^ Global Variables ^ ^ ^ ^
+//   ^ ^ ^ ^ Global & Static Variables ^ ^ ^ ^
 
 imagine_this_is_out_of_any_function_global = 4;
 
@@ -344,7 +344,7 @@ imagine_this_is_out_of_any_function_global = 4;
 
 // but even though it's lifetime is the same as the global variable - trying to access the static variable from main - is a compilation error
 
-//   ^ ^ ^ ^ Static Variables ^ ^ ^ ^
+//   ^ ^ ^ ^ Local variables ^ ^ ^ ^
 
 /* Example 1: function local variables - not changing the original values
 
