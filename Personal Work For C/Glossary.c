@@ -360,28 +360,8 @@ first_level_local = 3;
 
 /* 
 
-Example 2: block local variables - not changing the original values
-
-#include <stdio.h>
-
 int main()
 {
-
-int x = 1; 
-int y = 2;
-
-{
-
-x = 3;
-printf("%d\n", x);
-
-}
-
-printf("%d\n", x);
-
-return 0;
-
-}
 
 */
 
