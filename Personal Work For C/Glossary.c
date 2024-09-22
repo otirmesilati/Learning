@@ -18,9 +18,6 @@
 /*   < < < < < < < <   Language Principles   > > > > > > > >   */
 
 
-#define CRT_SECURE_NO_WARNINGS
-
-
 
 
 
@@ -368,13 +365,19 @@ first_level_local = 3;
 //   ^ ^ ^ ^ ^ Constants ^ ^ ^ ^ ^
 
 //   ^ ^ ^ ^ Pre-Processor Macros ^ ^ ^ ^
-//   ^ ^ ^ defines ^ ^ ^
-// lecture's coverage:
+
+//   ^ ^ ^ Defines ^ ^ ^
+
+#define CRT_SECURE_NO_WARNINGS
+#define ZERO 0
+
 //   ^ ^ ^ Enums(Almost pre-processor) ^ ^ ^
-// lecture's coverage: 
+
+enum boolean {NO, YES};
+
 /*
 Example 1: Making a boolean logic
-enum boolean {NO, YES};
+
 
 Example 2: Days without typedef (typing enum more than once)
 enum Day {SUN = 1, MON, TUE, WED, THU, FRI, SAT};
