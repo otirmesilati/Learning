@@ -215,6 +215,11 @@ int first = 1;
 first = 2;
 
 
+//   ^ ^ ^ Multiple Assignment ^ ^ ^
+
+first_multi_assign = second_multi_assign = 1;
+
+
 //   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^ ^
 first = first + 3;
 first += 3;
@@ -231,11 +236,6 @@ first++;
 first_check = 1;
 first_check = second_check++; // first_check = 1, second_check = 2 
 first_check = ++second_check; // first_check = second_check = 3
-
-
-//   ^ ^ ^ ^ Multiple Assignment ^ ^ ^ ^
-
-first_multi_assign = second_multi_assign = 1;
 
 
 

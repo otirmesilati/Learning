@@ -172,6 +172,15 @@ def fun_operators():
     first = 1
 
 #   ^ ^ ^ Multiple Binding ^ ^ ^
+    
+    # Alternative 1
+
+    first_binding = second_binding = 12 
+
+    # Alternative 2
+
+    first_binding, second_binding = [12, 12]
+
 
 #   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^
 
@@ -184,20 +193,7 @@ def fun_operators():
 
 
 
-
-
-# Alternative 1
-
-y, x = "Hi", 6
-x = y = 2 
-x, y = [1, 2]
-
-
 """
-
-//   ^ ^ ^ ^ Multiple Assignment ^ ^ ^ ^
-first_multi_assign = second_multi_assign = 1;
-
 
 //   ^ ^ ^ ^ Arithmetical Operators: Narrowing/Widening type Casting ^ ^ ^ ^
 
