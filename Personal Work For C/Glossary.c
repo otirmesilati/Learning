@@ -360,26 +360,6 @@ first_level_local = 3;
 
 /* 
 
-
-int n1 = 1, int n2 = 2;
-
-printf("%d %d\n", n1, n2);
-swap(n1, n2)
-printf("%d %d\n", n1, n2)
-
-return 0;
-
-}
-
-void swap(int f, int s)
-{
-
-int temp = f;
-f = s;
-s = temp;
-
-}
-
 Example 2: block local variables - not changing the original values
 
 #include <stdio.h>
@@ -751,6 +731,8 @@ return 0;
 /*
 1. Example one:
 */
+
+// by value? by address? 
 
 //   ^ ^ ^ ^ Function prototyping ^ ^ ^ ^
 // Lecture's coverage: 
