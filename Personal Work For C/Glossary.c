@@ -408,7 +408,20 @@ void fun_flow_control()
 
 //   ^ ^ ^ ^ If & Else ^ ^ ^ ^ ^
 
-// map to the tablet - new skill for relations, building a graph under constraints (number of maximum relation checks on members, like finding the max of 3 numbers(linear relation) in no more than 3 tries)
+int condition = 1;
+
+if(condition)
+{
+    // condition TRUE -> first logic
+}
+else
+{
+    // condition FALSE -> second logic
+}
+
+//   ^ ^ ^ ^ Nested Ifs(and If-Else) ^ ^ ^ ^ ^
+
+// map to the tablet - new skill for relations, building a "order relation" graph under constraints (number of maximum relation checks on members, like finding the max of 3 numbers(linear relation) in no more than 3 tries)
 // and also - mapping the control flow diagram - a straight line digram that splits whenever theres a conditional statement:
 //             - - - - - - - -
 //    - - - - -| condition 1  | - - - - - (when theres else-if the split is more than two - 3 + )
@@ -416,26 +429,7 @@ void fun_flow_control()
 // lecture's coverage:
 /*
 
-Example one: digit checking
-int main()
-{
-char input;
 
-printf("digit plz: %c \n", );
-
-scanf("%c", &input)
-
-if(input >= '0' %% input <= '9')
-{
-printf("yes");
-}
-
-print
-
-return 0;
-}
-
-//   ^ ^ ^ ^ Nested Ifs(and If-Else) ^ ^ ^ ^ ^
 
 Example two: bigger number finding:
 int main()
