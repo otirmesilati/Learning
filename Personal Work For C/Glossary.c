@@ -347,6 +347,14 @@ imagine_this_is_out_of_any_function_global = 4;
 
 //   ^ ^ ^ ^ Local variables ^ ^ ^ ^
 
+int first_level_local = 1;
+
+{ 
+
+    int second_level_local = 2;
+
+}
+
 /* 
 
 void swap(int, int);
