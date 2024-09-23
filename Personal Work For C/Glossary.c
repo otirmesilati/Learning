@@ -510,20 +510,25 @@ default: // fourth procedure
 //   ^ ^ ^ ^ While Loops ^ ^ ^ ^
 
 int while_index = 0;
-while(while_index <= 5) // condition checking done at the start
+while(while_index <= 5) // condition checking BEFORE the procedure ran
 {
     ++while_index;
     // while procedure
 }
 
 //   ^ ^ ^ Do-While Loops ^ ^ ^
-// Example three - finding the maximum number
 
-//condition checking done in the end
+int do_while_index = -1;
+do
+{
+    ++do_while_index;
+    // do-while procedure
+} while(do_while_index <= 5); //condition checking AFTER the procedure ran
+
 
 //   ^ ^ ^ ^ For Loops ^ ^ ^ ^
 
-for(int for_index = 0; for_index <= 5 ; ++for_index) // same as above example
+for(int for_index = 0; for_index <= 5 ; ++for_index) // same as above examples
 {
     // for procedure
 }
