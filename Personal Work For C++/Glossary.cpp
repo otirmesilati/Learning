@@ -954,10 +954,10 @@ public:
 
 	~MyPoint4() {} // no dynamic allocation: empty D'tor
 
-	friend bool equals(const MyPoint4&, const MyPoint4&); // friend langauge tool - delegating the equals functionality permissions outside 
-	friend class MyLine2;  // Delegating Permissions to the my line class
-
 	void print() { cout << "(" << x << "," << y << ")"; }  // Implicitly inlining the print function
+
+	friend bool equals(const MyPoint4&, const MyPoint4&); // delegating permissions to equlas function
+	friend class MyLine2;  // Delegating Permissions to the my line class
 
 private: // Data encapsulation: Abstraction + Access strict Message Passing
 
@@ -986,7 +986,7 @@ public:
 
 	~MyLine2() {}
 
-	void shrink(); // a function for setting the to point to be duplicate as from point //
+	void shrink(); 
 
 	void print() { cout << "( "; starting_point.print(); cout << " , "; ending_point.print(); cout << " )" << endl; }
 
@@ -998,8 +998,8 @@ private:
 
 inline void MyLine2::shrink()
 {
-	ending_point.x = starting_point.x; // Has access to the private hidden data
-	ending_point.y = starting_point.y; // Has access to the private hidden data
+	ending_point.x = starting_point.x; // Has access to the private point data
+	ending_point.y = starting_point.y; // Has access to the private point data
 }
 
 
