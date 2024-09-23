@@ -949,10 +949,10 @@ public:
 
     // API mentioned in the header file: 4 C'tors, included: default C'tor and a CC'tor + 1 D'tor
 
- 	MyPoint4(int x=NULL, int y=NULL): x(x), y(y) {} // Default Values function overloading: defualt C'tor in one of the 3 C'tors defined here
-	MyPoint4(const MyPoint4& other_point):MyPoint4(other_point.x, other_point.y) {} // CC'tor doesn't deep copy - there are no dynamic allocations
+ 	MyPoint4(int x=NULL, int y=NULL): x(x), y(y) {} // 3 function overloads (includes def C'tor)
+	MyPoint4(const MyPoint4& other_point):MyPoint4(other_point.x, other_point.y) {} // no dynamic allcation: Shallow copy(using C'tor delegation)
 
-	~MyPoint4() {} // D'tor is empty - there are no dynamic allocations
+	~MyPoint4() {} // no dynamic allocation: empty D'tor
 
 	friend bool equals(const MyPoint4&, const MyPoint4&); // friend langauge tool - delegating the equals functionality permissions outside 
 	friend class MyLine2;  // Delegating Permissions to the my line class
