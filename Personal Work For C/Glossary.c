@@ -386,6 +386,18 @@ const int max_grade = 100;
 
 // add constants from the power point presentation
 
+
+//   ^ ^ ^ ^ ^ Pointers ^ ^ ^ ^ ^
+
+/* add *
+char my_char_pointer;
+int my_int;
+long my_long;
+float my_float;
+double my_double;
+int imagine_this_is_out_of_any_function_global = 0;
+*/
+
 }
 
 
@@ -480,7 +492,10 @@ default:
 
 //   ^ ^ ^ ^ For Loops ^ ^ ^ ^
 
-for(int for_index = 0; for_index <= 5 ; ++for_index){}
+for(int for_index = 0; for_index <= 5 ; ++for_index)
+{
+    
+}
 
 /*
 
