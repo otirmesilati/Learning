@@ -414,6 +414,7 @@ int elif_condition = 1;
 int if_condition = 0; int elseif_condition = 1;
 int switch_key = 2;
 
+
 if(condition)
 {
     // condition TRUE -> first logic
@@ -474,13 +475,14 @@ default:
 
 }
 
-/*
-
 
 //   ^ ^ ^ ^ ^ Loops ^ ^ ^ ^ ^ 
 
 //   ^ ^ ^ ^ For Loops ^ ^ ^ ^
 
+for(int for_index = 0; for_index <= 5 ; ++for_index){}
+
+/*
 
 //   ^ ^ ^ ^ Empty portions in for loop ^ ^ ^ ^
 // no init? not condition? no counter?
