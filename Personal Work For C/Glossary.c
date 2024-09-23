@@ -407,6 +407,8 @@ my_double_pointer = &my_double;
 
 //   ^ ^ ^ ^ Dynamic ?
 
+// pointer constants?
+
 //   ^ ^ ^ ^ Arrays ^ ^ ^ ^ 
 
 // strings?
