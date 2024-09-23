@@ -65,6 +65,8 @@ are available */
 
 //   & & & & & & Literals (+ defined unary literal operators) & & & & & &
 
+//   ^ ^ ^ ^ ^ Expressions ^ ^ ^ ^ ^ //
+
 
 void fun_literals(){ 
 
@@ -415,6 +417,15 @@ void fun_flow_control()
 {
 
 //   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^ 
+
+//   ^ ^ ^ ^ ^ Labels & GoTo ^ ^ ^ ^ ^
+
+my_label:
+
+goto procedure_1_label;
+
+procedure_1_label:
+// procedure 1 //
 
 //   ^ ^ ^ ^ ^ Conditional Statements & & & & & &
 
