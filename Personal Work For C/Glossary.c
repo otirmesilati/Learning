@@ -502,30 +502,11 @@ for(int for_index = 0; for_index <= 5 ; ++for_index)
 //   ^ ^ ^ ^ Empty portions in for loop ^ ^ ^ ^
 // no init? not condition? no counter?
 
+for(;;)
+for(;;)
+for(;;)
 
 //   ^ ^ ^ Up-Counter For loops ^ ^ ^
-Lectures example:
-1. Example one: printing hello world with iteration number three times
-
-int main()
-{
-
-for(int i = 0; i < 3; ++i) printf("Hello world, Iteration: %d \n", i+1);
-
-return 0;
-
-}
-
-2. Example two: summing number from 10 to 150 through iterations
-
-int main()
-{
-
-for (int i = 10; sum = 0; i <= 150 ; sum += i ; ++i ) {} 
-
-}
-
-3. Example three: 
 
 //   ^ ^ ^ Halving Counter For loops ^ ^ ^
 4. Example four printing the powers of 2 from 32 to 1
