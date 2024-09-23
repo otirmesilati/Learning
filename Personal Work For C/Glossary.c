@@ -411,7 +411,8 @@ void fun_flow_control()
 int condition = 1;
 int outer_condition = 0;
 int elif_condition = 1;
-int if_condition = 0; int elseif_condition;
+int if_condition = 0; int elseif_condition = 1;
+int switch_key = 2;
 
 if(condition)
 {
@@ -453,34 +454,30 @@ else if(elseif_condition) // same as the example above
 //             - - - - - - - -
 //    - - - - -| condition 1  | - - - - - (when theres else-if the split is more than two - 3 + )
 //             - - - - - - - - 
-// lecture's coverage:
-/*
-
 
 //   ^ ^ ^ ^ Switch ^ ^ ^ ^ ^
 
-Example five: printing one/two/three/four according to the input
-
-main()
+switch (switch_key)
 {
 
-int num;
-printf("num pls")
-scanf("%d", &num);
+case 1: // each case acts as a block
+    break;
+
+case 2:
+    break;
+
+case 3:
+    break;
+
+default:
+    break;
+
+}
+
+/*
+
+
 switch(num)
-{
-case 1: printf("one\n"); break;
-case 2: printf("two\n"); break;
-case 3: printf("three\n"); break;
-case 4: printf("four\n"); break;
-
-default: printf("another value\n"); break;
-
-}
-
-return 0;
-
-}
 
 Example six: +/-/* calculator
 
