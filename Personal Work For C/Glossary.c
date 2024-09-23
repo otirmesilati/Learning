@@ -560,13 +560,15 @@ for(int for_index = 0; for_index <= 5 ; ++for_index) // same as above examples
 //   ^ ^ ^ ^ ^ Functions ^ ^ ^ ^ ^ 
 
 int int_return_function(){}
-also_int_return_function(){} // default: int
+also_int_return_function(){} // defualt int type - though may cause a warning
 
 //   ^ ^ ^ ^ Function prototyping ^ ^ ^ ^
 
-void void_prtp_func(); // function declaration
+void void_prtp_func_1(); // function declaration
+void void_prtp_func_2();
 // main procedure
-void void_prtp_func(){ return; } // function definition
+void void_prtp_func_1(){ return; } // function definition
+void void_prtp_func_2(){} // in void functions - the return statement may be omitted and the function will return in closing block
 
 // add to tablet: 1. static stack segment layout (building the stack) + dynamic stack segment allocation in function calls (changing the values and releasing the layout parts) 
 
