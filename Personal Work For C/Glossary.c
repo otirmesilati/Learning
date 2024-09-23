@@ -331,6 +331,7 @@ short hi = 35000; // -30536 (Got to -32767 going to zero)
 //   ^ ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^ ^
 
 //   ^ ^ ^ ^ Global & Static Variables ^ ^ ^ ^
+// Both default value if not initialized : 0
 
 imagine_this_is_out_of_any_function_global = 4;
 
@@ -351,7 +352,7 @@ int this_wont_be_changed_local = 2;
 { 
 
     int second_level_local = 3;
-    this_wont_be_changed_local = 4;
+    int this_wont_be_changed_local = 4;
 
     {
         int third_level_local = 5;
@@ -361,7 +362,7 @@ int this_wont_be_changed_local = 2;
 
 first_level_local = 3;
 // second_level_local = 4; -> not possible, it's local to the block
-// this won't be changed -> changed to 4
+// this_wont_be_changed_local -> 2, the one with the 4 value was a different variable
 
 
 //   ^ ^ ^ ^ ^ Constants ^ ^ ^ ^ ^
