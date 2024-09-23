@@ -429,24 +429,26 @@ int switch_key = 2;
 
 if(condition)
 {
-    // condition TRUE -> first logic
+    // condition TRUE -> first procedure
 }
 
 else
 {
-    // condition FALSE -> second logic
+    // condition FALSE -> second procedure
 }
 
 //   ^ ^ ^ Nested Ifs ^ ^ ^
 
 if(outer_condition)
 {
-
+    // first procedure
 }
 else
 {
     if(elif_condition) // else if logic , same as the else if example below
-    {}
+    {
+        // second procedure
+    }
 }
 
 
@@ -454,11 +456,11 @@ else
 
 if(if_condition)
 {
-
+    // first procedure
 }
 else if(elseif_condition) // same as the example above
 {
-    
+    // second procedure
 }
 
 
@@ -473,16 +475,16 @@ else if(elseif_condition) // same as the example above
 switch (switch_key)
 {
 
-case 1: // each case acts as a block
+case 1: // first procedure
     break;
 
-case 2:
+case 2: // second procedure
     break;
 
-case 3:
+case 3: // third procedure
     break;
 
-default:
+default: // fourth procedure
     break;
 
 }
@@ -494,7 +496,7 @@ default:
 
 //   ^ ^ ^ ^ For Loops ^ ^ ^ ^
 
-for(int for_index = 0; for_index <= 5 ; ++for_index)
+for(int for_index = 0; for_index <= 5 ; ++for_index) // same as above example
 {
     
 }
