@@ -416,6 +416,13 @@ int imagine_this_is_out_of_any_function_global = 0;
 void fun_flow_control()
 {
 
+int condition = 1;
+int outer_condition = 0;
+int elif_condition = 1;
+int if_condition = 0; int elseif_condition = 1;
+int switch_key = 2;
+
+
 //   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^ 
 
 //   ^ ^ ^ ^ ^ Procedure labels & GoTo ^ ^ ^ ^ ^
@@ -434,13 +441,6 @@ procedure_1_label:
 //   ^ ^ ^ ^ ^ Conditional Statements & & & & & &
 
 //   ^ ^ ^ ^ If & Else ^ ^ ^ ^ ^
-
-int condition = 1;
-int outer_condition = 0;
-int elif_condition = 1;
-int if_condition = 0; int elseif_condition = 1;
-int switch_key = 2;
-
 
 if(condition)
 {
