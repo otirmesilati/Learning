@@ -561,9 +561,9 @@ for(int for_index = 0; for_index <= 5 ; ++for_index) // same as above examples
 
 //   ^ ^ ^ ^ Function prototyping ^ ^ ^ ^
 
-void void_prtp_func(int);
+void void_prtp_func();
 // main procedure
-void void_prtp_func(int int_arg){ return; }
+void void_prtp_func(){ return; }
 
 
 // add to tablet: 1. static stack segment layout (building the stack) + dynamic stack segment allocation in function calls (changing the values and releasing the layout parts) 
@@ -573,7 +573,11 @@ void void_prtp_func(int int_arg){ return; }
 
 //   ^ ^ ^ Passing By Value ^ ^ ^
 
+void pass_by_value(int val){}
+
 //   ^ ^ ^ Passing By Adress ^ ^ ^
+
+void pass_by_adress(int* adr){}
 
 /*
 1. Example one : powered numbers
