@@ -559,12 +559,14 @@ for(int for_index = 0; for_index <= 5 ; ++for_index) // same as above examples
 
 //   ^ ^ ^ ^ ^ Functions ^ ^ ^ ^ ^ 
 
+int int_return_function(){}
+also_int_return_function(){} // default: int
+
 //   ^ ^ ^ ^ Function prototyping ^ ^ ^ ^
 
-void void_prtp_func();
+void void_prtp_func(); // function declaration
 // main procedure
-void void_prtp_func(){ return; }
-
+void void_prtp_func(){ return; } // function definition
 
 // add to tablet: 1. static stack segment layout (building the stack) + dynamic stack segment allocation in function calls (changing the values and releasing the layout parts) 
 
@@ -579,52 +581,11 @@ void pass_by_value(int val){}
 
 void pass_by_adress(int* adr){}
 
-/*
-
-sum_two (int d1, int d2)
-{
-
-int sum = d1 + d2;
-return sum;
-
-}
-
-4. Example four: multiplying function
-
-#include <stdio.h>
-
-int multiply(int, int);
-
-int main()
-{
-
-int n1 = 2, int n2 = 3;
-print("%d", multiply(n1, n2));
-int n1 = 3, int n2 = 4;
-print("%d", multiply(n1, n2));
-
-return 0;
-
-}
-
-int multiply(int f, int s)
-return f*s;
-
-5. Example five:  
-#include <stdio.h>
-
-
-
-
-*/
-
-// parameters passing?
-
-// anon function
+// anon function? from version 11? what's the syntax?
 
 //   ^ ^ ^ ^ Recursive Functions ^ ^ ^ ^
 
-//inlining functions
+
 
 
 
