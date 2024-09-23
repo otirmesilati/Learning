@@ -392,12 +392,12 @@ const int max_grade = 100;
 //   ^ ^ ^ ^ ^ Pointers ^ ^ ^ ^ ^
 
 char* my_char_pointer;
-int* my_int;
-long* my_long;
-float* my_float;
-double* my_double;
-int* imagine_this_is_out_of_any_function_global = 0;
+int* my_char_pointer;
+long* my_long_pointer;
+float* my_float_pointer;
+double* my_double_pointer;
 
+//   ^ ^ ^ ^ Arrays ^ ^ ^ ^ 
 
 }
 
