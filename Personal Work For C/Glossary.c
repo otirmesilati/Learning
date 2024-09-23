@@ -555,14 +555,15 @@ for(int for_index = 0; for_index <= 5 ; ++for_index) // same as above examples
 // for(;;)
 // for(;;)
 
+}
 
 //   ^ ^ ^ ^ ^ Functions ^ ^ ^ ^ ^ 
 
 //   ^ ^ ^ ^ Function prototyping ^ ^ ^ ^
 
-// void my_func(int);
+void void_prtp_func(int);
 // main procedure
-// void my_func(int int_args){ return; }
+void void_prtp_func(int int_arg){ return; }
 
 
 // add to tablet: 1. static stack segment layout (building the stack) + dynamic stack segment allocation in function calls (changing the values and releasing the layout parts) 
@@ -698,7 +699,7 @@ return f*s;
 
 
 
-}
+
 
 
 
