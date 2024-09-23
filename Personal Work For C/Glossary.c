@@ -427,13 +427,13 @@ int switch_key = 2;
 
 //   ^ ^ ^ ^ ^ Procedure labels & GoTo ^ ^ ^ ^ ^
 
-my_label:
-// procedure 1 //
-
-goto procedure_1_label;
-
 procedure_1_label:
-// procedure 2 //
+// first procedure  //
+
+goto procedure_2_label;
+
+procedure_2_label:
+// second procedure //
 
 // More Material: https://www.geeksforgeeks.org/local-labels-in-c/
 
