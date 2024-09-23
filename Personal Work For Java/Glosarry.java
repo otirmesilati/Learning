@@ -655,6 +655,8 @@ return 0;
 
 //   ^ ^ ^ ^ ^ Loops ^ ^ ^ ^ ^ 
 
+//   ^ ^ ^ ^ While Loops ^ ^ ^ ^
+
 //   ^ ^ ^ ^ For Loops ^ ^ ^ ^
 
 
@@ -698,7 +700,7 @@ return 0;
 
 }
 
-//   ^ ^ ^ ^ While Loops ^ ^ ^ ^
+
 
 Lecture examples
 1. Example one inputting a name:

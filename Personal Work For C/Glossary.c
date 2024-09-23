@@ -490,6 +490,8 @@ default:
 
 //   ^ ^ ^ ^ ^ Loops ^ ^ ^ ^ ^ 
 
+//   ^ ^ ^ ^ While Loops ^ ^ ^ ^
+
 //   ^ ^ ^ ^ For Loops ^ ^ ^ ^
 
 for(int for_index = 0; for_index <= 5 ; ++for_index)
@@ -497,30 +499,18 @@ for(int for_index = 0; for_index <= 5 ; ++for_index)
     
 }
 
-/*
+
 
 //   ^ ^ ^ ^ Empty portions in for loop ^ ^ ^ ^
 // no init? not condition? no counter?
 
-for(;;)
-for(;;)
-for(;;)
+// for(;;)
+// for(;;)
+// for(;;)
 
-//   ^ ^ ^ Up-Counter For loops ^ ^ ^
 
-//   ^ ^ ^ Halving Counter For loops ^ ^ ^
-4. Example four printing the powers of 2 from 32 to 1
- int main()
-{
 
-printf("The twos power from 32 to 1 are:\n")
-for (int i = 32; i >= 1 ; i/2) print("%d \n", &d);
-
-return 0;
-
-}
-
-//   ^ ^ ^ ^ While Loops ^ ^ ^ ^
+/*
 
 Lecture examples
 1. Example one inputting a name:
