@@ -438,6 +438,14 @@ else
 
 //   ^ ^ ^ Else-If ^ ^ ^ 
 
+if(if_condition)
+{
+
+}
+else if(elseif_condition) // same as the example above
+{
+    
+}
 
 
 // map to the tablet - new skill for relations, building a "order relation" graph under constraints (number of maximum relation checks on members, like finding the max of 3 numbers(linear relation) in no more than 3 tries)
