@@ -391,14 +391,13 @@ const int max_grade = 100;
 
 //   ^ ^ ^ ^ ^ Pointers ^ ^ ^ ^ ^
 
-/* add *
-char my_char_pointer;
-int my_int;
-long my_long;
-float my_float;
-double my_double;
-int imagine_this_is_out_of_any_function_global = 0;
-*/
+char* my_char_pointer;
+int* my_int;
+long* my_long;
+float* my_float;
+double* my_double;
+int* imagine_this_is_out_of_any_function_global = 0;
+
 
 }
 
@@ -699,7 +698,6 @@ return f*s;
 
 //inlining functions
 
-//   ^ ^ ^ ^ ^ Function Overloading
 
 
 }
