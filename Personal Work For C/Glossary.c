@@ -510,7 +510,7 @@ default: // fourth procedure
 //   ^ ^ ^ ^ While Loops ^ ^ ^ ^
 
 int while_index = 0;
-while(while_index <= 5)
+while(while_index <= 5) // condition checking done at the start
 {
     ++while_index;
     // while procedure
@@ -519,6 +519,7 @@ while(while_index <= 5)
 //   ^ ^ ^ Do-While Loops ^ ^ ^
 // Example three - finding the maximum number
 
+//condition checking done in the end
 
 //   ^ ^ ^ ^ For Loops ^ ^ ^ ^
 
