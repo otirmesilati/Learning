@@ -570,6 +570,10 @@ for(int for_index = 0; for_index <= 5 ; ++for_index) // same as above examples
 
 //   ^ ^ ^ ^  Argument Passing ^ ^ ^ ^ 
 
+//   ^ ^ ^ Passing By Value ^ ^ ^
+
+//   ^ ^ ^ Passing By Adress ^ ^ ^
+
 /*
 1. Example one : powered numbers
 
