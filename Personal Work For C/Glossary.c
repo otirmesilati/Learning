@@ -392,7 +392,7 @@ const int max_grade = 100;
 //   ^ ^ ^ ^ ^ Pointers ^ ^ ^ ^ ^
 
 char* my_char_pointer;
-int* my_char_pointer;
+int* my_int_pointer;
 long* my_long_pointer;
 float* my_float_pointer;
 double* my_double_pointer;
@@ -400,6 +400,10 @@ double* my_double_pointer;
 //   ^ ^ ^ ^ Static Allocation ^ ^ ^ ^
 
 my_char_pointer = &my_char;
+my_int_pointer = &my_int;
+my_long_pointer = &my_long;
+my_float_pointer = &my_float;
+my_double_pointer = &my_double;
 
 //   ^ ^ ^ ^ Dynamic ?
 
