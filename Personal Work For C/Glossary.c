@@ -556,41 +556,20 @@ for(int for_index = 0; for_index <= 5 ; ++for_index) // same as above examples
 // for(;;)
 
 
-
-/*
-
-
-#include 
-
-int main()
-{
-
-int num;
-int max = 0;
-do
-{
-printf("num");
-scanf("%d", &num);
-if(num > max) max = num;
-}
-while(num != -1);
-printf("max: %d\n", max);
-
-return 0;
-
-}
-*/
-
 //   ^ ^ ^ ^ ^ Functions ^ ^ ^ ^ ^ 
+
+//   ^ ^ ^ ^ Function prototyping ^ ^ ^ ^
+
+// void my_func(int);
+// main procedure
+// void my_func(int int_args){ return; }
+
+
 // add to tablet: 1. static stack segment layout (building the stack) + dynamic stack segment allocation in function calls (changing the values and releasing the layout parts) 
-// Lecture's coverage:
-/*
-1. Example one:
-*/
 
 // by value? by address? 
 
-//   ^ ^ ^ ^ Function prototyping ^ ^ ^ ^
+
 // Lecture's coverage: 
 /*
 1. Example one : powered numbers
