@@ -494,6 +494,12 @@ default: // fourth procedure
 
 //   ^ ^ ^ ^ While Loops ^ ^ ^ ^
 
+int while_index = 0;
+while(while_index <= 5)
+{
+    ++while_index;
+}
+
 //   ^ ^ ^ ^ For Loops ^ ^ ^ ^
 
 for(int for_index = 0; for_index <= 5 ; ++for_index) // same as above example
