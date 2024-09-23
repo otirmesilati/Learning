@@ -477,29 +477,6 @@ default:
 /*
 
 
-switch(num)
-
-Example six: +/-/* calculator
-
-#include <stdio.h>
-typedef enum {ADD = 'A', ADD_S = 'a', SUB = 'S', SUB_S = 's',  MUL = 'M', MUL_S = "m"} Operator;
-
-int main()
-{
-
-// inputs
-
-printf("two nums\n");
-scanf("%d %d", &n1, %n2);
-printf("operator now\n");
-
-switch()
-// finish this 
-
-return 0;
-}
-
-
 //   ^ ^ ^ ^ ^ Loops ^ ^ ^ ^ ^ 
 
 //   ^ ^ ^ ^ For Loops ^ ^ ^ ^
