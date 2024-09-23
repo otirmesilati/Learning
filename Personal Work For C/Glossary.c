@@ -411,6 +411,7 @@ void fun_flow_control()
 int condition = 1;
 int outer_condition = 0;
 int elif_condition = 1;
+int if_condition = 0; int elseif_condition;
 
 if(condition)
 {
@@ -436,6 +437,8 @@ else
 
 
 //   ^ ^ ^ Else-If ^ ^ ^ 
+
+
 
 // map to the tablet - new skill for relations, building a "order relation" graph under constraints (number of maximum relation checks on members, like finding the max of 3 numbers(linear relation) in no more than 3 tries)
 // and also - mapping the control flow diagram - a straight line digram that splits whenever theres a conditional statement:
