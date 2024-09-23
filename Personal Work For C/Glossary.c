@@ -498,13 +498,18 @@ int while_index = 0;
 while(while_index <= 5)
 {
     ++while_index;
+    // while procedure
 }
+
+//   ^ ^ ^ Do-While Loops ^ ^ ^
+// Example three - finding the maximum number
+
 
 //   ^ ^ ^ ^ For Loops ^ ^ ^ ^
 
 for(int for_index = 0; for_index <= 5 ; ++for_index) // same as above example
 {
-    
+    // for procedure
 }
 
 
@@ -520,53 +525,6 @@ for(int for_index = 0; for_index <= 5 ; ++for_index) // same as above example
 
 /*
 
-Lecture examples
-1. Example one inputting a name:
-
-#include <stdio.h>
-
-int main()
-{
-
-char input;
-printf("enter it")
-scanf("%c", &input)
-while(input != ' ')
-{
-
-printf("%c", input);
-scanf("%c", &input);
-
-}
-
-return 0;
-}
-
-1. Example two - average grade calculation:
-
-int main()
-{
-
-int sum = 0, counter = 0, grade; 
-float average;
-printf("grade\n")
-scanf("%d", &grade)
-while(grade != -1)
-{
-sum += grade;
-++counter;
-scanf("%d", &grade)
-}
-
-avg = (float)sum / counter;
-printf("%f\n", avg);
-
-return 0;
-
-}
-
-//   ^ ^ ^ Do-While Loops ^ ^ ^
-Example three - finding the maximum number
 
 #include 
 
