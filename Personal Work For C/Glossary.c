@@ -418,14 +418,18 @@ void fun_flow_control()
 
 //   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^ 
 
-//   ^ ^ ^ ^ ^ Labels & GoTo ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Procedure labels & GoTo ^ ^ ^ ^ ^
 
 my_label:
+// procedure 1 //
 
 goto procedure_1_label;
 
 procedure_1_label:
-// procedure 1 //
+// procedure 2 //
+
+// More Material: https://www.geeksforgeeks.org/local-labels-in-c/
+
 
 //   ^ ^ ^ ^ ^ Conditional Statements & & & & & &
 
