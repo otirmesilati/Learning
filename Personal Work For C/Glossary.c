@@ -567,10 +567,9 @@ for(int for_index = 0; for_index <= 5 ; ++for_index) // same as above examples
 
 // add to tablet: 1. static stack segment layout (building the stack) + dynamic stack segment allocation in function calls (changing the values and releasing the layout parts) 
 
-// by value? by address? 
 
+//   ^ ^ ^ ^  Argument Passing ^ ^ ^ ^ 
 
-// Lecture's coverage: 
 /*
 1. Example one : powered numbers
 
