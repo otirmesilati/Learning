@@ -933,7 +933,12 @@ return f*s;
 
 
 
-// defs? ifndefs?
+#ifndef MY_CLASS
+
+#define MY_CLASS
+// my class decleration here
+
+#endif
 
 // < - - - - - Header file - - - - - > //
 // Three class dependency: Line --[Friends + Composites]--> point
