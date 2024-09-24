@@ -959,12 +959,19 @@ private:
 
 };
 
+// fields?
+
+
 //   ^ ^ ^ ^ ^ Methods ^ ^ ^ ^ ^
 
 class my_methods
 {
 
-	// ctor
+// ctor
+
+	my_methods();
+
+	
 	// cctor
 	//dtor
 	//=
@@ -972,6 +979,11 @@ class my_methods
 };
 
 //inline 
+
+
+
+
+
 
 
 
