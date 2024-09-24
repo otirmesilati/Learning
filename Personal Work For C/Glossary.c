@@ -408,8 +408,12 @@ const int dynamic_time_const = 1;
 
 int mutable_value = 0;
 int immutable_value = 1;
+int immutable_value_and_adress = 2;
 
-const int* const_pointer_to_int = &dynamic_time_const;
+const int* const_pointer_to_int = &immutable_value;
+int* const const_pointer_to_int = &mutable_value;
+const int* const const_pointer_to_int = &immutable_value_and_adress;
+
 
 //   ^ ^ ^ ^ ^ Pointers ^ ^ ^ ^ ^
 
