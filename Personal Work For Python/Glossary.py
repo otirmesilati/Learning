@@ -104,17 +104,17 @@ def fun_string_formats():
     d_number = 2.344444
     ami_name = "Ami"
 
-    # Alternative 1
+    # Alternative 1 - using f notation
 
     number_formatting = f"result: {20}"
     string_formatting = f"name is {ami_name}"
     
-    # Alternative 2
+    # Alternative 2 - using .format notation
 
     number_formatting = "result: {}".format(20)
     string_formatting = "name is {}".format(ami_name)
 
-    # Alternative 3
+    # Alternative 3 - using type string formatting
 
     number_formatting = "result: %d" % (20)
     string_formatting = "name is %s" % (ami_name)
@@ -173,11 +173,11 @@ def fun_operators():
 
 #   ^ ^ ^ Multiple Binding ^ ^ ^
     
-    # Alternative 1
+    # Alternative 1 - using "="" pipeline
 
     first_binding = second_binding = 12 
 
-    # Alternative 2
+    # Alternative 2 - using list comprehension
 
     first_binding, second_binding = [12, 12]
 
@@ -947,6 +947,7 @@ def composed_function(composing, composed, value):
 #   & & & & & & Functional Design & & & & & &
 
 # pipeline somwhere? 
+# list comprehension?
 
 # abstraction - nested function dispatch functions
 

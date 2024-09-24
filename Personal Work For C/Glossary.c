@@ -409,8 +409,6 @@ long* my_long_pointer;
 float* my_float_pointer;
 double* my_double_pointer;
 
-// null checks? 
-
 //   ^ ^ ^ ^ Static Allocation ^ ^ ^ ^
 
 my_char_pointer = &my_char;
@@ -478,6 +476,21 @@ else
 {
     // condition FALSE -> second procedure
 }
+
+
+//   ^ ^ ^ Null Checks ^ ^ ^
+
+int val_of_ptr = 0;
+int* ptr_to_check = &val_of_ptr;
+
+// Alternative 1 - using NULL
+
+if (ptr_to_check!= NULL) {} 
+
+// Alternative 2 - using zero equating
+
+if (ptr_to_check) {}
+
 
 //   ^ ^ ^ Nested Ifs ^ ^ ^
 
