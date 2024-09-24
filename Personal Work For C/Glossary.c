@@ -409,6 +409,8 @@ long* my_long_pointer;
 float* my_float_pointer;
 double* my_double_pointer;
 
+// null checks? 
+
 //   ^ ^ ^ ^ Static Allocation ^ ^ ^ ^
 
 my_char_pointer = &my_char;
