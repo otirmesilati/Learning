@@ -959,7 +959,20 @@ private:
 
 };
 
-// fields?
+//   ^ ^ ^ ^ Class Attributes/Fields ^ ^ ^ ^
+
+class my_fields
+{
+	public:
+	private:
+
+    char char_field;
+	int int_field;
+	long long_field;
+	float float_field;
+	double double_field;
+
+};
 
 
 //   ^ ^ ^ ^ ^ Methods ^ ^ ^ ^ ^
