@@ -934,7 +934,7 @@ return f*s;
 
 
 //   & & & & & & Classes & & & & & &
-
+// Add function overloading above after updating to the latest C Patch
 //   ^ ^ ^ ^ ^ Include's Double Code Generation Avoidance ^ ^ ^ ^ ^ 
 
 #ifndef MY_CLASS
@@ -1020,6 +1020,15 @@ My_methods()
 
 //   ^ ^ ^ C'tor Delegation ^ ^ ^
 
+My_methods(int pri_f_1)
+
+:
+
+My_methods(pri_f_1, NULL, nullptr) // delegating work for the C'tor mentioned in the init list portion
+
+{
+
+}
 
 //   ^ ^ ^ Copy Constructor ^ ^ ^  //
 
