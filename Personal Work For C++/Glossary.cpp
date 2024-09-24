@@ -946,7 +946,7 @@ return f*s;
 
 //   ^ ^ ^ ^ ^ Class decleration ^ ^ ^ ^ ^
 
-class my_class
+class My_class
 {
 
 //   ^ ^ ^ ^ Class Level (only level in C++) Access modifiers ^ ^ ^ ^
@@ -961,7 +961,7 @@ private:
 
 //   ^ ^ ^ ^ Class Attributes/Fields ^ ^ ^ ^
 
-class my_fields_1
+class My_fields_1
 {
 
     char char_field;
@@ -977,15 +977,16 @@ class my_fields_1
 
 //   ^ ^ ^ Static Attribute Declaration
 
-class my_fields_2_with_static
+class My_fields_2_with_static
 {
+	public:
 
 	int regular_int_field;
 	static int static_int_field;
 
 };
 
-// invokation?
+// My_fields_2_with_static::static_int_field = 0;
 
 //   ^ ^ ^ ^ ^ Methods ^ ^ ^ ^ ^
 
