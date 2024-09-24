@@ -990,22 +990,27 @@ class My_fields_2_with_static
 
 //   ^ ^ ^ ^ ^ Methods ^ ^ ^ ^ ^
 
-class my_methods
+class My_methods
 {
 
 //   ^ ^ ^ ^ Constructor ^ ^ ^ ^   // 
 
 //   ^ ^ ^ Default Constructor ^ ^ ^   //
 
+//   ^ ^ ^ C'tor Delegation ^ ^ ^
+
 //   ^ ^ ^ Copy Constructor ^ ^ ^  //
+
+
+//   ^ ^ ^ ^ Destructor ^ ^ ^ ^ //
 
 // ctor? ag/asoc/comp?
 
-	my_methods();
+	My_methods();
 
+	int primitive_field_1, primitive_field_2;
+	int* pointer_field_1;
 	
-	// cctor
-	//dtor
 	//=
 
 };
