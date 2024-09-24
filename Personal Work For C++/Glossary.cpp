@@ -961,10 +961,8 @@ private:
 
 //   ^ ^ ^ ^ Class Attributes/Fields ^ ^ ^ ^
 
-class my_fields
+class my_fields_1
 {
-	public:
-	private:
 
     char char_field;
 	int int_field;
@@ -975,12 +973,24 @@ class my_fields
 };
 
 
+//   ^ ^ ^ ^ Static Attributes ^ ^ ^ ^
+
+//   ^ ^ ^ Static Attribute Declaration
+
+class my_fields_2_with_static
+{
+
+	int regular_int_field;
+	static int static_int_field;
+
+};
+
 //   ^ ^ ^ ^ ^ Methods ^ ^ ^ ^ ^
 
 class my_methods
 {
 
-// ctor
+// ctor? ag/asoc/comp?
 
 	my_methods();
 
@@ -993,7 +1003,7 @@ class my_methods
 
 //inline 
 
-
+// friend classes? 
 
 
 
