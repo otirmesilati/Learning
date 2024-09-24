@@ -944,7 +944,9 @@ return f*s;
 
 #endif
 
+//   ^ ^ ^ ^ Class decleration ^ ^ ^ ^
 
+class my_class {};
 
 
 
