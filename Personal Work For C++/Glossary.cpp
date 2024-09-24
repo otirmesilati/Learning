@@ -933,9 +933,9 @@ return f*s;
 
 
 
-//   & & & & & &  ^ ^ ^ ^ Classes ^ ^ ^ ^ ^
+//   & & & & & & Classes & & & & & &
 
-//   ^ ^ ^ ^ Include's Double Code Generation Avoidance ^ ^ ^ ^  
+//   ^ ^ ^ ^ ^ Include's Double Code Generation Avoidance ^ ^ ^ ^ ^ 
 
 #ifndef MY_CLASS
 
@@ -944,9 +944,9 @@ return f*s;
 
 #endif
 
-//   ^ ^ ^ ^ Class decleration ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Class decleration ^ ^ ^ ^ ^
 
-class my_class_1
+class my_class
 {
 
 //   ^ ^ ^ ^ Class Level (only level in C++) Access modifiers ^ ^ ^ ^
@@ -959,9 +959,19 @@ private:
 
 };
 
-//   ^ ^ ^ ^ Methods ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Methods ^ ^ ^ ^ ^
 
+class my_methods
+{
 
+	// ctor
+	// cctor
+	//dtor
+	//=
+
+};
+
+//inline 
 
 
 
