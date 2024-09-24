@@ -649,7 +649,8 @@ void pass_by_adress(int* adr){}
 
 //   ^ ^ ^ ^ Recursive Functions ^ ^ ^ ^
 
-
+//   ^ ^ ^ ^ Pointer Functions ^ ^ ^ ^
+// finish this from lecture 12
 
 
 
