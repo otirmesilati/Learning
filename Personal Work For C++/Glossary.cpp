@@ -935,6 +935,7 @@ return f*s;
 
 //   ^ ^ ^ ^ ^ Classes ^ ^ ^ ^ ^
 
+//   ^ ^ ^ ^ Include's Double Code Generation Avoidance ^ ^ ^ ^  
 
 #ifndef MY_CLASS
 
@@ -942,6 +943,12 @@ return f*s;
 // my class decleration here
 
 #endif
+
+
+
+
+
+
 
 // < - - - - - Header file - - - - - > //
 // Three class dependency: Line --[Friends + Composites]--> point
