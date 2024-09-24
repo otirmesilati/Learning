@@ -933,7 +933,7 @@ return f*s;
 
 
 
-//   ^ ^ ^ ^ ^ Classes ^ ^ ^ ^ ^
+//   & & & & & &  ^ ^ ^ ^ Classes ^ ^ ^ ^ ^
 
 //   ^ ^ ^ ^ Include's Double Code Generation Avoidance ^ ^ ^ ^  
 
@@ -946,12 +946,20 @@ return f*s;
 
 //   ^ ^ ^ ^ Class decleration ^ ^ ^ ^
 
-class my_class 
+class my_class_1
 {
 
 //   ^ ^ ^ ^ Class Level (only level in C++) Access modifiers ^ ^ ^ ^
 
+// private unless stated otherwise
+
+public:
+private:
+
+
 };
+
+//   ^ ^ ^ ^ Methods ^ ^ ^ ^
 
 
 
