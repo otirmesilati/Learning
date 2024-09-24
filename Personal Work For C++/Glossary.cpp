@@ -946,7 +946,12 @@ return f*s;
 
 //   ^ ^ ^ ^ Class decleration ^ ^ ^ ^
 
-class my_class {};
+class my_class 
+{
+
+//   ^ ^ ^ ^ Class Level (only level in C++) Access modifiers ^ ^ ^ ^
+
+};
 
 
 
