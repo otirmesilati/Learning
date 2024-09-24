@@ -985,6 +985,8 @@ class my_fields_2_with_static
 
 };
 
+// invokation?
+
 //   ^ ^ ^ ^ ^ Methods ^ ^ ^ ^ ^
 
 class my_methods

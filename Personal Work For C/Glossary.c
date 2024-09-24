@@ -421,9 +421,15 @@ my_double_pointer = &my_double;
 
 // pointer constants?
 
+//   ^ ^ ^ ^ Generaic Pointers ^ ^ ^ ^
+
+
+
 //   ^ ^ ^ ^ Arrays ^ ^ ^ ^ 
 
 // strings?
+
+
 
 }
 
