@@ -998,7 +998,11 @@ class My_methods
 //   ^ ^ ^ Init List ^ ^ ^
 My_methods(int pri_f_1, int pri_f_2, int* poi_f_1) 
 
-: primitive_field_1(NULL), primitive_field_2(NULL), pointer_field_1(nullptr)
+: 
+
+primitive_field_1(NULL),
+primitive_field_2(NULL),
+pointer_field_1(nullptr)
 
 {
 
@@ -1006,7 +1010,13 @@ My_methods(int pri_f_1, int pri_f_2, int* poi_f_1)
 
 //   ^ ^ ^ Default Constructor ^ ^ ^   //
 
+My_methods()
 
+{
+	primitive_field_1 = NULL;
+    primitive_field_2 = NULL;
+    pointer_field_1 = nullptr;
+}
 
 //   ^ ^ ^ C'tor Delegation ^ ^ ^
 
