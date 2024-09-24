@@ -290,11 +290,22 @@ int y = (x > 5) + 1; // (x > 5) -> 0 -> 0 + 1 = 1
 int a = 2, b;
 ((b = 2) == a) // (b = 2) -> (2) -> 2 == 2 -> 1, trick question: a wierd behaviour of c family languages - assignment returns the assign value, acts as arithmetic
 
-
+*/
 
 //   Overloading literal operators: https://en.cppreference.com/w/cpp/language/user_literal
 
-*/
+//   ^ ^ ^ ^ ^ Pointer Operators ^ ^ ^ ^ ^
+
+int ptr_value_1 = 0;
+
+
+int* ptr_address_1 = &ptr_value_1; // address operator
+ptr_value_1 = *ptr_address_1; // indirection operator
+
+// in one line(int + int* init in same line):
+int ptr_value_2 = 1, * ptr_address_2 = &ptr_value_2, ptr_value_2 = *ptr_address_2;
+
+
 }
 
 
