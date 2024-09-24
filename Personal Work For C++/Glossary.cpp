@@ -979,12 +979,12 @@ class My_fields_1
 
 class My_fields_2_with_static
 {
-	public:
 
 	int regular_int_field;
 	static int static_int_field;
 
 };
+
 
 // My_fields_2_with_static::static_int_field = 0;
 
@@ -992,6 +992,12 @@ class My_fields_2_with_static
 
 class my_methods
 {
+
+//   ^ ^ ^ ^ Constructor ^ ^ ^ ^   // 
+
+//   ^ ^ ^ Default Constructor ^ ^ ^   //
+
+//   ^ ^ ^ Copy Constructor ^ ^ ^  //
 
 // ctor? ag/asoc/comp?
 
