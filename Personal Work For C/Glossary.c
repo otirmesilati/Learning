@@ -404,9 +404,12 @@ typedef enum {TRUE = 1, FALSE = 0} Boolean;
 
 const int dynamic_time_const = 1;
 
+//   ^ ^ Pointer Const ^ ^
 
-// add constants from the power point presentation
+int mutable_value = 0;
+int immutable_value = 1;
 
+const int* const_pointer_to_int = &dynamic_time_const;
 
 //   ^ ^ ^ ^ ^ Pointers ^ ^ ^ ^ ^
 
