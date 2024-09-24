@@ -421,9 +421,21 @@ my_double_pointer = &my_double;
 
 // pointer constants?
 
-//   ^ ^ ^ ^ Generaic Pointers ^ ^ ^ ^
+//   ^ ^ ^ ^ Void (Generaic) Pointers ^ ^ ^ ^
 
+void* my_generic_pointer;
 
+char* my_generic_pointer_converted_to_char_pointer;
+int* my_generic_pointer_converted_to_int_pointer;
+long* my_generic_pointer_converted_to_long_pointer;
+float* my_generic_pointer_converted_to_float_pointer;
+double* my_generic_pointer_converted_to_double_pointer;
+
+my_generic_pointer_converted_to_char_pointer = (char*)my_generic_pointer;
+my_generic_pointer_converted_to_int_pointer = (int*)my_generic_pointer;
+my_generic_pointer_converted_to_long_pointer = (long*)my_generic_pointer;
+my_generic_pointer_converted_to_float_pointer = (float*)my_generic_pointer;
+my_generic_pointer_converted_to_double_pointer = (double*)my_generic_pointer;
 
 //   ^ ^ ^ ^ Arrays ^ ^ ^ ^ 
 
