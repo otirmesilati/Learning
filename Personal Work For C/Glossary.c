@@ -483,9 +483,11 @@ else
 int val_of_ptr = 0;
 int* ptr_to_check = &val_of_ptr;
 
-// Alternative 1 - using NULL
+// Alternative 1 - using 0 representations
 
+if (ptr_to_check!= 0) {}
 if (ptr_to_check!= NULL) {} 
+if (ptr_to_check!= '\0') {}
 
 // Alternative 2 - using zero equating
 
