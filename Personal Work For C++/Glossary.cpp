@@ -995,9 +995,21 @@ class My_methods
 
 //   ^ ^ ^ ^ Constructor ^ ^ ^ ^   // 
 
+//   ^ ^ ^ Init List ^ ^ ^
+My_methods(int pri_f_1, int pri_f_2, int* poi_f_1) 
+
+: primitive_field_1(NULL), primitive_field_2(NULL), pointer_field_1(nullptr)
+
+{
+
+}
+
 //   ^ ^ ^ Default Constructor ^ ^ ^   //
 
+
+
 //   ^ ^ ^ C'tor Delegation ^ ^ ^
+
 
 //   ^ ^ ^ Copy Constructor ^ ^ ^  //
 
