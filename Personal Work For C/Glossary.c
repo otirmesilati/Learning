@@ -386,17 +386,24 @@ first_level_local = 3;
 #define ZERO 0
 #define PI 3.1415
 
+
 //   ^ ^ ^ Enums(Almost pre-processor) ^ ^ ^
 
 enum boolean {NO, YES};
 typedef enum {TRUE = 1, FALSE = 0} Boolean;
 
+
 //   ^ ^ ^ ^ Constants: Immutables 
 
-//   ^ ^ ^ Const ^ ^ ^
-// add the constexpr in C++, mention compile time vs run time, and delte this comment
+//   ^ ^ ^ ConstExpr : Compile Time Immutable ^ ^ ^ 
 
-const int max_grade = 100;
+//constexpr int static_time_const = 0;
+
+
+//   ^ ^ ^ Const : Run Time Immutable ^ ^ ^
+
+const int dynamic_time_const = 1;
+
 
 // add constants from the power point presentation
 
