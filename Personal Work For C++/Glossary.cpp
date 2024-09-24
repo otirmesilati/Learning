@@ -1032,6 +1032,17 @@ My_methods(pri_f_1, NULL, nullptr) // delegating work for the C'tor mentioned in
 
 //   ^ ^ ^ Copy Constructor ^ ^ ^  //
 
+My_methods(const My_methods&)
+
+: 
+
+My_methods() // def c'tor delgation for initialization 
+
+{
+	// check null pointer - do later
+	// dynamic allocation - do later
+}
+
 
 //   ^ ^ ^ ^ Destructor ^ ^ ^ ^ //
 
@@ -1049,6 +1060,9 @@ My_methods(pri_f_1, NULL, nullptr) // delegating work for the C'tor mentioned in
 //inline 
 
 // friend classes? 
+
+
+
 
 
 
