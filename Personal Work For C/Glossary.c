@@ -431,9 +431,14 @@ my_long_pointer = &my_long;
 my_float_pointer = &my_float;
 my_double_pointer = &my_double;
 
-//   ^ ^ ^ ^ Dynamic ?
+//   ^ ^ ^ ^ Dynamic Allocation ^ ^ ^
 
-// pointer constants?
+//   ^ ^ ^ Byte Allocation: Malloc ^ ^ ^
+
+my_char_pointer = (char*)malloc(sizeof(char));
+my_int_pointer = (int*)malloc(sizeof(int));
+my_long_pointer = (long*)malloc(sizeof(long));
+my_float_pointer = (float*)malloc(sizeof(float));
 
 //   ^ ^ ^ ^ Void (Generaic) Pointers ^ ^ ^ ^
 
