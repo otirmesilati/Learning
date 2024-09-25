@@ -148,18 +148,15 @@ int undef_behav = 4;
 //   ^ ^ ^ ^ Length ^ ^ ^ ^
 
 // cout << std::format("%ld", 1);
-printf("%ld", 1); // long
-printf("%lf", 2.34); // double
+// cout << std::format("%lf", 2.34);
 
 //   ^ ^ ^ ^ Types ^ ^ ^ ^
 
-printf("%c", 'a'); // char
-printf("%d", 1); // int
-printf("%f", 2.3); // float
+// cout << std::format("%c", 'a');
+// cout << std::format("%d", 1);
+// cout << std::format("%f", 2.3);
 
-
-
-printf("%c", undef_behav); // wrong type field - undefined behaviour!
+// cout << std::format("%c", undef_behav);  wrong type field - undefined behaviour!
 
 //   custom field 
 
