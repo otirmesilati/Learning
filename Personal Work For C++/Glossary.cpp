@@ -463,6 +463,8 @@ my_generic_pointer_converted_to_double_pointer = (double*)my_generic_pointer;
 
 //   ^ ^ ^ ^ ^ References ^ ^ ^ ^ ^
 
+int& my_reference = mutable_value;
+
 }
 
 
