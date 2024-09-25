@@ -433,14 +433,14 @@ my_double_pointer = &my_double;
 
 //   ^ ^ ^ ^ Dynamic Allocation ^ ^ ^
 
-//   ^ ^ ^ Byte Allocation: Malloc ^ ^ ^
+//   ^ ^ ^ Heap Byte Allocation: Malloc ^ ^ ^
 
 my_char_pointer = (char*)malloc(sizeof(char));
 my_int_pointer = (int*)malloc(sizeof(int));
 my_long_pointer = (long*)malloc(sizeof(long));
 my_float_pointer = (float*)malloc(sizeof(float));
 
-//   ^ ^ ^ Zero Allocation: Calloc ^ ^ ^
+//   ^ ^ ^ Heap Zero Allocation: Calloc ^ ^ ^
 
 
 my_char_pointer = (char*)calloc(1, sizeof(char));
@@ -448,6 +448,12 @@ my_int_pointer = (int*)calloc(1, sizeof(int));
 my_long_pointer = (long*)calloc(1, sizeof(long));
 my_float_pointer = (float*)calloc(1, sizeof(float));
 
+//   ^ ^ ^ Heap Memory De-Allocation ^ ^ ^
+
+free(my_char_pointer);
+free(my_int_pointer);
+free(my_long_pointer);
+free(my_float_pointer);
 
 //   ^ ^ ^ ^ Void (Generaic) Pointers ^ ^ ^ ^
 
