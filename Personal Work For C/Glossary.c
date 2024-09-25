@@ -677,6 +677,9 @@ void pass_by_adress(int* adr){}
 
 //   ^ ^ ^ ^ Recursive Functions ^ ^ ^ ^
 
+void rec_func(){rec_func();} // infinite loop logic
+
+
 //   ^ ^ ^ ^ Pointer Functions ^ ^ ^ ^
 // finish this from lecture 12
 
