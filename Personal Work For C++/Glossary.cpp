@@ -141,13 +141,13 @@ int undef_behav = 4;
 
 //   ^ ^ ^ ^ Precision ^ ^ ^ ^
 
-printf("%d %.2lf", number, dvalue); // two digits left of decimal point 
-// what about two digits to the right? 
-
+// Only in C++20+
+// cout << std::format("%d %.2lf", number, dvalue);     two digits left of decimal point
 
 //   width
 //   ^ ^ ^ ^ Length ^ ^ ^ ^
 
+// cout << std::format("%ld", 1);
 printf("%ld", 1); // long
 printf("%lf", 2.34); // double
 
