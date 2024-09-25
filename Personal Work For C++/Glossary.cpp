@@ -237,7 +237,7 @@ first_check = ++second_check; // first_check = second_check = 3
 
 //   ^ ^ Implicit conversion - mismatching variables in opeartion ^ ^
 
-sum_temps = first_temp + second_temp; // first is promoted to double in widening implicit c type conversion
+first_temp + second_temp; // first is promoted to double in widening implicit c type conversion
 
 //   ^ ^ Explicit conversion - assigned to different type OR different type written in parantheses ^ ^ 
 
