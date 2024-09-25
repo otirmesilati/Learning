@@ -427,18 +427,10 @@ my_double_pointer = &my_double;
 
 //   ^ ^ ^ Heap Byte Allocation: Malloc ^ ^ ^
 
-my_char_pointer = (char*)malloc(sizeof(char));
-my_int_pointer = (int*)malloc(sizeof(int));
-my_long_pointer = (long*)malloc(sizeof(long));
-my_float_pointer = (float*)malloc(sizeof(float));
-
-//   ^ ^ ^ Heap Zero Allocation: Calloc ^ ^ ^
-
-
-my_char_pointer = (char*)calloc(1, sizeof(char));
-my_int_pointer = (int*)calloc(1, sizeof(int));
-my_long_pointer = (long*)calloc(1, sizeof(long));
-my_float_pointer = (float*)calloc(1, sizeof(float));
+my_char_pointer = new char;
+my_int_pointer = new int;
+my_long_pointer = new long;
+my_float_pointer = new float;
 
 //   ^ ^ ^ Heap Memory De-Allocation ^ ^ ^
 
@@ -446,13 +438,6 @@ free(my_char_pointer);
 free(my_int_pointer);
 free(my_long_pointer);
 free(my_float_pointer);
-
-//   ^ ^ ^ Heap Memory Re-Allocation ^ ^ ^
-
-//my_char_pointer = realloc(my_char_pointer, sizeof(char) * 1);
-//my_int_pointer = realloc(my_int_pointer, sizeof(int) * 2);
-//my_long_pointer = realloc(my_long_pointer, sizeof(long) * 3);
-//my_float_pointer = realloc(my_float_pointer, sizeof(float) * 4);
 
 //   ^ ^ ^ ^ Void (Generaic) Pointers ^ ^ ^ ^
 
