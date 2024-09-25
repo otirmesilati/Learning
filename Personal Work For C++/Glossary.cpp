@@ -60,6 +60,8 @@ are available */
 
 //   & & & & & & Literals (+ defined unary literal operators) & & & & & &
 
+//   ^ ^ ^ ^ ^ Expressions ^ ^ ^ ^ ^ //
+
 
 void fun_literals(){ 
 
@@ -207,6 +209,11 @@ int first = 1;
 first = 2;
 
 
+//   ^ ^ ^ Multiple Assignment ^ ^ ^
+
+first_multi_assign = second_multi_assign = 1;
+
+
 //   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^ ^
 first = first + 3;
 first += 3;
@@ -223,11 +230,6 @@ first++;
 first_check = 1;
 first_check = second_check++; // first_check = 1, second_check = 2 
 first_check = ++second_check; // first_check = second_check = 3
-
-
-//   ^ ^ ^ ^ Multiple Assignment ^ ^ ^ ^
-
-first_multi_assign = second_multi_assign = 1;
 
 
 
@@ -283,11 +285,22 @@ int y = (x > 5) + 1; // (x > 5) -> 0 -> 0 + 1 = 1
 int a = 2, b;
 ((b = 2) == a) // (b = 2) -> (2) -> 2 == 2 -> 1, trick question: a wierd behaviour of c family languages - assignment returns the assign value, acts as arithmetic
 
-
+*/
 
 //   Overloading literal operators: https://en.cppreference.com/w/cpp/language/user_literal
 
-*/
+//   ^ ^ ^ ^ ^ Pointer Operators ^ ^ ^ ^ ^
+
+int ptr_value_1 = 0;
+
+
+int* ptr_address_1 = &ptr_value_1; // address operator
+ptr_value_1 = *ptr_address_1; // indirection operator
+
+// in one line(int + int* init in same line):
+int ptr_value_2 = 1, * ptr_address_2 = &ptr_value_2, ptr_value_2 = *ptr_address_2;
+
+
 }
 
 
@@ -310,8 +323,7 @@ int my_int;
 long my_long;
 float my_float;
 double my_double;
-
-
+int imagine_this_is_out_of_any_function_global = 0;
 
 // unsigned short cap: 65535
 unsigned short hi = 65000; // 65,00
@@ -323,177 +335,148 @@ short hi = 35000; // -30536 (Got to -32767 going to zero)
 
 
 //   ^ ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^ ^
-//   ^ ^ ^ ^ Global Variables ^ ^ ^ ^
-/* Lecture coverage: 
-1. Example one: changing global value in main
 
-#include <stdio.h>
+//   ^ ^ ^ ^ Global & Static Variables ^ ^ ^ ^
+// Both default value if not initialized : 0
 
-int my_glob = 4;
+imagine_this_is_out_of_any_function_global = 4;
 
-int main()
-{
+{ // imagine this is void function my_func
 
-printf("num: %d", my_glob);
-my_glob = 7;
-printf("num now: %d", my_glob);
+    printf("global is accessible: %d", imagine_this_is_out_of_any_function_global);    
+    imagine_this_is_out_of_any_function_global = 7; // and mutable //
+    static int my_static = 0; // static variable accessible in my_func
+}  
 
-return 0;
-
-}
-*/ 
+// but even though it's lifetime is the same as the global variable - trying to access the static variable from main - is a compilation error
 
 
-//   ^ ^ ^ ^ Static Variables ^ ^ ^ ^
-/* Lecture's Coverage:
-1. Example one: scoping inside a function
+//   ^ ^ ^ ^ Local variables ^ ^ ^ ^
 
-#include <stdio.h>
+int first_level_local = 1;
+int this_wont_be_changed_local = 2;
+{ 
 
-void func();
+    int second_level_local = 3;
+    int this_wont_be_changed_local = 4;
 
-int main()
-{
-
-for(int i = 0; i < 3; ++i) func();
-
-return 0;
+    {
+        int third_level_local = 5;
+    }
 
 }
 
-void func()
-{
-
-static int my_stat;
-int local = 0;
-++my_stat;
-++local;
-printf("%d %d",my_stat, local);
-
-return;
-
-}
-
-*/
-
-/* Example 1: function local variables - not changing the original values
-
-#include <stdio.h>
-
-void swap(int, int);
-
-int main()
-{
-
-int n1 = 1, int n2 = 2;
-
-printf("%d %d\n", n1, n2);
-swap(n1, n2)
-printf("%d %d\n", n1, n2)
-
-return 0;
-
-}
-
-void swap(int f, int s)
-{
-
-int temp = f;
-f = s;
-s = temp;
-
-}
-
-Example 2: block local variables - not changing the original values
-
-#include <stdio.h>
-
-int main()
-{
-
-int x = 1; 
-int y = 2;
-
-{
-
-x = 3;
-printf("%d\n", x);
-
-}
-
-printf("%d\n", x);
-
-return 0;
-
-}
-
-*/
-
-//   ^ ^ Global: relative to and environment variables ^ ^
-//   lecture's coverage: global relative to inner blocks
-/*
-
-int main()
-{
-int relat_glob = 1;
-{
-int relat_loc = 2;
-printf("can print both here");
-}
-printf("can print only one here");
-
-return 0;
-}
-
-*/
-
-//
-
+first_level_local = 3;
+// second_level_local = 4; -> not possible, it's local to the block
+// this_wont_be_changed_local -> 2, the one with the 4 value was a different variable
 
 
 //   ^ ^ ^ ^ ^ Constants ^ ^ ^ ^ ^
 
 //   ^ ^ ^ ^ Pre-Processor Macros ^ ^ ^ ^
-//   ^ ^ ^ defines ^ ^ ^
-// lecture's coverage:
+
+//   ^ ^ ^ Defines ^ ^ ^
+
+#define CRT_SECURE_NO_WARNINGS
+#define ZERO 0
+#define PI 3.1415
+
+
 //   ^ ^ ^ Enums(Almost pre-processor) ^ ^ ^
-// lecture's coverage: 
-/*
-Example 1: Making a boolean logic
+
 enum boolean {NO, YES};
+typedef enum {TRUE = 1, FALSE = 0} Boolean;
 
-Example 2: Days without typedef (typing enum more than once)
-enum Day {SUN = 1, MON, TUE, WED, THU, FRI, SAT};
-
-int main() 
-{
-
-enum Day d1,d2; // the second  enum is here 
-d1 = SUN;
-d2 = THU;
-
-}
-
-Example 3: Days with typedef (typing enum once)
-
-typedef enum {SUN = 1, MON, TUE, WED, THU, FRI, SAT} Day;
-
-int main() 
-{
-
-Day d1,d2;
-d1 = SUN;
-d2 = THU;
-
-return 0;
-
-}
-
-
-*/ 
 
 //   ^ ^ ^ ^ Constants: Immutables 
-// highlight the difference of const (run time) vs constexpr (compile time)
+
+//   ^ ^ ^ ConstExpr : Compile Time Immutable ^ ^ ^ 
+
+//constexpr int static_time_const = 0;
+
+
+//   ^ ^ ^ Const : Run Time Immutable ^ ^ ^
+
+const int dynamic_time_const = 1;
+
+//   ^ ^ Pointer Const ^ ^
+
+int mutable_value = 0;
+int immutable_value = 1;
+int immutable_value_and_adress = 2;
+
+const int* const_pointer_to_int = &immutable_value;
+int* const const_pointer_to_int = &mutable_value;
+const int* const const_pointer_to_int = &immutable_value_and_adress;
+
+
+//   ^ ^ ^ ^ ^ Pointers ^ ^ ^ ^ ^
+
+char* my_char_pointer;
+int* my_int_pointer;
+long* my_long_pointer;
+float* my_float_pointer;
+double* my_double_pointer;
+
+//   ^ ^ ^ ^ Static Allocation ^ ^ ^ ^
+
+my_char_pointer = &my_char;
+my_int_pointer = &my_int;
+my_long_pointer = &my_long;
+my_float_pointer = &my_float;
+my_double_pointer = &my_double;
+
+//   ^ ^ ^ ^ Dynamic Allocation ^ ^ ^
+
+//   ^ ^ ^ Heap Byte Allocation: Malloc ^ ^ ^
+
+my_char_pointer = (char*)malloc(sizeof(char));
+my_int_pointer = (int*)malloc(sizeof(int));
+my_long_pointer = (long*)malloc(sizeof(long));
+my_float_pointer = (float*)malloc(sizeof(float));
+
+//   ^ ^ ^ Heap Zero Allocation: Calloc ^ ^ ^
+
+
+my_char_pointer = (char*)calloc(1, sizeof(char));
+my_int_pointer = (int*)calloc(1, sizeof(int));
+my_long_pointer = (long*)calloc(1, sizeof(long));
+my_float_pointer = (float*)calloc(1, sizeof(float));
+
+//   ^ ^ ^ Heap Memory De-Allocation ^ ^ ^
+
+free(my_char_pointer);
+free(my_int_pointer);
+free(my_long_pointer);
+free(my_float_pointer);
+
+//   ^ ^ ^ Heap Memory Re-Allocation ^ ^ ^
+
+//my_char_pointer = realloc(my_char_pointer, sizeof(char) * 1);
+//my_int_pointer = realloc(my_int_pointer, sizeof(int) * 2);
+//my_long_pointer = realloc(my_long_pointer, sizeof(long) * 3);
+//my_float_pointer = realloc(my_float_pointer, sizeof(float) * 4);
+
+//   ^ ^ ^ ^ Void (Generaic) Pointers ^ ^ ^ ^
+
+void* my_generic_pointer;
+
+char* my_generic_pointer_converted_to_char_pointer;
+int* my_generic_pointer_converted_to_int_pointer;
+long* my_generic_pointer_converted_to_long_pointer;
+float* my_generic_pointer_converted_to_float_pointer;
+double* my_generic_pointer_converted_to_double_pointer;
+
+my_generic_pointer_converted_to_char_pointer = (char*)my_generic_pointer;
+my_generic_pointer_converted_to_int_pointer = (int*)my_generic_pointer;
+my_generic_pointer_converted_to_long_pointer = (long*)my_generic_pointer;
+my_generic_pointer_converted_to_float_pointer = (float*)my_generic_pointer;
+my_generic_pointer_converted_to_double_pointer = (double*)my_generic_pointer;
+
+//   ^ ^ ^ ^ Arrays ^ ^ ^ ^ 
+
+// strings?
+
 
 
 }
@@ -512,406 +495,203 @@ return 0;
 void fun_flow_control()
 {
 
+int condition = 1;
+int outer_condition = 0;
+int elif_condition = 1;
+int if_condition = 0; int elseif_condition = 1;
+int switch_key = 2;
 
-//   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^
-//   ^ ^ ^ ^ Blocks ^ ^ ^ ^ 
+
+//   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^ 
+
+//   ^ ^ ^ ^ ^ Procedure labels & GoTo ^ ^ ^ ^ ^
+
+procedure_1_label:
+// first procedure  //
+
+goto procedure_2_label;
+
+procedure_2_label:
+// second procedure //
+
+// More Material: https://www.geeksforgeeks.org/local-labels-in-c/
+
 
 //   ^ ^ ^ ^ ^ Conditional Statements & & & & & &
+
 //   ^ ^ ^ ^ If & Else ^ ^ ^ ^ ^
-// map to the tablet - new skill for relations, building a graph under constraints (number of maximum relation checks on members, like finding the max of 3 numbers(linear relation) in no more than 3 tries)
+
+if(condition)
+{
+    // condition TRUE -> first procedure
+}
+
+else
+{
+    // condition FALSE -> second procedure
+}
+
+
+//   ^ ^ ^ Null Checks ^ ^ ^
+
+int val_of_ptr = 0;
+int* ptr_to_check = &val_of_ptr;
+
+// Alternative 1 - using 0 representations
+
+if (ptr_to_check!= 0) {}
+if (ptr_to_check!= NULL) {} 
+if (ptr_to_check!= '\0') {}
+
+// Alternative 2 - using zero equating
+
+if (ptr_to_check) {}
+
+
+//   ^ ^ ^ Nested Ifs ^ ^ ^
+
+if(outer_condition)
+{
+    // first procedure
+}
+else
+{
+    if(elif_condition) // else if logic , same as the else if example below
+    {
+        // second procedure
+    }
+}
+
+
+//   ^ ^ ^ Else-If ^ ^ ^ 
+
+if(if_condition)
+{
+    // first procedure
+}
+else if(elseif_condition) // same as the example above
+{
+    // second procedure
+}
+
+
+// map to the tablet - new skill for relations, building a "order relation" graph under constraints (number of maximum relation checks on members, like finding the max of 3 numbers(linear relation) in no more than 3 tries)
 // and also - mapping the control flow diagram - a straight line digram that splits whenever theres a conditional statement:
 //             - - - - - - - -
 //    - - - - -| condition 1  | - - - - - (when theres else-if the split is more than two - 3 + )
 //             - - - - - - - - 
-// lecture's coverage:
-/*
-
-Example one: digit checking
-int main()
-{
-char input;
-
-printf("digit plz: %c \n", );
-
-scanf("%c", &input)
-
-if(input >= '0' %% input <= '9')
-{
-printf("yes");
-}
-
-print
-
-return 0;
-}
-
-//   ^ ^ ^ ^ Nested Ifs(and If-Else) ^ ^ ^ ^ ^
-
-Example two: bigger number finding:
-int main()
-{
-
-int n1, n2;
-printf("2 ints: \n");
-scanf(" %d %d ", &n1, &n2);
-print("bigger: \n")
-if(n1 > n2) printf("n1 \n");
-else printf("n2 \n");
-
-return 0;
-
-}
-
-Example three: three digit number checking
-
-#include <stdio.h>
-#define LOW_LIMIT 100
-#define HIGH_LIMIT 999
-
-int main()
-{
-int input;
-printf("num please");
-scanf("%d", &input);
-if(((input >= LOW_LIMIT) && (input <= HIGH_LIMIT)) && (input >= -1*HIGHER_LIMIT) && (input <= -1*LOW_LIMIT))) printf("3 digits");
-if(input >= 0) printf("positive");
-else printf("negative");
-
-return 0;
-}
-
-Example four: biggest number out of three
-
-#include <stdio.h>
-
-int main()
-{
-int n1, n2, n3;
-printf("Enter 3 nums\n");
-scanf("%d %d %d", &n1, &n2, &n3);
-printf("biggest");
-
-if(n1 > n2)
-{
-if(n1 > n3) printf("n1");
-else printf("n3");
-}
-else
-{
-if(n2 > n3) printf("n2");
-else printf("n3")
-}
-
-return 0;
-}
-
-
 
 //   ^ ^ ^ ^ Switch ^ ^ ^ ^ ^
 
-Example five: printing one/two/three/four according to the input
-
-main()
+switch (switch_key)
 {
 
-int num;
-printf("num pls")
-scanf("%d", &num);
-switch(num)
-{
-case 1: printf("one\n"); break;
-case 2: printf("two\n"); break;
-case 3: printf("three\n"); break;
-case 4: printf("four\n"); break;
+case 1: // first procedure
+    break;
 
-default: printf("another value\n"); break;
+case 2: // second procedure
+    break;
 
-}
+case 3: // third procedure
+    break;
 
-return 0;
+default: // fourth procedure
+    break;
 
-}
-
-Example six: +/-/* calculator
-
-#include <stdio.h>
-typedef enum {ADD = 'A', ADD_S = 'a', SUB = 'S', SUB_S = 's',  MUL = 'M', MUL_S = "m"} Operator;
-
-int main()
-{
-
-// inputs
-
-printf("two nums\n");
-scanf("%d %d", &n1, %n2);
-printf("operator now\n");
-
-switch()
-// finish this 
-
-return 0;
 }
 
 
 //   ^ ^ ^ ^ ^ Loops ^ ^ ^ ^ ^ 
 
+//   ^ ^ ^ ^ While Loops ^ ^ ^ ^
+
+int while_index = 0;
+while(while_index <= 5) // condition checking BEFORE the procedure ran
+{
+    ++while_index;
+    // while procedure
+}
+
+//   ^ ^ ^ Do-While Loops ^ ^ ^
+
+int do_while_index = -1;
+do
+{
+    ++do_while_index;
+    // do-while procedure
+} while(do_while_index <= 5); //condition checking AFTER the procedure ran
+
+
 //   ^ ^ ^ ^ For Loops ^ ^ ^ ^
+
+for(int for_index = 0; for_index <= 5 ; ++for_index) // same as above examples
+{
+    // for procedure
+}
+
 
 
 //   ^ ^ ^ ^ Empty portions in for loop ^ ^ ^ ^
 // no init? not condition? no counter?
 
-
-//   ^ ^ ^ Up-Counter For loops ^ ^ ^
-Lectures example:
-1. Example one: printing hello world with iteration number three times
-
-int main()
-{
-
-for(int i = 0; i < 3; ++i) printf("Hello world, Iteration: %d \n", i+1);
-
-return 0;
+// for(;;)
+// for(;;)
+// for(;;)
 
 }
-
-2. Example two: summing number from 10 to 150 through iterations
-
-int main()
-{
-
-for (int i = 10; sum = 0; i <= 150 ; sum += i ; ++i ) {} 
-
-}
-
-3. Example three: 
-
-//   ^ ^ ^ Halving Counter For loops ^ ^ ^
-4. Example four printing the powers of 2 from 32 to 1
- int main()
-{
-
-printf("The twos power from 32 to 1 are:\n")
-for (int i = 32; i >= 1 ; i/2) print("%d \n", &d);
-
-return 0;
-
-}
-
-//   ^ ^ ^ ^ While Loops ^ ^ ^ ^
-
-Lecture examples
-1. Example one inputting a name:
-
-#include <stdio.h>
-
-int main()
-{
-
-char input;
-printf("enter it")
-scanf("%c", &input)
-while(input != ' ')
-{
-
-printf("%c", input);
-scanf("%c", &input);
-
-}
-
-return 0;
-}
-
-1. Example two - average grade calculation:
-
-int main()
-{
-
-int sum = 0, counter = 0, grade; 
-float average;
-printf("grade\n")
-scanf("%d", &grade)
-while(grade != -1)
-{
-sum += grade;
-++counter;
-scanf("%d", &grade)
-}
-
-avg = (float)sum / counter;
-printf("%f\n", avg);
-
-return 0;
-
-}
-
-//   ^ ^ ^ Do-While Loops ^ ^ ^
-Example three - finding the maximum number
-
-#include 
-
-int main()
-{
-
-int num;
-int max = 0;
-do
-{
-printf("num");
-scanf("%d", &num);
-if(num > max) max = num;
-}
-while(num != -1);
-printf("max: %d\n", max);
-
-return 0;
-
-}
-*/
 
 //   ^ ^ ^ ^ ^ Functions ^ ^ ^ ^ ^ 
-// add to tablet: 1. static stack segment layout (building the stack) + dynamic stack segment allocation in function calls (changing the values and releasing the layout parts) 
-// Lecture's coverage:
-/*
-1. Example one:
-*/
+
+int int_return_function(){}
+// also_int_return_function(){} // defualt int type - though may cause a warning
 
 //   ^ ^ ^ ^ Function prototyping ^ ^ ^ ^
-// Lecture's coverage: 
-/*
-1. Example one : powered numbers
 
-#include <stdio.h>
+void void_prtp_func_1(); // function declaration
+void void_prtp_func_2();
+// main procedure
+void void_prtp_func_1(){ return; } // function definition
+void void_prtp_func_2(){} // in void functions - the return statement may be omitted and the function will return in closing block
 
-int power(int, int);
-
-int main()
-{
-
-int n = 5;
-int r1 = power(2, n);
-int r2 = power(3, n);
-
-printf("results %d %d\n", r1, r2);
-
-return 0;
-
-}
-
-int power(int base, int exp)
-{
-
-int pow_num = base;
-
-for(int i = 1; i <= exp; ++i) pow_num = pow_num *= base;
-
-return pow_num;
-
-}
-
-Example two: printing stars
-#include <stdio.h>
-
-void print_stars(int, int)
-
-int main()
-{
-
-int len, wid;
-printf("%d %d\n", len, wid);
-scanf("%d %d", &wid, &len);
-print_stars();
-return 0;
-
-}
-
-void print_stars(int w, int l)
-{
-
-for(int i=0; i < l; ++i) {
-
-for(int j=0; j < w; ++j) printf("*");
-printf("\n");
-
-}
-
-return;
-
-}
-
-3. Example Three: summing two numbers
-
-#include <stdio.h>
-
-sum_two(int, int);
-
-main
-{
-
-int n1 = 3, n2 = 4, adding;
-adding = sum_two(n1, n2);
-return 0;
-
-}
+// add to tablet: 1. static stack segment layout (building the stack) + dynamic stack segment allocation in function calls (changing the values and releasing the layout parts) 
 
 
-sum_two (int d1, int d2)
-{
+//   ^ ^ ^ ^  Argument Passing ^ ^ ^ ^ 
 
-int sum = d1 + d2;
-return sum;
+//   ^ ^ ^ Passing By Value ^ ^ ^
 
-}
+void pass_by_value(int val){}
 
-4. Example four: multiplying function
+//   ^ ^ ^ Passing By Adress ^ ^ ^
 
-#include <stdio.h>
-
-int multiply(int, int);
-
-int main()
-{
-
-int n1 = 2, int n2 = 3;
-print("%d", multiply(n1, n2));
-int n1 = 3, int n2 = 4;
-print("%d", multiply(n1, n2));
-
-return 0;
-
-}
-
-int multiply(int f, int s)
-return f*s;
-
-5. Example five:  
-#include <stdio.h>
+void pass_by_adress(int* adr){}
+// add this - pass_by_adress_2(int adr[]){} ? or in the array section ? 
 
 
-
-
-*/
-
-// anon function
+// anon function? from version 11? what's the syntax?
 
 //   ^ ^ ^ ^ Recursive Functions ^ ^ ^ ^
 
-//inlining functions
-
-//   ^ ^ ^ ^ ^ Function Overloading
+void rec_func(){rec_func();} // infinite loop logic
 
 
-}
+//   ^ ^ ^ ^ Pointer Functions ^ ^ ^ ^
+// finish this from lecture 12
+
+
+
+
 
 
 
 //   & & & & & & Structs & & & & & &
 
+// files? 
+
 //   & & & & & & Classes & & & & & &
 
 
 /*   < < < < < < < <   Design Principles   > > > > > > > >   */
-
 
 //   & & & & & & Procedural Design & & & & & &  
 
@@ -922,6 +702,7 @@ return f*s;
 //   ^ ^ ^ ^ ^ Message Passing: Function invocation ^ ^ ^ ^ ^
 //   ^ ^ ^ ^ ^ Abstraction: each function invocation is a black box ^ ^ ^ ^ ^
 //   ^ ^ ^ ^ ^ Supports TDD: using the function, and then impementing
+
 
 // -------------------------------------------//
 
