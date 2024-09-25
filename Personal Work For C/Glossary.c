@@ -455,6 +455,13 @@ free(my_int_pointer);
 free(my_long_pointer);
 free(my_float_pointer);
 
+//   ^ ^ ^ Heap Memory Re-Allocation ^ ^ ^
+
+my_char_pointer = realloc(my_char_pointer, sizeof(char) * 1);
+my_int_pointer = realloc(my_int_pointer, sizeof(int) * 2);
+my_long_pointer = realloc(my_long_pointer, sizeof(long) * 3);
+my_float_pointer = realloc(my_float_pointer, sizeof(float) * 4);
+
 //   ^ ^ ^ ^ Void (Generaic) Pointers ^ ^ ^ ^
 
 void* my_generic_pointer;
