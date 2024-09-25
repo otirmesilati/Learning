@@ -433,6 +433,8 @@ my_double_pointer = &my_double;
 
 //   ^ ^ ^ ^ Dynamic Allocation ^ ^ ^
 
+// break? continue?
+
 //   ^ ^ ^ Heap Byte Allocation: Malloc ^ ^ ^
 
 my_char_pointer = (char*)malloc(sizeof(char));

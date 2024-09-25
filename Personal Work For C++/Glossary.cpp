@@ -434,10 +434,11 @@ my_float_pointer = new float;
 
 //   ^ ^ ^ Heap Memory De-Allocation ^ ^ ^
 
-free(my_char_pointer);
-free(my_int_pointer);
-free(my_long_pointer);
-free(my_float_pointer);
+delete my_char_pointer;
+delete my_int_pointer;
+delete my_long_pointer;
+delete my_float_pointer;
+delete my_double_pointer;
 
 //   ^ ^ ^ ^ Void (Generaic) Pointers ^ ^ ^ ^
 
