@@ -440,6 +440,13 @@ my_int_pointer = (int*)malloc(sizeof(int));
 my_long_pointer = (long*)malloc(sizeof(long));
 my_float_pointer = (float*)malloc(sizeof(float));
 
+//   ^ ^ ^ Zero Allocation: Calloc ^ ^ ^
+
+my_char_pointer = (char*)calloc(1, sizeof(char));
+my_int_pointer = (int*)calloc(1, sizeof(int));
+my_long_pointer = (long*)calloc(1, sizeof(long));
+my_float_pointer = (float*)calloc(1, sizeof(float));
+
 //   ^ ^ ^ ^ Void (Generaic) Pointers ^ ^ ^ ^
 
 void* my_generic_pointer;
