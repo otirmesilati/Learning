@@ -54,4 +54,11 @@ my_rgb {
 }
 
 /*hex*/
+
+my_hex {
+  color: #ff0000;
+  color: #00ff00;
+  color: #0000ff;
+}
+
 /*hsl*/
