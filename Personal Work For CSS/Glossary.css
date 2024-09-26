@@ -20,3 +20,8 @@ p {
 .bluecolor {
   color: blue;
 }
+
+/*   ^ ^ ^ ^ Class Element Selector ^ ^ ^ ^ */
+p.bluecolor {
+  color: blue;
+}
