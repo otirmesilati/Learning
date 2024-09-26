@@ -46,13 +46,18 @@ are available */
 
 
 
-/* 
+
 
 //   & & & & & & Literals (+ defined unary literal operators) & & & & & &
 
 //   ^ ^ ^ ^ ^ Expressions ^ ^ ^ ^ ^ //
 
+fn fun_literals()
+{
+    
+}
 
+/* 
 void fun_literals(){ 
 
 
