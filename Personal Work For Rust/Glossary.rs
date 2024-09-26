@@ -1,4 +1,5 @@
 // Rust Online Emulator: https://www.programiz.com/rust/online-compiler/
+// To be deleted later, rust resources: https://www.tutorialspoint.com/rust/rust_data_types.htm
 
 
 

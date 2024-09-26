@@ -1,18 +1,5 @@
 /* 
-
-
-
-
-
-
-
-
-
-
-
-
-
-// C++ Online Emulator: https://www.programiz.com/cpp-programming/online-compiler/
+// JavaScript Online Emulator: https://www.programiz.com/javascript/online-compiler/
 
 
 
@@ -25,8 +12,6 @@
 //   < < < < < < < <   Language Principles   > > > > > > > >   //
 
 
-#pragma once // have the header included once at maximum
-
 
 
 
@@ -35,14 +20,7 @@
 
 
 //   & & & & & & Libraries & & & & & &
-#include <iostream> // C IO Library Files 
-using namespace std;
-
-
-// iostream? stdio.h? GUI libraries?
-// pragma once? namespace ? (finish mapping this)
-// rich API? primitives and objects API? collections?
-
+// Standard Lib? GUI?
 
 
 
