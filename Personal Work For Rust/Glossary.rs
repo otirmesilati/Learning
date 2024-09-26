@@ -54,18 +54,20 @@ are available */
 
 fn fun_literals()
 {
+
+//   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
     
+    123;
+    1_234;
+    12_34; // wierd syntax behavior but it works
+    -123;
+    
+
+
 }
 
 /* 
 void fun_literals(){ 
-
-
-    //   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
-    
-    123;
-    // no underscore format for numbers like 1,234! 
-    -123;
     
     
     //  ^ ^ ^ ^ Coding Modifiers ^ ^ ^ ^
@@ -121,15 +123,7 @@ void fun_literals(){
 
 
 
-//   & & & & & & Literals & & & & & &   // 
-//   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
 /* 
-123;
-4_273;
-42_73;
-427_3;
--34;
-
 
 //  ^ ^ ^ ^ Integers: Type Modifiers ^ ^ ^ ^
 
