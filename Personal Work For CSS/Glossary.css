@@ -41,8 +41,14 @@ p.bluecolor {
   color: blue;
 }
 
-/*   ^ ^ ^ ^ ^ Properties ^ ^ ^ ^ ^ */
+/*   ^ ^ ^ ^ ^ Properties ^ ^ ^ ^ ^   */
 
-/*   ^ ^ ^ ^ ^ Colors ^ ^ ^ ^ ^ */
+/*   ^ ^ ^ ^ Colors ^ ^ ^ ^ ^   */
 
-/*rgb*/
+/*   ^ ^ ^ RGB ^ ^ ^   */
+
+my_rgb {
+  color: rgb(255, 0, 0); /* red */
+  color: rgb(0, 255, 0); /* green */
+  color: rgb(0, 0, 255); /* blue */
+}
