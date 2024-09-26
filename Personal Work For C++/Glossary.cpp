@@ -315,7 +315,9 @@ int ptr_value_2 = 1, * ptr_address_2 = &ptr_value_2, ptr_value_2 = *ptr_address_
 void fun_variables()
 {
 
+bool my_bool;
 char my_char;
+wchar_t my_wchar;
 int my_int;
 long my_long;
 float my_float;
@@ -678,6 +680,8 @@ int overloaded_func(int val1, float val2){} // function overloading - same funct
 //   ^ ^ ^ ^ Defualt Argument Function Overloading ^ ^ ^ ^
 
 int int_overloaded_func(int val1 = NULL, float val2 = NULL){} 
+// int overloaded_func(int val1, float val2 = NULL){} - part defaulting is possible
+// int overloaded_func(int val1, float val2 = NULL){} - this is not, the order must be from the right to left
 
 //   ^ ^ ^ ^ Function Templates ^ ^ ^ ^
 
