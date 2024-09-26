@@ -647,6 +647,7 @@ return 0;
 //   ^ ^ ^ ^ While Loops ^ ^ ^ ^
 
 //   ^ ^ ^ ^ For Loops ^ ^ ^ ^
+// list comprehension? (the one line multiple operations) 
 
 
 //   ^ ^ ^ ^ Empty portions in for loop ^ ^ ^ ^
