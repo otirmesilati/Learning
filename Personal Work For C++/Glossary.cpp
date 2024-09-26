@@ -746,11 +746,11 @@ class My_class
 
 public:
 private:
-
+protected:
 
 };
 
-// inheritance? virtual?
+// friend? inheritance? virtual?
 
 //   ^ ^ ^ ^ Class Attributes/Fields ^ ^ ^ ^
 
@@ -838,6 +838,7 @@ My_methods() // def c'tor delgation for initialization
 }
 
 
+// super?
 //   ^ ^ ^ ^ Destructor ^ ^ ^ ^ //
 
 
