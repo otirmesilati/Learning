@@ -17,6 +17,13 @@ p {
   color: blue;
 }
 
+/*   ^ ^ ^ ^ Grouping Name Selectors ^ ^ ^ ^ */
+
+p1,
+p2 {
+  color: blue;
+}
+
 /*   ^ ^ ^ ^ ID Selector ^ ^ ^ ^ */
 #para1 {
   color: blue;
