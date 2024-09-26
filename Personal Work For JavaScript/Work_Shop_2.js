@@ -1,3 +1,5 @@
+/* Copy C Glossary here, and start to meld together the JS portion */
+
 // https://www.w3schools.com/js/js_syntax.asp
 // Syntax (rolling message: redo HOME to output sections later after to connect js to HTML and CSS)
 
@@ -6,7 +8,7 @@
 // Single Line comments //
 
 /* Multi Line
-Comments
+    Comments
  */
 
 //   & & & & & & Literals (Values in javaScript) & & & & & &   //
