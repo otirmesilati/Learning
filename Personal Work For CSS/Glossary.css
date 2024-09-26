@@ -15,3 +15,8 @@ p {
 #para1 {
   color: blue;
 }
+
+/*   ^ ^ ^ ^ Class Selector ^ ^ ^ ^ */
+.bluecolor {
+  color: blue;
+}
