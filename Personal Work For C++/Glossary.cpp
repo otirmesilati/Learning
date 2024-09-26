@@ -669,7 +669,13 @@ void rec_func(){rec_func();} // infinite loop logic
 //   ^ ^ ^ ^ Pointer Functions ^ ^ ^ ^
 // finish this from lecture 12
 
+//   ^ ^ ^ ^ Function Overloading ^ ^ ^ ^
 
+int overloaded_func(int val){}
+int overloaded_func(float val){} // function overloading - same function name but different parameters
+int overloaded_func(int val1, float val2){} // function overloading - same function name but different parameters
+
+//   ^ ^ ^ ^ Function Templates ^ ^ ^ ^
 
 
 
