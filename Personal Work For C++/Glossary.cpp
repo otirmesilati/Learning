@@ -406,6 +406,9 @@ const int* const_pointer_to_int = &immutable_value;
 int* const const_pointer_to_int = &mutable_value;
 const int* const const_pointer_to_int = &immutable_value_and_adress;
 
+//   ^ ^ Reference Const ^ ^ 
+
+const int& const_ref_to_int = immutable_value;
 
 //   ^ ^ ^ ^ ^ Pointers ^ ^ ^ ^ ^
 
