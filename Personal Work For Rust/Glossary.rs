@@ -43,35 +43,71 @@ Comment
 are available */
 
 
-/*
 
 
 
+/* 
+
+//   & & & & & & Literals (+ defined unary literal operators) & & & & & &
+
+//   ^ ^ ^ ^ ^ Expressions ^ ^ ^ ^ ^ //
 
 
+void fun_literals(){ 
 
 
-
-
-
-
-//   & & & & & & Comments & & & & & &
-
-// Single Line comment
-
-/* multiple line
-comments
+    //   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
+    
+    123;
+    // no underscore format for numbers like 1,234! 
+    -123;
+    
+    
+    //  ^ ^ ^ ^ Coding Modifiers ^ ^ ^ ^
+    
+    //  ^ ^ ^ Radixed modifier ^ ^ ^
+    
+    0x12AB;
+    012; // octal literals written without o //
+    0b110011;
+    
+    //   ^ ^ ^ Un-Signed Modifier Suffix operators ^ ^ ^
+    
+    1u;
+    -2U; // will work sometimes and sometimes not: will be translated: 2's complement on the value -> new unsigned value
+    
+    //   ^ ^ ^ Long Modifier Suffix operators
+    
+    1l;
+    -2L;
+    3ll;
+    4LL;
+    
+    //   ^ ^ ^ ^ ^ Floats ^ ^ ^ ^ ^
+    
+    1.2;
+    -3.4;
+    
+    //   ^ ^ ^ ^ Sceientific Notation Encoding  ^ ^ ^ ^
+    
+    1e2;
+    1e-3;
+    1e4L;   // combining //
+    
+    }
+    
+    
+    
+    
+    
+    // More Material:
+    // https://web.archive.org/web/20130807052041/http://cpp.comsci.us/etymology/literals.html
+    // https://en.cppreference.com/w/cpp/language/floating_literal //
+    
+    
+    
+    
 */
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -82,7 +118,7 @@ comments
 
 //   & & & & & & Literals & & & & & &   // 
 //   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
-
+/* 
 123;
 4_273;
 42_73;
@@ -232,64 +268,6 @@ fn main()
 
 
 
-
-
-
-//   & & & & & & Literals (+ defined unary literal operators) & & & & & &
-
-//   ^ ^ ^ ^ ^ Expressions ^ ^ ^ ^ ^ //
-
-
-void fun_literals(){ 
-
-
-//   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
-
-123;
-// no underscore format for numbers like 1,234! 
--123;
-
-
-//  ^ ^ ^ ^ Coding Modifiers ^ ^ ^ ^
-
-//  ^ ^ ^ Radixed modifier ^ ^ ^
-
-0x12AB;
-012; // octal literals written without o //
-0b110011;
-
-//   ^ ^ ^ Un-Signed Modifier Suffix operators ^ ^ ^
-
-1u;
--2U; // will work sometimes and sometimes not: will be translated: 2's complement on the value -> new unsigned value
-
-//   ^ ^ ^ Long Modifier Suffix operators
-
-1l;
--2L;
-3ll;
-4LL;
-
-//   ^ ^ ^ ^ ^ Floats ^ ^ ^ ^ ^
-
-1.2;
--3.4;
-
-//   ^ ^ ^ ^ Sceientific Notation Encoding  ^ ^ ^ ^
-
-1e2;
-1e-3;
-1e4L;   // combining //
-
-}
-
-
-
-
-
-// More Material:
-// https://web.archive.org/web/20130807052041/http://cpp.comsci.us/etymology/literals.html
-// https://en.cppreference.com/w/cpp/language/floating_literal //
 
 
 
