@@ -244,10 +244,12 @@ first_temp + second_temp; // first is promoted to double in widening implicit c 
 first_explicit_conv = 3, second_explicit_conv = 4;
 explicit_conv_assignment = (float)(first_explicit_conv / second_explicit_conv); // both exp conv scenarios, order: 1. int result temp 2. float result temp, 3. int assignment temp
 
+//   ^ ^ ^ Up-Castring ^ ^ ^
 
+//   ^ ^ ^ Down-Casting ^ ^ ^
 
+//   ^ ^ ^ Slicing ^ ^ ^
 
- 
 
 
 
@@ -853,7 +855,7 @@ My_methods() // def c'tor delgation for initialization
 
 //inline 
 
-// friend classes? 
+// template classes? 
 
 
 
