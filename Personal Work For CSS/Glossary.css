@@ -53,7 +53,7 @@ my_rgb {
   color: rgb(0, 0, 255); /* blue */
 }
 
-/*hex*/
+/*   ^ ^ ^ hex ^ ^ ^   */
 
 my_hex {
   color: #ff0000;
@@ -61,4 +61,10 @@ my_hex {
   color: #0000ff;
 }
 
-/*hsl*/
+/*   ^ ^ ^ HSL ^ ^ ^   */
+
+my_hsl {
+  color: hsl(0, 100%, 50%); /* red */
+  color: hsl(120, 100%, 50%); /* green */
+  color: hsl(240, 100%, 50%); /* blue */
+}
