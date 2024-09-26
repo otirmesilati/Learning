@@ -769,6 +769,7 @@ return 0;
 */
 
 //   ^ ^ ^ ^ Function prototyping ^ ^ ^ ^
+// comp time definition? ( adding the "-> type")
 // Lecture's coverage: 
 /*
 1. Example one : powered numbers
