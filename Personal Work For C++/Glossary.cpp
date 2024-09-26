@@ -655,11 +655,16 @@ void void_prtp_func_2(){} // in void functions - the return statement may be omi
 
 void pass_by_value(int val){}
 
+
 //   ^ ^ ^ Passing By Adress ^ ^ ^
 
 void pass_by_adress(int* adr){}
 // add this - pass_by_adress_2(int adr[]){} ? or in the array section ? 
 
+
+//   ^ ^ ^ Passing By Reference ^ ^ ^
+
+void pass_by_reference(int& ref){}
 
 // anon function? from version 11? what's the syntax?
 
