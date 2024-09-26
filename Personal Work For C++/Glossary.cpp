@@ -750,6 +750,8 @@ private:
 
 };
 
+// inheritance? virtual?
+
 //   ^ ^ ^ ^ Class Attributes/Fields ^ ^ ^ ^
 
 class My_fields_1
@@ -785,6 +787,7 @@ class My_methods
 {
 
 //   ^ ^ ^ ^ Constructor ^ ^ ^ ^   // 
+// ctor? ag/asoc/comp?
 
 //   ^ ^ ^ Init List ^ ^ ^
 My_methods(int pri_f_1, int pri_f_2, int* poi_f_1) 
@@ -837,7 +840,6 @@ My_methods() // def c'tor delgation for initialization
 
 //   ^ ^ ^ ^ Destructor ^ ^ ^ ^ //
 
-// ctor? ag/asoc/comp?
 
 	My_methods();
 
