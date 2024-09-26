@@ -675,6 +675,10 @@ int overloaded_func(int val){}
 int overloaded_func(float val){} // function overloading - same function name but different parameters
 int overloaded_func(int val1, float val2){} // function overloading - same function name but different parameters
 
+//   ^ ^ ^ ^ Defualt Argument Function Overloading ^ ^ ^ ^
+
+int int_overloaded_func(int val1 = NULL, float val2 = NULL){} 
+
 //   ^ ^ ^ ^ Function Templates ^ ^ ^ ^
 
 
