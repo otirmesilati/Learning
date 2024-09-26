@@ -6,6 +6,8 @@ css_rule_selector {
 
 /*   ^ ^ ^ ^ ^ Selectors ^ ^ ^ ^ ^   */
 
+/* Cascading order of operations: 1. Inline Styles -> 2. External/Internal -> 3. Browser Default */
+
 /*   ^ ^ ^ ^ Universal Selector ^ ^ ^ ^   */
 
 * {

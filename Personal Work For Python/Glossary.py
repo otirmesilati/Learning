@@ -262,7 +262,7 @@ return 0;
 
 
 //   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
-// order of operations?
+// order of operations? (NOTE: AND before AND)
 // == and != are the least in the order of operations, maybe finish the operations order ladder?
 // false and true are exactly 0 and 1
 // int five = 5, three = 3, zero = 0;
