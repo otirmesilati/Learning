@@ -67,16 +67,14 @@ fn fun_literals()
 
 //   ^ ^ ^ Radixed modifier ^ ^ ^
 
-
+    0x12AB;
+    0o12;
+    0b110011;
 
 }
 
 /*     
-    
-    0x12AB;
-    012; // octal literals written without o //
-    0b110011;
-    
+
     //   ^ ^ ^ Un-Signed Modifier Suffix operators ^ ^ ^
     
     1u;
