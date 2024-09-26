@@ -4,7 +4,13 @@ css_rule_selector {
 
 /*   & & & & & & Rule Sets & & & & & &   */
 
-/*   ^ ^ ^ ^ ^ Selectors ^ ^ ^ ^ ^ */
+/*   ^ ^ ^ ^ ^ Selectors ^ ^ ^ ^ ^   */
+
+/*   ^ ^ ^ ^ Universal Selector ^ ^ ^ ^   */
+
+* {
+  color: blue;
+}
 
 /*   ^ ^ ^ ^ Name Selector ^ ^ ^ ^ */
 p {
