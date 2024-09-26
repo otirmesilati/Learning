@@ -8,4 +8,10 @@ css_rule_selector {
 
 /*   ^ ^ ^ ^ Name Selector ^ ^ ^ ^ */
 p {
+  color: blue;
+}
+
+/*   ^ ^ ^ ^ ID Selector ^ ^ ^ ^ */
+#para1 {
+  color: blue;
 }
