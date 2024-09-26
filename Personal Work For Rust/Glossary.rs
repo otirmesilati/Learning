@@ -63,17 +63,15 @@ fn fun_literals()
     12_34; // wierd syntax behavior but it works
     -123;
     
+//   ^ ^ ^ ^ Coding Modifiers ^ ^ ^ ^
+
+//   ^ ^ ^ Radixed modifier ^ ^ ^
+
 
 
 }
 
-/* 
-void fun_literals(){ 
-    
-    
-    //  ^ ^ ^ ^ Coding Modifiers ^ ^ ^ ^
-    
-    //  ^ ^ ^ Radixed modifier ^ ^ ^
+/*     
     
     0x12AB;
     012; // octal literals written without o //
