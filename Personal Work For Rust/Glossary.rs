@@ -71,13 +71,20 @@ fn fun_literals()
     0o12;
     0b110011;
 
+//   ^ ^ ^ Un-Signed Modifier Suffix operators ^ ^ ^
+
+    0u8;
+    1u16;
+    2u32;
+    3u64;
+    4u128;
+    5usize;
+    // -6u8 or any unsigned int pops a compile time error 
+
 }
 
 /*     
 
-    //   ^ ^ ^ Un-Signed Modifier Suffix operators ^ ^ ^
-    
-    1u;
     -2U; // will work sometimes and sometimes not: will be translated: 2's complement on the value -> new unsigned value
     
     //   ^ ^ ^ Long Modifier Suffix operators
@@ -121,13 +128,6 @@ fn fun_literals()
 
 
 /* 
-
-//  ^ ^ ^ ^ Integers: Type Modifiers ^ ^ ^ ^
-
-0xF5;
-0o12;
-0b110;
-
 
 //   ^ ^ ^ ^  Integers: Unsigned  ^ ^ ^ ^ 
 
