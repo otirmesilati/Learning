@@ -76,3 +76,7 @@ my_hsl {
   color: hsl(120, 100%, 50%); /* green */
   color: hsl(240, 100%, 50%); /* blue */
 }
+
+/*   ^ ^ ^ ^ BackGround ^ ^ ^ ^ ^   */
+
+/*   ^ ^ ^ background-color ^ ^ ^   */
