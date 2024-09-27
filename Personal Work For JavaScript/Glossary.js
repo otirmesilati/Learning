@@ -36,20 +36,14 @@ function fun_literals() {
   0x12ab;
   0o12;
   0b110011;
+
+  //   ^ ^ ^ Un-Signed Modifier Suffix operators ^ ^ ^
+  //   There's no Unsigned type.
+  //   ^ ^ ^ Long Modifier Suffix operators
+  //   There's no Long type.
 }
 /*
 
-//   ^ ^ ^ Un-Signed Modifier Suffix operators ^ ^ ^
-
-1u;
--2U; // will work sometimes and sometimes not: will be translated: 2's complement on the value -> new unsigned value
-
-//   ^ ^ ^ Long Modifier Suffix operators
-
-1l;
--2L;
-3ll;
-4LL;
 
 //   ^ ^ ^ ^ ^ Floats ^ ^ ^ ^ ^
 

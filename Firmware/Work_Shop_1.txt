@@ -1,3 +1,9 @@
 & & & & & & BIOS & & & & & & 
 
-uefi
+- mbr in the first sector
+- only 4 partitions
+
+& & & & & & UEFI & & & & & &
+
+- entire partition for boot system (flexible partitioning)
+- grub is the bootloader
