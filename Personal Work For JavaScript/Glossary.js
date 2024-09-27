@@ -1,34 +1,9 @@
-/* 
 // JavaScript Online Emulator: https://www.programiz.com/javascript/online-compiler/
-
-
-
-
-
-
-
-
 
 //   < < < < < < < <   Language Principles   > > > > > > > >   //
 
-
-
-
-
-
-
-
-
 //   & & & & & & Libraries & & & & & &
 // Standard Lib? GUI?
-
-
-
-
-
-
-
-
 
 //   & & & & & & Comments & & & & & &
 
@@ -46,9 +21,13 @@ are available */
 
 //   ^ ^ ^ ^ ^ Expressions ^ ^ ^ ^ ^ //
 
+function fun_literals() {
+  123;
+  1_234;
+  12_34; // wierd syntax behavior but it works
+  -123;
+}
 /*
-void fun_literals(){ 
-
 
 //   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
 
