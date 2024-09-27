@@ -77,6 +77,16 @@ my_hsl {
   color: hsl(240, 100%, 50%); /* blue */
 }
 
-/*   ^ ^ ^ ^ BackGround ^ ^ ^ ^ ^   */
+/*   ^ ^ ^ ^ BackGround Property ^ ^ ^ ^ ^   */
 
 /*   ^ ^ ^ background-color ^ ^ ^   */
+
+my_bgc {
+  background-color: blue;
+}
+
+/*   ^ ^ ^ BackGround: combining the background tags ^ ^ ^   */
+
+my_bgc {
+  background-color: blue;
+}
