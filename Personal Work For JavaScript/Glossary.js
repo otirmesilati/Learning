@@ -22,23 +22,19 @@ are available */
 //   ^ ^ ^ ^ ^ Expressions ^ ^ ^ ^ ^ //
 
 function fun_literals() {
+  //   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
+
   123;
   1_234;
   12_34; // wierd syntax behavior but it works
   -123;
+
+  //  ^ ^ ^ ^ Coding Modifiers ^ ^ ^ ^
+
+  //  ^ ^ ^ Radixed modifier ^ ^ ^
 }
 /*
 
-//   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
-
-123;
-// no underscore format for numbers like 1,234! 
--123;
-
-
-//  ^ ^ ^ ^ Coding Modifiers ^ ^ ^ ^
-
-//  ^ ^ ^ Radixed modifier ^ ^ ^
 
 0x12AB;
 012; // octal literals written without o //
