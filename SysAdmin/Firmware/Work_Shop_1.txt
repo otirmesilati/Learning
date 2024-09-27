@@ -7,3 +7,4 @@
 
 - entire partition for boot system (flexible partitioning)
 - grub is the bootloader
+- grub in linux allows boot through: Network(PXE/IPXE), External Hadware(USB/CD), Software(ISO)

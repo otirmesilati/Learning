@@ -41,43 +41,19 @@ function fun_literals() {
   //   There's no Unsigned type.
   //   ^ ^ ^ Long Modifier Suffix operators
   //   There's no Long type.
+
+  //   ^ ^ ^ ^ ^ Floats ^ ^ ^ ^ ^
+  1.2;
+  -3.4;
+
+  //   ^ ^ ^ ^ Sceientific Notation Encoding  ^ ^ ^ ^
+  1e2;
+  1e-3;
 }
-/*
-
-
-//   ^ ^ ^ ^ ^ Floats ^ ^ ^ ^ ^
-
-1.2;
--3.4;
-
-//   ^ ^ ^ ^ Sceientific Notation Encoding  ^ ^ ^ ^
-
-1e2;
-1e-3;
-1e4L;   // combining //
-
-}
-
-
-
-
-
-// More Material:
-// https://web.archive.org/web/20130807052041/http://cpp.comsci.us/etymology/literals.html
-// https://en.cppreference.com/w/cpp/language/floating_literal //
-
-
-
-
-
-
-
-
 
 //   & & & & & & String Formatting & & & & & &
 
-
-
+/*
 void fun_string_formats(){
 
 int number = 1;
