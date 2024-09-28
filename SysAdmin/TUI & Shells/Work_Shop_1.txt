@@ -1,4 +1,6 @@
 & & & & & & Command Languages : Scripting Computer Driver functionalities & & & & & &
+when to add all the mappings in bash/zsh/batch/powershell?
+
 
 ^ ^ ^ ^ ^ DOS Based ^ ^ ^ ^ ^
 
@@ -16,6 +18,9 @@ timeout /t 10 >nul (for delay of 10 seconds)
 ^ ^ ^ ^ Bash ^ ^ ^ ^
 
 ^ ^ ^ Bash Run Command ^ ^ ^
+
+
+
 
 
 
