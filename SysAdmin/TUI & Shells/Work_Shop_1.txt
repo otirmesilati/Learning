@@ -1,6 +1,9 @@
 & & & & & & Command Languages & & & & & &
 
+^ ^ ^ ^ ^ CMD Based ^ ^ ^ ^ ^
 
+
+^ ^ ^ ^ ^ Unix Based ^ ^ ^ ^ ^
 
 
 
