@@ -1,4 +1,4 @@
-& & & & & & Command Languages : Scripting Computer Driver functionalities & & & & & &
+% % % % % % % % Command Languages : Scripting Computer Driver functionalities & & & & & &
 when to add all the mappings in bash/zsh/batch/powershell?
 win32 tools?(cmd?)
 
@@ -12,12 +12,6 @@ Yet to find a CMD emulator
 
 
 
-
-
-
-
-
-/*   < < < < < < < <   Language Principles   > > > > > > > >   */
 
 
 
@@ -49,8 +43,37 @@ REM For Line documentation - actual command
 
 
 
+More Material: 
+
+Here is an example where :: produces a problem in a FOR loop.
+
+This example will not work in a file called test.bat on your desktop:
+
+@echo off
+for /F "delims=" %%A in ('type C:\Users\%username%\Desktop\test.bat') do (
+    ::echo hello>C:\Users\%username%\Desktop\text.txt
+)
+pause
+While this example will work as a comment correctly:
+
+@echo off
+for /F "delims=" %%A in ('type C:\Users\%username%\Desktop\test.bat') do (
+    REM echo hello>C:\Users\%username%\Desktop\text.txt
+)
+pause
+The problem appears to be when trying to redirect output into a file. My best guess is that it is interpreting :: as an escaped label called :echo.
+
+
+
+
+
+
+
+
+
 
 //   & & & & & & Literals (+ defined unary literal operators) & & & & & &
+// how to map this section?
 
 //   ^ ^ ^ ^ ^ Expressions ^ ^ ^ ^ ^ //
 
@@ -304,26 +327,26 @@ int ptr_value_2 = 1, * ptr_address_2 = &ptr_value_2, ptr_value_2 = *ptr_address_
 
 
 
-//   & & & & & & Variables & & & & & &
+^ ^ ^ ^ ^ Variables & & & & & &
+
+^ ^ ^ ^ Command line arguments ^ ^ ^ ^
+%1 ? what here ?
 
 
-void fun_variables()
-{
+^ ^ ^ ^ Set Variables ^ ^ ^ ^
 
-char my_char;
+set /a my_int = 5
+
+
+
+^ ^ ^ ^ Scope Sharing ^ ^ ^ ^
+
+
 int my_int;
 long my_long;
 float my_float;
 double my_double;
 int imagine_this_is_out_of_any_function_global = 0;
-
-// unsigned short cap: 65535
-unsigned short hi = 65000; // 65,00
-unsigned short hi = 66000; // 464 (Got back to zero going up)
-
-// signed short cap: 32767
-short hi = 32000; // 32000
-short hi = 35000; // -30536 (Got to -32767 going to zero)
 
 
 //   ^ ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^ ^
@@ -476,6 +499,13 @@ my_generic_pointer_converted_to_double_pointer = (double*)my_generic_pointer;
 }
 
 
+
+
+
+
+More Material:
+
+https://nostarch.com/download/BatchCodingLanguage_Chapter6.pdf
 
 
 
