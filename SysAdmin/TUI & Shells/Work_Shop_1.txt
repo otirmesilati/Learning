@@ -72,7 +72,7 @@ The problem appears to be when trying to redirect output into a file. My best gu
 
 
 & & & & & & Literals (+ defined unary literal operators) & & & & & &
-// how to map this section?
+
 
 //   ^ ^ ^ ^ ^ Expressions ^ ^ ^ ^ ^ //
 
@@ -357,6 +357,8 @@ int ptr_value_2 = 1, * ptr_address_2 = &ptr_value_2, ptr_value_2 = *ptr_address_
 set /a my_int = 5
 set my_string = hi
 
+
+Stopped at: https://www.tutorialspoint.com/batch_script/batch_script_variables.htm (local and global variables)
 
 ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^
 
