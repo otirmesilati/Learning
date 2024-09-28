@@ -103,3 +103,9 @@ my_bgc {
 my_bgc {
   background: rgb(0, 0, 255, 0.5);
 }
+
+/*   ^ ^ ^ ^ BackGround Image Property ^ ^ ^ ^ ^   */
+
+my_bg_img {
+  background-image: url("image.jpg");
+}
