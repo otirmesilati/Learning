@@ -1,6 +1,13 @@
-& & & & & & Command Languages & & & & & &
+& & & & & & Command Languages : Scripting Computer Driver functionalities & & & & & &
 
 ^ ^ ^ ^ ^ CMD Based ^ ^ ^ ^ ^
+
+
+
+
+
+
+
 
 
 ^ ^ ^ ^ ^ Unix Based ^ ^ ^ ^ ^
