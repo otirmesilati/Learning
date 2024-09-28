@@ -37,7 +37,7 @@
 
 # No multi line comments 
 # So we just concat single line comments
-#docs?logs?
+#docs? logs?
 
 """ 
 Documentation
@@ -53,6 +53,7 @@ Annotation
 
 
 #   & & & & & & Literals & & & & & & 
+# strings and chars?
 
 
 def fun_literals():

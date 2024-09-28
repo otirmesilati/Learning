@@ -71,14 +71,10 @@ The problem appears to be when trying to redirect output into a file. My best gu
 
 
 
-
-//   & & & & & & Literals (+ defined unary literal operators) & & & & & &
+& & & & & & Literals (+ defined unary literal operators) & & & & & &
 // how to map this section?
 
 //   ^ ^ ^ ^ ^ Expressions ^ ^ ^ ^ ^ //
-
-
-void fun_literals(){ 
 
 
 //   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
@@ -359,17 +355,10 @@ int ptr_value_2 = 1, * ptr_address_2 = &ptr_value_2, ptr_value_2 = *ptr_address_
 ^ ^ ^ ^ Set Variables ^ ^ ^ ^
 
 set /a my_int = 5
-
+set my_string = hi
 
 
 ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^
-
-
-int my_int;
-long my_long;
-float my_float;
-double my_double;
-int imagine_this_is_out_of_any_function_global = 0;
 
 
 //   ^ ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^ ^

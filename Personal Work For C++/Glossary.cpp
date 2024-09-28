@@ -59,6 +59,7 @@ are available */
 
 
 //   & & & & & & Literals (+ defined unary literal operators) & & & & & &
+// strings and chars?
 
 //   ^ ^ ^ ^ ^ Expressions ^ ^ ^ ^ ^ //
 

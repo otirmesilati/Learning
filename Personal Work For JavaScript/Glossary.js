@@ -20,6 +20,7 @@ are available */
 //   & & & & & & Literals (+ defined unary literal operators) & & & & & &
 
 //   ^ ^ ^ ^ ^ Expressions ^ ^ ^ ^ ^ //
+// strings and chars?
 
 function fun_literals() {
   //   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^

@@ -52,6 +52,7 @@ are available */
 //   & & & & & & Literals (+ defined unary literal operators) & & & & & &
 
 //   ^ ^ ^ ^ ^ Expressions ^ ^ ^ ^ ^ //
+// strings and chars?
 
 fn fun_literals()
 {
