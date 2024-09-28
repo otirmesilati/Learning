@@ -85,8 +85,12 @@ my_bgc {
   background-color: blue;
 }
 
+/*transp - opacity
+
 /*   ^ ^ ^ BackGround: combining the background tags ^ ^ ^   */
 
 my_bgc {
-  background-color: blue;
+  background: blue;
 }
+
+/*transp - rgb

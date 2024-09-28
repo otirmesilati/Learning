@@ -1,3 +1,16 @@
+DELETE AFTER FINISH:
+
+before starting, read these: 
+1. https://www.reddit.com/r/ITCareerQuestions/comments/ojchev/i_want_to_be_a_sysadmin_where_and_how_to_start/
+2. https://www.reddit.com/r/sysadmin/comments/1eiwh0i/should_active_directory_ad_be_common_knowledge/
+3. https://en.wikipedia.org/wiki/Unix_wars
+
+and finish these: https://www.youtube.com/watch?v=QHial8xwfh4 , https://www.youtube.com/watch?v=WMy3OzvBWc0
+
+
+
+
+
 % % % % % % % % Command Languages : Scripting Computer Driver functionalities & & & & & &
 when to add all the mappings in bash/zsh/batch/powershell?
 win32 tools?(cmd?)
@@ -916,7 +929,8 @@ shell browser? multiple panes(tiling)?
    
    ^ ^ ^ ^ Playlists ^ ^ ^ ^
    
-   1. 
+   1. paul hills win server: https://www.youtube.com/watch?v=Dq-Ln-w8C2E&list=PLYogJ_kxL1wTesq-vNxEc8tjDOHvszeWf
+   2.
    
    ^ ^ ^ ^ Vids ^ ^ ^ ^
    
