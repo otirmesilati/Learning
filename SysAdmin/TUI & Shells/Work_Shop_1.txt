@@ -196,6 +196,29 @@ printf("%c", undef_behav); // wrong type field - undefined behaviour!
 // which operations are available? one what types? categories : numbers, string operators...
 
 
+The output of the above program would be 15.
+
+All of the arithmetic operators work in batch files. The following example shows arithmetic operators can be used in batch files.
+
+@echo off 
+SET /A a = 5 
+SET /A b = 10 
+SET /A c = %a% + %b% 
+echo %c% 
+SET /A c = %a% - %b% 
+echo %c% 
+SET /A c = %b% / %a% 
+echo %c% 
+SET /A c = %b% * %a% 
+echo %c%
+The above command produces the following output.
+
+15 
+-5 
+2 
+50
+
+
 void fun_operators()
 {
 int first_check, second_check;
