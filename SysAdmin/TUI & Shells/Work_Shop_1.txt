@@ -1,17 +1,21 @@
 & & & & & & Command Languages : Scripting Computer Driver functionalities & & & & & &
 
-^ ^ ^ ^ ^ CMD Based ^ ^ ^ ^ ^
+^ ^ ^ ^ ^ DOS Based ^ ^ ^ ^ ^
+
+^ ^ ^ ^ CMD ^ ^ ^ ^
+
+^ ^ ^ CMD Run Command ^ ^ ^
 
 
-
-
-
-
-
+where timeout? pause?
+timeout /t 10 >nul (for delay of 10 seconds)
 
 
 ^ ^ ^ ^ ^ Unix Based ^ ^ ^ ^ ^
 
+^ ^ ^ ^ Bash ^ ^ ^ ^
+
+^ ^ ^ Bash Run Command ^ ^ ^
 
 
 
