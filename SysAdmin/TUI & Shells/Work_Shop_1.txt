@@ -103,17 +103,17 @@ REM No Binary literals
 
 
 
-//   & & & & & & Operators & & & & & &
-// which operations are available? one what types? categories : numbers, string operators...
+::   & & & & & & Operators & & & & & &
+::   which operations are available? one what types? categories : numbers, string operators...
 
 
-Map This Part after doing the rest of the operator portion in other mappings:
-Also, Touch on the Arith operators: +(+=),-(-=),*(*=),/(/=),%,(%=), relational: equ(or == for strings),neq,lss,leq,gtr,geq, logicl: and(&),or(|), not(^)
-----------------------------------------------------------------
+::   Map This Part after doing the rest of the operator portion in other mappings:
+::   Also, Touch on the Arith operators: +(+=),-(-=),*(*=),/(/=),%,(%=), relational: equ(or == for strings),neq,lss,leq,gtr,geq, logicl: and(&),or(|), not(^)
+::   ----------------------------------------------------------------
 
-The output of the above program would be 15.
+::   The output of the above program would be 15.
 
-All of the arithmetic operators work in batch files. The following example shows arithmetic operators can be used in batch files.
+::   All of the arithmetic operators work in batch files. The following example shows arithmetic operators can be used in batch files.
 
 @echo off 
 SET /A a = 5 
@@ -126,19 +126,19 @@ SET /A c = %b% / %a%
 echo %c% 
 SET /A c = %b% * %a% 
 echo %c%
-The above command produces the following output.
+::   The above command produces the following output.
 
-15 
--5 
-2 
-50
+::   15 
+::   -5 
+::   2 
+::   50
 
-----------------------------------------------------------------
-
-
+::   ----------------------------------------------------------------
 
 
-void fun_operators()
+
+
+::   void fun_operators()
 {
 int first_check, second_check;
 int first_multi_assign, second_multi_assign;
