@@ -139,84 +139,70 @@ echo %c%
 
 
 ::   void fun_operators()
-{
-int first_check, second_check;
-int first_multi_assign, second_multi_assign;
-int first_temp = 1;
-double sum_temps, second_temp = 2.00;
-int five = 5, three = 3, zero = 0;
+::   {
+::   int first_check, second_check;
+::   int first_multi_assign, second_multi_assign;
+::   int first_temp = 1;
+::   double sum_temps, second_temp = 2.00;
+::   int five = 5, three = 3, zero = 0;
 
-int first_explicit_conv, second_explicit_conv;
-int explicit_conv_assignment;
-
-
-// need to touch on lvalue, rvalue, gvalue: 
-// lecture's coverage: lval is left and changing, and rval is right, WOW!
+::   int first_explicit_conv, second_explicit_conv;
+::   int explicit_conv_assignment;
 
 
-
-// More Material:
-// for the wiki tldr: https://en.wikipedia.org/wiki/Value_(computer_science)
-// for the famous lval/rval/gval/xval graph: https://stackoverflow.com/questions/3601602/what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues
+::   need to touch on lvalue, rvalue, gvalue: 
+::   lecture's coverage: lval is left and changing, and rval is right, WOW!
 
 
 
-//   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
-int first = 1;
-first = 2;
-
-
-//   ^ ^ ^ Multiple Assignment ^ ^ ^
-
-first_multi_assign = second_multi_assign = 1;
-
-
-//   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^ ^
-first = first + 3;
-first += 3;
-first = first + 1;
-first++;
-++first;
-
-
-//   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^ 
-// what here ? what comes before what? * before / in C?  
-
-
-//   ^ ^ ^ ^ Prefix vs Postfix inc/dec operator ^ ^ ^ ^
-first_check = 1;
-first_check = second_check++; // first_check = 1, second_check = 2 
-first_check = ++second_check; // first_check = second_check = 3
+::   More Material:
+::   for the wiki tldr: https://en.wikipedia.org/wiki/Value_(computer_science)
+::   for the famous lval/rval/gval/xval graph: https://stackoverflow.com/questions/3601602/what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues
 
 
 
-//   ^ ^ ^ ^ Arithmetical Operators: Narrowing/Widening type Casting ^ ^ ^ ^
+::   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
+::   int first = 1;
+::   first = 2;
 
 
-//   ^ ^ ^ type casting/C-casting ^ ^ ^
+::   ^ ^ ^ Multiple Assignment ^ ^ ^
 
-//   ^ ^ Implicit conversion - mismatching variables in opeartion ^ ^
-
-first_temp + second_temp; // first is promoted to double in widening implicit c type conversion
-
-//   ^ ^ Explicit conversion - assigned to different type OR different type written in parantheses ^ ^ 
-
-first_explicit_conv = 3, second_explicit_conv = 4;
-explicit_conv_assignment = (float)(first_explicit_conv / second_explicit_conv); // both exp conv scenarios, order: 1. int result temp 2. float result temp, 3. int assignment temp
+::   first_multi_assign = second_multi_assign = 1;
 
 
+::   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^ ^
+::   first = first + 3;
+::   first= += 3;
+::   first = first + 1;
+::   first++;
+::   ++first;
 
 
- 
+::   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^ 
+::   what here ? what comes before what? * before / in C?  
+
+
+::   ^ ^ ^ ^ Prefix vs Postfix inc/dec operator ^ ^ ^ ^
+::   first_check = 1;
+::   first_check = second_check++; // first_check = 1, second_check = 2 
+::   first_check = ++second_check; // first_check = second_check = 3
 
 
 
+::   ^ ^ ^ ^ Arithmetical Operators: Narrowing/Widening type Casting ^ ^ ^ ^
 
-// More Material: 
-// map from this more about casts: https://stackoverflow.com/questions/28002/regular-cast-vs-static-cast-vs-dynamic-cast
-// No Automatic casting to wide in c++? a set of rules: https://www.youtube.com/watch?v=uI10H1jzw00
-// Make temp variable arithmetic in tablet and map building upon these scenarios: 
-// answer: b' - promotion, (a + b')' - same, ((a + b')')' - demotion  
+
+::   ^ ^ ^ type casting/C-casting ^ ^ ^
+
+::   ^ ^ Implicit conversion - mismatching variables in opeartion ^ ^
+
+::   first_temp + second_temp; // first is promoted to double in widening implicit c type conversion
+
+::   ^ ^ Explicit conversion - assigned to different type OR different type written in parantheses ^ ^ 
+
+::   first_explicit_conv = 3, second_explicit_conv = 4;
+::   explicit_conv_assignment = (float)(first_explicit_conv / second_explicit_conv); // both exp conv scenarios, order: 1. int result temp 2. float result temp, 3. int assignment temp
 
 
 
@@ -226,10 +212,10 @@ explicit_conv_assignment = (float)(first_explicit_conv / second_explicit_conv); 
 
 
 
-//   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
-// order of operations ?
-// == and != are the least in the order of operations, maybe finish the operations order ladder?
-// false and true are exactly 0 and 1
+::   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
+::   order of operations ?
+::   == and != are the least in the order of operations, maybe finish the operations order ladder?
+::   false and true are exactly 0 and 1
 
 five == 2;
 (three < five || three < zero);
