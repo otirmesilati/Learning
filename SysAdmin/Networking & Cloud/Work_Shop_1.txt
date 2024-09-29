@@ -1,7 +1,22 @@
-DNS Protocol
+& & & & & & DNS - Client Server Model & & & & & &
 
-- Human readable 
-- Asking a DNS server for IP adress of <site>
+^ ^ ^ ^ ^ HTTP Requesting ^ ^ ^ ^ ^
+
+GET: <Resource>
+HOST: <URL>
+Accept-Language: <Language Acronym>
+
+
+
+
+
+
+
+
+
+
+
+
 
 server acts as forwarding agent
 
@@ -35,3 +50,30 @@ removes everything and leaves text: document.body.innerHTML = 'hello';
 `suppress pasting warning: allow pasting 
 -styles:
 image inspection: margin in orange, green is padding, and the blue is the element
+
+
+
+
+
+
+dynamic resources:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
