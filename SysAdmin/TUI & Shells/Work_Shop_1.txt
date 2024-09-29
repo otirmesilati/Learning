@@ -20,7 +20,7 @@ win32 tools?(cmd?)
 
 ^ ^ ^ ^ CMD ^ ^ ^ ^
 
-Yet to find a CMD emulator
+:: Yet to find an online CMD emulator
 
 
 
@@ -47,34 +47,10 @@ standard lib? gui?
 
 & & & & & & Comments & & & & & &
 
-:: Single Line comment - acts as a nameless label, "drive letter"-ish 
+:: Single Line comment - acts as a nameless label, "drive letter"-ish -> thus can be problematic to do <command1> && :: <comments>
+:: do <command2> && REM <comments> instead! (Error: The system cannot find the driver specified)
 
 REM For Line documentation - actual command
-
-
-
-
-
-
-More Material: 
-
-Here is an example where :: produces a problem in a FOR loop.
-
-This example will not work in a file called test.bat on your desktop:
-
-@echo off
-for /F "delims=" %%A in ('type C:\Users\%username%\Desktop\test.bat') do (
-    ::echo hello>C:\Users\%username%\Desktop\text.txt
-)
-pause
-While this example will work as a comment correctly:
-
-@echo off
-for /F "delims=" %%A in ('type C:\Users\%username%\Desktop\test.bat') do (
-    REM echo hello>C:\Users\%username%\Desktop\text.txt
-)
-pause
-The problem appears to be when trying to redirect output into a file. My best guess is that it is interpreting :: as an escaped label called :echo.
 
 
 
@@ -86,26 +62,27 @@ The problem appears to be when trying to redirect output into a file. My best gu
 
 & & & & & & Literals (+ defined unary literal operators) & & & & & &
 
+^ ^ ^ ^ ^ Expressions ^ ^ ^ ^ ^ 
 
-//   ^ ^ ^ ^ ^ Expressions ^ ^ ^ ^ ^ //
 
-
-//   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
+^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
 
 123;
-// no underscore format for numbers like 1,234! 
+:: no underscore format for numbers like 1,234! 
 -123;
 
 
-//  ^ ^ ^ ^ Coding Modifiers ^ ^ ^ ^
+^ ^ ^ ^ Coding Modifiers ^ ^ ^ ^
 
-//  ^ ^ ^ Radixed modifier ^ ^ ^
+^ ^ ^ Radixed modifier ^ ^ ^
 
-0x12AB;
-012; // octal literals written without o //
-0b110011;
+:: Literals - Only for Assignments
 
-No built in Un-Sgined, Long, And Floating Numbers Tools.
+set /a my_num = 0x12AB
+set /a my_num = 012 && REM octal literals written without o
+REM No Binary literals
+
+:: No built in Un-Sgined, Long, And Floating Numbers Tools.
 
 
 
@@ -117,50 +94,7 @@ No built in Un-Sgined, Long, And Floating Numbers Tools.
 
 //   & & & & & & String Formatting & & & & & &
 
-
-
-void fun_string_formats(){
-
-int number = 1;
-double dvalue = 2.344444;
-int undef_behav = 4;
-
-
-//   ^ ^ ^ ^ ^ Format Specifier Fields ^ ^ ^ ^ ^
-
-//   ^ ^ ^ ^ Flags ^ ^ ^ ^
-
-
-
-//   ^ ^ ^ ^ Precision ^ ^ ^ ^
-
-printf("%d %.2lf", number, dvalue); // two digits left of decimal point 
-// what about two digits to the right? 
-
-
-//   width
-//   ^ ^ ^ ^ Length ^ ^ ^ ^
-
-printf("%ld", 1); // long
-printf("%lf", 2.34); // double
-
-//   ^ ^ ^ ^ Types ^ ^ ^ ^
-
-printf("%c", 'a'); // char
-printf("%d", 1); // int
-printf("%f", 2.3); // float
-
-
-
-printf("%c", undef_behav); // wrong type field - undefined behaviour!
-
-//   custom field 
-
-}
-
-
-// More Material: 
-// complete this section from here: https://en.wikipedia.org/wiki/Printf 
+No String Formatting: specifier fields (precision, length, types)
 
 
 
@@ -173,6 +107,10 @@ printf("%c", undef_behav); // wrong type field - undefined behaviour!
 //   & & & & & & Operators & & & & & &
 // which operations are available? one what types? categories : numbers, string operators...
 
+
+Map This Part after doing the rest of the operator portion in other mappings:
+Also, Touch on the Arith operators: +(+=),-(-=),*(*=),/(/=),%,(%=), relational: equ(or == for strings),neq,lss,leq,gtr,geq, logicl: and(&),or(|), not(^)
+----------------------------------------------------------------
 
 The output of the above program would be 15.
 
@@ -195,6 +133,10 @@ The above command produces the following output.
 -5 
 2 
 50
+
+----------------------------------------------------------------
+
+
 
 
 void fun_operators()
@@ -270,6 +212,7 @@ explicit_conv_assignment = (float)(first_explicit_conv / second_explicit_conv); 
 
 
 
+
 // More Material: 
 // map from this more about casts: https://stackoverflow.com/questions/28002/regular-cast-vs-static-cast-vs-dynamic-cast
 // No Automatic casting to wide in c++? a set of rules: https://www.youtube.com/watch?v=uI10H1jzw00
@@ -340,168 +283,40 @@ set /a my_int = 5
 set my_string = hi
 
 
-Stopped at: https://www.tutorialspoint.com/batch_script/batch_script_variables.htm (local and global variables)
-
 ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^
 
 
 //   ^ ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^ ^
 
 //   ^ ^ ^ ^ Global & Static Variables ^ ^ ^ ^
-// Both default value if not initialized : 0
 
-imagine_this_is_out_of_any_function_global = 4;
-
-{ // imagine this is void function my_func
-
-    printf("global is accessible: %d", imagine_this_is_out_of_any_function_global);    
-    imagine_this_is_out_of_any_function_global = 7; // and mutable //
-    static int my_static = 0; // static variable accessible in my_func
-}  
-
-// but even though it's lifetime is the same as the global variable - trying to access the static variable from main - is a compilation error
-
+:: variables are by defualt global
 
 //   ^ ^ ^ ^ Local variables ^ ^ ^ ^
 
-int first_level_local = 1;
-int this_wont_be_changed_local = 2;
-{ 
-
-    int second_level_local = 3;
-    int this_wont_be_changed_local = 4;
-
-    {
-        int third_level_local = 5;
-    }
-
-}
-
-first_level_local = 3;
-// second_level_local = 4; -> not possible, it's local to the block
-// this_wont_be_changed_local -> 2, the one with the 4 value was a different variable
+SETLOCAL
+set /a my_local = 12
+echo %my_local%
+ENDLOCAL
+:: echo %my_local% won't work here
 
 
 //   ^ ^ ^ ^ ^ Constants ^ ^ ^ ^ ^
 
-//   ^ ^ ^ ^ Pre-Processor Macros ^ ^ ^ ^
-
-//   ^ ^ ^ Defines ^ ^ ^
-
-#define CRT_SECURE_NO_WARNINGS
-#define ZERO 0
-#define PI 3.1415
-
-
-//   ^ ^ ^ Enums(Almost pre-processor) ^ ^ ^
-
-enum boolean {NO, YES};
-typedef enum {TRUE = 1, FALSE = 0} Boolean;
-
-
-//   ^ ^ ^ ^ Constants: Immutables 
-
-//   ^ ^ ^ ConstExpr : Compile Time Immutable ^ ^ ^ 
-
-//constexpr int static_time_const = 0;
-
-
-//   ^ ^ ^ Const : Run Time Immutable ^ ^ ^
-
-const int dynamic_time_const = 1;
-
-//   ^ ^ Pointer Const ^ ^
-
-int mutable_value = 0;
-int immutable_value = 1;
-int immutable_value_and_adress = 2;
-
-const int* const_pointer_to_int = &immutable_value;
-int* const const_pointer_to_int = &mutable_value;
-const int* const const_pointer_to_int = &immutable_value_and_adress;
-
+:: No Constants - compile time (pre-proc macros, defines, enums), or run time. 
 
 //   ^ ^ ^ ^ ^ Pointers ^ ^ ^ ^ ^
 
-char* my_char_pointer;
-int* my_int_pointer;
-long* my_long_pointer;
-float* my_float_pointer;
-double* my_double_pointer;
-
-//   ^ ^ ^ ^ Static Allocation ^ ^ ^ ^
-
-my_char_pointer = &my_char;
-my_int_pointer = &my_int;
-my_long_pointer = &my_long;
-my_float_pointer = &my_float;
-my_double_pointer = &my_double;
-
-//   ^ ^ ^ ^ Dynamic Allocation ^ ^ ^
-
-// break? continue?
-
-//   ^ ^ ^ Heap Byte Allocation: Malloc ^ ^ ^
-
-my_char_pointer = (char*)malloc(sizeof(char));
-my_int_pointer = (int*)malloc(sizeof(int));
-my_long_pointer = (long*)malloc(sizeof(long));
-my_float_pointer = (float*)malloc(sizeof(float));
-
-//   ^ ^ ^ Heap Zero Allocation: Calloc ^ ^ ^
-
-
-my_char_pointer = (char*)calloc(1, sizeof(char));
-my_int_pointer = (int*)calloc(1, sizeof(int));
-my_long_pointer = (long*)calloc(1, sizeof(long));
-my_float_pointer = (float*)calloc(1, sizeof(float));
-
-//   ^ ^ ^ Heap Memory De-Allocation ^ ^ ^
-
-free(my_char_pointer);
-free(my_int_pointer);
-free(my_long_pointer);
-free(my_float_pointer);
-
-//   ^ ^ ^ Heap Memory Re-Allocation ^ ^ ^
-
-my_char_pointer = realloc(my_char_pointer, sizeof(char) * 1);
-my_int_pointer = realloc(my_int_pointer, sizeof(int) * 2);
-my_long_pointer = realloc(my_long_pointer, sizeof(long) * 3);
-my_float_pointer = realloc(my_float_pointer, sizeof(float) * 4);
-
-//   ^ ^ ^ ^ Void (Generaic) Pointers ^ ^ ^ ^
-
-void* my_generic_pointer;
-
-char* my_generic_pointer_converted_to_char_pointer;
-int* my_generic_pointer_converted_to_int_pointer;
-long* my_generic_pointer_converted_to_long_pointer;
-float* my_generic_pointer_converted_to_float_pointer;
-double* my_generic_pointer_converted_to_double_pointer;
-
-my_generic_pointer_converted_to_char_pointer = (char*)my_generic_pointer;
-my_generic_pointer_converted_to_int_pointer = (int*)my_generic_pointer;
-my_generic_pointer_converted_to_long_pointer = (long*)my_generic_pointer;
-my_generic_pointer_converted_to_float_pointer = (float*)my_generic_pointer;
-my_generic_pointer_converted_to_double_pointer = (double*)my_generic_pointer;
+:: No Pointers - Allocation is irrelevant in compile time, or run time.
 
 //   ^ ^ ^ ^ Arrays ^ ^ ^ ^ 
 
 // strings?
 
 
-
 }
 
 
-
-
-
-
-More Material:
-
-https://nostarch.com/download/BatchCodingLanguage_Chapter6.pdf
 
 
 
