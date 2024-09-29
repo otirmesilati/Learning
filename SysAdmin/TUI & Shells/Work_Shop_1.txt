@@ -34,8 +34,8 @@ win32 tools?(cmd?)
 
 
 
-& & & & & & Libraries & & & & & &
-standard lib? gui?
+::   & & & & & & Libraries & & & & & &
+::   standard lib? gui?
 
 
 
@@ -45,7 +45,7 @@ standard lib? gui?
 
 
 
-& & & & & & Comments & & & & & &
+::   & & & & & & Comments & & & & & &
 
 :: Single Line comment - acts as a nameless label, "drive letter"-ish -> thus can be problematic to do <command1> && :: <comments>
 :: do <command2> && REM <comments> instead! (Error: The system cannot find the driver specified)
@@ -60,12 +60,12 @@ REM For Line documentation - actual command
 
 
 
-& & & & & & Literals (+ defined unary literal operators) & & & & & &
+::   & & & & & & Literals (+ defined unary literal operators) & & & & & &
 
-^ ^ ^ ^ ^ Expressions ^ ^ ^ ^ ^ 
+::   ^ ^ ^ ^ ^ Expressions ^ ^ ^ ^ ^ 
 
 
-^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
+::   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
 
 123;
 :: no underscore format for numbers like 1,234! 
