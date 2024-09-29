@@ -61,22 +61,21 @@ REM For Line documentation - actual command
 
 
 ::   & & & & & & Literals (+ defined unary literal operators) & & & & & &
+:: Literals - Only for Assignments
 
 ::   ^ ^ ^ ^ ^ Expressions ^ ^ ^ ^ ^ 
 
 
 ::   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
 
-123;
+set /a my_num = 123;
 :: no underscore format for numbers like 1,234! 
--123;
+set /a my_num = -123;
 
 
-^ ^ ^ ^ Coding Modifiers ^ ^ ^ ^
+::   ^ ^ ^ ^ Coding Modifiers ^ ^ ^ ^
 
-^ ^ ^ Radixed modifier ^ ^ ^
-
-:: Literals - Only for Assignments
+::   ^ ^ ^ Radixed modifier ^ ^ ^
 
 set /a my_num = 0x12AB
 set /a my_num = 012 && REM octal literals written without o
@@ -92,9 +91,9 @@ REM No Binary literals
 
 
 
-//   & & & & & & String Formatting & & & & & &
+::   & & & & & & String Formatting & & & & & &
 
-No String Formatting: specifier fields (precision, length, types)
+::   No String Formatting: specifier fields (precision, length, types)
 
 
 
