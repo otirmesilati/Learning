@@ -8,35 +8,6 @@
 
 
 
-
-
-
-::   < < < < < < < <   Command Principles   > > > > > > > >   */
-
-
-
-
-
-
-
-
-
-::   & & & & & & Making a Command Script & & & & & & 
-
-#!/bin/sh
-chmod +x my_bash_file.sh
-./my_bash_file.sh  
-
-
-
-
-
-
-
-
-
-
-
 /*   < < < < < < < <   Language Principles   > > > > > > > >   */
 
 
@@ -374,7 +345,7 @@ imagine_this_is_out_of_any_function_global = 4;
 
 { // imagine this is void function my_func
 
-    printf("global is accessible: %d", imagine_this_is_out_of_any_function_global);    
+    // change to cout : printf("global is accessible: %d", imagine_this_is_out_of_any_function_global);    
     imagine_this_is_out_of_any_function_global = 7; // and mutable //
     static int my_static = 0; // static variable accessible in my_func
 }  
