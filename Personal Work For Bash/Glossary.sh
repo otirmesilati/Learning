@@ -293,64 +293,36 @@ my_local_varaible=1 # variables are by default Shell varaibles(local)
 
 
 
-# ::    & & & & & & Flow Control & & & & & &
+#   & & & & & & Flow Control & & & & & &
 
+setf_arg=0
+s_arg=1
+val_of_ptr=2
 
-# ::   void fun_flow_control()
-# ::   {
+#   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^ 
 
-# ::   int condition = 1;
-# ::   int outer_condition = 0;
-# ::   int elif_condition = 1;
-# ::   int if_condition = 0; int elseif_condition = 1;
-# ::   int switch_key = 2;
+# No Labels/Gotos.
 
+#   ^ ^ ^ ^ ^ Conditional Statements & & & & & &
 
-# ::   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^ 
+#   ^ ^ ^ ^ If & Else ^ ^ ^ ^ ^
 
-# ::   ^ ^ ^ ^ ^ Procedure labels & GoTo ^ ^ ^ ^ ^
-
-# ::   procedure_1_label:
-# ::   first procedure  //
-
-# ::   goto procedure_2_label;
-
-# ::   procedure_2_label:
-# ::   second procedure //
-
-# ::   More Material: https://www.geeksforgeeks.org/local-labels-in-c/
-
-
-# ::   ^ ^ ^ ^ ^ Conditional Statements & & & & & &
-
-# ::   ^ ^ ^ ^ If & Else ^ ^ ^ ^ ^
-
-# ::   if(condition)
-# ::   {
-# ::   condition TRUE -> first procedure
-# ::   }
-
-# ::   else
-# ::   {
-# ::   condition FALSE -> second procedure
-# ::   }
+if [ $f_arg == $s_arg]
+then # Condition TRUE -> First Procedure
+echo "Both arguments are equal."
+else # Condition FALSE -> Second Procedure
+echo "Arguments are not equal."
+fi
 
 
 # ::   ^ ^ ^ Null Checks ^ ^ ^
 
-# ::   int val_of_ptr = 0;
-# ::   int* ptr_to_check = &val_of_ptr;
-
-# ::   Alternative 1 - using 0 representations
-
-# ::   if (ptr_to_check!= 0) {}
-# ::   if (ptr_to_check!= NULL) {} 
-# ::   if (ptr_to_check!= '\0') {}
-
-# ::   Alternative 2 - using zero equating
-
-# ::   if (ptr_to_check) {}
-
+if [ -n "$val_of_ptr"]
+then
+echo "not null"
+else
+echo "null"
+fi
 
 # ::   ^ ^ ^ Nested Ifs ^ ^ ^
 
