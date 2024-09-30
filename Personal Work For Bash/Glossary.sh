@@ -97,11 +97,10 @@ my_string=the1iswasastring
 
 
 # ::   & & & & & & Operators & & & & & &
-# ::   which operations are available? one what types? categories : numbers, string operators...
 
 
 # ::   Map This Part after doing the rest of the operator portion in other mappings:
-# ::   Also, Touch on the Arith operators: +(+=),-(-=),*(*=),/(/=),%,(%=), relational: equ(or == for strings),neq,lss,leq,gtr,geq, logicl: and(&),or(|), not(^)
+# ::   Also, Touch on the Arith operators: +(+=),-(-=),*(*=),/(/=),%,(%=), relational: eq(or ==),ne,ls,le,gt,ge, logicl: -a ,-o, !, 
 # ::   ----------------------------------------------------------------
 
 # ::   The output of the above program would be 15.
@@ -251,15 +250,8 @@ my_string=the1iswasastring
 
 # ::   ^ ^ ^ ^ ^ Variables & & & & & &
 
-# ::   ^ ^ ^ ^ Command line arguments ^ ^ ^ ^
-# :: %1 ? what here ?
-
-
-# ::   ^ ^ ^ ^ Set Variables ^ ^ ^ ^
-
-# set /a my_int = 5
-# set my_string = hi
-
+my_num=1
+my_string=the1iswasastring
 
 # ::   ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^
 
@@ -310,51 +302,51 @@ my_string=the1iswasastring
 
 # ::   int condition = 1;
 # ::   int outer_condition = 0;
-::   int elif_condition = 1;
-::   int if_condition = 0; int elseif_condition = 1;
-::   int switch_key = 2;
+# ::   int elif_condition = 1;
+# ::   int if_condition = 0; int elseif_condition = 1;
+# ::   int switch_key = 2;
 
 
-::   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^ 
+# ::   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^ 
 
-::   ^ ^ ^ ^ ^ Procedure labels & GoTo ^ ^ ^ ^ ^
+# ::   ^ ^ ^ ^ ^ Procedure labels & GoTo ^ ^ ^ ^ ^
 
-::   procedure_1_label:
-::   first procedure  //
+# ::   procedure_1_label:
+# ::   first procedure  //
 
-::   goto procedure_2_label;
+# ::   goto procedure_2_label;
 
-::   procedure_2_label:
-::   second procedure //
+# ::   procedure_2_label:
+# ::   second procedure //
 
-::   More Material: https://www.geeksforgeeks.org/local-labels-in-c/
-
-
-::   ^ ^ ^ ^ ^ Conditional Statements & & & & & &
-
-::   ^ ^ ^ ^ If & Else ^ ^ ^ ^ ^
-
-::   if(condition)
-::   {
-::   condition TRUE -> first procedure
-::   }
-
-::   else
-::   {
-::   condition FALSE -> second procedure
-::   }
+# ::   More Material: https://www.geeksforgeeks.org/local-labels-in-c/
 
 
-::   ^ ^ ^ Null Checks ^ ^ ^
+# ::   ^ ^ ^ ^ ^ Conditional Statements & & & & & &
 
-::   int val_of_ptr = 0;
-::   int* ptr_to_check = &val_of_ptr;
+# ::   ^ ^ ^ ^ If & Else ^ ^ ^ ^ ^
 
-::   Alternative 1 - using 0 representations
+# ::   if(condition)
+# ::   {
+# ::   condition TRUE -> first procedure
+# ::   }
 
-::   if (ptr_to_check!= 0) {}
-::   if (ptr_to_check!= NULL) {} 
-::   if (ptr_to_check!= '\0') {}
+# ::   else
+# ::   {
+# ::   condition FALSE -> second procedure
+# ::   }
+
+
+# ::   ^ ^ ^ Null Checks ^ ^ ^
+
+# ::   int val_of_ptr = 0;
+# ::   int* ptr_to_check = &val_of_ptr;
+
+# ::   Alternative 1 - using 0 representations
+
+# ::   if (ptr_to_check!= 0) {}
+# ::   if (ptr_to_check!= NULL) {} 
+# ::   if (ptr_to_check!= '\0') {}
 
 ::   Alternative 2 - using zero equating
 
