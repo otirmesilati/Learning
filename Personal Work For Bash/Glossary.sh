@@ -309,9 +309,9 @@ val_of_ptr=2
 
 if [ $f_arg == $s_arg]
 then # Condition TRUE -> First Procedure
-echo "Both arguments are equal."
+    echo "Both arguments are equal."
 else # Condition FALSE -> Second Procedure
-echo "Arguments are not equal."
+    echo "Arguments are not equal."
 fi
 
 
@@ -319,84 +319,76 @@ fi
 
 if [ -n "$val_of_ptr"]
 then
-echo "not null"
+    echo "not null"
 else
-echo "null"
+    echo "null"
 fi
+
 
 # ::   ^ ^ ^ Nested Ifs ^ ^ ^
 
-# ::   if(outer_condition)
-# ::   {
-# ::   first procedure
-# ::   }
-# ::   else
-# ::   {
-# ::   if(elif_condition) // else if logic , same as the else if example below
-# ::   {
-# ::   second procedure
-# ::   }
-# ::   }
+if [ $f_arg == $s_arg]
+then # Condition TRUE -> First Procedure
+    echo "Both arguments are equal."
+else # Condition FALSE -> Second Procedure
+    if [ $f_arg == $s_arg] # else if logic , same as the else if example below
+    then # Condition TRUE -> Second Procedure
+        echo "Arguments are not equal."
+    fi
+fi
 
 
 # ::   ^ ^ ^ Else-If ^ ^ ^ 
 
-# ::   if(if_condition)
+if [ $f_arg == $s_arg]
+then 
+    echo "Both arguments are equal."
+elif [ $f_arg == $s_arg] # same as the example above
+then 
+    echo "Arguments are not equal."
+fi
+
+
+# ::   ^ ^ ^ ^ Switch ^ ^ ^ ^ ^
+
+# ::   switch (switch_key)
 # ::   {
-# ::   first procedure
+
+# ::   case 1: // first procedure
+# ::       break;
+
+# ::   case 2: // second procedure
+# ::       break;
+
+# ::   case 3: // third procedure
+# ::       break;
+
+# ::   default: // fourth procedure
+# ::       break;
+
 # ::   }
-::   else if(elseif_condition) // same as the example above
-::   {
-::   second procedure
-::   }
 
 
-::   map to the tablet - new skill for relations, building a "order relation" graph under constraints (number of maximum relation checks on members, like finding the max of 3 numbers(linear relation) in no more than 3 tries)
-::   and also - mapping the control flow diagram - a straight line digram that splits whenever theres a conditional statement:
-::             - - - - - - - -
-::    - - - - -| condition 1  | - - - - - (when theres else-if the split is more than two - 3 + )
-::             - - - - - - - - 
+# ::   ^ ^ ^ ^ ^ Loops ^ ^ ^ ^ ^ 
 
-::   ^ ^ ^ ^ Switch ^ ^ ^ ^ ^
+# ::   break? continue?
 
-::   switch (switch_key)
-::   {
+# ::   ^ ^ ^ ^ While Loops ^ ^ ^ ^
 
-::   case 1: // first procedure
-::       break;
+# ::   int while_index = 0;
+# ::   while(while_index <= 5) // condition checking BEFORE the procedure ran
+# ::   {
+# ::       ++while_index;
+# ::       // while procedure
+# ::   }
 
-::   case 2: // second procedure
-::       break;
+# ::   ^ ^ ^ Do-While Loops ^ ^ ^
 
-::   case 3: // third procedure
-::       break;
-
-::   default: // fourth procedure
-::       break;
-
-::   }
-
-
-::   ^ ^ ^ ^ ^ Loops ^ ^ ^ ^ ^ 
-
-::   break? continue?
-
-::   ^ ^ ^ ^ While Loops ^ ^ ^ ^
-
-::   int while_index = 0;
-::   while(while_index <= 5) // condition checking BEFORE the procedure ran
-::   {
-::       ++while_index;
-::       // while procedure
-::   }
-
-::   ^ ^ ^ Do-While Loops ^ ^ ^
-
-::   int do_while_index = -1;
-::   do
-::   {
-::       ++do_while_index;
-::       // do-while procedure
+# ::   int do_while_index = -1;
+# ::   do
+# ::   {
+# ::       ++do_while_index;
+# ::       // do-while procedure
 ::   } while(do_while_index <= 5); //condition checking AFTER the procedure ran
 
 
