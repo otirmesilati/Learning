@@ -217,37 +217,35 @@ echo %c%
 ::   == and != are the least in the order of operations, maybe finish the operations order ladder?
 ::   false and true are exactly 0 and 1
 
-five == 2;
-(three < five || three < zero);
+::   five == 2;
+::   (three < five || three < zero);
 
-// combining logical and arith: (arithmetic operators take precedence)
-/*
-lecture's example:
-int x = 2;
-int y = (x > 5) + 1; // (x > 5) -> 0 -> 0 + 1 = 1
+::   // combining logical and arith: (arithmetic operators take precedence)
+::   /*
+::   lecture's example:
+::   int x = 2;
+::   int y = (x > 5) + 1; // (x > 5) -> 0 -> 0 + 1 = 1
 
-int a = 2, b;
-((b = 2) == a) // (b = 2) -> (2) -> 2 == 2 -> 1, trick question: a wierd behaviour of c family languages - assignment returns the assign value, acts as arithmetic
+::   int a = 2, b;
+::   ((b = 2) == a) // (b = 2) -> (2) -> 2 == 2 -> 1, trick question: a wierd behaviour of c family languages - assignment returns the assign value, acts as arithmetic
 
-*/
+::   */
 
-//   Overloading literal operators: https://en.cppreference.com/w/cpp/language/user_literal
+::    Overloading literal operators: https://en.cppreference.com/w/cpp/language/user_literal
 
-//   ^ ^ ^ ^ ^ Pointer Operators ^ ^ ^ ^ ^
+::   ^ ^ ^ ^ ^ Pointer Operators ^ ^ ^ ^ ^
 
-int ptr_value_1 = 0;
-
-
-int* ptr_address_1 = &ptr_value_1; // address operator
-ptr_value_1 = *ptr_address_1; // indirection operator
-
-// in one line(int + int* init in same line):
-int ptr_value_2 = 1, * ptr_address_2 = &ptr_value_2, ptr_value_2 = *ptr_address_2;
+::   int ptr_value_1 = 0;
 
 
-}
+::   int* ptr_address_1 = &ptr_value_1; // address operator
+::   ptr_value_1 = *ptr_address_1; // indirection operator
+
+::   // in one line(int + int* init in same line):
+::   int ptr_value_2 = 1, * ptr_address_2 = &ptr_value_2, ptr_value_2 = *ptr_address_2;
 
 
+::   }
 
 
 
@@ -256,28 +254,30 @@ int ptr_value_2 = 1, * ptr_address_2 = &ptr_value_2, ptr_value_2 = *ptr_address_
 
 
 
-^ ^ ^ ^ ^ Variables & & & & & &
 
-^ ^ ^ ^ Command line arguments ^ ^ ^ ^
+
+::   ^ ^ ^ ^ ^ Variables & & & & & &
+
+::   ^ ^ ^ ^ Command line arguments ^ ^ ^ ^
 %1 ? what here ?
 
 
-^ ^ ^ ^ Set Variables ^ ^ ^ ^
+::   ^ ^ ^ ^ Set Variables ^ ^ ^ ^
 
 set /a my_int = 5
 set my_string = hi
 
 
-^ ^ ^ ^ Scope Sharing ^ ^ ^ ^
+::   ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^
 
 
-//   ^ ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^ ^
+::   ^ ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^ ^
 
-//   ^ ^ ^ ^ Global & Static Variables ^ ^ ^ ^
+::   ^ ^ ^ ^ Global & Static Variables ^ ^ ^ ^
 
-:: variables are by defualt global
+::   variables are by defualt global
 
-//   ^ ^ ^ ^ Local variables ^ ^ ^ ^
+::   ^ ^ ^ ^ Local variables ^ ^ ^ ^
 
 SETLOCAL
 set /a my_local = 12
@@ -286,20 +286,20 @@ ENDLOCAL
 :: echo %my_local% won't work here
 
 
-//   ^ ^ ^ ^ ^ Constants ^ ^ ^ ^ ^
+::   ^ ^ ^ ^ ^ Constants ^ ^ ^ ^ ^
 
 :: No Constants - compile time (pre-proc macros, defines, enums), or run time. 
 
-//   ^ ^ ^ ^ ^ Pointers ^ ^ ^ ^ ^
+::   ^ ^ ^ ^ ^ Pointers ^ ^ ^ ^ ^
 
 :: No Pointers - Allocation is irrelevant in compile time, or run time.
 
-//   ^ ^ ^ ^ Arrays ^ ^ ^ ^ 
+::   ^ ^ ^ ^ Arrays ^ ^ ^ ^ 
 
-// strings?
+::   strings?
 
 
-}
+::   }
 
 
 
@@ -309,158 +309,158 @@ ENDLOCAL
 
 
 
-//   & & & & & & Flow Control & & & & & &
+::    & & & & & & Flow Control & & & & & &
 
 
-void fun_flow_control()
-{
+::   void fun_flow_control()
+::   {
 
-int condition = 1;
-int outer_condition = 0;
-int elif_condition = 1;
-int if_condition = 0; int elseif_condition = 1;
-int switch_key = 2;
+::   int condition = 1;
+::   int outer_condition = 0;
+::   int elif_condition = 1;
+::   int if_condition = 0; int elseif_condition = 1;
+::   int switch_key = 2;
 
 
-//   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^ 
+::   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^ 
 
-//   ^ ^ ^ ^ ^ Procedure labels & GoTo ^ ^ ^ ^ ^
+::   ^ ^ ^ ^ ^ Procedure labels & GoTo ^ ^ ^ ^ ^
 
-procedure_1_label:
-// first procedure  //
+::   procedure_1_label:
+::   first procedure  //
 
-goto procedure_2_label;
+::   goto procedure_2_label;
 
-procedure_2_label:
-// second procedure //
+::   procedure_2_label:
+::   second procedure //
 
-// More Material: https://www.geeksforgeeks.org/local-labels-in-c/
+::   More Material: https://www.geeksforgeeks.org/local-labels-in-c/
 
 
-//   ^ ^ ^ ^ ^ Conditional Statements & & & & & &
+::   ^ ^ ^ ^ ^ Conditional Statements & & & & & &
 
-//   ^ ^ ^ ^ If & Else ^ ^ ^ ^ ^
+::   ^ ^ ^ ^ If & Else ^ ^ ^ ^ ^
 
-if(condition)
-{
-    // condition TRUE -> first procedure
-}
+::   if(condition)
+::   {
+::   condition TRUE -> first procedure
+::   }
 
-else
-{
-    // condition FALSE -> second procedure
-}
+::   else
+::   {
+::   condition FALSE -> second procedure
+::   }
 
 
-//   ^ ^ ^ Null Checks ^ ^ ^
+::   ^ ^ ^ Null Checks ^ ^ ^
 
-int val_of_ptr = 0;
-int* ptr_to_check = &val_of_ptr;
+::   int val_of_ptr = 0;
+::   int* ptr_to_check = &val_of_ptr;
 
-// Alternative 1 - using 0 representations
+::   Alternative 1 - using 0 representations
 
-if (ptr_to_check!= 0) {}
-if (ptr_to_check!= NULL) {} 
-if (ptr_to_check!= '\0') {}
+::   if (ptr_to_check!= 0) {}
+::   if (ptr_to_check!= NULL) {} 
+::   if (ptr_to_check!= '\0') {}
 
-// Alternative 2 - using zero equating
+::   Alternative 2 - using zero equating
 
-if (ptr_to_check) {}
+::   if (ptr_to_check) {}
 
 
-//   ^ ^ ^ Nested Ifs ^ ^ ^
+::   ^ ^ ^ Nested Ifs ^ ^ ^
 
-if(outer_condition)
-{
-    // first procedure
-}
-else
-{
-    if(elif_condition) // else if logic , same as the else if example below
-    {
-        // second procedure
-    }
-}
+::   if(outer_condition)
+::   {
+::   first procedure
+::   }
+::   else
+::   {
+::   if(elif_condition) // else if logic , same as the else if example below
+::   {
+::   second procedure
+::   }
+::   }
 
 
-//   ^ ^ ^ Else-If ^ ^ ^ 
+::   ^ ^ ^ Else-If ^ ^ ^ 
 
-if(if_condition)
-{
-    // first procedure
-}
-else if(elseif_condition) // same as the example above
-{
-    // second procedure
-}
+::   if(if_condition)
+::   {
+::   first procedure
+::   }
+::   else if(elseif_condition) // same as the example above
+::   {
+::   second procedure
+::   }
 
 
-// map to the tablet - new skill for relations, building a "order relation" graph under constraints (number of maximum relation checks on members, like finding the max of 3 numbers(linear relation) in no more than 3 tries)
-// and also - mapping the control flow diagram - a straight line digram that splits whenever theres a conditional statement:
-//             - - - - - - - -
-//    - - - - -| condition 1  | - - - - - (when theres else-if the split is more than two - 3 + )
-//             - - - - - - - - 
+::   map to the tablet - new skill for relations, building a "order relation" graph under constraints (number of maximum relation checks on members, like finding the max of 3 numbers(linear relation) in no more than 3 tries)
+::   and also - mapping the control flow diagram - a straight line digram that splits whenever theres a conditional statement:
+::             - - - - - - - -
+::    - - - - -| condition 1  | - - - - - (when theres else-if the split is more than two - 3 + )
+::             - - - - - - - - 
 
-//   ^ ^ ^ ^ Switch ^ ^ ^ ^ ^
+::   ^ ^ ^ ^ Switch ^ ^ ^ ^ ^
 
-switch (switch_key)
-{
+::   switch (switch_key)
+::   {
 
-case 1: // first procedure
-    break;
+::   case 1: // first procedure
+::       break;
 
-case 2: // second procedure
-    break;
+::   case 2: // second procedure
+::       break;
 
-case 3: // third procedure
-    break;
+::   case 3: // third procedure
+::       break;
 
-default: // fourth procedure
-    break;
+::   default: // fourth procedure
+::       break;
 
-}
+::   }
 
 
-//   ^ ^ ^ ^ ^ Loops ^ ^ ^ ^ ^ 
+::   ^ ^ ^ ^ ^ Loops ^ ^ ^ ^ ^ 
 
-// break? continue?
+::   break? continue?
 
-//   ^ ^ ^ ^ While Loops ^ ^ ^ ^
+::   ^ ^ ^ ^ While Loops ^ ^ ^ ^
 
-int while_index = 0;
-while(while_index <= 5) // condition checking BEFORE the procedure ran
-{
-    ++while_index;
-    // while procedure
-}
+::   int while_index = 0;
+::   while(while_index <= 5) // condition checking BEFORE the procedure ran
+::   {
+::       ++while_index;
+::       // while procedure
+::   }
 
-//   ^ ^ ^ Do-While Loops ^ ^ ^
+::   ^ ^ ^ Do-While Loops ^ ^ ^
 
-int do_while_index = -1;
-do
-{
-    ++do_while_index;
-    // do-while procedure
-} while(do_while_index <= 5); //condition checking AFTER the procedure ran
+::   int do_while_index = -1;
+::   do
+::   {
+::       ++do_while_index;
+::       // do-while procedure
+::   } while(do_while_index <= 5); //condition checking AFTER the procedure ran
 
 
-//   ^ ^ ^ ^ For Loops ^ ^ ^ ^
+::   ^ ^ ^ ^ For Loops ^ ^ ^ ^
 
-for(int for_index = 0; for_index <= 5 ; ++for_index) // same as above examples
-{
-    // for procedure
-}
+::   for(int for_index = 0; for_index <= 5 ; ++for_index) // same as above examples
+::   {
+::     for procedure
+::   }
 
 
 
-//   ^ ^ ^ ^ Empty portions in for loop ^ ^ ^ ^
-// no init? not condition? no counter?
+::   ^ ^ ^ ^ Empty portions in for loop ^ ^ ^ ^
+::   no init? not condition? no counter?
 
-// for(;;)
-// for(;;)
-// for(;;)
+::   for(;;)
+::   for(;;)
+::   for(;;)
 
-}
+::   }
 
 //   ^ ^ ^ ^ ^ Functions ^ ^ ^ ^ ^ 
 
@@ -497,8 +497,8 @@ void pass_by_adress(int* adr){}
 void rec_func(){rec_func();} // infinite loop logic
 
 
-//   ^ ^ ^ ^ Pointer Functions ^ ^ ^ ^
-// finish this from lecture 12
+::   ^ ^ ^ ^ Pointer Functions ^ ^ ^ ^
+::   finish this from lecture 12
 
 
 
@@ -506,24 +506,24 @@ void rec_func(){rec_func();} // infinite loop logic
 
 
 
-//   & & & & & & Structs & & & & & &
+::   & & & & & & Structs & & & & & &
 
-// files? 
+::   files? 
 
-//   & & & & & & Classes & & & & & &
+::   & & & & & & Classes & & & & & &
 
 
-/*   < < < < < < < <   Design Principles   > > > > > > > >   */
+::   < < < < < < < <   Design Principles   > > > > > > > >   */
 
-//   & & & & & & Procedural Design & & & & & &  
+::   & & & & & & Procedural Design & & & & & &  
 
-//   ^ ^ ^ ^ ^ Procedures: Implemented as Functions ^ ^ ^ ^ ^
-//   ^ ^ ^ ^ ^ Sequence/Execution control: Control Flow section's tools (if,else-if, for etc...) ^ ^ ^ ^ ^
-//   ^ ^ ^ ^ ^ Scope Modularity(?): Each function variable has a local scope ^ ^ ^ ^ ^ 
-//   ^ ^ ^ ^ ^ Single Responsibility Modularity: one function takes care of one functional requirement ^ ^ ^ ^ ^
-//   ^ ^ ^ ^ ^ Message Passing: Function invocation ^ ^ ^ ^ ^
-//   ^ ^ ^ ^ ^ Abstraction: each function invocation is a black box ^ ^ ^ ^ ^
-//   ^ ^ ^ ^ ^ Supports TDD: using the function, and then impementing
+::   ^ ^ ^ ^ ^ Procedures: Implemented as Functions ^ ^ ^ ^ ^
+::   ^ ^ ^ ^ ^ Sequence/Execution control: Control Flow section's tools (if,else-if, for etc...) ^ ^ ^ ^ ^
+::   ^ ^ ^ ^ ^ Scope Modularity(?): Each function variable has a local scope ^ ^ ^ ^ ^ 
+::   ^ ^ ^ ^ ^ Single Responsibility Modularity: one function takes care of one functional requirement ^ ^ ^ ^ ^
+::   ^ ^ ^ ^ ^ Message Passing: Function invocation ^ ^ ^ ^ ^
+::   ^ ^ ^ ^ ^ Abstraction: each function invocation is a black box ^ ^ ^ ^ ^
+::   ^ ^ ^ ^ ^ Supports TDD: using the function, and then impementing
 
 
 
