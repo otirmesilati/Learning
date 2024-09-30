@@ -36,7 +36,7 @@ chmod +x my_bash_file.sh
 
 
 #   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &
-#   standard lib? gui? useful environment variables?
+#   standard lib? gui? useful environment variables? $$ for id? more material : https://www.tutorialspoint.com/unix/unix-special-variables.htm
 
 
 
@@ -100,7 +100,8 @@ my_string=the1iswasastring
 
 
 # ::   Map This Part after doing the rest of the operator portion in other mappings:
-# ::   Also, Touch on the Arith operators: +(+=),-(-=),*(*=),/(/=),%,(%=), relational: eq(or ==),ne,ls,le,gt,ge, logicl: -a ,-o, !, 
+# ::   Also, Touch on the Arith operators: +(+=),-(-=),*(*=),/(/=),%,(%=), relational: eq(or ==),ne,ls,le,gt,ge, logicl: -a ,-o, !, strings: =, !=, -z, -n, str
+# ::   File Test Operators: (finish this), finish from here : https://www.tutorialspoint.com/unix/unix-basic-operators.htm
 # ::   ----------------------------------------------------------------
 
 # ::   The output of the above program would be 15.
@@ -346,32 +347,32 @@ my_local_varaible=1 # variables are by default Shell varaibles(local)
 # ::   if (ptr_to_check!= NULL) {} 
 # ::   if (ptr_to_check!= '\0') {}
 
-::   Alternative 2 - using zero equating
+# ::   Alternative 2 - using zero equating
 
-::   if (ptr_to_check) {}
-
-
-::   ^ ^ ^ Nested Ifs ^ ^ ^
-
-::   if(outer_condition)
-::   {
-::   first procedure
-::   }
-::   else
-::   {
-::   if(elif_condition) // else if logic , same as the else if example below
-::   {
-::   second procedure
-::   }
-::   }
+# ::   if (ptr_to_check) {}
 
 
-::   ^ ^ ^ Else-If ^ ^ ^ 
+# ::   ^ ^ ^ Nested Ifs ^ ^ ^
 
-::   if(if_condition)
-::   {
-::   first procedure
-::   }
+# ::   if(outer_condition)
+# ::   {
+# ::   first procedure
+# ::   }
+# ::   else
+# ::   {
+# ::   if(elif_condition) // else if logic , same as the else if example below
+# ::   {
+# ::   second procedure
+# ::   }
+# ::   }
+
+
+# ::   ^ ^ ^ Else-If ^ ^ ^ 
+
+# ::   if(if_condition)
+# ::   {
+# ::   first procedure
+# ::   }
 ::   else if(elseif_condition) // same as the example above
 ::   {
 ::   second procedure
