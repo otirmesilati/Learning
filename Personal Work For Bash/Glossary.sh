@@ -8,12 +8,40 @@
 
 
 
+#   < < < < < < < <   Command Principles   > > > > > > > >   */
 
 
 
 
-#   & & & & & & Libraries & & & & & &
+
+
+
+
+
+#   & & & & & & Making a Command Script & & & & & & 
+
+#!/bin/sh
+chmod +x my_bash_file.sh
+./my_bash_file.sh  
+
+
+
+
+
+
+
+
+
+#   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &
 #   standard lib? gui?
+
+
+
+
+
+
+
+# More Material: https://labbots.github.io/bash-utility/functions/date/
 
 
 
@@ -25,10 +53,7 @@
 
 #   & & & & & & Comments & & & & & &
 
-# Single Line comment - acts as a nameless label, "drive letter"-ish -> thus can be problematic to do <command1> && :: <comments>
-# do <command2> && REM <comments> instead! (Error: The system cannot find the driver specified)
-
-# For Line documentation - actual command
+# Single Line comment 
 
 
 
@@ -81,106 +106,106 @@
 
 
 
-::   & & & & & & Operators & & & & & &
-::   which operations are available? one what types? categories : numbers, string operators...
+# ::   & & & & & & Operators & & & & & &
+# ::   which operations are available? one what types? categories : numbers, string operators...
 
 
-::   Map This Part after doing the rest of the operator portion in other mappings:
-::   Also, Touch on the Arith operators: +(+=),-(-=),*(*=),/(/=),%,(%=), relational: equ(or == for strings),neq,lss,leq,gtr,geq, logicl: and(&),or(|), not(^)
-::   ----------------------------------------------------------------
+# ::   Map This Part after doing the rest of the operator portion in other mappings:
+# ::   Also, Touch on the Arith operators: +(+=),-(-=),*(*=),/(/=),%,(%=), relational: equ(or == for strings),neq,lss,leq,gtr,geq, logicl: and(&),or(|), not(^)
+# ::   ----------------------------------------------------------------
 
-::   The output of the above program would be 15.
+# ::   The output of the above program would be 15.
 
-::   All of the arithmetic operators work in batch files. The following example shows arithmetic operators can be used in batch files.
+# ::   All of the arithmetic operators work in batch files. The following example shows arithmetic operators can be used in batch files.
 
-@echo off 
-SET /A a = 5 
-SET /A b = 10 
-SET /A c = %a% + %b% 
-echo %c% 
-SET /A c = %a% - %b% 
-echo %c% 
-SET /A c = %b% / %a% 
-echo %c% 
-SET /A c = %b% * %a% 
-echo %c%
-::   The above command produces the following output.
+# @echo off 
+# SET /A a = 5 
+# SET /A b = 10 
+# SET /A c = %a% + %b% 
+# echo %c% 
+# SET /A c = %a% - %b% 
+# echo %c% 
+# SET /A c = %b% / %a% 
+# echo %c% 
+# SET /A c = %b% * %a% 
+# echo %c%
+# ::   The above command produces the following output.
 
-::   15 
-::   -5 
-::   2 
-::   50
+# ::   15 
+# ::   -5 
+# ::   2 
+# ::   50
 
-::   ----------------------------------------------------------------
+# ::   ----------------------------------------------------------------
 
 
 
 
-::   void fun_operators()
-::   {
-::   int first_check, second_check;
-::   int first_multi_assign, second_multi_assign;
-::   int first_temp = 1;
-::   double sum_temps, second_temp = 2.00;
-::   int five = 5, three = 3, zero = 0;
+# ::   void fun_operators()
+# ::   {
+# ::   int first_check, second_check;
+# ::   int first_multi_assign, second_multi_assign;
+# ::   int first_temp = 1;
+# ::   double sum_temps, second_temp = 2.00;
+# ::   int five = 5, three = 3, zero = 0;
 
-::   int first_explicit_conv, second_explicit_conv;
-::   int explicit_conv_assignment;
+# ::   int first_explicit_conv, second_explicit_conv;
+# ::   int explicit_conv_assignment;
 
 
-::   need to touch on lvalue, rvalue, gvalue: 
-::   lecture's coverage: lval is left and changing, and rval is right, WOW!
+# ::   need to touch on lvalue, rvalue, gvalue: 
+# ::   lecture's coverage: lval is left and changing, and rval is right, WOW!
 
 
 
-::   More Material:
-::   for the wiki tldr: https://en.wikipedia.org/wiki/Value_(computer_science)
-::   for the famous lval/rval/gval/xval graph: https://stackoverflow.com/questions/3601602/what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues
+# ::   More Material:
+# ::   for the wiki tldr: https://en.wikipedia.org/wiki/Value_(computer_science)
+# ::   for the famous lval/rval/gval/xval graph: https://stackoverflow.com/questions/3601602/what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues
 
 
 
-::   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
-::   int first = 1;
-::   first = 2;
+# ::   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
+# ::   int first = 1;
+# ::   first = 2;
 
 
-::   ^ ^ ^ Multiple Assignment ^ ^ ^
+# ::   ^ ^ ^ Multiple Assignment ^ ^ ^
 
-::   first_multi_assign = second_multi_assign = 1;
+# ::   first_multi_assign = second_multi_assign = 1;
 
 
-::   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^ ^
-::   first = first + 3;
-::   first= += 3;
-::   first = first + 1;
-::   first++;
-::   ++first;
+# ::   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^ ^
+# ::   first = first + 3;
+# ::   first= += 3;
+# ::   first = first + 1;
+# ::   first++;
+# ::   ++first;
 
 
-::   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^ 
-::   what here ? what comes before what? * before / in C?  
+# ::   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^ 
+# ::   what here ? what comes before what? * before / in C?  
 
 
-::   ^ ^ ^ ^ Prefix vs Postfix inc/dec operator ^ ^ ^ ^
-::   first_check = 1;
-::   first_check = second_check++; // first_check = 1, second_check = 2 
-::   first_check = ++second_check; // first_check = second_check = 3
+# ::   ^ ^ ^ ^ Prefix vs Postfix inc/dec operator ^ ^ ^ ^
+# ::   first_check = 1;
+# ::   first_check = second_check++; // first_check = 1, second_check = 2 
+# ::   first_check = ++second_check; // first_check = second_check = 3
 
 
 
-::   ^ ^ ^ ^ Arithmetical Operators: Narrowing/Widening type Casting ^ ^ ^ ^
+# ::   ^ ^ ^ ^ Arithmetical Operators: Narrowing/Widening type Casting ^ ^ ^ ^
 
 
-::   ^ ^ ^ type casting/C-casting ^ ^ ^
+# ::   ^ ^ ^ type casting/C-casting ^ ^ ^
 
-::   ^ ^ Implicit conversion - mismatching variables in opeartion ^ ^
+# ::   ^ ^ Implicit conversion - mismatching variables in opeartion ^ ^
 
-::   first_temp + second_temp; // first is promoted to double in widening implicit c type conversion
+# ::   first_temp + second_temp; // first is promoted to double in widening implicit c type conversion
 
-::   ^ ^ Explicit conversion - assigned to different type OR different type written in parantheses ^ ^ 
+# ::   ^ ^ Explicit conversion - assigned to different type OR different type written in parantheses ^ ^ 
 
-::   first_explicit_conv = 3, second_explicit_conv = 4;
-::   explicit_conv_assignment = (float)(first_explicit_conv / second_explicit_conv); // both exp conv scenarios, order: 1. int result temp 2. float result temp, 3. int assignment temp
+# ::   first_explicit_conv = 3, second_explicit_conv = 4;
+# ::   explicit_conv_assignment = (float)(first_explicit_conv / second_explicit_conv); // both exp conv scenarios, order: 1. int result temp 2. float result temp, 3. int assignment temp
 
 
 
@@ -190,40 +215,40 @@ echo %c%
 
 
 
-::   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
-::   order of operations ?
-::   == and != are the least in the order of operations, maybe finish the operations order ladder?
-::   false and true are exactly 0 and 1
+# ::   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
+# ::   order of operations ?
+# ::   == and != are the least in the order of operations, maybe finish the operations order ladder?
+# ::   false and true are exactly 0 and 1
 
-::   five == 2;
-::   (three < five || three < zero);
+# ::   five == 2;
+# ::   (three < five || three < zero);
 
-::   // combining logical and arith: (arithmetic operators take precedence)
-::   /*
-::   lecture's example:
-::   int x = 2;
-::   int y = (x > 5) + 1; // (x > 5) -> 0 -> 0 + 1 = 1
+# ::   // combining logical and arith: (arithmetic operators take precedence)
+# ::   /*
+# ::   lecture's example:
+# ::   int x = 2;
+# ::   int y = (x > 5) + 1; // (x > 5) -> 0 -> 0 + 1 = 1
 
-::   int a = 2, b;
-::   ((b = 2) == a) // (b = 2) -> (2) -> 2 == 2 -> 1, trick question: a wierd behaviour of c family languages - assignment returns the assign value, acts as arithmetic
+# ::   int a = 2, b;
+# ::   ((b = 2) == a) // (b = 2) -> (2) -> 2 == 2 -> 1, trick question: a wierd behaviour of c family languages - assignment returns the assign value, acts as arithmetic
 
-::   */
+# ::   */
 
-::    Overloading literal operators: https://en.cppreference.com/w/cpp/language/user_literal
+# ::    Overloading literal operators: https://en.cppreference.com/w/cpp/language/user_literal
 
-::   ^ ^ ^ ^ ^ Pointer Operators ^ ^ ^ ^ ^
+# ::   ^ ^ ^ ^ ^ Pointer Operators ^ ^ ^ ^ ^
 
-::   int ptr_value_1 = 0;
+# ::   int ptr_value_1 = 0;
 
 
-::   int* ptr_address_1 = &ptr_value_1; // address operator
-::   ptr_value_1 = *ptr_address_1; // indirection operator
+# ::   int* ptr_address_1 = &ptr_value_1; // address operator
+# ::   ptr_value_1 = *ptr_address_1; // indirection operator
 
-::   // in one line(int + int* init in same line):
-::   int ptr_value_2 = 1, * ptr_address_2 = &ptr_value_2, ptr_value_2 = *ptr_address_2;
+# ::   // in one line(int + int* init in same line):
+# ::   int ptr_value_2 = 1, * ptr_address_2 = &ptr_value_2, ptr_value_2 = *ptr_address_2;
 
 
-::   }
+# ::   }
 
 
 
@@ -234,37 +259,37 @@ echo %c%
 
 
 
-::   ^ ^ ^ ^ ^ Variables & & & & & &
+# ::   ^ ^ ^ ^ ^ Variables & & & & & &
 
-::   ^ ^ ^ ^ Command line arguments ^ ^ ^ ^
-:: %1 ? what here ?
+# ::   ^ ^ ^ ^ Command line arguments ^ ^ ^ ^
+# :: %1 ? what here ?
 
 
-::   ^ ^ ^ ^ Set Variables ^ ^ ^ ^
+# ::   ^ ^ ^ ^ Set Variables ^ ^ ^ ^
 
-set /a my_int = 5
-set my_string = hi
+# set /a my_int = 5
+# set my_string = hi
 
 
-::   ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^
+# ::   ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^
 
 
-::   ^ ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^ ^
+# ::   ^ ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^ ^
 
-::   ^ ^ ^ ^ Global & Static Variables ^ ^ ^ ^
+# ::   ^ ^ ^ ^ Global & Static Variables ^ ^ ^ ^
 
-::   variables are by defualt global
+# ::   variables are by defualt global
 
-::   ^ ^ ^ ^ Local variables ^ ^ ^ ^
+# ::   ^ ^ ^ ^ Local variables ^ ^ ^ ^
 
-SETLOCAL
-set /a my_local = 12
-echo %my_local%
-ENDLOCAL
-:: echo %my_local% won't work here
+# SETLOCAL
+# set /a my_local = 12
+# echo %my_local%
+# ENDLOCAL
+# :: echo %my_local% won't work here
 
 
-::   ^ ^ ^ ^ ^ Constants ^ ^ ^ ^ ^
+# ::   ^ ^ ^ ^ ^ Constants ^ ^ ^ ^ ^
 
 :: No Constants - compile time (pre-proc macros, defines, enums), or run time. 
 
@@ -502,3 +527,4 @@ ENDLOCAL
 ::   ^ ^ ^ ^ ^ Message Passing: Function invocation ^ ^ ^ ^ ^
 ::   ^ ^ ^ ^ ^ Abstraction: each function invocation is a black box ^ ^ ^ ^ ^
 ::   ^ ^ ^ ^ ^ Supports TDD: using the function, and then impementing
+

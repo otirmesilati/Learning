@@ -25,7 +25,7 @@
 
 
 
-//   & & & & & & Libraries & & & & & &
+//   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &
 #include <stdio.h> // C IO Library Files 
 
 

@@ -8,6 +8,35 @@
 
 
 
+
+
+
+::   < < < < < < < <   Command Principles   > > > > > > > >   */
+
+
+
+
+
+
+
+
+
+::   & & & & & & Making a Command Script & & & & & & 
+
+#!/bin/sh
+chmod +x my_bash_file.sh
+./my_bash_file.sh  
+
+
+
+
+
+
+
+
+
+
+
 /*   < < < < < < < <   Language Principles   > > > > > > > >   */
 
 
@@ -20,7 +49,7 @@
 
 
 
-//   & & & & & & Libraries & & & & & &
+//   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &
 #include <iostream> // C IO Library Files 
 using namespace std;
 

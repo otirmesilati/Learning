@@ -10,6 +10,30 @@
 
 
 
+::   < < < < < < < <   Command Principles   > > > > > > > >   */
+
+
+
+
+
+
+
+
+
+::   & & & & & & Making a Command Script & & & & & & 
+
+:: #!/bin/sh
+:: chmod +x my_bash_file.sh
+:: ./my_bash_file.sh  
+
+
+
+
+
+
+
+
+
 
 
 ::   & & & & & & Libraries & & & & & &
