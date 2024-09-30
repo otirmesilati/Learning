@@ -255,21 +255,20 @@ my_string=the1iswasastring
 
 # ::   ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^
 
+# No global and static variables - instead there are environment and shell variables
 
-# ::   ^ ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^ ^
 
-# ::   ^ ^ ^ ^ Global & Static Variables ^ ^ ^ ^
 
-# ::   variables are by defualt global
+
+# ::   ^ ^ ^ Environment Variables ^ ^ ^ 
+
+my_environment_variable=0
+# creating a child process, in the child process:
+my_child_process_variable=1
 
 # ::   ^ ^ ^ ^ Local variables ^ ^ ^ ^
 
-# SETLOCAL
-# set /a my_local = 12
-# echo %my_local%
-# ENDLOCAL
-# :: echo %my_local% won't work here
-
+my_local_varaible=2 # variables are by default local
 
 # ::   ^ ^ ^ ^ ^ Constants ^ ^ ^ ^ ^
 
