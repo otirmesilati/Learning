@@ -298,6 +298,7 @@ my_local_varaible=1 # variables are by default Shell varaibles(local)
 setf_arg=0
 s_arg=1
 val_of_ptr=2
+my_key="abcd"
 
 #   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^ 
 
@@ -349,24 +350,18 @@ then
 fi
 
 
-# ::   ^ ^ ^ ^ Switch ^ ^ ^ ^ ^
+# ::   ^ ^ ^ ^ Case: Switch Like ^ ^ ^ ^ ^
 
-# ::   switch (switch_key)
-# ::   {
-
-# ::   case 1: // first procedure
-# ::       break;
-
-# ::   case 2: // second procedure
-# ::       break;
-
-# ::   case 3: // third procedure
-# ::       break;
-
-# ::   default: // fourth procedure
-# ::       break;
-
-# ::   }
+case "$my_key" in
+"cde") # First Procedure 
+;;
+"bcd") # Second Procedure
+;;
+"abcd") # Third Procedure
+;;
+*) # Fourth Procedure
+;;
+esac
 
 
 # ::   ^ ^ ^ ^ ^ Loops ^ ^ ^ ^ ^ 
