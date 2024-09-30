@@ -36,7 +36,7 @@ chmod +x my_bash_file.sh
 
 
 #   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &
-#   standard lib? gui?
+#   standard lib? gui? useful environment variables?
 
 
 
@@ -261,14 +261,13 @@ my_string=the1iswasastring
 
 
 # ::   ^ ^ ^ Environment Variables ^ ^ ^ 
+#printenv where? env? set?
 
-my_environment_variable=0
-# creating a child process, in the child process:
-my_child_process_variable=1
+export my_environment_variable=0
 
-# ::   ^ ^ ^ ^ Local variables ^ ^ ^ ^
+# ::   ^ ^ ^ ^ Shell variables ^ ^ ^ ^
 
-my_local_varaible=2 # variables are by default local
+my_local_varaible=1 # variables are by default Shell varaibles(local)
 
 # ::   ^ ^ ^ ^ ^ Constants ^ ^ ^ ^ ^
 
