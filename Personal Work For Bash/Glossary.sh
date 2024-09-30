@@ -1,4 +1,4 @@
-:: Yet to find an online CMD emulator
+# Yet to find an online CMD emulator
 
 
 
@@ -12,8 +12,8 @@
 
 
 
-::   & & & & & & Libraries & & & & & &
-::   standard lib? gui?
+#   & & & & & & Libraries & & & & & &
+#   standard lib? gui?
 
 
 
@@ -23,43 +23,12 @@
 
 
 
-::   & & & & & & Comments & & & & & &
+#   & & & & & & Comments & & & & & &
 
-:: Single Line comment - acts as a nameless label, "drive letter"-ish -> thus can be problematic to do <command1> && :: <comments>
-:: do <command2> && REM <comments> instead! (Error: The system cannot find the driver specified)
+# Single Line comment - acts as a nameless label, "drive letter"-ish -> thus can be problematic to do <command1> && :: <comments>
+# do <command2> && REM <comments> instead! (Error: The system cannot find the driver specified)
 
-rem For Line documentation - actual command
-
-
-
-
-
-
-
-
-
-::   & & & & & & Literals (+ defined unary literal operators) & & & & & &
-:: Literals - Only for Assignments
-
-::   ^ ^ ^ ^ ^ Expressions ^ ^ ^ ^ ^ 
-
-
-::   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
-
-set /a my_num = 123;
-:: no underscore format for numbers like 1,234! 
-set /a my_num = -123;
-
-
-::   ^ ^ ^ ^ Coding Modifiers ^ ^ ^ ^
-
-::   ^ ^ ^ Radixed modifier ^ ^ ^
-
-set /a my_num = 0x12AB
-set /a my_num = 012 && REM octal literals written without o
-rem No Binary literals
-
-:: No built in Un-Sgined, Long, And Floating Numbers Tools.
+# For Line documentation - actual command
 
 
 
@@ -69,9 +38,40 @@ rem No Binary literals
 
 
 
-::   & & & & & & String Formatting & & & & & &
+#   & & & & & & Literals (+ defined unary literal operators) & & & & & &
+# Literals - Only for Assignments
 
-::   No String Formatting: specifier fields (precision, length, types)
+#   ^ ^ ^ ^ ^ Expressions ^ ^ ^ ^ ^ 
+
+
+#   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
+
+# set /a my_num = 123;
+# no underscore format for numbers like 1,234! 
+# set /a my_num = -123;
+
+
+# ::   ^ ^ ^ ^ Coding Modifiers ^ ^ ^ ^
+
+# ::   ^ ^ ^ Radixed modifier ^ ^ ^
+
+# set /a my_num = 0x12AB
+# set /a my_num = 012 && REM octal literals written without o
+# rem No Binary literals
+
+# No built in Un-Sgined, Long, And Floating Numbers Tools.
+
+
+
+
+
+
+
+
+
+#   & & & & & & String Formatting & & & & & &
+
+#   No String Formatting: specifier fields (precision, length, types)
 
 
 
