@@ -20,7 +20,7 @@
 
 
 
-::   & & & & & & Making a Command Script & & & & & & 
+::   & & & & & & Command Script Creation & & & & & & 
 
 :: #!/bin/sh
 :: chmod +x my_bash_file.sh

@@ -18,11 +18,14 @@
 
 
 
-#   & & & & & & Making a Command Script & & & & & & 
+#   & & & & & & Command Script Creation & & & & & & 
 
 #!/bin/sh
 chmod +x my_bash_file.sh
 ./my_bash_file.sh  
+
+
+#   ^ ^ ^ ^ ^ Extended Script Creation ^ ^ ^ ^ ^ 
 
 
 
@@ -66,25 +69,12 @@ chmod +x my_bash_file.sh
 #   & & & & & & Literals (+ defined unary literal operators) & & & & & &
 # Literals - Only for Assignments
 
+my_num=1
+my_string=the1iswasastring
+
 #   ^ ^ ^ ^ ^ Expressions ^ ^ ^ ^ ^ 
 
-
-#   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
-
-# set /a my_num = 123;
-# no underscore format for numbers like 1,234! 
-# set /a my_num = -123;
-
-
-# ::   ^ ^ ^ ^ Coding Modifiers ^ ^ ^ ^
-
-# ::   ^ ^ ^ Radixed modifier ^ ^ ^
-
-# set /a my_num = 0x12AB
-# set /a my_num = 012 && REM octal literals written without o
-# rem No Binary literals
-
-# No built in Un-Sgined, Long, And Floating Numbers Tools.
+# Literals are all unicode's UTF-8 strings: no integers (and their modifiers), no floats
 
 
 
@@ -291,20 +281,18 @@ chmod +x my_bash_file.sh
 
 # ::   ^ ^ ^ ^ ^ Constants ^ ^ ^ ^ ^
 
-:: No Constants - compile time (pre-proc macros, defines, enums), or run time. 
+# :: No Constants - compile time (pre-proc macros, defines, enums), or run time. 
 
-::   ^ ^ ^ ^ ^ Pointers ^ ^ ^ ^ ^
+# ::   ^ ^ ^ ^ ^ Pointers ^ ^ ^ ^ ^
 
-:: No Pointers - Allocation is irrelevant in compile time, or run time.
+# :: No Pointers - Allocation is irrelevant in compile time, or run time.
 
-::   ^ ^ ^ ^ Arrays ^ ^ ^ ^ 
+# ::   ^ ^ ^ ^ Arrays ^ ^ ^ ^ 
 
-::   strings?
-
-
-::   }
+# ::   strings?
 
 
+# ::   }
 
 
 
@@ -312,14 +300,16 @@ chmod +x my_bash_file.sh
 
 
 
-::    & & & & & & Flow Control & & & & & &
 
 
-::   void fun_flow_control()
-::   {
+# ::    & & & & & & Flow Control & & & & & &
 
-::   int condition = 1;
-::   int outer_condition = 0;
+
+# ::   void fun_flow_control()
+# ::   {
+
+# ::   int condition = 1;
+# ::   int outer_condition = 0;
 ::   int elif_condition = 1;
 ::   int if_condition = 0; int elseif_condition = 1;
 ::   int switch_key = 2;
