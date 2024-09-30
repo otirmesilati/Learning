@@ -96,7 +96,7 @@ my_string=the1iswasastring
 
 
 
-# ::   & & & & & & Operators & & & & & &
+#   & & & & & & Operators & & & & & &
 
 
 # ::   Map This Part after doing the rest of the operator portion in other mappings:
@@ -249,41 +249,38 @@ my_string=the1iswasastring
 
 
 
-# ::   ^ ^ ^ ^ ^ Variables & & & & & &
+#   ^ ^ ^ ^ ^ Variables & & & & & &
 
 my_num=1
 my_string=the1iswasastring
 
-# ::   ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^
+#   ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^
 
 # No global and static variables - instead there are environment and shell variables
 
 
 
 
-# ::   ^ ^ ^ Environment Variables ^ ^ ^ 
+#   ^ ^ ^ Environment Variables ^ ^ ^ 
 #printenv where? env? set?
 
 export my_environment_variable=0
 
-# ::   ^ ^ ^ ^ Shell variables ^ ^ ^ ^
+#   ^ ^ ^ ^ Shell variables ^ ^ ^ ^
 
 my_local_varaible=1 # variables are by default Shell varaibles(local)
 
-# ::   ^ ^ ^ ^ ^ Constants ^ ^ ^ ^ ^
+#   ^ ^ ^ ^ ^ Constants ^ ^ ^ ^ ^
 
-# :: No Constants - compile time (pre-proc macros, defines, enums), or run time. 
+# No Constants - compile time (pre-proc macros, defines, enums), or run time. 
 
-# ::   ^ ^ ^ ^ ^ Pointers ^ ^ ^ ^ ^
+#   ^ ^ ^ ^ ^ Pointers ^ ^ ^ ^ ^
 
-# :: No Pointers - Allocation is irrelevant in compile time, or run time.
+# No Pointers - Allocation is irrelevant in compile time, or run time.
 
-# ::   ^ ^ ^ ^ Arrays ^ ^ ^ ^ 
+#   ^ ^ ^ ^ Arrays ^ ^ ^ ^ 
 
-# ::   strings?
-
-
-# ::   }
+#   strings?
 
 
 
@@ -299,6 +296,7 @@ setf_arg=0
 s_arg=1
 val_of_ptr=2
 my_key="abcd"
+while_index=3
 
 #   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^ 
 
@@ -316,7 +314,7 @@ else # Condition FALSE -> Second Procedure
 fi
 
 
-# ::   ^ ^ ^ Null Checks ^ ^ ^
+#   ^ ^ ^ Null Checks ^ ^ ^
 
 if [ -n "$val_of_ptr"]
 then
@@ -326,7 +324,7 @@ else
 fi
 
 
-# ::   ^ ^ ^ Nested Ifs ^ ^ ^
+#   ^ ^ ^ Nested Ifs ^ ^ ^
 
 if [ $f_arg == $s_arg]
 then # Condition TRUE -> First Procedure
@@ -339,7 +337,7 @@ else # Condition FALSE -> Second Procedure
 fi
 
 
-# ::   ^ ^ ^ Else-If ^ ^ ^ 
+#   ^ ^ ^ Else-If ^ ^ ^ 
 
 if [ $f_arg == $s_arg]
 then 
@@ -350,7 +348,7 @@ then
 fi
 
 
-# ::   ^ ^ ^ ^ Case: Switch Like ^ ^ ^ ^ ^
+#   ^ ^ ^ ^ Case: Switch Like ^ ^ ^ ^ ^
 
 case "$my_key" in
 "cde") # First Procedure 
@@ -364,11 +362,14 @@ case "$my_key" in
 esac
 
 
-# ::   ^ ^ ^ ^ ^ Loops ^ ^ ^ ^ ^ 
+#   ^ ^ ^ ^ ^ Loops ^ ^ ^ ^ ^ 
 
 # ::   break? continue?
 
-# ::   ^ ^ ^ ^ While Loops ^ ^ ^ ^
+#   ^ ^ ^ ^ While Loops ^ ^ ^ ^
+
+while [ $while_index -le 0 ]; do
+
 
 # ::   int while_index = 0;
 # ::   while(while_index <= 5) // condition checking BEFORE the procedure ran
@@ -377,94 +378,94 @@ esac
 # ::       // while procedure
 # ::   }
 
-# ::   ^ ^ ^ Do-While Loops ^ ^ ^
+#   ^ ^ ^ Do-While Loops ^ ^ ^
 
 # ::   int do_while_index = -1;
 # ::   do
 # ::   {
 # ::       ++do_while_index;
 # ::       // do-while procedure
-::   } while(do_while_index <= 5); //condition checking AFTER the procedure ran
+# ::   } while(do_while_index <= 5); //condition checking AFTER the procedure ran
 
 
-::   ^ ^ ^ ^ For Loops ^ ^ ^ ^
+#   ^ ^ ^ ^ For Loops ^ ^ ^ ^
 
-::   for(int for_index = 0; for_index <= 5 ; ++for_index) // same as above examples
-::   {
-::     for procedure
-::   }
-
-
-
-::   ^ ^ ^ ^ Empty portions in for loop ^ ^ ^ ^
-::   no init? not condition? no counter?
-
-::   for(;;)
-::   for(;;)
-::   for(;;)
-
-::   }
-
-::   ^ ^ ^ ^ ^ Functions ^ ^ ^ ^ ^ 
-
-::   int int_return_function(){}
-::   also_int_return_function(){} // defualt int type - though may cause a warning
-
-::   ^ ^ ^ ^ Function prototyping ^ ^ ^ ^
-
-::   void void_prtp_func_1(); // function declaration
-::   void void_prtp_func_2();
-::   main procedure
-::   void void_prtp_func_1(){ return; } // function definition
-::   void void_prtp_func_2(){} // in void functions - the return statement may be omitted and the function will return in closing block
-
-::   add to tablet: 1. static stack segment layout (building the stack) + dynamic stack segment allocation in function calls (changing the values and releasing the layout parts) 
-
-
-::   ^ ^ ^ ^  Argument Passing ^ ^ ^ ^ 
-
-::   ^ ^ ^ Passing By Value ^ ^ ^
-
-::   void pass_by_value(int val){}
-
-::   ^ ^ ^ Passing By Adress ^ ^ ^
-
-::   void pass_by_adress(int* adr){}
-::   add this - pass_by_adress_2(int adr[]){} ? or in the array section ? 
-
-
-::   anon function? from version 11? what's the syntax?
-
-::   ^ ^ ^ ^ Recursive Functions ^ ^ ^ ^
-
-::   void rec_func(){rec_func();} // infinite loop logic
-
-
-::   ^ ^ ^ ^ Pointer Functions ^ ^ ^ ^
-::   finish this from lecture 12
+# ::   for(int for_index = 0; for_index <= 5 ; ++for_index) // same as above examples
+# ::   {
+# ::     for procedure
+# ::   }
 
 
 
+#   ^ ^ ^ ^ Empty portions in for loop ^ ^ ^ ^
+# ::   no init? not condition? no counter?
+
+# ::   for(;;)
+# ::   for(;;)
+# ::   for(;;)
+
+# ::   }
+
+#   ^ ^ ^ ^ ^ Functions ^ ^ ^ ^ ^ 
+
+# ::   int int_return_function(){}
+# ::   also_int_return_function(){} // defualt int type - though may cause a warning
+
+# ::   ^ ^ ^ ^ Function prototyping ^ ^ ^ ^
+
+# ::   void void_prtp_func_1(); // function declaration
+# ::   void void_prtp_func_2();
+# ::   main procedure
+# ::   void void_prtp_func_1(){ return; } // function definition
+# ::   void void_prtp_func_2(){} // in void functions - the return statement may be omitted and the function will return in closing block
+
+# ::   add to tablet: 1. static stack segment layout (building the stack) + dynamic stack segment allocation in function calls (changing the values and releasing the layout parts) 
+
+
+# ::   ^ ^ ^ ^  Argument Passing ^ ^ ^ ^ 
+
+# ::   ^ ^ ^ Passing By Value ^ ^ ^
+
+# ::   void pass_by_value(int val){}
+
+# ::   ^ ^ ^ Passing By Adress ^ ^ ^
+
+# ::   void pass_by_adress(int* adr){}
+# ::   add this - pass_by_adress_2(int adr[]){} ? or in the array section ? 
+
+
+# ::   anon function? from version 11? what's the syntax?
+
+# ::   ^ ^ ^ ^ Recursive Functions ^ ^ ^ ^
+
+# ::   void rec_func(){rec_func();} // infinite loop logic
+
+
+# ::   ^ ^ ^ ^ Pointer Functions ^ ^ ^ ^
+# ::   finish this from lecture 12
 
 
 
 
-::   & & & & & & Structs & & & & & &
-
-::   files? 
-
-::   & & & & & & Classes & & & & & &
 
 
-::   < < < < < < < <   Design Principles   > > > > > > > >   */
 
-::   & & & & & & Procedural Design & & & & & &  
+# ::   & & & & & & Structs & & & & & &
 
-::   ^ ^ ^ ^ ^ Procedures: Implemented as Functions ^ ^ ^ ^ ^
-::   ^ ^ ^ ^ ^ Sequence/Execution control: Control Flow section's tools (if,else-if, for etc...) ^ ^ ^ ^ ^
-::   ^ ^ ^ ^ ^ Scope Modularity(?): Each function variable has a local scope ^ ^ ^ ^ ^ 
-::   ^ ^ ^ ^ ^ Single Responsibility Modularity: one function takes care of one functional requirement ^ ^ ^ ^ ^
-::   ^ ^ ^ ^ ^ Message Passing: Function invocation ^ ^ ^ ^ ^
-::   ^ ^ ^ ^ ^ Abstraction: each function invocation is a black box ^ ^ ^ ^ ^
-::   ^ ^ ^ ^ ^ Supports TDD: using the function, and then impementing
+# ::   files? 
+
+# ::   & & & & & & Classes & & & & & &
+
+
+# ::   < < < < < < < <   Design Principles   > > > > > > > >   */
+
+# ::   & & & & & & Procedural Design & & & & & &  
+
+# ::   ^ ^ ^ ^ ^ Procedures: Implemented as Functions ^ ^ ^ ^ ^
+# ::   ^ ^ ^ ^ ^ Sequence/Execution control: Control Flow section's tools (if,else-if, for etc...) ^ ^ ^ ^ ^
+# ::   ^ ^ ^ ^ ^ Scope Modularity(?): Each function variable has a local scope ^ ^ ^ ^ ^ 
+# ::   ^ ^ ^ ^ ^ Single Responsibility Modularity: one function takes care of one functional requirement ^ ^ ^ ^ ^
+# ::   ^ ^ ^ ^ ^ Message Passing: Function invocation ^ ^ ^ ^ ^
+# ::   ^ ^ ^ ^ ^ Abstraction: each function invocation is a black box ^ ^ ^ ^ ^
+# ::   ^ ^ ^ ^ ^ Supports TDD: using the function, and then impementing
 
