@@ -101,7 +101,7 @@ my_string=the1iswasastring
 
 # ::   Map This Part after doing the rest of the operator portion in other mappings:
 # ::   Also, Touch on the Arith operators: +(+=),-(-=),*(*=),/(/=),%,(%=), relational: eq(or ==),ne,ls,le,gt,ge, logicl: -a ,-o, !, strings: =, !=, -z, -n, str
-# ::   File Test Operators: (finish this), finish from here : https://www.tutorialspoint.com/unix/unix-basic-operators.htm
+# ::   File Test Operators: -b(block)/c(check)/d(directory)/f(ordinary)/g(group id).. file(finish this), finish from here : https://www.tutorialspoint.com/unix/unix-basic-operators.htm
 # ::   ----------------------------------------------------------------
 
 # ::   The output of the above program would be 15.
