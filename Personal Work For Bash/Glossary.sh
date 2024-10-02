@@ -12,8 +12,11 @@
 
 #   & & & & & & File System Navigation & & & & & & 
 
+#   ^ ^ ^ ^ ^ Directory Creation ^ ^ ^ ^ ^  
 
-#   & & & & & & Command Script Creation & & & & & & 
+mkdir my_file
+
+#   ^ ^ ^ ^ Script Creation ^ ^ ^ ^  
 
 #!/bin/sh
 chmod +x my_bash_file.sh
