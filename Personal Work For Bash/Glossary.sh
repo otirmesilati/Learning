@@ -32,8 +32,11 @@ cd new_file_1/new_file_2
 cd .. 
 cd ../..
 
+#listing items
 
+ls
 
+# cat? wc? cp? mv? rm? ln? cd~?
 
 #   < < < < < < < <   Procedural Principles   > > > > > > > >   */
 
@@ -47,7 +50,8 @@ cd ../..
 
 
 #   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &
-#   standard lib? gui? useful environment variables? $$ for id? more material : https://www.tutorialspoint.com/unix/unix-special-variables.htm
+#   standard lib? gui? useful environment variables, $$ (for id)? commands? cal (calender)? password? whoami and who am i? users and who and w?
+#   more material : https://www.tutorialspoint.com/unix/unix-special-variables.htm
 
 
 
