@@ -727,6 +727,8 @@ int int_overloaded_func(int val1 = NULL, float val2 = NULL){}
 
 
 
+/*   < < < < < < < <   Object Oriented Principles   > > > > > > > >   */
+
 //   & & & & & & Classes & & & & & &
 // Add function overloading above after updating to the latest C Patch
 //   ^ ^ ^ ^ ^ Include's Double Code Generation Avoidance ^ ^ ^ ^ ^ 

@@ -10,12 +10,7 @@
 
 #   < < < < < < < <   Command Principles   > > > > > > > >   */
 
-
-
-
-
-
-
+#   & & & & & & File System Navigation & & & & & & 
 
 
 #   & & & & & & Command Script Creation & & & & & & 
@@ -26,6 +21,16 @@ chmod +x my_bash_file.sh
 
 
 #   ^ ^ ^ ^ ^ Extended Script Creation ^ ^ ^ ^ ^ 
+
+
+
+
+
+
+
+
+#   < < < < < < < <   Procedural Principles   > > > > > > > >   */
+
 
 
 
@@ -368,15 +373,11 @@ esac
 
 #   ^ ^ ^ ^ While Loops ^ ^ ^ ^
 
-while [ $while_index -le 0 ]; do
+while [ $while_index -le 4 ]; # condition checking BEFORE the procedure ran
+do
+    # while procedure 
+done
 
-
-# ::   int while_index = 0;
-# ::   while(while_index <= 5) // condition checking BEFORE the procedure ran
-# ::   {
-# ::       ++while_index;
-# ::       // while procedure
-# ::   }
 
 #   ^ ^ ^ Do-While Loops ^ ^ ^
 
