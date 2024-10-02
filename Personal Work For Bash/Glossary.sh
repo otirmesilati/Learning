@@ -36,7 +36,7 @@ cd ../..
 
 ls
 
-# cat? wc? cp? mv? rm? ln? cd~?
+# cat? wc? cp? mv? rm? ln? cd ~? cd ~<user>? cd -?
 
 #   < < < < < < < <   Procedural Principles   > > > > > > > >   */
 
