@@ -12,7 +12,7 @@
 
 #   & & & & & & File System Navigation & & & & & & 
 
-#   ^ ^ ^ ^ ^ Directory Creation ^ ^ ^ ^ ^  
+#   ^ ^ ^ ^ ^ Directory File Creation ^ ^ ^ ^ ^  
 
 mkdir my_file
 
@@ -23,11 +23,14 @@ chmod +x my_bash_file.sh
 ./my_bash_file.sh  
 
 
-#   ^ ^ ^ ^ ^ Extended Script Creation ^ ^ ^ ^ ^ 
+#   ^ ^ ^ ^ Extended Script Creation ^ ^ ^ ^ 
 
+#   ^ ^ ^ ^ ^ Changing File Directories ^ ^ ^ ^ ^
 
-
-
+cd new_file
+cd new_file_1/new_file_2
+cd .. 
+cd ../..
 
 
 
