@@ -10,6 +10,8 @@
 
 #   < < < < < < < <   Command Principles   > > > > > > > >   */
 
+clear # Screen Clearing
+
 #   & & & & & & File System Navigation & & & & & & 
 
 #   ^ ^ ^ ^ ^ Directory File Creation ^ ^ ^ ^ ^  
@@ -30,15 +32,23 @@ ls <directory_name>
 
 #   ^ ^ ^ ^ Listing Options ^ ^ ^ ^
 
+#    ^ ^ ^ Sorted Options ^ ^ ^
+
 ls -S # Sorts by size
 ls -t # Sorts by last modification time
 ls -r # Sorts in reverse-to-defualt order
 
+#   ^ ^ ^ Adding Options ^ ^ ^
+
 ls -i # Adds Inode Numbering
 ls -s # Adds size
 
+#more child items
+
 ls -a # All Directories
 ls -d # Directories Only
+
+#detailed
 
 ls -l # Detailed - User Ownership
 ls -g # Detailed - Group Ownership
