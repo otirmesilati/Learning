@@ -122,7 +122,7 @@ cp from_file_name to_file_name
 mv from_file_name to_directory_name
 mv from_directory_name/file_name to_directory_name
 
-#rename
+#   ^ ^ ^ Renaming Files ^ ^ ^
 
 mv old_file_name new_file_name
 
@@ -133,8 +133,15 @@ rm -i file_to_delete # Asks nicely
 rm file_to_delete
 rm file_1_to_delete file_2_to_delete
 
-rmdir directory_to_delete # make sure - there are no files inside
+rmdir directory_to_delete 
 rmdir directory_1_to_delete directory_2_to_delete
+
+
+
+
+
+
+
 
 
 # chmod? chown? chgrp? pr? lp? lpstat? lpq? cancel? lprm? mail? grep? sort? pg? more? ps?
@@ -142,10 +149,6 @@ rmdir directory_1_to_delete directory_2_to_delete
 # PART 3 - Advanced Unix
 # sed? df? du? mount? groupadd? groupmod? useradd? userdel? logger? trap? 
 # Part 4? Part 5?
-
-
-
-
 
 
 #   ^ ^ ^ ^ Script Creation ^ ^ ^ ^  
@@ -172,7 +175,10 @@ chmod +x my_bash_file.sh
 git --version
 
 git init
+
 git status
+git log
+git log --oneline
 
 #   ^ ^ ^ ^  Pushing ^ ^ ^ ^ 
 
