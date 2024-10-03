@@ -90,24 +90,25 @@ cat file_name
 
 cat -b file_name # Numbering lines
 
-#   ^ ^ ^ ^ ^ Editing Contents ^ ^ ^ ^ ^
+#   ^ ^ ^ Editing Contents ^ ^ ^ 
 
 cat > file_name 
 
 
-#   ^ ^ ^ ^ Counting Contents ^ ^ ^ ^
+#   ^ ^ ^ ^ ^ Counting Contents ^ ^ ^ ^ ^
 
 wc file_name
 wc file_name_1 file_name_2
 
-#   ^ ^ ^ ^ Replacing File Locations ^ ^ ^ ^
 
-#   ^ ^ ^ Copying Files 
+#   ^ ^ ^ ^ ^ Manipulating Files in Directory Tree ^ ^ ^ ^ ^
+
+#   ^ ^ ^ ^ Copying Files ^ ^ ^ ^ 
 
 cp from_file_name to_file_name
 
 
-#   ^ ^ ^ Moving Files 
+#   ^ ^ ^ ^ Moving Files ^ ^ ^ ^
 
 mv from_file_name to_directory_name
 mv from_directory_name/file_name to_directory_name
@@ -117,7 +118,15 @@ mv from_directory_name/file_name to_directory_name
 mv old_file_name new_file_name
 
 
-#  rm? ln? cd ~? cd ~<user>? cd -? rmdir? chmod? chown? chgrp? pr? lp? lpstat? lpq? cancel? lprm? mail? grep? sort? pg? more? ps?
+#   ^ ^ ^ ^ Deleting Files ^ ^ ^ ^
+
+rm -i file_to_delete # Asks nicely 
+rm file_to_delete
+
+
+
+
+# ln? rmdir? chmod? chown? chgrp? pr? lp? lpstat? lpq? cancel? lprm? mail? grep? sort? pg? more? ps?
 # kill? top? ping? ftp? telnet? finger?
 # PART 3 - Advanced Unix
 # sed? df? du? mount? groupadd? groupmod? useradd? userdel? logger? trap? 
