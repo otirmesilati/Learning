@@ -22,6 +22,8 @@ clear # Screen Clearing
 
 #   & & & & & & File System Navigation & & & & & & 
 
+pwd # print current (dubbed working) directory
+
 #   ^ ^ ^ ^ ^ Changing File Directories ^ ^ ^ ^ ^
 
 cd new_file
@@ -81,6 +83,11 @@ ls -R # All Directories recursively on child items
 
 mkdir my_file
 
+#   ^ ^ ^ ^ Creating File Links (Shortcuts/file references - deleting them won't affect the original) ^ ^ ^ ^
+
+ln my_hard_link_shortcut
+ln -s my_regular_link_shortcut
+
 
 #   ^ ^ ^ ^ ^ Displaying Contents ^ ^ ^ ^ ^
 
@@ -98,7 +105,7 @@ cat > file_name
 #   ^ ^ ^ ^ ^ Counting Contents ^ ^ ^ ^ ^
 
 wc file_name
-wc file_name_1 file_name_2
+wc file_1_name file_2_name
 
 
 #   ^ ^ ^ ^ ^ Manipulating Files in Directory Tree ^ ^ ^ ^ ^
@@ -122,7 +129,7 @@ mv old_file_name new_file_name
 
 rm -i file_to_delete # Asks nicely 
 rm file_to_delete
-
+rm file_1_to_delete file_2_to_delete
 
 
 

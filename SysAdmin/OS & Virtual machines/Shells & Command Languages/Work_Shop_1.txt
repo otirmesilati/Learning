@@ -39,7 +39,26 @@ win32 tools?(cmd?)
 
 
 
+
+
+
+
+
+
 & & & & & & Windows File System & & & & & &
+
+
+
+
+
+
+
+
+
+% % % % % % % % Monitoring % % % % % % % %
+
+jenkins? flux? prom?
+
 
 
 
