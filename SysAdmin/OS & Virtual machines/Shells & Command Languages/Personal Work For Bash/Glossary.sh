@@ -22,11 +22,6 @@ clear # Screen Clearing
 
 #   & & & & & & File System Navigation & & & & & & 
 
-#   ^ ^ ^ ^ ^ Directory File Creation ^ ^ ^ ^ ^  
-
-mkdir my_file
-
-
 #   ^ ^ ^ ^ ^ Changing File Directories ^ ^ ^ ^ ^
 
 cd new_file
@@ -81,6 +76,11 @@ ls -R # All Directories recursively on child items
 
 
 #   & & & & & & Text Files Content & & & & & &
+
+#   ^ ^ ^ ^ ^ Directory Creation ^ ^ ^ ^ ^  
+
+mkdir my_file
+
 
 #   ^ ^ ^ ^ ^ Displaying Contents ^ ^ ^ ^ ^
 
