@@ -34,6 +34,8 @@ cd new_file_1/new_file_2
 cd .. 
 cd ../..
 
+cd ~ # switching to home directory
+cd - # switching to last directory
 
 #   ^ ^ ^ ^ ^ Listing Directories ^ ^ ^ ^ ^
 
