@@ -30,6 +30,8 @@ cd ../..
 ls
 ls <directory_name>
 
+ls -1 # Ls'ing 1 file per line in the output
+
 #   ^ ^ ^ ^ Listing Options ^ ^ ^ ^
 
 #    ^ ^ ^ Sorted Options ^ ^ ^

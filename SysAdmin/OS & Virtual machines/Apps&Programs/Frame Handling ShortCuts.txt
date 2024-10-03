@@ -141,12 +141,6 @@
 3. [smartcase dependent]Searching-vim level: /<Search Term> 
 4.
 
-// line commands:
-
-1. w: save
-2. q: close
-3. save and close: wq
-
 // ^ ^ ^ ^ Key-Binds ^ ^ ^ ^
 
 // ^ ^ ^ Inner file manipulation ^ ^ ^

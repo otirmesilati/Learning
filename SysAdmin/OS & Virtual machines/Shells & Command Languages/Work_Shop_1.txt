@@ -7,26 +7,22 @@ before starting, read these:
 
 and finish these: https://www.youtube.com/watch?v=QHial8xwfh4 , https://www.youtube.com/watch?v=WMy3OzvBWc0
 
-
+win32 tools?(cmd?)
 
 
 
 & & & & & & Text Editor CLIs & & & & & &
 
+^ ^ ^ ^ ^ Nvim ^ ^ ^ ^ ^
 
-nvim?
+vi my_file.txt
+vim my_file.txt
+nvim my_file.txt
 
+^ ^ ^ ^ Editing ^ ^ ^ ^
 
-
-
-
-
-win32 tools?(cmd?)
-
-
-^ ^ ^ ^ ^ DOS Based ^ ^ ^ ^ ^
-
-^ ^ ^ ^ CMD ^ ^ ^ ^
+w: *save*
+q: *close*
 
 
 
@@ -35,14 +31,7 @@ win32 tools?(cmd?)
 
 
 
-
-
-
-
-
-
-
-
+when to move this to the batch glossary?:
 ^ ^ ^ CMD Run Command ^ ^ ^
 
 
