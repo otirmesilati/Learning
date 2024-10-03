@@ -23,9 +23,15 @@ cd new_file_1/new_file_2
 cd .. 
 cd ../..
 
-#listing items
+#   ^ ^ ^ ^ ^ Listing Directories ^ ^ ^ ^ ^
 
 ls
+
+
+
+
+
+
 
 # cat? wc? cp? mv? rm? ln? cd ~? cd ~<user>? cd -? rmdir? chmod? chown? chgrp? pr? lp? lpstat? lpq? cancel? lprm? mail? grep? sort? pg? more? ps?
 # kill? top? ping? ftp? telnet? finger?
