@@ -12,11 +12,20 @@
 
 clear # Screen Clearing
 
+
+
+
+
+
+
+
+
 #   & & & & & & File System Navigation & & & & & & 
 
 #   ^ ^ ^ ^ ^ Directory File Creation ^ ^ ^ ^ ^  
 
 mkdir my_file
+
 
 #   ^ ^ ^ ^ ^ Changing File Directories ^ ^ ^ ^ ^
 
@@ -25,12 +34,14 @@ cd new_file_1/new_file_2
 cd .. 
 cd ../..
 
+
 #   ^ ^ ^ ^ ^ Listing Directories ^ ^ ^ ^ ^
 
 ls
-ls <directory_name>
+ls directory_name
 
 ls -1 # Ls'ing 1 file per line in the output
+
 
 #   ^ ^ ^ ^ Listing Options ^ ^ ^ ^
 
@@ -63,7 +74,36 @@ ls -R # All Directories recursively on child items
 
 
 
-# cat? wc? cp? mv? rm? ln? cd ~? cd ~<user>? cd -? rmdir? chmod? chown? chgrp? pr? lp? lpstat? lpq? cancel? lprm? mail? grep? sort? pg? more? ps?
+
+
+
+
+#   & & & & & & Text Files Content & & & & & &
+
+#   ^ ^ ^ ^ ^ Displaying Contents ^ ^ ^ ^ ^
+
+cat file_name 
+
+#   ^ ^ ^ ^ Displaying Options ^ ^ ^ ^
+
+cat -b file_name # Numbering lines
+
+#   ^ ^ ^ ^ ^ Editing Contents ^ ^ ^ ^ ^
+
+cat > file_name 
+
+
+#   ^ ^ ^ ^ Counting Contents ^ ^ ^ ^
+
+wc file_name
+wc file_name_1 file_name_2
+
+
+
+
+
+
+# cp? mv? rm? ln? cd ~? cd ~<user>? cd -? rmdir? chmod? chown? chgrp? pr? lp? lpstat? lpq? cancel? lprm? mail? grep? sort? pg? more? ps?
 # kill? top? ping? ftp? telnet? finger?
 # PART 3 - Advanced Unix
 # sed? df? du? mount? groupadd? groupmod? useradd? userdel? logger? trap? 
