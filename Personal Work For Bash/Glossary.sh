@@ -26,8 +26,15 @@ cd ../..
 #   ^ ^ ^ ^ ^ Listing Directories ^ ^ ^ ^ ^
 
 ls
+ls <directory_name>
 
+#   ^ ^ ^ ^ Listing Options ^ ^ ^ ^
 
+ls -a # All Directories - User Ownership
+ls -g # All Directories - Group Owneship
+ls -d # Directories Only
+
+#ls l?
 
 
 
