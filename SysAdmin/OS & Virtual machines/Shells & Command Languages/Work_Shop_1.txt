@@ -27,6 +27,7 @@ win32 tools?(cmd?)
 
 ^ ^ ^ ^ ^ Essential Logistic Directories ^ ^ ^ ^ ^
 
+/sys - system files
 /bin(/sbin) - important binary files
 /lib - important libraries
 /dev - device files
@@ -36,7 +37,7 @@ win32 tools?(cmd?)
 /proc - system state in terms of running processes
 /tmp - temporary files
 /var - logs and DBs 
-
+/etc - configs, startups and more scripts
 
 
 
