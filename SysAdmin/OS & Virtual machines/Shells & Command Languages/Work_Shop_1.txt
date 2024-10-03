@@ -11,6 +11,42 @@ win32 tools?(cmd?)
 
 
 
+
+
+
+% % % % % % % % File Systems % % % % % % % %
+
+& & & & & & Linux File System & & & & & &
+
+^ ^ ^ ^ ^ Home Directories ^ ^ ^ ^ ^
+
+/root - user's home directory 
+/home - different users home directories
+
+/boot - kernel, and boot configs
+
+^ ^ ^ ^ ^ Essential Logistic Directories ^ ^ ^ ^ ^
+
+/bin(/sbin) - important binary files
+/lib - important libraries
+/dev - device files
+
+^ ^ ^ ^ ^ Data Directories ^ ^ ^ ^ ^
+
+/proc - system state in terms of running processes
+/tmp - temporary files
+/var - logs and DBs 
+
+
+
+& & & & & & Windows File System & & & & & &
+
+
+
+
+
+
+
 & & & & & & Text Editor CLIs & & & & & &
 
 ^ ^ ^ ^ ^ Nvim ^ ^ ^ ^ ^

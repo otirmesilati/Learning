@@ -98,12 +98,24 @@ cat > file_name
 wc file_name
 wc file_name_1 file_name_2
 
+#   ^ ^ ^ ^ Replacing File Locations ^ ^ ^ ^
+
+#   ^ ^ ^ Copying Files 
+
+cp from_file_name to_file_name
 
 
+#   ^ ^ ^ Moving Files 
+
+mv from_file_name to_directory_name
+mv from_directory_name/file_name to_directory_name
+
+#rename
+
+mv old_file_name new_file_name
 
 
-
-# cp? mv? rm? ln? cd ~? cd ~<user>? cd -? rmdir? chmod? chown? chgrp? pr? lp? lpstat? lpq? cancel? lprm? mail? grep? sort? pg? more? ps?
+#  rm? ln? cd ~? cd ~<user>? cd -? rmdir? chmod? chown? chgrp? pr? lp? lpstat? lpq? cancel? lprm? mail? grep? sort? pg? more? ps?
 # kill? top? ping? ftp? telnet? finger?
 # PART 3 - Advanced Unix
 # sed? df? du? mount? groupadd? groupmod? useradd? userdel? logger? trap? 
