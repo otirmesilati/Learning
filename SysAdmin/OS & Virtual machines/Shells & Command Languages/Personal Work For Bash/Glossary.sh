@@ -119,8 +119,8 @@ cp from_file_name to_file_name
 
 #   ^ ^ ^ ^ Moving Files ^ ^ ^ ^
 
-mv from_file_name to_directory_name
-mv from_directory_name/file_name to_directory_name
+mv file_name_and_path to_directory_path
+mv file_name_1_and_path file_name_2_and_path to_directory_path 
 
 #   ^ ^ ^ Renaming Files ^ ^ ^
 
