@@ -30,9 +30,20 @@ ls <directory_name>
 
 #   ^ ^ ^ ^ Listing Options ^ ^ ^ ^
 
-ls -a # All Directories - User Ownership
-ls -g # All Directories - Group Owneship
+ls -S # Sorts by size
+ls -t # Sorts by last modification time
+ls -r # Sorts in reverse-to-defualt order
+
+ls -i # Adds Inode Numbering
+ls -s # Adds size
+
+ls -a # All Directories
 ls -d # Directories Only
+
+ls -l # Detailed - User Ownership
+ls -g # Detailed - Group Ownership
+
+ls -R # All Directories recursively on child items
 
 #ls l?
 
