@@ -1,3 +1,13 @@
+-- Lua Online Emulator: https://onecompiler.com/lua/42tyqu425
+
+
+
+
+
+
+
+
+
 --[[
 
 
@@ -35,7 +45,7 @@
 
 
 
-// C++ Online Emulator: https://www.programiz.com/cpp-programming/online-compiler/
+
 
 
 
