@@ -55,14 +55,15 @@ ls -r # Sorts in reverse-to-defualt order
 ls -i # Adds Inode Numbering
 ls -s # Adds size
 
-#more child items
+#   ^ ^ ^ More Items Options ^ ^ ^
 
 ls -a # All Directories
 ls -d # Directories Only
 
-#detailed
+#   ^ ^ ^ Detailed Options ^ ^ ^
 
 ls -l # Detailed - User Ownership
+ls -la # All Directories + User OwnderShip
 ls -g # Detailed - Group Ownership
 
 ls -R # All Directories recursively on child items
