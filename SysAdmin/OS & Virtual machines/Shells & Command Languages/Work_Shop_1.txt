@@ -11,8 +11,16 @@ and finish these: https://www.youtube.com/watch?v=QHial8xwfh4 , https://www.yout
 
 
 
-% % % % % % % % Command Languages : Scripting Computer Driver functionalities & & & & & &
-when to add all the mappings in bash/zsh/batch/powershell?
+& & & & & & Text Editor CLIs & & & & & &
+
+
+nvim?
+
+
+
+
+
+
 win32 tools?(cmd?)
 
 
