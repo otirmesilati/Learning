@@ -32,6 +32,8 @@ win32 tools?(cmd?)
 /lib - important libraries
 /dev - device files
 
+/usr - mostly public user files
+
 ^ ^ ^ ^ ^ Data Directories ^ ^ ^ ^ ^
 
 /proc - system state in terms of running processes

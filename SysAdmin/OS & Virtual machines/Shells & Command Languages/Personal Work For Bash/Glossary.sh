@@ -82,6 +82,7 @@ ls -R # All Directories recursively on child items
 #   ^ ^ ^ ^ ^ Directory Creation ^ ^ ^ ^ ^  
 
 mkdir my_file
+mkdir my_1_file my_2_file
 
 #   ^ ^ ^ ^ Creating File Links (Shortcuts/file references - deleting them won't affect the original) ^ ^ ^ ^
 
@@ -139,7 +140,7 @@ rm file_1_to_delete file_2_to_delete
 # sed? df? du? mount? groupadd? groupmod? useradd? userdel? logger? trap? 
 # Part 4? Part 5?
 
-#   < < < < < < < <   Procedural Principles   > > > > > > > >   */
+
 
 
 
@@ -181,6 +182,18 @@ git commit -m "my_commit_message"
 #   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &
 #   standard lib? gui? useful environment variables, $$ (for id)? commands? cal (calender)? password? whoami and who am i? users and who and w?
 #   more material : https://www.tutorialspoint.com/unix/unix-special-variables.htm
+
+
+
+
+
+
+
+
+
+#   < < < < < < < <   Procedural Principles   > > > > > > > >   */
+
+
 
 
 
