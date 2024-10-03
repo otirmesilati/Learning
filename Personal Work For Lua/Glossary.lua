@@ -33,30 +33,9 @@
 
 
 
+--   < < < < < < < <   Language Principles   > > > > > > > >   
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*   < < < < < < < <   Language Principles   > > > > > > > >   */
-
+--   < < < < < < < <   Procedural Principles   > > > > > > > >   
 
 #pragma once // have the header included once at maximum
 
