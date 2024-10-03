@@ -83,6 +83,7 @@ ls -R # All Directories recursively on child items
 
 mkdir my_file
 mkdir my_1_file my_2_file
+mkdir -p make_all_the_parent_files_in_this_path
 
 #   ^ ^ ^ ^ Creating File Links (Shortcuts/file references - deleting them won't affect the original) ^ ^ ^ ^
 
@@ -132,9 +133,11 @@ rm -i file_to_delete # Asks nicely
 rm file_to_delete
 rm file_1_to_delete file_2_to_delete
 
+rmdir directory_to_delete # make sure - there are no files inside
+rmdir directory_1_to_delete directory_2_to_delete
 
 
-# ln? rmdir? chmod? chown? chgrp? pr? lp? lpstat? lpq? cancel? lprm? mail? grep? sort? pg? more? ps?
+# chmod? chown? chgrp? pr? lp? lpstat? lpq? cancel? lprm? mail? grep? sort? pg? more? ps?
 # kill? top? ping? ftp? telnet? finger?
 # PART 3 - Advanced Unix
 # sed? df? du? mount? groupadd? groupmod? useradd? userdel? logger? trap? 
