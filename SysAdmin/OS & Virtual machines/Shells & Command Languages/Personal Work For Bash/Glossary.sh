@@ -161,6 +161,22 @@ chmod +x my_bash_file.sh
 
 
 
+#   & & & & & & Bash Orientations & & & & & & 
+
+#   ^ ^ ^ ^ ^ Git Bash ^ ^ ^ ^ ^
+
+git --version
+
+git init
+git status
+
+#   ^ ^ ^ ^  Pushing ^ ^ ^ ^ 
+
+
+
+
+
+
 #   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &
 #   standard lib? gui? useful environment variables, $$ (for id)? commands? cal (calender)? password? whoami and who am i? users and who and w?
 #   more material : https://www.tutorialspoint.com/unix/unix-special-variables.htm
