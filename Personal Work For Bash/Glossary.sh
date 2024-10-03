@@ -16,15 +16,6 @@
 
 mkdir my_file
 
-#   ^ ^ ^ ^ Script Creation ^ ^ ^ ^  
-
-#!/bin/sh
-chmod +x my_bash_file.sh
-./my_bash_file.sh  
-
-
-#   ^ ^ ^ ^ Extended Script Creation ^ ^ ^ ^ 
-
 #   ^ ^ ^ ^ ^ Changing File Directories ^ ^ ^ ^ ^
 
 cd new_file
@@ -44,6 +35,17 @@ ls
 
 #   < < < < < < < <   Procedural Principles   > > > > > > > >   */
 
+
+
+
+#   ^ ^ ^ ^ Script Creation ^ ^ ^ ^  
+
+#!/bin/sh
+chmod +x my_bash_file.sh
+./my_bash_file.sh  
+
+
+#   ^ ^ ^ ^ Extended Script Creation ^ ^ ^ ^ 
 
 
 
