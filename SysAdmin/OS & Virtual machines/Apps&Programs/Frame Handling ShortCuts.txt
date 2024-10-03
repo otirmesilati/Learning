@@ -134,12 +134,26 @@
 
 // & & & & & & & & & & NeoVim & & & & & & & & & &
 
-// ^ ^ ^ ^ ^ Vim ^ ^ ^ ^ ^
+
+
+
+^ ^ ^ ^ ^ Vim ^ ^ ^ ^ ^
+
+i *Change to Editing(Insert) mode*
+esc *change to normal mode*
+
+
+^ ^ ^ ^ File Navigation ^ ^ ^ ^
+
+h *cursor goes left for one letter*
+j *cursor goes down for one letter*
+k *cursor goes up for one letter*
+l *cursor goes right for one letter*
 
 1. one line jump navigation: j(DOWN)/k(UP)
 2. multiple line jump navigation: <Number> + j(DOWN)/k(UP)
 3. [smartcase dependent]Searching-vim level: /<Search Term> 
-4.
+
 
 // ^ ^ ^ ^ Key-Binds ^ ^ ^ ^
 

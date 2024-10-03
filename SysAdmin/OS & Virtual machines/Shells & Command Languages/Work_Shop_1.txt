@@ -19,7 +19,9 @@ vi my_file.txt
 vim my_file.txt
 nvim my_file.txt
 
-^ ^ ^ ^ Editing ^ ^ ^ ^
+^ ^ ^ ^ Vim Commands ^ ^ ^ ^
+
+^ ^ ^  Editing ^ ^ ^ 
 
 w: *save*
 q: *close*
