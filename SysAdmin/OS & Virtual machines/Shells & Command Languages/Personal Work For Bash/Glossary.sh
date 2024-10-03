@@ -172,7 +172,8 @@ git status
 
 #   ^ ^ ^ ^  Pushing ^ ^ ^ ^ 
 
-
+git add file_to_stage
+git commit -m "my_commit_message"
 
 
 
