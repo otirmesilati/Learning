@@ -198,7 +198,7 @@ chgrp new_group my_file
 
 
 
-# pr? lp? lpstat? lpq? cancel? lprm? mail? grep? sort? pg? more? ps? kill? top? ping? ftp? telnet? finger?
+# grep? sort? pg? more? ps? kill? top? ping? ftp? telnet? finger?
 # PART 3 - Advanced Unix
 # sed? df? du? mount? groupadd? groupmod? useradd? userdel? logger? trap? 
 # Part 4? Part 5?
@@ -234,13 +234,15 @@ git status
 git log
 git log --oneline
 
-#   ^ ^ ^ ^  Pushing ^ ^ ^ ^ 
+#   ^ ^ ^ ^ Pushing ^ ^ ^ ^ 
 
 git add file_to_stage
 git commit -m "my_commit_message"
 
+#   ^ ^ ^ ^ Config file ^ ^ ^ ^
 
-
+git config --global user.name "my Name"
+git config --global user.email "my@email"
 
 #   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &
 #   standard lib? gui? 
