@@ -319,6 +319,7 @@ int ptr_value_2 = 1, * ptr_address_2 = &ptr_value_2, ptr_value_2 = *ptr_address_
 
 
 //   & & & & & & Variables & & & & & &
+// type hinting? (static - no, dynamic - yes)
 
 
 void fun_variables()

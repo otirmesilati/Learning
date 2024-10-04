@@ -241,6 +241,7 @@ int ptr_value_2 = 1, * ptr_address_2 = &ptr_value_2, ptr_value_2 = *ptr_address_
 
 
 //   & & & & & & Variables & & & & & &
+// type hinting? (static - no, dynamic - yes)
 
 
 void fun_variables()
@@ -1238,6 +1239,11 @@ TechWorld With Nana:
 --false
 -array (with round brackets)
 -object (with curly brackets), list of key-value pairs
+
+operators + - / *
+string concat + 
+
+variables:
 
 
 

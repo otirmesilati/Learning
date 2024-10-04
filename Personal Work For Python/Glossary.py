@@ -295,6 +295,7 @@ int a = 2, b;
 
 
 //   & & & & & & Variables & & & & & &
+// type hinting? (static - no, dynamic - yes)
 
 
 void fun_variables()
