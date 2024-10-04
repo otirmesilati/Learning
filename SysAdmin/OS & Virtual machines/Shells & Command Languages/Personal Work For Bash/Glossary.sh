@@ -160,6 +160,10 @@ chmod o+wx my_file
 chmod u+wx,g+wx,o+wx my_file
 
 
+#   ^ ^ ^ Adding SGID/SUID bit ^ ^ ^
+
+chmod ug+s my_file 
+
 #   ^ ^ ^ ^  Denying Permissions ^ ^ ^ ^
 
 chmod u-wx my_file
@@ -180,7 +184,6 @@ chmod u=wx,g=wx,o=wx my_file
 chmod 300 my_file
 chmod 030 my_file
 chmod 003 my_file
-
 
 #   ^ ^ ^ ^ ^ Changing Ownership ^ ^ ^ ^ ^
 
