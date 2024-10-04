@@ -152,7 +152,7 @@ rmdir directory_1_to_delete directory_2_to_delete
 
 #   ^ ^ ^ ^ ^ Changing File Permissions ^ ^ ^ ^
 
-#   ^ ^ ^ ^ Adding Permissions ^ ^ ^ ^
+#   ^ ^ ^ ^ Granting Permissions ^ ^ ^ ^
 
 chmod u+wx my_file
 chmod g+wx my_file
@@ -160,9 +160,39 @@ chmod o+wx my_file
 chmod u+wx,g+wx,o+wx my_file
 
 
+#   ^ ^ ^ ^  Denying Permissions ^ ^ ^ ^
 
-# chmod? chown? chgrp? pr? lp? lpstat? lpq? cancel? lprm? mail? grep? sort? pg? more? ps?
-# kill? top? ping? ftp? telnet? finger?
+chmod u-wx my_file
+chmod g-wx my_file
+chmod o-wx my_file
+chmod u-wx,g-wx,o-wx my_file
+
+
+#   ^ ^ ^ ^ Setting Permissions ^ ^ ^
+
+chmod u=wx my_file
+chmod g=wx my_file
+chmod o=wx my_file
+chmod u=wx,g=wx,o=wx my_file
+
+#   ^ ^ ^ Absolute permissions notation ^ ^ ^ 
+
+chmod 300 my_file
+chmod 030 my_file
+chmod 003 my_file
+
+
+#   ^ ^ ^ ^ ^ Changing Ownership ^ ^ ^ ^ ^
+
+chown new_user my_file
+chgrp new_group my_file
+
+
+
+
+
+
+# pr? lp? lpstat? lpq? cancel? lprm? mail? grep? sort? pg? more? ps? kill? top? ping? ftp? telnet? finger?
 # PART 3 - Advanced Unix
 # sed? df? du? mount? groupadd? groupmod? useradd? userdel? logger? trap? 
 # Part 4? Part 5?
@@ -176,6 +206,7 @@ chmod +x my_bash_file.sh
 
 
 #   ^ ^ ^ ^ Extended Script Creation ^ ^ ^ ^ 
+#useful environment variables, $$ (for id)? commands? cal (calender)? password? whoami and who am i? users and who and w?
 
 
 
@@ -206,7 +237,7 @@ git commit -m "my_commit_message"
 
 
 #   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &
-#   standard lib? gui? useful environment variables, $$ (for id)? commands? cal (calender)? password? whoami and who am i? users and who and w?
+#   standard lib? gui? 
 #   more material : https://www.tutorialspoint.com/unix/unix-special-variables.htm
 
 
