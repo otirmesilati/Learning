@@ -80,11 +80,13 @@ ls -R # All Directories recursively on child items
 
 #   & & & & & & Text Files Content & & & & & &
 
-#   ^ ^ ^ ^ ^ Directory Creation ^ ^ ^ ^ ^  
+#   ^ ^ ^ ^ ^ File Creation ^ ^ ^ ^ ^  
 
-mkdir my_file
-mkdir my_1_file my_2_file
+mkdir my_directory
+mkdir my_1_directory my_2_directory 
 mkdir -p make_all_the_parent_files_in_this_path
+
+touch my_file
 
 #   ^ ^ ^ ^ Creating File Links (Shortcuts/file references - deleting them won't affect the original) ^ ^ ^ ^
 
@@ -128,7 +130,7 @@ mv file_name_1_and_path file_name_2_and_path to_directory_path
 mv old_file_name new_file_name
 
 
-#   ^ ^ ^ ^ Deleting Files ^ ^ ^ ^
+#   ^ ^ ^ ^ File deletion ^ ^ ^ ^
 
 rm -i file_to_delete # Asks nicely 
 rm file_to_delete
@@ -142,6 +144,20 @@ rmdir directory_1_to_delete directory_2_to_delete
 
 
 
+
+
+
+#   & & & & & & File Permissions & & & & & &
+
+
+#   ^ ^ ^ ^ ^ Changing File Permissions ^ ^ ^ ^
+
+#   ^ ^ ^ ^ Adding Permissions ^ ^ ^ ^
+
+chmod u+wx my_file
+chmod g+wx my_file
+chmod o+wx my_file
+chmod u+wx,g+wx,o+wx my_file
 
 
 
