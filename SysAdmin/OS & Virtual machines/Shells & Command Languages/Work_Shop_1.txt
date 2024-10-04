@@ -13,7 +13,7 @@ win32 tools?(cmd?)
 
 
 
-
+move this? to desktopping?
 % % % % % % % % File Systems % % % % % % % %
 
 & & & & & & Linux File System & & & & & &
@@ -41,7 +41,7 @@ win32 tools?(cmd?)
 /var - logs and DBs 
 /etc - configs, startups and more scripts , /etc/profile - sysadmin file, shell initilize information (type of terminal and misc for it, list of command saved directories)
 
-
+if ypu move the top portion(linux file system), leave this here?
 ^ ^ ^ ^ ^ Environment variables ^ ^ ^ ^ ^
 
 PATH - specifies location for commands

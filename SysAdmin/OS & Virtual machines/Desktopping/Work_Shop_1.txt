@@ -1,2 +1,6 @@
 Desktop metaphor?
+- components? roll overing components through future releaes?
+- file systems? os native directories? (like windows tools?)
+- os pre installed software?
+desktop shortcuts?
 what else?

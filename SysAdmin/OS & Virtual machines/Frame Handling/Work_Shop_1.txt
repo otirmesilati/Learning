@@ -1,7 +1,7 @@
 //   & & & & & & & & & & Windows Terminal Shortcuts & & & & & & & & & &
 
-
-
+- os native frames? frame families? like windows msc?
+- apps vs programs?
 
 
 
