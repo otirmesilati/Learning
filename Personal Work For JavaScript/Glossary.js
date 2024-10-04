@@ -1221,3 +1221,28 @@ private:
 // Libraries
 // - Math Library
 // -- Math.round function - what kind of rounding is it?
+
+/*
+TechWorld With Nana:
+5 main types:
+- number:
+-- whole numbers are INTEGER
+-- decimal numbers are DECIMAL
+- string - quotes (single or double):
+-- character
+-- letters
+-- symbols
+-- escape characters
+-boolean:
+--true
+--false
+-array (with round brackets)
+-object (with curly brackets), list of key-value pairs
+
+
+
+dev tools:
+right clikc -> inspet
+go to console -> write javascript
+
+*/

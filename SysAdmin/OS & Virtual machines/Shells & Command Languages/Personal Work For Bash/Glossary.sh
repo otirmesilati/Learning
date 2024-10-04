@@ -195,6 +195,9 @@ chgrp new_group my_file
 
 
 
+
+
+
 # pr? lp? lpstat? lpq? cancel? lprm? mail? grep? sort? pg? more? ps? kill? top? ping? ftp? telnet? finger?
 # PART 3 - Advanced Unix
 # sed? df? du? mount? groupadd? groupmod? useradd? userdel? logger? trap? 
@@ -209,7 +212,7 @@ chmod +x my_bash_file.sh
 
 
 #   ^ ^ ^ ^ Extended Script Creation ^ ^ ^ ^ 
-#useful environment variables, $$ (for id)? commands? cal (calender)? password? whoami and who am i? users and who and w?
+#useful environment variables commands? cal (calender)? password? whoami and who am i? users and who and w?
 
 
 

@@ -39,14 +39,23 @@ win32 tools?(cmd?)
 /proc - system state in terms of running processes
 /tmp - temporary files
 /var - logs and DBs 
-/etc - configs, startups and more scripts
+/etc - configs, startups and more scripts , /etc/profile - sysadmin file, shell initilize information (type of terminal and misc for it, list of command saved directories)
 
 
+^ ^ ^ ^ ^ Environment variables ^ ^ ^ ^ ^
 
+PATH - specifies location for commands
+PS1 - command prompt title characters
+PS2 - enter variable incase a command isn't complete 
 
+$$ - current shell ID process number
+$UID - current user ID number
 
+$PWD - current directory path
+$HOME - home directory path
 
-
+$RANDOM - random integer from 0 to 32,767
+$SHLVL - counter of nested bash terminals in current session
 
 & & & & & & Windows File System & & & & & &
 
