@@ -113,7 +113,10 @@ wc file_name
 wc file_1_name file_2_name
 
 
-#   ^ ^ ^ ^ ^ Manipulating Files in Directory Tree ^ ^ ^ ^ ^
+#   ^ ^ ^ ^ Searching Contents ^ ^ ^ ^
+
+grep "search_term"
+
 
 #   ^ ^ ^ ^ Copying Files ^ ^ ^ ^ 
 
