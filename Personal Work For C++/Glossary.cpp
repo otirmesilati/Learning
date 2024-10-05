@@ -731,7 +731,8 @@ int int_overloaded_func(int val1 = NULL, float val2 = NULL){}
 /*   < < < < < < < <   Object Oriented Principles   > > > > > > > >   */
 
 //   & & & & & & Classes & & & & & &
-// Add function overloading above after updating to the latest C Patch
+// Add function overloading (defaukt values? and the not possible case when playing with their order?) above after updating to the latest C Patch,
+// planning an object and UMLing skills to tablet
 //   ^ ^ ^ ^ ^ Include's Double Code Generation Avoidance ^ ^ ^ ^ ^ 
 
 #ifndef MY_CLASS
@@ -740,13 +741,14 @@ int int_overloaded_func(int val1 = NULL, float val2 = NULL){}
 // my class decleration here
 
 #endif
+ 
 
 //   ^ ^ ^ ^ ^ Class decleration ^ ^ ^ ^ ^
 
 class My_class
 {
 
-//   ^ ^ ^ ^ Class Level (only level in C++) Access modifiers ^ ^ ^ ^
+//   ^ ^ ^ ^ Class Level Access modifiers (only level in C++) ^ ^ ^ ^
 
 // private unless stated otherwise
 
@@ -757,6 +759,7 @@ protected:
 };
 
 // friend? inheritance? virtual?
+
 
 //   ^ ^ ^ ^ Class Attributes/Fields ^ ^ ^ ^
 
@@ -787,13 +790,19 @@ class My_fields_2_with_static
 
 // My_fields_2_with_static::static_int_field = 0;
 
+
+class My_inhereted
+{
+	int prmitive_field;
+};
+
+
 //   ^ ^ ^ ^ ^ Methods ^ ^ ^ ^ ^
 
-class My_methods
+class My_methods : public My_inhereted
 {
 
 //   ^ ^ ^ ^ Constructor ^ ^ ^ ^   // 
-// ctor? ag/asoc/comp?
 
 //   ^ ^ ^ Init List ^ ^ ^
 My_methods(int pri_f_1, int pri_f_2, int* poi_f_1) 
@@ -808,6 +817,7 @@ pointer_field_1(nullptr)
 
 }
 
+
 //   ^ ^ ^ Default Constructor ^ ^ ^   //
 
 My_methods()
@@ -816,7 +826,19 @@ My_methods()
 	primitive_field_1 = NULL;
     primitive_field_2 = NULL;
     pointer_field_1 = nullptr;
+
+//   ^ ^ Object Relations (through initiation)
+
+	// imagine the following pointer is passed as an argument..
+	int a = 5;
+	int* a_p = &a; 
+
+	pointer_field_1; // My_methods uses object
+	pointer_field_1 = new int; // My_methods responsible for object's lifetime
+	pointer_field_1 = a_p; // My_methods is not responsible for the object's lifetime 
+
 }
+
 
 //   ^ ^ ^ C'tor Delegation ^ ^ ^
 
@@ -830,25 +852,34 @@ My_methods(pri_f_1, NULL, nullptr) // delegating work for the C'tor mentioned in
 
 }
 
+
 //   ^ ^ ^ Copy Constructor ^ ^ ^  //
 
-My_methods(const My_methods&)
+My_methods(const My_methods& other_obj)
 
 : 
 
 My_methods() // def c'tor delgation for initialization 
 
 {
-	// check null pointer - do later
-	// dynamic allocation - do later
+	
+	primitive_field_1 = other_obj.primitive_field_1;
+	primitive_field_2 = other_obj.primitive_field_2;
+	pointer_field_1 = other_obj.pointer_field_1;
+
 }
 
 
 // super?
+
+
 //   ^ ^ ^ ^ Destructor ^ ^ ^ ^ //
 
-
-	My_methods();
+~My_methods()
+{
+	delete pointer_field_1;
+}
+	
 
 	int primitive_field_1, primitive_field_2;
 	int* pointer_field_1;
@@ -857,79 +888,17 @@ My_methods() // def c'tor delgation for initialization
 
 };
 
-//inline 
+//inline ? imp? exp?
 
+// inheritance? virtual inheritace? virtual functions? polymorphysm?
+// rtti? error handling?
 // template classes? 
+// files?
 
 
 
 
 
-
-
-
-
-// < - - - - - Header file - - - - - > //
-// Three class dependency: Line --[Friends + Composites]--> point
-class MyPoint4
-{
-
-public:
-
-    // API mentioned in the header file: 4 C'tors, included: default C'tor and a CC'tor + 1 D'tor
-
- 	MyPoint4(int x=NULL, int y=NULL): x(x), y(y) {} // 3 function overloads (includes def C'tor)
-	MyPoint4(const MyPoint4& other_point):MyPoint4(other_point.x, other_point.y) {} // no dynamic allcation: Shallow copy(using C'tor delegation)
-
-	~MyPoint4() {} // no dynamic allocation: empty D'tor
-
-	void print() { cout << "(" << x << "," << y << ")"; }  // Implicitly inlining the print function
-
-	friend bool equals(const MyPoint4&, const MyPoint4&); // delegating permissions to equlas function
-	friend class MyLine2;  // Delegating Permissions to the my line class
-
-private: // Data encapsulation: Abstraction + Access strict Message Passing
-
-	int x, y;
-
-};
-
-// Explicit inline the equals implementation
-inline bool equals(const MyPoint4& first_point, const MyPoint4& second_point) { return first_point.x == second_point.x && first_point.y == second_point.y; }
-
-// < - - - - - Cpp file - - - - - > //
-
-// empty! //
-
-
-// < - - - - - Header file - - - - - > //
-
-// a friend function can access the private areas: //
-class MyLine2
-{
-
-public:
-
-	MyLine2(): starting_point(), ending_point() { }
-	MyLine2(const MyPoint4& first_point, const MyPoint4& second_point): starting_point(first_point), ending_point(second_point) {} // Composed points - tight copled to the class, when the object releases, so do they // 
-
-	~MyLine2() {}
-
-	void shrink(); 
-
-	void print() { cout << "( "; starting_point.print(); cout << " , "; ending_point.print(); cout << " )" << endl; }
-
-private:
-
-	MyPoint4 starting_point, ending_point;
-
-};
-
-inline void MyLine2::shrink()
-{
-	ending_point.x = starting_point.x; // Has access to the private point data
-	ending_point.y = starting_point.y; // Has access to the private point data
-}
 
 
 // < - - - - - Cpp file - - - - - > //
@@ -1090,13 +1059,13 @@ private:
 // < - - - - - Header file - - - - - > //
 
 
-class Manager1 // : public Employee1 to inherit from empoyee
+class Manager1 : public Employee1 // : public Employee1 to inherit from empoyee
 {
 
 public:
 
 	Manager1(): emp_part(), workers(nullptr), number_of_workers(NULL)  {}
-	Manager1(const Manager1& other_manager): emp_part(other_manager.emp_part), workers(nullptr), number_of_workers(other_manager.number_of_workers)
+	Manager1(const Manager1& other_manager): Employee1(other_manager), emp_part(other_manager.emp_part), workers(nullptr), number_of_workers(other_manager.number_of_workers)
 	{
 		if (other_manager.workers)
 		{

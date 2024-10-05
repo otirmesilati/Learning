@@ -15,6 +15,7 @@ linux:
 
 macos:
 - dock
+- apple menu (left portion of the menu bar when no frame is handled)
 
 
 - components? roll overing components through future releaes?
