@@ -1,10 +1,16 @@
 & & & & & & Mathematical Poblems Pseudo-Codes & & & & & &
+^data structures?
 &paper puzzles?
 &cardboard puzzles?
 
 
 
-   & & & & & & C Lectures & & & & & &  
+
+
+
+
+& & & & & & 
+& & & & & & C Lectures & & & & & &  
 
    ^ ^ ^ ^ ^ Lecture 3 ^ ^ ^ ^ ^ 
    
