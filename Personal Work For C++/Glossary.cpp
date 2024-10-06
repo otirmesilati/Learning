@@ -758,8 +758,6 @@ protected:
 
 };
 
-// friend? inheritance? virtual?
-
 
 //   ^ ^ ^ ^ Class Attributes/Fields ^ ^ ^ ^
 
@@ -793,6 +791,17 @@ class My_fields_2_with_static
 
 class My_inhereted
 {
+public:
+
+	My_inhereted()
+	{
+		prmitive_field = 0;
+	}
+	My_inhereted(int pf)
+	{
+		prmitive_field = pf;	
+	}
+
 	int prmitive_field;
 };
 
@@ -870,7 +879,16 @@ My_methods() // def c'tor delgation for initialization
 }
 
 
-// super?
+//   ^ ^ ^ Super C'tor inocation ^ ^ ^
+
+My_methods(int pf_1, int pf_2)
+:
+My_inhereted(pf_1)
+{
+	primitive_field_1 = pf_1;
+    primitive_field_2 = pf_2;
+    pointer_field_1 = nullptr;
+}
 
 
 //   ^ ^ ^ ^ Destructor ^ ^ ^ ^ //
@@ -879,18 +897,27 @@ My_methods() // def c'tor delgation for initialization
 {
 	delete pointer_field_1;
 }
-	
+
+// assign op?
+
 
 	int primitive_field_1, primitive_field_2;
 	int* pointer_field_1;
 	
 	//=
 
+// friend method
+// friend class
+
 };
+
+//inhderitance
+// mult inher
+// virt inh
 
 //inline ? imp? exp?
 
-// inheritance? virtual inheritace? virtual functions? polymorphysm?
+// virtual functions? polymorphysm?
 // rtti? error handling?
 // template classes? 
 // files?
