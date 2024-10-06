@@ -911,9 +911,29 @@ My_inhereted(pf_1)
 
 };
 
-//inhderitance
-// mult inher
-// virt inh
+class Another_inhereted
+{
+	public:
+	Another_inhereted(){another_primitive = 0;}
+	Another_inhereted(int ani){another_primitive = ani;}
+	int another_primitive;
+};
+
+
+//   ^ ^ ^ ^ ^ Inheritance ^ ^ ^ ^ ^ 
+
+//   ^ ^ ^ ^ Multi Inheritance ^ ^ ^ ^
+// add to tablet the skill of graphing creation and destruction of objects, especially with virtual inheritance
+
+class My_diamond_inheritance: public My_inhereted, public Another_inhereted // diamond inheritance
+{
+
+};
+
+//   ^ ^ ^ ^ Virtual Inheritance ^ ^ ^ ^
+// first virt edge
+// second virt edge
+// closing
 
 //inline ? imp? exp?
 
@@ -928,12 +948,7 @@ My_inhereted(pf_1)
 
 
 
-// < - - - - - Cpp file - - - - - > //
 
-// empty! //
-
-
-// < - - - - - Header file - - - - - > //
 
 class MyArray
 {
@@ -1127,7 +1142,4 @@ private:
 };
 
 
-
-//   & & & & & & Object Oriented Design & & & & & &  
-// what would replace the below ?
 // for the java glossary (delete this from here later) - package hirerchy? are there complex relations?
