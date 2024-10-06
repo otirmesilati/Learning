@@ -898,13 +898,11 @@ My_inhereted(pf_1)
 	delete pointer_field_1;
 }
 
-// assign op?
+// assign op? assign op delegation?
 
 
 	int primitive_field_1, primitive_field_2;
 	int* pointer_field_1;
-	
-	//=
 
 // friend method
 // friend class
@@ -925,15 +923,28 @@ class Another_inhereted
 //   ^ ^ ^ ^ Multi Inheritance ^ ^ ^ ^
 // add to tablet the skill of graphing creation and destruction of objects, especially with virtual inheritance
 
-class My_diamond_inheritance: public My_inhereted, public Another_inhereted // diamond inheritance
+class My_diamond_inheritance: public My_inhereted, Another_inhereted // diamond inheritance
 {
 
 };
 
+
 //   ^ ^ ^ ^ Virtual Inheritance ^ ^ ^ ^
-// first virt edge
-// second virt edge
-// closing
+
+class My_base_inherited{};
+class My_first_virt_inherited : public virtual My_base_inherited{};
+class My_second_virt_inherited : public virtual My_base_inherited{};
+class My_inheriting : public My_first_virt_inherited, My_second_virt_inherited{}; // looks like regular multi inheritance from here
+
+// here inheriting's c'tor can invoke base c'tor: My_inhereting(const My_inhereting& other) : My_base_inherited(other) .... unlike in the non virtual diamond case 
+
+
+
+
+
+
+
+
 
 //inline ? imp? exp?
 
@@ -996,150 +1007,11 @@ private:
 };
 
 
-// < - - - - - Cpp file - - - - - > //
-
-// empty! //
 
 
-// < - - - - - Header file - - - - - > //
-
-// tablet skills: add OO graphing? probably it has something to do with behavioral UML?
-// Three class dependency: Manager --[inherits]--> Employee --[composites]--> Date
-class My_Date
-{
-
-public:
-
-	My_Date(): year(2020), month(2), day (2) {}
-	My_Date(int year, int month, int day): year(year), month(month), day(day) {}
-	My_Date(const My_Date& other_date): My_Date(other_date.year, other_date.month, other_date.day){} // C'tor delegation / chaining 
-
-	~My_Date() {} // no dynamically allocated attributes
-
-	My_Date& operator=(const My_Date& other_date)
-	{
-		if (this != &other_date) // checking for double pointing
-		{
-            // Shallow copy, no need for deep copy : primitive attributes
-			year = other_date.year;
-			month = other_date.month;
-			day = other_date.day;
-		}
-
-		return *this; // pipeline of multi-asignment
-	}
-
-private:
-
-	int year, month, day;
-
-};
 
 
-// < - - - - - CPP file - - - - - > //
 
-// empty! //
-
-// < - - - - - Header file - - - - - > //
-
-
-class Employee1
-{
-
-public:
-
-	Employee1(): full_name(nullptr), hiring_date(), id(NULL), department_id(NULL) {} // attribute cleanup //
-
-    // No delegation C'tor? :'(
-
-	Employee1(const Employee1& other_employee) : full_name(nullptr), hiring_date(other_employee.hiring_date), id(other_employee.id), department_id(other_employee.department_id) // dangling pointer handling //
-	{
-		if (other_employee.full_name) // null pointer check
-		{
-            // Deep copy: find the length through while (don't know how long is name is), and of course copy cells //
-			int name_length = 0;
-			while (other_employee.full_name[name_length] != '\0') ++name_length;
-			full_name = new char[name_length];
-			for (int init_index = 0; init_index < name_length; ++init_index) full_name[init_index] = other_employee.full_name[init_index];
-		}
-	}
-
-	~Employee1() { delete full_name; }
-
-	Employee1 operator=(const Employee1& other_employee)
-	{
-		if (this != &other_employee)
-		{
-			delete full_name;
-			if (other_employee.full_name)
-			{
-				int name_length = 0;
-				while (other_employee.full_name[name_length] != '\0') ++name_length;
-				full_name = new char[name_length];
-				for (int copy_index = 0; copy_index < name_length; ++copy_index) full_name[copy_index] = other_employee.full_name[copy_index];
-			}
-		}
-		return *this;
-	}
-
-	void set_hiring_date(int y, int m, int d) { hiring_date = My_Date(y,m,d); }
-	void set_department(short dep_id) { department_id = dep_id; }
-
-private:
-
-	char* full_name;
-	My_Date hiring_date; // compose/agregate/associate relation (dependent on C'tors mostly)
-	int id;
-	short department_id;
-
-};
-
-
-// < - - - - - CPP file - - - - - > //
-
-
-// < - - - - - Header file - - - - - > //
-
-
-class Manager1 : public Employee1 // : public Employee1 to inherit from empoyee
-{
-
-public:
-
-	Manager1(): emp_part(), workers(nullptr), number_of_workers(NULL)  {}
-	Manager1(const Manager1& other_manager): Employee1(other_manager), emp_part(other_manager.emp_part), workers(nullptr), number_of_workers(other_manager.number_of_workers)
-	{
-		if (other_manager.workers)
-		{
-			workers = new Employee1[number_of_workers];
-			for (int init_index = 0; init_index < number_of_workers; ++init_index) workers[init_index] = other_manager.workers[init_index];
-		}
-	}
-
-	~Manager1() { delete workers; }
-
-	Manager1& operator=(const Manager1& other_manager)
-	{
-		if (this != &other_manager)
-		{
-			delete workers;
-			if (other_manager.workers)
-			{
-				number_of_workers = other_manager.number_of_workers;
-				workers = new Employee1[number_of_workers];
-				for (int copy_index = 0; copy_index < number_of_workers; ++copy_index) workers[copy_index] = other_manager.workers[copy_index];
-			}
-		}
-		return *this;
-	}
-
-private:
-
-	Employee1 emp_part;
-	Employee1* workers;
-	int number_of_workers;
-
-};
 
 
 // for the java glossary (delete this from here later) - package hirerchy? are there complex relations?
