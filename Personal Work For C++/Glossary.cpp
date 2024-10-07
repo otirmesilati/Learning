@@ -808,6 +808,88 @@ public:
 
 //   ^ ^ ^ ^ ^ Methods ^ ^ ^ ^ ^
 
+//   ^ ^ ^ ^ Virtual Methods ^ ^ ^ ^
+
+class My_vritual_methods
+{
+	public:
+
+	void function_not_to_override(){}
+	void virtual_function_to_overide(){}
+	void virtual_function_to_overide_and_use(){}
+	void virtual_function_to_hide(int hide_this){}
+	
+	private:
+
+	int int_to_hide;
+};
+
+class witness_virtual_method_use : public My_vritual_methods
+{
+	// what here?
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+class ClassA
+{
+
+public:
+
+	ClassA(): i_field_1(NULL) {}
+	ClassA(const ClassA& other_a): i_field_1(other_a.i_field_1) {}
+
+	~ClassA() {}
+
+	void function_not_to_override() {}
+	void function_to_override() {}
+	void function_to_override_and_use() {}
+	void function_to_hide(int hide_this) {}
+
+	ClassA& operator=(const ClassA& other_a) { i_field_1 = other_a.i_field_1; return *this; }
+
+private:
+
+	int i_field_1;
+
+};
+
+class ClassB : public ClassA
+{
+
+public:
+
+	ClassB(): ClassA(), i_field_2(NULL) {}
+	ClassB(const ClassB& other_b): ClassA(other_b), i_field_2(other_b.i_field_2) {}
+
+	~ClassB() {}
+
+	ClassB& operator=(const ClassB& other_b) { (ClassA&)*this = other_b; i_field_2 = other_b.i_field_2; } // ClassA::operator=(other_b); is the classic //
+
+	void function_to_override() {}
+	void function_to_override_and_use() { function_to_override_and_use(); }
+	void function_to_hide() {} // function_to_hide(); will call B's function //
+
+private:
+
+	int i_field_2;
+
+};
+
+// employee + manager (before inheritance) here //
+// class A and class B examples (first and hiding exmples) //
+
+
 class My_methods : public My_inhereted
 {
 
@@ -968,7 +1050,7 @@ class My_inline
 
 inline void My_inline::explicit_inline(){}
 
-// virtual functions? polymorphysm?
+// polymorphysm?
 // error handling?
 // template classes? 
 // files?
