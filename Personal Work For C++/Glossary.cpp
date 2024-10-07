@@ -899,12 +899,25 @@ My_inhereted(pf_1)
 }
 
 
+My_methods& operator=(const My_methods& other_obj) // by reference return type - to enable piping assigntment/multi assignment
+{
+	if (this!= &other_obj) // checking for double pointing
+    {
+        delete pointer_field_1; // wipe out existing data
+
+        // do the deep copy //
+        pointer_field_1 = new int; // do the deep copy //
+        *pointer_field_1 = *other_obj.pointer_field_1;
+    }
+
+    return *this; 
+}
+
+
 //   ^ ^ ^ ^ Friend relations ^ ^ ^ ^
 
 	friend bool equals(const My_methods&); // a method that has "private modifier" access
 	friend class My_inherited; // a class that has "private modifier" access
-
-// assign op? assign op delegation?
 
 	int primitive_field_1, primitive_field_2;
 	int* pointer_field_1;
@@ -959,59 +972,6 @@ inline void My_inline::explicit_inline(){}
 // error handling?
 // template classes? 
 // files?
-
-
-
-
-
-
-
-
-
-class MyArray
-{
-public:
-
-	MyArray(): elements(nullptr), array_length(NULL){} // pointers: init list to null (avoid dangling pointers)
-    // NULL = 0, nullptr has a std::nullptr_t type, it's implicitly convertible to any pointer type
-	MyArray(int* other_array, int size) : MyArray() // C'tor delegation/chaining: invoking the default C'tor as a "cleanup" procedure //
-	{
-		if (other_array) // checking either the other array is empty (null pointer check) or not
-		{
-            // entered -> there is an array -> go over and copy the int elements
-			array_length = size; // updating the size //
-			elements = new int[array_length]; // appropriate dynamic memory allocation //
-			for (int init_index = 0; init_index < array_length; ++init_index) this->elements[init_index] = other_array[init_index]; // deep copy the elements
-		}
-	}
-	MyArray(const MyArray& other_array): MyArray(other_array.elements, other_array.array_length){} // C'tor delegation/chaining again
-
-	~MyArray() { delete elements; } // D'tor deletes - there are dynamic allocations
-
-	MyArray& operator=(const MyArray& other_array) // same with CC'tor - Deep copy required
-	{
-		if (this != &other_array) // checking for double pointing  
-		{
-            // first part - wipe out existing data
-			array_length = other_array.array_length;
-			delete elements;
-
-            // second part - do the deep copy
-			elements = new int[array_length];
-			for (int copy_index = 0; copy_index < array_length; ++copy_index) elements[copy_index] = other_array.elements[copy_index];
-		}
-
-		return *this; // return the value -> can allow for multi assignment (pipeline behaviour)
-	}
-
-	void print() { cout << "array is: "; for (int printing_index = 0; printing_index < array_length; ++printing_index) { cout << elements[printing_index] << " "; } cout << endl; }
-
-private:
-
-	int* elements; // a dynamically meant to be allocated element - can be either AGGREGATED or COMPOSED
-	int array_length;
-
-};
 
 
 
