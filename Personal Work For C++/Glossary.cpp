@@ -935,13 +935,14 @@ class My_base_inherited{};
 class My_first_virt_inherited : public virtual My_base_inherited{};
 class My_second_virt_inherited : public virtual My_base_inherited{};
 class My_inheriting : public My_first_virt_inherited, My_second_virt_inherited{}; // looks like regular multi inheritance from here
-
-// here inheriting's c'tor can invoke base c'tor: My_inhereting(const My_inhereting& other) : My_base_inherited(other) .... unlike in the non virtual diamond case 
-
+//here inheriting's c'tor can invoke base c'tor: My_inhereting(const My_inhereting& other) : My_base_inherited(other) .... unlike in the non virtual diamond case 
 
 
+//   ^ ^ ^ ^ ^ DownCasting ^ ^ ^ ^ ^
 
+//   ^ ^ ^ ^ Slicing
 
+//   ^ ^ ^ ^ RTTI
 
 
 
@@ -949,7 +950,7 @@ class My_inheriting : public My_first_virt_inherited, My_second_virt_inherited{}
 //inline ? imp? exp?
 
 // virtual functions? polymorphysm?
-// rtti? error handling?
+// error handling?
 // template classes? 
 // files?
 
