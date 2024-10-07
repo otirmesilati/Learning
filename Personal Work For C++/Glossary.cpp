@@ -947,10 +947,13 @@ class My_inheriting : public My_first_virt_inherited, My_second_virt_inherited{}
 
 //   ^ ^ ^ ^ RTTI
 
+class My_inline
+{
+	void implicit_inline(){}
+	void explicit_inline();
+};
 
-
-
-//inline ? imp? exp?
+inline void My_inline::explicit_inline(){}
 
 // virtual functions? polymorphysm?
 // error handling?
