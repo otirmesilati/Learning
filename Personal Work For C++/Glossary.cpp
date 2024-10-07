@@ -898,14 +898,17 @@ My_inhereted(pf_1)
 	delete pointer_field_1;
 }
 
-// assign op? assign op delegation?
 
+//   ^ ^ ^ ^ Friend relations ^ ^ ^ ^
+
+	friend bool equals(const My_methods&); // a method that has "private modifier" access
+	friend class My_inherited; // a class that has "private modifier" access
+
+// assign op? assign op delegation?
 
 	int primitive_field_1, primitive_field_2;
 	int* pointer_field_1;
 
-// friend method
-// friend class
 
 };
 
