@@ -830,15 +830,20 @@ class witness_virtual_method_use : public My_vritual_methods
 
 	virtual void virtual_function_to_override(){}
 	virtual void virtual_function_to_overide_and_use(){virtual_function_to_overide_and_use();}
-	virtual void virtual_function_to_hide() {} // function_to_hide(); will call B's function //
+	virtual void virtual_function_to_hide() {} // function_to_hide(); will call inherntee's function //
 	
 };
 
+//   ^ ^ ^ Polymorphic methods ^ ^ ^   //
+// what here? note the three requirements?
+
+
+//   ^ ^ ^ ^ Constructor ^ ^ ^ ^   //
 
 class My_methods : public My_inhereted
 {
 
-//   ^ ^ ^ ^ Constructor ^ ^ ^ ^   // 
+ 
 
 //   ^ ^ ^ Init List ^ ^ ^
 My_methods(int pri_f_1, int pri_f_2, int* poi_f_1) 
@@ -1003,7 +1008,6 @@ class My_inline
 
 inline void My_inline::explicit_inline(){} // definition
 
-// polymorphysm?
 // error handling?
 // template classes? 
 // files?
