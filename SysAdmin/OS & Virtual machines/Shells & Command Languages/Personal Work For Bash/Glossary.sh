@@ -116,7 +116,9 @@ wc file_1_name file_2_name
 #   ^ ^ ^ ^ Searching Contents ^ ^ ^ ^
 
 grep "search_term"
-
+grep -n "search_term" # adding the line numbers of the results
+grep -v "search_term" # outputting the rest of results
+grep -c "search_term" # wc type command, outs the counter
 
 #   ^ ^ ^ ^ Copying Files ^ ^ ^ ^ 
 
