@@ -1,0 +1,117 @@
+what to leave here? what to move to the general shell workshop? (maybe things like commands for the devops tools setup and configuration?)
+
+DELETE AFTER FINISH:
+
+before starting, read these: 
+1. https://www.reddit.com/r/ITCareerQuestions/comments/ojchev/i_want_to_be_a_sysadmin_where_and_how_to_start/
+2. https://www.reddit.com/r/sysadmin/comments/1eiwh0i/should_active_directory_ad_be_common_knowledge/
+3. https://en.wikipedia.org/wiki/Unix_wars
+
+and finish these: https://www.youtube.com/watch?v=QHial8xwfh4 , https://www.youtube.com/watch?v=WMy3OzvBWc0
+
+
+
+
+
+
+
+
+
+% % % % % % % % Monitoring % % % % % % % %
+
+jenkins? flux? prom?
+
+
+
+
+
+
+
+
+& & & & & & Text Editor CLIs & & & & & &
+
+^ ^ ^ ^ ^ Nvim ^ ^ ^ ^ ^
+
+vi my_file.txt
+vim my_file.txt
+nvim my_file.txt
+
+^ ^ ^ ^ Vim Commands ^ ^ ^ ^
+
+^ ^ ^  Editing ^ ^ ^ 
+
+w: *save*
+q: *close*
+
+
+
+
+
+
+
+
+when to move this to the batch glossary?:
+^ ^ ^ CMD Run Command ^ ^ ^
+
+
+
+where timeout? pause?
+timeout /t 10 >nul (for delay of 10 seconds)
+
+
+
+
+
+
+
+
+
+& & & & & & CLIs & & & & & &
+shell browser? multiple panes(tiling)?
+
+
+
+
+
+
+
+
+
+
+<------------------------   c:\Users\otirm_2hwnj4i\Desktop\🖥️\TUI & Shells\Dynamic Sources.txt   ----------------------------->
+
+   & & & & & & Sites & & & & & &
+   
+   & & & & & & Youtube's & & & & & &
+   
+   ^ ^ ^ ^ ^ Youtubers ^ ^ ^ ^ ^
+   
+   1. https://www.youtube.com/@typecraft_dev/videos
+   2. 
+   
+   ^ ^ ^ ^ ^ To Watch ^ ^ ^ ^ ^
+   
+   ^ ^ ^ ^ Playlists ^ ^ ^ ^
+   
+   1. paul hills win server: https://www.youtube.com/watch?v=Dq-Ln-w8C2E&list=PLYogJ_kxL1wTesq-vNxEc8tjDOHvszeWf
+   2.
+   
+   ^ ^ ^ ^ Vids ^ ^ ^ ^
+   
+   1. 
+   2. 
+   3. 
+   
+   ^ ^ ^ ^ Shorts ^ ^ ^ ^
+   
+   & & & & & & Reddit
+   
+   1. 
+   2. 
+   
+   & & & & & & Sites & & & & & &   
+   
+   1. 
+   2. 
+   3. 
+   2. 
