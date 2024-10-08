@@ -11,6 +11,8 @@
 #   < < < < < < < <   Command Principles   > > > > > > > >   */
 
 clear # Screen Clearing
+echo "Hello World" # standard ouput to terminal
+echo hello world # same output
 
 
 
@@ -105,6 +107,10 @@ cat -b file_name # Numbering lines
 #   ^ ^ ^ Editing Contents ^ ^ ^ 
 
 cat > file_name 
+
+#   ^ ^ ^ Sorting contents ^ ^ ^
+
+sort file_name
 
 
 #   ^ ^ ^ ^ ^ Counting Contents ^ ^ ^ ^ ^
@@ -203,7 +209,7 @@ chgrp new_group my_file
 
 
 
-# grep? sort? pg? more? ps? kill? top? ping? ftp? telnet? finger?
+# pg? more? ps? kill? top? ping? ftp? telnet? finger?
 # PART 3 - Advanced Unix
 # sed? df? du? mount? groupadd? groupmod? useradd? userdel? logger? trap? 
 # Part 4? Part 5?
