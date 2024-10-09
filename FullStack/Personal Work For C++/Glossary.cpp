@@ -789,6 +789,7 @@ class My_fields_2_with_static
 // My_fields_2_with_static::static_int_field = 0;
 
 
+// these two classes will be used for the multi inheritance example
 class My_inhereted
 {
 public:
@@ -803,6 +804,14 @@ public:
 	}
 
 	int prmitive_field;
+};
+
+class Another_inhereted
+{
+	public:
+	Another_inhereted(){another_primitive = 0;}
+	Another_inhereted(int ani){another_primitive = ani;}
+	int another_primitive;
 };
 
 
@@ -949,7 +958,8 @@ My_inhereted(pf_1)
 }
 
 //  ^ ^ ^ Virtual Destructor ^ ^ ^ //
-// ?
+// No Virtual C'tor! C++ Is statically typed -> space allocated needs to be known at compile time //
+virtual ~My_methods() = 0; 
 
 //   ^ ^ ^ ^ Assignment operator ^ ^ ^ ^ //
 
@@ -977,14 +987,6 @@ My_methods& operator=(const My_methods& other_obj) // by reference return type -
 	int* pointer_field_1;
 
 
-};
-
-class Another_inhereted
-{
-	public:
-	Another_inhereted(){another_primitive = 0;}
-	Another_inhereted(int ani){another_primitive = ani;}
-	int another_primitive;
 };
 
 
