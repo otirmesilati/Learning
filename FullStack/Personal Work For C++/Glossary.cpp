@@ -1,4 +1,4 @@
-// C++ Online Emulator: https://www.programiz.com/cpp-programming/online-compiler/
+// C++ Online Emulator: https://www.programiz.com/cpp-programming/online-compiler/ 
 
 
 
@@ -8,9 +8,27 @@
 
 
 
-/*   < < < < < < < <   Language Principles   > > > > > > > >   */
+//   < < < < < < < <   Language Principles   > > > > > > > >   //
 
 
+
+
+
+
+
+
+
+//   < < < < < < < <   Procedural Principles   > > > > > > > >   
+
+
+
+
+
+
+
+
+
+//   & & & & & & Libraries & & & & & &   //
 #pragma once // have the header included once at maximum
 
 
@@ -25,7 +43,7 @@
 using namespace std;
 
 
-// iostream? stdio.h? GUI libraries?
+// iostream? iostream? typeinfo? GUI libraries? libraries database?
 // pragma once? namespace ? (finish mapping this)
 // rich API? primitives and objects API? collections?
 
