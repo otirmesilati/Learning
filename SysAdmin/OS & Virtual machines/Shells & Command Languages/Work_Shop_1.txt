@@ -17,6 +17,31 @@ and finish these: https://www.youtube.com/watch?v=QHial8xwfh4 , https://www.yout
 
 
 
+% % % % % % % % Package Managers & FrameWorks % % % % % % % %
+
+
+
+
+
+
+
+
+
+& & & & & & Package Managers
+
+
+
+
+
+
+
+
+
+& & & & & & FrameWorks
+
+
+
+
 % % % % % % % % Monitoring % % % % % % % %
 
 jenkins? flux? prom?
