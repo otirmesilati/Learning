@@ -835,7 +835,25 @@ class witness_virtual_method_use : public My_vritual_methods
 };
 
 //   ^ ^ ^ Polymorphic methods ^ ^ ^   //
+
+class poly_methods_inherited // 1st requirement: inherited has virtual method
+{
+	public:
+
+	virtual void my_virtual_polymorphic_method(){}
+};
+
+class poly_methods_inheritee : public poly_methods_inherited 
+{
+	public: 
+
+	virtual void my_virtual_polymorphic_method(){} // 2nd requirement: inheritee overrides 
+};
+
+class ploy_methods_upcasting 
+{
 // what here? note the three requirements?
+};
 
 
 //   ^ ^ ^ ^ Constructor ^ ^ ^ ^   //
