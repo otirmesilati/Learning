@@ -18,9 +18,19 @@
 
 
 
+#   & & & & & & Procedural Principles & & & & & & 
+
+
+
+
+
+
+
+
+
 #   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &
 #   Standard Library is built in, not need to be imported
-# GUI? 
+# GUI? Libraries DataBases 
 
 
 

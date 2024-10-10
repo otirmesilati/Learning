@@ -263,11 +263,6 @@ first_temp + second_temp; // first is promoted to double in widening implicit c 
 first_explicit_conv = 3, second_explicit_conv = 4;
 explicit_conv_assignment = (float)(first_explicit_conv / second_explicit_conv); // both exp conv scenarios, order: 1. int result temp 2. float result temp, 3. int assignment temp
 
-//   ^ ^ ^ Up-Castring ^ ^ ^
-
-//   ^ ^ ^ Down-Casting ^ ^ ^
-
-//   ^ ^ ^ Slicing ^ ^ ^
 
 
 
@@ -716,9 +711,24 @@ int int_overloaded_func(int val1 = NULL, float val2 = NULL){}
 
 
 
-//   & & & & & & Structs & & & & & &
 
-// files? 
+
+
+
+//   & & & & & & Files & & & & & & 
+// read? write?
+
+
+
+
+
+
+
+
+
+
+
+
 
 //   & & & & & & Classes & & & & & &
 
@@ -747,6 +757,19 @@ int int_overloaded_func(int val1 = NULL, float val2 = NULL){}
 
 
 /*   < < < < < < < <   Object Oriented Principles   > > > > > > > >   */
+
+
+
+
+
+
+
+
+
+//   & & & & & & Structs & & & & & &
+
+
+
 
 //   & & & & & & Classes & & & & & &
 // Add function overloading (defaukt values? and the not possible case when playing with their order?) above after updating to the latest C Patch,
@@ -1028,15 +1051,35 @@ class My_inheriting : public My_first_virt_inherited, My_second_virt_inherited{}
 //here inheriting's c'tor can invoke base c'tor: My_inhereting(const My_inhereting& other) : My_base_inherited(other) .... unlike in the non virtual diamond case 
 
 
-//   ^ ^ ^ ^ ^ DownCasting ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ DownCasting : Static & Dynamic Cast As RTTI ^ ^ ^ ^ ^
+
+class A_Class{};
+class B_Class : public A_Class{};
+class C_Class : public B_Class{};
+
+A_Class* a_pointer = new A_Class();
+C_Class* c_pointer = new C_Class();
+
+B_Class* b_pointer_c_type_cast_to_show_similarity_in_syntax = (C_Class*)c_pointer;
+B_Class* b_pointer_that_shows_similarity_in_syntax = static_cast<C_Class*>(c_pointer); // Down-Casting using static-cast -> virtual-inh base class cant be down-casted this way -> no complete object in compile time
+B_Class* another_b_pointer_also_similar_in_syntax = dynamic_cast<C_Class*>(c_pointer);
+
+//   ^ ^ ^ ^ Referential Dynamic Cast ^ ^ ^ ^   //
+
+B_Class& b_reference = (C_Class&)*c_pointer;
+B_Class& static_b_reference = static_cast<C_Class&>(*c_pointer);  
+B_Class& dynamic_b_reference = dynamic_cast<C_Class&>(*c_pointer);
+
 
 //   ^ ^ ^ ^ Slicing ^ ^ ^ ^
 
+A_Class slice_this_from_b_to_a = B_Class(); 
 
-//   ^ ^ ^ ^ RTTI ^ ^ ^ ^
 
-
-//   ^ ^ ^ ^ Inlining methods ^ ^ ^ ^   //
+//   ^ ^ ^ ^ ^ Reflection ^ ^ ^ ^ ^   //
+// typeinfo? typeid?
+ 
+//   ^ ^ ^ ^ ^ Inlining methods ^ ^ ^ ^ ^   //
 
 class My_inline
 {
@@ -1048,8 +1091,7 @@ inline void My_inline::explicit_inline(){} // definition
 
 // error handling?
 // template classes? 
-// files?
-
+// reflections 
 
 
 

@@ -8,6 +8,14 @@
 
 
 
+::   < < < < < < < < Language Principles > > > > > > > > > 
+
+
+
+
+
+
+
 
 
 ::   < < < < < < < <   Command Principles   > > > > > > > >   */
@@ -27,6 +35,14 @@
 :: ./my_bash_file.sh  
 
 
+
+
+
+
+
+
+
+::   < < < < < < < < < Procedural Principles > > > > > > > >
 
 
 

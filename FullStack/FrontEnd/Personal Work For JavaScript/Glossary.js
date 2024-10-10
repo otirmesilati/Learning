@@ -2,8 +2,10 @@
 
 //   < < < < < < < <   Language Principles   > > > > > > > >   //
 
-//   & & & & & & Libraries & & & & & &
-// Standard Lib? GUI?
+//   < < < < < < < <   Procedural Principles  > > > > > > > > >   //
+
+//   & & & & & & Libraries & & & & & &   //
+// gui? library databases?
 
 //   & & & & & & Comments & & & & & &
 

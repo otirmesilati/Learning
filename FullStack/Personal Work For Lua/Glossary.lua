@@ -35,11 +35,35 @@
 
 --   < < < < < < < <   Language Principles   > > > > > > > >   
 
+
+
+
+
+
+
+
+
 --   < < < < < < < <   Procedural Principles   > > > > > > > >   
 
+
+
+
+
+
+
+
+
+--   & & & & & & Libraries & & & & & & 
+-- gui? stdlib? library databases?
+
+
+
+
+
+
+
+
 #pragma once // have the header included once at maximum
-
-
 
 
 

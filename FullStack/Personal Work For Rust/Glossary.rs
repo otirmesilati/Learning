@@ -9,8 +9,27 @@
 
 
 
-/*   < < < < < < < <   Language Principles   > > > > > > > >   */
+//   < < < < < < < <   Language Principles   > > > > > > > >   //
 
+
+
+
+
+
+
+
+
+//   < < < < < < < <  Procedural Principles > > > > > > > >
+
+
+
+
+
+
+
+
+
+//   & & & & & & Libraries & & & & & &   // 
 
 
 
@@ -20,7 +39,7 @@
 
 
 //   & & & & & & Libraries & & & & & &
-// stndard lib? GUI? rich api?
+// stndard lib? GUI? rich api? libraries database?
 
 
 
