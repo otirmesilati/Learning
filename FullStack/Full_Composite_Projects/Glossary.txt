@@ -1,0 +1,62 @@
+< < < < < < < < Desktop Development > > > > > > > >
+
+
+& & & & & & Windows DeskTop Dev & & & & & &
+
+
+
+
+
+
+
+
+
+& & & & & & MacOs DeskTop Dev & & & & & &
+
+
+
+
+
+
+
+
+
+& & & & & & Linux DeskTop Dev & & & & & &
+
+
+
+
+
+
+
+
+
+< < < < < < < < Web Development > > > > > > > >
+
+& ?
+
+
+
+
+
+
+
+
+
+< < < < < < < < Mobile Development > > > > > > > >
+
+& Android
+IOS?
+
+
+
+
+
+
+
+
+
+
+< < < < < < < < Game Development > > > > > > > >
+
+& ?

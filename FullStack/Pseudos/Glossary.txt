@@ -5,11 +5,96 @@
 
 
 
+< < < < < < < < Program: Control Flow Design > > > > > > > >
+
+essential elements? 
+jumps?
+manipulation of commands and expressions? according to an end state? or maybe a desired goal?
 
 
 
 
-& & & & & & 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+< < < < < < < < Data: Data Structures > > > > > > > > 
+
+DS.isEmpty
+
+& & & & & & Linear Data Structures & & & & & &
+
+^ ^ ^ ^ ^ Array ^ ^ ^ ^ ^
+
+
+^ ^ ^ ^ ^ List ^ ^ ^ ^ ^
+doubly?
+
+
+^ ^ ^ ^ ^ Stack ^ ^ ^ ^ ^
+
+Stack.Push
+Stack.Pop
+
+
+^ ^ ^ ^ ^ Queue ^ ^ ^ ^ ^
+
+Queue.Engueue
+Queue.Dequeue
+
+
+& & & & & & Non Linear Data Structures & & & & & & 
+
+NLDS.Insert
+NLDS.Extract
+
+^ ^ ^ ^ ^ Hash-Table ^ ^ ^ ^ ^
+
+^ ^ ^ ^ ^ Heap ^ ^ ^ ^ ^ 
+
+Heap.Heapify
+
+^ ^ ^ ^ Binomial Heap ^ ^ ^ ^
+
+BinomialHeap.Extremum
+
+^ ^ ^ ^ ^ Priority Queue ^ ^ ^ ^ ^
+
+
+& & & & & & Relational Data Structures & & & & & &
+
+
+
+
+
+
+< < < < < < < < Procedure Puzzles > > > > > > > > >
+
+& & & & & & Mathenatical Puzzles & & & & & &
+
+& & & & & & CadBoard Puzzles & & & & & &
+
 & & & & & & C Lectures & & & & & &  
 
    ^ ^ ^ ^ ^ Lecture 3 ^ ^ ^ ^ ^ 

@@ -716,6 +716,28 @@ int int_overloaded_func(int val1 = NULL, float val2 = NULL){}
 
 
 //   & & & & & & Files & & & & & & 
+
+ofstream file_object;
+
+
+//   ^ ^ ^ ^ ^ File API ^ ^ ^ ^ ^ 
+
+#include <fstream> // class attribute dependant on this
+
+class File_class
+{
+File_class(){my_file.open("file_name.txt");}
+~File_class(){my_file.close();}
+ofstream my_file; // file as an attribute - needed to wrap this in a class to use open without comp errors
+};
+
+
+//   ^ ^ ^ ^ Read ^ ^ ^ ^
+
+
+//   ^ ^ ^ ^ Write ^ ^ ^ ^
+
+
 // read? write?
 
 
