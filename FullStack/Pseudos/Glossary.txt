@@ -7,6 +7,24 @@
 
 < < < < < < < < Program: Control Flow Design > > > > > > > >
 
+& & & & & & Logic Design & & & & & &
+
+
+
+
+
+
+
+
+
+& & & & & & Development Design & & & & & &
+
+
+
+
+
+
+logic design(proc)? dev design(oop)? what to leave in the tablet? what to leave here?
 essential elements? 
 jumps?
 manipulation of commands and expressions? according to an end state? or maybe a desired goal?
