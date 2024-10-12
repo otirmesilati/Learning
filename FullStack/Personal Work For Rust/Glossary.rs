@@ -647,7 +647,7 @@ my_generic_pointer_converted_to_long_pointer = (long*)my_generic_pointer;
 my_generic_pointer_converted_to_float_pointer = (float*)my_generic_pointer;
 my_generic_pointer_converted_to_double_pointer = (double*)my_generic_pointer;
 
-//   ^ ^ ^ ^ Arrays ^ ^ ^ ^ 
+//   ^ ^ ^ ^ ^ Data Collections ^ ^ ^ ^ ^ 
 
 // strings?
 

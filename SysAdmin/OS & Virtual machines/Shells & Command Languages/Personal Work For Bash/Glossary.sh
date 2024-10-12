@@ -526,7 +526,7 @@ my_local_varaible=1 # variables are by default Shell varaibles(local)
 
 #   strings?
 
-
+#   ^ ^ ^ ^ ^ Data Collections ^ ^ ^ ^ ^ 
 
 
 

@@ -59,15 +59,19 @@ manipulation of commands and expressions? according to an end state? or maybe a 
 
 < < < < < < < < Data: Data Structures > > > > > > > > 
 
-DS.isEmpty
+DS.IsEmpty
 
 & & & & & & Linear Data Structures & & & & & &
 
-^ ^ ^ ^ ^ Array ^ ^ ^ ^ ^
-
-
 ^ ^ ^ ^ ^ List ^ ^ ^ ^ ^
-doubly?
+
+List.Search
+List.Insert
+List.DeleteHead
+
+^ ^ ^ ^ Doubly-List ^ ^ ^ ^
+
+DoublyList.Delete
 
 
 ^ ^ ^ ^ ^ Stack ^ ^ ^ ^ ^

@@ -48,18 +48,58 @@ classic visual options - file ? edit ?
 
 ^ ^ ^ ^ Eclipse Perspective ^ ^ ^ ^
 
+default perspective:
+- MenuBar
+- ToolBar
+- Package-Explorer View
+- Editor Area
+- Outline View
+- Problems View
+
+^ ^ ^ ^ File Creation ^ ^ ^ ^
+
+project: -> file -> new -> java project 
+class: -> file -> new -> class
+
+
+^ ^ ^ ^ ^ Visual Studio ^ ^ ^ ^ ^
+
+^ ^ ^ ^ IDE GUI elements ^ ^ ^ ^
+
 MenuBar
 ToolBar
-Package Explorer View
+ToolBox Explorer View
 Editor Area
-Outline View
-Problems View
+Solution-Explorer View
+Properties View
+Output View
 
 
 ^ ^ ^ ^ File Creation ^ ^ ^ ^
 
 project: -> file -> new -> java project 
 class: -> file -> new -> class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -200,6 +240,93 @@ run: alt + shft + x THEN j
 1. Open a new tab: -> ctrl + t
 2. Close a tab: -> ctrl + w
 3. 
+
+
+^ ^ ^ ^ ^ Visual Studio ^ ^ ^ ^ ^
+
+Key Bindings -> ctrl + shft + 1 (self assigned) 
+Perspectives  not so popular in VS
+
+^ ^ ^ ^ Menu Bar Options ^ ^ ^ ^
+
+File
+Edit
+View
+Git
+Project
+Build
+Debug
+Test
+Analyze
+Tools
+Extensions
+Window
+Help
+
+^ ^ ^ File Option ^ ^ ^ 
+
+
+^ ^ ^ Edit Option ^ ^ ^
+
+
+^ ^ ^ Source Option ^ ^ ^
+
+
+^ ^ ^ Refactor Option ^ ^ ^
+
+
+^ ^ ^ Navigate Option ^ ^ ^
+
+
+^ ^ ^ Search Option ^ ^ ^
+
+
+^ ^ ^ Project Option ^ ^ ^
+
+
+^ ^ ^ Run Option ^ ^ ^
+
+
+^ ^ ^ Window Option ^ ^ ^
+
+
+^ ^ ^ Help Option ^ ^ ^
+
+
+^ ^ ^ ^ Editor Area Text Manupilation ^ ^ ^ ^
+
+Copy Text -> ctrl + c
+Cut Text -> ctrl + x 
+Pase Text -> ctrl + v
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

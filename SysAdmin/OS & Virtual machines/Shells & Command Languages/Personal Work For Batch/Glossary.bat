@@ -312,7 +312,7 @@ ENDLOCAL
 
 :: No Pointers - Allocation is irrelevant in compile time, or run time.
 
-::   ^ ^ ^ ^ Arrays ^ ^ ^ ^ 
+::   ^ ^ ^ ^ ^ Data Collections ^ ^ ^ ^ 
 
 ::   strings?
 
