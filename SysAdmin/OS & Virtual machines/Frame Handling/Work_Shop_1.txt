@@ -46,6 +46,16 @@ classic visual options - file ? edit ?
 
 ^ ^ ^ ^ ^ Eclipse ^ ^ ^ ^ ^
 
+^ ^ ^ ^ Eclipse Perspective ^ ^ ^ ^
+
+MenuBar
+ToolBar
+Package Explorer View
+Editor Area
+Outline View
+Problems View
+
+
 ^ ^ ^ ^ File Creation ^ ^ ^ ^
 
 project: -> file -> new -> java project 
@@ -112,50 +122,71 @@ class: -> file -> new -> class
 
 & & & & & & IDEs & & & & & &
 
-^ ^ ^ ^ Main Visual Menu Options ^ ^ ^ ^
-
-^ ^ ^ File ^ ^ ^ 
 
 
-^ ^ ^ Edit ^ ^ ^
+^ ^ ^ ^ ^ Eclipse ^ ^ ^ ^ ^
+
+Key Bindings -> ctrl + shft + l 
+Switch Focus between Perspectives -> ctrl + f8
+
+^ ^ ^ ^ Menu Bar Options ^ ^ ^ ^
+
+File
+Edit
+Source
+Refactor
+Navigate
+Search
+Project
+Run
+Window
+Help
+
+^ ^ ^ File Option ^ ^ ^ 
 
 
-^ ^ ^ Source ^ ^ ^
+^ ^ ^ Edit Option ^ ^ ^
 
 
-^ ^ ^ Refactor ^ ^ ^
+^ ^ ^ Source Option ^ ^ ^
 
 
-^ ^ ^ Navigate ^ ^ ^
+^ ^ ^ Refactor Option ^ ^ ^
 
 
-^ ^ ^ Search 
+^ ^ ^ Navigate Option ^ ^ ^
 
 
-^ ^ ^ Project 
+^ ^ ^ Search Option ^ ^ ^
 
 
-^ ^ ^ Run 
+^ ^ ^ Project Option ^ ^ ^
 
 
-^ ^ ^ Window 
+^ ^ ^ Run Option ^ ^ ^
 
 
-^ ^ ^ Help 
+^ ^ ^ Window Option ^ ^ ^
 
 
+^ ^ ^ Help Option ^ ^ ^
 
 
-eclipse
+^ ^ ^ ^ Editor Area Text Manupilation ^ ^ ^ ^
+
+Copy Text -> ctrl + c
+Cut Text -> ctrl + x 
+Pase Text -> ctrl + v
+
+
 
 go to "top menu bar": f10 OR alt 
-cut: ctrl + x
-copy: ctrl + c
-paste: ctrl + v
 save: ctrl + s
 close tab: ctrl + w
 refresh: f5
-switch between tabs: ctrl + f6
+switch focus between editor tabs: ctrl + f6
+switch focus between view tabs: ctrl + f7 
+tooltip desc: f2
 undo: ctrl + z
 redo: ctrl + y
 run: alt + shft + x THEN j
