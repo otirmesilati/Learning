@@ -93,13 +93,17 @@ NLDS.Extract
 
 ^ ^ ^ ^ ^ Hash-Table ^ ^ ^ ^ ^
 
+
+
 ^ ^ ^ ^ ^ Heap ^ ^ ^ ^ ^ 
 
 Heap.Heapify
 
 ^ ^ ^ ^ Binomial Heap ^ ^ ^ ^
 
-BinomialHeap.Extremum
+BinomialHeap.ExtractExtremum
+BinomialHeap.BinomialLink
+
 
 ^ ^ ^ ^ ^ Priority Queue ^ ^ ^ ^ ^
 

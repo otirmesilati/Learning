@@ -23,18 +23,27 @@ classic visual options - file ? edit ?
 
 
 & & & & & & Frame Families & & & & & &
+windows tools? (is there a distinction between them?) 
+ides like jetbrains?
 
 
 
 
-
-
+what more desktop apps? (file browsers? internet browser?...)
 
 
 
 & & & & & & & Editors & & & & & &
 
+^ ^ ^ ^ ^ NotePad ^ ^ ^ ^ ^
 
+MenuBar
+Editor Area
+StatusBar
+
+what more? (look at the ides below)
+
+vsc? notepad? notepad++?
 
 
 
@@ -167,9 +176,15 @@ class: -> file -> new -> class
 ^ ^ ^ ^ ^ Eclipse ^ ^ ^ ^ ^
 
 Key Bindings -> ctrl + shft + l 
-Switch Focus between Perspectives -> ctrl + f8
+
+Switch Focus Visualy between Perspectives -> ctrl + f8
+Switch Focus between views: ctrl + f7 
+
+Refresh view: f5
 
 ^ ^ ^ ^ Menu Bar Options ^ ^ ^ ^
+
+Switch Focus to Menu Bar: alt OR f10
 
 File
 Edit
@@ -214,22 +229,67 @@ Help
 
 ^ ^ ^ ^ Editor Area Text Manupilation ^ ^ ^ ^
 
+Switch Focus Visualy for Editor Tabs: ctrl + f6
+
+^ ^ ^ File manipulation ^ ^ ^
+
+Save File: ctrl + s
+Close File View Tab: ctrl + w
+reopen?
+
+^ ^ ^ Text Editing ^ ^ ^
+
 Copy Text -> ctrl + c
 Cut Text -> ctrl + x 
 Pase Text -> ctrl + v
 
+Undo Text Edit: crtl + z
+Redo Text Edit: ctrl + y
+
+Toggle ToolTip Decsription: f2
 
 
-go to "top menu bar": f10 OR alt 
-save: ctrl + s
-close tab: ctrl + w
-refresh: f5
-switch focus between editor tabs: ctrl + f6
-switch focus between view tabs: ctrl + f7 
-tooltip desc: f2
-undo: ctrl + z
-redo: ctrl + y
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 run: alt + shft + x THEN j
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //   ^ ^ ^ ^ Visual Studio Code
 
