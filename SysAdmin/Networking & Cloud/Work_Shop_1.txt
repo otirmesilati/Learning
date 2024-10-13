@@ -8,6 +8,74 @@
 
 
 
+network design
+
+skills for tablet:
+lecture 1:
+drawing network:
+- drawing the 5 elements
+- data flow: no jumping between nodes, the reponse is the reverse nodes order
+
+
+
+elements (nodes)
+
+the internet (un-known 
+firewall
+router
+- l3 connecting switches and LANS
+switch
+- LAN l2 connecting element 
+- 24+ RJ 45 interfaces/ports
+
+server
+client
+- 
+
+
+
+transport
+- full-duplex : send + recieve + same time
+- Straight through cable -> Router/PC To switch 
+- Cross Oover cable -> Switch to same, Router/PC To same
+
+
+transport speed
+- metriced by bits and not bytes (unlike in storage)
+
+
+- IEEE 802.3 standard:
+-- 10Mbps(ethernet)/100Mbps(fast ethernet) use 4 wires of the RJ45 8
+-- 1Gbps(gig ethernet)/10Gbps(10 gig ethernet) use 8 wires of the RJ45 8
+
+
+Ethernet Family
+
+
+
+out-of-scope (think later where to put these)
+
+RJ45 
+- A cable can send + recieve
+- copper internet cable has RJ45 connector ends
+- ethernet Twisted Pair cabling (UTP cables)
+- 100 meter max
+-In ethernet/fast ethernet cables:
+-- Router, PC, Firewall: 1/2 Tx, 3/6 Rx : Switch is the opposite
+-- Switch: 1/2 Rx, 3/6 Tx
+-- Most Devices are Auto MDI-X so straight/crossover isn't important
+
+Optic-Fibers:
+- A cable can either send OR recieve
+- 
+
+
+
+
+
+
+
+
 
 
 
