@@ -57,6 +57,15 @@ manipulation of commands and expressions? according to an end state? or maybe a 
 
 
 
+
+
+
+
+
+
+
+
+
 < < < < < < < < Data: Data Structures > > > > > > > > 
 
 DS Visualiztion online tool: https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
@@ -111,6 +120,29 @@ BinomialHeap.BinomialLink
 
 
 & & & & & & Relational Data Structures & & & & & &
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
