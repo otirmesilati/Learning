@@ -212,6 +212,7 @@ chgrp new_group my_file
 # pg? more? ps? kill? top? ping? ftp? telnet? finger?
 # PART 3 - Advanced Unix
 # sed? df? du? mount? groupadd? groupmod? useradd? userdel? logger? trap? 
+# man? history? find? 
 # Part 4? Part 5?
 
 
