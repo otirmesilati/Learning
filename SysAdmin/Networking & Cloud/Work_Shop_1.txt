@@ -1,15 +1,80 @@
-& & & & & & DNS - Client Server Model & & & & & &
 
-^ ^ ^ ^ ^ HTTP Requesting ^ ^ ^ ^ ^
 
-GET: <Resource>
-HOST: <URL>
+
+
+
+
+
+
+
+
+
+
+
+
+
+client server 
+& & & & & & Client-Server Model & & & & & &
+
+^ ^ ^ ^ ^ API Call: HTTP Requesting Format ^ ^ ^ ^ ^
+
+GET: <Resource Route-name> <HTTP version>
+HOST: <Server Domain Route-name>
 Accept-Language: <Language Acronym>
 
+https?
+
+^ ^ ^ ^ ^ API Call: HTTP Requesting Format ^ ^ ^ ^ ^
+
+<HTTP version> <status code>
+Date: <day-month-year hour>
+Content-Type: <file extension>
+<HTML document content>
+
+^ ^ ^ ^ DOM ^ ^ ^ ^
+
+?
+
+^ ^ ^ ^ Rendering HTML Documents ^ ^ ^ ^
+
+?
+
+url routing
+
+?
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+& & & & & & DNS - Client Server Model & & & & & &
 
 
 
