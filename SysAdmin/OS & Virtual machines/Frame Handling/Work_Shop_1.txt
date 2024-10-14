@@ -212,7 +212,7 @@ filter -> by types
 < < < < < < < < ShortCuts > > > > > > > >   
 
 
-
+"global shortcuts" vs "local shortcuts"? like ctrl + f4 (global) vs ctrl + w (local)
 
 
 
@@ -400,12 +400,13 @@ Refresh view: ?
 
 ^ ^ ^ ^ Menu Bar Options ^ ^ ^ ^
 
-Switch Focus to Menu Bar: ?
+Switch Focus to Menu Bar: f10 
 
 File
 Edit
-Source
-Refactor
+View
+Navigate
+
 Navigate
 Search
 Project
@@ -445,23 +446,24 @@ Help
 
 ^ ^ ^ ^ Editor Area Text Manupilation ^ ^ ^ ^
 
-Switch Focus Visualy for Editor Tabs: alt + right / alt + left
+Switch Focus Visualy for Editor Tabs: ctrl + tab
+Move Focus left and right for Editor tabs: alt + right / alt + left
 View Tab Focus menu: alt + home 
 
 ^ ^ ^ File manipulation ^ ^ ^
 
-Save File: ?
-Close File View Tab: ?
+Save File: ctrl + s 
+Close File View Tab: ctrl + f4
 reopen?
 
 ^ ^ ^ Text Editing ^ ^ ^
 
-Copy Text -> ?
-Cut Text -> ? 
-Pase Text -> ?
+Copy Text -> ctrl + c
+Cut Text -> ctrl + x
+Pase Text -> ctrl + v
 
-Undo Text Edit: ?
-Redo Text Edit: ?
+Undo Text Edit: ctrl + z
+Redo Text Edit: ctrl + y
 
 Toggle ToolTip Decsription: ?
 

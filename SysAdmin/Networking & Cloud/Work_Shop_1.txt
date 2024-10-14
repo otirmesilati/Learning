@@ -40,6 +40,7 @@ the internet (un-known
 firewall
 router
 - l3 connecting switches and LANS
+- de-encapsulates a packet, and checks where to send it (via it's IP)
 switch
 - LAN l2 connecting element 
 - 24+ RJ 45 interfaces/ports
@@ -83,6 +84,20 @@ L2(switch operations):
 - error/noise handling
 L1: 
 - rj45 and optic fibre cable standards
+- converting data bits into electrical signals
+
+
+
+
+
+
+
+tcp ip model
+- used practacialy, influenced by osi
+
+
+
+
 
 
 
@@ -195,6 +210,88 @@ Content-Type: <file extension>
 url routing
 
 ?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
