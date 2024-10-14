@@ -15,6 +15,17 @@ lecture 1:
 drawing network:
 - drawing the 5 elements
 - data flow: no jumping between nodes, the reponse is the reverse nodes order
+lecture 3:
+encapsulation and decapsulation in layers:
+segment(L4) -> 
+
+
+
+
+
+
+
+
 
 
 
@@ -34,6 +45,50 @@ client
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+open systems interaction Model
+L7:
+- apps with internet capability (ie internet browsers)
+- HTTP and HTTPS protocols
+L6:
+- translate app to net format, such as in encryption translation
+L5:
+- manages communication sessions between local app and remote app (api calls?)
+L4:
+- breaks down data to small chunks for transport
+- establishes E2E communication and process to process communication for applications
+L3(router operations):
+- connects hosts of different LANs with IP protocol
+- provides path selection 
+L2(switch operations):
+L1: 
+- rj45 and optic fibre cable standards
+
+
+
+
+
+
+
+
+
+
+
+
+
 transport
 - full-duplex : send + recieve + same time
 - Straight through cable -> Router/PC To switch 
@@ -42,14 +97,37 @@ transport
 
 transport speed
 - metriced by bits and not bytes (unlike in storage)
-
-
-- IEEE 802.3 standard:
+- IEEE 802.3 standard for RJ45:
 -- 10Mbps(ethernet)/100Mbps(fast ethernet) use 4 wires of the RJ45 8
 -- 1Gbps(gig ethernet)/10Gbps(10 gig ethernet) use 8 wires of the RJ45 8
 
 
+transport encapsulation and decapsulation
+L4 data combination - segments
+L3 data combination - packets
+
+
+
+
+
+
+
+
+
+
+
+
+
 Ethernet Family
+
+
+
+
+
+
+
+
+
 
 
 
@@ -67,7 +145,7 @@ RJ45
 
 Optic-Fibers:
 - A cable can either send OR recieve
-- 
+- multi mode can reach up to 550 meters, single mode can go 30 km
 
 
 
