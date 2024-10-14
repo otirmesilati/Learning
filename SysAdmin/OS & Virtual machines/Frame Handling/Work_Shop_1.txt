@@ -396,14 +396,11 @@ Window wich Key Bindings are an option -> ?
 Settings window: ctrl + alt + s 
 find action: ctrl + shft + a
 
-(does pycharm have perspectives?)
-Switch Focus between views: ctrl + f7 
-
-Refresh view: f5
+Refresh view: ?
 
 ^ ^ ^ ^ Menu Bar Options ^ ^ ^ ^
 
-Switch Focus to Menu Bar: alt OR f10
+Switch Focus to Menu Bar: ?
 
 File
 Edit
@@ -448,24 +445,25 @@ Help
 
 ^ ^ ^ ^ Editor Area Text Manupilation ^ ^ ^ ^
 
-Switch Focus Visualy for Editor Tabs: ctrl + f6
+Switch Focus Visualy for Editor Tabs: alt + right / alt + left
+View Tab Focus menu: alt + home 
 
 ^ ^ ^ File manipulation ^ ^ ^
 
-Save File: ctrl + s
-Close File View Tab: ctrl + w
+Save File: ?
+Close File View Tab: ?
 reopen?
 
 ^ ^ ^ Text Editing ^ ^ ^
 
-Copy Text -> ctrl + c
-Cut Text -> ctrl + x 
-Pase Text -> ctrl + v
+Copy Text -> ?
+Cut Text -> ? 
+Pase Text -> ?
 
-Undo Text Edit: crtl + z
-Redo Text Edit: ctrl + y
+Undo Text Edit: ?
+Redo Text Edit: ?
 
-Toggle ToolTip Decsription: f2
+Toggle ToolTip Decsription: ?
 
 
 
