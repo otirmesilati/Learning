@@ -115,8 +115,54 @@ class: -> file -> new -> class
 
 
 
+
+
+
+
+
+
+
+
+^ ^ ^ ^ ^ Pycharm ^ ^ ^ ^ ^
+
+^ ^ ^ ^ IDE GUI elements ^ ^ ^ ^
+
+classic GUI:
+
+Main ToolBar
+Secondary ToolBar
+Navigation Bar
+Editor Area (Gutter - the number line)
+Project window Bar(basically project-explorer)
+tool window 
+Right And Left tool window Bars
+
+new GUI:
+
+?
+
+^ ^ ^ ^ File Creation ^ ^ ^ ^
+
+project: -> file -> new -> java project 
+class: -> file -> new -> class
+
+
+
+
+
+
+
+
+
 cad
 packettracer
+
+
+
+
+
+
+
 
 
 
@@ -292,6 +338,142 @@ Toggle ToolTip Decsription: f2
 
 
 run: alt + shft + x THEN j
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^ ^ ^ ^ ^ Pycharm ^ ^ ^ ^ ^
+
+Window wich Key Bindings are an option -> ?
+
+Settings window: ctrl + alt + s 
+find action: ctrl + shft + a
+
+(does pycharm have perspectives?)
+Switch Focus between views: ctrl + f7 
+
+Refresh view: f5
+
+^ ^ ^ ^ Menu Bar Options ^ ^ ^ ^
+
+Switch Focus to Menu Bar: alt OR f10
+
+File
+Edit
+Source
+Refactor
+Navigate
+Search
+Project
+Run
+Window
+Help
+
+^ ^ ^ File Option ^ ^ ^ 
+
+
+^ ^ ^ Edit Option ^ ^ ^
+
+
+^ ^ ^ Source Option ^ ^ ^
+
+
+^ ^ ^ Refactor Option ^ ^ ^
+
+
+^ ^ ^ Navigate Option ^ ^ ^
+
+
+^ ^ ^ Search Option ^ ^ ^
+
+
+^ ^ ^ Project Option ^ ^ ^
+
+
+^ ^ ^ Run Option ^ ^ ^
+
+
+^ ^ ^ Window Option ^ ^ ^
+
+
+^ ^ ^ Help Option ^ ^ ^
+
+
+^ ^ ^ ^ Editor Area Text Manupilation ^ ^ ^ ^
+
+Switch Focus Visualy for Editor Tabs: ctrl + f6
+
+^ ^ ^ File manipulation ^ ^ ^
+
+Save File: ctrl + s
+Close File View Tab: ctrl + w
+reopen?
+
+^ ^ ^ Text Editing ^ ^ ^
+
+Copy Text -> ctrl + c
+Cut Text -> ctrl + x 
+Pase Text -> ctrl + v
+
+Undo Text Edit: crtl + z
+Redo Text Edit: ctrl + y
+
+Toggle ToolTip Decsription: f2
+
+
+
+
+
+
+
+
 
 
 

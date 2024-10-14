@@ -11,16 +11,21 @@
 network design
 
 skills for tablet:
-lecture 1:
-drawing network:
+
+drawing network
+
+>lecture 1:
 - drawing the 5 elements
 - data flow: no jumping between nodes, the reponse is the reverse nodes order
-lecture 3:
+>lecture 3:
 encapsulation and decapsulation in layers:
 segment(L4) -> 
 
-
-
+PDU encapsulation and decpasulation:
+- L4 to L1 header addings:
+L4: Data * header4 = segment
+L3: Data * header4 * header3 = packet
+L2: trailer2 * Data * header4 * header3 * header2 = frame
 
 
 
@@ -74,6 +79,8 @@ L3(router operations):
 - connects hosts of different LANs with IP protocol
 - provides path selection 
 L2(switch operations):
+- direct node-to-node connection handling
+- error/noise handling
 L1: 
 - rj45 and optic fibre cable standards
 
