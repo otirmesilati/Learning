@@ -1,8 +1,5 @@
-For a most simplistic view:
 
-Programming paradigms - specific to programming language
-Design patterns - solves reoccurring problems in software construction
-Architectural patterns - fundamental structural organization for software systems
+
 Idioms are paradigm-specific and language-specific programming techniques that fill in low-level details.
 
 Design patterns are usually associated with code level commonalities. It provides various schemes for refining and building smaller subsystems. It is usually influenced by programming language. Some patterns pale into insignificance due to language paradigms. Design patterns are medium-scale tactics that flesh out some of the structure and behavior of entities and their relationships.
@@ -16,7 +13,7 @@ classification
 and finally abstraction to distill the commonality.
 If you have followed the thoughts laid above. You will see that Singleton is a "design pattern" while MVC is one of the "architectural" pattern to deal with separation of concerns.
 
-Try reading on:
+
 
 http://en.wikipedia.org/wiki/Architectural_pattern_(computer_science)
 http://en.wikipedia.org/wiki/Design_pattern
@@ -27,7 +24,7 @@ http://en.wikipedia.org/wiki/Anti-pattern
 
 dev design
 
-- design patterns: 
+- design patterns: scoped in the logic design 
 -- Creational:
 --- ?
 
@@ -37,7 +34,7 @@ dev design
 -- Behavioral:
 --- ?
 
-- architect patterns: 
+- architectual patterns: scoped in the dev design 
 -- Model View Controller
 -- ?
 
