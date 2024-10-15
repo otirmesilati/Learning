@@ -1,6 +1,6 @@
 
 
-Idioms are paradigm-specific and language-specific programming techniques that fill in low-level details.
+
 
 Design patterns are usually associated with code level commonalities. It provides various schemes for refining and building smaller subsystems. It is usually influenced by programming language. Some patterns pale into insignificance due to language paradigms. Design patterns are medium-scale tactics that flesh out some of the structure and behavior of entities and their relationships.
 
@@ -26,9 +26,18 @@ dev design
 
 - design patterns: scoped in the logic design 
 -- Creational:
---- ?
+--- Singleton
+--- Prototype
+--- Factory
+--- Abstract Factory
+--- Builder
 
 -- Structural:
+--- Adapter
+--- Decorator
+--- ?
+--- ?
+--- ?
 --- ?
 
 -- Behavioral:
