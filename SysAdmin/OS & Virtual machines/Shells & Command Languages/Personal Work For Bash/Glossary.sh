@@ -243,6 +243,7 @@ git --version
 git init
 
 git status
+
 git log
 git log --oneline
 

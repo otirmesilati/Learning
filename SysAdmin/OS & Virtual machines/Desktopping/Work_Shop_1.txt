@@ -21,8 +21,6 @@ Notification Area (Right side of Task Bar)
 
 
 
-
-
 & & & & & & Linux Desktopping & & & & & &
 
 Control Panel (left-side bar)
@@ -46,6 +44,63 @@ App Menu (like linux' menu bar)
 Status Menu
 Notification center
 Dock
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+win file systems
+
+git files
+
+.git directory
+- a directory that grows as the project continues
+
+.gitignoe directory
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -6,26 +6,53 @@
 
 
 
-
-
-network design
-
 skills for tablet:
 
-drawing network
-
->lecture 1:
+network design
 - drawing the 5 elements
-- data flow: no jumping between nodes, the reponse is the reverse nodes order
->lecture 3:
-encapsulation and decapsulation in layers:
-segment(L4) -> 
+- seperating LANs -> using router interfaces to do so, switches don't seperate LANs
+
+representing data flow in network graphs
+- continous flow: no jumping between nodes
+- the response: in reverse order
+
+
+
+
+
+
+
 
 PDU encapsulation and decpasulation:
 - L4 to L1 header addings:
 L4: Data * header4 = segment
 L3: Data * header4 * header3 = packet
 L2: trailer2 * Data * header4 * header3 * header2 = frame
+
+
+Frame PDU specifics
+Frame header:
+- preamble(7B) + S(tart)F(rame)D(elimiter)(1B):
+-- allows reciever clock synchronization: preparing to recieve the rest of the data
+-- SFD marks the end of the preamble
+
+- Destination:
+-- Next L2 M(edia)A(ccess)C(ontrol) Adress to send
+
+
+- Source:
+-- L2 MAC Adress which sent the frame
+
+- Type OR it can be a data length field:
+-- L3 protocol for the packet (most of the time - either ipv4 or ipv6)
+
+Frame trailer -> F(rame)C(check)S(equence)
+
+
+
+
+
+
 
 
 
@@ -153,7 +180,10 @@ Ethernet Family
 
 
 
-out-of-scope (think later where to put these)
+
+
+
+
 
 RJ45 
 - A cable can send + recieve
@@ -169,6 +199,8 @@ Optic-Fibers:
 - A cable can either send OR recieve
 - multi mode can reach up to 550 meters, single mode can go 30 km
 
+db9-Rj45 rollover
+- seems similar to VGA though has it's differences
 
 
 
@@ -211,6 +243,13 @@ url routing
 
 ?
 
+PuTTY
+- used to remotely access servers,
+- access cli: serial -> open
+- mostly SSHing and Telneting into.
+commands: (what to do with this? need to see...)
+- pscp -P 22 demo-file.zip () <sender part of the CLI command>
+- root@<ipadress>:/root
 
 
 
@@ -353,10 +392,6 @@ TCP: connection oriented protocol
 -> DNS 
 -> VoIP
 
-PuTTY
-- a client-server program, used to remotely access servers, mostly SSHing and Telneting into.
-- pscp -P 22 demo-file.zip () <sender part of the CLI command>
-- root@<ipadress>:/root
 
 WebSite Inspector:
 -console CLI

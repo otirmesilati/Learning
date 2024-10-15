@@ -92,7 +92,69 @@ timeout /t 10 >nul (for delay of 10 seconds)
 
 
 & & & & & & CLIs & & & & & &
-shell browser? multiple panes(tiling)?
+terminals? shell browser? multiple panes(tiling)?
+
+
+
+
+
+
+cisco interworking os
+commands (pre-language) (tcl langauge where? add it to the future languages in notepad?)
+
+input line text: <device host-name> <mode symbol>
+enable : command to 
+
+- modes
+-- user exec mode:
+
+--- mode symbol is >
+--- user exec mode as the default, also called "normal mode"
+--- user exec mode can't make changes
+
+
+--- exit CLI -> exit OR logout
+--- command list -> ?
+
+
+--- system info -> show
+
+--- enter priviledged exec mode -> enable 
+
+
+
+-- priviledged exec mode:
+
+--- mode symbol is #
+
+--- exit priviledged exec mode -> disable
+
+
+
+-- configuration mode
+
+--- mode symbol is (config)#
+
+--- password setting -> password
+
+
+onepk? 
+more material: network programming pdf - https://www.cisco.com/c/dam/global/cs_cz/assets/ciscoconnect/2013/pdf/T-SDN4-Network_Programming_onePK_EEM-Bruno_Klauser.pdf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
