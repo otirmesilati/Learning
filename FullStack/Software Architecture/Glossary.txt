@@ -29,3 +29,19 @@ Try reading on:
 http://en.wikipedia.org/wiki/Architectural_pattern_(computer_science)
 http://en.wikipedia.org/wiki/Design_pattern
 http://en.wikipedia.org/wiki/Anti-pattern
+
+
+
+
+dev design
+
+- design patterns
+- architect patterns
+
+dependencies
+
+runtime environments 
+
+frameworks
+
+system's API design (where to put this?)

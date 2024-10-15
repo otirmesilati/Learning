@@ -65,7 +65,7 @@ ls -d # Directories Only
 #   ^ ^ ^ Detailed Options ^ ^ ^
 
 ls -l # Detailed - User Ownership
-ls -la # All Directories + User OwnderShip
+ls -la # All Directories + User OwnerShip
 ls -g # Detailed - Group Ownership
 
 ls -R # All Directories recursively on child items
