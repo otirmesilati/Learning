@@ -22,6 +22,27 @@ http://en.wikipedia.org/wiki/Anti-pattern
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 dev design
 
 - design patterns: scoped in the logic design 
@@ -35,13 +56,23 @@ dev design
 -- Structural:
 --- Adapter
 --- Decorator
---- ?
---- ?
---- ?
---- ?
+--- Bridge
+--- Facade
+--- Proxy
+--- Composite
+--- FlyWeight
 
 -- Behavioral:
---- ?
+--- Chain Of Responsibility
+--- Iterator
+--- Visitor
+--- State
+--- Memento
+--- Mediator
+--- Observer
+--- State
+--- Strategy
+--- Template
 
 - architectual patterns: scoped in the dev design 
 -- Model View Controller
@@ -52,5 +83,11 @@ dependencies
 runtime environments 
 
 frameworks
+
+- node.js
+-- 
+
+
+
 
 system's API design (where to put this?)
