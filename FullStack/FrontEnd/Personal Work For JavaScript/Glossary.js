@@ -24,7 +24,7 @@ are available */
 //   ^ ^ ^ ^ ^ Expressions ^ ^ ^ ^ ^ //
 // strings and chars?
 
-function fun_literals() {
+void fun_literals() {
   //   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
 
   123;
@@ -56,8 +56,9 @@ function fun_literals() {
 
 //   & & & & & & String Formatting & & & & & &
 
-/*
-void fun_string_formats(){
+
+void fun_string_formats()
+{
 
 int number = 1;
 double dvalue = 2.344444;
@@ -93,7 +94,7 @@ int undef_behav = 4;
 
 }
 
-
+/*
 // More Material: 
 // complete this section from here: https://en.wikipedia.org/wiki/Printf 
 

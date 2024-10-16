@@ -124,57 +124,50 @@ double d_2 = 1e-3;
 
 
 
-// // More Material:
-// // https://web.archive.org/web/20130807052041/http://cpp.comsci.us/etymology/literals.html
-// // https://en.cppreference.com/w/cpp/language/floating_literal //
 
 
 
 
+//   & & & & & & String Formatting & & & & & &
 
 
 
+void fun_string_formats(){
 
+int number = 1;
+double dvalue = 2.344444;
+int undef_behav = 4;
+String my_str_frmt;
 
-// //   & & & & & & String Formatting & & & & & &
+//   ^ ^ ^ ^ ^ Format Specifier Fields ^ ^ ^ ^ ^
 
-
-
-// void fun_string_formats(){
-
-// int number = 1;
-// double dvalue = 2.344444;
-// int undef_behav = 4;
-
-
-// //   ^ ^ ^ ^ ^ Format Specifier Fields ^ ^ ^ ^ ^
-
-// //   ^ ^ ^ ^ Flags ^ ^ ^ ^
+//   ^ ^ ^ ^ Flags ^ ^ ^ ^
 
 
 
-// //   ^ ^ ^ ^ Precision ^ ^ ^ ^
+//   ^ ^ ^ ^ Precision ^ ^ ^ ^
 
-// // Only in C++20+
-// // cout << std::format("%d %.2lf", number, dvalue);     two digits left of decimal point
+my_str_frmt = String.format("%d", number);
+my_str_frmt = String.format("%.2f", dvalue); // two digits left of the decimal point
 
-// //   width
-// //   ^ ^ ^ ^ Length ^ ^ ^ ^
+//   width
+
+//   ^ ^ ^ ^ Length ^ ^ ^ ^
 
 // // cout << std::format("%ld", 1);
 // // cout << std::format("%lf", 2.34);
 
 // //   ^ ^ ^ ^ Types ^ ^ ^ ^
 
-// // cout << std::format("%c", 'a');
-// // cout << std::format("%d", 1);
-// // cout << std::format("%f", 2.3);
+my_str_frmt = String.format("%c", 'a');
+my_str_frmt = String.format("%d", 1);
+my_str_frmt = String.format("%f", 2.3f);
 
 // // cout << std::format("%c", undef_behav);  wrong type field - undefined behaviour!
 
 // //   custom field 
 
-// }
+}
 
 
 // // More Material: 
