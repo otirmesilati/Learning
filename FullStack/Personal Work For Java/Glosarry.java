@@ -128,7 +128,7 @@ double d_2 = 1e-3;
 
 
 
-//   & & & & & & String Formatting & & & & & &
+//   & & & & & & String Formatting - String wrapping behavior! (java likes run-time :D) & & & & & &
 
 
 
@@ -319,76 +319,68 @@ first_check = ++second_check; // first_check = second_check = 3
 void fun_variables()
 {
 
-// bool my_bool;
-// char my_char;
-// wchar_t my_wchar;
-// int my_int;
-// long my_long;
-// float my_float;
-// double my_double;
-// int imagine_this_is_out_of_any_function_global = 0;
+byte my_byte;
+boolean my_bool;
+char my_char;
+int my_int;
+short my_short;
+long my_long;
+float my_float;
+double my_double;
 
-// // unsigned short cap: 65535
-// unsigned short hi = 65000; // 65,00
-// unsigned short hi = 66000; // 464 (Got back to zero going up)
 
-// // signed short cap: 32767
-// short hi = 32000; // 32000
-// short hi = 35000; // -30536 (Got to -32767 going to zero)
+
+// signed short cap: 32767 + No syntactic sugar for diffrentiating short from int like in the form of suffixes!
+short f_short = (short)32000; // 32000
+short s_short = (short)33000; // -30536 (Got to -32767 going to zero)
 
 
 // //   ^ ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^ ^
 
-// //   ^ ^ ^ ^ Global & Static Variables ^ ^ ^ ^
-// // Both default value if not initialized : 0
-
-// imagine_this_is_out_of_any_function_global = 4;
-
-// { // imagine this is void function my_func
-
-//     // change to cout : printf("global is accessible: %d", imagine_this_is_out_of_any_function_global);    
-//     imagine_this_is_out_of_any_function_global = 7; // and mutable //
-//     static int my_static = 0; // static variable accessible in my_func
-// }  
-
-// // but even though it's lifetime is the same as the global variable - trying to access the static variable from main - is a compilation error
-
+// No Globals and no regular Static variables! only in methods (java likes run-time :D)
 
 // //   ^ ^ ^ ^ Local variables ^ ^ ^ ^
 
-// int first_level_local = 1;
-// int this_wont_be_changed_local = 2;
-// { 
+int first_level_local = 1;
+int this_wont_be_changed_local = 2;
+{ 
+     int second_level_local = 3;
+     // re-defining variables inside blocks doesn't work 
+     // redifining variables outside blocks does work though
 
-//     int second_level_local = 3;
-//     int this_wont_be_changed_local = 4;
+     {
+         int third_level_local = 5;
+     }
 
-//     {
-//         int third_level_local = 5;
-//     }
-
-// }
-
-// first_level_local = 3;
-// // second_level_local = 4; -> not possible, it's local to the block
-// // this_wont_be_changed_local -> 2, the one with the 4 value was a different variable
+}
 
 
-// //   ^ ^ ^ ^ ^ Constants ^ ^ ^ ^ ^
-
-// //   ^ ^ ^ ^ Pre-Processor Macros ^ ^ ^ ^
-
-// //   ^ ^ ^ Defines ^ ^ ^
-
-// #define CRT_SECURE_NO_WARNINGS
-// #define ZERO 0
-// #define PI 3.1415
+first_level_local = 3;
+// second_level_local = 4; -> not possible, it's local to the block
 
 
-// //   ^ ^ ^ Enums(Almost pre-processor) ^ ^ ^
+//   ^ ^ ^ ^ ^ Constants ^ ^ ^ ^ ^
+// java final: const for primitives and * const for objects - where to put this?
 
-// enum boolean {NO, YES};
-// typedef enum {TRUE = 1, FALSE = 0} Boolean;
+//   No Pre-Processor directives! (java likes run-time :D)
+
+
+}
+// //   ^ ^ ^ Enums - Class with final static attributes ^ ^ ^
+
+public enum My_boolean 
+{
+
+    NO(0),
+    YES(1);
+    
+
+    My_boolean(int enum_choice)
+    {
+
+    }
+
+};
 
 
 // //   ^ ^ ^ ^ Constants: Immutables 
@@ -474,7 +466,7 @@ void fun_variables()
 
 // int& my_reference = mutable_value;
 
-}
+
 
 
 

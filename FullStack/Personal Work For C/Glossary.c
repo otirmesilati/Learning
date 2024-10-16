@@ -346,6 +346,7 @@ int my_int;
 long my_long;
 float my_float;
 double my_double;
+
 int imagine_this_is_out_of_any_function_global = 0;
 
 // unsigned short cap: 65535
