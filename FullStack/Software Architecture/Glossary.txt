@@ -2,7 +2,7 @@
 
 
 
-Design patterns are usually associated with code level commonalities. It provides various schemes for refining and building smaller subsystems. It is usually influenced by programming language. Some patterns pale into insignificance due to language paradigms. Design patterns are medium-scale tactics that flesh out some of the structure and behavior of entities and their relationships.
+ Design patterns are usually associated with code level commonalities. It provides various schemes for refining and building smaller subsystems. It is usually influenced by programming language. Some patterns pale into insignificance due to language paradigms. Design patterns are medium-scale tactics that flesh out some of the structure and behavior of entities and their relationships.
 
 While architectural patterns are seen as commonality at higher level than design patterns. Architectural patterns are high-level strategies that concerns large-scale components, the global properties and mechanisms of a system.
 
@@ -44,6 +44,7 @@ http://en.wikipedia.org/wiki/Anti-pattern
 
 
 dev design
+tablet skills - umling the design patterns
 
 - design patterns: scoped in the logic design 
 -- Creational:

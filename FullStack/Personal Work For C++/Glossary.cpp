@@ -113,7 +113,7 @@ void fun_literals(){
 4LL;
 
 //   ^ ^ ^ ^ ^ Floats ^ ^ ^ ^ ^
-
+// add f suffix //
 1.2;
 -3.4;
 
