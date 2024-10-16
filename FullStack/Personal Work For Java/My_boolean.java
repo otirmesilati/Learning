@@ -365,7 +365,7 @@ first_level_local = 3;
 //   No Pre-Processor directives! (java likes run-time :D)
 
 
-}
+} 
 // //   ^ ^ ^ Enums - Class with final static attributes ^ ^ ^
 
 public enum My_boolean 
@@ -383,88 +383,31 @@ public enum My_boolean
 };
 
 
-// //   ^ ^ ^ ^ Constants: Immutables 
-
-// //   ^ ^ ^ ConstExpr : Compile Time Immutable ^ ^ ^ 
-
-// //constexpr int static_time_const = 0;
+//   ^ ^ ^ ^ Constants ^ ^ ^ ^
 
 
-// //   ^ ^ ^ Const : Run Time Immutable ^ ^ ^
 
-// const int dynamic_time_const = 1;
+public void fun_constants()
+{
 
-// //   ^ ^ Pointer Const ^ ^
+//   ^ ^ ^ final - constant on primitives ^ ^ ^
 
-// int mutable_value = 0;
-// int immutable_value = 1;
-// int immutable_value_and_adress = 2;
+final int primitive_costant = 2; 
 
-// const int* const_pointer_to_int = &immutable_value;
-// int* const const_pointer_to_int = &mutable_value;
-// const int* const const_pointer_to_int = &immutable_value_and_adress;
+//   ^ ^ ^ final - const reference on objects ^ ^ ^
 
-// //   ^ ^ Reference Const ^ ^ 
+final Object my_obj; // can't change the value when passing my_obj 
 
-// const int& const_ref_to_int = immutable_value;
+// No Pointers in java!
 
-// //   ^ ^ ^ ^ ^ Pointers ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Data Collections ^ ^ ^ ^ ^
 
-// char* my_char_pointer;
-// int* my_int_pointer;
-// long* my_long_pointer;
-// float* my_float_pointer;
-// double* my_double_pointer;
-
-// //   ^ ^ ^ ^ Static Allocation ^ ^ ^ ^
-
-// my_char_pointer = &my_char;
-// my_int_pointer = &my_int;
-// my_long_pointer = &my_long;
-// my_float_pointer = &my_float;
-// my_double_pointer = &my_double;
-
-// //   ^ ^ ^ ^ Dynamic Allocation ^ ^ ^
-
-// //   ^ ^ ^ Heap Byte Allocation: Malloc ^ ^ ^
-
-// my_char_pointer = new char;
-// my_int_pointer = new int;
-// my_long_pointer = new long;
-// my_float_pointer = new float;
-
-// //   ^ ^ ^ Heap Memory De-Allocation ^ ^ ^
-
-// delete my_char_pointer;
-// delete my_int_pointer;
-// delete my_long_pointer;
-// delete my_float_pointer;
-// delete my_double_pointer;
-
-// //   ^ ^ ^ ^ Void (Generaic) Pointers ^ ^ ^ ^
-
-// void* my_generic_pointer;
-
-// char* my_generic_pointer_converted_to_char_pointer;
-// int* my_generic_pointer_converted_to_int_pointer;
-// long* my_generic_pointer_converted_to_long_pointer;
-// float* my_generic_pointer_converted_to_float_pointer;
-// double* my_generic_pointer_converted_to_double_pointer;
-
-// my_generic_pointer_converted_to_char_pointer = (char*)my_generic_pointer;
-// my_generic_pointer_converted_to_int_pointer = (int*)my_generic_pointer;
-// my_generic_pointer_converted_to_long_pointer = (long*)my_generic_pointer;
-// my_generic_pointer_converted_to_float_pointer = (float*)my_generic_pointer;
-// my_generic_pointer_converted_to_double_pointer = (double*)my_generic_pointer;
-
-// //   ^ ^ ^ ^ ^ Data Collections ^ ^ ^ ^ ^
-
-// // strings?
+// strings?
 
 
-// //   ^ ^ ^ ^ ^ References ^ ^ ^ ^ ^
+// Java has defualt Pass-By-Reference behavior for objects
 
-// int& my_reference = mutable_value;
+}
 
 
 
@@ -474,24 +417,22 @@ public enum My_boolean
 
 
 
+//   & & & & & & Flow Control & & & & & &
 
 
-// //   & & & & & & Flow Control & & & & & &
+void fun_flow_control()
+{ // wait - does java have labels?
+
+int condition = 1;
+int outer_condition = 0;
+int elif_condition = 1;
+int if_condition = 0; int elseif_condition = 1;
+int switch_key = 2;
 
 
-// void fun_flow_control()
-// {
+//   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^ 
 
-// int condition = 1;
-// int outer_condition = 0;
-// int elif_condition = 1;
-// int if_condition = 0; int elseif_condition = 1;
-// int switch_key = 2;
-
-
-// //   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^ 
-
-// //   ^ ^ ^ ^ ^ Procedure labels & GoTo ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Procedure labels & GoTo ^ ^ ^ ^ ^
 
 // procedure_1_label:
 // // first procedure  //
@@ -627,7 +568,7 @@ public enum My_boolean
 // // for(;;)
 // // for(;;)
 
-// }
+}
 
 // //   ^ ^ ^ ^ ^ Functions ^ ^ ^ ^ ^ 
 
