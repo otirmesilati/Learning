@@ -235,7 +235,8 @@ first = 2;
 first_multi_assign = second_multi_assign = 1;
 
 
-//   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Arithmetical Operators (and a bit of operation piping) ^ ^ ^ ^ ^
+
 first = first + 3;
 first += 3;
 first = first + 1;

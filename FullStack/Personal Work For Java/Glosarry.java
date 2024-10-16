@@ -152,10 +152,7 @@ my_str_frmt = String.format("%.2f", dvalue); // two digits left of the decimal p
 
 //   width
 
-//   ^ ^ ^ ^ Length ^ ^ ^ ^
-
-// // cout << std::format("%ld", 1);
-// // cout << std::format("%lf", 2.34);
+// No Length input 
 
 // //   ^ ^ ^ ^ Types ^ ^ ^ ^
 
@@ -163,7 +160,7 @@ my_str_frmt = String.format("%c", 'a');
 my_str_frmt = String.format("%d", 1);
 my_str_frmt = String.format("%f", 2.3f);
 
-// // cout << std::format("%c", undef_behav);  wrong type field - undefined behaviour!
+// wrong format specifier either cause undefined behaviour or throw run-time exception
 
 // //   custom field 
 
@@ -181,49 +178,51 @@ my_str_frmt = String.format("%f", 2.3f);
 
 
 
-// //   & & & & & & Operators & & & & & &
-// // which operations are available? one what types? categories : numbers, string operators...
+//   & & & & & & Operators & & & & & &
+// which operations are available? one what types? categories : numbers, string operators...
 
 
-// void fun_operators()
-// {
-// int first_check, second_check;
-// int first_multi_assign, second_multi_assign;
-// int first_temp = 1;
-// double sum_temps, second_temp = 2.00;
-// int five = 5, three = 3, zero = 0;
+void fun_operators()
+{
+int first_check, second_check;
+int first_multi_assign, second_multi_assign;
+int first_temp = 1;
+double sum_temps, second_temp = 2.00;
+int five = 5, three = 3, zero = 0;
 
-// int first_explicit_conv, second_explicit_conv;
-// int explicit_conv_assignment;
-
-
-// // need to touch on lvalue, rvalue, gvalue: 
-// // lecture's coverage: lval is left and changing, and rval is right, WOW!
+int first_explicit_conv, second_explicit_conv;
+int explicit_conv_assignment;
 
 
-
-// // More Material:
-// // for the wiki tldr: https://en.wikipedia.org/wiki/Value_(computer_science)
-// // for the famous lval/rval/gval/xval graph: https://stackoverflow.com/questions/3601602/what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues
+// need to touch on lvalue, rvalue, gvalue: 
+// lecture's coverage: lval is left and changing, and rval is right, WOW!
 
 
 
-// //   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
-// int first = 1;
-// first = 2;
+// More Material:
+// for the wiki tldr: https://en.wikipedia.org/wiki/Value_(computer_science)
+// for the famous lval/rval/gval/xval graph: https://stackoverflow.com/questions/3601602/what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues
 
 
-// //   ^ ^ ^ Multiple Assignment ^ ^ ^
 
-// first_multi_assign = second_multi_assign = 1;
+//   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
+
+int first = 1;
+first = 2;
 
 
-// //   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^ ^
-// first = first + 3;
-// first += 3;
-// first = first + 1;
-// first++;
-// ++first;
+//   ^ ^ ^ Multiple Assignment ^ ^ ^
+
+first_multi_assign = second_multi_assign = 1;
+
+
+//   ^ ^ ^ ^ ^ Arithmetical Operators (and a bit of operation piping) ^ ^ ^ ^ ^
+
+first = first + 3;
+first += 3;
+first = first + 1;
+first++;
+++first;
 
 
 // //   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^ 
@@ -231,9 +230,10 @@ my_str_frmt = String.format("%f", 2.3f);
 
 
 // //   ^ ^ ^ ^ Prefix vs Postfix inc/dec operator ^ ^ ^ ^
-// first_check = 1;
-// first_check = second_check++; // first_check = 1, second_check = 2 
-// first_check = ++second_check; // first_check = second_check = 3
+
+first_check = 1;
+first_check = second_check++; // first_check = 1, second_check = 2 
+first_check = ++second_check; // first_check = second_check = 3
 
 
 
@@ -302,7 +302,7 @@ my_str_frmt = String.format("%f", 2.3f);
 // int ptr_value_2 = 1, * ptr_address_2 = &ptr_value_2, ptr_value_2 = *ptr_address_2;
 
 
-// }
+}
 
 
 
@@ -313,12 +313,11 @@ my_str_frmt = String.format("%f", 2.3f);
 
 
 
-// //   & & & & & & Variables & & & & & &
-// // type hinting? (static - no, dynamic - yes)
+//   & & & & & & Variables & & & & & &
 
 
-// void fun_variables()
-// {
+void fun_variables()
+{
 
 // bool my_bool;
 // char my_char;
@@ -475,7 +474,7 @@ my_str_frmt = String.format("%f", 2.3f);
 
 // int& my_reference = mutable_value;
 
-// }
+}
 
 
 
