@@ -24,7 +24,7 @@ are available */
 //   ^ ^ ^ ^ ^ Expressions ^ ^ ^ ^ ^ //
 // strings and chars?
 
-void fun_literals() {
+function fun_literals() {
   //   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
 
   123;
@@ -40,10 +40,7 @@ void fun_literals() {
   0o12;
   0b110011;
 
-  //   ^ ^ ^ Un-Signed Modifier Suffix operators ^ ^ ^
-  //   There's no Unsigned type.
-  //   ^ ^ ^ Long Modifier Suffix operators
-  //   There's no Long type.
+  // There are no Unsigned and no Long types.
 
   //   ^ ^ ^ ^ ^ Floats ^ ^ ^ ^ ^
   1.2;
@@ -56,48 +53,20 @@ void fun_literals() {
 
 //   & & & & & & String Formatting & & & & & &
 
+function fun_string_formats() {
+  var number = 1;
+  var dvalue = 2.344444;
 
-void fun_string_formats()
-{
+  //   ^ ^ ^ ^ ^ Format Specifier Fields ^ ^ ^ ^ ^
 
-int number = 1;
-double dvalue = 2.344444;
-int undef_behav = 4;
+  console.log(`number: ${number}\n`); // appostrophe to enable escape characters
 
+  // No Flags - though precision behaviour is decoupled from string formatting:
 
-//   ^ ^ ^ ^ ^ Format Specifier Fields ^ ^ ^ ^ ^
-
-//   ^ ^ ^ ^ Flags ^ ^ ^ ^
-
-
-
-//   ^ ^ ^ ^ Precision ^ ^ ^ ^
-
-// Only in C++20+
-// cout << std::format("%d %.2lf", number, dvalue);     two digits left of decimal point
-
-//   width
-//   ^ ^ ^ ^ Length ^ ^ ^ ^
-
-// cout << std::format("%ld", 1);
-// cout << std::format("%lf", 2.34);
-
-//   ^ ^ ^ ^ Types ^ ^ ^ ^
-
-// cout << std::format("%c", 'a');
-// cout << std::format("%d", 1);
-// cout << std::format("%f", 2.3);
-
-// cout << std::format("%c", undef_behav);  wrong type field - undefined behaviour!
-
-//   custom field 
-
+  formattedPrice = dvalue.toFixed(2); // two digits left of decimal point //
 }
 
 /*
-// More Material: 
-// complete this section from here: https://en.wikipedia.org/wiki/Printf 
-
 
 
 
