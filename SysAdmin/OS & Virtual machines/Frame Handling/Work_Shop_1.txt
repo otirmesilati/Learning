@@ -38,6 +38,7 @@ what more desktop apps? (file browsers? internet browser?...)
 
 
 
+
 ^ ^ ^ ^ ? file browser (manager) - api calls inside the machine (leave it in the title? write this somewhere else? important intuition)
 
 mc's windows file manager? apple's files? total commander? Linux' thunar, nautilus, xfe(xfileexplorer), gnome files, dolphin, pcman?...)
@@ -56,6 +57,8 @@ package manager?
 
 
 
+
+
 & & & & & & & Editors & & & & & &
 
 ^ ^ ^ ^ ^ NotePad ^ ^ ^ ^ ^
@@ -67,6 +70,8 @@ StatusBar
 what more? (look at the ides below)
 
 vsc? notepad? notepad++?
+
+
 
 
 
@@ -120,9 +125,6 @@ class: -> file -> new -> class
 
 
 
-
-
-
 ^ ^ ^ ^ ^ Pycharm ^ ^ ^ ^ ^
 
 ^ ^ ^ ^ IDE GUI elements ^ ^ ^ ^
@@ -165,41 +167,10 @@ packettracer
 
 
 
-
-
-
-
-
-
-
-
-
-
 dev tools (ctrl shft c) (dock: 3 dots in upper menu -> dock)
 network option -> a list of requests
 click on a request -> see more information of request (header, prewview...)
 filter -> by types
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -219,9 +190,22 @@ filter -> by types
 
 
 
+
+
+
 & & & & & & OS Desktopping SCs & & & & & &
 
 ^ ^ ^ ^ ^ Windows NT Desktopping SCs ^ ^ ^ ^ ^
+
+& & & & & & Windows 10 Navigation & & & & & &
+
+1. Launch Run command: -> super + r
+2. Launch TaskManager: -> ctrl + shft + esc
+3. Launch n-th pinned Icon in TaskBar: ->super+<Number>
+4. Round-Robin focus between open windows: ->alt + tab
+5. Round-Robin focus between open windows in reverse: ->shft + alt + tab
+6. Open active/open window menu: ->super + tab 
+7.
 
 
 ^ ^ ^ ^ ^ MacOS Deskttoping SCs ^ ^ ^ ^ ^
@@ -240,6 +224,12 @@ filter -> by types
 % % % % % % % Frame Handling SCs % % % % % % %
 
 & & & & & & Editors & & & & & &
+
+
+
+
+
+
 
 
 
@@ -330,56 +320,7 @@ Toggle ToolTip Decsription: f2
 
 
 
-
-
-
-
-
-
-
 run: alt + shft + x THEN j
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -475,32 +416,6 @@ Toggle ToolTip Decsription: ?
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //   ^ ^ ^ ^ Visual Studio Code
 
 1. Focus on specific tab: alt + <Number> 
@@ -577,25 +492,22 @@ Pase Text -> ctrl + v
 
 
 
+& & & & & & Browsers & & & & & &
 
+^ ^ ^ ^ ^ File Browsers ^ ^ ^ ^ ^
+web browsers
 
+^ ^ ^ ^ ^ Shell/Terminal Browser : Windows Terminal ^ ^ ^ ^ ^
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+1. Launch shell tab via order: ->ctrl+shft+<Number>
+2. Launch duplicate shell tab: -> ctrl+SHFT+D
+3. Launch defualt pane shell tab : ->CTRL+SHFT+T
+4. Close pane shell tab : ->CTRL+SHFT+W
+5. Zoom In / Enlarge and decrese text: -> CTRL+plus/minus
+6. Search text: CTRL+SHFT+F
+7. Duplicate into two half panes (Sessions): -> ALT+SHFT+D
+8. Launch shell window: -> CTRL+SHFT+N
+9. 
 
 
 
@@ -628,15 +540,6 @@ Pase Text -> ctrl + v
 
 
 
-//   & & & & & & Windows-Navigation ^ ^ ^ ^ ^ 
-
-1. Launch Run command: -> super + r
-2. Launch TaskManager: -> ctrl + shft + esc
-3. Launch n-th pinned Icon in TaskBar: ->super+<Number>
-4. Round-Robin focus between open windows: ->alt + tab
-5. Round-Robin focus between open windows in reverse: ->shft + alt + tab
-6. Open active/open window menu: ->super + tab 
-7.
 
 
 //   ^ ^ ^ ^ Taskbar ^ ^ ^ ^
@@ -677,15 +580,6 @@ Pase Text -> ctrl + v
 
 //   ^ ^ ^ ^ ^ ^ Linux-Navigation ^ ^ ^ ^ ^ ^
 
-1. Launch shell tab via order: ->ctrl+shft+<Number>
-2. Launch duplicate shell tab: -> ctrl+SHFT+D
-3. Launch defualt pane shell tab : ->CTRL+SHFT+T
-4. Close pane shell tab : ->CTRL+SHFT+W
-5. Zoom In / Enlarge and decrese text: -> CTRL+plus/minus
-6. Search text: CTRL+SHFT+F
-7. Duplicate into two half panes (Sessions): -> ALT+SHFT+D
-8. Launch shell window: -> CTRL+SHFT+N
-9. 
 
 
 
