@@ -69,10 +69,9 @@ function fun_string_formats() {
 //   & & & & & & Operators & & & & & &
 // which operations are available? one what types? categories : numbers, string operators...
 
-void fun_operators();
-{
+function fun_operators() {
   // int first_check, second_check;
-  // int first_multi_assign, second_multi_assign;
+  var first_multi_assign, second_multi_assign;
   // int first_temp = 1;
   // double sum_temps, second_temp = 2.00;
   // int five = 5, three = 3, zero = 0;
@@ -84,16 +83,22 @@ void fun_operators();
   // for the wiki tldr: https://en.wikipedia.org/wiki/Value_(computer_science)
   // for the famous lval/rval/gval/xval graph: https://stackoverflow.com/questions/3601602/what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues
   //   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
-  // int first = 1;
-  // first = 2;
+
+  var first = 1;
+  first = 2;
+
   //   ^ ^ ^ Multiple Assignment ^ ^ ^
-  // first_multi_assign = second_multi_assign = 1;
+
+  first_multi_assign = second_multi_assign = 1;
+
   //   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^ ^
-  // first = first + 3;
-  // first += 3;
-  // first = first + 1;
-  // first++;
-  // ++first;
+
+  first = first + 3;
+  first += 3;
+  first = first + 1;
+  first++;
+  ++first;
+
   //   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^
   // what here ? what comes before what? * before / in C?
   //   ^ ^ ^ ^ Prefix vs Postfix inc/dec operator ^ ^ ^ ^
