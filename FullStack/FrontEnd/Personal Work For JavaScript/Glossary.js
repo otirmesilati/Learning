@@ -70,7 +70,7 @@ function fun_string_formats() {
 // which operations are available? one what types? categories : numbers, string operators...
 
 function fun_operators() {
-  // int first_check, second_check;
+  var first_check, second_check;
   var first_multi_assign, second_multi_assign;
   // int first_temp = 1;
   // double sum_temps, second_temp = 2.00;
@@ -101,10 +101,13 @@ function fun_operators() {
 
   //   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^
   // what here ? what comes before what? * before / in C?
+
   //   ^ ^ ^ ^ Prefix vs Postfix inc/dec operator ^ ^ ^ ^
-  // first_check = 1;
-  // first_check = second_check++; // first_check = 1, second_check = 2
-  // first_check = ++second_check; // first_check = second_check = 3
+
+  first_check = 1;
+  first_check = second_check++; // first_check = 1, second_check = 2
+  first_check = ++second_check; // first_check = second_check = 3
+
   //   ^ ^ ^ ^ Arithmetical Operators: Narrowing/Widening type Casting ^ ^ ^ ^
   //   ^ ^ ^ type casting/C-casting ^ ^ ^
   //   ^ ^ Implicit conversion - mismatching variables in opeartion ^ ^
