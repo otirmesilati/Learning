@@ -193,11 +193,11 @@ filter -> by types
 
 
 
-& & & & & & OS Desktopping SCs & & & & & &
+% % % % % % % OS Desktopping SCs % % % % % % %
 
-^ ^ ^ ^ ^ Windows NT Desktopping SCs ^ ^ ^ ^ ^
+& & & & & & Windows NT Desktopping SCs & & & & & &
 
-& & & & & & Windows 10 Navigation & & & & & &
+^ ^ ^ ^ ^ Windows 10 Navigation ^ ^ ^ ^ ^ 
 
 1. Launch Run command: -> super + r
 2. Launch TaskManager: -> ctrl + shft + esc
@@ -211,9 +211,40 @@ filter -> by types
 ^ ^ ^ ^ ^ MacOS Deskttoping SCs ^ ^ ^ ^ ^
 
 
-^ ^ ^ ^ ^ Linux Desktopping SCs ^ ^ ^ ^ ^
+& & & & & & Linux Desktopping SCs & & & & & & 
+
+^ ^ ^ ^ ^ Ubuntu ^ ^ ^ ^ ^
+
+Cinnamon (version ?)
+ub
+
+keyboard shortcuts 
+
+app launching
+
+1. Terminal: -gnome terminal -> ctrl+alt+t (run command: alt+f2)
+2. Run CommandL -null (Maybe hard coded to system?) -> alt + f2
+3. system monitor:
+4. nautilus: 
+5. firefox
+6. text editor
+7. calculator
+8. software updater
+
+navigation
+1. overview and search:
+2. desktop view
+3. lock screen
+4. switch workspace
+5. open quick settings
+6. open settings
+7. position windows
+8. switch windows
+9. focus on windows
+10. apps window
 
 
+^ ^ ^ ^ ^ Debian ^ ^ ^ ^ ^
 
 
 

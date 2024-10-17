@@ -155,15 +155,9 @@ function fun_variables() {
   //long my_long;
   //float my_float;
   //double my_double;
-  //int imagine_this_is_out_of_any_function_global = 0;
+  var imagine_this_is_out_of_any_function_global = 0;
 
-  // unsigned short cap: 65535
-  //unsigned short hi = 65000; // 65,00
-  //unsigned short hi = 66000; // 464 (Got back to zero going up)
-
-  // signed short cap: 32767
-  //short hi = 32000; // 32000
-  //short hi = 35000; // -30536 (Got to -32767 going to zero)
+  // All numbers are based on a Floating Point System, with a max accurate number of 2^53-1
 
   //   ^ ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^ ^
 
