@@ -66,156 +66,80 @@ function fun_string_formats() {
   formattedPrice = dvalue.toFixed(2); // two digits left of decimal point //
 }
 
-/*
-
-
-
-
-
-
-
-
 //   & & & & & & Operators & & & & & &
 // which operations are available? one what types? categories : numbers, string operators...
 
-
-void fun_operators()
+void fun_operators();
 {
-int first_check, second_check;
-int first_multi_assign, second_multi_assign;
-int first_temp = 1;
-double sum_temps, second_temp = 2.00;
-int five = 5, three = 3, zero = 0;
-
-int first_explicit_conv, second_explicit_conv;
-int explicit_conv_assignment;
-
-
-// need to touch on lvalue, rvalue, gvalue: 
-// lecture's coverage: lval is left and changing, and rval is right, WOW!
-
-
-
-// More Material:
-// for the wiki tldr: https://en.wikipedia.org/wiki/Value_(computer_science)
-// for the famous lval/rval/gval/xval graph: https://stackoverflow.com/questions/3601602/what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues
-
-
-
-//   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
-int first = 1;
-first = 2;
-
-
-//   ^ ^ ^ Multiple Assignment ^ ^ ^
-
-first_multi_assign = second_multi_assign = 1;
-
-
-//   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^ ^
-first = first + 3;
-first += 3;
-first = first + 1;
-first++;
-++first;
-
-
-//   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^ 
-// what here ? what comes before what? * before / in C?  
-
-
-//   ^ ^ ^ ^ Prefix vs Postfix inc/dec operator ^ ^ ^ ^
-first_check = 1;
-first_check = second_check++; // first_check = 1, second_check = 2 
-first_check = ++second_check; // first_check = second_check = 3
-
-
-
-//   ^ ^ ^ ^ Arithmetical Operators: Narrowing/Widening type Casting ^ ^ ^ ^
-
-
-//   ^ ^ ^ type casting/C-casting ^ ^ ^
-
-//   ^ ^ Implicit conversion - mismatching variables in opeartion ^ ^
-
-first_temp + second_temp; // first is promoted to double in widening implicit c type conversion
-
-//   ^ ^ Explicit conversion - assigned to different type OR different type written in parantheses ^ ^ 
-
-first_explicit_conv = 3, second_explicit_conv = 4;
-explicit_conv_assignment = (float)(first_explicit_conv / second_explicit_conv); // both exp conv scenarios, order: 1. int result temp 2. float result temp, 3. int assignment temp
-
-//   ^ ^ ^ Up-Castring ^ ^ ^
-
-//   ^ ^ ^ Down-Casting ^ ^ ^
-
-//   ^ ^ ^ Slicing ^ ^ ^
-
-
-
-
-// More Material: 
-// map from this more about casts: https://stackoverflow.com/questions/28002/regular-cast-vs-static-cast-vs-dynamic-cast
-// No Automatic casting to wide in c++? a set of rules: https://www.youtube.com/watch?v=uI10H1jzw00
-// Make temp variable arithmetic in tablet and map building upon these scenarios: 
-// answer: b' - promotion, (a + b')' - same, ((a + b')')' - demotion  
-
-
-
-
-
-
-
-
-
-//   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
-// order of operations ?
-// == and != are the least in the order of operations, maybe finish the operations order ladder?
-// false and true are exactly 0 and 1
-
-five == 2;
-(three < five || three < zero);
-
-// combining logical and arith: (arithmetic operators take precedence)
-/*
-lecture's example:
-int x = 2;
-int y = (x > 5) + 1; // (x > 5) -> 0 -> 0 + 1 = 1
-
-int a = 2, b;
-((b = 2) == a) // (b = 2) -> (2) -> 2 == 2 -> 1, trick question: a wierd behaviour of c family languages - assignment returns the assign value, acts as arithmetic
-
-*/
-
-//   Overloading literal operators: https://en.cppreference.com/w/cpp/language/user_literal
-
-//   ^ ^ ^ ^ ^ Pointer Operators ^ ^ ^ ^ ^
-/*
-int ptr_value_1 = 0;
-
-
-int* ptr_address_1 = &ptr_value_1; // address operator
-ptr_value_1 = *ptr_address_1; // indirection operator
-
-// in one line(int + int* init in same line):
-int ptr_value_2 = 1, * ptr_address_2 = &ptr_value_2, ptr_value_2 = *ptr_address_2;
-
-
+  // int first_check, second_check;
+  // int first_multi_assign, second_multi_assign;
+  // int first_temp = 1;
+  // double sum_temps, second_temp = 2.00;
+  // int five = 5, three = 3, zero = 0;
+  // int first_explicit_conv, second_explicit_conv;
+  // int explicit_conv_assignment;
+  // need to touch on lvalue, rvalue, gvalue:
+  // lecture's coverage: lval is left and changing, and rval is right, WOW!
+  // More Material:
+  // for the wiki tldr: https://en.wikipedia.org/wiki/Value_(computer_science)
+  // for the famous lval/rval/gval/xval graph: https://stackoverflow.com/questions/3601602/what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues
+  //   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
+  // int first = 1;
+  // first = 2;
+  //   ^ ^ ^ Multiple Assignment ^ ^ ^
+  // first_multi_assign = second_multi_assign = 1;
+  //   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^ ^
+  // first = first + 3;
+  // first += 3;
+  // first = first + 1;
+  // first++;
+  // ++first;
+  //   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^
+  // what here ? what comes before what? * before / in C?
+  //   ^ ^ ^ ^ Prefix vs Postfix inc/dec operator ^ ^ ^ ^
+  // first_check = 1;
+  // first_check = second_check++; // first_check = 1, second_check = 2
+  // first_check = ++second_check; // first_check = second_check = 3
+  //   ^ ^ ^ ^ Arithmetical Operators: Narrowing/Widening type Casting ^ ^ ^ ^
+  //   ^ ^ ^ type casting/C-casting ^ ^ ^
+  //   ^ ^ Implicit conversion - mismatching variables in opeartion ^ ^
+  // first_temp + second_temp; // first is promoted to double in widening implicit c type conversion
+  //   ^ ^ Explicit conversion - assigned to different type OR different type written in parantheses ^ ^
+  // first_explicit_conv = 3, second_explicit_conv = 4;
+  // explicit_conv_assignment = (float)(first_explicit_conv / second_explicit_conv); // both exp conv scenarios, order: 1. int result temp 2. float result temp, 3. int assignment temp
+  //   ^ ^ ^ Up-Castring ^ ^ ^
+  //   ^ ^ ^ Down-Casting ^ ^ ^
+  //   ^ ^ ^ Slicing ^ ^ ^
+  // More Material:
+  // map from this more about casts: https://stackoverflow.com/questions/28002/regular-cast-vs-static-cast-vs-dynamic-cast
+  // No Automatic casting to wide in c++? a set of rules: https://www.youtube.com/watch?v=uI10H1jzw00
+  // Make temp variable arithmetic in tablet and map building upon these scenarios:
+  // answer: b' - promotion, (a + b')' - same, ((a + b')')' - demotion
+  //   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
+  // order of operations ?
+  // == and != are the least in the order of operations, maybe finish the operations order ladder?
+  // false and true are exactly 0 and 1
+  // five == 2;
+  // three < five || three < zero;
+  // combining logical and arith: (arithmetic operators take precedence)
+  // lecture's example:
+  // int x = 2;
+  // int y = (x > 5) + 1; // (x > 5) -> 0 -> 0 + 1 = 1
+  // int a = 2, b;
+  // ((b = 2) == a) // (b = 2) -> (2) -> 2 == 2 -> 1, trick question: a wierd behaviour of c family languages - assignment returns the assign value, acts as arithmetic
+  //   Overloading literal operators: https://en.cppreference.com/w/cpp/language/user_literal
+  //   ^ ^ ^ ^ ^ Pointer Operators ^ ^ ^ ^ ^
+  // int ptr_value_1 = 0;
+  // int* ptr_address_1 = &ptr_value_1; // address operator
+  //ptr_value_1 = *ptr_address_1; // indirection operator
+  // in one line(int + int* init in same line):
+  //int ptr_value_2 = 1, * ptr_address_2 = &ptr_value_2, ptr_value_2 = *ptr_address_2;
 }
-
-
-
-
-
-
-
-
-
 
 //   & & & & & & Variables & & & & & &
 // type hinting? (static - no, dynamic - yes)
 
-
+/*
 void fun_variables()
 {
 

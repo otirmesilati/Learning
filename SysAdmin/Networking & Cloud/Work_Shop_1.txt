@@ -214,7 +214,10 @@ db9-Rj45 rollover
 
 
 client server 
+
 & & & & & & Client-Server Model & & & & & &
+
+- Request-Response based protocol
 
 ^ ^ ^ ^ ^ API Call: HTTP Requesting Format ^ ^ ^ ^ ^
 
