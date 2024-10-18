@@ -105,6 +105,62 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 -- //  ^ ^ ^ ^ Coding Modifiers ^ ^ ^ ^
 
 -- //  ^ ^ ^ Radixed modifier ^ ^ ^
@@ -831,11 +887,12 @@ create table table_name_2(  -- creating a table with attributes
 
 --   ^ ^ ^ ^ Table Content Manipulation ^ ^ ^ ^
 
---?
+--insert? what more?
 
 delete from table_name; -- a command to delete all cell contents
+--what about row deletion?
 
---   ^ ^ ^ ^ Table Deletion ^ ^ ^ ^ 
+--   ^ ^ ^ ^ Table Deletion (wierd how the delete keyword is in another portion, not here) ^ ^ ^ ^ 
 
 drop table table_name; -- a command for deleting a table
 drop temporary table table_name; -- a command for deleting a temporary table
