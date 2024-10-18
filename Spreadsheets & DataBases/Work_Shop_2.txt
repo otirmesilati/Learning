@@ -1,5 +1,0 @@
-File handling
-
-Table handling
-
-Schema Handling

@@ -1,0 +1,70 @@
+< < < < < < < < DataBases > > > > > > > >
+
+
+
+
+
+
+
+
+
+% % % % % % % Non-Relational DataBases % % % % % % %
+
+
+
+
+
+
+
+
+
+
+& & & & & & SpreadSheets : Visual tables, without the relations & & & & & &
+
+
+
+
+
+
+
+
+
+
+move this to frame handling:
+
+Excel Keyboard ShortCuts:
+
+Navigation:
+1. Focus on namebox: ->ALT+F3
+2. Focus on A1 cell: -> CTRL+HOME
+3. Focus on last occupied Horizontal and Vertical cell: CTRL+END
+4 Focus on last occupied cell/limit of sheet: -> CTRL+Arrow 
+5. Focus on row: CTRL+SPC
+5. Focus on column: SHFT+SPC
+5. Spreadsheet titles: ->F6
+
+Launchers:
+1. Move or Copy: ->ALT+E+M
+
+Edit:
+1. Add row/column (depends on focus):CTRL++
+
+NeoVim Keyboard Shortcuts: (move this)
+
+
+
+
+
+
+
+
+
+% % % % % % % Relational DataBases % % % % % % %
+
+
+
+
+
+
+
+
