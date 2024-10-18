@@ -1,0 +1,17 @@
+{
+  "String": "Example string",
+  "Integer Number": -12,
+  "Float Number": 3.4,
+  "Sci-Notation float": 1.2e10,
+  "Boolean": true,
+  "Null": null,
+  "Array": [5, 6, 7],
+  "Object (key-value pairs) ": "app.js",
+
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
