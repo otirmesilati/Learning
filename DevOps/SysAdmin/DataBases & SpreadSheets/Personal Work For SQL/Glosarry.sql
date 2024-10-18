@@ -82,9 +82,11 @@
 -123;
 
 
-
-
-
+-- In a column, the user can store numeric, string, binary, etc by defining data types. For example integer data, character data, monetary data, date and time data, binary strings, and so on.
+-- There are three main types of SQL data types available in any RDBMS. They are listed below −
+-- string types: char, varchar, binary, varbinary, text, tinytext, longtext, blob, tinyblob, mediumblob, longblob, enum, set 
+-- numeric types: 
+-- date types: 
 
 
 
@@ -819,17 +821,23 @@ use db_name;  -- a command for setting the DB as the one to work on
 
 --   ^ ^ ^ ^ ^ Tables Handling ^ ^ ^ ^ ^
 
+--   ^ ^ ^ ^ Table Creation ^ ^ ^ ^
+
 create table table_name_1;  -- creating a table without attributes
 create table table_name_2(  -- creating a table with attributes
     attribute_1 int, 
     attribute_2 tinyint
 );  
 
+--   ^ ^ ^ ^ Table Content Manipulation ^ ^ ^ ^
 
+--?
 
+delete from table_name; -- a command to delete all cell contents
 
+-- ^^^^table deletion
 
-
+drop table table_name; -- a command for deleting the table
 
 
 
