@@ -9,11 +9,33 @@
 
 
 % % % % % % % Non-Relational DataBases % % % % % % %
+add a json glossary
+
+& & & & & & MongoDB & & & & & &
+
+^ ^ ^ ^ ^ MongoDB's file system ^ ^ ^ ^ ^
+
+- Collection holds different categories of Documents
+- Documents mostly as JSON documents, allows:
+-- nested documents to spare the creation of another table
 
 
 
 
 
+
+
+
+
+% % % % % % % % Relational DataBases % % % % % % % % %
+
+Relational Table Schemes:
+
+- Row: Object Record
+- Column: Attribute Record
+- Data Tables have Relations
+
+example of a SQL command to query the tables: select * from authors
 
 
 
