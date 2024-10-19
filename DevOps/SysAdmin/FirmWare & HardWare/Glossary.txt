@@ -1,0 +1,33 @@
+< < < < < < < < HardWare Architecture > > > > > > > > 
+
+von neuman? some other unvirsity architecture?
+
+
+
+
+
+
+
+
+< < < < < < < < FirmWare Architecture > > > > > > > >
+
+% % % % % % % Bootable FirmWare % % % % % % %
+
+& & & & & & BIOS & & & & & & 
+
+- mbr in the first sector
+- only 4 partitions
+
+
+
+
+
+
+
+
+
+& & & & & & UEFI as BIOS upgrade & & & & & &
+
+- entire partition for boot system (flexible partitioning)
+- grub is the bootloader
+- grub in linux allows boot through: Network(PXE/IPXE), External Hadware(USB/CD), Software(ISO)
