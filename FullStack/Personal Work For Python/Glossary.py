@@ -295,6 +295,7 @@ int a = 2, b;
 
 }
 
+"""
 
 
 
@@ -302,649 +303,634 @@ int a = 2, b;
 
 
 
+#   & & & & & & Variables & & & & & &
 
-//   & & & & & & Variables & & & & & &
-// type hinting? (static - no, dynamic - yes)
 
+def fun_variables():
+    
+    bool(False)
+    int(1)
+    float(2.3)
+    complex(4 + 5j)
+    # add list, tuple, range, dict, set, frozenset later in the DS portion
 
-void fun_variables()
-{
 
-bool my_bool;
-char my_char;
-wchar_t my_wchar;
-int my_int;
-long my_long;
-float my_float;
-double my_double;
-int imagine_this_is_out_of_any_function_global = 0;
+#   ^ ^ ^ ^ ^ Type Hinting ^ ^ ^ ^ ^
 
-// unsigned short cap: 65535
-unsigned short hi = 65000; // 65,00
-unsigned short hi = 66000; // 464 (Got back to zero going up)
+# ?
 
-// signed short cap: 32767
-short hi = 32000; // 32000
-short hi = 35000; // -30536 (Got to -32767 going to zero)
+# int imagine_this_is_out_of_any_function_global = 0;
 
+# // unsigned short cap: 65535 - maybe try this part with type hinting later?
+# unsigned short hi = 65000; // 65,00
+# unsigned short hi = 66000; // 464 (Got back to zero going up)
 
-//   ^ ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^ ^
+# // signed short cap: 32767
+# short hi = 32000; // 32000
+# short hi = 35000; // -30536 (Got to -32767 going to zero)
 
-//   ^ ^ ^ ^ Global & Static Variables ^ ^ ^ ^
-// Both default value if not initialized : 0
 
-imagine_this_is_out_of_any_function_global = 4;
+# //   ^ ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^ ^
 
-{ // imagine this is void function my_func
+# //   ^ ^ ^ ^ Global & Non-Local Varaibles ^ ^ ^ ^
 
-    // change to cout : printf("global is accessible: %d", imagine_this_is_out_of_any_function_global);    
-    imagine_this_is_out_of_any_function_global = 7; // and mutable //
-    static int my_static = 0; // static variable accessible in my_func
-}  
+# No static variables - only in methods (python also likes run time, probably not as java though :D)
 
-// but even though it's lifetime is the same as the global variable - trying to access the static variable from main - is a compilation error
+    global_relative_to_idented_variables = 1
+    # what now? maybe add an inner function? global and non local keywords?
 
+# { // imagine this is void function my_func
 
-//   ^ ^ ^ ^ Local variables ^ ^ ^ ^
+#     // change to cout : printf("global is accessible: %d", imagine_this_is_out_of_any_function_global);    
+#     imagine_this_is_out_of_any_function_global = 7; // and mutable //
+#     static int my_static = 0; // static variable accessible in my_func
+# }  
 
-int first_level_local = 1;
-int this_wont_be_changed_local = 2;
-{ 
+# // but even though it's lifetime is the same as the global variable - trying to access the static variable from main - is a compilation error
 
-    int second_level_local = 3;
-    int this_wont_be_changed_local = 4;
 
-    {
-        int third_level_local = 5;
-    }
+#   No Block Nesting in python without the control flow tools
 
-}
+# //   ^ ^ ^ ^ ^ Constants ^ ^ ^ ^ ^
 
-first_level_local = 3;
-// second_level_local = 4; -> not possible, it's local to the block
-// this_wont_be_changed_local -> 2, the one with the 4 value was a different variable
+# //   ^ ^ ^ ^ Pre-Processor Macros ^ ^ ^ ^
 
+# //   ^ ^ ^ Defines ^ ^ ^
 
-//   ^ ^ ^ ^ ^ Constants ^ ^ ^ ^ ^
+# #define CRT_SECURE_NO_WARNINGS
+# #define ZERO 0
+# #define PI 3.1415
 
-//   ^ ^ ^ ^ Pre-Processor Macros ^ ^ ^ ^
 
-//   ^ ^ ^ Defines ^ ^ ^
+# //   ^ ^ ^ Enums(Almost pre-processor) ^ ^ ^
 
-#define CRT_SECURE_NO_WARNINGS
-#define ZERO 0
-#define PI 3.1415
+# enum boolean {NO, YES};
+# typedef enum {TRUE = 1, FALSE = 0} Boolean;
 
 
-//   ^ ^ ^ Enums(Almost pre-processor) ^ ^ ^
+# //   ^ ^ ^ ^ Constants: Immutables 
 
-enum boolean {NO, YES};
-typedef enum {TRUE = 1, FALSE = 0} Boolean;
+# //   ^ ^ ^ ConstExpr : Compile Time Immutable ^ ^ ^ 
 
+# //constexpr int static_time_const = 0;
 
-//   ^ ^ ^ ^ Constants: Immutables 
 
-//   ^ ^ ^ ConstExpr : Compile Time Immutable ^ ^ ^ 
+# //   ^ ^ ^ Const : Run Time Immutable ^ ^ ^
 
-//constexpr int static_time_const = 0;
+# const int dynamic_time_const = 1;
 
+# //   ^ ^ Pointer Const ^ ^
 
-//   ^ ^ ^ Const : Run Time Immutable ^ ^ ^
+# int mutable_value = 0;
+# int immutable_value = 1;
+# int immutable_value_and_adress = 2;
 
-const int dynamic_time_const = 1;
+# const int* const_pointer_to_int = &immutable_value;
+# int* const const_pointer_to_int = &mutable_value;
+# const int* const const_pointer_to_int = &immutable_value_and_adress;
 
-//   ^ ^ Pointer Const ^ ^
+# //   ^ ^ Reference Const ^ ^ 
 
-int mutable_value = 0;
-int immutable_value = 1;
-int immutable_value_and_adress = 2;
+# const int& const_ref_to_int = immutable_value;
 
-const int* const_pointer_to_int = &immutable_value;
-int* const const_pointer_to_int = &mutable_value;
-const int* const const_pointer_to_int = &immutable_value_and_adress;
+# //   ^ ^ ^ ^ ^ Pointers ^ ^ ^ ^ ^
 
-//   ^ ^ Reference Const ^ ^ 
+# char* my_char_pointer;
+# int* my_int_pointer;
+# long* my_long_pointer;
+# float* my_float_pointer;
+# double* my_double_pointer;
 
-const int& const_ref_to_int = immutable_value;
+# //   ^ ^ ^ ^ Static Allocation ^ ^ ^ ^
 
-//   ^ ^ ^ ^ ^ Pointers ^ ^ ^ ^ ^
+# my_char_pointer = &my_char;
+# my_int_pointer = &my_int;
+# my_long_pointer = &my_long;
+# my_float_pointer = &my_float;
+# my_double_pointer = &my_double;
 
-char* my_char_pointer;
-int* my_int_pointer;
-long* my_long_pointer;
-float* my_float_pointer;
-double* my_double_pointer;
+# //   ^ ^ ^ ^ Dynamic Allocation ^ ^ ^
 
-//   ^ ^ ^ ^ Static Allocation ^ ^ ^ ^
+# //   ^ ^ ^ Heap Byte Allocation: Malloc ^ ^ ^
 
-my_char_pointer = &my_char;
-my_int_pointer = &my_int;
-my_long_pointer = &my_long;
-my_float_pointer = &my_float;
-my_double_pointer = &my_double;
+# my_char_pointer = new char;
+# my_int_pointer = new int;
+# my_long_pointer = new long;
+# my_float_pointer = new float;
 
-//   ^ ^ ^ ^ Dynamic Allocation ^ ^ ^
+# //   ^ ^ ^ Heap Memory De-Allocation ^ ^ ^
 
-//   ^ ^ ^ Heap Byte Allocation: Malloc ^ ^ ^
+# delete my_char_pointer;
+# delete my_int_pointer;
+# delete my_long_pointer;
+# delete my_float_pointer;
+# delete my_double_pointer;
 
-my_char_pointer = new char;
-my_int_pointer = new int;
-my_long_pointer = new long;
-my_float_pointer = new float;
+# //   ^ ^ ^ ^ Void (Generaic) Pointers ^ ^ ^ ^
 
-//   ^ ^ ^ Heap Memory De-Allocation ^ ^ ^
+# void* my_generic_pointer;
 
-delete my_char_pointer;
-delete my_int_pointer;
-delete my_long_pointer;
-delete my_float_pointer;
-delete my_double_pointer;
+# char* my_generic_pointer_converted_to_char_pointer;
+# int* my_generic_pointer_converted_to_int_pointer;
+# long* my_generic_pointer_converted_to_long_pointer;
+# float* my_generic_pointer_converted_to_float_pointer;
+# double* my_generic_pointer_converted_to_double_pointer;
 
-//   ^ ^ ^ ^ Void (Generaic) Pointers ^ ^ ^ ^
+# my_generic_pointer_converted_to_char_pointer = (char*)my_generic_pointer;
+# my_generic_pointer_converted_to_int_pointer = (int*)my_generic_pointer;
+# my_generic_pointer_converted_to_long_pointer = (long*)my_generic_pointer;
+# my_generic_pointer_converted_to_float_pointer = (float*)my_generic_pointer;
+# my_generic_pointer_converted_to_double_pointer = (double*)my_generic_pointer;
 
-void* my_generic_pointer;
+# //   ^ ^ ^ ^ ^ Data Collections ^ ^ ^ ^ ^
 
-char* my_generic_pointer_converted_to_char_pointer;
-int* my_generic_pointer_converted_to_int_pointer;
-long* my_generic_pointer_converted_to_long_pointer;
-float* my_generic_pointer_converted_to_float_pointer;
-double* my_generic_pointer_converted_to_double_pointer;
+# // strings?
 
-my_generic_pointer_converted_to_char_pointer = (char*)my_generic_pointer;
-my_generic_pointer_converted_to_int_pointer = (int*)my_generic_pointer;
-my_generic_pointer_converted_to_long_pointer = (long*)my_generic_pointer;
-my_generic_pointer_converted_to_float_pointer = (float*)my_generic_pointer;
-my_generic_pointer_converted_to_double_pointer = (double*)my_generic_pointer;
 
-//   ^ ^ ^ ^ ^ Data Collections ^ ^ ^ ^ ^
+# //   ^ ^ ^ ^ ^ References ^ ^ ^ ^ ^
 
-// strings?
+# int& my_reference = mutable_value;
 
+# }
 
-//   ^ ^ ^ ^ ^ References ^ ^ ^ ^ ^
 
-int& my_reference = mutable_value;
 
-}
+# //   ^ ^ ^ ^ ^ Constants ^ ^ ^ ^ ^
 
+# //   ^ ^ ^ ^ Pre-Processor Macros ^ ^ ^ ^
+# //   ^ ^ ^ defines ^ ^ ^
+# // lecture's coverage:
+# //   ^ ^ ^ Enums(Almost pre-processor) ^ ^ ^
+# // lecture's coverage: 
+# /*
+# Example 1: Making a boolean logic
+# enum boolean {NO, YES};
 
+# Example 2: Days without typedef (typing enum more than once)
+# enum Day {SUN = 1, MON, TUE, WED, THU, FRI, SAT};
 
-//   ^ ^ ^ ^ ^ Constants ^ ^ ^ ^ ^
+# int main() 
+# {
 
-//   ^ ^ ^ ^ Pre-Processor Macros ^ ^ ^ ^
-//   ^ ^ ^ defines ^ ^ ^
-// lecture's coverage:
-//   ^ ^ ^ Enums(Almost pre-processor) ^ ^ ^
-// lecture's coverage: 
-/*
-Example 1: Making a boolean logic
-enum boolean {NO, YES};
+# enum Day d1,d2; // the second  enum is here 
+# d1 = SUN;
+# d2 = THU;
 
-Example 2: Days without typedef (typing enum more than once)
-enum Day {SUN = 1, MON, TUE, WED, THU, FRI, SAT};
+# }
 
-int main() 
-{
+# Example 3: Days with typedef (typing enum once)
 
-enum Day d1,d2; // the second  enum is here 
-d1 = SUN;
-d2 = THU;
+# typedef enum {SUN = 1, MON, TUE, WED, THU, FRI, SAT} Day;
 
-}
+# int main() 
+# {
 
-Example 3: Days with typedef (typing enum once)
+# Day d1,d2;
+# d1 = SUN;
+# d2 = THU;
 
-typedef enum {SUN = 1, MON, TUE, WED, THU, FRI, SAT} Day;
+# return 0;
 
-int main() 
-{
+# }
 
-Day d1,d2;
-d1 = SUN;
-d2 = THU;
 
-return 0;
+# */ 
 
-}
+# //   ^ ^ ^ ^ Constants: Immutables 
+# // highlight the difference of const (run time) vs constexpr (compile time)
 
 
-*/ 
+# }
 
-//   ^ ^ ^ ^ Constants: Immutables 
-// highlight the difference of const (run time) vs constexpr (compile time)
 
 
-}
 
 
 
 
 
 
+# //   & & & & & & Flow Control & & & & & &
 
 
+# void fun_flow_control()
+# {
 
-//   & & & & & & Flow Control & & & & & &
 
+# //   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^
+# //   ^ ^ ^ ^ Blocks ^ ^ ^ ^ 
 
-void fun_flow_control()
-{
+# //   ^ ^ ^ ^ ^ Conditional Statements & & & & & &
+# //   ^ ^ ^ ^ If & Else ^ ^ ^ ^ ^
+# // map to the tablet - new skill for relations, building a graph under constraints (number of maximum relation checks on members, like finding the max of 3 numbers(linear relation) in no more than 3 tries)
+# // and also - mapping the control flow diagram - a straight line digram that splits whenever theres a conditional statement:
+# //             - - - - - - - -
+# //    - - - - -| condition 1  | - - - - - (when theres else-if the split is more than two - 3 + )
+# //             - - - - - - - - 
+# // lecture's coverage:
+# /*
 
+# Example one: digit checking
+# int main()
+# {
+# char input;
 
-//   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^
-//   ^ ^ ^ ^ Blocks ^ ^ ^ ^ 
+# printf("digit plz: %c \n", );
 
-//   ^ ^ ^ ^ ^ Conditional Statements & & & & & &
-//   ^ ^ ^ ^ If & Else ^ ^ ^ ^ ^
-// map to the tablet - new skill for relations, building a graph under constraints (number of maximum relation checks on members, like finding the max of 3 numbers(linear relation) in no more than 3 tries)
-// and also - mapping the control flow diagram - a straight line digram that splits whenever theres a conditional statement:
-//             - - - - - - - -
-//    - - - - -| condition 1  | - - - - - (when theres else-if the split is more than two - 3 + )
-//             - - - - - - - - 
-// lecture's coverage:
-/*
+# scanf("%c", &input)
 
-Example one: digit checking
-int main()
-{
-char input;
+# if(input >= '0' %% input <= '9')
+# {
+# printf("yes");
+# }
 
-printf("digit plz: %c \n", );
+# print
 
-scanf("%c", &input)
+# return 0;
+# }
 
-if(input >= '0' %% input <= '9')
-{
-printf("yes");
-}
+# //   ^ ^ ^ ^ Nested Ifs(and If-Else) ^ ^ ^ ^ ^
 
-print
+# Example two: bigger number finding:
+# int main()
+# {
 
-return 0;
-}
+# int n1, n2;
+# printf("2 ints: \n");
+# scanf(" %d %d ", &n1, &n2);
+# print("bigger: \n")
+# if(n1 > n2) printf("n1 \n");
+# else printf("n2 \n");
 
-//   ^ ^ ^ ^ Nested Ifs(and If-Else) ^ ^ ^ ^ ^
+# return 0;
 
-Example two: bigger number finding:
-int main()
-{
+# }
 
-int n1, n2;
-printf("2 ints: \n");
-scanf(" %d %d ", &n1, &n2);
-print("bigger: \n")
-if(n1 > n2) printf("n1 \n");
-else printf("n2 \n");
+# Example three: three digit number checking
 
-return 0;
+# #include <stdio.h>
+# #define LOW_LIMIT 100
+# #define HIGH_LIMIT 999
 
-}
+# int main()
+# {
+# int input;
+# printf("num please");
+# scanf("%d", &input);
+# if(((input >= LOW_LIMIT) && (input <= HIGH_LIMIT)) && (input >= -1*HIGHER_LIMIT) && (input <= -1*LOW_LIMIT))) printf("3 digits");
+# if(input >= 0) printf("positive");
+# else printf("negative");
 
-Example three: three digit number checking
+# return 0;
+# }
 
-#include <stdio.h>
-#define LOW_LIMIT 100
-#define HIGH_LIMIT 999
+# Example four: biggest number out of three
 
-int main()
-{
-int input;
-printf("num please");
-scanf("%d", &input);
-if(((input >= LOW_LIMIT) && (input <= HIGH_LIMIT)) && (input >= -1*HIGHER_LIMIT) && (input <= -1*LOW_LIMIT))) printf("3 digits");
-if(input >= 0) printf("positive");
-else printf("negative");
+# #include <stdio.h>
 
-return 0;
-}
+# int main()
+# {
+# int n1, n2, n3;
+# printf("Enter 3 nums\n");
+# scanf("%d %d %d", &n1, &n2, &n3);
+# printf("biggest");
 
-Example four: biggest number out of three
+# if(n1 > n2)
+# {
+# if(n1 > n3) printf("n1");
+# else printf("n3");
+# }
+# else
+# {
+# if(n2 > n3) printf("n2");
+# else printf("n3")
+# }
 
-#include <stdio.h>
+# return 0;
+# }
 
-int main()
-{
-int n1, n2, n3;
-printf("Enter 3 nums\n");
-scanf("%d %d %d", &n1, &n2, &n3);
-printf("biggest");
 
-if(n1 > n2)
-{
-if(n1 > n3) printf("n1");
-else printf("n3");
-}
-else
-{
-if(n2 > n3) printf("n2");
-else printf("n3")
-}
 
-return 0;
-}
+# //   ^ ^ ^ ^ Switch ^ ^ ^ ^ ^
 
+# Example five: printing one/two/three/four according to the input
 
+# main()
+# {
 
-//   ^ ^ ^ ^ Switch ^ ^ ^ ^ ^
+# int num;
+# printf("num pls")
+# scanf("%d", &num);
+# switch(num)
+# {
+# case 1: printf("one\n"); break;
+# case 2: printf("two\n"); break;
+# case 3: printf("three\n"); break;
+# case 4: printf("four\n"); break;
 
-Example five: printing one/two/three/four according to the input
+# default: printf("another value\n"); break;
 
-main()
-{
+# }
 
-int num;
-printf("num pls")
-scanf("%d", &num);
-switch(num)
-{
-case 1: printf("one\n"); break;
-case 2: printf("two\n"); break;
-case 3: printf("three\n"); break;
-case 4: printf("four\n"); break;
+# return 0;
 
-default: printf("another value\n"); break;
+# }
 
-}
+# Example six: +/-/* calculator
 
-return 0;
+# #include <stdio.h>
+# typedef enum {ADD = 'A', ADD_S = 'a', SUB = 'S', SUB_S = 's',  MUL = 'M', MUL_S = "m"} Operator;
 
-}
+# int main()
+# {
 
-Example six: +/-/* calculator
+# // inputs
 
-#include <stdio.h>
-typedef enum {ADD = 'A', ADD_S = 'a', SUB = 'S', SUB_S = 's',  MUL = 'M', MUL_S = "m"} Operator;
+# printf("two nums\n");
+# scanf("%d %d", &n1, %n2);
+# printf("operator now\n");
 
-int main()
-{
+# switch()
+# // finish this 
 
-// inputs
+# return 0;
+# }
 
-printf("two nums\n");
-scanf("%d %d", &n1, %n2);
-printf("operator now\n");
 
-switch()
-// finish this 
+# //   ^ ^ ^ ^ ^ Loops ^ ^ ^ ^ ^ 
 
-return 0;
-}
+# //   ^ ^ ^ ^ While Loops ^ ^ ^ ^
 
+# //   ^ ^ ^ ^ For Loops ^ ^ ^ ^
+# // list comprehension? (the one line multiple operations) 
 
-//   ^ ^ ^ ^ ^ Loops ^ ^ ^ ^ ^ 
 
-//   ^ ^ ^ ^ While Loops ^ ^ ^ ^
+# //   ^ ^ ^ ^ Empty portions in for loop ^ ^ ^ ^
+# // no init? not condition? no counter?
 
-//   ^ ^ ^ ^ For Loops ^ ^ ^ ^
-// list comprehension? (the one line multiple operations) 
 
+# //   ^ ^ ^ Up-Counter For loops ^ ^ ^
+# Lectures example:
+# 1. Example one: printing hello world with iteration number three times
 
-//   ^ ^ ^ ^ Empty portions in for loop ^ ^ ^ ^
-// no init? not condition? no counter?
+# int main()
+# {
 
+# for(int i = 0; i < 3; ++i) printf("Hello world, Iteration: %d \n", i+1);
 
-//   ^ ^ ^ Up-Counter For loops ^ ^ ^
-Lectures example:
-1. Example one: printing hello world with iteration number three times
+# return 0;
 
-int main()
-{
+# }
 
-for(int i = 0; i < 3; ++i) printf("Hello world, Iteration: %d \n", i+1);
+# 2. Example two: summing number from 10 to 150 through iterations
 
-return 0;
+# int main()
+# {
 
-}
+# for (int i = 10; sum = 0; i <= 150 ; sum += i ; ++i ) {} 
 
-2. Example two: summing number from 10 to 150 through iterations
+# }
 
-int main()
-{
+# 3. Example three: 
 
-for (int i = 10; sum = 0; i <= 150 ; sum += i ; ++i ) {} 
+# //   ^ ^ ^ Halving Counter For loops ^ ^ ^
+# 4. Example four printing the powers of 2 from 32 to 1
+#  int main()
+# {
 
-}
+# printf("The twos power from 32 to 1 are:\n")
+# for (int i = 32; i >= 1 ; i/2) print("%d \n", &d);
 
-3. Example three: 
+# return 0;
 
-//   ^ ^ ^ Halving Counter For loops ^ ^ ^
-4. Example four printing the powers of 2 from 32 to 1
- int main()
-{
+# }
 
-printf("The twos power from 32 to 1 are:\n")
-for (int i = 32; i >= 1 ; i/2) print("%d \n", &d);
+# //   ^ ^ ^ ^ While Loops ^ ^ ^ ^
 
-return 0;
+# Lecture examples
+# 1. Example one inputting a name:
 
-}
+# #include <stdio.h>
 
-//   ^ ^ ^ ^ While Loops ^ ^ ^ ^
+# int main()
+# {
 
-Lecture examples
-1. Example one inputting a name:
+# char input;
+# printf("enter it")
+# scanf("%c", &input)
+# while(input != ' ')
+# {
 
-#include <stdio.h>
+# printf("%c", input);
+# scanf("%c", &input);
 
-int main()
-{
+# }
 
-char input;
-printf("enter it")
-scanf("%c", &input)
-while(input != ' ')
-{
+# return 0;
+# }
 
-printf("%c", input);
-scanf("%c", &input);
+# 1. Example two - average grade calculation:
 
-}
+# int main()
+# {
 
-return 0;
-}
+# int sum = 0, counter = 0, grade; 
+# float average;
+# printf("grade\n")
+# scanf("%d", &grade)
+# while(grade != -1)
+# {
+# sum += grade;
+# ++counter;
+# scanf("%d", &grade)
+# }
 
-1. Example two - average grade calculation:
+# avg = (float)sum / counter;
+# printf("%f\n", avg);
 
-int main()
-{
+# return 0;
 
-int sum = 0, counter = 0, grade; 
-float average;
-printf("grade\n")
-scanf("%d", &grade)
-while(grade != -1)
-{
-sum += grade;
-++counter;
-scanf("%d", &grade)
-}
+# }
 
-avg = (float)sum / counter;
-printf("%f\n", avg);
+# //   ^ ^ ^ Do-While Loops ^ ^ ^
+# Example three - finding the maximum number
 
-return 0;
+# #include 
 
-}
+# int main()
+# {
 
-//   ^ ^ ^ Do-While Loops ^ ^ ^
-Example three - finding the maximum number
+# int num;
+# int max = 0;
+# do
+# {
+# printf("num");
+# scanf("%d", &num);
+# if(num > max) max = num;
+# }
+# while(num != -1);
+# printf("max: %d\n", max);
 
-#include 
+# return 0;
 
-int main()
-{
+# }
+# */
 
-int num;
-int max = 0;
-do
-{
-printf("num");
-scanf("%d", &num);
-if(num > max) max = num;
-}
-while(num != -1);
-printf("max: %d\n", max);
+# //   ^ ^ ^ ^ ^ Functions ^ ^ ^ ^ ^ 
+# // add to tablet: 1. static stack segment layout (building the stack) + dynamic stack segment allocation in function calls (changing the values and releasing the layout parts) 
+# // Lecture's coverage:
+# /*
+# 1. Example one:
+# */
 
-return 0;
+# //   ^ ^ ^ ^ Function prototyping ^ ^ ^ ^
+# // comp time definition? ( adding the "-> type")
+# // Lecture's coverage: 
+# /*
+# 1. Example one : powered numbers
 
-}
-*/
+# #include <stdio.h>
 
-//   ^ ^ ^ ^ ^ Functions ^ ^ ^ ^ ^ 
-// add to tablet: 1. static stack segment layout (building the stack) + dynamic stack segment allocation in function calls (changing the values and releasing the layout parts) 
-// Lecture's coverage:
-/*
-1. Example one:
-*/
+# int power(int, int);
 
-//   ^ ^ ^ ^ Function prototyping ^ ^ ^ ^
-// comp time definition? ( adding the "-> type")
-// Lecture's coverage: 
-/*
-1. Example one : powered numbers
+# int main()
+# {
 
-#include <stdio.h>
+# int n = 5;
+# int r1 = power(2, n);
+# int r2 = power(3, n);
 
-int power(int, int);
+# printf("results %d %d\n", r1, r2);
 
-int main()
-{
+# return 0;
 
-int n = 5;
-int r1 = power(2, n);
-int r2 = power(3, n);
+# }
 
-printf("results %d %d\n", r1, r2);
+# int power(int base, int exp)
+# {
 
-return 0;
+# int pow_num = base;
 
-}
+# for(int i = 1; i <= exp; ++i) pow_num = pow_num *= base;
 
-int power(int base, int exp)
-{
+# return pow_num;
 
-int pow_num = base;
+# }
 
-for(int i = 1; i <= exp; ++i) pow_num = pow_num *= base;
+# Example two: printing stars
+# #include <stdio.h>
 
-return pow_num;
+# void print_stars(int, int)
 
-}
+# int main()
+# {
 
-Example two: printing stars
-#include <stdio.h>
+# int len, wid;
+# printf("%d %d\n", len, wid);
+# scanf("%d %d", &wid, &len);
+# print_stars();
+# return 0;
 
-void print_stars(int, int)
+# }
 
-int main()
-{
+# void print_stars(int w, int l)
+# {
 
-int len, wid;
-printf("%d %d\n", len, wid);
-scanf("%d %d", &wid, &len);
-print_stars();
-return 0;
+# for(int i=0; i < l; ++i) {
 
-}
+# for(int j=0; j < w; ++j) printf("*");
+# printf("\n");
 
-void print_stars(int w, int l)
-{
+# }
 
-for(int i=0; i < l; ++i) {
+# return;
 
-for(int j=0; j < w; ++j) printf("*");
-printf("\n");
+# }
 
-}
+# 3. Example Three: summing two numbers
 
-return;
+# #include <stdio.h>
 
-}
+# sum_two(int, int);
 
-3. Example Three: summing two numbers
+# main
+# {
 
-#include <stdio.h>
+# int n1 = 3, n2 = 4, adding;
+# adding = sum_two(n1, n2);
+# return 0;
 
-sum_two(int, int);
+# }
 
-main
-{
 
-int n1 = 3, n2 = 4, adding;
-adding = sum_two(n1, n2);
-return 0;
+# sum_two (int d1, int d2)
+# {
 
-}
+# int sum = d1 + d2;
+# return sum;
 
+# }
 
-sum_two (int d1, int d2)
-{
+# 4. Example four: multiplying function
 
-int sum = d1 + d2;
-return sum;
+# #include <stdio.h>
 
-}
+# int multiply(int, int);
 
-4. Example four: multiplying function
+# int main()
+# {
 
-#include <stdio.h>
+# int n1 = 2, int n2 = 3;
+# print("%d", multiply(n1, n2));
+# int n1 = 3, int n2 = 4;
+# print("%d", multiply(n1, n2));
 
-int multiply(int, int);
+# return 0;
 
-int main()
-{
+# }
 
-int n1 = 2, int n2 = 3;
-print("%d", multiply(n1, n2));
-int n1 = 3, int n2 = 4;
-print("%d", multiply(n1, n2));
+# int multiply(int f, int s)
+# return f*s;
 
-return 0;
+# 5. Example five:  
+# #include <stdio.h>
 
-}
 
-int multiply(int f, int s)
-return f*s;
 
-5. Example five:  
-#include <stdio.h>
 
+# */
 
+# // anon function
 
+# // function nesting
 
-*/
+# //   ^ ^ ^ ^ Recursive Functions ^ ^ ^ ^
 
-// anon function
+# //inlining functions
 
-// function nesting
+# //   ^ ^ ^ ^ ^ Function Overloading
 
-//   ^ ^ ^ ^ Recursive Functions ^ ^ ^ ^
 
-//inlining functions
+# }
 
-//   ^ ^ ^ ^ ^ Function Overloading
 
 
-}
+# //   & & & & & & Structs & & & & & &
 
+# //   & & & & & & Classes & & & & & &
 
 
-//   & & & & & & Structs & & & & & &
+# /*   < < < < < < < <   Design Principles   > > > > > > > >   */
 
-//   & & & & & & Classes & & & & & &
+# //   & & & & & & Procedural Design & & & & & &  
 
-
-/*   < < < < < < < <   Design Principles   > > > > > > > >   */
-
-//   & & & & & & Procedural Design & & & & & &  
-
-//   ^ ^ ^ ^ ^ Procedures: Implemented as Functions ^ ^ ^ ^ ^
-//   ^ ^ ^ ^ ^ Sequence/Execution control: Control Flow section's tools (if,else-if, for etc...) ^ ^ ^ ^ ^
-//   ^ ^ ^ ^ ^ Scope Modularity(?): Each function variable has a local scope ^ ^ ^ ^ ^ 
-//   ^ ^ ^ ^ ^ Single Responsibility Modularity: one function takes care of one functional requirement ^ ^ ^ ^ ^
-//   ^ ^ ^ ^ ^ Message Passing: Function invocation ^ ^ ^ ^ ^
-//   ^ ^ ^ ^ ^ Abstraction: each function invocation is a black box ^ ^ ^ ^ ^
-//   ^ ^ ^ ^ ^ Supports TDD: using the function, and then impementing
+# //   ^ ^ ^ ^ ^ Procedures: Implemented as Functions ^ ^ ^ ^ ^
+# //   ^ ^ ^ ^ ^ Sequence/Execution control: Control Flow section's tools (if,else-if, for etc...) ^ ^ ^ ^ ^
+# //   ^ ^ ^ ^ ^ Scope Modularity(?): Each function variable has a local scope ^ ^ ^ ^ ^ 
+# //   ^ ^ ^ ^ ^ Single Responsibility Modularity: one function takes care of one functional requirement ^ ^ ^ ^ ^
+# //   ^ ^ ^ ^ ^ Message Passing: Function invocation ^ ^ ^ ^ ^
+# //   ^ ^ ^ ^ ^ Abstraction: each function invocation is a black box ^ ^ ^ ^ ^
+# //   ^ ^ ^ ^ ^ Supports TDD: using the function, and then impementing
 
 
 
@@ -994,7 +980,7 @@ def composed_function(composing, composed, value):
 
 # maybe take a litlle bit of this for mapping pipelining?
 
-""" More Mapping needed:
+""" # More Mapping needed:
 
 def iterative_fibonacci(number_of_cell_in_the_sequence):
     previous, current = 0, 1
@@ -1092,6 +1078,131 @@ def black_box_summing():
 
     print("The fifth cell in the fibonacci series is:", iterative_fibonacci(5))
     black_box_summing()
+
+
+"""
+Lecture 1:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lecture 2:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lecture 3:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 """

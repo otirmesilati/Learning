@@ -175,7 +175,7 @@ function fun_variables() {
 
   // but even though it's lifetime is the same as the global variable - trying to access the static variable from main - is a compilation error
 
-  //   ^ ^ ^ ^ Local variables ^ ^ ^ ^
+  //   ^ ^ ^ ^ Local variables & Block Nesting ^ ^ ^ ^
 
   //int first_level_local = 1;
   //int this_wont_be_changed_local = 2;

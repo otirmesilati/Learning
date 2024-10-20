@@ -59,6 +59,24 @@ package manager?
 
 
 
+& & & & & & HyperVisors - Supervisors of Kernels & & & & & &
+
+^ ^ ^ ^ ^ Virtual-Box ^ ^ ^ ^ ^
+
+
+^ ^ ^ ^ ^ Virt-Manager (built on top of KVM/QEMU..) ^ ^ ^ ^ ^
+
+
+^ ^ ^ ^ ^ Docker-Desktop ^ ^ ^ ^ ^
+
+
+
+
+
+
+
+
+
 & & & & & & & Editors & & & & & &
 
 ^ ^ ^ ^ ^ NotePad ^ ^ ^ ^ ^
@@ -118,13 +136,6 @@ project: -> file -> new -> java project
 class: -> file -> new -> class
 
 
-
-
-
-
-
-
-
 ^ ^ ^ ^ ^ Pycharm ^ ^ ^ ^ ^
 
 ^ ^ ^ ^ IDE GUI elements ^ ^ ^ ^
@@ -149,22 +160,10 @@ project: -> file -> new -> java project
 class: -> file -> new -> class
 
 
-
-
-
-
-
-
-
 cad
+
+
 packettracer
-
-
-
-
-
-
-
 
 
 dev tools (ctrl shft c) (dock: 3 dots in upper menu -> dock)
@@ -173,14 +172,10 @@ click on a request -> see more information of request (header, prewview...)
 filter -> by types
 
 
+browsers? 
 
 
-
-
-
-
-
-browsers? clis?
+clis?
 
 
 

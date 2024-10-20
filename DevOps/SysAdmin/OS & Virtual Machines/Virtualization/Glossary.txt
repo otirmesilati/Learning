@@ -1,0 +1,32 @@
+< < < < < < < < Virtualized Orchestration > > > > > > > >
+
+
+
+
+
+
+
+
+
+< < < < < < < < HyperVisors > > > > > > > >
+
+- virtmanager vs virtualbox - ones a complete system, and the othe just a gui?
+
+
+
+
+
+
+
+
+
+< < < < < < < < Containerized Virtualization > > > > > > > >
+
+
+
+
+
+
+
+
+

@@ -339,7 +339,7 @@ short s_short = (short)33000; // -30536 (Got to -32767 going to zero)
 
 // No Globals and no regular Static variables! only in methods (java likes run-time :D)
 
-// //   ^ ^ ^ ^ Local variables ^ ^ ^ ^
+// //   ^ ^ ^ ^ Local variables & Block Nesting ^ ^ ^ ^
 
 int first_level_local = 1;
 int this_wont_be_changed_local = 2;
