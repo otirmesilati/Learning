@@ -1,6 +1,23 @@
-
-
-
+episode 5: introduction to layer 2 mega portion
+episode 6: some basic Layer 2 commands (ping, arp)
+episode 7: add only routing, important terms if there are, and skip to quetions about routing
+episode 8: same and add the important IOS terms 
+episode 9: intro to switch interfaces
+episode 10: more on packet structure and ipv4 header
+episode 11: intro to routing and static routing
+episode 12: packet flow until now
+episode 13: more subnetting
+episode 14: more subnetting 
+episode 15: more subnetting 
+episode 16: LAN, VLAN, and broadcast domains
+episode 17: Trunking, native VLAN, router on a stick
+episode 18: multi layer switch, inter VLAN routing
+episode 19: dynamic trunking protocol vs VLAN trunking protocol
+episode 20: network design points of failure, broadcast storms, into to spanning tree protocol 
+episode 21: STP states, timers, BPDUs, into to portfast, it's loop problems and a bit on bpdu guard, a bit on it's load balancing
+episode 22: rapid STP, comparison with STP, alternative port role, uplinkfast, backbonefast, and backup port, 
+episode 23: intro to etherchannel, it's load balancing, link and port aggregation, 
+episode 24: dynamic routing,   
 
 
 

@@ -1,3 +1,11 @@
+Map from the following:
+1. Michael Horn's starter: https://www.youtube.com/watch?v=t-23HOKMer0
+2. Nana's completing Virtualization concept: https://www.youtube.com/watch?v=mQP0wqNT_DI
+3. Nana's Docker tutorial: https://www.youtube.com/watch?v=pg19Z8LL06w
+4. Another, more easy docker tutorial: https://www.youtube.com/watch?v=b0HMimUb4f0
+5. Nana's short kubernetes introduction video: https://www.youtube.com/watch?v=s_o8dwzRlu4&t=104s
+6. Nana's longkubernetes introduction video: https://www.youtube.com/watch?v=X48VuDVv0do
+
 < < < < < < < < Virtualized Orchestration > > > > > > > >
 
 

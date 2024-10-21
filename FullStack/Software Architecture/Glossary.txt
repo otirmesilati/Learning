@@ -1,3 +1,23 @@
+< < < < < < < < Dependencies > > > > > > > >
+
+% % % % % % % Static Libraries % % % % % % %
+
+
+
+
+
+
+
+
+
+% % % % % % % Shared Library % % % % % % %
+
+
+
+
+
+
+
 
 
 
