@@ -6,6 +6,50 @@ Map from the following:
 5. Nana's short kubernetes introduction video: https://www.youtube.com/watch?v=s_o8dwzRlu4&t=104s
 6. Nana's longkubernetes introduction video: https://www.youtube.com/watch?v=X48VuDVv0do
 
+Nana's Virtualization:
+
+1.
+2.
+3.
+4.
+
+
+Nana's Docker tutorial:
+
+1. 00:00 - intro to docker
+2. 03:55 - dev & dep: local configurations vs containerazation infrastructure
+3. 11:40 - docker vs VMs, layering, size-speed-comp 
+4. 21:36 - docker images vs containers  
+5. 26:33 - docker registry, dockerhub, image versioning
+6. 32:00 - basic docker commands
+7. 
+8. 
+9. 
+10.
+11.
+12.
+
+
+
+Nana's Kubernetes introduction:
+
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+
+
+
 < < < < < < < < Virtualized Orchestration > > > > > > > >
 
 

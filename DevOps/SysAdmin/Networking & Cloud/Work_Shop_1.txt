@@ -21,14 +21,16 @@ episode 24: dynamic routing, types, RIPV and IGRP(distance vector routing protoc
 episode 25: RIP(RIPv1 and 2) and EGRIP
 episode 26: intro to OSPF, ospfv2, LSA flooding, OSPF areas,  
 episode 27: OSPF metric/cost, OSPF neighbors(init/down/2 way/exstart/loading/full state)   
-episode 28: 
-episode 29: 
-episode 30: 
-episode 31: 
-episode 32: 
-episode 33: 
+episode 28: OSPF network types, adjacency requirements, LSA types(router/network/AS external), loopback interfaces, broadcast network/point-2-point types
+episode 29: F(irst)H(op)R(redundancy)P(rotocols), H(ot)S(tandby)RP, V(irtual)R(outer)RP, G(ateway)L(oad)BP, 
+episode 30: into to TCP and UDP, L4 functionality(data transperency, reliability, error recovery, data sequencing, flow control), session Muxing, 3/4 handshakes 
+episode 31: ipv6 fundementals, abbreviaton
+episode 32: adress types, global unicast address, unique local, link local, multicast address, anycast address
+episode 33: N(eighbor)D(iscovery)P(rotocol) - NS & NA, SLAAC(Stateless address auto configuration), ipv6 static routing, R(equest)F(or)C(omments),  
 episode 34: 
-
+episode 35: 
+episode 36: 
+episode 37: 
 
 
 
