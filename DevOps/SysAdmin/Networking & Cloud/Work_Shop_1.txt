@@ -17,7 +17,17 @@ episode 20: network design points of failure, broadcast storms, into to spanning
 episode 21: STP states, timers, BPDUs, into to portfast, it's loop problems and a bit on bpdu guard, a bit on it's load balancing
 episode 22: rapid STP, comparison with STP, alternative port role, uplinkfast, backbonefast, and backup port, 
 episode 23: intro to etherchannel, it's load balancing, link and port aggregation, 
-episode 24: dynamic routing,   
+episode 24: dynamic routing, types, RIPV and IGRP(distance vector routing protocols), Link state protocol, metrics, ECMP
+episode 25: RIP(RIPv1 and 2) and EGRIP
+episode 26: intro to OSPF, ospfv2, LSA flooding, OSPF areas,  
+episode 27: OSPF metric/cost, OSPF neighbors(init/down/2 way/exstart/loading/full state)   
+episode 28: 
+episode 29: 
+episode 30: 
+episode 31: 
+episode 32: 
+episode 33: 
+episode 34: 
 
 
 
