@@ -10,5 +10,5 @@ Map from the following:
 9. Net Ninja's Bootstrap Tutorial: https://www.youtube.com/watch?v=O_9u1P5YjVc&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR
 10. Net Ninja's Taildwind playlist: https://www.youtube.com/watch?v=bxmDnn7lrnk&list=PL4cUxeGkcC9gpXORlEHjc5bgnIi5HEGhw
 11. Eliav Menache's Web course: https://www.youtube.com/watch?v=yXAkWZXyQ9Y&list=PLFeIOEkqiA9J6K4GHtlkAeCy2uUzZBfqh&index=2 
-
+wordpress?
 

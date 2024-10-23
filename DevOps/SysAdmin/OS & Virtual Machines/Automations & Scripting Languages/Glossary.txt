@@ -8,3 +8,24 @@ Map from the following:
 5. Playwright playlist: https://www.youtube.com/watch?v=4_m3HsaNwOE&list=PLhW3qG5bs-L9sJKoT1LC5grGT77sfW0Z8
 6. Appium Tutorial: https://www.youtube.com/watch?v=tzpjaPU0rlQ&list=PLN9RL2PyZc19aq95VjhXzeUmuU4-6N6Qf
 7. Cypress crash vid: https://www.youtube.com/watch?v=u8vMu7viCm8&t=244s
+
+At the point's intro:
+
+1.3. Automation role, tools pipelines test solutions visualization & monitoring, QA 
+1.4. python syntax 1, git terms
+2.1. pytest, packmans + commands, libraries, pycharm console
+2.2. testing (unit test, ins and outs), checks
+2.3. TDD (test_ files, features, scenario, gherkin), test functions, assert, 
+2.4. no TDD problems, TDD pluses and positive/neg tests, exploring, syntax 2
+3.1.
+3.2.
+3.3.
+3.4.
+4.1.
+4.2.
+5.1.
+5.2.
+5.3.
+5.4.
+6.1.
+6.2.

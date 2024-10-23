@@ -1116,6 +1116,10 @@ JComboBox myComboBox = new JComboBox<>();
 
 JList myJList = new JList<>();
 
+//   ^ ^ ^ ^ ^ Counter ^ ^ ^ ^ ^
+
+JSpinner mySpinner = new JSpinner();
+
 }
 
 
@@ -1123,16 +1127,8 @@ JList myJList = new JList<>();
 
          
 
-//         //   ^ ^ Text Spaces: JSpinner - added up/down arrow buttons ^ ^
-//         JSpinner mySpinner = new JSpinner();
 
-//         //   ^ ^ Bars : JProgressBar ^ ^ - ? //
-        
-//         //   ^ ^ Bars : JSlider ^ ^ - ? //
 
-//         //   ^ ^ DropDowns : JList ^ ^ - Classic dropdown //
-
-//         //   ^ ^ ^ Components : Boxes ^ ^ ^
 
 //         //   ^ ^ ^ ^ java specific(?): callbacking GUI ^ ^ ^ ^
     
