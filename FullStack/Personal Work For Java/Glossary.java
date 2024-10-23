@@ -1054,8 +1054,10 @@ int switch_key = 2;
 // https://examples.javacodegeeks.com/java-swing-layouts-example/
 // https://web.mit.edu/6.005/www/sp14/psets/ps4/java-6-tutorial/components.html
 
-//         // C GUI: https://www.wxwidgets.org/
-//         // Python GUI: https://docs.python.org/3/library/tkinter.html
+// C GUI: https://www.wxwidgets.org/
+// Python GUI: https://docs.python.org/3/library/tkinter.html
+
+// layouts visually : https://docs.oracle.com/javase/tutorial/uiswing/layout/visual.html
 
 
 
@@ -1075,21 +1077,27 @@ public void guiElements()
 JFrame myJFrame = new JFrame(); 
 JDialog myJDialog = new JDialog(); // Alert window
 
+//   ^ ^ ^ ^ ^ GUI window dependencies ^ ^ ^ ^ ^
+
+// this.pack(); --> compacting
+// this.setDefaultCloseOperation(TestJComboBox.EXIT_ON_CLOSE); ---> pressing X closes
+// this.setVisible(true); ---> enables to see the window
+
 //   ^ ^ ^ ^ ^ Panel Panes ^ ^ ^ ^ ^
 
 JPanel myJPanel = new JPanel();
 
 //   ^ ^ ^ ^ ^ Panel Layouts ^ ^ ^ ^ ^
 
-// FlowLayout
-// BorderLayout        
-// Box
-// CardLayou
-// Gridayout
-// GridBagLayout
-// Group
-// Overlay
-// Spring
+// FlowLayout - default
+// BorderLayout  - compass tiling
+// Box - vertically or horizontal tiling
+// CardLayout - cards, only one is visble at a time
+// Gridayout - rectangle tiling
+// GridBagLayout - box + baseline tiling
+// Group - groups to position tiling
+// Overlay - ?
+// Spring - children containers dependency tiling
 
 //   ^ ^ ^ ^ ^ Menu ^ ^ ^ ^ ^
 
@@ -1124,24 +1132,8 @@ JSpinner mySpinner = new JSpinner();
 
 
 
-
-         
-
-
-
-
-//         //   ^ ^ ^ ^ java specific(?): callbacking GUI ^ ^ ^ ^
     
-//     /*   & & & & & & GUI dependencies & & & & & */
-
-//     // want to see the window? - setVisible to true //
-//     // Want to see the window close? - dispose on close invoking //
-
-//     // this next part will be about regular GUI use vs defining manually the use through overriding //
-//     //   ^ ^ ^ ^ ^ Java Specific: Encapsulating elements logic ^ ^ ^ ^ ^
-//     // Main question is this: (finish this)
-    
-//     //   ^ ^ ^ ^ ^ Scopes ^ ^ ^ ^ ^ //
+//     where to mape this? scopes: //
 //     // is this class static or not? (getting a "free" pointer as this/self) //
 //     // is this class inheriting? maybe a friend class? //
 //     // interfaces for behaviour? //
