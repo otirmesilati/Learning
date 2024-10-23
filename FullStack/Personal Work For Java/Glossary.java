@@ -1051,7 +1051,7 @@ int switch_key = 2;
 
 
 //   < < < < < < < <  GUI Tools   > > > > > > > >   
-
+//         // https://examples.javacodegeeks.com/java-swing-layouts-example/
 
 
 
@@ -1065,6 +1065,26 @@ public void guiElements()
 
 //   & & & & & & GUI Components & & & & & &
 
+//   ^ ^ ^ ^ ^ JFrame ^ ^ ^ ^ ^
+
+JFrame myJFrame = new JFrame();
+
+//   ^ ^ ^ ^ ^ Panel Panes ^ ^ ^ ^ ^
+
+//   ^ ^ ^ ^ ^ Layouts ^ ^ ^ ^ ^
+
+// FlowLayout
+// BorderLayout        
+// Box
+// CardLayou
+// Gridayout
+// GridBagLayout
+// Group
+// Overlay
+// Spring
+
+
+
 // panes -> layouts -> ?
 
 }
@@ -1072,29 +1092,18 @@ public void guiElements()
 
 
 
-//         //   ^ ^ ^ ^ ^ java.swing ^ ^ ^ ^ ^
 
-//         //   ^ ^ ^ ^ Panels ^ ^ ^ ^
+
+
 //         JPanel myJPanel = new JPanel();
 
-//         // https://examples.javacodegeeks.com/java-swing-layouts-example/
 
-//         //   ^ ^ ^ ^ Layouts ^ ^ ^ ^
+
+
         
-//         // FlowLayout
 
-//         // BorderLayout
-        
-//         // Box
-//         // CardLayou
-//         // Gridayout
-//         // GridBagLayout
-//         // Group
-//         // Overlay
-//         // Spring
 
-//         //   ^ ^ ^ ^ Windows ^ ^ ^ ^
-//         JFrame myJFrame = new JFrame(); // Main window
+//          // Main window
 //         JDialog myJDialog = new JDialog(); // sub-window, of a JFrame usually, classicaly meant for alerts
 
 //         //   ^ ^ ^ ^ Components (Window Elements) ^ ^ ^ ^
