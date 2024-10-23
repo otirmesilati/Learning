@@ -1,3 +1,11 @@
+Map from the following:
+1. Jeremy's It Lab (episodes to continue from down below)
+2. WireShark intro: https://www.youtube.com/watch?v=a_4MjV_-7Sw&t=2618s
+3. Wireshark Playlist: https://www.youtube.com/watch?v=byL8VMEMC0M&list=PL_o0Qzu-8MKhg6co37kssx6lRdQ4o1YpX
+
+
+
+
 episode 5: introduction to layer 2 mega portion
 episode 6: some basic Layer 2 commands (ping, arp)
 episode 7: add only routing, important terms if there are, and skip to quetions about routing

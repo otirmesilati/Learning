@@ -8,13 +8,13 @@ Map from the following:
 
 Nana's Virtualization:
 
-1.
-2.
-3.
-4.
+1. 0:50 - intro to VM
+2. 4:43 - Usage of hypervisors
+3. 6:46 - Type 1 and Type 2 hypervisors
+4. 11:30 - Comaines going the Virtualization road
 
 
-Nana's Docker tutorial:
+Nana's Docker/Containeriazation tutorial:
 
 1. 00:00 - intro to docker
 2. 03:55 - dev & dep: local configurations vs containerazation infrastructure
@@ -22,31 +22,44 @@ Nana's Docker tutorial:
 4. 21:36 - docker images vs containers  
 5. 26:33 - docker registry, dockerhub, image versioning
 6. 32:00 - basic docker commands
-7. 
-8. 
-9. 
-10.
-11.
-12.
+7. 34:13 - Image running commands 
+8. 39:05 - Port Binding, and process life cycling containers
+9. 46:53 - Private Docker registry, and registry vs repo
+10. 49:08 - Creating custom images - dockerizing apps (dockerfiles)
+11. 1:02:37 - Docker UI client
+12. 1:03:40 - Docker in SDLC
 
 
 
 Nana's Kubernetes introduction:
 
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
-10.
-11.
-12.
-13.
-14.
+1. 2:17 - Intro to k8, purpose and advantages
+2. 5:20 - K8 components, Node and Pod, Service, Volumes, Cluster, 
+3. 22:28 - K8 Architecture, Node process, Master process
+4. 34:44 - Minikube & kubectl, Production cluster setup, Local cluster setup, 
+5. 44:51 - KubeCTL commands(CRUD, status checking, debugging) 
+6. 1:02:03 - YAML config files, metadata, specs, and status parts, 
+7. 
+8. 
+9. 
+10. 
+11. 
+12. 
+13. 
+14. 
+15. 
+16. 
+17. 
+18. 
+19. 
+20. 
+21. 
+22. 
+23. 
+24. 
+25. 
+26. 
+27. 
 
 
 

@@ -1,0 +1,14 @@
+Map from the following:
+1. Mosh's HTML+CSS+JS intro: https://www.youtube.com/watch?v=qz0aGYrrlhU&t=386s
+2. Nana's JS course: https://www.youtube.com/watch?v=FtaQSdrl7YA&t=1s
+3. Comprehensive CSS course: https://www.youtube.com/watch?v=OXGznpKZ_sA&t=330s
+4. Mosh's React intro: https://www.youtube.com/watch?v=SqcY0GlETPk 
+5. Angular comprehensive project: https://www.youtube.com/watch?v=SqcY0GlETPk
+6. Net Ninja's Vue playlist: https://www.youtube.com/watch?v=YrxBCBibVo0&list=PL4cUxeGkcC9hYYGbV60Vq3IXYNfDk8At1
+7. Vite intro: https://www.youtube.com/watch?v=VAeRhmpcWEQ&t=63s 
+8. Net Ninja's Sass Tutorial: https://www.youtube.com/watch?v=_kqN4hl9bGc&list=PL4cUxeGkcC9jxJX7vojNVK-o8ubDZEcNb
+9. Net Ninja's Bootstrap Tutorial: https://www.youtube.com/watch?v=O_9u1P5YjVc&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR
+10. Net Ninja's Taildwind playlist: https://www.youtube.com/watch?v=bxmDnn7lrnk&list=PL4cUxeGkcC9gpXORlEHjc5bgnIi5HEGhw
+11. Eliav Menache's Web course: https://www.youtube.com/watch?v=yXAkWZXyQ9Y&list=PLFeIOEkqiA9J6K4GHtlkAeCy2uUzZBfqh&index=2 
+
+

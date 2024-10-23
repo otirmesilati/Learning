@@ -1,3 +1,21 @@
+map to nvim portion, difference between tree sitter and LSP:
+-------------
+LSP is a protocol while tree-sitter is a parsing tool and library. LSP is a protocol developed by Microsoft for IDEs to communicate with a separate process 
+to provide annotations and insight into source code. Practically, tree-sitter is usually used for syntax highlighting, 
+while servers implementing LSP are used for compilation errors, warnings, jump to definition, linter warnings, symbol highlighting, etc etc etc.
+
+
+	
+leephillips on March 13, 2022
+
+Tree-sitter works like a syntax highlighting plugin, and doesnt require communication with an external process. Its like syntax highlighting but 
+with a deeper understanding of the programming language, not based just on regular expressions. So not only is the highlighting better,
+but you can do more things, such as selecting blocks or jumping among them. One of my favorite goodies is being able to ask the editor what 
+function my cursor is inside.
+--------------
+
+
+
 nvim video list?
 
 
