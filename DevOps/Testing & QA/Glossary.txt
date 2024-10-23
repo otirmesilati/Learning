@@ -1,0 +1,31 @@
+Map from the following: 
+
+1. QA comprehensive playlist: https://www.youtube.com/watch?v=v3Qxf1PG0fo&list=PLfw_nI4u_6WM8200HlderALoIYKpSa4W6&index=1
+2. Testing comprehensive intro: https://www.youtube.com/watch?v=sO8eGL6SFsA
+3. GTest & GMock video: https://www.youtube.com/watch?v=JJqRlSTQlh4
+4. JUnit Video: https://www.youtube.com/watch?v=vZm0lHciFsQ
+5. JUnit tutorial: https://www.youtube.com/watch?v=S0kChxadbSE&list=PLEiEAq2VkUUIRbjl0r1s2397CWs8UIhKU
+6. Jest crash vid: https://www.youtube.com/watch?v=IPiUDhwnZxA&t=45s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+OCaml Testing?
+
+Python Testing:
+
+1. Pytest
+
+Java Testing:
+
+1. Junit

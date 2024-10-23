@@ -1,0 +1,10 @@
+engineering 101 course? where stopped in the devops lectures?
+
+Map from the following:
+1. at the point's intro to python scripting: https://www.youtube.com/@qaatthepointcarloskidman8382
+2. part 2, more scripting: https://www.youtube.com/watch?v=tGzyAoVU1Ks&list=PLelD030IW7swU6n75wOIeCC9hqKipub_w
+3. selenium python-based tool, pylenium intro: https://www.youtube.com/watch?v=li1nc4SUojo&list=PLelD030IW7szbnSuyBWwjfV3XJB1CMbin
+4. playwright intro: https://www.youtube.com/watch?v=wGr5rz8WGCE&t=362s
+5. Playwright playlist: https://www.youtube.com/watch?v=4_m3HsaNwOE&list=PLhW3qG5bs-L9sJKoT1LC5grGT77sfW0Z8
+6. Appium Tutorial: https://www.youtube.com/watch?v=tzpjaPU0rlQ&list=PLN9RL2PyZc19aq95VjhXzeUmuU4-6N6Qf
+7. Cypress crash vid: https://www.youtube.com/watch?v=u8vMu7viCm8&t=244s

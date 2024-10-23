@@ -25,7 +25,8 @@
 
 // //   & & & & & & Libraries & & & & & &   //
 import java.util.*; // have the header included once at maximum
-
+import javax.swing.*; // GUI widget toolkit library
+import java.awt.*;  // lightweight library built upon swing 
 
 
 
@@ -75,7 +76,7 @@ are available */
 
 //   ^ ^ ^ ^ ^ Expressions - must have lvalue! ^ ^ ^ ^ ^ //
 
-void fun_literals(){ 
+public void fun_literals(){ 
 
 
 //   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
@@ -127,7 +128,7 @@ double d_2 = 1e-3;
 
 
 
-void fun_string_formats(){
+public void fun_string_formats(){
 
 int number = 1;
 double dvalue = 2.344444;
@@ -177,7 +178,7 @@ my_str_frmt = String.format("%f", 2.3f);
 // which operations are available? one what types? categories : numbers, string operators...
 
 
-void fun_operators()
+public void fun_operators()
 {
 int first_check, second_check;
 int first_multi_assign, second_multi_assign;
@@ -311,7 +312,7 @@ first_check = ++second_check; // first_check = second_check = 3
 //   & & & & & & Variables & & & & & &
 
 
-void fun_variables()
+public void fun_variables()
 {
 
 byte my_byte;
@@ -415,7 +416,7 @@ final Object my_obj; // can't change the value when passing my_obj
 //   & & & & & & Flow Control & & & & & &
 
 
-void fun_flow_control()
+public void fun_flow_control()
 { // wait - does java have labels?
 
 int condition = 1;
@@ -1059,18 +1060,17 @@ int switch_key = 2;
 
 
 
-// import javax.swing.*;
+public void guiElements()
+{
 
-// public class Work_Shop_1 {
+//   & & & & & & GUI Components & & & & & &
 
-//     public class GUIElements
-//     {
-//         /*   & & & & & & Libraries & & & & &
-//          java.awt - GUI tools library, platform dependent
-//          java swing - built upon awt
-//          */
+// panes -> layouts -> ?
 
-//         //   & & & & & & Elements & & & & & &
+}
+
+
+
 
 //         //   ^ ^ ^ ^ ^ java.swing ^ ^ ^ ^ ^
 
