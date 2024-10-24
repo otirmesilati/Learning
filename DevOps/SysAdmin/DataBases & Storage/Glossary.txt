@@ -1,3 +1,12 @@
+nonrelational - mongodb? elastic search? redis? casandra? mongoosedb? 
+
+Map from the following:
+1. Mike's SQL CRUD famous tutorial: https://www.youtube.com/watch?v=HXV3zeQKqGY&t=7579s
+2. CodeAcademy's LINQ tutorial: https://www.youtube.com/watch?v=5l2qA3Pc83M
+3. 
+4. 
+5. 
+
 < < < < < < < < DataBases > > > > > > > >
 
 
