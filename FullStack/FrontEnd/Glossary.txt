@@ -1,14 +1,156 @@
 Map from the following:
 1. Mosh's HTML+CSS+JS intro: https://www.youtube.com/watch?v=qz0aGYrrlhU&t=386s
 2. Nana's JS course: https://www.youtube.com/watch?v=FtaQSdrl7YA&t=1s
-3. Comprehensive CSS course: https://www.youtube.com/watch?v=OXGznpKZ_sA&t=330s
-4. Mosh's React intro: https://www.youtube.com/watch?v=SqcY0GlETPk 
-5. Angular comprehensive project: https://www.youtube.com/watch?v=SqcY0GlETPk
-6. Net Ninja's Vue playlist: https://www.youtube.com/watch?v=YrxBCBibVo0&list=PL4cUxeGkcC9hYYGbV60Vq3IXYNfDk8At1
-7. Vite intro: https://www.youtube.com/watch?v=VAeRhmpcWEQ&t=63s 
-8. Net Ninja's Sass Tutorial: https://www.youtube.com/watch?v=_kqN4hl9bGc&list=PL4cUxeGkcC9jxJX7vojNVK-o8ubDZEcNb
-9. Net Ninja's Bootstrap Tutorial: https://www.youtube.com/watch?v=O_9u1P5YjVc&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR
-10. Net Ninja's Taildwind playlist: https://www.youtube.com/watch?v=bxmDnn7lrnk&list=PL4cUxeGkcC9gpXORlEHjc5bgnIi5HEGhw
-11. Eliav Menache's Web course: https://www.youtube.com/watch?v=yXAkWZXyQ9Y&list=PLFeIOEkqiA9J6K4GHtlkAeCy2uUzZBfqh&index=2 
+3. Mosh's TS course: https://www.youtube.com/watch?v=d56mG7DezGs
+4. Comprehensive CSS course: https://www.youtube.com/watch?v=OXGznpKZ_sA&t=330s
+5. Mosh's React intro: https://www.youtube.com/watch?v=SqcY0GlETPk 
+6. Angular comprehensive project: https://www.youtube.com/watch?v=SqcY0GlETPk
+7. Cosden redux video : https://www.youtube.com/watch?v=5yEG6GhoJBs
+8. Net Ninja's Vue playlist: https://www.youtube.com/watch?v=YrxBCBibVo0&list=PL4cUxeGkcC9hYYGbV60Vq3IXYNfDk8At1
+9. Vite intro: https://www.youtube.com/watch?v=VAeRhmpcWEQ&t=63s 
+10. Net Ninja's Sass Tutorial: https://www.youtube.com/watch?v=_kqN4hl9bGc&list=PL4cUxeGkcC9jxJX7vojNVK-o8ubDZEcNb
+11. Net Ninja's Bootstrap Tutorial: https://www.youtube.com/watch?v=O_9u1P5YjVc&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR
+12. Net Ninja's Taildwind playlist: https://www.youtube.com/watch?v=bxmDnn7lrnk&list=PL4cUxeGkcC9gpXORlEHjc5bgnIi5HEGhw
+13. Eliav Menache's Web course: https://www.youtube.com/watch?v=yXAkWZXyQ9Y&list=PLFeIOEkqiA9J6K4GHtlkAeCy2uUzZBfqh&index=2 
 wordpress?
+
+Nana's JS course:
+1. 00:54 - Web workings in a nutshell 
+2. 10:48 - JS role and it's frameworks
+3. 16:54 - data types and variables and dev tools
+4. 26:55 - operators
+5. 29:52 - variables and use cases
+6. 35:47 - js code execution
+7. 44:40 - var vs let vs const
+8. 54:04 - modularity and code readability
+9. 1:00:10 - conditionals and comparison operators
+10. 1:11:25 - functions
+11. 1:34:09 - name conventions
+
+CSS Course:
+1. 3:00 - TS in a nutshell, comparison to JS, and setup
+2. 23:00 - 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+
+
+Mosh's TS course:
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+
+
+Mosh's React intro:
+1. 2:44 - on react 
+2. 6:27 - initing an app
+3. 9:21 - generated file structue summary 
+4. 11:22 - react components
+5. 16:43 - react's DOM tree
+6. 19:02 - react vs angular vue and other tools
+7. 21:08 - Working with components with bootstrap
+8. 33:12 - conditional rendering
+9. 38:38 - event handling
+10. 44:43 - State management, active class, and hooks
+11. 50:43 - props for data passing and functions
+12. 58:29 - states vs props
+13. 1:00:01 - passing children components
+14. 1:05:08 - component inspection with dev tools
+15. 1:07:16 - buttons
+16. 1:14:14 - alert
+
+
+redux video:
+1. 00:41 - what is redux?
+2. 01:06 - global state: store, slices, 
+3. 02:57 - actions and reducers
+4. 07:09 - creating the store 
+5. 11:31 - creating a counter slice
+6. 15:24 - building actions and reducers
+7.
+8.
+9.
+10.
+11.
+12.
+13. 
+
+Angular project:
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+
+
+Net Ninja's Vue playlist:
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+
+Vite intro video:
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+
+
+Net Ninja's Sass playlist:
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+
+Net Ninja's Bootstrap playlist:
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+
+
+Net Ninja's TailWind:
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
 
