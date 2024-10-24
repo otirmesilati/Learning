@@ -306,29 +306,25 @@ int a = 2, b;
 #   & & & & & & Variables & & & & & &
 # type hinting? (static - no, dynamic - yes)
 
+
+
+
 def fun_variables():
     
     bool(False)
     int(1)
     float(2.3)
     complex(4 + 5j)
-    # add list, tuple, range, dict, set, frozenset later in the DS portion
+    
 
 
 #   ^ ^ ^ ^ ^ Type Hinting ^ ^ ^ ^ ^
 
-# ?
+    int_hint: int = 1
+    float_hint: float = 2.3
+    string_hint: str = "4"
 
 # int imagine_this_is_out_of_any_function_global = 0;
-
-# // unsigned short cap: 65535 - maybe try this part with type hinting later?
-# unsigned short hi = 65000; // 65,00
-# unsigned short hi = 66000; // 464 (Got back to zero going up)
-
-# // signed short cap: 32767
-# short hi = 32000; // 32000
-# short hi = 35000; // -30536 (Got to -32767 going to zero)
-
 
 # //   ^ ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^ ^
 
@@ -336,171 +332,21 @@ def fun_variables():
 
 # No static variables - only in methods (python also likes run time, probably not as java though :D)
 
-    global_relative_to_idented_variables = 1
-    # what now? maybe add an inner function? global and non local keywords?
-
-# { // imagine this is void function my_func
-
-#     // change to cout : printf("global is accessible: %d", imagine_this_is_out_of_any_function_global);    
-#     imagine_this_is_out_of_any_function_global = 7; // and mutable //
-#     static int my_static = 0; // static variable accessible in my_func
-# }  
-
-# // but even though it's lifetime is the same as the global variable - trying to access the static variable from main - is a compilation error
-
+    global global_variable # can be accessed as a global outside the local scope
+    nonlocal_variable = 1  
+    
+    def witness_non_local():
+        nonlocal nonlocal_variable    # non local variables are one outer function scoped
 
 #   No Block Nesting in python without the control flow tools
 
-# //   ^ ^ ^ ^ ^ Constants ^ ^ ^ ^ ^
+# No constants, compile or run time or built in enum (only as a library)
 
-# //   ^ ^ ^ ^ Pre-Processor Macros ^ ^ ^ ^
-
-# //   ^ ^ ^ Defines ^ ^ ^
-
-# #define CRT_SECURE_NO_WARNINGS
-# #define ZERO 0
-# #define PI 3.1415
-
-
-# //   ^ ^ ^ Enums(Almost pre-processor) ^ ^ ^
-
-# enum boolean {NO, YES};
-# typedef enum {TRUE = 1, FALSE = 0} Boolean;
-
-
-# //   ^ ^ ^ ^ Constants: Immutables 
-
-# //   ^ ^ ^ ConstExpr : Compile Time Immutable ^ ^ ^ 
-
-# //constexpr int static_time_const = 0;
-
-
-# //   ^ ^ ^ Const : Run Time Immutable ^ ^ ^
-
-# const int dynamic_time_const = 1;
-
-# //   ^ ^ Pointer Const ^ ^
-
-# int mutable_value = 0;
-# int immutable_value = 1;
-# int immutable_value_and_adress = 2;
-
-# const int* const_pointer_to_int = &immutable_value;
-# int* const const_pointer_to_int = &mutable_value;
-# const int* const const_pointer_to_int = &immutable_value_and_adress;
-
-# //   ^ ^ Reference Const ^ ^ 
-
-# const int& const_ref_to_int = immutable_value;
-
-# //   ^ ^ ^ ^ ^ Pointers ^ ^ ^ ^ ^
-
-# char* my_char_pointer;
-# int* my_int_pointer;
-# long* my_long_pointer;
-# float* my_float_pointer;
-# double* my_double_pointer;
-
-# //   ^ ^ ^ ^ Static Allocation ^ ^ ^ ^
-
-# my_char_pointer = &my_char;
-# my_int_pointer = &my_int;
-# my_long_pointer = &my_long;
-# my_float_pointer = &my_float;
-# my_double_pointer = &my_double;
-
-# //   ^ ^ ^ ^ Dynamic Allocation ^ ^ ^
-
-# //   ^ ^ ^ Heap Byte Allocation: Malloc ^ ^ ^
-
-# my_char_pointer = new char;
-# my_int_pointer = new int;
-# my_long_pointer = new long;
-# my_float_pointer = new float;
-
-# //   ^ ^ ^ Heap Memory De-Allocation ^ ^ ^
-
-# delete my_char_pointer;
-# delete my_int_pointer;
-# delete my_long_pointer;
-# delete my_float_pointer;
-# delete my_double_pointer;
-
-# //   ^ ^ ^ ^ Void (Generaic) Pointers ^ ^ ^ ^
-
-# void* my_generic_pointer;
-
-# char* my_generic_pointer_converted_to_char_pointer;
-# int* my_generic_pointer_converted_to_int_pointer;
-# long* my_generic_pointer_converted_to_long_pointer;
-# float* my_generic_pointer_converted_to_float_pointer;
-# double* my_generic_pointer_converted_to_double_pointer;
-
-# my_generic_pointer_converted_to_char_pointer = (char*)my_generic_pointer;
-# my_generic_pointer_converted_to_int_pointer = (int*)my_generic_pointer;
-# my_generic_pointer_converted_to_long_pointer = (long*)my_generic_pointer;
-# my_generic_pointer_converted_to_float_pointer = (float*)my_generic_pointer;
-# my_generic_pointer_converted_to_double_pointer = (double*)my_generic_pointer;
+# No pointers or reference in Python, automatic memory allocation in play
 
 # //   ^ ^ ^ ^ ^ Data Collections ^ ^ ^ ^ ^
-
+# # add list, tuple, range, dict, set, frozenset later in the DS portion
 # // strings?
-
-
-# //   ^ ^ ^ ^ ^ References ^ ^ ^ ^ ^
-
-# int& my_reference = mutable_value;
-
-# }
-
-
-
-# //   ^ ^ ^ ^ ^ Constants ^ ^ ^ ^ ^
-
-# //   ^ ^ ^ ^ Pre-Processor Macros ^ ^ ^ ^
-# //   ^ ^ ^ defines ^ ^ ^
-# // lecture's coverage:
-# //   ^ ^ ^ Enums(Almost pre-processor) ^ ^ ^
-# // lecture's coverage: 
-# /*
-# Example 1: Making a boolean logic
-# enum boolean {NO, YES};
-
-# Example 2: Days without typedef (typing enum more than once)
-# enum Day {SUN = 1, MON, TUE, WED, THU, FRI, SAT};
-
-# int main() 
-# {
-
-# enum Day d1,d2; // the second  enum is here 
-# d1 = SUN;
-# d2 = THU;
-
-# }
-
-# Example 3: Days with typedef (typing enum once)
-
-# typedef enum {SUN = 1, MON, TUE, WED, THU, FRI, SAT} Day;
-
-# int main() 
-# {
-
-# Day d1,d2;
-# d1 = SUN;
-# d2 = THU;
-
-# return 0;
-
-# }
-
-
-# */ 
-
-# //   ^ ^ ^ ^ Constants: Immutables 
-# // highlight the difference of const (run time) vs constexpr (compile time)
-
-
-# }
 
 
 

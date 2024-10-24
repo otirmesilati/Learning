@@ -8,8 +8,8 @@ Map from the following:
 7. virtual box tutorial: https://www.youtube.com/watch?v=nvdnQX9UkMY
 8. DistroTube's virtmanager tips: https://www.youtube.com/watch?v=9FBhcOnCxM8
 9. HypeV tutorial: https://www.youtube.com/watch?v=3I64TeJ4iNI
-10. esxi?
-11. proxmox?
+10. esxi tutorial: https://www.youtube.com/watch?v=wQurzzxkjy4&list=PLxTwjzMO9Zf62tCYP2rP0FqwVdzTbGPjU
+11. proxmox playlist: https://www.youtube.com/watch?v=5j0Zb6x_hOk&list=PLT98CRl2KxKHnlbYhtABg6cF50bYa8Ulo
 
 Michael Horn's starter:
 1. 
