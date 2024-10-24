@@ -304,7 +304,7 @@ int a = 2, b;
 
 
 #   & & & & & & Variables & & & & & &
-
+# type hinting? (static - no, dynamic - yes)
 
 def fun_variables():
     
