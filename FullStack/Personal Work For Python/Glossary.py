@@ -8,7 +8,7 @@
 
 
 
-#    < < < < < < < <   Language Principles   > > > > > > > >   
+#   < < < < < < < <   Language Principles   > > > > > > > >   
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-#   & & & & & & Procedural Principles & & & & & & 
+#   < < < < < < < <   Procedural Principles   > > > > > > > >   
 
 
 
@@ -304,10 +304,6 @@ int a = 2, b;
 
 
 #   & & & & & & Variables & & & & & &
-# type hinting? (static - no, dynamic - yes)
-
-
-
 
 def fun_variables():
     
@@ -338,13 +334,13 @@ def fun_variables():
     def witness_non_local():
         nonlocal nonlocal_variable    # non local variables are one outer function scoped
 
-#   No Block Nesting in python without the control flow tools
+# No Block Nesting in python without the control flow tools
 
 # No constants, compile or run time or built in enum (only as a library)
 
 # No pointers or reference in Python, automatic memory allocation in play
 
-# //   ^ ^ ^ ^ ^ Data Collections ^ ^ ^ ^ ^
+#   ^ ^ ^ ^ ^ Data Collections ^ ^ ^ ^ ^
 # # add list, tuple, range, dict, set, frozenset later in the DS portion
 # // strings?
 
@@ -356,11 +352,11 @@ def fun_variables():
 
 
 
-# //   & & & & & & Flow Control & & & & & &
+#   & & & & & & Flow Control & & & & & &
 
 
-# void fun_flow_control()
-# {
+def fun_flow_control():
+    pass
 
 
 # //   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^
@@ -780,7 +776,20 @@ def fun_variables():
 
 
 
-"""
+
+
+
+
+
+
+#   < < < < < < < <   Functional Principles   > > > > > > > >   
+
+
+
+
+
+
+
 
 
 #   ^ ^ ^ ^ ^ First Order Function ^ ^ ^ ^ ^
@@ -797,9 +806,11 @@ def composed_function(composing, composed, value):
     
     return composing(composed(value))
 
+#   ^ ^ ^ ^ ^ Function Passing (var = func)
+
 
 #   ^ ^ ^ ^ ^ Pure Functions ^ ^ ^ ^ ^
-
+#?
 
 # More Material:
 
@@ -809,15 +820,15 @@ def composed_function(composing, composed, value):
 
 #   & & & & & & Functional Design & & & & & &
 
-# pipeline somwhere? 
-# list comprehension?
+# pipeline somwhere? - mode to arch patterns 
+# list comprehension? - where to put this?
 
 # abstraction - nested function dispatch functions
 
 
 
 
-
+"""
 
 
 
