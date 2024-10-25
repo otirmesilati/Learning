@@ -314,6 +314,8 @@ ENDLOCAL
 
 ::   ^ ^ ^ ^ ^ Data Collections ^ ^ ^ ^ 
 
+:: list comprehension in batch?
+
 ::   strings?
 
 

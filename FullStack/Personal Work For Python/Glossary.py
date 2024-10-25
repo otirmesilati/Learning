@@ -178,6 +178,8 @@ x is x # true
 def fun_operators():
     
 
+# No assignments, only dynamic (run-time) bindings, the get automated later in memory allocations
+
 #   ^ ^ ^ ^ ^ Binding operator ^ ^ ^ ^ ^
 
     first = 1
@@ -197,7 +199,7 @@ def fun_operators():
 
     first = first + 3
     first += 3
-# no INC unary operator :(
+# no ++(INC) unary operator :(
 
 #   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^
 # general case? * before / in Python?
@@ -341,6 +343,7 @@ def fun_variables():
 # No pointers or reference in Python, automatic memory allocation in play
 
 #   ^ ^ ^ ^ ^ Data Collections ^ ^ ^ ^ ^
+#   ^ ^ ^ ^ List Comprehension ^ ^ ^ ^ 
 # # add list, tuple, range, dict, set, frozenset later in the DS portion
 # // strings?
 
@@ -359,79 +362,64 @@ def fun_flow_control():
     
     condition = 1
     outer_condition = 0
-
-# int elif_condition = 1;
-# int if_condition = 0; int elseif_condition = 1;
-# int switch_key = 2;
-
+    elif_condition = 0
 
 #   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^ 
 
-# No Labels and gotos in python
+# No Labels and gotos in python, And becuase there are no pointers
 
-# // //   ^ ^ ^ ^ ^ Conditional Statements & & & & & &
+#   ^ ^ ^ ^ Conditional Statements ^ ^ ^ ^
 
-# // //   ^ ^ ^ ^ If & Else ^ ^ ^ ^ ^
+#   ^ ^ ^ If & Else ^ ^ ^ 
 
-# // if(condition)
-# // {
-# //     // condition TRUE -> first procedure
-# // }
+    if condition:
+        pass # condition TRUE -> first procedure
 
-# // else
-# // {
-# //     // condition FALSE -> second procedure
-# // }
+    else:
+        pass # condition FALSE -> second procedure
 
 
-# // //   ^ ^ ^ Null Checks ^ ^ ^
+#   ^ ^ ^ Null Checks ^ ^ ^
 
-# // int val_of_ptr = 0;
-# // int* ptr_to_check = &val_of_ptr;
-
-# // // Alternative 1 - using 0 representations
-
-# // if (ptr_to_check!= 0) {}
-# // if (ptr_to_check!= NULL) {} 
-# // if (ptr_to_check!= '\0') {}
-
-# // // Alternative 2 - using zero equating
-
-# // if (ptr_to_check) {}
+    val_to_null_check = 0
 
 
-# // //   ^ ^ ^ Nested Ifs ^ ^ ^
+#   Alternative 1 - using 0 representations
 
-# // if(outer_condition)
-# // {
-# //     // first procedure
-# // }
-# // else
-# // {
-# //     if(elif_condition) // else if logic , same as the else if example below
-# //     {
-# //         // second procedure
-# //     }
-# // }
+    if val_to_null_check != 0 :
+        pass
+    
+    if val_to_null_check != '\0':
+        pass
 
+#  Alternative 2 - using zero equating
 
-# // //   ^ ^ ^ Else-If ^ ^ ^ 
+    if val_to_null_check:
+        pass 
 
-# // if(if_condition)
-# // {
-# //     // first procedure
-# // }
-# // else if(elseif_condition) // same as the example above
-# // {
-# //     // second procedure
-# // }
+#   ^ ^ ^ None check - a type by itself(different from 0) ^ ^ ^
 
+    if val_to_null_check is None:
+        pass 
 
-# // // map to the tablet - new skill for relations, building a "order relation" graph under constraints (number of maximum relation checks on members, like finding the max of 3 numbers(linear relation) in no more than 3 tries)
-# // // and also - mapping the control flow diagram - a straight line digram that splits whenever theres a conditional statement:
-# // //             - - - - - - - -
-# // //    - - - - -| condition 1  | - - - - - (when theres else-if the split is more than two - 3 + )
-# // //             - - - - - - - - 
+#   ^ ^ ^ Nested Ifs ^ ^ ^
+
+    if outer_condition:
+        pass # first procedure
+
+    else:
+        if elif_condition: # else if logic , same as the else-if example below
+            pass # second procedure
+        
+
+#   ^ ^ Else-If ^ ^ 
+
+    if outer_condition:
+            pass # first procedure
+
+    elif elif_condition: # same as the example above
+        pass # second procedure
+
 
 # // //   ^ ^ ^ ^ Switch ^ ^ ^ ^ ^
 
@@ -569,6 +557,390 @@ def fun_flow_control():
 # //   ^ ^ ^ ^ ^ Message Passing: Function invocation ^ ^ ^ ^ ^
 # //   ^ ^ ^ ^ ^ Abstraction: each function invocation is a black box ^ ^ ^ ^ ^
 # //   ^ ^ ^ ^ ^ Supports TDD: using the function, and then impementing
+
+
+
+
+
+
+
+
+
+
+
+
+
+#   < < < < < < < <   Object Oriented Principles   > > > > > > > >  
+
+
+
+
+
+
+
+
+
+# //   & & & & & & Structs & & & & & &
+
+
+
+
+# //   & & & & & & Classes & & & & & &
+# // Add function overloading (defaukt values? and the not possible case when playing with their order?) above after updating to the latest C Patch,
+# // planning an object and UMLing skills to tablet
+# //   ^ ^ ^ ^ ^ Include's Double Code Generation Avoidance ^ ^ ^ ^ ^ 
+
+# #ifndef MY_CLASS
+
+# #define MY_CLASS
+# // my class decleration here
+
+# #endif
+ 
+
+# //   ^ ^ ^ ^ ^ Class decleration ^ ^ ^ ^ ^
+
+# class My_class
+# {
+
+# //   ^ ^ ^ ^ Class Level Access modifiers (only level in C++) ^ ^ ^ ^
+
+# // private unless stated otherwise
+
+# public:
+# private:
+# protected:
+
+# };
+
+
+# //   ^ ^ ^ ^ Class Attributes/Fields ^ ^ ^ ^
+
+# class My_fields_1
+# {
+
+#     char char_field;
+# 	int int_field;
+# 	long long_field;
+# 	float float_field;
+# 	double double_field;
+
+# };
+
+
+# //   ^ ^ ^ ^ Static Attributes ^ ^ ^ ^
+
+# //   ^ ^ ^ Static Attribute Declaration
+
+# class My_fields_2_with_static
+# {
+
+# 	int regular_int_field;
+# 	static int static_int_field;
+
+# };
+
+
+# // My_fields_2_with_static::static_int_field = 0;
+
+
+# // these two classes will be used for the multi inheritance example
+# class My_inhereted
+# {
+# public:
+
+# 	My_inhereted()
+# 	{
+# 		prmitive_field = 0;
+# 	}
+# 	My_inhereted(int pf)
+# 	{
+# 		prmitive_field = pf;	
+# 	}
+
+# 	int prmitive_field;
+# };
+
+# class Another_inhereted
+# {
+# 	public:
+# 	Another_inhereted(){another_primitive = 0;}
+# 	Another_inhereted(int ani){another_primitive = ani;}
+# 	int another_primitive;
+# };
+
+
+# //   ^ ^ ^ ^ ^ Methods ^ ^ ^ ^ ^
+
+# //   ^ ^ ^ ^ Virtual Methods ^ ^ ^ ^
+
+# class My_vritual_methods
+# {
+# 	public:
+
+# 	void function_not_to_override(){}
+# 	virtual void virtual_function_to_overide(){}
+# 	virtual void virtual_function_to_overide_and_use(){}
+# 	virtual void virtual_function_to_hide(int hide_this){}
+	
+# 	private:
+
+# 	int int_to_hide;
+# };
+
+# class witness_virtual_method_use : public My_vritual_methods
+# {
+# 	public:
+
+# 	virtual void virtual_function_to_override(){}
+# 	virtual void virtual_function_to_overide_and_use(){virtual_function_to_overide_and_use();}
+# 	virtual void virtual_function_to_hide() {} // function_to_hide(); will call inherntee's function //
+	
+# };
+
+# //   ^ ^ ^ Polymorphic methods ^ ^ ^   //
+
+# class poly_methods_inherited // 1st requirement: inherited has virtual method
+# {
+# 	public:
+
+# 	virtual void my_virtual_polymorphic_method(){}
+# };
+
+# class poly_methods_inheritee : public poly_methods_inherited 
+# {
+# 	public: 
+
+# 	virtual void my_virtual_polymorphic_method(){} // 2nd requirement: inheritee overrides 
+# };
+
+# class ploy_methods_upcasting 
+# {
+# // what here? note the three requirements?
+# };
+
+
+# //   ^ ^ ^ ^ Constructor ^ ^ ^ ^   //
+
+# class My_methods : public My_inhereted
+# {
+
+ 
+
+# //   ^ ^ ^ Init List ^ ^ ^
+# My_methods(int pri_f_1, int pri_f_2, int* poi_f_1) 
+
+# : 
+
+# primitive_field_1(NULL),
+# primitive_field_2(NULL),
+# pointer_field_1(nullptr)
+
+# {
+
+# }
+
+
+# //   ^ ^ ^ Default Constructor ^ ^ ^   //
+
+# My_methods()
+
+# {
+# 	primitive_field_1 = NULL;
+#     primitive_field_2 = NULL;
+#     pointer_field_1 = nullptr;
+
+# //   ^ ^ Object Relations (through initiation)
+
+# 	// imagine the following pointer is passed as an argument..
+# 	int a = 5;
+# 	int* a_p = &a; 
+
+# 	pointer_field_1; // My_methods uses object
+# 	pointer_field_1 = new int; // My_methods responsible for object's lifetime
+# 	pointer_field_1 = a_p; // My_methods is not responsible for the object's lifetime 
+
+# }
+
+
+# //   ^ ^ ^ C'tor Delegation ^ ^ ^
+
+# My_methods(int pri_f_1)
+
+# :
+
+# My_methods(pri_f_1, NULL, nullptr) // delegating work for the C'tor mentioned in the init list portion
+
+# {
+
+# }
+
+
+# //   ^ ^ ^ Copy Constructor ^ ^ ^  //
+
+# My_methods(const My_methods& other_obj)
+
+# : 
+
+# My_methods() // def c'tor delgation for initialization 
+
+# {
+	
+# 	primitive_field_1 = other_obj.primitive_field_1;
+# 	primitive_field_2 = other_obj.primitive_field_2;
+# 	pointer_field_1 = other_obj.pointer_field_1;
+
+# }
+
+
+# //   ^ ^ ^ Super C'tor inocation ^ ^ ^
+
+# My_methods(int pf_1, int pf_2)
+# :
+# My_inhereted(pf_1)
+# {
+# 	primitive_field_1 = pf_1;
+#     primitive_field_2 = pf_2;
+#     pointer_field_1 = nullptr;
+# }
+
+
+# //   ^ ^ ^ ^ Destructor ^ ^ ^ ^ //
+
+# ~My_methods()
+# {
+# 	delete pointer_field_1;
+# }
+
+# //  ^ ^ ^ Virtual Destructor ^ ^ ^ //
+# // No Virtual C'tor! C++ Is statically typed -> space allocated needs to be known at compile time //
+# virtual ~My_methods() = 0; 
+
+# //   ^ ^ ^ ^ Assignment operator ^ ^ ^ ^ //
+
+# My_methods& operator=(const My_methods& other_obj) // by reference return type - to enable piping assigntment/multi assignment
+# {
+# 	if (this!= &other_obj) // checking for double pointing
+#     {
+#         delete pointer_field_1; // wipe out existing data
+
+#         // do the deep copy //
+#         pointer_field_1 = new int; // do the deep copy //
+#         *pointer_field_1 = *other_obj.pointer_field_1;
+#     }
+
+#     return *this; 
+# }
+
+
+# //   ^ ^ ^ ^ Friend relations ^ ^ ^ ^
+
+# 	friend bool equals(const My_methods&); // a method that has "private modifier" access
+# 	friend class My_inherited; // a class that has "private modifier" access
+
+# 	int primitive_field_1, primitive_field_2;
+# 	int* pointer_field_1;
+
+
+# };
+
+
+# //   ^ ^ ^ ^ ^ Inheritance ^ ^ ^ ^ ^ 
+
+# //   ^ ^ ^ ^ Multi Inheritance ^ ^ ^ ^
+# // add to tablet the skill of graphing creation and destruction of objects, especially with virtual inheritance
+
+# class My_diamond_inheritance: public My_inhereted, Another_inhereted // diamond inheritance
+# {
+
+# };
+
+
+# //   ^ ^ ^ ^ Virtual Inheritance ^ ^ ^ ^
+
+# class My_base_inherited{};
+# class My_first_virt_inherited : public virtual My_base_inherited{};
+# class My_second_virt_inherited : public virtual My_base_inherited{};
+# class My_inheriting : public My_first_virt_inherited, My_second_virt_inherited{}; // looks like regular multi inheritance from here
+# //here inheriting's c'tor can invoke base c'tor: My_inhereting(const My_inhereting& other) : My_base_inherited(other) .... unlike in the non virtual diamond case 
+
+
+# //   ^ ^ ^ ^ ^ DownCasting : Static & Dynamic Cast As RTTI ^ ^ ^ ^ ^
+
+# class A_Class{};
+# class B_Class : public A_Class{};
+# class C_Class : public B_Class{};
+
+# A_Class* a_pointer = new A_Class();
+# C_Class* c_pointer = new C_Class();
+
+# B_Class* b_pointer_c_type_cast_to_show_similarity_in_syntax = (C_Class*)c_pointer;
+# B_Class* b_pointer_that_shows_similarity_in_syntax = static_cast<C_Class*>(c_pointer); // Down-Casting using static-cast -> virtual-inh base class cant be down-casted this way -> no complete object in compile time
+# B_Class* another_b_pointer_also_similar_in_syntax = dynamic_cast<C_Class*>(c_pointer);
+
+# //   ^ ^ ^ ^ Referential Dynamic Cast ^ ^ ^ ^   //
+
+# B_Class& b_reference = (C_Class&)*c_pointer;
+# B_Class& static_b_reference = static_cast<C_Class&>(*c_pointer);  
+# B_Class& dynamic_b_reference = dynamic_cast<C_Class&>(*c_pointer);
+
+
+# //   ^ ^ ^ ^ Slicing ^ ^ ^ ^
+
+# A_Class slice_this_from_b_to_a = B_Class(); 
+
+
+# //   ^ ^ ^ ^ ^ Reflection ^ ^ ^ ^ ^   //
+# // typeinfo? typeid?
+ 
+# //   ^ ^ ^ ^ ^ Inlining methods ^ ^ ^ ^ ^   //
+
+# class My_inline
+# {
+# 	void implicit_inline(){}
+# 	void explicit_inline(); // declaration
+# };
+
+# inline void My_inline::explicit_inline(){} // definition
+
+# // error handling?
+# // template classes? 
+# // reflections 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

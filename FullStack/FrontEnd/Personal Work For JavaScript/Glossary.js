@@ -282,6 +282,8 @@ function fun_variables() {
 
   //   ^ ^ ^ ^ ^ Data Collections ^ ^ ^ ^ ^
 
+  // is there string comprehension in javascript?
+
   // strings?
 
   //   ^ ^ ^ ^ ^ References ^ ^ ^ ^ ^

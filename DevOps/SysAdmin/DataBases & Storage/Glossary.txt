@@ -1,11 +1,13 @@
-nonrelational - mongodb? elastic search? redis? casandra? mongoosedb? 
-
 Map from the following:
 1. Mike's SQL CRUD famous tutorial: https://www.youtube.com/watch?v=HXV3zeQKqGY&t=7579s
 2. CodeAcademy's LINQ tutorial: https://www.youtube.com/watch?v=5l2qA3Pc83M
-3. 
-4. 
-5. 
+3. Net Ninja's MongoDB playlist: https://www.youtube.com/watch?v=ExcRbA7fy_A&list=PL4cUxeGkcC9h77dJ-QJlwGlZlTd4ecZOA
+4. Mongoose library tutorial video: https://www.youtube.com/watch?v=DZBGEVgL2eE&t=30s
+4. Net Ninja's Redis tutorial: https://www.youtube.com/watch?v=8sHCdz_tOjk&list=PL4cUxeGkcC9h3V2eqhi8rRdIDJshP-b4P
+5. Elastic search tutorial: https://www.youtube.com/watch?v=n9mE5MXGkaA 
+6. Redis Tutorial: https://www.youtube.com/watch?v=8sHCdz_tOjk&list=PL4cUxeGkcC9h3V2eqhi8rRdIDJshP-b4P
+7. Apache Cassandra Playlist: https://www.youtube.com/watch?v=YjYWsN1vek8&list=PL2g2h-wyI4SqCdxdiyi8enEyWvACcUa9R
+ 
 
 < < < < < < < < DataBases > > > > > > > >
 

@@ -398,6 +398,8 @@ final Object my_obj; // can't change the value when passing my_obj
 
 //   ^ ^ ^ ^ ^ Data Collections ^ ^ ^ ^ ^
 
+// No String Comprehension in java
+
 // strings?
 
 
@@ -480,7 +482,7 @@ int switch_key = 2;
 // }
 // else
 // {
-//     if(elif_condition) // else if logic , same as the else if example below
+//     if(elif_condition) // else if logic , same as the else-if example below
 //     {
 //         // second procedure
 //     }

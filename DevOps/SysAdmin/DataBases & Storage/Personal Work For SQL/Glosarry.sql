@@ -570,7 +570,7 @@
 
 -- // strings?
 
-
+-- no list comprehension in sql?
 
 -- }
 

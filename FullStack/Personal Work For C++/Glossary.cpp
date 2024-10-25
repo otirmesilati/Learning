@@ -480,6 +480,8 @@ my_generic_pointer_converted_to_double_pointer = (double*)my_generic_pointer;
 
 //   ^ ^ ^ ^ ^ Data Collections ^ ^ ^ ^ ^
 
+// No List Comprehension in C++
+
 // strings?
 
 

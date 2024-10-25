@@ -526,6 +526,8 @@ my_local_varaible=1 # variables are by default Shell varaibles(local)
 
 #   ^ ^ ^ ^ Arrays ^ ^ ^ ^ 
 
+# no list comprehension in bash?
+
 #   strings?
 
 #   ^ ^ ^ ^ ^ Data Collections ^ ^ ^ ^ ^ 

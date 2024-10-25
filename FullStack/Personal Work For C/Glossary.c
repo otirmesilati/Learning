@@ -501,6 +501,8 @@ my_generic_pointer_converted_to_double_pointer = (double*)my_generic_pointer;
 
 //   ^ ^ ^ ^ ^ Data Collections ^ ^ ^ ^ ^ 
 
+// No List Comprehension in C
+
 // strings?
 
 
@@ -530,7 +532,7 @@ int switch_key = 2;
 
 //   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^ 
 
-//   ^ ^ ^ ^ ^ Procedure labels & GoTo ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ Procedure labels & GoTo ^ ^ ^ ^ 
 
 procedure_1_label:
 // first procedure  //
@@ -543,9 +545,9 @@ procedure_2_label:
 // More Material: https://www.geeksforgeeks.org/local-labels-in-c/
 
 
-//   ^ ^ ^ ^ ^ Conditional Statements & & & & & &
+//   ^ ^ ^ ^ Conditional Statements ^ ^ ^ ^
 
-//   ^ ^ ^ ^ If & Else ^ ^ ^ ^ ^
+//   ^ ^ ^ If & Else ^ ^ ^ 
 
 if(condition)
 {
@@ -589,7 +591,7 @@ else
 }
 
 
-//   ^ ^ ^ Else-If ^ ^ ^ 
+//   ^ ^ Else-If ^ ^ 
 
 if(if_condition)
 {
