@@ -87,7 +87,7 @@ def fun_literals():
     0o12
     0b110011
 
-#   No Integer Suffix Operators in python 
+#   No Integer Suffix Operators in python (long was removed since python 3.0)
 
 #   ^ ^ ^ ^ ^ Floats ^ ^ ^ ^ ^
 
@@ -343,6 +343,19 @@ def fun_variables():
 # No pointers or reference in Python, automatic memory allocation in play
 
 #   ^ ^ ^ ^ ^ Data Collections ^ ^ ^ ^ ^
+
+#-single/double quotes ok, apostrophe not
+
+"""
+
+from lecture: 
+a = 'Devops' 
+arr = ['a', 'b', 123]    list
+t = ('a', 'b')    tuple
+dict = {'name' : 'aviel','age' : 28}
+
+"""
+
 #   ^ ^ ^ ^ List Comprehension ^ ^ ^ ^ 
 # # add list, tuple, range, dict, set, frozenset later in the DS portion
 # // strings?
@@ -421,38 +434,19 @@ def fun_flow_control():
         pass # second procedure
 
 
-# // //   ^ ^ ^ ^ Switch ^ ^ ^ ^ ^
-
-# // switch (switch_key)
-# // {
-
-# // case 1: // first procedure
-# //     break;
-
-# // case 2: // second procedure
-# //     break;
-
-# // case 3: // third procedure
-# //     break;
-
-# // default: // fourth procedure
-# //     break;
-
-# // }
+# No Switch in python
 
 
-# // //   ^ ^ ^ ^ ^ Loops ^ ^ ^ ^ ^ 
+#   ^ ^ ^ ^ ^ Loops ^ ^ ^ ^ ^ 
 
 # // // break? continue?
 
-# // //   ^ ^ ^ ^ While Loops ^ ^ ^ ^
+#   ^ ^ ^ ^ While Loops ^ ^ ^ ^
 
-# // int while_index = 0;
-# // while(while_index <= 5) // condition checking BEFORE the procedure ran
-# // {
-# //     ++while_index;
-# //     // while procedure
-# // }
+    while_index = 0
+    while while_index <= 5: # condition checking BEFORE the procedure ran
+        pass # while procedure 
+
 
 # // //   ^ ^ ^ Do-While Loops ^ ^ ^
 

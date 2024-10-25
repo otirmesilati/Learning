@@ -1,6 +1,6 @@
 Map from the following:
 1. Mosh's HTML+CSS+JS intro: https://www.youtube.com/watch?v=qz0aGYrrlhU&t=386s
-2. Nana's JS course: https://www.youtube.com/watch?v=FtaQSdrl7YA&t=1s
+2. Nana's JS course: https://www.youtube.com/watch?v=FtaQSdrl7YA&t=1s     and finish with this: https://www.reddit.com/r/learnjavascript/comments/8wauhl/what_does_it_mean_when_people_say_javascript/
 3. Mosh's TS course: https://www.youtube.com/watch?v=d56mG7DezGs
 4. Comprehensive CSS course: https://www.youtube.com/watch?v=OXGznpKZ_sA&t=330s
 5. Mosh's React intro: https://www.youtube.com/watch?v=SqcY0GlETPk 

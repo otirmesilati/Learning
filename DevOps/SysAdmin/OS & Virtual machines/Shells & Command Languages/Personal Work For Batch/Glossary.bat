@@ -321,7 +321,7 @@ ENDLOCAL
 
 ::   }
 
-
+:: version checking: python --version
 
 
 

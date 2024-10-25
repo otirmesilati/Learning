@@ -72,7 +72,7 @@ ls -R # All Directories recursively on child items
 
 #ls l?
 
-
+# version checking: python -V
 
 
 
