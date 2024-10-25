@@ -123,6 +123,7 @@ tablet skills - umling the design patterns
 - architectual patterns: scoped in the dev design 
 
 -- Messaging Arch-Patterns
+-- error handling patterns
 --- what here? if the types of messages mostly go to processes mapping
 
 

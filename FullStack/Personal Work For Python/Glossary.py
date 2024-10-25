@@ -9,7 +9,7 @@
 
 
 #   < < < < < < < <   Language Principles   > > > > > > > >   
-
+import functools # a module(element of a library) for working with functions, 2 classes: partial(fix arguments) and partialmethod
 
 
 
@@ -29,6 +29,8 @@
 
 
 #   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &
+
+
 #   Standard Library is built in, not need to be imported
 # GUI? Libraries DataBases 
 
@@ -353,6 +355,20 @@ a = 'Devops'
 arr = ['a', 'b', 123]    list
 t = ('a', 'b')    tuple
 dict = {'name' : 'aviel','age' : 28}
+f = dict(fname="aviel", lname="buskila", age=34)
+
+b = 'aviel'
+d = ["aviel", "buskila", 34, True]    list can have multiple types
+e = {"fname": "aviel", "lname": "buskila", "age": 34}
+f = dict(fname="aviel", lname="buskila", age=34)     type hinting
+list_of_people = [e, f]       list of lists
+print(d[2])       
+print(e["lname"])       printing the value, works the same as if there were single quotes
+print(list_of_people)    
+print("name is" + b)
+"hi" + "bye"      concat
+"hi" * 4          self concat times like in reg expressions
+
 
 """
 
@@ -407,7 +423,7 @@ def fun_flow_control():
 
 #  Alternative 2 - using zero equating
 
-    if val_to_null_check:
+    if not val_to_null_check:
         pass 
 
 #   ^ ^ ^ None check - a type by itself(different from 0) ^ ^ ^

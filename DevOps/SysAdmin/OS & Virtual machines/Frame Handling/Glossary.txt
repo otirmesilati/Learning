@@ -439,6 +439,8 @@ Window wich Key Bindings are an option -> ?
 Settings window: ctrl + alt + s 
 find action: ctrl + shft + a
 
+Swich
+
 Refresh view: ?
 
 ^ ^ ^ ^ Menu Bar Options ^ ^ ^ ^
@@ -488,6 +490,8 @@ Help
 
 
 ^ ^ ^ ^ Editor Area Text Manupilation ^ ^ ^ ^
+
+Focus on Project Window bar: alt + 1
 
 Switch Focus Visualy for Editor Tabs: ctrl + tab
 Move Focus left and right for Editor tabs: alt + right / alt + left
