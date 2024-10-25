@@ -356,404 +356,200 @@ def fun_variables():
 
 
 def fun_flow_control():
-    pass
+    
+    condition = 1
+    outer_condition = 0
+
+# int elif_condition = 1;
+# int if_condition = 0; int elseif_condition = 1;
+# int switch_key = 2;
 
 
-# //   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^
-# //   ^ ^ ^ ^ Blocks ^ ^ ^ ^ 
+#   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^ 
 
-# //   ^ ^ ^ ^ ^ Conditional Statements & & & & & &
-# //   ^ ^ ^ ^ If & Else ^ ^ ^ ^ ^
-# // map to the tablet - new skill for relations, building a graph under constraints (number of maximum relation checks on members, like finding the max of 3 numbers(linear relation) in no more than 3 tries)
-# // and also - mapping the control flow diagram - a straight line digram that splits whenever theres a conditional statement:
-# //             - - - - - - - -
-# //    - - - - -| condition 1  | - - - - - (when theres else-if the split is more than two - 3 + )
-# //             - - - - - - - - 
-# // lecture's coverage:
-# /*
+# No Labels and gotos in python
 
-# Example one: digit checking
-# int main()
-# {
-# char input;
+# // //   ^ ^ ^ ^ ^ Conditional Statements & & & & & &
 
-# printf("digit plz: %c \n", );
+# // //   ^ ^ ^ ^ If & Else ^ ^ ^ ^ ^
 
-# scanf("%c", &input)
+# // if(condition)
+# // {
+# //     // condition TRUE -> first procedure
+# // }
 
-# if(input >= '0' %% input <= '9')
-# {
-# printf("yes");
-# }
-
-# print
-
-# return 0;
-# }
-
-# //   ^ ^ ^ ^ Nested Ifs(and If-Else) ^ ^ ^ ^ ^
-
-# Example two: bigger number finding:
-# int main()
-# {
-
-# int n1, n2;
-# printf("2 ints: \n");
-# scanf(" %d %d ", &n1, &n2);
-# print("bigger: \n")
-# if(n1 > n2) printf("n1 \n");
-# else printf("n2 \n");
-
-# return 0;
-
-# }
-
-# Example three: three digit number checking
-
-# #include <stdio.h>
-# #define LOW_LIMIT 100
-# #define HIGH_LIMIT 999
-
-# int main()
-# {
-# int input;
-# printf("num please");
-# scanf("%d", &input);
-# if(((input >= LOW_LIMIT) && (input <= HIGH_LIMIT)) && (input >= -1*HIGHER_LIMIT) && (input <= -1*LOW_LIMIT))) printf("3 digits");
-# if(input >= 0) printf("positive");
-# else printf("negative");
-
-# return 0;
-# }
-
-# Example four: biggest number out of three
-
-# #include <stdio.h>
-
-# int main()
-# {
-# int n1, n2, n3;
-# printf("Enter 3 nums\n");
-# scanf("%d %d %d", &n1, &n2, &n3);
-# printf("biggest");
-
-# if(n1 > n2)
-# {
-# if(n1 > n3) printf("n1");
-# else printf("n3");
-# }
-# else
-# {
-# if(n2 > n3) printf("n2");
-# else printf("n3")
-# }
-
-# return 0;
-# }
+# // else
+# // {
+# //     // condition FALSE -> second procedure
+# // }
 
 
+# // //   ^ ^ ^ Null Checks ^ ^ ^
 
-# //   ^ ^ ^ ^ Switch ^ ^ ^ ^ ^
+# // int val_of_ptr = 0;
+# // int* ptr_to_check = &val_of_ptr;
 
-# Example five: printing one/two/three/four according to the input
+# // // Alternative 1 - using 0 representations
 
-# main()
-# {
+# // if (ptr_to_check!= 0) {}
+# // if (ptr_to_check!= NULL) {} 
+# // if (ptr_to_check!= '\0') {}
 
-# int num;
-# printf("num pls")
-# scanf("%d", &num);
-# switch(num)
-# {
-# case 1: printf("one\n"); break;
-# case 2: printf("two\n"); break;
-# case 3: printf("three\n"); break;
-# case 4: printf("four\n"); break;
+# // // Alternative 2 - using zero equating
 
-# default: printf("another value\n"); break;
-
-# }
-
-# return 0;
-
-# }
-
-# Example six: +/-/* calculator
-
-# #include <stdio.h>
-# typedef enum {ADD = 'A', ADD_S = 'a', SUB = 'S', SUB_S = 's',  MUL = 'M', MUL_S = "m"} Operator;
-
-# int main()
-# {
-
-# // inputs
-
-# printf("two nums\n");
-# scanf("%d %d", &n1, %n2);
-# printf("operator now\n");
-
-# switch()
-# // finish this 
-
-# return 0;
-# }
+# // if (ptr_to_check) {}
 
 
-# //   ^ ^ ^ ^ ^ Loops ^ ^ ^ ^ ^ 
+# // //   ^ ^ ^ Nested Ifs ^ ^ ^
 
-# //   ^ ^ ^ ^ While Loops ^ ^ ^ ^
+# // if(outer_condition)
+# // {
+# //     // first procedure
+# // }
+# // else
+# // {
+# //     if(elif_condition) // else if logic , same as the else if example below
+# //     {
+# //         // second procedure
+# //     }
+# // }
 
-# //   ^ ^ ^ ^ For Loops ^ ^ ^ ^
-# // list comprehension? (the one line multiple operations) 
+
+# // //   ^ ^ ^ Else-If ^ ^ ^ 
+
+# // if(if_condition)
+# // {
+# //     // first procedure
+# // }
+# // else if(elseif_condition) // same as the example above
+# // {
+# //     // second procedure
+# // }
 
 
-# //   ^ ^ ^ ^ Empty portions in for loop ^ ^ ^ ^
-# // no init? not condition? no counter?
+# // // map to the tablet - new skill for relations, building a "order relation" graph under constraints (number of maximum relation checks on members, like finding the max of 3 numbers(linear relation) in no more than 3 tries)
+# // // and also - mapping the control flow diagram - a straight line digram that splits whenever theres a conditional statement:
+# // //             - - - - - - - -
+# // //    - - - - -| condition 1  | - - - - - (when theres else-if the split is more than two - 3 + )
+# // //             - - - - - - - - 
+
+# // //   ^ ^ ^ ^ Switch ^ ^ ^ ^ ^
+
+# // switch (switch_key)
+# // {
+
+# // case 1: // first procedure
+# //     break;
+
+# // case 2: // second procedure
+# //     break;
+
+# // case 3: // third procedure
+# //     break;
+
+# // default: // fourth procedure
+# //     break;
+
+# // }
 
 
-# //   ^ ^ ^ Up-Counter For loops ^ ^ ^
-# Lectures example:
-# 1. Example one: printing hello world with iteration number three times
+# // //   ^ ^ ^ ^ ^ Loops ^ ^ ^ ^ ^ 
 
-# int main()
-# {
+# // // break? continue?
 
-# for(int i = 0; i < 3; ++i) printf("Hello world, Iteration: %d \n", i+1);
+# // //   ^ ^ ^ ^ While Loops ^ ^ ^ ^
 
-# return 0;
+# // int while_index = 0;
+# // while(while_index <= 5) // condition checking BEFORE the procedure ran
+# // {
+# //     ++while_index;
+# //     // while procedure
+# // }
+
+# // //   ^ ^ ^ Do-While Loops ^ ^ ^
+
+# // int do_while_index = -1;
+# // do
+# // {
+# //     ++do_while_index;
+# //     // do-while procedure
+# // } while(do_while_index <= 5); //condition checking AFTER the procedure ran
+
+
+# // //   ^ ^ ^ ^ For Loops ^ ^ ^ ^
+
+# // for(int for_index = 0; for_index <= 5 ; ++for_index) // same as above examples
+# // {
+# //     // for procedure
+# // }
+
+
+
+# // //   ^ ^ ^ ^ Empty portions in for loop ^ ^ ^ ^
+# // // no init? not condition? no counter?
+
+# // // for(;;)
+# // // for(;;)
+# // // for(;;)
 
 # }
 
-# 2. Example two: summing number from 10 to 150 through iterations
+# // //   ^ ^ ^ ^ ^ Functions ^ ^ ^ ^ ^ 
 
-# int main()
-# {
+# // int int_return_function(){}
+# // // also_int_return_function(){} // defualt int type - though may cause a warning
 
-# for (int i = 10; sum = 0; i <= 150 ; sum += i ; ++i ) {} 
+# // //   ^ ^ ^ ^ Function prototyping ^ ^ ^ ^
 
-# }
+# // void void_prtp_func_1(); // function declaration
+# // void void_prtp_func_2();
+# // // main procedure
+# // void void_prtp_func_1(){ return; } // function definition
+# // void void_prtp_func_2(){} // in void functions - the return statement may be omitted and the function will return in closing block
 
-# 3. Example three: 
+# // // add to tablet: 1. static stack segment layout (building the stack) + dynamic stack segment allocation in function calls (changing the values and releasing the layout parts) 
 
-# //   ^ ^ ^ Halving Counter For loops ^ ^ ^
-# 4. Example four printing the powers of 2 from 32 to 1
-#  int main()
-# {
 
-# printf("The twos power from 32 to 1 are:\n")
-# for (int i = 32; i >= 1 ; i/2) print("%d \n", &d);
+# // //   ^ ^ ^ ^  Argument Passing ^ ^ ^ ^ 
 
-# return 0;
+# // //   ^ ^ ^ Passing By Value ^ ^ ^
 
-# }
+# // void pass_by_value(int val){}
 
-# //   ^ ^ ^ ^ While Loops ^ ^ ^ ^
 
-# Lecture examples
-# 1. Example one inputting a name:
+# // //   ^ ^ ^ Passing By Adress ^ ^ ^
 
-# #include <stdio.h>
+# // void pass_by_adress(int* adr){}
+# // // add this - pass_by_adress_2(int adr[]){} ? or in the array section ? 
 
-# int main()
-# {
 
-# char input;
-# printf("enter it")
-# scanf("%c", &input)
-# while(input != ' ')
-# {
+# // //   ^ ^ ^ Passing By Reference ^ ^ ^
 
-# printf("%c", input);
-# scanf("%c", &input);
+# // void pass_by_reference(int& ref){}
 
-# }
+# // // anon function? from version 11? what's the syntax?
 
-# return 0;
-# }
+# // //   ^ ^ ^ ^ Recursive Functions ^ ^ ^ ^
 
-# 1. Example two - average grade calculation:
+# // void rec_func(){rec_func();} // infinite loop logic
 
-# int main()
-# {
 
-# int sum = 0, counter = 0, grade; 
-# float average;
-# printf("grade\n")
-# scanf("%d", &grade)
-# while(grade != -1)
-# {
-# sum += grade;
-# ++counter;
-# scanf("%d", &grade)
-# }
+# // //   ^ ^ ^ ^ Pointer Functions ^ ^ ^ ^
+# // // finish this from lecture 12
 
-# avg = (float)sum / counter;
-# printf("%f\n", avg);
+# // //   ^ ^ ^ ^ Function Overloading ^ ^ ^ ^
 
-# return 0;
+# // int overloaded_func(int val){}
+# // int overloaded_func(float val){} // function overloading - same function name but different parameters
+# // int overloaded_func(int val1, float val2){} // function overloading - same function name but different parameters
 
-# }
+# // //   ^ ^ ^ ^ Defualt Argument Function Overloading ^ ^ ^ ^
 
-# //   ^ ^ ^ Do-While Loops ^ ^ ^
-# Example three - finding the maximum number
+# // int int_overloaded_func(int val1 = NULL, float val2 = NULL){} 
+# // // int overloaded_func(int val1, float val2 = NULL){} - part defaulting is possible
+# // // int overloaded_func(int val1, float val2 = NULL){} - this is not, the order must be from the right to left
 
-# #include 
-
-# int main()
-# {
-
-# int num;
-# int max = 0;
-# do
-# {
-# printf("num");
-# scanf("%d", &num);
-# if(num > max) max = num;
-# }
-# while(num != -1);
-# printf("max: %d\n", max);
-
-# return 0;
-
-# }
-# */
-
-# //   ^ ^ ^ ^ ^ Functions ^ ^ ^ ^ ^ 
-# // add to tablet: 1. static stack segment layout (building the stack) + dynamic stack segment allocation in function calls (changing the values and releasing the layout parts) 
-# // Lecture's coverage:
-# /*
-# 1. Example one:
-# */
-
-# //   ^ ^ ^ ^ Function prototyping ^ ^ ^ ^
-# // comp time definition? ( adding the "-> type")
-# // Lecture's coverage: 
-# /*
-# 1. Example one : powered numbers
-
-# #include <stdio.h>
-
-# int power(int, int);
-
-# int main()
-# {
-
-# int n = 5;
-# int r1 = power(2, n);
-# int r2 = power(3, n);
-
-# printf("results %d %d\n", r1, r2);
-
-# return 0;
-
-# }
-
-# int power(int base, int exp)
-# {
-
-# int pow_num = base;
-
-# for(int i = 1; i <= exp; ++i) pow_num = pow_num *= base;
-
-# return pow_num;
-
-# }
-
-# Example two: printing stars
-# #include <stdio.h>
-
-# void print_stars(int, int)
-
-# int main()
-# {
-
-# int len, wid;
-# printf("%d %d\n", len, wid);
-# scanf("%d %d", &wid, &len);
-# print_stars();
-# return 0;
-
-# }
-
-# void print_stars(int w, int l)
-# {
-
-# for(int i=0; i < l; ++i) {
-
-# for(int j=0; j < w; ++j) printf("*");
-# printf("\n");
-
-# }
-
-# return;
-
-# }
-
-# 3. Example Three: summing two numbers
-
-# #include <stdio.h>
-
-# sum_two(int, int);
-
-# main
-# {
-
-# int n1 = 3, n2 = 4, adding;
-# adding = sum_two(n1, n2);
-# return 0;
-
-# }
-
-
-# sum_two (int d1, int d2)
-# {
-
-# int sum = d1 + d2;
-# return sum;
-
-# }
-
-# 4. Example four: multiplying function
-
-# #include <stdio.h>
-
-# int multiply(int, int);
-
-# int main()
-# {
-
-# int n1 = 2, int n2 = 3;
-# print("%d", multiply(n1, n2));
-# int n1 = 3, int n2 = 4;
-# print("%d", multiply(n1, n2));
-
-# return 0;
-
-# }
-
-# int multiply(int f, int s)
-# return f*s;
-
-# 5. Example five:  
-# #include <stdio.h>
-
-
-
-
-# */
-
-# // anon function
-
-# // function nesting
-
-# //   ^ ^ ^ ^ Recursive Functions ^ ^ ^ ^
-
-# //inlining functions
-
-# //   ^ ^ ^ ^ ^ Function Overloading
-
-
-# }
+# // //   ^ ^ ^ ^ Function Templates ^ ^ ^ ^
 
 
 
