@@ -64,6 +64,21 @@ Annotation
 
 
 
+
+#   & & & & & & Data Streaming & & & & & & 
+
+#   ^ ^ ^ ^ ^ Variable input ^ ^ ^ ^ ^
+
+#   ^ ^ ^ ^ ^ Console Output ^ ^ ^ ^ ^ 
+
+
+
+
+
+
+
+
+
 #   & & & & & & Literals & & & & & & 
 # strings and chars?
 

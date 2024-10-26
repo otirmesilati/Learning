@@ -48,7 +48,7 @@ Nana's short Kubernetes video:
 
 Nana's long Kubernetes video:
 
-1. 2:17 - Intro to k8, purpose and advantages
+1. 2:17 - Intro to k8, purpose and advantages``
 2. 5:20 - K8 components, Node and Pod, Service, Volumes, Cluster, 
 3. 22:28 - K8 Architecture, Node process, Master process
 4. 34:44 - Minikube & kubectl, Production cluster setup, Local cluster setup, 

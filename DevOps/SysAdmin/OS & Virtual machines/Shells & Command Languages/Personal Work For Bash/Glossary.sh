@@ -312,6 +312,21 @@ git config --global user.email "my@email"
 
 
 
+
+#   & & & & & & Data Streaming & & & & & & 
+
+#   ^ ^ ^ ^ ^ Variable input ^ ^ ^ ^ ^
+
+#   ^ ^ ^ ^ ^ Console Output ^ ^ ^ ^ ^ 
+
+
+
+
+
+
+
+
+
 #   & & & & & & Literals (+ defined unary literal operators) & & & & & &
 # Literals - Only for Assignments
 

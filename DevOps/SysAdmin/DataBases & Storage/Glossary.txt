@@ -15,6 +15,24 @@ Map from the following:
 12. Apache Cassandra Playlist: https://www.youtube.com/watch?v=YjYWsN1vek8&list=PL2g2h-wyI4SqCdxdiyi8enEyWvACcUa9R
  
 
+
+
+- a stream is file of data to be transferred (either from - input, or to - output)
+- stream processing is immediate, while batch processing is spread in chunked intervals
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 < < < < < < < < DataBases > > > > > > > >
 
 

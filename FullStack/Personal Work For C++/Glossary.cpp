@@ -28,17 +28,8 @@
 
 
 
-//   & & & & & & Libraries & & & & & &   //
-#pragma once // have the header included once at maximum
-
-
-
-
-
-
-
-
 //   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &
+#pragma once // have the header included once at maximum
 #include <iostream> // C IO Library Files 
 using namespace std;
 
@@ -69,6 +60,23 @@ comments
 are available */
 
 //docs? logs?
+
+
+
+
+
+
+
+
+
+
+//   & & & & & & Data Streaming & & & & & & 
+
+//   ^ ^ ^ ^ ^ Variable input ^ ^ ^ ^ ^
+
+//   ^ ^ ^ ^ ^ Console Output ^ ^ ^ ^ ^ 
+
+
 
 
 

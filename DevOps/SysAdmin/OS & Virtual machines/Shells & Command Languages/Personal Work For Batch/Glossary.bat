@@ -78,6 +78,21 @@ rem For Line documentation - actual command
 
 
 
+
+::   & & & & & & Data Streaming & & & & & & 
+
+::   ^ ^ ^ ^ ^ Variable input ^ ^ ^ ^ ^
+
+::   ^ ^ ^ ^ ^ Console Output ^ ^ ^ ^ ^ 
+
+
+
+
+
+
+
+
+
 ::   & & & & & & Literals (+ defined unary literal operators) & & & & & &
 :: Literals - Only for Assignments
 

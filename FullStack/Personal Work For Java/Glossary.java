@@ -71,6 +71,23 @@ are available */
 
 
 
+
+
+
+//   & & & & & & Data Streaming & & & & & & 
+
+//   ^ ^ ^ ^ ^ Variable input ^ ^ ^ ^ ^
+
+//   ^ ^ ^ ^ ^ Console Output ^ ^ ^ ^ ^ 
+
+
+
+
+
+
+
+
+
 //   & & & & & & Literals (+ defined unary literal operators) & & & & & &
 // strings and chars?
 
