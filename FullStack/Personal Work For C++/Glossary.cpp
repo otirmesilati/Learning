@@ -30,7 +30,8 @@
 
 //   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &
 #pragma once // have the header included once at maximum
-#include <iostream> // C IO Library Files 
+#include <iostream> // standard IO Streams Library  
+#include <fstream> // File Streaming Library 
 using namespace std;
 
 
@@ -725,27 +726,48 @@ int int_overloaded_func(int val1 = NULL, float val2 = NULL){}
 
 
 
-//   & & & & & & Files & & & & & & 
+//   & & & & & & Handling Files - Message Passing to Files via Objects & & & & & & 
 
 ofstream file_object;
+
+//   ^ ^ ^ ^ Modes ^ ^ ^ ^
+
+ifstream in_file("in_file.txt", ios::in); // for input from a file
+ofstream out_file("out_file.txt", ios::out); // for output to a file
+ofstream trunc_mode_file("trunc_mode_file.txt", ios::trunc); // discard previous contents
 
 
 //   ^ ^ ^ ^ ^ File API ^ ^ ^ ^ ^ 
 
-#include <fstream> // class attribute dependant on this
-
-class File_class
+class File_class // file handler as a class - needed to wrap this to use open without comp errors
 {
+
 File_class(){my_file.open("file_name.txt");}
 ~File_class(){my_file.close();}
-ofstream my_file; // file as an attribute - needed to wrap this in a class to use open without comp errors
-};
-
 
 //   ^ ^ ^ ^ Read ^ ^ ^ ^
 
+// void ..
 
-//   ^ ^ ^ ^ Write ^ ^ ^ ^
+//   ^ ^ ^ Write ^ ^ ^
+
+void write_to_file()
+{
+	out_file << "hi";
+}
+
+
+ofstream my_file; 
+
+};
+
+
+
+
+
+
+
+
 
 
 // read? write?
