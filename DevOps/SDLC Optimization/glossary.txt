@@ -1,3 +1,49 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- environments (servers) along the SLDC:
+-- local (mostly dev's computers)
+-- staging (for testing and demos)
+-- production (the product is in customer hands!) -> open netflix.com, that's their production environment
+
+common questions:
+- how long does it take to go from one step to the next>
+- how long does the whole process take?
+- what is slowing us down that i can remove?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 & & & & & & Problems Coming up in the process & & & & & &
 
 ^ ^ ^ ^ ^ Requirements ^ ^ ^ ^ ^

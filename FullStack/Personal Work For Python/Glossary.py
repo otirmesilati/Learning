@@ -456,6 +456,17 @@ def fun_flow_control():
 #   ^ ^ ^ ^ ^ Loops ^ ^ ^ ^ ^ 
 
 # // // break? continue?
+    
+    """
+    from lecture writings:
+    current_name = input("what is your name: ")
+    while current_name != "quit":
+    if current_name == "eden":
+    continue
+    # inputting eden will make an infinite loop logic
+    if current_name == "ronen":
+    break
+    """
 
 #   ^ ^ ^ ^ While Loops ^ ^ ^ ^
 
@@ -467,6 +478,7 @@ def fun_flow_control():
 # No do while loops in python
 
 #   ^ ^ ^ ^ For Loops ^ ^ ^ ^
+for_index = 0
 
 # // for(int for_index = 0; for_index <= 5 ; ++for_index) // same as above examples
 # // {
@@ -992,7 +1004,16 @@ def composed_function(composing, composed, value):
 
 # pipeline somwhere? - mode to arch patterns 
 # list comprehension? - where to put this?
+""" from lecture writings:
+# list comprehension
+result = [i for i in range(1, 101) if i % 7 != 0 and "7" not in str(1)]
+print(result)
 
+names = ["natan", "shay", " ronen", "aaron"]
+search = [i.upper() for i in names if "n" in i]
+print(search)
+
+"""
 # abstraction - nested function dispatch functions
 
 

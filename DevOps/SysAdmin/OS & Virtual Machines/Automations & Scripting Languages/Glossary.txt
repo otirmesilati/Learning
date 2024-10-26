@@ -10,9 +10,8 @@ Map from the following:
 7. Cypress crash vid: https://www.youtube.com/watch?v=u8vMu7viCm8&t=244s
 
 At the point's intro:
-
-1.3. Automation role, tools pipelines test solutions visualization & monitoring, QA 
-1.4. python syntax 1, git terms
+ 
+1.4. <Stoped> at 10:20 ::  git terms
 2.1. pytest, packmans + commands, libraries, pycharm console
 2.2. testing (unit test, ins and outs), checks
 2.3. TDD (test_ files, features, scenario, gherkin), test functions, assert, 
@@ -29,3 +28,14 @@ At the point's intro:
 5.4.
 6.1.
 6.2.
+
+
+
+
+- tool creation for automating tasks
+- pipeline design for artifacts 
+- prepare testing solutions for feedback broviding
+- prepare data visualization for stakeholders + provide the inteligence needed
+- system monitoring
+
+- goal : better delivering quality

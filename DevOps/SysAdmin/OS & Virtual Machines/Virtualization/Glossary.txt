@@ -1,7 +1,7 @@
 Map from the following:
-1. Michael Horn's starter: https://www.youtube.com/watch?v=t-23HOKMer0
+1. <Stoped> at 08:20 :: Michael Horn's starter: https://www.youtube.com/watch?v=t-23HOKMer0
 2. Nana's completing Virtualization concept: https://www.youtube.com/watch?v=mQP0wqNT_DI
-3. Nana's Docker tutorial: https://www.youtube.com/watch?v=pg19Z8LL06w
+3. <Stoped> at 0:07:41 :: Nana's Docker tutorial: https://www.youtube.com/watch?v=pg19Z8LL06w
 4. Another, more easy docker tutorial: https://www.youtube.com/watch?v=b0HMimUb4f0
 5. Nana's short kubernetes introduction video: https://www.youtube.com/watch?v=s_o8dwzRlu4&t=104s
 6. Nana's longkubernetes introduction video: https://www.youtube.com/watch?v=X48VuDVv0do
@@ -10,14 +10,7 @@ Map from the following:
 9. HypeV tutorial: https://www.youtube.com/watch?v=3I64TeJ4iNI
 10. esxi tutorial: https://www.youtube.com/watch?v=wQurzzxkjy4&list=PLxTwjzMO9Zf62tCYP2rP0FqwVdzTbGPjU
 11. proxmox playlist: https://www.youtube.com/watch?v=5j0Zb6x_hOk&list=PLT98CRl2KxKHnlbYhtABg6cF50bYa8Ulo
-
-Michael Horn's starter:
-1. 
-2. 
-3. 
-4. 
-5. 
-
+    
 
 Nana's Virtualization:
 
@@ -41,17 +34,6 @@ Nana's Docker/Containeriazation tutorial:
 10. 49:08 - Creating custom images - dockerizing apps (dockerfiles)
 11. 1:02:37 - Docker UI client
 12. 1:03:40 - Docker in SDLC
-
-the simpler docker video:
-1. 
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
-8. 
-9. 
 
 Nana's short Kubernetes video:
 1.
@@ -88,6 +70,41 @@ Nana's long Kubernetes video:
 
 
 
+
+
+
+
+
+horn's:
+
+- boxes software has built in os download option! nice
+
+- benefit of disaster handling
+- benefit of error recoveries with VMs : snapshots
+- added security layer and minimizing harm in case of malware
+- VM can abstract physical limitations 
+- type 1 hypervisors/ bare metal : VMWare and hyperV 
+- type 2 hypervisors/ hosted : virtual box and Q(uick)EMU(lator)
+- type 1 hypervisor faster, as the host OS is trying to handle the efficency, but the guest OS is also slowed by background running proccesses 
+- KVM as a kernel virtual machine is special, resmbles type 2 hypervisor and enables QEMU direct access to hardware , and feels like hardware acceleration tool
+- need to check if OS virtualization is enabled
+
+nana's short docker:
+
+- docker is a dev/dep simplifying virtualization software (through packed containers that can be shared and distributed) 
+- first dependencies were on local systems (postgres, redis, mosquito for messaging...)
+-- every other dev now needs to install and configure their own local environments
+--- very dependant on OS, so that might very well be a problem
+--- a compound process to do, errors are prone along the way
+--- might duplicate the process for different services -> solved by containers as they are services bundled with their dependencies, all they need is to be ran
+---- docker solution even enables running different versions of samie application - which most probably would conflict localy
+
+
+
+
+
+
+<<<<<<<< system images
 < < < < < < < < Virtualized Orchestration > > > > > > > >
 
 
@@ -98,7 +115,7 @@ Nana's long Kubernetes video:
 
 
 
-< < < < < < < < HyperVisors > > > > > > > >
+< < < < < < < < HyperVisors : efficient HarWare and VM controllers > > > > > > > > 
 
 - virtmanager vs virtualbox - ones a complete system, and the othe just a gui?
 
