@@ -18,6 +18,7 @@ Map from the following:
 
 
 - a stream is file of data to be transferred (either from - input, or to - output)
+-- mostly will be called buffers
 -- message passing with a DB
 -- ends with end of file marker
 - stream processing is immediate, while batch processing is spread in chunked intervals

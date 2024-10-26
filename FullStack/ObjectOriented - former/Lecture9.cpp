@@ -176,7 +176,7 @@ void student_binary_file_testing()
 	if (student_db.is_open())
 	{
 		student_db << endl;
-		StudentWithFile* my_students[3] = { new StudentWithFile("Avi", 95), new StudentWithFile("Benny", 100), new StudentWithFile("Cadi", 92) };
+ 		StudentWithFile* my_students[3] = { new StudentWithFile("Avi", 95), new StudentWithFile("Benny", 100), new StudentWithFile("Cadi", 92) };
 		for (int w_to_file_index = 0; w_to_file_index < 3; ++w_to_file_index)
 		{
 			student_db << *my_students[w_to_file_index];

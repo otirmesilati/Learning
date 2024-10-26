@@ -32,6 +32,7 @@
 #pragma once // have the header included once at maximum
 #include <iostream> // standard IO Streams Library  
 #include <fstream> // File Streaming Library 
+#include <string> // string type Library
 using namespace std;
 
 
@@ -240,6 +241,7 @@ first_multi_assign = second_multi_assign = 1; // chain assignment
 
 
 //   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^ ^
+
 first = first + 3;
 first += 3;
 first = first + 1;
@@ -340,6 +342,8 @@ int ptr_value_2 = 1, * ptr_address_2 = &ptr_value_2, ptr_value_2 = *ptr_address_
 
 void fun_variables()
 {
+
+//   ^ ^ ^ ^ ^ Data Type ^ ^ ^ ^ ^
 
 bool my_bool;
 char my_char;
@@ -745,9 +749,15 @@ class File_class // file handler as a class - needed to wrap this to use open wi
 File_class(){my_file.open("file_name.txt");}
 ~File_class(){my_file.close();}
 
-//   ^ ^ ^ ^ Read ^ ^ ^ ^
+//   ^ ^ ^ ^ Read - error checking for file reading ^ ^ ^ ^
 
-// void ..
+void read_to_file()
+{
+	if(!in_file)
+	{
+		cerr << "Error reading";
+	}
+}
 
 //   ^ ^ ^ Write ^ ^ ^
 
@@ -769,12 +779,7 @@ ofstream my_file;
 
 
 
-
-// read? write?
-
-
-
-
+//   & & & & & & Handling Errors - Exception Objects & & & & & & 
 
 
 
@@ -1143,7 +1148,6 @@ class My_inline
 
 inline void My_inline::explicit_inline(){} // definition
 
-// error handling?
 // template classes? 
 // reflections 
 
