@@ -355,7 +355,6 @@ printf("%c", undef_behav); // wrong type field - undefined behaviour!
 void fun_operators()
 {
 int first_check, second_check;
-int first_multi_assign, second_multi_assign;
 int first_temp = 1;
 double sum_temps, second_temp = 2.00;
 int five = 5, three = 3, zero = 0;
@@ -382,7 +381,8 @@ first = 2;
 
 //   ^ ^ ^ Multiple Assignment ^ ^ ^
 
-first_multi_assign = second_multi_assign = 1;
+int first_multi_assign, second_multi_assign;
+first_multi_assign = second_multi_assign = 1; // chain assignment
 
 
 //   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^ ^

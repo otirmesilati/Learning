@@ -464,17 +464,9 @@ def fun_flow_control():
         pass # while procedure 
 
 
-# // //   ^ ^ ^ Do-While Loops ^ ^ ^
+# No do while loops in python
 
-# // int do_while_index = -1;
-# // do
-# // {
-# //     ++do_while_index;
-# //     // do-while procedure
-# // } while(do_while_index <= 5); //condition checking AFTER the procedure ran
-
-
-# // //   ^ ^ ^ ^ For Loops ^ ^ ^ ^
+#   ^ ^ ^ ^ For Loops ^ ^ ^ ^
 
 # // for(int for_index = 0; for_index <= 5 ; ++for_index) // same as above examples
 # // {

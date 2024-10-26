@@ -4,6 +4,7 @@ Map from the following:
 2. JSON?     and JSON crack: https://www.youtube.com/watch?v=4zQwef_Pnqw 
 3. XML? 
 4. TOML? 
+5. read the connection of all of these langs: https://en.wikipedia.org/wiki/Serialization#Serialization_formats
 5. Mike's SQL CRUD famous tutorial: https://www.youtube.com/watch?v=HXV3zeQKqGY&t=7579s
 6. CodeAcademy's LINQ tutorial: https://www.youtube.com/watch?v=5l2qA3Pc83M
 7. Net Ninja's MongoDB playlist: https://www.youtube.com/watch?v=ExcRbA7fy_A&list=PL4cUxeGkcC9h77dJ-QJlwGlZlTd4ecZOA
