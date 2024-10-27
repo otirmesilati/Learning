@@ -800,7 +800,29 @@ ifstream my_second_file;
 
 //   & & & & & & Handling Errors - Exception Objects & & & & & & 
 
+//   ^ ^ ^ ^ ^ Throw ^ ^ ^ ^ ^ 
 
+class Error_Handling
+{
+
+	void throw_error()
+	{
+		throw std::runtime_error("An error occurred");
+	}
+	
+	void try_error()
+	{
+		try
+        {
+            throw_error();
+        }
+        catch(const std::exception& e)
+        {
+            std::cerr << "Caught exception: " << e.what() << '\n';
+        }
+	}
+
+};
 
 
 

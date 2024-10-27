@@ -1,0 +1,9 @@
+Humane (Errors)mistakes make (Faulty)bad code that does (Failure) not what we wanted:
+- Compilation-Errors: Code doesn't compile  --->  Handled by checked exceptions
+- Run-Time-Errors: Compilation went through, though exception was thrown  --->  Handled by un-checked exceptions (not a comp error in java)
+- Linking-Errors: Not handled well project linking procedures like pre-proccessors commands
+- (Bugs/Defects)Logical-Errors: Code Compiles, not as expected
+-- used to handle with return value mechanism, problems:
+--- return value not always void (not used)/ an edge case such as C'tor and D'tor
+--- only return value? what if we need more information?
+--- return value not always checked

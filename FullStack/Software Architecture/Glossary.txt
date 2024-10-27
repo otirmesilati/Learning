@@ -102,6 +102,7 @@ tablet skills - umling the design patterns
 -- Behavioral:
 
 --- Chain Of Responsibility
+---- cpp error handling
 --- Iterator
 --- Visitor
 --- State
