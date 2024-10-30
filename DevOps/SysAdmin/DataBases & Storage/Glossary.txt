@@ -16,7 +16,7 @@ Map from the following:
  
 
 
-
+- file is the basic element of file systems for storage
 - a stream is file of data to be transferred (either from - input, or to - output)
 -- mostly will be called buffers
 -- message passing with a DB

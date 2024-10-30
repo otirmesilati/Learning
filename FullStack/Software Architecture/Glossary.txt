@@ -93,6 +93,7 @@ tablet skills - umling the design patterns
 
 --- Adapter
 --- Decorator
+---- takes a function as input, and wrapps behaviour on the input
 --- Bridge
 --- Facade
 --- Proxy
