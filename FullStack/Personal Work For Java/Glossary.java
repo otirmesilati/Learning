@@ -23,18 +23,14 @@
 
 
 
-// //   & & & & & & Libraries & & & & & &   //
+// //   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &
+
+//   ^ ^ ^ ^ ^ Static Libraries ^ ^ ^ ^ ^
+
 import java.util.*; // have the header included once at maximum
 import javax.swing.*; // GUI widget toolkit library
 import java.awt.*;  // lightweight library built upon swing 
 
-
-
-
-
-
-
-// //   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &
 // #include <iostream> // C IO Library Files 
 // using namespace std;
 
@@ -42,6 +38,7 @@ import java.awt.*;  // lightweight library built upon swing
 // // java util - what is it? reflection api library? GUI libraries? libraries database?
 // // rich API? primitives and objects API? collections?
 
+//   ^ ^ ^ ^ ^ Shared Libraries ^ ^ ^ ^ ^
 
 
 

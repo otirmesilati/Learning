@@ -5,7 +5,11 @@
 //   < < < < < < < <   Procedural Principles  > > > > > > > > >   //
 
 //   & & & & & & Libraries & & & & & &   //
+
+//   ^ ^ ^ ^ ^ Static Libraries ^ ^ ^ ^ ^
 // gui? library databases?
+
+//   ^ ^ ^ ^ ^ Shared Libraries ^ ^ ^ ^ ^
 
 //   & & & & & & Comments & & & & & &
 

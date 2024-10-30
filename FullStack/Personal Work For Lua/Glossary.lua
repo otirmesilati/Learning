@@ -53,8 +53,13 @@
 
 
 
---   & & & & & & Libraries & & & & & & 
+--   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & & 
+
+--   ^ ^ ^ ^ ^ Static Libraries ^ ^ ^ ^ ^
 -- gui? stdlib? library databases?
+
+--   ^ ^ ^ ^ ^ Shared Libraries ^ ^ ^ ^ ^
+
 
 
 

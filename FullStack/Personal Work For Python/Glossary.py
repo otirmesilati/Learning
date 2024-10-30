@@ -9,7 +9,8 @@
 
 
 #   < < < < < < < <   Language Principles   > > > > > > > >   
-import functools # a module(element of a library) for working with functions, 2 classes: partial(fix arguments) and partialmethod
+
+
 
 
 
@@ -30,12 +31,14 @@ import functools # a module(element of a library) for working with functions, 2 
 
 #   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &
 
+#   ^ ^ ^ ^ ^ Static Libraries ^ ^ ^ ^ ^
 
+import functools # a module(element of a library) for working with functions, 2 classes: partial(fix arguments) and partialmethod
 #   Standard Library is built in, not need to be imported
 # GUI? Libraries DataBases 
 
 
-
+#   ^ ^ ^ ^ ^ Shared Libraries ^ ^ ^ ^ ^
 
 
 
@@ -316,7 +319,19 @@ int a = 2, b;
 
 """
 
+"""
+Python Compund (two sided) inequality:
 
+age = int(input("Enter your age "))
+if 31 < age < 41:
+    print("you are ok")
+
+years_of_experience = int(input("Enter your years of experience "))
+if 2 < years_of_experience < 10:
+    print("you have experience")
+
+
+"""
 
 
 

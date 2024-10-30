@@ -29,17 +29,13 @@
 
 
 
-//   & & & & & & Libraries & & & & & &   // 
+//   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &   // 
 
-
-
-
-
-
-
-
-//   & & & & & & Libraries & & & & & &
+//   ^ ^ ^ ^ ^ Static Libraries ^ ^ ^ ^ ^
 // stndard lib? GUI? rich api? libraries database?
+
+//   ^ ^ ^ ^ ^ Shared Libraries ^ ^ ^ ^ ^
+
 
 
 

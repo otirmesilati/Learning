@@ -42,8 +42,12 @@
 
 
 //   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &
+
+//   ^ ^ ^ ^ ^ Static Libraries ^ ^ ^ ^ ^
+
 #include <stdio.h> // C IO Library Files 
 
+//   ^ ^ ^ ^ ^ Shared Libraries ^ ^ ^ ^ ^
 
 
 // iostream? stdio.h? GUI libraries?

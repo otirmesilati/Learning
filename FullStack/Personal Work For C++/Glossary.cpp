@@ -29,11 +29,16 @@
 
 
 //   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &
+
+//   ^ ^ ^ ^ ^ Static Libraries ^ ^ ^ ^ ^
+
 #pragma once // have the header included once at maximum
 #include <iostream> // standard IO Streams Library  
 #include <fstream> // File Streaming Library 
 #include <string> // string type Library
 using namespace std;
+
+//   ^ ^ ^ ^ ^ Shared Libraries ^ ^ ^ ^ ^
 
 
 // iostream? iostream? typeinfo? GUI libraries? libraries database?
@@ -230,14 +235,18 @@ int explicit_conv_assignment;
 
 
 //   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
-int first = 1;
-first = 2;
 
+int first; // declaration
+int second, third; // multi-line operations one-lining
+
+first = 1;
+int fourth = 2;
 
 //   ^ ^ ^ Multiple Assignment ^ ^ ^
 
-int first_multi_assign, second_multi_assign;
+int first_multi_assign, second_multi_assign; // multiple declaration
 first_multi_assign = second_multi_assign = 1; // chain assignment
+
 
 
 //   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^ ^
