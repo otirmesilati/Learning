@@ -133,8 +133,8 @@ tablet skills - umling the design patterns
 
 
 
---- REST
-
+--- REST & CRUD
+---- in http: create -> post, read -> get, update -> put, delete -> delete
 --- ZeroMQ:
 ---- Requet-Reply
 ---- Publish-Subscribe

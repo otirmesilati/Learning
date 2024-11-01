@@ -34,18 +34,12 @@
 
 
 
-//   & & & & & & Libraries & & & & & & //
-// what about library database? //
-
-
-
-
-
 //   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &
 
 //   ^ ^ ^ ^ ^ Static Libraries ^ ^ ^ ^ ^
 
 #include <stdio.h> // C IO Library Files 
+#include <string.h> //?
 
 //   ^ ^ ^ ^ ^ Shared Libraries ^ ^ ^ ^ ^
 
@@ -53,7 +47,6 @@
 // iostream? stdio.h? GUI libraries?
 // pragma once? namespace ? (finish mapping this)
 // rich API? primitives and objects API? collections?
-
 
 
 
@@ -143,6 +136,12 @@ void fun_literals(){
 1e-3;
 1e4L;   // combining //
 
+
+//   ^ ^ ^ ^ ^ Characters & Charlist (strings) ^ ^ ^ ^ ^
+
+'a';
+// {'b', 'c'};
+
 }
 
 
@@ -164,7 +163,6 @@ void fun_literals(){
 //   & & & & & & String Formatting & & & & & &
 
 
-
 void fun_string_formats(){
 
 int number = 1;
@@ -176,37 +174,31 @@ int undef_behav = 4;
 
 //   ^ ^ ^ ^ Flags ^ ^ ^ ^
 
-
-
-//   ^ ^ ^ ^ Precision ^ ^ ^ ^
+//   ^ ^ ^ Precision ^ ^ ^ 
 
 printf("%d %.2lf", number, dvalue); // two digits left of decimal point 
 // what about two digits to the right? 
 
 
-//   width
-//   ^ ^ ^ ^ Length ^ ^ ^ ^
+//width?
+
+
+//   ^ ^ ^ Length ^ ^ ^
 
 printf("%ld", 1); // long
 printf("%lf", 2.34); // double
 
-//   ^ ^ ^ ^ Types ^ ^ ^ ^
+//   ^ ^ ^ Types ^ ^ ^
 
 printf("%c", 'a'); // char
 printf("%d", 1); // int
 printf("%f", 2.3); // float
 
-
-
 printf("%c", undef_behav); // wrong type field - undefined behaviour!
 
-//   custom field 
-
-}
-
-
-// More Material: 
+//custom field? 
 // complete this section from here: https://en.wikipedia.org/wiki/Printf 
+}
 
 
 
@@ -217,54 +209,79 @@ printf("%c", undef_behav); // wrong type field - undefined behaviour!
 
 
 //   & & & & & & Operators & & & & & &
-// which operations are available? one what types? categories : numbers, string operators...
 
 
 void fun_operators()
 {
-int first_check, second_check;
-int first_temp = 1;
-double sum_temps, second_temp = 2.00;
-int five = 5, three = 3, zero = 0;
 
+int first_check, second_check;
+
+double sum_temps; 
+int five = 5, three = 3, zero = 0;
 int first_explicit_conv, second_explicit_conv;
 int explicit_conv_assignment;
 
 
-// need to touch on lvalue, rvalue, gvalue: 
-// lecture's coverage: lval is left and changing, and rval is right, WOW!
+//   ^ ^ ^ ^ ^ Expression Values ^ ^ ^ ^ ^
 
+//   ^ ^ ^ ^ (g-value)l-values : memory allocated and mutable terms ^ ^ ^ ^
 
+int my_lvalue;
 
-// More Material:
-// for the wiki tldr: https://en.wikipedia.org/wiki/Value_(computer_science)
-// for the famous lval/rval/gval/xval graph: https://stackoverflow.com/questions/3601602/what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues
+//   ^ ^ ^ ^ (g-value)r-values : NOT lvals, no persistent memory -> temporary ^ ^ ^ ^
 
+0;
+'1';
+// {'m', 'y', '_', 'r', 'v', 'a', 'l', 'u', 'e'};
+(1 + 2); // No Identity : p(ure)-rval
+
+//   ^ ^ ^ ^ x-values : about to be moved from scope ^ ^ ^ ^
+
+// void x_val_func(int my_xval)
+// {
+//    return my_xval;
+//}
 
 
 //   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
+
 int first = 1;
 first = 2;
 
 
-//   ^ ^ ^ Multiple Assignment ^ ^ ^
+//   ^ ^ ^ ^ Multiple Assignment ^ ^ ^ ^
 
-int first_multi_assign, second_multi_assign;
+int first_multi_assign, second_multi_assign; // multiple operations
 first_multi_assign = second_multi_assign = 1; // chain assignment
+
+
+//   ^ ^ ^ ^ ^ Casting Operators : C type conversion ^ ^ ^ ^ ^
+
+//   ^ ^ ^ ^ Implicit Automatic/Widening Conversion ^ ^ ^ ^
+int first_temp, second_temp;
+int int_elm = -1;
+signed char s_char_elm = '0';
+long long_elm = "1";
+float float_elm = 2.00;
+double double_elm = 3.00;
+
+first_temp + second_temp; 
+int_elm - s_char_elm; // info lose : small type is signed, big is not
+long_elm + float_elm; // overflow: small is long, big is long
+
+
+//   ^ ^ ^ ^ Explicit conversion - User Defined ^ ^ ^ ^ 
+
+first_explicit_conv = 3, second_explicit_conv = 4;
+first_explicit_conv = (int)5.00 + second_explicit_conv;
+explicit_conv_assignment = (float)(first_explicit_conv / second_explicit_conv); // both exp conv scenarios, order: 1. int result temp 2. float result temp, 3. int assignment temp
 
 
 //   ^ ^ ^ ^ ^ Arithmetical Operators (and a bit of operation piping) ^ ^ ^ ^ ^
 
-first = first + 3;
-first += 3;
-first = first + 1;
-first++;
-++first;
+//   ^ ^ ^ ^ Addition ^ ^ ^ ^ 
 
-
-//   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^ 
-// what here ? what comes before what? * before / in C?  
-
+first = first + 0, first += 1;
 
 //   ^ ^ ^ ^ Prefix vs Postfix inc/dec operator ^ ^ ^ ^
 first_check = 1;
@@ -272,40 +289,37 @@ first_check = second_check++; // first_check = 1, second_check = 2
 first_check = ++second_check; // first_check = second_check = 3
 
 
+//   ^ ^ ^ ^ Subtraction ^ ^ ^ ^
 
-//   ^ ^ ^ ^ Arithmetical Operators: Narrowing/Widening type Casting ^ ^ ^ ^
-
-
-//   ^ ^ ^ type casting/C-casting ^ ^ ^
-
-//   ^ ^ Implicit conversion - mismatching variables in opeartion ^ ^
-
-first_temp + second_temp; // first is promoted to double in widening implicit c type conversion
-
-//   ^ ^ Explicit conversion - assigned to different type OR different type written in parantheses ^ ^ 
-
-first_explicit_conv = 3, second_explicit_conv = 4;
-explicit_conv_assignment = (float)(first_explicit_conv / second_explicit_conv); // both exp conv scenarios, order: 1. int result temp 2. float result temp, 3. int assignment temp
+int second;
+second = second - 2, second -= 3;
 
 
+//   ^ ^ ^ ^ Multiplication ^ ^ ^ ^
+
+int third;
+third = third * 3, third *= 4;
 
 
- 
+//   ^ ^ ^ ^ Division ^ ^ ^ ^
+
+int fourth;
+fourth = fourth / 5, fourth /= 6;
 
 
+//   ^ ^ ^ ^ Modulo ^ ^ ^ ^
+
+int fifth;
+fifth = fifth % 7, fifth %= 8;
+
+//   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^ 
+// what here ? what comes before what? * before / in C?   
 
 // More Material: 
 // map from this more about casts: https://stackoverflow.com/questions/28002/regular-cast-vs-static-cast-vs-dynamic-cast
 // No Automatic casting to wide in c++? a set of rules: https://www.youtube.com/watch?v=uI10H1jzw00
 // Make temp variable arithmetic in tablet and map building upon these scenarios: 
 // answer: b' - promotion, (a + b')' - same, ((a + b')')' - demotion  
-
-
-
-
-
-
-
 
 
 //   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
@@ -342,7 +356,6 @@ int ptr_value_2 = 1, * ptr_address_2 = &ptr_value_2, ptr_value_2 = *ptr_address_
 
 
 }
-
 
 
 

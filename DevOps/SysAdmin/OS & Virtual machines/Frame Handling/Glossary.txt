@@ -79,6 +79,24 @@ ides like jetbrains?
 
 
 
+
+
+
+
+
+package managers vs installers:
+- installers don't take into consideration any other software than the one it installs -> hurt other install dependencies
+- package managers do -> thus also take into consideration of handling version conflicts -> minimize dependency hell
+- packmans: pip(for python packages).. what more?
+
+
+
+
+
+
+
+
+
 what more desktop apps? (file browsers? internet browser?...)
 
 

@@ -44,8 +44,10 @@ import datetime as timies
 
 #   ^ ^ ^ ^ ^ Shared Libraries ^ ^ ^ ^ ^
 
+#   ^ ^ ^ ^ Shared Automation Libraries ^ ^ ^ ^ 
 
-
+import requests
+import selenium
 
 
 #   & & & & & & Comments & & & & & & 
@@ -76,9 +78,12 @@ Annotation
 
 #   ^ ^ ^ ^ ^ Variable input ^ ^ ^ ^ ^
 
+my_input = input("enter input")
+
 #   ^ ^ ^ ^ ^ Console Output ^ ^ ^ ^ ^ 
 
-
+output = input
+print(output)
 
 
 
@@ -123,8 +128,10 @@ def fun_literals():
     1e2
     1e-3
 
+#   ^ ^ ^ ^ ^ Characters & Strings ^ ^ ^ ^ ^
 
-
+    'a'
+    "bc"
 
 
 
@@ -156,14 +163,21 @@ def fun_string_formats():
     
 #   ^ ^ ^ ^ ^ Format Specifiers ^ ^ ^ ^ ^
 
-# flags? width? length? type(wrong type field - same behavior as C)? custom? 
-
 #   ^ ^ ^ ^ Precision ^ ^ ^ ^ 
-    
-    print(f"{number} {d_number:.2f}")
-    # to the right of the decimal point? 
 
-# types? list all the primitive types?
+print(f"{number:d} {d_number:.2f}")
+
+# length
+
+print(f"{2.34:f}")
+
+#   ^ ^ ^ ^ Types ^ ^ ^ ^
+
+print(f"{a:c}")
+print(f"{1:d}")
+print(f"{2.3:f}")
+
+#   un-matching types won't cause undefined behavior but raise a TypeError exception 
 
 
 
@@ -589,6 +603,150 @@ for_index = 0
 
 
 
+
+
+
+
+
+
+
+
+
+
+"""
+
+//   & & & & & & Handling Files - Message Passing to Files via Objects & & & & & & 
+
+ofstream file_object;
+
+//   ^ ^ ^ ^ Modes ^ ^ ^ ^
+
+ifstream in_file("in_file.txt", ios::in); // for input from a file
+ofstream out_file("out_file.txt", ios::out); // for output to a file
+ofstream trunc_mode_file("trunc_mode_file.txt", ios::trunc); // discard previous contents
+
+
+//   ^ ^ ^ ^ ^ File API ^ ^ ^ ^ ^ 
+
+class File_class // file handler as a class - needed to wrap this to use open without comp errors
+{
+
+File_class(){my_file.open("file_name.txt");}
+~File_class(){my_file.close();}
+
+//   ^ ^ ^ ^ Read ^ ^ ^ ^
+
+void read_to_file()
+{
+	string var_to_in;
+	in_file >> var_to_in;
+}
+
+//   ^ ^ ^ ^ Write ^ ^ ^ ^
+
+void write_to_file()
+{
+	out_file << "hi";
+}
+
+//   ^ ^ ^ ^ Seekers ^ ^ ^ ^
+
+void get_seeking()
+{
+	my_second_file.seekg(0, ios::beg); // go to the beginning of the file
+    my_second_file.seekg(10, ios::cur); // go 10 positions from the current position
+    my_second_file.seekg(0, ios::end); // go to the end of the file
+}
+
+void put_seeking()
+{
+	my_file.seekp(0, ios::beg); // go to the beginning of the file
+	my_file.seekp(10, ios::cur); // go 10 positions from the current position
+	my_file.seekp(0, ios::end); // go to the end of the file
+}
+// put -out, 
+// beg - def, cur, end, 
+
+ofstream my_file; 
+ifstream my_second_file;
+
+
+// stopped at tell, what about binary files?
+
+};
+
+
+
+
+
+
+
+
+
+//   & & & & & & Handling Errors - Exception Objects & & & & & & 
+
+//   ^ ^ ^ ^ ^ Throw ^ ^ ^ ^ ^ 
+
+class Error_Handling
+{
+
+	void throw_error()
+	{
+		throw std::runtime_error("An error occurred");
+	}
+	
+	void try_error()
+	{
+		try
+        {
+            throw_error();
+        }
+        catch(const std::exception& e)
+        {
+            std::cerr << "Caught exception: " << e.what() << '\n';
+        }
+	}
+
+};
+
+
+from the devops lecture: 
+
+When working with files in text mode, it is highly recommended to specify the encoding type, for example to write in hebrew:
+my_file = open("my_file.txt", "r", encoding="utf-8")
+
+finally - runs anyway
+
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # //   & & & & & & Structs & & & & & &
 
 # //   & & & & & & Classes & & & & & &
@@ -954,127 +1112,6 @@ for_index = 0
 # // error handling?
 # // template classes? 
 # // reflections 
-
-
-
-
-
-
-
-
-
-"""
-
-//   & & & & & & Handling Files - Message Passing to Files via Objects & & & & & & 
-
-ofstream file_object;
-
-//   ^ ^ ^ ^ Modes ^ ^ ^ ^
-
-ifstream in_file("in_file.txt", ios::in); // for input from a file
-ofstream out_file("out_file.txt", ios::out); // for output to a file
-ofstream trunc_mode_file("trunc_mode_file.txt", ios::trunc); // discard previous contents
-
-
-//   ^ ^ ^ ^ ^ File API ^ ^ ^ ^ ^ 
-
-class File_class // file handler as a class - needed to wrap this to use open without comp errors
-{
-
-File_class(){my_file.open("file_name.txt");}
-~File_class(){my_file.close();}
-
-//   ^ ^ ^ ^ Read ^ ^ ^ ^
-
-void read_to_file()
-{
-	string var_to_in;
-	in_file >> var_to_in;
-}
-
-//   ^ ^ ^ ^ Write ^ ^ ^ ^
-
-void write_to_file()
-{
-	out_file << "hi";
-}
-
-//   ^ ^ ^ ^ Seekers ^ ^ ^ ^
-
-void get_seeking()
-{
-	my_second_file.seekg(0, ios::beg); // go to the beginning of the file
-    my_second_file.seekg(10, ios::cur); // go 10 positions from the current position
-    my_second_file.seekg(0, ios::end); // go to the end of the file
-}
-
-void put_seeking()
-{
-	my_file.seekp(0, ios::beg); // go to the beginning of the file
-	my_file.seekp(10, ios::cur); // go 10 positions from the current position
-	my_file.seekp(0, ios::end); // go to the end of the file
-}
-// put -out, 
-// beg - def, cur, end, 
-
-ofstream my_file; 
-ifstream my_second_file;
-
-
-// stopped at tell, what about binary files?
-
-};
-
-
-
-
-
-
-
-
-
-//   & & & & & & Handling Errors - Exception Objects & & & & & & 
-
-//   ^ ^ ^ ^ ^ Throw ^ ^ ^ ^ ^ 
-
-class Error_Handling
-{
-
-	void throw_error()
-	{
-		throw std::runtime_error("An error occurred");
-	}
-	
-	void try_error()
-	{
-		try
-        {
-            throw_error();
-        }
-        catch(const std::exception& e)
-        {
-            std::cerr << "Caught exception: " << e.what() << '\n';
-        }
-	}
-
-};
-
-
-from the devops lecture: 
-
-When working with files in text mode, it is highly recommended to specify the encoding type, for example to write in hebrew:
-my_file = open("my_file.txt", "r", encoding="utf-8")
-
-finally - runs anyway
-
-"""
-
-
-
-
-
-
-
 
 
 

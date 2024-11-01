@@ -39,3 +39,27 @@ At the point's intro:
 - system monitoring
 
 - goal : better delivering quality
+
+
+
+
+
+
+
+
+
+& & & & & & Web Automation & & & & & &
+
+^ ^ ^ ^ ^ Shared Automation Libraries ^ ^ ^ ^ ^
+
+CRUD HTTP operations
+
+^ ^ ^ ^ Requests ^ ^ ^ ^
+
+get -> returns HTTP status code
+
+^ ^ ^ ^ Selenium ^ ^ ^ ^
+
+get -> opens site through URL specified
+
+
