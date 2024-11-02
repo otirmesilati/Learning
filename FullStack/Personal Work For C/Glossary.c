@@ -258,6 +258,7 @@ first_multi_assign = second_multi_assign = 1; // chain assignment
 //   ^ ^ ^ ^ ^ Casting Operators : C type conversion ^ ^ ^ ^ ^
 
 //   ^ ^ ^ ^ Implicit Automatic/Widening Conversion ^ ^ ^ ^
+
 int first_temp, second_temp;
 int int_elm = -1;
 signed char s_char_elm = '0';
@@ -366,7 +367,8 @@ int ptr_value_2 = 1, * ptr_address_2 = &ptr_value_2, ptr_value_2 = *ptr_address_
 
 
 //   & & & & & & Variables & & & & & &
-// type hinting? (static - no, dynamic - yes)
+
+// No type hinting in C
 
 
 void fun_variables()
@@ -379,6 +381,15 @@ float my_float;
 double my_double;
 
 int imagine_this_is_out_of_any_function_global = 0;
+
+//   ^ ^ ^ ^ Data Collection Type - Array ^ ^ ^ ^ 
+
+char my_char_array[1];
+int my_int_array[2];
+long my_long_array[3];
+float my_float_array[4];
+double my_double_array[5];
+
 
 // unsigned short cap: 65535
 unsigned short hi = 65000; // 65,00
@@ -413,7 +424,7 @@ int this_wont_be_changed_local = 2;
 { 
 
     int second_level_local = 3;
-    int this_wont_be_changed_local = 4;
+    int this_wont_be_changed_local = 4; // A new variable! locally scoped
 
     {
         int third_level_local = 5;
@@ -439,11 +450,11 @@ first_level_local = 3;
 
 //   ^ ^ ^ Enums(Almost pre-processor) ^ ^ ^
 
-enum boolean {NO, YES};
+enum Boolean {NO, YES};
 typedef enum {TRUE = 1, FALSE = 0} Boolean;
 
 
-//   ^ ^ ^ ^ Constants: Immutables 
+//   ^ ^ ^ ^ Immutable Variables ^ ^ ^ ^
 
 //   ^ ^ ^ ConstExpr : Compile Time Immutable ^ ^ ^ 
 
@@ -482,8 +493,6 @@ my_float_pointer = &my_float;
 my_double_pointer = &my_double;
 
 //   ^ ^ ^ ^ Dynamic Allocation ^ ^ ^
-
-// break? continue?
 
 //   ^ ^ ^ Heap Byte Allocation: Malloc ^ ^ ^
 
@@ -530,9 +539,25 @@ my_generic_pointer_converted_to_long_pointer = (long*)my_generic_pointer;
 my_generic_pointer_converted_to_float_pointer = (float*)my_generic_pointer;
 my_generic_pointer_converted_to_double_pointer = (double*)my_generic_pointer;
 
-//   ^ ^ ^ ^ ^ Data Collections ^ ^ ^ ^ ^ 
+//   ^ ^ ^ ^ Array Handling ^ ^ ^ ^ 
 
-// No List Comprehension in C
+//   ^ ^ ^ Allocation ^ ^ ^
+
+//   ^ ^ static array allocation - using init list ^ ^ 
+
+int static_allocation[1] = {0};
+int not_mentioning_size_in_static_allocation_is_inferred_through_number_of_elements_in_brackets[] = {'a','b','c'}; // size inferring: 3 elements -> 3
+int and_not_mentioning_all_element_values_will_init_the_rest_to_0[3] = {2, 1}; // no last value mentioned -> inited to 0: {2, 1, 0}
+
+int nested_static_allocation[2][3] = {{4, 5, 6} , {7, 8, 9}};
+int same_nested_allocation_different_writing[2][3] = {4, 5, 6, 7, 8, 9};
+int inferring_and_non_mentioned_value_initiation_also_happens_in_nested_arrays[][2] = {{1, 2}, {3}}; // 1. size inferring: 2, last value init -> {{1, 2}, {3, 0}} 
+// Though - lowest level size mentioning is a MUST for the inferring to happen
+
+
+//   ^ ^ dynamic array allocation ?
+
+// No List Comprehension in C++
 
 // strings?
 
@@ -574,7 +599,7 @@ procedure_2_label:
 // second procedure //
 
 // More Material: https://www.geeksforgeeks.org/local-labels-in-c/
-
+// break? continue?
 
 //   ^ ^ ^ ^ Conditional Statements ^ ^ ^ ^
 
