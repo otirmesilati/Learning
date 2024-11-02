@@ -19,7 +19,7 @@
 
 
 //   < < < < < < < <   Procedural Principles   > > > > > > > >   
-
+//   < < < < < < < <   Generic Principles   > > > > > > > >   
 
 
 
@@ -729,7 +729,6 @@ void pass_by_value(int val){}
 //   ^ ^ ^ Passing By Adress ^ ^ ^
 
 void pass_by_adress(int* adr){}
-// add this - pass_by_adress_2(int adr[]){} ? or in the array section ? 
 void pass_array_basically_const_address(int arr[]){}
 
 //   ^ ^ ^ Passing By Reference ^ ^ ^
@@ -743,7 +742,7 @@ void pass_by_reference(int& ref){}
 void rec_func(){rec_func();} // infinite loop logic
 
 
-//   ^ ^ ^ ^ Pointer Functions ^ ^ ^ ^
+//   ^ ^ ^ ^ Pointer (Generic) Functions ^ ^ ^ ^
 // finish this from lecture 12
 
 //   ^ ^ ^ ^ Function Overloading ^ ^ ^ ^

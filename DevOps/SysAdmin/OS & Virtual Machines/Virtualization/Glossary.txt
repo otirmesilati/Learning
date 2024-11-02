@@ -97,7 +97,23 @@ nana's short docker:
 --- very dependant on OS, so that might very well be a problem
 --- a compound process to do, errors are prone along the way
 --- might duplicate the process for different services -> solved by containers as they are services bundled with their dependencies, all they need is to be ran
----- docker solution even enables running different versions of samie application - which most probably would conflict localy
+---- docker solution even enables running different versions of same application - which most probably would conflict localy
+- dep then vs now:
+-- used to be operations team job to distrubute artifact (then)
+-- installations bare metal (error prone: dependency hell) (then)
+-- miscomunication (then)
+-- application package with dependencies (now)
+--- No configurations (now)
+---- less room for these errors
+--- it's a docker command
+- containerazation vs virtualization
+-- containerazation virtualizes ONLY os app layer, and uses the kernel of the host
+-- virtualization virtualizes both os app layer and a designated kernel
+-- docker files are much smaller than iso files becuase they aren't getting space for the kernel
+-- similar reason they are much faster (not waiting for the kernel to boot up)
+-- minus in docker: only compatible with linux systems
+
+
 
 
 

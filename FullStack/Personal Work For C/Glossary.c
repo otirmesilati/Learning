@@ -25,7 +25,7 @@
 
 
 //   < < < < < < < <   Procedural Principles   > > > > > > > >   
-
+//   < < < < < < < <   Generic Principles   > > > > > > > >   
 
 
 
@@ -39,7 +39,7 @@
 //   ^ ^ ^ ^ ^ Static Libraries ^ ^ ^ ^ ^
 
 #include <stdio.h> // C IO Library Files 
-#include <string.h> //?
+#include <string.h> //? gets? puts? strlen? strcmp (ASCII gimetry compare function)? strcpy(writing function)? strcat(concat from null)?
 
 //   ^ ^ ^ ^ ^ Shared Libraries ^ ^ ^ ^ ^
 
@@ -81,6 +81,8 @@ are available */
 //   & & & & & & Data Streaming & & & & & & 
 
 //   ^ ^ ^ ^ ^ Variable input ^ ^ ^ ^ ^
+
+// input of string - mention the problem of entering a space?
 
 //   ^ ^ ^ ^ ^ Console Output ^ ^ ^ ^ ^ 
 
@@ -214,7 +216,8 @@ printf("%c", undef_behav); // wrong type field - undefined behaviour!
 void fun_operators()
 {
 
-int first_check, second_check;
+int first_check;  // Declarations without assignments - Assigned currently placed values ("Garbage Values")
+int second_check; 
 
 double sum_temps; 
 int five = 5, three = 3, zero = 0;
@@ -233,6 +236,8 @@ int my_lvalue;
 0;
 '1';
 // {'m', 'y', '_', 'r', 'v', 'a', 'l', 'u', 'e'};
+// int *invalid_pointer = &10;   can be abbreviated "rval compilation error" - these aren't memory persistent values like lvalues -> no address
+
 (1 + 2); // No Identity : p(ure)-rval
 
 //   ^ ^ ^ ^ x-values : about to be moved from scope ^ ^ ^ ^
@@ -246,8 +251,7 @@ int my_lvalue;
 //   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
 
 int first = 1;
-first = 2;
-
+first = 2; 
 
 //   ^ ^ ^ ^ Multiple Assignment ^ ^ ^ ^
 
@@ -287,7 +291,7 @@ first = first + 0, first += 1;
 //   ^ ^ ^ ^ Prefix vs Postfix inc/dec operator ^ ^ ^ ^
 first_check = 1;
 first_check = second_check++; // first_check = 1, second_check = 2 
-first_check = ++second_check; // first_check = second_check = 3
+first_check = --second_check; // first_check = second_check = 1
 
 
 //   ^ ^ ^ ^ Subtraction ^ ^ ^ ^
@@ -348,12 +352,40 @@ int a = 2, b;
 
 int ptr_value_1 = 0;
 
+//   ^ ^ ^ ^ Adress Operator ^ ^ ^ ^
 
-int* ptr_address_1 = &ptr_value_1; // address operator
-ptr_value_1 = *ptr_address_1; // indirection operator
+int* ptr_address_1 = &ptr_value_1; 
 
-// in one line(int + int* init in same line):
-int ptr_value_2 = 1, * ptr_address_2 = &ptr_value_2, ptr_value_2 = *ptr_address_2;
+
+//   ^ ^ ^ ^ Indirection Operator ^ ^ ^ ^
+
+ptr_value_1 = *ptr_address_1; 
+int ptr_value_2 = 1, * ptr_address_2 = &ptr_value_2, ptr_value_2 = *ptr_address_2; // multiple operations in one line
+
+//   ^ ^ ^ Indirection Operator as a Substitute to Element Access Operator ^ ^ ^
+
+int my_array_to_access_elements_from[3] = {0, 1, 2};
+int first_element, second_element, third_element;
+int* first_element_pointer = NULL, second_element_pointer = NULL, third_element_pointer = NULL;
+
+
+first_element_pointer = my_array_to_access_elements_from; // does the same thing as first_element_pointer = &my_array_to_access_elements_from[0];
+second_element_pointer = first_element_pointer + 1; // does the same thing as second_element_pointer = &my_array_to_access_elements_from[1];
+third_element_pointer = first_element_pointer + 2;
+
+
+//   ^ ^ ^ ^ Member Access Operator ^ ^ ^ ^ 
+
+
+
+//?
+
+
+//   ^ ^ ^ ^ Element Access Operator ^ ^ ^ ^ 
+
+first_element = my_array_to_access_elements_from[0];
+second_element = my_array_to_access_elements_from[1];
+third_element = my_array_to_access_elements_from[2];
 
 
 }
@@ -476,13 +508,53 @@ int* const const_pointer_to_int = &mutable_value;
 const int* const const_pointer_to_int = &immutable_value_and_adress;
 
 
-//   ^ ^ ^ ^ ^ Pointers ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Pointers : preferred either to null point or point to a value at declaration ^ ^ ^ ^ ^
 
-char* my_char_pointer;
-int* my_int_pointer;
-long* my_long_pointer;
-float* my_float_pointer;
+char* my_char_pointer; 
+int* my_int_pointer = NULL; // Syntactic alternative 1 for null-pointing
+long* my_long_pointer = 0; // Syntatic alternative 2 for null-pointing
+float* my_float_pointer = '\0'; // Syntactic alternative 3 for null-pointing
 double* my_double_pointer;
+
+//   ^ ^ ^ ^ Pointer vulnerbalities ^ ^ ^ ^
+
+//   ^ ^ ^ Pointing to Literal Values - frowned upon ^ ^ ^  
+
+// int* trying_to_point_to_adress_5 = 5;
+/* Many Problems in end of the day:
+
+1. IF Not for my program to use(either Allocated by someone else, or Not Meaningfull):
+1.1. Doesn't matter if allocated or not - Undefined behaviour/Crashing Imminent -> corruption is being asked for
+
+2. IF For My Program to use:
+2.1. Allocated -> Corruption being asked for
+2.2. Not Allocated -> Misconception to think it's alright, why? -> Attacker prone hazards, they can access memory and affect program execution flow. 
+
+*/
+
+
+//   ^ ^ ^ Pointing to Literal Address -> in the rvalue inside literals portion ^ ^ ^
+
+
+//   ^ ^ ^ Dangling pointers -> in the return type inside functions portion ^ ^ ^
+
+
+//   ^ ^ ^ Memory Leaks ^ ^ ^
+
+int my_not_freed_array[5];
+// where is the free for heap memory?? nowhere :( -> memory leak
+
+
+//   ^ ^ ^ Out-Of-Bounds Accessing ^ ^ ^
+
+int ten_place_array[10];
+// trying_to_get_11_place = ten_place_array[11];
+
+//   ^ ^ BufferOverflow : out of bounds writing ^ ^ 
+
+char ten_char_string[10];
+strcpy(ten_char_string, "This will cause a buffer overflow as it is way to long");
+
 
 //   ^ ^ ^ ^ Static Allocation ^ ^ ^ ^
 
@@ -523,7 +595,7 @@ my_int_pointer = realloc(my_int_pointer, sizeof(int) * 2);
 my_long_pointer = realloc(my_long_pointer, sizeof(long) * 3);
 my_float_pointer = realloc(my_float_pointer, sizeof(float) * 4);
 
-//   ^ ^ ^ ^ Void (Generaic) Pointers ^ ^ ^ ^
+//   ^ ^ ^ ^ Void (Generaic) Pointers : Mostly for abstraction of function arguments ^ ^ ^ ^
 
 void* my_generic_pointer;
 
@@ -533,13 +605,19 @@ long* my_generic_pointer_converted_to_long_pointer;
 float* my_generic_pointer_converted_to_float_pointer;
 double* my_generic_pointer_converted_to_double_pointer;
 
+//   ^ ^ ^ Handling generic pointers : C Type cast required ^ ^ ^
+ 
 my_generic_pointer_converted_to_char_pointer = (char*)my_generic_pointer;
 my_generic_pointer_converted_to_int_pointer = (int*)my_generic_pointer;
 my_generic_pointer_converted_to_long_pointer = (long*)my_generic_pointer;
 my_generic_pointer_converted_to_float_pointer = (float*)my_generic_pointer;
 my_generic_pointer_converted_to_double_pointer = (double*)my_generic_pointer;
 
-//   ^ ^ ^ ^ Array Handling ^ ^ ^ ^ 
+
+//   ^ ^ ^ ^ Array Handling : constant pointers ^ ^ ^ ^ 
+
+int some_array[2] = {1, 2};
+int* first_array_element_address = some_array; // some_array = some_pointer is a compilation error as the pointer is constant
 
 //   ^ ^ ^ Allocation ^ ^ ^
 
@@ -548,6 +626,8 @@ my_generic_pointer_converted_to_double_pointer = (double*)my_generic_pointer;
 int static_allocation[1] = {0};
 int not_mentioning_size_in_static_allocation_is_inferred_through_number_of_elements_in_brackets[] = {'a','b','c'}; // size inferring: 3 elements -> 3
 int and_not_mentioning_all_element_values_will_init_the_rest_to_0[3] = {2, 1}; // no last value mentioned -> inited to 0: {2, 1, 0}
+char string_basically_a_char_list_array[] = {'h', 'i', NULL};
+char same_string_different_writing[] = "hi";
 
 int nested_static_allocation[2][3] = {{4, 5, 6} , {7, 8, 9}};
 int same_nested_allocation_different_writing[2][3] = {4, 5, 6, 7, 8, 9};
@@ -559,7 +639,7 @@ int inferring_and_non_mentioned_value_initiation_also_happens_in_nested_arrays[]
 
 // No List Comprehension in C++
 
-// strings?
+
 
 
 
@@ -623,9 +703,11 @@ int* ptr_to_check = &val_of_ptr;
 
 // Alternative 1 - using 0 representations
 
-if (ptr_to_check!= 0) {}
-if (ptr_to_check!= NULL) {} 
-if (ptr_to_check!= '\0') {}
+if (ptr_to_check != 0) {} 
+if (ptr_to_check != NULL) {} 
+if (ptr_to_check != '\0') {}
+
+// Which are all different than writing:     if (ptr_to_check != '0') becuase '0' has an ASCII value of 48 and not 0
 
 // Alternative 2 - using zero equating
 
@@ -742,7 +824,7 @@ void void_prtp_func_2(){} // in void functions - the return statement may be omi
 // add to tablet: 1. static stack segment layout (building the stack) + dynamic stack segment allocation in function calls (changing the values and releasing the layout parts) 
 
 
-//   ^ ^ ^ ^  Argument Passing ^ ^ ^ ^ 
+//   ^ ^ ^ ^ Argument Passing ^ ^ ^ ^ 
 
 //   ^ ^ ^ Passing By Value ^ ^ ^
 
@@ -751,7 +833,28 @@ void pass_by_value(int val){}
 //   ^ ^ ^ Passing By Adress ^ ^ ^
 
 void pass_by_adress(int* adr){}
-// add this - pass_by_adress_2(int adr[]){} ? or in the array section ? 
+void pass_array_basically_const_address(int arr[]){}
+void two_dimention_array_and_higher_require_atleast_first_cells_size_for_compile_time_size_inference(int arr_2D[][1]){}
+
+
+//   ^ ^ ^ ^ Return type ^ ^ ^ ^ 
+// add here from lecture 12: return type and argument - pointer functions
+
+char char_return_function();
+int int_return_function();
+long long_return_function();
+float float_return_function();
+double double_return_function();
+
+//   ^ ^ ^ Pointer Return type : Be wary of dangling pointers (pointers to function locals) ! ^ ^ ^
+
+char* char_ptr_return_function();
+int* int_ptr_return_function();
+long* long_ptr_return_function();
+float* float_ptr_return_function();
+double* double_ptr_return_function();
+
+void* void_ptr_return_function();
 
 
 // anon function? from version 11? what's the syntax?
@@ -761,8 +864,49 @@ void pass_by_adress(int* adr){}
 void rec_func(){rec_func();} // infinite loop logic
 
 
-//   ^ ^ ^ ^ Pointer Functions ^ ^ ^ ^
-// finish this from lecture 12
+//   ^ ^ ^ ^ Pointer (Generic) Functions ^ ^ ^ ^
+
+enum Type_choice {INT, FLOAT, CHAR};
+
+// Three function prototypes for the function pointer
+void swap_int(void* first, void* second); // int swap prototype
+void swap_float(void* first, void* second); // float swap prototype
+void swap_char(void* first, void* second); // char swap prototype
+
+void(*swap)(void* first, void* second); // the function pointer
+
+
+void function_pointer_usage()
+{
+
+    int first_int = 0, second_int = 1;
+    float first_float = 2.0, second_float = 3.0;
+    char first_char = '4', second_char = '5';
+
+    enum Type_Choice my_choice = FLOAT;
+
+    switch(my_choice)
+    {
+        case INT:
+            swap = &swap_int; // pointer to the int function's adress
+            swap(&first_int, &second_int); // sending correct arguments
+            break;
+        
+        case FLOAT:
+            swap = &swap_float; // pointer to the float function's adress
+            swap(&first_float, &second_float);
+            break;
+        
+        case CHAR:
+            swap = &swap_char;
+            swap(&first_char, &second_char);
+            break;
+    }
+
+    return;
+}
+
+
 
 
 

@@ -1,5 +1,9 @@
 Desktop metaphor? server's os? mobile os?
 
+- os is built from the kernel and os applications layer:
+-- kernel talks to the hardware through drivers
+
+
 windows:
 
 
