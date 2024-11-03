@@ -1,7 +1,7 @@
 Map from the following:
 1. <Stoped> at 08:20 :: Michael Horn's starter: https://www.youtube.com/watch?v=t-23HOKMer0
 2. Nana's completing Virtualization concept: https://www.youtube.com/watch?v=mQP0wqNT_DI
-3. <Stoped> at 0:07:41 :: Nana's Docker tutorial: https://www.youtube.com/watch?v=pg19Z8LL06w
+3. <Stoped> at 0:49:00 :: Nana's Docker tutorial: https://www.youtube.com/watch?v=pg19Z8LL06w
 4. Another, more easy docker tutorial: https://www.youtube.com/watch?v=b0HMimUb4f0
 5. Nana's short kubernetes introduction video: https://www.youtube.com/watch?v=s_o8dwzRlu4&t=104s
 6. Nana's longkubernetes introduction video: https://www.youtube.com/watch?v=X48VuDVv0do
@@ -19,18 +19,8 @@ Nana's Virtualization:
 3. 6:46 - Type 1 and Type 2 hypervisors
 4. 11:30 - Comaines going the Virtualization road
 
-
 Nana's Docker/Containeriazation tutorial:
 
-1. 00:00 - intro to docker
-2. 03:55 - dev & dep: local configurations vs containerazation infrastructure
-3. 11:40 - docker vs VMs, layering, size-speed-comp 
-4. 21:36 - docker images vs containers  
-5. 26:33 - docker registry, dockerhub, image versioning
-6. 32:00 - basic docker commands
-7. 34:13 - Image running commands 
-8. 39:05 - Port Binding, and process life cycling containers
-9. 46:53 - Private Docker registry, and registry vs repo
 10. 49:08 - Creating custom images - dockerizing apps (dockerfiles)
 11. 1:02:37 - Docker UI client
 12. 1:03:40 - Docker in SDLC
@@ -112,12 +102,20 @@ nana's short docker:
 -- docker files are much smaller than iso files becuase they aren't getting space for the kernel
 -- similar reason they are much faster (not waiting for the kernel to boot up)
 -- minus in docker: only compatible with linux systems
-
-
-
-
-
-
+- docker desktop elements
+-- docker engine manages images
+-- docker cli client for user interaction
+-- friendly GUI
+- docker image
+-- can be dowloaded on a server as a docker image
+--- different than a JAR or a rgular artifact file becuase it has the env information on top the compile code 
+- docker container
+-- running instance of an image
+- docker registries for an image library
+-- dockerhub registry
+--- dockerhub holds repositories of related images that are of different version 
+- definition for creating docker images
+-- dockerfiles 
 
 
 <<<<<<<< system images

@@ -262,6 +262,30 @@ git config --global user.email "my@email"
 #   more material : https://www.tutorialspoint.com/unix/unix-special-variables.htm
 
 
+#   ^ ^ ^ ^ ^ Docker CLI Client ^ ^ ^ ^ ^
+
+#   ^ ^ ^ ^ Docker Image Handling ^ ^ ^ ^
+
+docker images 
+
+docker pull # <type>:<version>
+
+#   ^ ^ ^ ^ Docker Container Handling ^ ^ ^ ^
+
+docker ps
+docker ps -a
+
+docker logs # <container ID>/<container name>
+
+#   ^ ^ ^ Docker Container Running ^ ^ ^
+
+docker run # <type>:<version>
+docker run -d # <type>:<version>    -> for detaching the process from the terminal and releasing it from the logs
+docker run -p # <host port to bind to>:<app port> <type>:<version>    -> exposing a container to our local network 
+
+docker stop # <container ID>/<container name>
+
+docker start # <container ID>/<container name>
 
 
 
