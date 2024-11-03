@@ -116,7 +116,7 @@ nana's short docker:
 --- dockerhub holds repositories of related images that are of different version 
 - definition for creating docker images
 -- dockerfiles 
-
+--- theres a base image, mostly linux lightweight image, 
 
 <<<<<<<< system images
 < < < < < < < < Virtualized Orchestration > > > > > > > >
