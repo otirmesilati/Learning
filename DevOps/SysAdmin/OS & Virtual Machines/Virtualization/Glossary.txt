@@ -125,12 +125,21 @@ Nana's Short Kubernetes video:
 --- scalability (think leader follower pattern)
 --- disaster recovery
 - Kubernetes Cluster
--- Master Node contains
+-- Master Node (very important - has to have a backup at all times : In production env atleast two master nodes ) contains
 --- API server : clients will talk to it as the entry point
 --- Control manager : which monitors the cluster needs (container died - needs to be restarted)
 --- Scheduler : timing containerazation on different nodes 
+--- etcd configuration backup snapshot
 -- Worker nodes contains 
 --- kubelets (Communication proccesses) running
+-- Virtual network gathers the nodes capablities into a single unit 
+- Main Kubernetes terms for users/admins
+-- pods
+--- smallest unit in K8s
+--- wraps a layer above the container : abstracting away containerazation (not have to do Docker desktop)
+--- usualy one application per pod, maybe a side service
+
+
 
 
 
