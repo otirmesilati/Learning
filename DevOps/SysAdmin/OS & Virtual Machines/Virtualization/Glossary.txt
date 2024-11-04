@@ -1,7 +1,7 @@
 Map from the following:
 1. <Stoped> at 08:20 :: Michael Horn's starter: https://www.youtube.com/watch?v=t-23HOKMer0
 2. Nana's completing Virtualization concept: https://www.youtube.com/watch?v=mQP0wqNT_DI
-3. <Stoped> at 0:49:00 :: Nana's Docker tutorial: https://www.youtube.com/watch?v=pg19Z8LL06w
+3. <Stoped> at 0:54:00 :: Nana's Docker tutorial: https://www.youtube.com/watch?v=pg19Z8LL06w
 4. Another, more easy docker tutorial: https://www.youtube.com/watch?v=b0HMimUb4f0
 5. Nana's short kubernetes introduction video: https://www.youtube.com/watch?v=s_o8dwzRlu4&t=104s
 6. Nana's longkubernetes introduction video: https://www.youtube.com/watch?v=X48VuDVv0do
@@ -21,7 +21,6 @@ Nana's Virtualization:
 
 Nana's Docker/Containeriazation tutorial:
 
-10. 49:08 - Creating custom images - dockerizing apps (dockerfiles)
 11. 1:02:37 - Docker UI client
 12. 1:03:40 - Docker in SDLC
 
@@ -117,6 +116,26 @@ nana's short docker:
 - definition for creating docker images
 -- dockerfiles 
 --- theres a base image, mostly linux lightweight image, 
+
+Nana's Short Kubernetes video:
+
+- the need? the rise of many many microservices usage
+-- the pros of using an Orchestration tool
+--- high availability / no downtime (think leader follower pattern)
+--- scalability (think leader follower pattern)
+--- disaster recovery
+- Kubernetes Cluster
+-- Master Node contains
+--- API server : clients will talk to it as the entry point
+--- Control manager : which monitors the cluster needs (container died - needs to be restarted)
+--- Scheduler : timing containerazation on different nodes 
+-- Worker nodes contains 
+--- kubelets (Communication proccesses) running
+
+
+
+
+
 
 <<<<<<<< system images
 < < < < < < < < Virtualized Orchestration > > > > > > > >
