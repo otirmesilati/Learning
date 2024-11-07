@@ -142,17 +142,31 @@ Nana's Short Kubernetes video:
 --- each pod gets it's IP address 
 ---- pods are ephemeral (fragile and can die easily) : A new pod will be created (And get a new IP address)
 - Services & ingress
+-- the static service will load balance the requests while there are incoming requests
 -- Service is a static/permanent IP : attached to a pod
 --- There's a decoupling of lifecycles of the service and the pod
 --- To make an app accessible to others : make a service external
 ---- To make an app acceisble only to a select few : make a service internal 
--- Ingress as forwaring agent : enables user friendly URLs
-- ConfigMap & Secrets
+-- Ingress enables the resource routing : allows user friendly URLs
+- ConfigMap & Secrets : alternative -> environmental variables to store data on app pod
 -- ConfigMap as the external non-confidential configuration of the app : just connect it to the pod (so it may have the data)
 --- URLs of DB or services we use
 --- Saves us the trouble : rebuilding app -> push to repo -> pulling it to pod
 -- Secrets for the confidential configuration : stored in rdx64 encoded format
-
+--- passwords, certificates
+- volumes : a fail-safe for pod restart that holds the data 
+-- Attaches a physical storage to a pod
+--- either local or remote storage
+--- Users are responsible for the storage, not K8s
+- replication of our application is done casualy by the deployment
+-- the replication are done through pod blueprint : this blueprint is called deployment
+--- specifying the pod attributes and information
+--- it's another abstraction over the pod abstraction (double abstraction!)
+--- in practice - the work is on deployments and not on pods
+---- whenever a replica dies, the static service will set up another
+--- the DB can't be replicated because of it's data state : Not handled by the deployment
+---- the tool used for DBs is statefulset : as their needs to be special attention for the read/write dependencies
+---- main reason why mostly DBs are preferred to be hosted outside the K8s cluster
 
 
 
