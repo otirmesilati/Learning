@@ -56,9 +56,16 @@ CRUD HTTP operations
 
 ^ ^ ^ ^ Requests ^ ^ ^ ^
 
+pip install requests
+
 get -> returns HTTP status code
 
+
+
 ^ ^ ^ ^ Selenium ^ ^ ^ ^
+
+pip install selenium
+
 
 get -> opens site through URL specified
 

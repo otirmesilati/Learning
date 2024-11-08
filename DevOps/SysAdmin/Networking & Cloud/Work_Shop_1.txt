@@ -264,7 +264,7 @@ Accept-Language: <Language Acronym>
 
 https?
 
-^ ^ ^ ^ ^ API Call: HTTP Requesting Format ^ ^ ^ ^ ^
+^ ^ ^ ^ ^ API Call: HTTP Response Format ^ ^ ^ ^ ^
 
 <HTTP version> <status code>
 Date: <day-month-year hour>

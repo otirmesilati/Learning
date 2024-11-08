@@ -80,17 +80,39 @@ function fun_string_formats() {
 // which operations are available? one what types? categories : numbers, string operators...
 
 function fun_operators() {
-  var first_check, second_check;
-  // int first_temp = 1;
-  // double sum_temps, second_temp = 2.00;
-  // int five = 5, three = 3, zero = 0;
-  // int first_explicit_conv, second_explicit_conv;
-  // int explicit_conv_assignment;
-  // need to touch on lvalue, rvalue, gvalue:
-  // lecture's coverage: lval is left and changing, and rval is right, WOW!
-  // More Material:
-  // for the wiki tldr: https://en.wikipedia.org/wiki/Value_(computer_science)
-  // for the famous lval/rval/gval/xval graph: https://stackoverflow.com/questions/3601602/what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues
+  var first_check; // Declarations without assignments - undefined values
+  var second_check;
+
+  var sum_temps;
+  var five = 5,
+    three = 3,
+    zero = 0;
+
+  var first_explicit_conv, second_explicit_conv;
+  var explicit_conv_assignment;
+
+  //   ^ ^ ^ ^ ^ Expression Values ^ ^ ^ ^ ^
+
+  //   ^ ^ ^ ^ (g-value)l-values : memory allocated and mutable terms ^ ^ ^ ^
+
+  var my_lvalue;
+
+  //   ^ ^ ^ ^ (g-value)r-values : NOT lvals, no persistent memory -> temporary ^ ^ ^ ^
+
+  0;
+  ("1");
+  // {'m', 'y', '_', 'r', 'v', 'a', 'l', 'u', 'e'};
+  // no pointers for the rval of literals (like &10)
+
+  1 + 2; // No Identity : p(ure)-rval
+
+  //   ^ ^ ^ ^ x-values : about to be moved from scope ^ ^ ^ ^
+
+  // function x_val_func(int my_xval)
+  // {
+  //    return my_xval;
+  //}
+
   //   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
 
   var first = 1;

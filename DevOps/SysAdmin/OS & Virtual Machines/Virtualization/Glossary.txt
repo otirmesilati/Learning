@@ -167,7 +167,14 @@ Nana's Short Kubernetes video:
 --- the DB can't be replicated because of it's data state : Not handled by the deployment
 ---- the tool used for DBs is statefulset : as their needs to be special attention for the read/write dependencies
 ---- main reason why mostly DBs are preferred to be hosted outside the K8s cluster
-
+- Components creation: 
+-- all requests to api server sent int yaml/json : deployments are built like this
+-- configuration requests are declarative
+-- Controller manager checks requested and existing configuration
+--- tries to meet those requirements by restarting pods : This is literally the built in feature
+- 3 parts of a k8s config file:
+-- Metadata : name of the deployment
+-- Specifications : 
 
 
 
