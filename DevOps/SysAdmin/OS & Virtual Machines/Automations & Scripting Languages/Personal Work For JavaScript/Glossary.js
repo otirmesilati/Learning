@@ -131,6 +131,19 @@ function fun_operators() {
   first++;
   ++first;
 
+  //   ^ ^ ^ ^ ^ Casting Operators ^ ^ ^ ^ ^
+
+  //   ^ ^ ^ ^ Implicit Conversion : Type Coercion ^ ^ ^ ^
+
+  var one = 1;
+  var str_five = "5";
+  var fifty_one = str_five + one; // result will be a string
+  var four = str_five - one; // result will be a number
+
+  //   ^ ^ ^ ^ Explicit type Conversion ^ ^ ^ ^
+
+  explicit_conv_assignment = Number(first_explicit_conv / second_explicit_conv); // both exp conv scenarios, order: 1. int result temp 2. float result temp, 3. int assignment temp
+
   //   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^
   // what here ? what comes before what? * before / in C?
 
