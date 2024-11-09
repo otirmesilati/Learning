@@ -144,8 +144,11 @@ function fun_operators() {
 
   explicit_conv_assignment = Number(first_explicit_conv / second_explicit_conv); // both exp conv scenarios, order: 1. int result temp 2. float result temp, 3. int assignment temp
 
-  //   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^
-  // what here ? what comes before what? * before / in C?
+  //   ^ ^ ^ ^ ^ Arithmetical Operators (And a bit of operation piping) ^ ^ ^ ^ ^
+
+  //   ^ ^ ^ ^ Addition ^ ^ ^ ^
+
+  (first = first + 0), (first += 1);
 
   //   ^ ^ ^ ^ Prefix vs Postfix inc/dec operator ^ ^ ^ ^
 
@@ -153,21 +156,40 @@ function fun_operators() {
   first_check = second_check++; // first_check = 1, second_check = 2
   first_check = ++second_check; // first_check = second_check = 3
 
-  //   ^ ^ ^ ^ Arithmetical Operators: Narrowing/Widening type Casting ^ ^ ^ ^
-  //   ^ ^ ^ type casting/C-casting ^ ^ ^
-  //   ^ ^ Implicit conversion - mismatching variables in opeartion ^ ^
-  // first_temp + second_temp; // first is promoted to double in widening implicit c type conversion
-  //   ^ ^ Explicit conversion - assigned to different type OR different type written in parantheses ^ ^
-  // first_explicit_conv = 3, second_explicit_conv = 4;
-  // explicit_conv_assignment = (float)(first_explicit_conv / second_explicit_conv); // both exp conv scenarios, order: 1. int result temp 2. float result temp, 3. int assignment temp
-  //   ^ ^ ^ Up-Castring ^ ^ ^
-  //   ^ ^ ^ Down-Casting ^ ^ ^
-  //   ^ ^ ^ Slicing ^ ^ ^
+  //   ^ ^ ^ ^ Subtraction ^ ^ ^ ^
+
+  var second;
+  (second = second - 2), (second -= 3);
+
+  //   ^ ^ ^ ^ Multiplication ^ ^ ^ ^
+
+  var third;
+  (third = third * 4), (third *= 5);
+
+  //   ^ ^ ^ ^ Exponantiation ^ ^ ^ ^
+
+  var fourth;
+  (fourth = fourth ** 6), (fourth **= 7);
+
+  //   ^ ^ ^ ^ Division ^ ^ ^ ^
+
+  var fifth;
+  (fifth = fifth / 8), (fifth /= 9);
+
+  //   ^ ^ ^ ^ Modulo ^ ^ ^ ^
+
+  var sixth;
+  (sixth = sixth % 10), (sixth %= 11);
+
+  //   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^
+  // what here ? what comes before what? * before / in C?
+
   // More Material:
   // map from this more about casts: https://stackoverflow.com/questions/28002/regular-cast-vs-static-cast-vs-dynamic-cast
   // No Automatic casting to wide in c++? a set of rules: https://www.youtube.com/watch?v=uI10H1jzw00
   // Make temp variable arithmetic in tablet and map building upon these scenarios:
   // answer: b' - promotion, (a + b')' - same, ((a + b')')' - demotion
+
   //   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
   // order of operations ?
   // == and != are the least in the order of operations, maybe finish the operations order ladder?
@@ -181,46 +203,48 @@ function fun_operators() {
   // int a = 2, b;
   // ((b = 2) == a) // (b = 2) -> (2) -> 2 == 2 -> 1, trick question: a wierd behaviour of c family languages - assignment returns the assign value, acts as arithmetic
   //   Overloading literal operators: https://en.cppreference.com/w/cpp/language/user_literal
-  //   ^ ^ ^ ^ ^ Pointer Operators ^ ^ ^ ^ ^
-  // int ptr_value_1 = 0;
-  // int* ptr_address_1 = &ptr_value_1; // address operator
-  //ptr_value_1 = *ptr_address_1; // indirection operator
-  // in one line(int + int* init in same line):
-  //int ptr_value_2 = 1, * ptr_address_2 = &ptr_value_2, ptr_value_2 = *ptr_address_2;
+  // No Pointer Operators in JavaScript
 }
 
 //   & & & & & & Variables & & & & & &
 // type hinting? (static - no, dynamic - yes)
 
 function fun_variables() {
-  //bool my_bool;
-  //char my_char;
-  //wchar_t my_wchar;
-  //int my_int;
-  //long my_long;
-  //float my_float;
-  //double my_double;
+  Object(); // null (and probably undefined) go here
+  Boolean(false);
+  Number(-1.2);
+  String("");
+  // Symbol("Abc")
+
+  // Leaving the type hinting to TS!
+
   var imagine_this_is_out_of_any_function_global = 0;
 
-  // All numbers are based on a Floating Point System, with a max accurate number of 2^53-1
+  //   ^ ^ ^ ^ Data Collection Type - Array ^ ^ ^ ^
+
+  var my_char_array = [1, "2"];
+  // Dynamic type checking - no need for different types in declaration
+
+  // No cap-counter for Integers in JavaScript
 
   //   ^ ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^ ^
 
   //   ^ ^ ^ ^ Global & Static Variables ^ ^ ^ ^
-  // Both default value if not initialized : 0
+  // var value if not inited: undefined, in let and const it will throw an exception
 
-  //imagine_this_is_out_of_any_function_global = 4;
+  imagine_this_is_out_of_any_function_global = 4;
 
   {
     // imagine this is void function my_func
-    //  printf("global is accessible: %d", imagine_this_is_out_of_any_function_global);
-    //  imagine_this_is_out_of_any_function_global = 7; // and mutable //
-    //  static int my_static = 0; // static variable accessible in my_func
+    console.log(
+      "global is accessible:",
+      imagine_this_is_out_of_any_function_global
+    );
+    imagine_this_is_out_of_any_function_global = 7; // and mutable //
+    // No Static variables in JS
   }
 
-  // but even though it's lifetime is the same as the global variable - trying to access the static variable from main - is a compilation error
-
-  //   ^ ^ ^ ^ Local variables & Block Nesting ^ ^ ^ ^
+  //   ^ ^ ^ ^ Block Nesting : Scope levels, Data Hiding and Shadowing ^ ^ ^ ^
 
   //int first_level_local = 1;
   //int this_wont_be_changed_local = 2;

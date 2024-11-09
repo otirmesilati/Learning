@@ -401,7 +401,7 @@ imagine_this_is_out_of_any_function_global = 4;
 // but even though it's lifetime is the same as the global variable - trying to access the static variable from main - is a compilation error
 
 
-//   ^ ^ ^ ^ Local variables & Block Nesting ^ ^ ^ ^
+//   ^ ^ ^ ^ Block Nesting : Scope levels, Data Hiding and Shadowing ^ ^ ^ ^
 
 int first_level_local = 1;
 int this_wont_be_changed_local = 2;

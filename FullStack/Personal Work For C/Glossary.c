@@ -400,8 +400,6 @@ third_element = my_array_to_access_elements_from[2];
 
 //   & & & & & & Variables & & & & & &
 
-// No type hinting in C
-
 
 void fun_variables()
 {
@@ -411,6 +409,8 @@ int my_int;
 long my_long;
 float my_float;
 double my_double;
+
+// No type hinting in C
 
 int imagine_this_is_out_of_any_function_global = 0;
 
@@ -449,14 +449,14 @@ imagine_this_is_out_of_any_function_global = 4;
 // but even though it's lifetime is the same as the global variable - trying to access the static variable from main - is a compilation error
 
 
-//   ^ ^ ^ ^ Local variables & Block Nesting ^ ^ ^ ^
+//   ^ ^ ^ ^ Block Nesting : Scope levels, Data Hiding and Shadowing ^ ^ ^ ^
 
 int first_level_local = 1;
 int this_wont_be_changed_local = 2;
 { 
 
-    int second_level_local = 3;
-    int this_wont_be_changed_local = 4; // A new variable! locally scoped
+    int second_level_local = 3; // Variable Hiding in local scope level
+    int this_wont_be_changed_local = 4; // Variable Shadowing (a new variable!) locally scoped
 
     {
         int third_level_local = 5;
