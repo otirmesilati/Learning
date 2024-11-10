@@ -249,13 +249,45 @@ git log --oneline
 
 #   ^ ^ ^ ^ Pushing ^ ^ ^ ^ 
 
+git stash 
+git stash pop
+git stash list
+git stash 
+
 git add file_to_stage
+
 git commit -m "my_commit_message"
 
 #   ^ ^ ^ ^ Config file ^ ^ ^ ^
 
 git config --global user.name "my Name"
 git config --global user.email "my@email"
+
+#   ^ ^ ^ ^ Branching ^ ^ ^ ^
+
+git branch branch_name
+
+git diff --staged
+git diff commit_id_1 commit_id_2
+
+#   ^ ^ ^ Switching Branches ^ ^ ^
+
+git switch branch_name
+git checkout branch_name 
+
+git switch -c branch_name # also moves you to that branch
+git checkout -b branch_name # also moves you to that branch
+
+git reflog # goes back to where the head last was
+
+git checkout commit_id # reverts to the commit + moves head pointer
+git checkout head 2 # goes 2 places back
+git restore file_name # does the same as checkout head 1 for head pointed file
+
+#   ^ ^ ^ Merging Branches ^ ^ ^
+
+git merge branch_to_merge
+
 
 #   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &
 #   standard lib? gui? 

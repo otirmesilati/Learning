@@ -2,8 +2,12 @@
 
 
 
-
-
+ci tools
+- jenkins
+-- jobs
+--- ubuntu : uses linux
+-- jenkin pipes
+--- groovy
 
 
 
