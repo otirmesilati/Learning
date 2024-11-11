@@ -247,7 +247,7 @@ git status
 git log
 git log --oneline
 
-#   ^ ^ ^ ^ Pushing ^ ^ ^ ^ 
+#   ^ ^ ^ ^ Commiting ^ ^ ^ ^ 
 
 git stash 
 git stash pop
@@ -257,6 +257,7 @@ git stash
 git add file_to_stage
 
 git commit -m "my_commit_message"
+git commit -am "my_commit_message" # Adding and commiting at the same time
 
 #   ^ ^ ^ ^ Config file ^ ^ ^ ^
 
@@ -266,6 +267,7 @@ git config --global user.email "my@email"
 #   ^ ^ ^ ^ Branching ^ ^ ^ ^
 
 git branch branch_name
+git branch -M new_branch_name # changing name of branch
 
 git diff --staged
 git diff commit_id_1 commit_id_2
@@ -287,6 +289,36 @@ git restore file_name # does the same as checkout head 1 for head pointed file
 #   ^ ^ ^ Merging Branches ^ ^ ^
 
 git merge branch_to_merge
+
+#   ^ ^ Rebase : Merge-Clean workflow ^ ^ 
+
+git rebase master # rebase to master and not from it
+git rebase --continue # after dealing and solving conflicts
+
+#   ^ ^ ^ ^ Working With GitHub ^ ^ ^ ^
+
+git remote -v
+
+git remote add repo_name github_URL
+git remote rename old_repo_name new_repo_name
+
+#   ^ ^ ^ Pushing ^ ^ ^
+
+git push
+
+#   ^ ^ Setting up upstream linking process for Pushing ^ ^
+
+git push --set-upstream repo_name branch_name
+git push -u repo_name branch_name # the above command's shorthand
+
+#   ^ ^ ^ Cloning ^ ^ ^
+
+git clone github_URL
+
+
+
+
+
 
 
 #   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &
