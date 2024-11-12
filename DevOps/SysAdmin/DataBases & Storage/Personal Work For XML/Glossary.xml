@@ -1,16 +1,24 @@
-<!--validator-->
-<!--comments-->
+<!-- XML "Validator": https://www.xmlvalidation.com/index.php?id=1&L=0 -->
+
+<!-- XML allows comments -->
+
 <root>
     <String>Example string</String>
     <Integer_Number>-12</Integer_Number>
     <Float_Number>3.4</Float_Number>
     <Sci_Notation_Float>1.2e10</Sci_Notation_Float>
     <Boolean>true</Boolean>
-    <Null xsi:nil="true" xlmns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+    <Null_Value xsi:nil="true" xlmns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
     <Array>
         <Item>5</Item>
         <Item>6</Item>
         <Item>7</Item>
     </Array>
-    <!--Continue from here-->
+    <Object_key_value_pairs>app.js</Object_key_value_pairs>
+    <scripts>
+        <start>node app.js</start>
+    </scripts>
+    <dependencies>
+        <express>^4.17.1</express>
+    </dependencies>
 </root>

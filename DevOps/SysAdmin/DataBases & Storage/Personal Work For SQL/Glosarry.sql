@@ -861,7 +861,7 @@
 
 
 
---   < < < < < < < <   SQL as DSL Principles   > > > > > > > >   
+--   < < < < < < < <   DSL Principles   > > > > > > > >   
 
 --   & & & & & & Schema Manipulation & & & & & &
 
@@ -883,11 +883,34 @@ create table table_name_1;  -- creating a table without attributes
 create table table_name_2(  -- creating a table with attributes
     attribute_1 int, 
     attribute_2 tinyint
+
+--   ^ ^ ^keys
+
+--   ^ ^ ^ Numeric Types ^ ^ ^
+
+    int_atr int,
+    small_int_atr smallint,
+    medium_int_atr mediumint,
+    big_int_atr bigint,
+    decimal_atr decimal
+
+--   ^ ^ ^ String Types ^ ^ ^
+
+--
+--
+--
+
 );  
+
+describe table_name;
 
 --   ^ ^ ^ ^ Table Content Manipulation ^ ^ ^ ^
 
+--   ^ ^ ^insert 
+
 --insert? what more?
+
+--   ^ ^ ^delete
 
 delete from table_name; -- a command to delete all cell contents
 --what about row deletion?

@@ -1,0 +1,22 @@
+# TOML "Validator": https://codebeautify.org/toml-validator
+
+# TOML allows comments
+
+import tomllib # importing is possible
+
+String = "Example string"
+Integer_Number = -12
+Float_Number = 3.4
+Sci_Notation_Float = 1.2e10
+Boolean = true
+Null_Value = nan
+Object_key_value_pairs = "app.js"
+
+[Array]
+Item = [5, 6, 7]
+
+[scripts]
+start = "node app.js"
+
+[dependencies]
+express = "^4.17.1"

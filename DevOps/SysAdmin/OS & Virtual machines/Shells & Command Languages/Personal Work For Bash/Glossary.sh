@@ -315,15 +315,12 @@ git push -u repo_name branch_name # the above command's shorthand
 
 git clone github_URL
 
+#exit?
 
 
 
 
 
-
-#   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &
-#   standard lib? gui? 
-#   more material : https://www.tutorialspoint.com/unix/unix-special-variables.htm
 
 
 #   ^ ^ ^ ^ ^ Docker CLI Client ^ ^ ^ ^ ^
@@ -350,6 +347,54 @@ docker run -p # <host port to bind to>:<app port> <type>:<version>    -> exposin
 docker stop # <container ID>/<container name>
 
 docker start # <container ID>/<container name>
+
+#exit?
+
+
+
+
+
+
+
+#   ^ ^ ^ ^ ^ MongoDB Shell ^ ^ ^ ^ ^
+
+mongosh
+
+# dbs
+
+show dbs
+
+use data_base_name # switching between dbs - if there is no db it will still move there, and create one when elements are added
+
+# cols
+
+show collections
+
+db.collection_name.insertOne({})
+db.collection_name.insertMany([])
+
+# mongodb vars
+
+var name_to_assign = "name"
+name_to_assign = "other_name"
+
+exit
+
+
+
+
+#   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &
+#   standard lib? gui? 
+#   more material : https://www.tutorialspoint.com/unix/unix-special-variables.htm
+
+
+
+
+
+
+
+
+
 
 
 
