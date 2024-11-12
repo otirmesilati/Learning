@@ -1,0 +1,16 @@
+<!--validator-->
+<!--comments-->
+<root>
+    <String>Example string</String>
+    <Integer_Number>-12</Integer_Number>
+    <Float_Number>3.4</Float_Number>
+    <Sci_Notation_Float>1.2e10</Sci_Notation_Float>
+    <Boolean>true</Boolean>
+    <Null xsi:nil="true" xlmns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+    <Array>
+        <Item>5</Item>
+        <Item>6</Item>
+        <Item>7</Item>
+    </Array>
+    <!--Continue from here-->
+</root>

@@ -2,7 +2,7 @@ Map from the following:
 
 1. github api: https://www.youtube.com/watch?v=OvfLavRD1Os
 
-2. YAML tutorial: https://www.youtube.com/watch?v=1uFVr15xDGg + https://www.javatpoint.com/yaml-data-types for the types
+2. YAML:  https://www.javatpoint.com/yaml-data-types for the types
 2. JSON?     and JSON crack: https://www.youtube.com/watch?v=4zQwef_Pnqw 
 3. XML? 
 4. TOML? 

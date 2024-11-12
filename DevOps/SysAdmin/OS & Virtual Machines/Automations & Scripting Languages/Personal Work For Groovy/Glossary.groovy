@@ -88,44 +88,44 @@ are available */
 //   & & & & & & Literals (+ defined unary literal operators) & & & & & &
 // strings and chars?
 
-//   ^ ^ ^ ^ ^ Expressions - must have lvalue in Java! ^ ^ ^ ^ ^ //
+//   ^ ^ ^ ^ ^ Expressions: Groovy allows rvalues only unlike Java ^ ^ ^ ^ ^ //
 
-public void fun_literals(){ 
+public def fun_literals(){ 
 
 
 //   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
 
-int x_1 = 123;
-int x_2 = 1_234;
-int x_3 = 12_34; // wierd syntax behavior but it works
-int x_4 = -123;
+123
+1_234
+12_34 // wierd syntax behavior but it works
+i-123
 
 
 // //  ^ ^ ^ ^ Coding Modifiers ^ ^ ^ ^
 
 // //  ^ ^ ^ Radixed modifier ^ ^ ^
 
-int rdx_1 = 0x12AB;
-int rdx_2 = 012; // octal literals written without o //
-int rdx_3 = 0b110011;
+0x12AB
+012 // octal literals written without o //
+0b110011
 
 // No Un-Signed Modifier Suffix operators
 
 //   ^ ^ ^ Long Modifier Suffix operators
 
-long l_1 = 1l;
-long l_2 = -2L;
+1l
+-2L
 // no double longs in Java
 
 //   ^ ^ ^ ^ ^ Floats ^ ^ ^ ^ ^
 
-float f_1 = 1.2f;
-float f_2 = -3.4f;
+1.2f
+-3.4f
 
 //   ^ ^ ^ ^ Sceientific Notation Encoding - must be a double ^ ^ ^ ^
 
-double d_1 = 1e2;
-double d_2 = 1e-3;
+1e2
+1e-3
 // Cannot combine scentific notation with double, even for conversion //
 
 }
@@ -142,12 +142,12 @@ double d_2 = 1e-3;
 
 
 
-public void fun_string_formats(){
+public def fun_string_formats(){
 
-int number = 1;
-double dvalue = 2.344444;
-int undef_behav = 4;
-String my_str_frmt;
+def number = 1
+def dvalue = 2.344444
+def undef_behav = 4;
+def my_str_frmt;
 
 //   ^ ^ ^ ^ ^ Format Specifier Fields ^ ^ ^ ^ ^
 
@@ -192,15 +192,15 @@ my_str_frmt = String.format("%f", 2.3f);
 // which operations are available? one what types? categories : numbers, string operators...
 
 
-public void fun_operators()
+public def fun_operators()
 {
-int first_check, second_check;
-int first_temp = 1;
-double sum_temps, second_temp = 2.00;
-int five = 5, three = 3, zero = 0;
+def first_check, second_check;
+def first_temp = 1;
+def sum_temps, second_temp = 2.00;
+def five = 5, three = 3, zero = 0;
 
-int first_explicit_conv, second_explicit_conv;
-int explicit_conv_assignment;
+def first_explicit_conv, second_explicit_conv;
+def explicit_conv_assignment;
 
 
 // need to touch on lvalue, rvalue, gvalue: 
@@ -216,7 +216,7 @@ int explicit_conv_assignment;
 
 //   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
 
-int first = 1;
+def first = 1;
 first = 2;
 
 
@@ -326,7 +326,7 @@ first_check = ++second_check; // first_check = second_check = 3
 //   & & & & & & Variables & & & & & &
 
 
-public void fun_variables()
+public def fun_variables()
 {
 
 byte my_byte;
@@ -339,6 +339,11 @@ float my_float;
 double my_double;
 
 
+//   ^ ^ ^ ^ ^ Type Hinting ^ ^ ^ ^ ^
+
+int my_hinted_int = 1;
+char my_hinted_char = '2';
+double my_hinted_double = -3.4;
 
 // signed short cap: 32767 + No syntactic sugar for diffrentiating short from int like in the form of suffixes!
 short f_short = (short)32000; // 32000
@@ -351,16 +356,16 @@ short s_short = (short)33000; // -30536 (Got to -32767 going to zero)
 
 //   ^ ^ ^ ^ Block Nesting : Scope levels, Data Hiding and Shadowing ^ ^ ^ ^
 
-int first_level_local = 1;
-int this_wont_be_changed_local = 2;
+def first_level_local = 1;
+def this_wont_be_changed_local = 2;
 { 
-     int second_level_local = 3;
-     // re-defining variables inside blocks doesn't work 
-     // redifining variables outside blocks does work though
+    def second_level_local = 3;
+    // re-defining variables inside blocks doesn't work 
+    // redifining variables outside blocks does work though
 
-     {
-         int third_level_local = 5;
-     }
+    {
+        int third_level_local = 5;
+    }
 
 }
 
@@ -382,7 +387,7 @@ public enum My_boolean
 {
 
     NO(0),
-    YES(1);
+    YES(1)
     
 
     My_boolean(int enum_choice)
@@ -390,7 +395,7 @@ public enum My_boolean
 
     }
 
-};
+}
 
 
 //   ^ ^ ^ ^ Constants ^ ^ ^ ^
@@ -401,11 +406,11 @@ public void fun_constants()
 
 //   ^ ^ ^ final - constant on primitives ^ ^ ^
 
-final int primitive_costant = 2; 
+final int primitive_costant = 2
 
 //   ^ ^ ^ final - const reference on objects ^ ^ ^
 
-final Object my_obj; // can't change the value when passing my_obj 
+final Object my_obj // can't change the value when passing my_obj 
 
 // No Pointers in java!
 
@@ -431,15 +436,15 @@ final Object my_obj; // can't change the value when passing my_obj
 //   & & & & & & Flow Control & & & & & &
 
 
-public void fun_flow_control()
+public def fun_flow_control()
 { // wait - does java have labels?
 
-int condition = 1;
-int outer_condition = 0;
-int elif_condition = 1;
-int if_condition = 0;
-int elseif_condition = 1;
-int switch_key = 2;
+def condition = 1
+def outer_condition = 0
+def elif_condition = 1
+def if_condition = 0
+def elseif_condition = 1
+def switch_key = 2
 
 
 //   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^ 
