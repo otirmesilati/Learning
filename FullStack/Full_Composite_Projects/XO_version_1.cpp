@@ -18,14 +18,29 @@ void show_board(char game_board[BOARD_LENGTH][BOARD_WIDTH])
     }
 }
 
-bool win_condition_check()
+bool win_condition_check(char game_board[BOARD_LENGTH][BOARD_WIDTH])
 {
+    // a for loop for checking the lines
+    for(int linex_index = 0; linex_index < BOARD_LENGTH; ++linex_index)
+    {
+        if(game_board[linex_index][0] == game_board[linex_index][1] == game_board[linex_index][2]) 
+        return true;
+    }
 
-    // check row lines
+    // a for loop for checking the rows
+    for(int row_index = 0; row_index < BOARD_WIDTH; ++row_index) 
+    {
+        if(game_board[0][row_index] == game_board[1][row_index] == game_board[2][row_index]) // finish this
+        return true;
+    }
 
-    // check column lines
+    // a for loop for checking the diagonals
+    for(int diagonal_index = 0; diagonal_index < BOARD_LENGTH; ++diagonal_index)
+    {
+        
+    } 
 
-    return false; // placeholder
+    return false; 
 }
 
 // 2. a function for setting the board

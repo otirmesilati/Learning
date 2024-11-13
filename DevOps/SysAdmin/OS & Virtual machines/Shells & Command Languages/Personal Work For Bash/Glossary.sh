@@ -11,8 +11,6 @@
 #   < < < < < < < <   Command Principles   > > > > > > > >   */
 
 clear # Screen Clearing
-echo "Hello World" # standard ouput to terminal
-echo hello world # same output
 
 
 
@@ -84,9 +82,13 @@ ls -R # All Directories recursively on child items
 
 #   ^ ^ ^ ^ ^ File Creation ^ ^ ^ ^ ^  
 
+#   ^ ^ ^ ^ Folders ^ ^ ^ ^
+
 mkdir my_directory
-mkdir my_1_directory my_2_directory 
-mkdir -p make_all_the_parent_files_in_this_path
+mkdir my_1_directory my_2_directory # creating many folders
+mkdir -p make_all_the_parent_files_in_this_path # if any folders in the path don't exist - create them 
+
+#   ^ ^ ^ ^ Files ^ ^ ^ ^ 
 
 touch my_file
 
@@ -477,6 +479,22 @@ exit
 
 
 
+#   & & & & & & Data Streaming & & & & & & 
+
+#   ^ ^ ^ ^ ^ Variable input ^ ^ ^ ^ ^
+
+# input of string - mention the problem of entering a space?
+
+#   ^ ^ ^ ^ ^ Console Output ^ ^ ^ ^ ^ 
+
+echo "Hello World" # standard ouput to terminal
+echo hello world # same output
+
+
+
+
+
+
 
 #   & & & & & & Data Streaming & & & & & & 
 
@@ -510,74 +528,11 @@ my_string=the1iswasastring
 
 
 
-#   & & & & & & String Formatting & & & & & &
-
 #   No String Formatting: specifier fields (precision, length, types)
 
 
 
-
-
-
-
-
-
 #   & & & & & & Operators & & & & & &
-
-
-# ::   Map This Part after doing the rest of the operator portion in other mappings:
-# ::   Also, Touch on the Arith operators: +(+=),-(-=),*(*=),/(/=),%,(%=), relational: eq(or ==),ne,ls,le,gt,ge, logicl: -a ,-o, !, strings: =, !=, -z, -n, str
-# ::   File Test Operators: -b(block)/c(check)/d(directory)/f(ordinary)/g(group id).. file(finish this), finish from here : https://www.tutorialspoint.com/unix/unix-basic-operators.htm
-# ::   ----------------------------------------------------------------
-
-# ::   The output of the above program would be 15.
-
-# ::   All of the arithmetic operators work in batch files. The following example shows arithmetic operators can be used in batch files.
-
-# @echo off 
-# SET /A a = 5 
-# SET /A b = 10 
-# SET /A c = %a% + %b% 
-# echo %c% 
-# SET /A c = %a% - %b% 
-# echo %c% 
-# SET /A c = %b% / %a% 
-# echo %c% 
-# SET /A c = %b% * %a% 
-# echo %c%
-# ::   The above command produces the following output.
-
-# ::   15 
-# ::   -5 
-# ::   2 
-# ::   50
-
-# ::   ----------------------------------------------------------------
-
-
-
-
-# ::   void fun_operators()
-# ::   {
-# ::   int first_check, second_check;
-# ::   int first_multi_assign, second_multi_assign;
-# ::   int first_temp = 1;
-# ::   double sum_temps, second_temp = 2.00;
-# ::   int five = 5, three = 3, zero = 0;
-
-# ::   int first_explicit_conv, second_explicit_conv;
-# ::   int explicit_conv_assignment;
-
-
-# ::   need to touch on lvalue, rvalue, gvalue: 
-# ::   lecture's coverage: lval is left and changing, and rval is right, WOW!
-
-
-
-# ::   More Material:
-# ::   for the wiki tldr: https://en.wikipedia.org/wiki/Value_(computer_science)
-# ::   for the famous lval/rval/gval/xval graph: https://stackoverflow.com/questions/3601602/what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues
-
 
 
 # ::   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
@@ -591,6 +546,36 @@ my_string=the1iswasastring
 
 
 # ::   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^ ^
+
+
+# ::   Map This Part after doing the rest of the operator portion in other mappings:
+# ::   Also, Touch on the Arith operators: +(+=),-(-=),*(*=),/(/=),%,(%=), relational: eq(or ==),ne,ls,le,gt,ge, logicl: -a ,-o, !, strings: =, !=, -z, -n, str
+# ::   File Test Operators: -b(block)/c(check)/d(directory)/f(ordinary)/g(group id).. file(finish this), finish from here : https://www.tutorialspoint.com/unix/unix-basic-operators.htm
+# ::   ----------------------------------------------------------------
+
+# ::   The output of the above program would be 15.
+
+# ::   All of the arithmetic operators work in batch files. The following example shows arithmetic operators can be used in batch files.
+
+a=5
+b=10
+
+c=$((a + b))
+echo $c
+
+c=$((a - b))
+echo $c
+
+c=$((a / b))
+echo $c
+
+c=$((a * b))
+echo $c
+
+# ::   ----------------------------------------------------------------
+
+
+
 # ::   first = first + 3;
 # ::   first= += 3;
 # ::   first = first + 1;
