@@ -336,7 +336,7 @@ docker pull # <type>:<version>
 docker ps
 docker ps -a
 
-docker logs # <container ID>/<container name>
+docker logs container_id #  or container name
 
 #   ^ ^ ^ Docker Container Running ^ ^ ^
 
@@ -357,6 +357,7 @@ docker start # <container ID>/<container name>
 
 
 #   ^ ^ ^ ^ ^ MongoDB Shell ^ ^ ^ ^ ^
+# rewrite the comments nicely later
 
 mongosh
 
@@ -366,12 +367,43 @@ show dbs
 
 use data_base_name # switching between dbs - if there is no db it will still move there, and create one when elements are added
 
-# cols
+# colcs
 
 show collections
 
+# crud
+
+# create
+
 db.collection_name.insertOne({})
 db.collection_name.insertMany([])
+db.collection_name.find({}) # Finding while using an object to searc h with
+db.collection_name.find({}, {atr_1: 1}) # Adding another to mention which values are the only ones to be added
+# Method Chaining
+db.collection_name.find().count() 
+db.collection_name.find().limit() 
+
+# update
+
+db.collection_name.updateOne({_id: 123456787654321}, {$set: {rating: 8, pages: 360}})
+db.collection_name.updateMany({author: "authors_names"}, {$set: {rating: 8, pages: 360}})
+
+# del
+
+db.collection_name.deleteOne({_id: 123456787654321})  
+db.collection_name.deleteMany({author: "author_name"})
+
+
+
+
+
+# sub of sort - operators
+
+db.collection_name.find({rating: {$gt: 7}}) # all books with a rating of greater than 7
+db.collection_name.find({rating: {$lte: 7}}) # less then - equal
+# db.collection_name.find({rating: {$or: [{}]}}) # more brackets for or! want to add gt/lt inside? more brackets! 
+# db.collection_name.find({rating: {$in: [7, 8]}}) # same as pyhton's in, or covers similar logic but in's looked as more efficient, there's also nin (not in)
+
 
 # mongodb vars
 
