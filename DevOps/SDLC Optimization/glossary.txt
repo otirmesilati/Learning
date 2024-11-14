@@ -4,8 +4,15 @@
 
 ci tools
 - jenkins
--- jobs
+-- running scripts: jobs
+--- theres a python library for running jenkins jobs
+--- job's build trigger
+---- build periodically: based on cron time writing -> started by timer
+-- log history available
+-- user administration 
+-- sharing the environment runnning jobs -> very portable
 --- ubuntu : uses linux
+
 -- jenkin pipes
 --- groovy
 
