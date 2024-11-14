@@ -536,82 +536,68 @@ my_string=the1iswasastring
 
 
 # ::   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
-# ::   int first = 1;
+first = 1;
 # ::   first = 2;
 
 
 # ::   ^ ^ ^ Multiple Assignment ^ ^ ^
 
-# ::   first_multi_assign = second_multi_assign = 1;
 
+# ::   first_multi_assign = second_multi_assign = 1;
+first_multi_assign=0; second_multi_assign=1
+
+# No Conversions in Bash
 
 # ::   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^ ^
 
-
-# ::   Map This Part after doing the rest of the operator portion in other mappings:
-# ::   Also, Touch on the Arith operators: +(+=),-(-=),*(*=),/(/=),%,(%=), relational: eq(or ==),ne,ls,le,gt,ge, logicl: -a ,-o, !, strings: =, !=, -z, -n, str
+# relational: eq(or ==),ne,ls,le,gt,ge, logicl: -a ,-o, !, strings: =, !=, -z, -n, str
 # ::   File Test Operators: -b(block)/c(check)/d(directory)/f(ordinary)/g(group id).. file(finish this), finish from here : https://www.tutorialspoint.com/unix/unix-basic-operators.htm
 # ::   ----------------------------------------------------------------
 
-# ::   The output of the above program would be 15.
+a=10; b=5
 
-# ::   All of the arithmetic operators work in batch files. The following example shows arithmetic operators can be used in batch files.
+#   ^ ^ ^ ^ Addition ^ ^ ^ ^ 
 
-a=5
-b=10
-
+first+=0
 c=$((a + b))
 echo $c
 
+#   ^ ^ ^ ^ Prefix vs Postfix inc/dec operator ^ ^ ^ ^
+first_check= 1;
+first_check=$((second_check++)) # first_check = 1, second_check = 2 
+first_check=$((second_check--)) # first_check = second_check = 1
+
+
+#   ^ ^ ^ ^ Subtraction ^ ^ ^ ^
+
+second-=1
 c=$((a - b))
 echo $c
 
-c=$((a / b))
-echo $c
 
+#   ^ ^ ^ ^ Multiplication ^ ^ ^ ^
+
+third*=2
 c=$((a * b))
 echo $c
 
-# ::   ----------------------------------------------------------------
+
+#   ^ ^ ^ ^ Division ^ ^ ^ ^
+
+fourth/=3
+c=$((a / b))
+echo $c
 
 
+#   ^ ^ ^ ^ Modulo ^ ^ ^ ^
 
-# ::   first = first + 3;
-# ::   first= += 3;
-# ::   first = first + 1;
-# ::   first++;
-# ::   ++first;
+fifth%=4
+c=$((a % b))
+echo $c
 
 
 # ::   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^ 
 # ::   what here ? what comes before what? * before / in C?  
-
-
-# ::   ^ ^ ^ ^ Prefix vs Postfix inc/dec operator ^ ^ ^ ^
-# ::   first_check = 1;
-# ::   first_check = second_check++; // first_check = 1, second_check = 2 
-# ::   first_check = ++second_check; // first_check = second_check = 3
-
-
-
-# ::   ^ ^ ^ ^ Arithmetical Operators: Narrowing/Widening type Casting ^ ^ ^ ^
-
-
-# ::   ^ ^ ^ type casting/C-casting ^ ^ ^
-
-# ::   ^ ^ Implicit conversion - mismatching variables in opeartion ^ ^
-
-# ::   first_temp + second_temp; // first is promoted to double in widening implicit c type conversion
-
-# ::   ^ ^ Explicit conversion - assigned to different type OR different type written in parantheses ^ ^ 
-
-# ::   first_explicit_conv = 3, second_explicit_conv = 4;
-# ::   explicit_conv_assignment = (float)(first_explicit_conv / second_explicit_conv); // both exp conv scenarios, order: 1. int result temp 2. float result temp, 3. int assignment temp
-
-
-
-
-
 
 
 
@@ -637,20 +623,7 @@ echo $c
 
 # ::    Overloading literal operators: https://en.cppreference.com/w/cpp/language/user_literal
 
-# ::   ^ ^ ^ ^ ^ Pointer Operators ^ ^ ^ ^ ^
-
-# ::   int ptr_value_1 = 0;
-
-
-# ::   int* ptr_address_1 = &ptr_value_1; // address operator
-# ::   ptr_value_1 = *ptr_address_1; // indirection operator
-
-# ::   // in one line(int + int* init in same line):
-# ::   int ptr_value_2 = 1, * ptr_address_2 = &ptr_value_2, ptr_value_2 = *ptr_address_2;
-
-
-# ::   }
-
+# No Pointer Operators
 
 
 
@@ -662,12 +635,16 @@ echo $c
 
 #   ^ ^ ^ ^ ^ Variables & & & & & &
 
+# Bash is loosely types
+
 my_num=1
 my_string=the1iswasastring
 
 #   ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^
 
-# No global and static variables - instead there are environment and shell variables
+#   ^ ^ ^ Global & Environment Variables ^ ^ ^
+
+#   ^ ^ ^ local variables ^ ^ ^ 
 
 
 
