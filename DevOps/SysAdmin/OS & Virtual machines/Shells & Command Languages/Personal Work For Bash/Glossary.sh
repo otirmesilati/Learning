@@ -128,6 +128,11 @@ grep -n "search_term" # adding the line numbers of the results
 grep -v "search_term" # outputting the rest of results
 grep -c "search_term" # wc type command, outs the counter
 
+#   ^ ^ ^ Piping with Grep ^ ^ ^
+
+ls -l | grep search_term 
+ls -l | grep search_term | wc # chain piping
+
 #   ^ ^ ^ ^ Copying Files ^ ^ ^ ^ 
 
 cp from_file_name to_file_name
@@ -211,7 +216,25 @@ chgrp new_group my_file
 
 
 
-# pg? more? ps? kill? top? ping? ftp? telnet? finger?
+#   & & & & & & Process Handling & & & & & &
+
+#   ^ ^ ^ ^ ^ Listing Processes ^ ^ ^ ^ ^
+
+ps # Lists all running processes
+ps -f # (detailed) full flag
+
+#   ^ ^ ^ ^ Process Termination ^ ^ ^ ^
+
+kill process_id
+
+
+
+
+
+
+
+
+# pg? more? kill? top? ping? ftp? telnet? finger?
 # PART 3 - Advanced Unix
 # sed? df? du? mount? groupadd? groupmod? useradd? userdel? logger? trap? 
 # man? history? find? 
@@ -248,6 +271,7 @@ git status
 
 git log
 git log --oneline
+git log --graph --oneline --all # For a Graph visual
 
 #   ^ ^ ^ ^ Commiting ^ ^ ^ ^ 
 
@@ -267,6 +291,8 @@ git config --global user.name "my Name"
 git config --global user.email "my@email"
 
 #   ^ ^ ^ ^ Branching ^ ^ ^ ^
+
+git branch # List the existing branches
 
 git branch branch_name
 git branch -M new_branch_name # changing name of branch
@@ -317,7 +343,12 @@ git push -u repo_name branch_name # the above command's shorthand
 
 git clone github_URL
 
-#exit?
+#   ^ ^ ^ Pulling ^ ^ ^
+
+git pull
+git pull repo_name branch_name 
+
+exit
 
 
 
