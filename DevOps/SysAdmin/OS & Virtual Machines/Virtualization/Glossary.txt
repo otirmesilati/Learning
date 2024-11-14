@@ -107,7 +107,7 @@ nana's short docker:
 -- friendly GUI
 - docker image
 -- can be dowloaded on a server as a docker image
---- different than a JAR or a rgular artifact file becuase it has the env information on top the compile code 
+--- different than a JAR or a regular artifact file becuase it has the env information on top the compile code 
 - docker container
 -- running instance of an image
 - docker registries for an image library
@@ -116,6 +116,11 @@ nana's short docker:
 - definition for creating docker images
 -- dockerfiles 
 --- theres a base image, mostly linux lightweight image, 
+- port binding
+-- application in a container runs on an isolated network by defualt
+--- to access it, we need to export the port to the host
+
+
 
 Nana's Short Kubernetes video:
 

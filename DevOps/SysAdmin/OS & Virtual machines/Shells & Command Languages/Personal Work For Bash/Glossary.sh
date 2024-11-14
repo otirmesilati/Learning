@@ -331,7 +331,7 @@ git clone github_URL
 
 docker images 
 
-docker pull # <type>:<version>
+docker pull # <type>:<image tag(version)> -> (isn't a must, run will pull images it doesn't have locally)
 
 #   ^ ^ ^ ^ Docker Container Handling ^ ^ ^ ^
 
@@ -343,12 +343,12 @@ docker logs container_id #  or container name
 #   ^ ^ ^ Docker Container Running ^ ^ ^
 
 docker run # <type>:<version>
-docker run -d # <type>:<version>    -> for detaching the process from the terminal and releasing it from the logs
-docker run -p # <host port to bind to>:<app port> <type>:<version>    -> exposing a container to our local network 
+docker run -d # <type>:<version> -> (used to avoid logs filling terminal window) detach flag
+docker run -p # <host port to bind to>:<app port> <type>:<version> -> (exposing a container to our local network) publish flag 
 
-docker stop # <container ID>/<container name>
+docker stop # <container ID>/<container name> - pause functionality
 
-docker start # <container ID>/<container name>
+docker start # <container ID>/<container name> - restart functionality
 
 #exit?
 
