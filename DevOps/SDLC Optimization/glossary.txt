@@ -5,11 +5,13 @@
 ci tools
 - jenkins
 -- running scripts: jobs
+-- 
 --- theres a python library for running jenkins jobs
 --- job's build trigger
 ---- build periodically: based on cron time writing -> started by timer
--- log history available
--- user administration 
+-- log history available -> to check machine build history
+-- machine administration is shared
+-- jenkins user administration is enabled
 -- sharing the environment runnning jobs -> very portable
 --- ubuntu : uses linux
 

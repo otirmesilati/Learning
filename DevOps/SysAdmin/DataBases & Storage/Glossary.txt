@@ -9,7 +9,7 @@ JSON crack: https://www.youtube.com/watch?v=4zQwef_Pnqw
 5. read the connection of all of these langs: https://en.wikipedia.org/wiki/Serialization#Serialization_formats
 5. Mike's SQL CRUD famous tutorial: https://www.youtube.com/watch?v=HXV3zeQKqGY&t=7579s
 6. CodeAcademy's LINQ tutorial: https://www.youtube.com/watch?v=5l2qA3Pc83M
-7. Net Ninja's MongoDB playlist (episode 9): https://www.youtube.com/watch?v=ExcRbA7fy_A&list=PL4cUxeGkcC9h77dJ-QJlwGlZlTd4ecZOA
+7. Net Ninja's MongoDB playlist (episode 15): https://www.youtube.com/watch?v=ExcRbA7fy_A&list=PL4cUxeGkcC9h77dJ-QJlwGlZlTd4ecZOA
 8. Mongoose library tutorial video: https://www.youtube.com/watch?v=DZBGEVgL2eE&t=30s
 9. Net Ninja's Redis tutorial: https://www.youtube.com/watch?v=8sHCdz_tOjk&list=PL4cUxeGkcC9h3V2eqhi8rRdIDJshP-b4P
 10. Elastic search tutorial: https://www.youtube.com/watch?v=n9mE5MXGkaA 
