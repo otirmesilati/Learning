@@ -1,18 +1,135 @@
-    & & & & & & Windows NTFS & & & & & &
+< < < < < < < < Windows N(ew)T(echnology)F(ile)S(ystem) > > > > > > > >
 
-    ^ ^ ^ ^ ^ Directory Structure : Tree ^ ^ ^ ^ ^
+% % % % % % % Directory Tree Structure % % % % % % %
 
-    ^ ^ ^ ^ File Path ^ ^ ^ ^
+Backslash as Path Separators
 
-    Backslash as Separators
+& & & & & & System Files & & & & & &
+
+^ ^ ^ ^ ^ C:\Windows\System32 ^ ^ ^ ^ ^
+
+Windows System dlls 
+Windows System Executables
+
+^ ^ ^ ^ Apps ^ ^ ^ ^
+
+Command Prompt
+Control Panel -> control.exe
+
+DeFrag
+    
+Media Player
+dialer
+
+^ ^ ^ ^ Settings ^ ^ ^ ^
+
+^ ^ ^ System ^ ^ ^
+    
+Display: Settings -> System Default
+
+^ ^ ^ ^ Behaviour ^ ^ ^ ^ 
+
+Display Switch
+
+    
 
 
-    ^ ^ ^ ^ ^ Directory Permissions ^ ^ ^ ^ ^
 
+
+
+
+
+& & & & & & Directory Permissions ^ ^ ^ ^ ^
+
+^ ^ ^ ^ Permission Types ^ ^ ^ ^ 
+    
+Directory Reading
+    Directory Writing
+    File Executing
+    Folder Content Listing
+    Directory Modifying
+    Full Control
+
+    ^ ^ ^ ^ Permissioned Entities ^ ^ ^ ^
+
+    Users
+    User Groups
 
 
     &linux
     &mac
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

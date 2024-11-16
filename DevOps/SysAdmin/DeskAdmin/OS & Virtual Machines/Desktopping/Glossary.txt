@@ -11,6 +11,16 @@ windows:
 
 
 
+
+
+
+
+
+
+
+
+
+
 & & & & & & Windows Desktopping & & & & & &
 
 ^ ^ ^ ^ ^ Desktop Background ^ ^ ^ ^ ^
@@ -34,6 +44,15 @@ windows:
 
 
 ^ ^ ^ ^ Notification area ^ ^ ^ ^
+
+
+
+
+
+
+
+
+
 
 
 
@@ -72,6 +91,29 @@ Dock
 
 
 
+& & & & & & Windows Desktopping & & & & & &
+
+^ ^ ^ ^ ^ Desktop Background ^ ^ ^ ^ ^
+
+^ ^ ^ ^ Icon Handling ^ ^ ^ ^
+
+
+^ ^ ^ ^ ^ Task Bar ^ ^ ^ ^ ^
+
+
+^ ^ ^ ^ Start Menu Button ^ ^ ^ ^
+
+
+^ ^ ^ ^ Search Box ^ ^ ^ ^
+
+
+^ ^ ^ ^ Pined Section ^ ^ ^ ^
+
+
+^ ^ ^ ^ System Tray(Hidden Icons) ^ ^ ^ ^
+
+
+^ ^ ^ ^ Notification area ^ ^ ^ ^
 
 
 

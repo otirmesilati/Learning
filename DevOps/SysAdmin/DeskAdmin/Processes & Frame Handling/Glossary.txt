@@ -121,6 +121,24 @@ Windows Naming -> ?
 
 
 
+shells 
+command prompt -> CMD.exe
+
+control panel -> control.exe
+defrag -> defrag.exe
+media player -> dvdplay.exe
+dialer -> dialer.exe
+
+ ^ ^ ^ ^ Settings Sections ^ ^ ^ ^
+
+    Display: Settings -> System Default    -> DpiScaling.exe
+
+    ^ ^ ^ ^ Behaviour ^ ^ ^ ^ 
+
+    Display Side Window     -> DisplaySwitch.exe
+
+
+
 
 
 
