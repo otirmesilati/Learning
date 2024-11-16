@@ -16,3 +16,13 @@ Map from the following:
 
 Playlists To Finish:
 - Django tutorial : https://www.youtube.com/watch?v=3EzKBFc9_MQ&list=PL4cUxeGkcC9iqfAag3a_BKEX1N43uJutw&index=14
+
+
+A handy list (delete later)
+node + express + mysql
+typescript + nest + nosql
+python + django + postgressql
+js + react + firebase
+java + springboot + postgressql
+python + flast + mysql
+go + gin + postgressql

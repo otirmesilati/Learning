@@ -40,45 +40,23 @@ nvim parts to re-map?
 
 
 
-
-
-
-
-
-
-
-
-< < < < < < < < Desktop App GUI Frames > > > > > > > > 
-
-
-eclipse packages? is it here in the gui frame? or is it in the language ? (probably an lsp thing)
-classic visual options - file ? edit ?
-
-
-
-
-
-
-
-
-
-% % % % % % % Windows NT % % % % % % %
-
-
-
-
-
-
-
-
-
-& & & & & & Frame Families & & & & & &
+% % % % % % % Frame Families % % % % % % %
 windows tools? (is there a distinction between them?) 
 ides like jetbrains?
 
 
 
 
+
+
+
+% % % % % % % Frame Handling % % % % % % % 
+
+Maximize
+Restore
+MiniMize
+Size
+Close
 
 
 
@@ -130,13 +108,15 @@ package manager?
 & & & & & & HyperVisors - Supervisors of Kernels & & & & & &
 
 ^ ^ ^ ^ ^ Virtual-Box ^ ^ ^ ^ ^
+Windows Naming -> ?
 
 
 ^ ^ ^ ^ ^ Virt-Manager (built on top of KVM/QEMU..) ^ ^ ^ ^ ^
+Windows Naming -> ?
 
 
 ^ ^ ^ ^ ^ Docker-Desktop ^ ^ ^ ^ ^
-
+Windows Naming -> ?
 
 
 
@@ -149,16 +129,18 @@ package manager?
 
 ^ ^ ^ ^ ^ NotePad ^ ^ ^ ^ ^
 
+Windows Naming -> Notepad.exe
+
 MenuBar
 Editor Area
 StatusBar
 
 what more? (look at the ides below)
 
-vsc? notepad? notepad++?
+vsc? notepad++?
 
-
-
+Windows Naming -> Code.exe
+Windows Naming -> Notepad++.exe
 
 
 
@@ -168,6 +150,7 @@ vsc? notepad? notepad++?
 & & & & & & IDEs & & & & & &
 
 ^ ^ ^ ^ ^ Eclipse ^ ^ ^ ^ ^
+Windows Naming -> Eclipse.exe
 
 ^ ^ ^ ^ Eclipse Perspective ^ ^ ^ ^
 
@@ -186,6 +169,7 @@ class: -> file -> new -> class
 
 
 ^ ^ ^ ^ ^ Visual Studio ^ ^ ^ ^ ^
+Windows Naming -> DevEnv.exe
 
 ^ ^ ^ ^ IDE GUI elements ^ ^ ^ ^
 
@@ -205,6 +189,7 @@ class: -> file -> new -> class
 
 
 ^ ^ ^ ^ ^ Pycharm ^ ^ ^ ^ ^
+Windows Naming -> Pycharm64.exe
 
 ^ ^ ^ ^ IDE GUI elements ^ ^ ^ ^
 
@@ -232,7 +217,7 @@ cad
 
 
 packettracer
-
+Windows Naming -> ?
 
 dev tools (ctrl shft c) (dock: 3 dots in upper menu -> dock)
 network option -> a list of requests
@@ -272,7 +257,6 @@ mongodbcompass
 < < < < < < < < ShortCuts > > > > > > > >   
 
 
-"global shortcuts" vs "local shortcuts"? like ctrl + f4 (global) vs ctrl + w (local)
 
 
 
@@ -280,14 +264,22 @@ mongodbcompass
 
 
 
+% % % % % % % OS Desktopping SCs & Global SCs % % % % % % %
 
 
-% % % % % % % OS Desktopping SCs % % % % % % %
+Desktop Backround View/Minimize all windows --> spr + d 
+Left-Click Start Button --> spr
+Focus On Search-Box --> spr + <Text>
+Left-Click <Digit> Pinned App Icon --> spr + <Digit>
+Left-Click System Tray Arrow --> spr + b
+Left-Click Notification Area Button --> spr + a
+
 
 & & & & & & Windows NT Desktopping SCs & & & & & &
 
 ^ ^ ^ ^ ^ Windows 10 Navigation ^ ^ ^ ^ ^ 
 
+move this - windows versions should contian relatively little stuff, but to where?
 1. Launch Run command: -> super + r
 2. Launch TaskManager: -> ctrl + shft + esc
 3. Launch n-th pinned Icon in TaskBar: ->super+<Number>
@@ -341,7 +333,23 @@ navigation
 
 
 
-% % % % % % % Frame Handling SCs % % % % % % %
+% % % % % % % Frame Handling/App Specific SCs % % % % % % %
+
+Left-Click Frame's Boarder/Open Window Context Menu --> alt + spc
+[When Focused]Left-Click Icon/Open App Icon Context Menu --> shft + f10 | menu key(fn + right ctrl)
+
+Maximize Frame --> spr + up | (Using Window Context Menu) alt + spc -> x
+Restore Frame --> spr + dwn | (Using Window Context Menu) alt + spc -> r
+Minimize Frame --> spr + dwn + dwn | (Using Window Context Menu) alt + spc -> n
+Size --> <None> | (Using Window Context Menu) alt + spc -> s
+Close <<Global>> --> alt + f4
+
+
+
+
+
+
+
 
 & & & & & & Editors & & & & & &
 

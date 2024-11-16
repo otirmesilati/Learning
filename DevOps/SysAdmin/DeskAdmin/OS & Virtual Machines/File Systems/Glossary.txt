@@ -1,4 +1,62 @@
+    & & & & & & Windows NTFS & & & & & &
+
+    ^ ^ ^ ^ ^ Directory Structure : Tree ^ ^ ^ ^ ^
+
+    ^ ^ ^ ^ File Path ^ ^ ^ ^
+
+    Backslash as Separators
+
+
+    ^ ^ ^ ^ ^ Directory Permissions ^ ^ ^ ^ ^
+
+
+
+    &linux
+    &mac
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 what to leave here? what to move to the general shell workshop? (maybe things like commands for the devops tools setup and configuration?)
+all file explorer stuff do in frame handling
 
 DELETE AFTER FINISH:
 

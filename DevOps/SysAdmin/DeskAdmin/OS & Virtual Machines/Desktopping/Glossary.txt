@@ -13,11 +13,28 @@ windows:
 
 & & & & & & Windows Desktopping & & & & & &
 
-Desktop Background
-Start Menu Button
-Search Box
-Task Bar
-Notification Area (Right side of Task Bar)
+^ ^ ^ ^ ^ Desktop Background ^ ^ ^ ^ ^
+
+^ ^ ^ ^ Icon Handling ^ ^ ^ ^
+
+
+^ ^ ^ ^ ^ Task Bar ^ ^ ^ ^ ^
+
+
+^ ^ ^ ^ Start Menu Button ^ ^ ^ ^
+
+
+^ ^ ^ ^ Search Box ^ ^ ^ ^
+
+
+^ ^ ^ ^ Pined Section ^ ^ ^ ^
+
+
+^ ^ ^ ^ System Tray(Hidden Icons) ^ ^ ^ ^
+
+
+^ ^ ^ ^ Notification area ^ ^ ^ ^
+
 
 
 

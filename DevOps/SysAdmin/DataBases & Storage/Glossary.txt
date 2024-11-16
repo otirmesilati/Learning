@@ -69,6 +69,10 @@ JSON crack: https://www.youtube.com/watch?v=4zQwef_Pnqw
 
 % % % % % % % % Relational DataBases % % % % % % % % %
 
+devs dont write raw sql: they use libraries that preform O(bject) R(elational) M(apping)
+- allows using relational dbs through ORM syntax
+-- js - sequilize, python - slqalchemy  
+
 Relational Table Schemes:
 
 - Row: Object Record
@@ -76,6 +80,15 @@ Relational Table Schemes:
 - Data Tables have Relations
 
 example of a SQL command to query the tables: select * from authors
+
+
+
+
+
+
+
+
+
 
 
 
