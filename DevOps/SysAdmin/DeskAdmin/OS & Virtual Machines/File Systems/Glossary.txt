@@ -1,10 +1,10 @@
-< < < < < < < < Windows N(ew)T(echnology)F(ile)S(ystem) > > > > > > > >
+< < < < < < < < Windows File System > > > > > > > >
 
-% % % % % % % Directory Tree Structure % % % % % % %
+% % % % % % % NTFS % % % % % % %
 
 Backslash as Path Separators
 
-& & & & & & System Files & & & & & &
+& & & & & & NTFS Tree Structure Implementation & & & & & &
 
 ^ ^ ^ ^ ^ C:\Windows\System32 ^ ^ ^ ^ ^
 
@@ -31,17 +31,29 @@ Display: Settings -> System Default
 
 Display Switch
 
-    
+
+&&&&&& -low level components?
+-- master file table?
+-- file records?
+-- file attributes?
+-- cluster allocation?
+-- mftmirr?
+-- $logfile?
+-- $bitmap?
+
+
+fat32 fs?
 
 
 
 
 
 
+& & & & & & NTFS Directory Functionality % % % % % % %
 
-& & & & & & Directory Permissions ^ ^ ^ ^ ^
+^ ^ ^ ^ ^ Directory A(ccess)C(ontrol)L(lists) Permissions ^ ^ ^ ^ ^
 
-^ ^ ^ ^ Permission Types ^ ^ ^ ^ 
+^ ^ ^ ^ Permission Types ^ ^ ^ ^ ^ 
     
 Directory Reading
 Directory Writing
@@ -56,8 +68,20 @@ Users
 User Groups
 
 
-&linux
-&mac
+^ ^ ^ ^ ^ NTFS Data Handling ^ ^ ^ ^ ^
+
+^ ^ ^ ^ NTFS Compression ^ ^ ^ ^
+
+^ ^ ^ ^ NTFS Disk Quotas & Large File Support ^ ^ ^ ^
+
+^ ^ ^ ^ NTFS Encryption ^ ^ ^ ^
+
+bigger than fat32?
+
+
+
+&linux : ext4, btrfs, xfs
+&mac: apfs, hfs
 
 
 
