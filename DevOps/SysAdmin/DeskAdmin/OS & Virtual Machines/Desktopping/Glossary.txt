@@ -37,10 +37,10 @@ windows:
 ^ ^ ^ ^ Search Box ^ ^ ^ ^
 
 
-^ ^ ^ ^ Pined Section ^ ^ ^ ^
+^ ^ ^ ^ Pinned Section (Right & Middle Section) ^ ^ ^ ^
 
 
-^ ^ ^ ^ System Tray(Hidden Icons) ^ ^ ^ ^
+^ ^ ^ ^ System Tray/Hidden Icons (Right Section) ^ ^ ^ ^
 
 
 ^ ^ ^ ^ Notification area ^ ^ ^ ^
@@ -75,45 +75,32 @@ Task Bar (right side of the menu bar)
 
 
 
+
+
+
+
+
 & & & & & & MacOs DeskTopping & & & & & &
-
-DeskTop Background 
-Menu Bar
-Apple Menu (like start menu)
-App Menu (like linux' menu bar)
-Status Menu
-Notification center
-Dock
-
-
-
-
-
-
-
-& & & & & & Windows Desktopping & & & & & &
 
 ^ ^ ^ ^ ^ Desktop Background ^ ^ ^ ^ ^
 
-^ ^ ^ ^ Icon Handling ^ ^ ^ ^
+
+^ ^ ^ ^ ^ Menu Bar ^ ^ ^ ^ ^
+
+^ ^ ^ ^ System Control (Left Section) ^ ^ ^ ^
+
+^ ^ ^ Apple Menu Button ^ ^ ^
 
 
-^ ^ ^ ^ ^ Task Bar ^ ^ ^ ^ ^
+^ ^ ^ ^ App Menu (Center Section) ^ ^ ^ ^
 
 
-^ ^ ^ ^ Start Menu Button ^ ^ ^ ^
+^ ^ ^ ^ Status Menu (Right Section) ^ ^ ^ ^
+
+^ ^ ^ Notification Center ^ ^ ^
 
 
-^ ^ ^ ^ Search Box ^ ^ ^ ^
-
-
-^ ^ ^ ^ Pined Section ^ ^ ^ ^
-
-
-^ ^ ^ ^ System Tray(Hidden Icons) ^ ^ ^ ^
-
-
-^ ^ ^ ^ Notification area ^ ^ ^ ^
+^ ^ ^ ^ ^ Dock ^ ^ ^ ^ ^
 
 
 

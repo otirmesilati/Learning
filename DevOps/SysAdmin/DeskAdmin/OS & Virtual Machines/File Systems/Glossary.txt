@@ -44,20 +44,20 @@ Display Switch
 ^ ^ ^ ^ Permission Types ^ ^ ^ ^ 
     
 Directory Reading
-    Directory Writing
-    File Executing
-    Folder Content Listing
-    Directory Modifying
-    Full Control
+Directory Writing
+File Executing
+Folder Content Listing
+Directory Modifying
+Full Control
 
-    ^ ^ ^ ^ Permissioned Entities ^ ^ ^ ^
+^ ^ ^ ^ Permissioned Entities ^ ^ ^ ^
 
-    Users
-    User Groups
+Users
+User Groups
 
 
-    &linux
-    &mac
+&linux
+&mac
 
 
 
