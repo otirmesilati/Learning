@@ -933,3 +933,212 @@ void function_pointer_usage()
 //   ^ ^ ^ ^ ^ Abstraction: each function invocation is a black box ^ ^ ^ ^ ^
 //   ^ ^ ^ ^ ^ Supports TDD: using the function, and then impementing
  *)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(* Literals and Operators*)
+(*comments*)
+(**docstrings*)
+
+50 * 50 ;;
+6.28;;
+
+"Hi";;
+true;;
+
+(*Assignment*)
+let my_int = 5;;
+my_int;;
+
+let u = [1; 2; 3; 4];;
+["this"; "is"; "nice"];;
+
+9::u;; (*concat to the list*)
+(* if as an expression!*)
+2 * if "hello" = "world" then 3 else 5;;
+
+(* localizing variables*)
+let y = 50 in y * y;;
+(*Adding a y evaluation here will give an error*)
+
+let a = 1 in
+let b = 2 in
+ a + b;;
+
+(* =? assignment and eqality test *)
+let as_and_eq = "hi" = "hello";;
+
+(*Functions As Values in OCaml*)
+let square x = x * x;;
+square 50;;
+let concat a b = a ^ " " ^ b;; (*partial application*)
+concat "hi"
+let cat_hi = concat "friend";;
+
+(* Anon functions *)
+fun x -> x * x;;
+(fun x -> x * x) 20;;
+
+List.map();;
+List.map (fun x -> x * x) [0; 1; 2; 3;];; (* int list = [0, 1, 4, 9]*)
+
+(*https://ocaml.org/docs/tour-of-ocaml*)
+(*type parameters and higher-order functions*)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(* https://ocaml.org/manual/5.2/lex.html#sss:stringliterals *)
+(* syno: went over suffix encoding, continue to floats *)
+
+(*   & & & & & & Commenting & & & & & &   *)
+
+(* Single and 
+multi line comments *)
+
+(*
+Nested
+(* Comments within *)
+Other comments
+*)
+
+(*   & & & & & & Literals & & & & & &   *)
+
+(*   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^   *)
+
+123;;
+4_273;;
+42_73;;
+427_3 ;;
+-34;;
+
+
+(*  ^ ^ ^ ^ Integers: Type Modifiers ^ ^ ^ ^   *)
+
+0xF5;;
+0o12;;
+0b110;;
+
+(* No signed unsigned coding suffixes in python *) 
+1l;;(*32int*) 
+1L;;(*64int*)
+1n;;(*nativeint*)
+
+2;;
+3.4;;
+
+
+'h';;
+(*int_of_char 'h';; to find out ASCII value*)
+"Bye";;
+
+false;;
+
+(* ^ ^ ^ ^ ^ Different Radixes ^ ^ ^ ^ ^*)
+
+(*x/o/b adding in the end of the literal, give examples*)
+
+(*   & & & & & & Operators & & & & & &   *)
+
+(*   & & & & & & String Formatting & & & & & &   *)
+
+(*   & & & & & & Conditional Statements & & & & & &   *)
+
+(*   & & & & & & Loops & & & & & &   *)
+
+2 + 4;;
+3 * 2;;
+3.2 +. 2.0;; (* different operators for different types operators (float operators)*)
+(1 < 2);;
+"Hello " ^ " " ^ "World";;
+
+
+
+
+
+
+
+
+
+
+
+
+
