@@ -1,0 +1,96 @@
+1:
+<-Back->
+<--Proc-->
+- C
+- C++
+<--Func-->
+- OCaml
+- Elixir
+<--OOP--> 
+- Java
+- Go
+<-Script->
+- Perl
+- Python 
+<-Front-> 
+- JavaScript / TypeScript
+- VB.net
+<--Markup->
+- HTML / CSS
+<-Data Visualization->
+- R
+<-DataBase->
+- SQL
+- MySQL / Postgres Shell
+- JSON
+<-Cmnd->
+- Batch
+
+2:
+<-Back->
+<--Proc-->
+- Rust
+- Zig
+<--Func-->
+- Elm
+- Clojure
+<--OOP-->
+- Gleam
+- C#
+<-Script->
+- Lua
+- Ruby
+<-Front & Markup->
+- wasm
+- Swift
+<-Data Visualization->
+- Matlab
+<-DataBase->
+- Mongo Shell / ?
+- YAML
+<-Cmnd->
+- Bash
+
+3:
+
+<-Back->
+<--Proc-->
+- Fortran
+- Nim
+<--Func-->
+- Haskell
+- Scala
+<--OOP-->
+- Kotlin
+- Delphi
+<-Script->
+- Groovy
+- ?
+<-Front & Markup->
+- ?
+- ?
+- ?
+<-Data Visualization->
+- Julia
+?
+<-Cmnd->
+- PowerShell
+
+
+xml? 
+
+---------------- continue from here ------------
+
+
+<-DataBase->
+- MDBQL / HTSQL
+
+
+- MDX
+- SAS
+<-Scripting->
+
+
+
+Not touched: Prolog, Mercury, Oberon, Algol, Eiffel, Simula, APC, , awk, ada, lisp, Icon sed, smalltalk, modula-2, snobol, scheme
+
