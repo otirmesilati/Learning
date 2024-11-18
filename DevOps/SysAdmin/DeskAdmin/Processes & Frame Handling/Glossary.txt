@@ -40,7 +40,7 @@ nvim parts to re-map?
 
 
 
-% % % % % % % Frame Families/SoftWare Suites % % % % % % %
+< < < % % % % Frame Families/SoftWare Suites % % % % % % %
 - Windows System Utility Apps (reorder what's below in a meaningful way)
 -- control panel (control of Environment, system preferences, personalization)
 -- event viewer (view logging, monitoring, warnings)
@@ -56,8 +56,8 @@ nvim parts to re-map?
 what about dedicated folders for these? utilities folder? wasn't there another one? how to map those?
 
 
-- Office
-- Photoshop
+- Office Suite
+- Photoshop Suite
 
 
 
@@ -65,7 +65,7 @@ what about dedicated folders for these? utilities folder? wasn't there another o
 
 
 
-% % % % % % % Frame Handling % % % % % % % 
+<<<<<<<< Frame Categories % % % % % % % 
 
 Maximize
 Restore
