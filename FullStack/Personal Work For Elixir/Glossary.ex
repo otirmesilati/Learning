@@ -1,3 +1,341 @@
+defmodule Hello do
+
+
+  def world do
+
+    {error, reason} = {:error, "file not found"}
+    reason
+
+    {:ok ,msg} = {:ok, "statuse 200 ok"}
+    msg
+
+    IO.puts("Hello world Elixir")
+
+  end
+
+
+a = 1
+
+[a,a] = [1,1]
+[a,b] = [1,2]
+
+# 1.3: Strings, and pattern matching on raw representation of binaries
+"My" <> rest = "My String"
+rest
+i("abc") # checking the information for the binary string
+?a
+?b
+
+name = "Otir"
+name
+is_binary(name)
+msg = "Hello " <> name
+"Hello " <> name = msg
+name
+<<head, rest::binary>> = name
+head
+head == ?O
+<<"Ot", rest::binary>> = name
+rest
+<<head::binary-size(2), rest::binary>> = name
+head
+
+
+# 1.4: charlist and proccesses
+
+chars = 'Otir'
+'Hello ' ++ chars
+is_list(chars)
+
+my_list = ["a", "b", "c"]
+Enum.at(my_list, 0)
+[first, second, third] = my_list
+second
+[_, _, third] = ["a" , "b", "c"]
+third
+hd(my_list)
+tl(my_list)
+
+# .Enum to check the rich API
+# h(Enum.at) for documentation
+
+my_pid = self()
+my_pid
+
+# 1.5/6: Tuples, key-word list and maps
+
+{a, b} = {1, 2}
+a
+
+{:reply, msg, state} = {:reply, "Otir", [1, 2]}
+msg
+State
+
+data = [a: 1, b: 2]
+[{:a, 1}] = [a: 1]
+data[:a]
+
+my_map = %{a: 1, b: 2, c: 3}
+%{a: first, b: second, c: third} = my_map
+second
+%{b: second} = my_map
+second
+
+my_map.a
+
+map2 = %{"a" => 1, "b" => 2, "c" => 3}
+
+%{"c" => c} = map2
+c
+%{map2 | "c" => 4}
+my_map = %{my_map | c: 4}
+
+# 1.7: structures
+
+defmodule User do
+  defstruct username: "", email: "", age: nil
+end
+
+user1 = %User{username: "Samy", age: 13, email: "octobot@sample.com"}
+
+%{username: username} = user1
+username
+
+%{user1 | age: 21}
+
+# 1.8: cases and conds
+
+case Enum.at(my_list,2) do
+  1 -> "This won't print"
+  2 -> "3 is a match"
+  _ -> "Catch all"
+end
+
+defmodule Post do
+  defstruct(
+    id: nil,
+    title: "",
+    description: "",
+    author: ""
+  )
+end
+
+case post1 do
+  %{author: "Otir"} -> "Got a post from Otir"
+  %{author: "Tzadik"} -> "Got a post from Tzadik"
+  _ -> "Got a post from#{post1.author}"
+
+end
+
+%{post1 | author: "Tzadik"}
+
+cond do
+  post1.author == "Tzadik" -> "Editing a post from Tzadik"
+  post1.author == "Otir" -> "Editing a post from Otir"
+  true -> "This is a catch all"
+end
+
+cond do
+  hd(my_list) == 1 -> "Got a 1"
+  true -> "head is #{hd(my_list)}"
+end
+
+if true do
+  "This will work"
+else
+  "This will work"
+end
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# https://www.tutorialspoint.com/elixir/elixir_data_types.htm
+# Data types
+
+#   & & & & & & Comments & & & & & &
+
+
+#   & & & & & & Literals & & & & & &
+
+#   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
+123
+4_273
+-34
+
+#   ^ ^ ^ ^ Integers: Type Modifiers ^ ^ ^ ^
+0xF5
+0o12
+0b110
+
+# floats?
+# atoms
+# bools
+# binaries
+# lists
+# tuples
+
+#   & & & & & & Operators & & & & & &
+
+#   & & & & & & String Formatting & & & & & &
+
+#   & & & & & & Conditional Statements & & & & & &
+
+#   & & & & & & Loops & & & & & &
+
+
+12
+0xc
+0o14
+0b1100
+:hello
+true
+false
+"""
+multi line
+strings
+"""
+"Hi" # list
+[1, 2, 3]
+[1 ,"Hi", :an_atom]
+'Hello' # char-list
+<< 65, 66 , 67 >> # Printing ABC
+
+# Operators
+
+1 + 2
+'Hi ' ++ 'Bye'
+[1, 2] ++ [3]
+
+# Continue organization from here
+
+# Lists and Tuples are implemented differently, but are similar
+# both can have a myriad of types
+
+'Hello' # Char-List
+IO.puts(is_list(to_char_list("hełło"))) # converting to list
+IO.puts(is_binary(to_string('hełło'))) # converting from list (to binary)
+
+{1, "Hi", :an_atom} # Tuples
+
+# Variables
+
+first_var = 6
+second_var = 7.8
+third_var = "Hi"
+
+IO.puts first_var
+IO.puts second_var,
+IO.puts third_var
+
+# Pattern Matching
+
+[v_1, v_2] = [1, 2]
+
+# string interpolation
+
+first_str = "world"
+second_str = "hello #{first_str}"
+third_str = "hello" <> "world"
+IO.puts(String.length("hello"))
+IO.puts(String.reverse("world"))
+
+# Keyword Lists
+list = [{:a,1}, {:b,2}]
+[a : 1, b : 2] # the same as the previous keyword list
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # // C Online Emulator: https://www.onlinegdb.com/online_c_compiler
 
 
