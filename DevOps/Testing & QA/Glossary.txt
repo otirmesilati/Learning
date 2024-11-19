@@ -10,28 +10,35 @@ Map from the following:
 
 
 
+Check Testing
+- gherkin: given-when-then
+- give an example
 
 
 
 
 
 
-steps:
-common QA questions:
-- what's the purpose of ---?
-- how do they know their new code does not break anything?
-- how do they know their customers aren't running into issues?
-- how do they prevent someone from hacking your account?
-- how do they make sure to charge you for the right amount?
-- how do they keep --- running all the time?
-- how long does something stay in prod before needing a fix? how reliable is it?
-- how do our customers use it? do they like it?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 - realise functional requiremenets & non functional requirements
--- evaluate what is possible
--- evaluate what is not possible
--- ask for the goal & analyse colleagues thoughts on recent steps to get there
--- provide feedback on the way
 
 
 
