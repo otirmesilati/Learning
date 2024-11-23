@@ -83,8 +83,12 @@ package managers vs installers:
 - packmans: pip(for python packages).. what more?
 
 
-
-
+how to order the following?
+- homebrew
+- choco
+-- 
+- pip
+- scoop
 
 
 
@@ -176,6 +180,46 @@ Windows Naming -> Code.exe
 Windows Naming -> Notepad++.exe
 
 
+& & & & & & Vim ^ ^ ^ ^ ^
+
+
+
+^ ^ ^ ^ ^ NeoVim ^ ^ ^ ^ ^
+
+^ ^ ^ ^ T(ext)U(ser)I(nterface)L(ine) ^ ^ ^ ^
+
+^ ^ ^ Modes ^ ^ ^
+
+Normal - For reading
+Visual - Normal + text select
+Insert - For reading + writing
+
+^ ^ ^ ^ Configurations ^ ^ ^ ^
+
+TUIL(lualine)
+syntax highlighting (treesitter)
+code snippets (lsp)
+file explorer
+git integration
+fuzzy finder
+
+nvim 
+-init lua
+-lua
+--user
+---core
+----colorscheme
+----options
+----keymaps
+---plugins
+----lualine
+----telescope
+----nvimtree
+---plugins-setup
+
+
+
+
 
 
 
@@ -262,8 +306,11 @@ browsers?
 
 
 clis?
-
-
+- dos
+- zsh
+- iterm2
+- warp
+- kitty
 
 
 
@@ -657,6 +704,105 @@ Pase Text -> ctrl + v
 
 
 
+
+^ ^ ^ ^ ^ NeoVim ^ ^ ^ ^ ^
+
+^ ^ ^ ^ Text User Interface Line ^ ^ ^ ^
+
+^ ^ ^ Modes ^ ^ ^
+
+Normal - For reading
+Visual - Normal + text select
+Insert - For reading + writing
+
+^ ^ ^ ^ Configurations ^ ^ ^ ^
+
+syntax highlighting (treesitter)
+code snippets (lsp)
+file explorer
+git integration
+fuzzy finder
+
+^ ^ ^ ^ Vim Commands ^ ^ ^ ^
+
+^ ^ ^  Editing ^ ^ ^ 
+
+w: *save*
+q: *close*
+
+
+former: to be deleted 
+// & & & & & & & & & & NeoVim & & & & & & & & & &
+
+
+
+
+^ ^ ^ ^ ^ Vim ^ ^ ^ ^ ^
+
+i *Change to Editing(Insert) mode*
+esc *change to normal mode*
+
+
+^ ^ ^ ^ File Navigation ^ ^ ^ ^
+
+h *cursor goes left for one letter*
+j *cursor goes down for one letter*
+k *cursor goes up for one letter*
+l *cursor goes right for one letter*
+
+1. one line jump navigation: j(DOWN)/k(UP)
+2. multiple line jump navigation: <Number> + j(DOWN)/k(UP)
+3. [smartcase dependent]Searching-vim level: /<Search Term> 
+
+
+// ^ ^ ^ ^ Key-Binds ^ ^ ^ ^
+
+// ^ ^ ^ Inner file manipulation ^ ^ ^
+
+1. [insert mode] exit -> j + k
+2. [normal mode] clear file search highlights -> <leader> + n + h
+3. [normal mode] incerment/decrement -> <leader>++ 
+4.
+
+// ^ ^ ^ Nvim Panes ^ ^ ^
+
+1. [normal mode] New vertical pane -> <leader> + s + v
+2. [normal mode] New Horizontal pane -> <leader> + s + h
+3. [normal mode] Close Focused pane -> <leader> + s + x
+4.
+
+// ^ ^ ^ Nvim Tabs ^ ^ ^
+
+1. [normal mode] New Tab -> <leader> + t + o
+2. [normal mode] Next Tab -> <leader> + t + n
+3. [normal mode] Previous Tab -> <leader> + t + p
+4. [normal mode] Close Tab -> <leader> + t + x
+5. 
+
+
+// ^ ^ ^ ^ Dependencies: ? ^ ^ ^ ^ 
+
+// ^ ^ ^ vim-level functionality ^ ^ ^
+1. relative numbers printed on the editor -> opt.relativenumber
+2. tab space jumps -> opt.tabstop
+3. in-file vim level search -> opt.smartcase
+4. line highlight -> opt.cursorline
+5.
+6.
+7.
+
+// ^ ^ ^ ^ ^ ^ Tmux ^ ^ ^ ^ ^ ^ 
+
+// ^ ^ ^ ^ ^ ^ Configurations ^ ^ ^ ^ ^ ^ 
+
+1. 
+
+
+
+
+
+
+
 & & & & & & Browsers & & & & & &
 
 ^ ^ ^ ^ ^ File Browsers ^ ^ ^ ^ ^
@@ -816,70 +962,6 @@ mysql
 
 
 
-// & & & & & & & & & & NeoVim & & & & & & & & & &
-
-
-
-
-^ ^ ^ ^ ^ Vim ^ ^ ^ ^ ^
-
-i *Change to Editing(Insert) mode*
-esc *change to normal mode*
-
-
-^ ^ ^ ^ File Navigation ^ ^ ^ ^
-
-h *cursor goes left for one letter*
-j *cursor goes down for one letter*
-k *cursor goes up for one letter*
-l *cursor goes right for one letter*
-
-1. one line jump navigation: j(DOWN)/k(UP)
-2. multiple line jump navigation: <Number> + j(DOWN)/k(UP)
-3. [smartcase dependent]Searching-vim level: /<Search Term> 
-
-
-// ^ ^ ^ ^ Key-Binds ^ ^ ^ ^
-
-// ^ ^ ^ Inner file manipulation ^ ^ ^
-
-1. [insert mode] exit -> j + k
-2. [normal mode] clear file search highlights -> <leader> + n + h
-3. [normal mode] incerment/decrement -> <leader>++ 
-4.
-
-// ^ ^ ^ Nvim Panes ^ ^ ^
-
-1. [normal mode] New vertical pane -> <leader> + s + v
-2. [normal mode] New Horizontal pane -> <leader> + s + h
-3. [normal mode] Close Focused pane -> <leader> + s + x
-4.
-
-// ^ ^ ^ Nvim Tabs ^ ^ ^
-
-1. [normal mode] New Tab -> <leader> + t + o
-2. [normal mode] Next Tab -> <leader> + t + n
-3. [normal mode] Previous Tab -> <leader> + t + p
-4. [normal mode] Close Tab -> <leader> + t + x
-5. 
-
-
-// ^ ^ ^ ^ Dependencies: ? ^ ^ ^ ^ 
-
-// ^ ^ ^ vim-level functionality ^ ^ ^
-1. relative numbers printed on the editor -> opt.relativenumber
-2. tab space jumps -> opt.tabstop
-3. in-file vim level search -> opt.smartcase
-4. line highlight -> opt.cursorline
-5.
-6.
-7.
-
-// ^ ^ ^ ^ ^ ^ Tmux ^ ^ ^ ^ ^ ^ 
-
-// ^ ^ ^ ^ ^ ^ Configurations ^ ^ ^ ^ ^ ^ 
-
-1. 
 
 -------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------
@@ -914,49 +996,10 @@ and finish these: https://www.youtube.com/watch?v=QHial8xwfh4 , https://www.yout
 
 
 
-
-
-
-& & & & & & Package Managers
-
-
-
-
-
-
-
-
-
-& & & & & & FrameWorks
-
-
-
-
 % % % % % % % % Monitoring % % % % % % % %
 
 jenkins? flux? prom?
 
-
-
-
-
-
-
-
-& & & & & & Text Editor CLIs & & & & & &
-
-^ ^ ^ ^ ^ Nvim ^ ^ ^ ^ ^
-
-vi my_file.txt
-vim my_file.txt
-nvim my_file.txt
-
-^ ^ ^ ^ Vim Commands ^ ^ ^ ^
-
-^ ^ ^  Editing ^ ^ ^ 
-
-w: *save*
-q: *close*
 
 
 
@@ -975,14 +1018,6 @@ timeout /t 10 >nul (for delay of 10 seconds)
 
 
 
-
-
-
-
-
-
-& & & & & & CLIs & & & & & &
-terminals? shell browser? multiple panes(tiling)?
 
 
 
@@ -1054,41 +1089,3 @@ more material: network programming pdf - https://www.cisco.com/c/dam/global/cs_c
 
 
 
-
-<------------------------   c:\Users\otirm_2hwnj4i\Desktop\🖥️\TUI & Shells\Dynamic Sources.txt   ----------------------------->
-
-   & & & & & & Sites & & & & & &
-   
-   & & & & & & Youtube's & & & & & &
-   
-   ^ ^ ^ ^ ^ Youtubers ^ ^ ^ ^ ^
-   
-   1. https://www.youtube.com/@typecraft_dev/videos
-   2. 
-   
-   ^ ^ ^ ^ ^ To Watch ^ ^ ^ ^ ^
-   
-   ^ ^ ^ ^ Playlists ^ ^ ^ ^
-   
-   1. paul hills win server: https://www.youtube.com/watch?v=Dq-Ln-w8C2E&list=PLYogJ_kxL1wTesq-vNxEc8tjDOHvszeWf
-   2.
-   
-   ^ ^ ^ ^ Vids ^ ^ ^ ^
-   
-   1. 
-   2. 
-   3. 
-   
-   ^ ^ ^ ^ Shorts ^ ^ ^ ^
-   
-   & & & & & & Reddit
-   
-   1. 
-   2. 
-   
-   & & & & & & Sites & & & & & &   
-   
-   1. 
-   2. 
-   3. 
-   2. 

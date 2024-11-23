@@ -15,12 +15,12 @@ clear # Screen Clearing
 
 
 
+#   % % % % % % % Frame Handling % % % % % % %
 
 
 
 
-
-#   & & & & & & File System Navigation & & & & & & 
+#   % % % % % % % File System Navigation & & & & & & 
 
 pwd # print current (dubbed working) directory
 
@@ -88,9 +88,15 @@ mkdir my_directory
 mkdir my_1_directory my_2_directory # creating many folders
 mkdir -p make_all_the_parent_files_in_this_path # if any folders in the path don't exist - create them 
 
+
 #   ^ ^ ^ ^ Files ^ ^ ^ ^ 
 
 touch my_file
+
+vi my_file.txt
+vim my_file.txt
+nvim my_file.txt
+
 
 #   ^ ^ ^ ^ Creating File Links (Shortcuts/file references - deleting them won't affect the original) ^ ^ ^ ^
 
@@ -109,6 +115,7 @@ cat -b file_name # Numbering lines
 #   ^ ^ ^ Editing Contents ^ ^ ^ 
 
 cat > file_name 
+
 
 #   ^ ^ ^ Sorting contents ^ ^ ^
 
