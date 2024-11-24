@@ -89,7 +89,7 @@ how to order the following?
 -- 
 - pip
 - scoop
-
+- packer
 
 
 
@@ -205,12 +205,24 @@ fuzzy finder
 
 nvim 
 -init lua
+-- nvim will look at it every time it loads the condif
+--- imports all the libraries from the lua folder
 -lua
+-- dependencies
 --user
 ---core
 ----colorscheme
-----options
+----options (vil opt global)
+----- using the vim global variable
+------ relative numbers present
+------ curson line number is shown
+------ tabbing two spaces
+------ case insensitive for lower case and sensitive for upper case search in TUIL
+------ enabling true terminal color schemes and dark background
+------ enabling system clipboard
+------ enabling split h/v window
 ----keymaps
+----- leader key configuration
 ---plugins
 ----lualine
 ----telescope
@@ -701,6 +713,9 @@ Pase Text -> ctrl + v
 
 
 
+
+
+dw in the TUIL? (erase?)
 
 
 
