@@ -223,11 +223,17 @@ nvim
 ------ enabling split h/v window
 ----keymaps
 ----- leader key configuration
+----- nvim navigator (between split panes)
+----- split panes maximizer
+----- vim motions suround and replace
 ---plugins
 ----lualine
 ----telescope
 ----nvimtree
+----comments
+----- enables commeting out line with gcc
 ---plugins-setup
+
 
 
 
@@ -323,7 +329,7 @@ clis?
 - iterm2
 - warp
 - kitty
-
+- alacrity
 
 
 
@@ -712,12 +718,35 @@ Pase Text -> ctrl + v
 
 
 
+jk to exit insert mode?
+leader + '+' to increment a number (- to dec)
+leader + s + v to split vertically (h horizon, x close)
+leader to (new) tp (prev) tn (next) tx (close)
+ctrl + h/l to jump left right between panes
+leader sm for split pane maximization
+surround: y+s+@+character to surround
+-TUIL commands: 
+:w - save file
+:q - exit file
+:e <filename> - go to a file
+:set - change settings
+:lua - run lua command
+:help - open help
 
 
-
-dw in the TUIL? (erase?)
-
-
+- motions:
+hjkl - arrows
+w , b - next, previous begining of word
+0 , $ - begining , end of the line 
+d - delete
+-- combimotions: 
+delete a word: d+s
+delete a line: dd
+replace a symbol: c+s
+replace a word: g+r+w
+- comments plugin:
+-- commenting a single line gcc
+-- commenting multiple line g+c+<number>+j
 
 
 ^ ^ ^ ^ ^ NeoVim ^ ^ ^ ^ ^

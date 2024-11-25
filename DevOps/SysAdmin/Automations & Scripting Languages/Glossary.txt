@@ -45,6 +45,34 @@ At the point's intro:
 
 
 
+hot to run in terminals:
+
+-script
+
+-- python .py: [python installed] --> python file_name.py
+--js?
+--ruby?
+--php?
+--perl?
+--c#?
+--go?
+--R?
+--tcl?
+--hs?
+--rs?
+--swift?
+
+
+-command
+
+-- batch .bat:
+-- bash .bsh:
+-- powershell .ps1:
+-- ps?
+
+
+
+
 
 
 
