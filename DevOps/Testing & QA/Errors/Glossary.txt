@@ -1,4 +1,4 @@
-Humane (Errors)mistakes make (Faulty)bad code that does (Failure) not what we wanted:
+Humane (Errors)mistakes make (Faulty)bad code that does not what we wanted(Failure):
 - Compilation-Errors: Code doesn't compile  --->  Handled by checked exceptions
 - Run-Time-Errors: Compilation went through, though exception was thrown  --->  Handled by un-checked exceptions (not a comp error in java)
 - Linking-Errors: Not handled well project linking procedures like pre-proccessors commands
