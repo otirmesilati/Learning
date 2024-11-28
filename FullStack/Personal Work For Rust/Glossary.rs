@@ -50,15 +50,12 @@
 
 /* 
 Multi Line 
-Comment
+Comment, No nested comments
  */
 
 
-/* Nested
-// Comments //
-are available */
+ /// Documentation ///
 
-//docs? logs?
 
 
 
@@ -114,21 +111,14 @@ fn fun_literals()
     3u64;
     4u128;
     5usize;
+    
     // -6u8 or any unsigned int pops a compile time error 
 
-}
-
-/*     
-
-    -2U; // will work sometimes and sometimes not: will be translated: 2's complement on the value -> new unsigned value
+    // No Unsigned negatives
     
-    //   ^ ^ ^ Long Modifier Suffix operators
+    // No Long modifier syntax in rust
     
-    1l;
-    -2L;
-    3ll;
-    4LL;
-    
+     
     //   ^ ^ ^ ^ ^ Floats ^ ^ ^ ^ ^
     
     1.2;
@@ -138,7 +128,7 @@ fn fun_literals()
     
     1e2;
     1e-3;
-    1e4L;   // combining //
+    
     
     }
     
@@ -150,10 +140,58 @@ fn fun_literals()
     // https://web.archive.org/web/20130807052041/http://cpp.comsci.us/etymology/literals.html
     // https://en.cppreference.com/w/cpp/language/floating_literal //
     
-    
-    
-    
-*/
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+//   & & & & & & String Formatting & & & & & &
+
+
+
+fn fun_string_formats() {
+
+let number: i32 = 1; 
+let dvalue: f64 = 2.344444;
+let undef_behav: i32 = 4;
+
+
+//   ^ ^ ^ ^ ^ Format Specifier Fields ^ ^ ^ ^ ^
+
+//   ^ ^ ^ ^ Flags ^ ^ ^ ^
+
+//   ^ ^ ^ ^ Precision ^ ^ ^ ^
+ 
+println!("{:.2}", dvalue);
+
+
+//   width
+
+
+//   ^ ^ ^ ^ Length ^ ^ ^ ^
+
+println!("{}", 1);
+println!("{}", dvalue);
+ 
+//   ^ ^ ^ ^ Types ^ ^ ^ ^
+
+println!("{}", 'a');
+println!("{}", 1);
+println!("{}", 2.3);
+
+// No wierd behaviour in Rust as this specific syntax tool is loosely typed
+
+//   custom field 
+
+}
 
 
 
@@ -163,295 +201,121 @@ fn fun_literals()
 
 
 /* 
-
-//   ^ ^ ^ ^  Integers: Unsigned  ^ ^ ^ ^ 
-
-11u8;
-12u16;
-13u32;
-14u64;
-15u128;
-16usize;
-
-//   ^ ^ ^ ^ Integers: Signed ^ ^ ^ ^
-
-// ?
-
-// floating point
-// bools
-// chars
-
-12;
-45.6;
-"Hi";
-true;
-(1u32, 2u32, 4.3f32, 5.4f32);
-
-//   & & & & & & Operators & & & & & &  
-
-3.4 + 5.6;
-true && false;
-
-//   & & & & & & String Formatting & & & & & &   // 
-// - Note the printing is MACRO based, :o/b/x for diffrent radixes //
-
-println!("first: {}", my_tuple.0);
-
-//   & & & & & & Conditional Statements & & & & & &   // 
-
-//   & & & & & & Loops & & & & & &   //
-
-//
-fn main()
-{
-    // literals:
-    
-    // tuples:
-    
-    let my_tuple = (1u32, 2u32, 3u32, 4.3f32, 5.4f32);     
-    
-    
-
-    // incremental //
-    print!("{0}, this is {1}. {1}, this is {0}", "Alice", "Bob")
-    
-    // no order significance //
-    println!("{subject} {verb} {object}", object = "the lazy dog", subject = "the quick brown fox", verb = "jumps over")
-
-    println!("decimal: {}", 1234);
-    println!("hexa: {:x}", 1234);
-    println("octal: {:o}", 1234);
-    println!("binary: {:b}", 1234);
-    // paragraphing - justifying and adding zeros //
-
-    println!("{number:>5}", number = 2); // right justify by 4 places (the last taken by the 2) //
-    // left justifying is like printing regularly //
-    println!("{number:0>5}", number = 2); // justify right with zeros //
-    println!("{number:0<5}", number = 2); // justify left with zeros //
-    println!("{number:0>width$}", number = 2, width = 5);
-
-    // immutable variables //
-    
-    let number : f64 = 2.0;
-    let width : usize = 5;
-    println!("{number:>width$}"); // right justify with zeros and limit decimal places //
-
-    let fir_var = true;
-    let fir_var: bool = false; // type annotation
-    let sec_var: f64 = 4.5; // type annotation
-    let third_var = 5i32; // sufixed type annotation
-    let fist_tuple = ("hi", "bye");
-    
-    // mutable variables //
-
-    let mut fort_var: f64 = 67.23;
-    fort_var = 25.47f64; 
-
-    // operators and literals
-
-    println!("{}", 1u32 + 2);
-    println!("{}", 1i32 - 2);
-    println!("{}", 1e4);
-    println!("{}", 1e5 - 1e4);
-
-} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//   & & & & & & String Formatting & & & & & &
-
-
-
-void fun_string_formats(){
-
-int number = 1;
-double dvalue = 2.344444;
-int undef_behav = 4;
-
-
-//   ^ ^ ^ ^ ^ Format Specifier Fields ^ ^ ^ ^ ^
-
-//   ^ ^ ^ ^ Flags ^ ^ ^ ^
-
-
-
-//   ^ ^ ^ ^ Precision ^ ^ ^ ^
-
-printf("%d %.2lf", number, dvalue); // two digits left of decimal point 
-// what about two digits to the right? 
-
-
-//   width
-//   ^ ^ ^ ^ Length ^ ^ ^ ^
-
-printf("%ld", 1); // long
-printf("%lf", 2.34); // double
-
-//   ^ ^ ^ ^ Types ^ ^ ^ ^
-
-printf("%c", 'a'); // char
-printf("%d", 1); // int
-printf("%f", 2.3); // float
-
-
-
-printf("%c", undef_behav); // wrong type field - undefined behaviour!
-
-//   custom field 
-
-}
-
-
-// More Material: 
-// complete this section from here: https://en.wikipedia.org/wiki/Printf 
-
-
-
-
-
-
-
-
-
 //   & & & & & & Operators & & & & & &
-// which operations are available? one what types? categories : numbers, string operators...
 
 
 void fun_operators()
 {
-int first_check, second_check;
-int first_temp = 1;
-double sum_temps, second_temp = 2.00;
-int five = 5, three = 3, zero = 0;
 
+int first_check;  // Declarations without assignments - Assigned currently placed values ("Garbage Values")
+int second_check; 
+
+double sum_temps; 
+int five = 5, three = 3, zero = 0;
 int first_explicit_conv, second_explicit_conv;
 int explicit_conv_assignment;
 
 
-// need to touch on lvalue, rvalue, gvalue: 
-// lecture's coverage: lval is left and changing, and rval is right, WOW!
+//   ^ ^ ^ ^ ^ Expression Values ^ ^ ^ ^ ^
 
+//   ^ ^ ^ ^ (g-value)l-values : memory allocated and mutable terms ^ ^ ^ ^
 
+int my_lvalue;
 
-// More Material:
-// for the wiki tldr: https://en.wikipedia.org/wiki/Value_(computer_science)
-// for the famous lval/rval/gval/xval graph: https://stackoverflow.com/questions/3601602/what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues
+//   ^ ^ ^ ^ (g-value)r-values : NOT lvals, no persistent memory -> temporary ^ ^ ^ ^
 
+0;
+'1';
+// {'m', 'y', '_', 'r', 'v', 'a', 'l', 'u', 'e'};
+// int *invalid_pointer = &10;   can be abbreviated "rval compilation error" - these aren't memory persistent values like lvalues -> no address
+
+(1 + 2); // No Identity : p(ure)-rval
+
+//   ^ ^ ^ ^ x-values : about to be moved from scope ^ ^ ^ ^
+
+// void x_val_func(int my_xval)
+// {
+//    return my_xval;
+//}
 
 
 //   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
+
 int first = 1;
-first = 2;
+first = 2; 
 
+//   ^ ^ ^ ^ Multiple Assignment ^ ^ ^ ^
 
-//   ^ ^ ^ Multiple Assignment ^ ^ ^
-
-int first_multi_assign, second_multi_assign;
+int first_multi_assign, second_multi_assign; // multiple operations
 first_multi_assign = second_multi_assign = 1; // chain assignment
 
 
-//   ^ ^ ^ ^ ^ Arithmetical Operators ^ ^ ^ ^ ^
-first = first + 3;
-first += 3;
-first = first + 1;
-first++;
-++first;
+//   ^ ^ ^ ^ ^ Casting Operators : C type conversion ^ ^ ^ ^ ^
+
+//   ^ ^ ^ ^ Implicit Automatic/Widening Conversion ^ ^ ^ ^
+
+int first_temp, second_temp;
+int int_elm = -1;
+signed char s_char_elm = '0';
+long long_elm = "1";
+float float_elm = 2.00;
+double double_elm = 3.00;
+
+first_temp + second_temp; 
+int_elm - s_char_elm; // info lose : small type is signed, big is not
+long_elm + float_elm; // overflow: small is long, big is long
 
 
-//   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^ 
-// what here ? what comes before what? * before / in C?  
+//   ^ ^ ^ ^ Explicit conversion - User Defined ^ ^ ^ ^ 
 
+first_explicit_conv = 3, second_explicit_conv = 4;
+first_explicit_conv = (int)5.00 + second_explicit_conv;
+explicit_conv_assignment = (float)(first_explicit_conv / second_explicit_conv); // both exp conv scenarios, order: 1. int result temp 2. float result temp, 3. int assignment temp
+
+
+//   ^ ^ ^ ^ ^ Arithmetical Operators (and a bit of operation piping) ^ ^ ^ ^ ^
+
+//   ^ ^ ^ ^ Addition ^ ^ ^ ^ 
+
+first = first + 0, first += 1;
 
 //   ^ ^ ^ ^ Prefix vs Postfix inc/dec operator ^ ^ ^ ^
 first_check = 1;
 first_check = second_check++; // first_check = 1, second_check = 2 
-first_check = ++second_check; // first_check = second_check = 3
+first_check = --second_check; // first_check = second_check = 1
 
 
+//   ^ ^ ^ ^ Subtraction ^ ^ ^ ^
 
-//   ^ ^ ^ ^ Arithmetical Operators: Narrowing/Widening type Casting ^ ^ ^ ^
-
-
-//   ^ ^ ^ type casting/C-casting ^ ^ ^
-
-//   ^ ^ Implicit conversion - mismatching variables in opeartion ^ ^
-
-first_temp + second_temp; // first is promoted to double in widening implicit c type conversion
-
-//   ^ ^ Explicit conversion - assigned to different type OR different type written in parantheses ^ ^ 
-
-first_explicit_conv = 3, second_explicit_conv = 4;
-explicit_conv_assignment = (float)(first_explicit_conv / second_explicit_conv); // both exp conv scenarios, order: 1. int result temp 2. float result temp, 3. int assignment temp
+int second;
+second = second - 2, second -= 3;
 
 
+//   ^ ^ ^ ^ Multiplication ^ ^ ^ ^
+
+int third;
+third = third * 3, third *= 4;
 
 
- 
+//   ^ ^ ^ ^ Division ^ ^ ^ ^
+
+int fourth;
+fourth = fourth / 5, fourth /= 6;
 
 
+//   ^ ^ ^ ^ Modulo ^ ^ ^ ^
+
+int fifth;
+fifth = fifth % 7, fifth %= 8;
+
+//   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^ 
+// what here ? what comes before what? * before / in C?   
 
 // More Material: 
 // map from this more about casts: https://stackoverflow.com/questions/28002/regular-cast-vs-static-cast-vs-dynamic-cast
 // No Automatic casting to wide in c++? a set of rules: https://www.youtube.com/watch?v=uI10H1jzw00
 // Make temp variable arithmetic in tablet and map building upon these scenarios: 
 // answer: b' - promotion, (a + b')' - same, ((a + b')')' - demotion  
-
-
-
-
-
-
-
 
 
 //   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
@@ -479,12 +343,40 @@ int a = 2, b;
 
 int ptr_value_1 = 0;
 
+//   ^ ^ ^ ^ Adress Operator ^ ^ ^ ^
 
-int* ptr_address_1 = &ptr_value_1; // address operator
-ptr_value_1 = *ptr_address_1; // indirection operator
+int* ptr_address_1 = &ptr_value_1; 
 
-// in one line(int + int* init in same line):
-int ptr_value_2 = 1, * ptr_address_2 = &ptr_value_2, ptr_value_2 = *ptr_address_2;
+
+//   ^ ^ ^ ^ Indirection Operator ^ ^ ^ ^
+
+ptr_value_1 = *ptr_address_1; 
+int ptr_value_2 = 1, * ptr_address_2 = &ptr_value_2, ptr_value_2 = *ptr_address_2; // multiple operations in one line
+
+//   ^ ^ ^ Indirection Operator as a Substitute to Element Access Operator ^ ^ ^
+
+int my_array_to_access_elements_from[3] = {0, 1, 2};
+int first_element, second_element, third_element;
+int* first_element_pointer = NULL, second_element_pointer = NULL, third_element_pointer = NULL;
+
+
+first_element_pointer = my_array_to_access_elements_from; // does the same thing as first_element_pointer = &my_array_to_access_elements_from[0];
+second_element_pointer = first_element_pointer + 1; // does the same thing as second_element_pointer = &my_array_to_access_elements_from[1];
+third_element_pointer = first_element_pointer + 2;
+
+
+//   ^ ^ ^ ^ Member Access Operator ^ ^ ^ ^ 
+
+
+
+//?
+
+
+//   ^ ^ ^ ^ Element Access Operator ^ ^ ^ ^ 
+
+first_element = my_array_to_access_elements_from[0];
+second_element = my_array_to_access_elements_from[1];
+third_element = my_array_to_access_elements_from[2];
 
 
 }
