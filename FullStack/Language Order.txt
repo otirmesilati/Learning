@@ -17,7 +17,7 @@
 - VB.net
 <--Markup->
 - HTML / CSS
-<-Data Visualization->
+<-Data Analysis->
 - R
 <-DataBase->
 - SQL

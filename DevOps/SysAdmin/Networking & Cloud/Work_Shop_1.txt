@@ -68,22 +68,59 @@ L2: trailer2 * Data * header4 * header3 * header2 = frame
 
 
 Frame PDU specifics
-Frame header:
+Size: 26B
+Size Without frame header: 26 - 8 = 18B
+Minimum Size of a frame: 64 - 18 = 46B (If the message is shorted tyan 46B there will be padding - adding zeros to fill in gaps)
+Frame header(Usually not included in the frame size calculation):
 - preamble(7B) + S(tart)F(rame)D(elimiter)(1B):
 -- allows reciever clock synchronization: preparing to recieve the rest of the data
 -- SFD marks the end of the preamble
-
 - Destination:
 -- Next L2 M(edia)A(ccess)C(ontrol) Adress to send
-
-
-- Source:
+- Source & Destination(6B + 6B):
 -- L2 MAC Adress which sent the frame
-
-- Type OR it can be a data length field:
+--- Unique addressed given to devices when they are made (O(rizational)U(nique)I(identifier))
+--- 3 three Bytes are the OUI Which are assigned to the company of the device
+- Type OR it can be a data length field(2B):
 -- L3 protocol for the packet (most of the time - either ipv4 or ipv6)
-
 Frame trailer -> F(rame)C(check)S(equence)
+--- 1500 value or less - LENGTH 
+--- 1536 or more - TYPE
+Frame trailer: 
+- F(rame)C(check)S(equence) (4B)
+-- Cycling redundancy check for checking errors
+
+
+
+
+
+
+cisco i(nterworking)o(perating)s(ystem)
+-user exec mode
+-privilidged exec mode -> enable
+-- copy running to startup config -> write memory/copy running-config startup-config
+-- encrypt password -> service password-encryption
+-- making a tougher password -> enable secret <password to make>
+-global configuration mode -> configure terminal
+--making a password -> enable password <password to make>
+--view running config file -> show running-config
+--view startup config file -> show startup-config
+-exit to go out of a mode
+--config files
+---running config file
+
+---startup config file
+
+
+
+
+
+
+F(ile)T(ransfer)P(rotocol)s
+-ftp
+-S(ecure)SH(ell)
+--S(ecure)C(o)P(y)
+-HTTP
 
 
 
@@ -96,28 +133,30 @@ Frame trailer -> F(rame)C(check)S(equence)
 
 
 
-
-
-elements (nodes)
-
-the internet (un-known 
-firewall
-router
-- l3 connecting switches and LANS
-- de-encapsulates a packet, and checks where to send it (via it's IP)
-switch
-- LAN l2 connecting element 
-- 24+ RJ 45 interfaces/ports
-
-server
-client
-- 
-
-
-
-
-
-
+Device Network
+- elements (nodes)
+-- the internet (un-known 
+-- firewall
+-- router(L3 element)
+-- de-encapsulates a packet, and checks where to send it (via it's IP)
+-- switch(L2 element)
+--- 24+ RJ 45 interfaces/ports
+- Network Movement
+-- L2 Level:
+--- Each device has MAC adress
+--- Each port has type (F0/0, f0/1.. For fast internet)
+--- MAC Tables On Switch - Dynamic Learning MAC addresses
+---- Learning/Binding MAC addresses to ports which they arrived from
+---- The Learning proccess only happens when a packet arrives at a switch (Not when forwarded)
+---- Not knowing where to send packets to? -> flood ports(send to every port except where the packet was recieved from)
+---- Elements that get Un-wanted frames -> Drops the packets 
+---- Elements removed after 5 minutes of inactivity
+---Using ARP protocol for communication:
+---- ARP request
+----- flood (Dest: FFFF.FFFF.FFFF) 
+---- ARP reply
+-LAN
+-- According To the switches
 
 
 
@@ -145,11 +184,14 @@ L3(router operations):
 - provides path selection 
 L2(switch operations):
 - direct node-to-node connection handling
+-- One Receipient -> Unicast Frame
+-- Flood -> Broadcast 
+-- What more-cast names?
+- defines data formatting for transmission in physical medium
 - error/noise handling
 L1: 
 - rj45 and optic fibre cable standards
 - converting data bits into electrical signals
-
 
 
 
@@ -421,6 +463,24 @@ server acts as forwarding agent
 NestJS RESTful API
 - popular for scalable server side applications
 - nodejs framework
+
+
+
+
+
+
+
+web server - serves requests
+-ngnix 
+--used to be on prem
+--load balancer
+--caching(storing a copy of a site once instead of generating it again and again)
+--minimising and securing to one entry-point
+
+
+
+
+
 
 TCP VS UDP
 

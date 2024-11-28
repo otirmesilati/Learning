@@ -1,3 +1,25 @@
+processes
+-ready
+-run
+-sleep
+-wait
+-kill
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 map to nvim portion, difference between tree sitter and LSP:
 -------------
 LSP is a protocol while tree-sitter is a parsing tool and library. LSP is a protocol developed by Microsoft for IDEs to communicate with a separate process 
@@ -120,6 +142,18 @@ package manager?
 
 
 
+file ftp file browser
+-filezilla
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -155,6 +189,20 @@ dialer -> dialer.exe
     ^ ^ ^ ^ Behaviour ^ ^ ^ ^ 
 
     Display Side Window     -> DisplaySwitch.exe
+
+
+job schedulers
+- task scheduler
+-- tasks
+--- when (time, event)
+--- what (execute, send email, display message)
+
+- CICD schdeuler
+-- jobs
+--- local machine
+--- network
+--- nodes
+-- pipelines 
 
 
 
