@@ -200,51 +200,56 @@ println!("{}", 2.3);
 
 
 
-/* 
+ 
 //   & & & & & & Operators & & & & & &
 
 
 void fun_operators()
 {
 
-int first_check;  // Declarations without assignments - Assigned currently placed values ("Garbage Values")
-int second_check; 
+    let mut first_check: i32; // Calling this will produce a Comp Error in Rust
+    let mut second_check: i32;
 
-double sum_temps; 
-int five = 5, three = 3, zero = 0;
-int first_explicit_conv, second_explicit_conv;
-int explicit_conv_assignment;
-
+    let mut sum_temps: f64;
+    let five: i32 = 5;
+    let three: i32 = 3;
+    let zero: i32 = 0;
+    let mut explicit_conv_assignment: i32;
+    let mut first_explicit_conv: i32;
+    let mut second_explicit_conv: i32;
 
 //   ^ ^ ^ ^ ^ Expression Values ^ ^ ^ ^ ^
 
 //   ^ ^ ^ ^ (g-value)l-values : memory allocated and mutable terms ^ ^ ^ ^
-
-int my_lvalue;
+    
+    let mut my_lvalue: i32 = 0;
 
 //   ^ ^ ^ ^ (g-value)r-values : NOT lvals, no persistent memory -> temporary ^ ^ ^ ^
 
-0;
-'1';
-// {'m', 'y', '_', 'r', 'v', 'a', 'l', 'u', 'e'};
-// int *invalid_pointer = &10;   can be abbreviated "rval compilation error" - these aren't memory persistent values like lvalues -> no address
+    0;
+    '1'; 
+    (1 + 2); // No Identity : p(ure)-rval
 
-(1 + 2); // No Identity : p(ure)-rval
-
-//   ^ ^ ^ ^ x-values : about to be moved from scope ^ ^ ^ ^
-
-// void x_val_func(int my_xval)
-// {
-//    return my_xval;
-//}
+//   No Xval examples - Rust uses reference passing (Borrowing)
 
 
 //   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
 
-int first = 1;
-first = 2; 
+    let mut first: i32 = 1;
+    first = 2;
 
 //   ^ ^ ^ ^ Multiple Assignment ^ ^ ^ ^
+
+
+}
+
+/*
+
+
+
+
+
+
 
 int first_multi_assign, second_multi_assign; // multiple operations
 first_multi_assign = second_multi_assign = 1; // chain assignment
@@ -380,6 +385,164 @@ third_element = my_array_to_access_elements_from[2];
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //   ^ ^ ^ ^ Multiple Assignment ^ ^ ^ ^
+
+    let mut first_multi_assign: i32;
+    let mut second_multi_assign: i32; // multiple operations
+    first_multi_assign = second_multi_assign = 1; // chain assignment
+
+    //   ^ ^ ^ ^ ^ Casting Operators : C type conversion ^ ^ ^ ^ ^
+
+    //   ^ ^ ^ ^ Implicit Automatic/Widening Conversion ^ ^ ^ ^
+
+    let mut first_temp: i32;
+    let mut second_temp: i32;
+    let int_elm: i32 = -1;
+    let s_char_elm: i8 = '0' as i8; // signed char equivalent in Rust
+    let long_elm: i64 = "1".parse().unwrap(); // This won't be directly valid, needs parsing
+    let float_elm: f32 = 2.00;
+    let double_elm: f64 = 3.00;
+
+    first_temp + second_temp;
+    let _temp = int_elm - s_char_elm as i32; // info lose: small type is signed, big is not
+    let _overflow = long_elm + float_elm as i64; // overflow: small is long, big is long
+
+    //   ^ ^ ^ ^ Explicit conversion - User Defined ^ ^ ^ ^
+
+    first_explicit_conv = 3;
+    second_explicit_conv = 4;
+    first_explicit_conv = 5.00 as i32 + second_explicit_conv;
+    explicit_conv_assignment = (first_explicit_conv / second_explicit_conv) as f32 as i32;
+
+    //   ^ ^ ^ ^ ^ Arithmetical Operators (and a bit of operation piping) ^ ^ ^ ^ ^
+
+    //   ^ ^ ^ ^ Addition ^ ^ ^ ^ 
+
+    first = first + 0;
+    first += 1;
+
+    //   ^ ^ ^ ^ Prefix vs Postfix inc/dec operator ^ ^ ^ ^
+
+    first_check = 1;
+    first_check = second_check + 1; // Postfix is implicit here in Rust
+
+    first_check = second_check - 1; // Prefix decrement can be simulated manually
+
+    //   ^ ^ ^ ^ Subtraction ^ ^ ^ ^
+
+    let mut second: i32;
+    second = second - 2;
+    second -= 3;
+
+    //   ^ ^ ^ ^ Multiplication ^ ^ ^ ^
+
+    let mut third: i32;
+    third = third * 3;
+    third *= 4;
+
+    //   ^ ^ ^ ^ Division ^ ^ ^ ^
+
+    let mut fourth: i32;
+    fourth = fourth / 5;
+    fourth /= 6;
+
+    //   ^ ^ ^ ^ Modulo ^ ^ ^ ^
+
+    let mut fifth: i32;
+    fifth = fifth % 7;
+    fifth %= 8;
+
+    //   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^ 
+    // The same order of operations exists in Rust as in C++ (multiplication/division/modulus comes before addition/subtraction)
+
+    // More Material: 
+    // No need for the external links as Rust handles type casting differently.
+
+    //   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
+
+    let _logical_result = five == 2;
+    let _logical_result_2 = (three < five || three < zero);
+
+    // Combining logical and arith:
+    let x = 2;
+    let y = if x > 5 { 0 } else { 1 }; // Example of logical condition, similar to C++'s `x > 5` trick
+
+    //   ^ ^ ^ ^ ^ Pointer Operators ^ ^ ^ ^ ^
+
+    let ptr_value_1: i32 = 0;
+
+    //   ^ ^ ^ ^ Adress Operator ^ ^ ^ ^
+
+    let ptr_address_1: *const i32 = &ptr_value_1; // Rust pointer (not directly used like C++)
+
+    //   ^ ^ ^ ^ Indirection Operator ^ ^ ^ ^
+
+    let ptr_value_1_deref = unsafe { *ptr_address_1 }; // Dereferencing a pointer (unsafe in Rust)
+
+    let ptr_value_2: i32 = 1;
+    let ptr_address_2: *const i32 = &ptr_value_2;
+    let ptr_value_2_deref = unsafe { *ptr_address_2 };
+
+    //   ^ ^ ^ ^ Indirection Operator as a Substitute to Element Access Operator ^ ^ ^ ^
+
+    let my_array_to_access_elements_from: [i32; 3] = [0, 1, 2];
+    let mut first_element: i32;
+    let mut second_element: i32;
+    let mut third_element: i32;
+    let mut first_element_pointer: *const i32 = std::ptr::null();
+    let mut second_element_pointer: *const i32 = std::ptr::null();
+    let mut third_element_pointer: *const i32 = std::ptr::null();
+
+    first_element_pointer = &my_array_to_access_elements_from[0]; // Same thing as `&my_array_to_access_elements_from[0]`
+    second_element_pointer = &my_array_to_access_elements_from[1];
+    third_element_pointer = &my_array_to_access_elements_from[2];
+
+    //   ^ ^ ^ ^ Member Access Operator ^ ^ ^ ^ 
+
+    // Rust uses dot `.` for member access in structs, not needed here for simple types
+
+    //   ^ ^ ^ ^ Element Access Operator ^ ^ ^ ^ 
+
+    first_element = my_array_to_access_elements_from[0];
+    second_element = my_array_to_access_elements_from[1];
+    third_element = my_array_to_access_elements_from[2];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
