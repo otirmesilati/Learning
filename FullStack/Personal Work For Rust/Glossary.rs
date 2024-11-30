@@ -240,6 +240,7 @@ void fun_operators()
 
 //   ^ ^ ^ ^ Multiple Assignment ^ ^ ^ ^
 
+    let mut first_multi_assign: i32; let mut second_multi_assign: i32; // No ones liners! only one liners in syntax..
 
 }
 
@@ -247,11 +248,6 @@ void fun_operators()
 
 
 
-
-
-
-
-int first_multi_assign, second_multi_assign; // multiple operations
 first_multi_assign = second_multi_assign = 1; // chain assignment
 
 
