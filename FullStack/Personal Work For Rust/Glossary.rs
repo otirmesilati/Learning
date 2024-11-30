@@ -241,44 +241,42 @@ void fun_operators()
 //   ^ ^ ^ ^ Multiple Assignment ^ ^ ^ ^
 
     let mut first_multi_assign: i32; let mut second_multi_assign: i32; // No ones liners! only one liners in syntax..
-
-}
-
-/*
-
-
-
-first_multi_assign = second_multi_assign = 1; // chain assignment
-
+    first_multi_assign = second_multi_assign = 1; // chain assignment
 
 //   ^ ^ ^ ^ ^ Casting Operators : C type conversion ^ ^ ^ ^ ^
 
 //   ^ ^ ^ ^ Implicit Automatic/Widening Conversion ^ ^ ^ ^
 
-int first_temp, second_temp;
-int int_elm = -1;
-signed char s_char_elm = '0';
-long long_elm = "1";
-float float_elm = 2.00;
-double double_elm = 3.00;
+    let mut first_temp: i32;
+    let mut second_temp: i32;
+    let mut int_elm: i32 = -1;
+    let mut char_elm: char = '0';
+    let mut long_elm: i64 = '1';
+    let mut float_elm: f32 = 2.00;
+    let mut double_elm: f64 = 3.00;
 
-first_temp + second_temp; 
-int_elm - s_char_elm; // info lose : small type is signed, big is not
-long_elm + float_elm; // overflow: small is long, big is long
-
+    first_temp + second_temp;
+    int_elm - char_elm as i32;     // info lose 
+    long_elm + float_elm as i64;   // overflow
 
 //   ^ ^ ^ ^ Explicit conversion - User Defined ^ ^ ^ ^ 
-
-first_explicit_conv = 3, second_explicit_conv = 4;
-first_explicit_conv = (int)5.00 + second_explicit_conv;
-explicit_conv_assignment = (float)(first_explicit_conv / second_explicit_conv); // both exp conv scenarios, order: 1. int result temp 2. float result temp, 3. int assignment temp
-
+    
+    first_explicit_conv = 3;
+    second_explicit_conv = 4;
+    first_explicit_conv = 5.00 as i32 + second_explicit_conv;
+    explicit_conv_assignment = (first_explicit_conv / second_explicit_conv) as f32 as i32; // both exp conv scenarios, order: 1. int result temp 2. float result temp, 3. int assignment temp
 
 //   ^ ^ ^ ^ ^ Arithmetical Operators (and a bit of operation piping) ^ ^ ^ ^ ^
 
 //   ^ ^ ^ ^ Addition ^ ^ ^ ^ 
 
-first = first + 0, first += 1;
+    first += first + 0;
+    first += 1;
+
+}
+
+/*
+
 
 //   ^ ^ ^ ^ Prefix vs Postfix inc/dec operator ^ ^ ^ ^
 first_check = 1;
@@ -397,42 +395,8 @@ third_element = my_array_to_access_elements_from[2];
 
 
 
-    //   ^ ^ ^ ^ Multiple Assignment ^ ^ ^ ^
 
-    let mut first_multi_assign: i32;
-    let mut second_multi_assign: i32; // multiple operations
-    first_multi_assign = second_multi_assign = 1; // chain assignment
-
-    //   ^ ^ ^ ^ ^ Casting Operators : C type conversion ^ ^ ^ ^ ^
-
-    //   ^ ^ ^ ^ Implicit Automatic/Widening Conversion ^ ^ ^ ^
-
-    let mut first_temp: i32;
-    let mut second_temp: i32;
-    let int_elm: i32 = -1;
-    let s_char_elm: i8 = '0' as i8; // signed char equivalent in Rust
-    let long_elm: i64 = "1".parse().unwrap(); // This won't be directly valid, needs parsing
-    let float_elm: f32 = 2.00;
-    let double_elm: f64 = 3.00;
-
-    first_temp + second_temp;
-    let _temp = int_elm - s_char_elm as i32; // info lose: small type is signed, big is not
-    let _overflow = long_elm + float_elm as i64; // overflow: small is long, big is long
-
-    //   ^ ^ ^ ^ Explicit conversion - User Defined ^ ^ ^ ^
-
-    first_explicit_conv = 3;
-    second_explicit_conv = 4;
-    first_explicit_conv = 5.00 as i32 + second_explicit_conv;
-    explicit_conv_assignment = (first_explicit_conv / second_explicit_conv) as f32 as i32;
-
-    //   ^ ^ ^ ^ ^ Arithmetical Operators (and a bit of operation piping) ^ ^ ^ ^ ^
-
-    //   ^ ^ ^ ^ Addition ^ ^ ^ ^ 
-
-    first = first + 0;
-    first += 1;
-
+    
     //   ^ ^ ^ ^ Prefix vs Postfix inc/dec operator ^ ^ ^ ^
 
     first_check = 1;
