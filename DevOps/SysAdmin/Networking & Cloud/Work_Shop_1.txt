@@ -152,9 +152,17 @@ Device Network
 ---- Elements that get Un-wanted frames -> Drops the packets 
 ---- Elements removed after 5 minutes of inactivity
 ---Using ARP protocol for communication:
----- ARP request
------ flood (Dest: FFFF.FFFF.FFFF) 
----- ARP reply
+---- ARP
+----- ARP command
+------ internet adresses: IP
+------ physical adresses: MAC
+------ Types: static (defualt) or dynamic (learnt via ARP)
+----- ARP request
+------ switch will flood packet if the next jump is not known (Dest: FFFF.FFFF.FFFF) 
+----- ARP reply
+---- IP ping (ICMP)
+----- ICMP request
+----- ICMP reply
 -LAN
 -- According To the switches
 

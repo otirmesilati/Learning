@@ -4,6 +4,264 @@
 
 
 
+echo "Hello World!"
+
+@echo off
+
+echo hi
+echo:
+rem this is a comment
+:: this is also a comment
+
+pause
+
+
+
+
+@echo off
+
+set my_var=ami
+set my_command=dir
+
+echo %my_var%
+echo %my_command%
+%my_command%
+
+pause
+
+
+
+set
+
+echo %username%
+
+echo %homedrive%
+
+echo %homepath% 
+
+echo %windir%
+
+echo %systemdrive%
+
+arp -a
+
+pause 
+
+
+
+
+
+
+@echo off 
+
+cd %SYSTEMROOT%
+
+echo "CMD path below"
+
+echo %COMSPEC%
+
+set statement1="This is the first statement"
+set statement2="This is the second statement"
+
+set /a statement3=%statement1% %statement2% 
+
+echo %statement3%
+
+set sum=10+10
+::this will generate a string
+
+set /a sum=10+10
+::this will do what we wanted
+
+echo %sum%
+
+echo "please enter a name"
+set /p name=
+
+echo "and now please enter a number"
+set /p first_number=
+
+echo "enter the second"
+set /p second_number=
+
+set /a sum=%first_number% %second_number%%
+
+pause
+
+
+
+
+@ehco off
+
+dir c:\
+
+vol d:
+
+goto :fun2
+
+:fun1
+echo "hi"
+timeout 15
+exit 
+
+:fun2
+echo "bye"
+
+call :fun1
+
+
+pause
+
+
+
+
+
+
+
+
+@echo off
+
+goto :userinput
+
+:main
+echo "the inputted number:"%~1 and %~2
+goto :eof
+
+:userinput 
+set /P number1=please enter number
+call :main 60 90
+
+goto :displayname
+
+:displayname
+setlocal
+set /P my_name=Enter your name
+echo Your name is %my_name%
+endlocal
+goto :eof
+
+pause
+
+
+
+
+
+systeminfo
+
+:: playing with start
+
+start /separate notepad
+start /shared notepad
+
+start /low notepad
+
+start "jerry" cmd
+start /max notepad
+start /min notepad
+
+start /low notepad
+start /normal notepad
+start /high notepad
+start /realtime notepad
+
+start /wait notepad
+
+start /abovenormal notepad
+start /belownormal notepad
+
+
+
+
+@echo off
+
+:: Usual Starting position
+
+echo Starting procedure:
+
+start Desktop
+start chrome.exe
+start githubdesktop.exe
+start eclipse.exe
+start pycharm64.exe
+start code.exe
+
+:: about the start flags/options:
+:: probably not going to input arguments for 
+:: priority (self manage scheduler) and window size
+:: diffrentiation (opening last conf size probably best) 
+
+:: notepad
+start notepad
+
+
+::  Environment variables
+echo %username%
+
+systeminfo
+tasklist
+cls
+
+:: networking
+echo %computername%
+ping google.com
+ping /4 google.com 
+:: pinging with IPV4 - preaty similar to defualt
+ping /n 9 google.com
+ping google.com -t 
+::CTRL+C to stop run and regain user control 
+ipconfig 
+ipconfig /all
+arp -a
+
+:: no need to pause on scripts
+
+:: some classics - playing with test folders
+cd .. ; cd "test_folder_2" 
+:: changing fromfolder 1 to folder 2
+echo. 2>folder_2_text_1.txt
+:: creating an empty text folder (echo. for 
+:: new line, 2 for err stream, and the file name)
+copy folder_2_text_1.txt "C:\Users\otirm_2hwnj4i\desktop\explorer testing\test_folder_1" 
+:: copying a file to another folder
+cd .. && cd test_folder_1
+del folder_2_text_1.txt
+:: going to the second folder and deleting the copy
+echo. 2>folder1_text_2.txt
+:: renaming the files
+ren folder_1_text_2.txt hi.txt
+rename hi.txt folder_1_text_2.txt
+:: entering text 
+
+
+
+
+:: this will be used for a tutorial
+
+:: comments
+
+:: system information - using built ins
+:: system information - using environment variables
+
+:: Currently stopped at commands page, 
+:: Started to categorize the keywords to categories
+:: such as seen with the sysinfo above, 
+:: make more categories such as changing directories
+:: editing texts maybe.. etc and then add the 
+:: proper code! :)
+
+:: https://www.tutorialspoint.com/batch_script/batch_script_commands.htm
+:: Commands
+
+
+
+
+
+
+
+
+
+
+
 
 
 

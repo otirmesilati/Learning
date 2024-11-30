@@ -220,6 +220,14 @@ chgrp new_group my_file
 
 
 
+#network
+sudo ip neighbor # arp -a equivilent
+
+
+
+
+
+
 
 
 

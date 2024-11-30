@@ -273,18 +273,42 @@ void fun_operators()
     first += first + 0;
     first += 1;
 
+// No prefix & Postfix in Rust
+
+//   ^ ^ ^ ^ Subtraction ^ ^ ^ ^
+
 }
 
 /*
 
 
-//   ^ ^ ^ ^ Prefix vs Postfix inc/dec operator ^ ^ ^ ^
-first_check = 1;
-first_check = second_check++; // first_check = 1, second_check = 2 
-first_check = --second_check; // first_check = second_check = 1
 
 
-//   ^ ^ ^ ^ Subtraction ^ ^ ^ ^
+    let mut second: i32;
+    second = second - 2;
+    second -= 3;
+
+    //   ^ ^ ^ ^ Multiplication ^ ^ ^ ^
+
+    let mut third: i32;
+    third = third * 3;
+    third *= 4;
+
+    //   ^ ^ ^ ^ Division ^ ^ ^ ^
+
+    let mut fourth: i32;
+    fourth = fourth / 5;
+    fourth /= 6;
+
+    //   ^ ^ ^ ^ Modulo ^ ^ ^ ^
+
+    let mut fifth: i32;
+    fifth = fifth % 7;
+    fifth %= 8;
+
+
+
+
 
 int second;
 second = second - 2, second -= 3;
@@ -397,37 +421,7 @@ third_element = my_array_to_access_elements_from[2];
 
 
     
-    //   ^ ^ ^ ^ Prefix vs Postfix inc/dec operator ^ ^ ^ ^
-
-    first_check = 1;
-    first_check = second_check + 1; // Postfix is implicit here in Rust
-
-    first_check = second_check - 1; // Prefix decrement can be simulated manually
-
-    //   ^ ^ ^ ^ Subtraction ^ ^ ^ ^
-
-    let mut second: i32;
-    second = second - 2;
-    second -= 3;
-
-    //   ^ ^ ^ ^ Multiplication ^ ^ ^ ^
-
-    let mut third: i32;
-    third = third * 3;
-    third *= 4;
-
-    //   ^ ^ ^ ^ Division ^ ^ ^ ^
-
-    let mut fourth: i32;
-    fourth = fourth / 5;
-    fourth /= 6;
-
-    //   ^ ^ ^ ^ Modulo ^ ^ ^ ^
-
-    let mut fifth: i32;
-    fifth = fifth % 7;
-    fifth %= 8;
-
+    
     //   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^ 
     // The same order of operations exists in Rust as in C++ (multiplication/division/modulus comes before addition/subtraction)
 
