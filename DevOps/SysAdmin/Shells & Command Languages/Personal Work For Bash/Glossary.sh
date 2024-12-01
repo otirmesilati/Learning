@@ -26,8 +26,8 @@ pwd # print current (dubbed working) directory
 
 #   ^ ^ ^ ^ ^ Changing File Directories ^ ^ ^ ^ ^
 
-cd new_file
-cd new_file_1/new_file_2
+cd new_file # Relative path
+cd new_file_1/new_file_2 # Absolute path
 cd .. 
 cd ../..
 
@@ -49,6 +49,8 @@ ls -1 # Ls'ing 1 file per line in the output
 ls -S # Sorts by size
 ls -t # Sorts by last modification time
 ls -r # Sorts in reverse-to-defualt order
+
+ls -lt # combinations
 
 #   ^ ^ ^ Adding Options ^ ^ ^
 
