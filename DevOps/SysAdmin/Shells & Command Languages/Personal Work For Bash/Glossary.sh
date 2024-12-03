@@ -558,7 +558,6 @@ echo hello world # same output
 
 
 
-#   & & & & & & Literals (+ defined unary literal operators) & & & & & &
 # Literals - Only for Assignments
 
 my_num=1
