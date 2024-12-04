@@ -6,8 +6,7 @@ Map from the following:
 
 
 
-episode 5: introduction to layer 2 mega portion
-episode 6: some basic Layer 2 commands (ping, arp)
+
 episode 7: add only routing, important terms if there are, and skip to quetions about routing
 episode 8: same and add the important IOS terms 
 episode 9: intro to switch interfaces
@@ -67,7 +66,7 @@ L3: Data * header4 * header3 = packet
 L2: trailer2 * Data * header4 * header3 * header2 = frame
 
 
-Frame PDU specifics
+Ethernet PDU breakdown
 Size: 26B
 Size Without frame header: 26 - 8 = 18B
 Minimum Size of a frame: 64 - 18 = 46B (If the message is shorted tyan 46B there will be padding - adding zeros to fill in gaps)
@@ -90,7 +89,8 @@ Frame trailer:
 - F(rame)C(check)S(equence) (4B)
 -- Cycling redundancy check for checking errors
 
-
+IPV4 header:
+- destination and source(4B) 
 
 
 
@@ -101,6 +101,9 @@ cisco i(nterworking)o(perating)s(ystem)
 -- copy running to startup config -> write memory/copy running-config startup-config
 -- encrypt password -> service password-encryption
 -- making a tougher password -> enable secret <password to make>
+-- arp table -> show mac adress-table
+-- clear arp table -> clear mac adress-table dynamic
+-- clear are table line -> clear mac adress-table dynamic interface <interface_id>
 -global configuration mode -> configure terminal
 --making a password -> enable password <password to make>
 --view running config file -> show running-config
@@ -153,10 +156,11 @@ Device Network
 ---- Elements removed after 5 minutes of inactivity
 ---Using ARP protocol for communication:
 ---- ARP
------ ARP command
+----- ARP table
 ------ internet adresses: IP
 ------ physical adresses: MAC
 ------ Types: static (defualt) or dynamic (learnt via ARP)
+------ Aging: removed lines after 5 minutes
 ----- ARP request
 ------ switch will flood packet if the next jump is not known (Dest: FFFF.FFFF.FFFF) 
 ----- ARP reply

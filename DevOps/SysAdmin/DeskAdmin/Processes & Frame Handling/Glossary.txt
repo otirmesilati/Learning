@@ -473,7 +473,12 @@ navigation
 
 ^ ^ ^ ^ ^ Debian ^ ^ ^ ^ ^
 
-
+1. Terminal: -xfce terminal -> ctrl + alt + t
+2. run?
+3. monitor?
+4. Thunar File Manager: -xfce FM -> spr + e
+5. FireFox Web-Browser: -> ctrl + alt + f
+?
 
 
 
