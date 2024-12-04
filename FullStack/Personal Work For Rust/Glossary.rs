@@ -277,14 +277,12 @@ void fun_operators()
 
 //   ^ ^ ^ ^ Subtraction ^ ^ ^ ^
 
+    let mut second: i32;
 }
 
 /*
 
 
-
-
-    let mut second: i32;
     second = second - 2;
     second -= 3;
 
@@ -308,9 +306,6 @@ void fun_operators()
 
 
 
-
-
-int second;
 second = second - 2, second -= 3;
 
 
