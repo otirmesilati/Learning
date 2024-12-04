@@ -299,9 +299,6 @@ void fun_operators()
     fifth = fifth % 7;
     fifth %= 8;
 
-}
-
-/*
 
 //   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^ 
 // what here ? what comes before what? * before / in C?   
@@ -314,14 +311,19 @@ void fun_operators()
 
 
 //   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
+
 // order of operations ?
 // == and != are the least in the order of operations, maybe finish the operations order ladder?
 // false and true are exactly 0 and 1
 
-five == 2;
-(three < five || three < zero);
+    five == 2;
+    (three < five || three < zero);
 
-// combining logical and arith: (arithmetic operators take precedence)
+// combining logical and arith won't have the same effect as true/false are not 1/0 in Rust
+
+}
+
+
 /*
 lecture's example:
 int x = 2;
@@ -331,7 +333,7 @@ int a = 2, b;
 ((b = 2) == a) // (b = 2) -> (2) -> 2 == 2 -> 1, trick question: a wierd behaviour of c family languages - assignment returns the assign value, acts as arithmetic
 
 */
-
+/*
 //   Overloading literal operators: https://en.cppreference.com/w/cpp/language/user_literal
 
 //   ^ ^ ^ ^ ^ Pointer Operators ^ ^ ^ ^ ^
