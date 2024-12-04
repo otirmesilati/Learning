@@ -278,21 +278,20 @@ void fun_operators()
 //   ^ ^ ^ ^ Subtraction ^ ^ ^ ^
 
     let mut second: i32;
-}
-
-/*
-
-
     second = second - 2;
     second -= 3;
 
-    //   ^ ^ ^ ^ Multiplication ^ ^ ^ ^
+//   ^ ^ ^ ^ Multiplication ^ ^ ^ ^
 
     let mut third: i32;
     third = third * 3;
     third *= 4;
 
-    //   ^ ^ ^ ^ Division ^ ^ ^ ^
+//   ^ ^ ^ ^ Division ^ ^ ^ ^
+
+}
+
+/*
 
     let mut fourth: i32;
     fourth = fourth / 5;
@@ -304,18 +303,6 @@ void fun_operators()
     fifth = fifth % 7;
     fifth %= 8;
 
-
-
-second = second - 2, second -= 3;
-
-
-//   ^ ^ ^ ^ Multiplication ^ ^ ^ ^
-
-int third;
-third = third * 3, third *= 4;
-
-
-//   ^ ^ ^ ^ Division ^ ^ ^ ^
 
 int fourth;
 fourth = fourth / 5, fourth /= 6;
