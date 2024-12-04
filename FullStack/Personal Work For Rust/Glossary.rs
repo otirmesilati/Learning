@@ -289,29 +289,19 @@ void fun_operators()
 
 //   ^ ^ ^ ^ Division ^ ^ ^ ^
 
-}
-
-/*
-
     let mut fourth: i32;
     fourth = fourth / 5;
     fourth /= 6;
 
-    //   ^ ^ ^ ^ Modulo ^ ^ ^ ^
+//   ^ ^ ^ ^ Modulo ^ ^ ^ ^
 
     let mut fifth: i32;
     fifth = fifth % 7;
     fifth %= 8;
 
+}
 
-int fourth;
-fourth = fourth / 5, fourth /= 6;
-
-
-//   ^ ^ ^ ^ Modulo ^ ^ ^ ^
-
-int fifth;
-fifth = fifth % 7, fifth %= 8;
+/*
 
 //   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^ 
 // what here ? what comes before what? * before / in C?   
