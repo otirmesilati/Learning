@@ -72,12 +72,33 @@
 
 
 
+-- //   & & & & & & String Formatting & & & & & &
+
+
+-- int number = 1;
+-- double dvalue = 2.344444;
+-- int undef_behav = 4;
+
+
+
+
+CREATE FUNCTION dbo.func_string()
+RETURNS VARCHAR(255)
+AS
+BEGIN
+    DECLARE @result VARCHAR(255);
+    SET @result = 'Hello, SQL Server!';
+    DECLARE @number INT = 1;    
+    DECLARE @dvalue FLOAT = 2.344444;    
+    DECLARE @undef_behav INT = 4;    
+    RETURN @result;
+END;
 
 
 -- Declare variables (simulating the C++ variables)
-DECLARE @number INT = 1;
-DECLARE @dvalue FLOAT = 2.344444;
-DECLARE @undef_behav INT = 4;
+
+
+
 
 -- Format Specifiers: SQL equivalent using CAST and FORMAT
 
@@ -119,18 +140,6 @@ END CATCH;
 
 
 
-
-
-
--- //   & & & & & & String Formatting & & & & & &
-
-
-
--- void fun_string_formats(){
-
--- int number = 1;
--- double dvalue = 2.344444;
--- int undef_behav = 4;
 
 
 -- //   ^ ^ ^ ^ ^ Format Specifier Fields ^ ^ ^ ^ ^
