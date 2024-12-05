@@ -64,104 +64,55 @@
 -- // docs? logs?
 
 
-
-
-
-
-
-
-
---   & & & & & & Literals (+ defined unary literal operators) & & & & & &
-
---   ^ ^ ^ ^ ^ Expressions ^ ^ ^ ^ ^ 
-
---   ^ ^ ^ ^ ^ Exact Numeric ^ ^ ^ ^ ^
-
-123;
--- no underscore format for numbers like 1,234! 
--123;
-
-
--- In a column, the user can store numeric, string, binary, etc by defining data types. For example integer data, character data, monetary data, date and time data, binary strings, and so on.
--- There are three main types of SQL data types available in any RDBMS. They are listed below −
--- string types: char, varchar, binary, varbinary, text, tinytext, longtext, blob, tinyblob, mediumblob, longblob, enum, set 
--- numeric types: int, smallint, tinyint, mediumint, bigint, float, double, decimal  
--- date types: date, datetime, timestamp, time, year
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 -- Literals moved to the table creation portion
+
+
+
+
+
+
+
+
+
+-- Declare variables (simulating the C++ variables)
+DECLARE @number INT = 1;
+DECLARE @dvalue FLOAT = 2.344444;
+DECLARE @undef_behav INT = 4;
+
+-- Format Specifiers: SQL equivalent using CAST and FORMAT
+
+-- Print integer and float with precision
+SELECT
+    CAST(@number AS VARCHAR) + ' ' + FORMAT(@dvalue, '0.00') AS formatted_output;
+
+-- Format long integer (simulating %ld)
+SELECT
+    CAST(1 AS BIGINT) AS formatted_long;
+
+-- Format float (simulating %lf for double in C++)
+SELECT
+    FORMAT(2.34, '0.00') AS formatted_double;
+
+-- Character formatting (simulating %c for char in C++)
+SELECT 
+    CHAR(97) AS formatted_char; -- ASCII 97 is 'a'
+
+-- Integer formatting (simulating %d for int in C++)
+SELECT 
+    CAST(1 AS INT) AS formatted_int;
+
+-- Float formatting (simulating %f for float in C++)
+SELECT 
+    FORMAT(2.3, '0.00') AS formatted_float;
+
+-- Undefined behavior in C++ is like trying to cast something inappropriately. In SQL, it would result in an error.
+-- SQL doesn't have undefined behavior in the same way, but you can try casting a value into an incompatible type (which would result in an error):
+BEGIN TRY
+    SELECT CAST(@undef_behav AS CHAR(1)); -- Trying to format an integer as a char will not work.
+END TRY
+BEGIN CATCH
+    SELECT ERROR_MESSAGE() AS error_message; -- Handle the error gracefully in SQL
+END CATCH;
 
 
 
