@@ -12,7 +12,7 @@
 
 clear # Screen Clearing
 
-
+$? # last command succesful?
 
 
 #   % % % % % % % Frame Handling % % % % % % %
@@ -32,6 +32,8 @@ cd ..
 cd ../..
 
 cd ~ # switching to home directory
+cd ~ other_user # home directory of other user
+
 cd - # switching to last directory
 
 #   ^ ^ ^ ^ ^ Listing Directories ^ ^ ^ ^ ^
@@ -88,7 +90,7 @@ ls -R # All Directories recursively on child items
 
 mkdir my_directory
 mkdir my_1_directory my_2_directory # creating many folders
-mkdir -p make_all_the_parent_files_in_this_path # if any folders in the path don't exist - create them 
+mkdir -p make_all_the_parent_files_in_this_path # (declarative) if any folders in the path don't exist - create them 
 
 
 #   ^ ^ ^ ^ Files ^ ^ ^ ^ 
@@ -146,6 +148,7 @@ ls -l | grep search_term | wc # chain piping
 
 cp from_file_name to_file_name
 
+cp -r from_directory_name to_directory_name
 
 #   ^ ^ ^ ^ Moving Files ^ ^ ^ ^
 
@@ -159,9 +162,14 @@ mv old_file_name new_file_name
 
 #   ^ ^ ^ ^ File deletion ^ ^ ^ ^
 
-rm -i file_to_delete # Asks nicely 
+
 rm file_to_delete
 rm file_1_to_delete file_2_to_delete
+
+rm -r directory_to_delete # will also remove all it's contents
+rm -f file_to_delete # skip the asking and do the remove 
+
+rm -i file_to_delete # Asks nicely 
 
 rmdir directory_to_delete 
 rmdir directory_1_to_delete directory_2_to_delete

@@ -91,111 +91,6 @@ bigger than fat32?
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 what to leave here? what to move to the general shell workshop? (maybe things like commands for the devops tools setup and configuration?)
 all file explorer stuff do in frame handling
 
@@ -214,6 +109,10 @@ win32 tools?(cmd?)
 
 
 
+
+
+
+
 move this? to desktopping?
 % % % % % % % % File Systems % % % % % % % %
 
@@ -221,7 +120,9 @@ move this? to desktopping?
 
 ^ ^ ^ ^ ^ Home Directories ^ ^ ^ ^ ^
 
-/root - user's home directory 
+/ - root directory
+
+/root - root's user home directory 
 /home - different users home directories
 
 /boot - kernel, and boot configs
