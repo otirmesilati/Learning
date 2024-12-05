@@ -14,6 +14,7 @@ clear # Screen Clearing
 
 $? # last command succesful?
 
+env # list environment variables
 
 #   % % % % % % % Frame Handling % % % % % % %
 
@@ -393,22 +394,24 @@ docker pull # <type>:<image tag(version)> -> (isn't a must, run will pull images
 
 #   ^ ^ ^ ^ Docker Container Handling ^ ^ ^ ^
 
-docker ps
-docker ps -a
+docker ps      # view all running containers
+docker ps -a   # view all containers
 
 docker logs container_id #  or container name
 
 #   ^ ^ ^ Docker Container Running ^ ^ ^
 
 docker run # <type>:<version>
+docker run --name # <docker name> -> passing a name for the container
 docker run -d # <type>:<version> -> (used to avoid logs filling terminal window) detach flag
 docker run -p # <host port to bind to>:<app port> <type>:<version> -> (exposing a container to our local network) publish flag 
+docker run -e # <resource path> -> adding an argument to the docker run 
 
 docker stop # <container ID>/<container name> - pause functionality
 
 docker start # <container ID>/<container name> - restart functionality
 
-#exit?
+
 
 
 

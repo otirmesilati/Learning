@@ -78,49 +78,6 @@ horn's:
 - KVM as a kernel virtual machine is special, resmbles type 2 hypervisor and enables QEMU direct access to hardware , and feels like hardware acceleration tool
 - need to check if OS virtualization is enabled
 
-nana's short docker:
-
-- docker is a dev/dep simplifying virtualization software (through packed containers that can be shared and distributed) 
-- first dependencies were on local systems (postgres, redis, mosquito for messaging...)
--- every other dev now needs to install and configure their own local environments
---- very dependant on OS, so that might very well be a problem
---- a compound process to do, errors are prone along the way
---- might duplicate the process for different services -> solved by containers as they are services bundled with their dependencies, all they need is to be ran
----- docker solution even enables running different versions of same application - which most probably would conflict localy
-- dep then vs now:
--- used to be operations team job to distrubute artifact (then)
--- installations bare metal (error prone: dependency hell) (then)
--- miscomunication (then)
--- application package with dependencies (now)
---- No configurations (now)
----- less room for these errors
---- it's a docker command
-- containerazation vs virtualization
--- containerazation virtualizes ONLY os app layer, and uses the kernel of the host
--- virtualization virtualizes both os app layer and a designated kernel
--- docker files are much smaller than iso files becuase they aren't getting space for the kernel
--- similar reason they are much faster (not waiting for the kernel to boot up)
--- minus in docker: only compatible with linux systems
-- docker desktop elements
--- docker engine manages images
--- docker cli client for user interaction
--- friendly GUI
-- docker image
--- can be dowloaded on a server as a docker image
---- different than a JAR or a regular artifact file becuase it has the env information on top the compile code 
-- docker container
--- running instance of an image
-- docker registries for an image library
--- dockerhub registry
---- dockerhub holds repositories of related images that are of different version 
-- definition for creating docker images
--- dockerfiles 
---- theres a base image, mostly linux lightweight image, 
-- port binding
--- application in a container runs on an isolated network by defualt
---- to access it, we need to export the port to the host
-
-
 
 Nana's Short Kubernetes video:
 
@@ -184,7 +141,7 @@ Nana's Short Kubernetes video:
 
 
 <<<<<<<< system images
-< < < < < < < < Virtualized Orchestration > > > > > > > >
+
 
 
 
@@ -206,7 +163,67 @@ Nana's Short Kubernetes video:
 
 
 
-< < < < < < < < Containerized Virtualization > > > > > > > >
+< < < < < < < < Virtualization > > > > > > > >
+
+
+
+
+
+
+
+
+
+< < < < < < < < Containeriazation : Virtualization on same Kernel > > > > > > > >
+
+Begining: Bare metal - Production Apps Needs to be configured with their dependencies
+Problems: 1. Different versions 2. Manual Job 3. Humane Errors etc..
+
+--- very dependant on OS, so that might very well be a problem
+--- a compound process to do, errors are prone along the way
+--- might duplicate the process for different services -> solved by containers as they are services bundled with their dependencies, all they need is to be ran
+---- docker solution even enables running different versions of same application - which most probably would conflict localy
+- dep then vs now:
+-- used to be operations team job to distrubute artifact (then)
+-- installations bare metal (error prone: dependency hell) (then)
+-- miscomunication (then)
+-- application package with dependencies (now)
+--- No configurations (now)
+---- less room for these errors
+--- it's a docker command
+- containerazation vs virtualization
+-- containerazation virtualizes ONLY os app layer, and uses the kernel of the host
+-- virtualization virtualizes both os app layer and a designated kernel
+-- docker files are much smaller than iso files becuase they aren't getting space for the kernel
+-- similar reason they are much faster (not waiting for the kernel to boot up)
+-- minus in docker: only compatible with linux systems
+- docker desktop elements
+-- docker engine manages images
+-- docker cli client for user interaction
+-- friendly GUI
+- docker image
+-- can be dowloaded on a server as a docker image
+--- different than a JAR or a regular artifact file becuase it has the env information on top the compile code 
+- docker container
+-- running instance of an image
+- docker registries for an image library
+-- dockerhub registry
+--- dockerhub holds repositories of related images that are of different version 
+- definition for creating docker images
+-- dockerfiles 
+--- theres a base image, mostly linux lightweight image, 
+- port binding
+-- application in a container runs on an isolated network by defualt
+--- to access it, we need to export the port to the host
+
+
+
+
+
+
+
+
+
+< < < < < < < < Orchestration > > > > > > > >
 
 
 
