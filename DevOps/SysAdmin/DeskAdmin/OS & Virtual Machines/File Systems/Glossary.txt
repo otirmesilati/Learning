@@ -72,6 +72,9 @@ User Groups
 
 ^ ^ ^ ^ NTFS Compression ^ ^ ^ ^
 
+tar?(stores unix file attributes, all in one file, comp done in gzip)
+zip?(stores msdos attributes, every file compressed individually, contains a file table at EOF)
+
 ^ ^ ^ ^ NTFS Disk Quotas & Large File Support ^ ^ ^ ^
 
 ^ ^ ^ ^ NTFS Encryption ^ ^ ^ ^
