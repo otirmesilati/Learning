@@ -863,6 +863,10 @@
 
 --   < < < < < < < <   DSL Principles   > > > > > > > >   
 
+-- \sql
+-- \connect root@localhost
+-- Pass at: C:\mysqlresetpass\mysql-init.txt
+
 --   & & & & & & Schema Manipulation & & & & & &
 
 --   ^ ^ ^ ^ ^ DataBase handling ^ ^ ^ ^ ^

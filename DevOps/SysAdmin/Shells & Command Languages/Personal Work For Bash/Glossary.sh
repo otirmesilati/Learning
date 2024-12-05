@@ -225,6 +225,8 @@ chmod 003 my_file
 chown new_user my_file
 chgrp new_group my_file
 
+#tar
+tar -cfzv mypackage.tar.gz package # compressing
 
 
 
