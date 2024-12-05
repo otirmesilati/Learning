@@ -75,36 +75,43 @@
 -- //   & & & & & & String Formatting & & & & & &
 
 
--- int number = 1;
--- double dvalue = 2.344444;
--- int undef_behav = 4;
-
-
-
-
 CREATE FUNCTION dbo.func_string()
 RETURNS VARCHAR(255)
 AS
 BEGIN
     DECLARE @result VARCHAR(255);
     SET @result = 'Hello, SQL Server!';
+    
+    
     DECLARE @number INT = 1;    
     DECLARE @dvalue FLOAT = 2.344444;    
     DECLARE @undef_behav INT = 4;    
+
+-- //   ^ ^ ^ ^ ^ Format Specifier Fields ^ ^ ^ ^ ^
+
+-- //   ^ ^ ^ ^ Flags ^ ^ ^ ^
+
+-- //   ^ ^ ^ ^ Precision ^ ^ ^ ^
+
+SELECT
+    CAST(@number AS VARCHAR) + ' ' + FORMAT(@dvalue, '0.00') AS formatted_output;
+
+-- //   ^ ^ ^ ^ Width ^ ^ ^ ^ 
+
+-- //   ^ ^ ^ ^ Length ^ ^ ^ ^
+
+
     RETURN @result;
 END;
 
 
--- Declare variables (simulating the C++ variables)
 
 
 
 
--- Format Specifiers: SQL equivalent using CAST and FORMAT
 
--- Print integer and float with precision
-SELECT
-    CAST(@number AS VARCHAR) + ' ' + FORMAT(@dvalue, '0.00') AS formatted_output;
+
+
 
 -- Format long integer (simulating %ld)
 SELECT
@@ -140,22 +147,6 @@ END CATCH;
 
 
 
-
-
--- //   ^ ^ ^ ^ ^ Format Specifier Fields ^ ^ ^ ^ ^
-
--- //   ^ ^ ^ ^ Flags ^ ^ ^ ^
-
-
-
--- //   ^ ^ ^ ^ Precision ^ ^ ^ ^
-
--- printf("%d %.2lf", number, dvalue); // two digits left of decimal point 
--- // what about two digits to the right? 
-
-
--- //   width
--- //   ^ ^ ^ ^ Length ^ ^ ^ ^
 
 -- printf("%ld", 1); // long
 -- printf("%lf", 2.34); // double
