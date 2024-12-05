@@ -161,46 +161,7 @@
 
 
 
--- //  ^ ^ ^ ^ Coding Modifiers ^ ^ ^ ^
-
--- //  ^ ^ ^ Radixed modifier ^ ^ ^
-
--- 0x12AB;
--- 012; // octal literals written without o //
--- 0b110011;
-
--- //   ^ ^ ^ Un-Signed Modifier Suffix operators ^ ^ ^
-
--- 1u;
--- -2U; // will work sometimes and sometimes not: will be translated: 2's complement on the value -> new unsigned value
-
--- //   ^ ^ ^ Long Modifier Suffix operators
-
--- 1l;
--- -2L;
--- 3ll;
--- 4LL;
-
--- //   ^ ^ ^ ^ ^ Floats ^ ^ ^ ^ ^
--- // add f suffix //
--- 1.2;
--- -3.4;
-
--- //   ^ ^ ^ ^ Sceientific Notation Encoding  ^ ^ ^ ^
-
--- 1e2;
--- 1e-3;
--- 1e4L;   // combining //
-
--- }
-
-
-
-
-
--- // More Material:
--- // https://web.archive.org/web/20130807052041/http://cpp.comsci.us/etymology/literals.html
--- // https://en.cppreference.com/w/cpp/language/floating_literal //
+-- Literals moved to the table creation portion
 
 
 
