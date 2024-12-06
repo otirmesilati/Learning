@@ -171,8 +171,30 @@ Runtime environments (More loosely restricting containers)
 -nodejs
 --open source
 --uses v8 engine
---used for server side and netowrking
+---written in cpp
+---converts js to machine code
 --encapsulates js outside browser
+--non blocking container (single server internal load balancer)
+--used for server side and netowrking
+
+
+
+
+
+
+
+
+
+static vs shared libraries
+- static libraries is static copied code : lib
+- shared libraries is dynamic linking : dll, dylib
+-- most dependencies are shared libraries! -> to enable sharing and wastefull minimise on prem copies
+--- dependency hell is real, direct importing of a lot of libraries can cause it
+---- unlike regular installers, package managers try and solve this versioning issue
+----- tools like npm and maven handle libraries like mongoose to not cause dependency hell
+
+- mern, django, firebase, where to put restful? in arch?
+
 
 
 
