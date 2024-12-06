@@ -176,9 +176,8 @@ Nana's Short Kubernetes video:
 < < < < < < < < Containeriazation : Virtualization on same Kernel > > > > > > > >
 
 Begining: Bare metal - Production Apps Needs to be configured with their dependencies
-Problems: 1. Different versions 2. Manual Job 3. Humane Errors etc..
+Problems: 1. Different versions 2. Different OS' 3. Manual Job 4. Humane Errors etc..
 
---- very dependant on OS, so that might very well be a problem
 --- a compound process to do, errors are prone along the way
 --- might duplicate the process for different services -> solved by containers as they are services bundled with their dependencies, all they need is to be ran
 ---- docker solution even enables running different versions of same application - which most probably would conflict localy

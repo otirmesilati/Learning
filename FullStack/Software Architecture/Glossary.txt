@@ -159,3 +159,50 @@ frameworks
 
 
 system's API design (where to put this?)
+
+
+
+
+
+
+
+
+Runtime environments (More loosely restricting containers)
+-nodejs
+--open source
+--uses v8 engine
+--used for server side and netowrking
+--encapsulates js outside browser
+
+
+
+
+
+
+
+
+Frameworks
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
