@@ -2,6 +2,31 @@ android studio
 -dependencies
 --jdk
 --virtual device emulator
+-package name - unique for each app, (convention to put web name backwards)
+-api level: older machines support
+--bigger level - more functionalities
+--95% device support is preferable
+-project view - a lot of stuff on screen
+-android view structure - a smaller portion of project view
+--manifests
+--java
+---main activity
+--res
+---layout
+----activity_main.xml
+---values
+
+
+
+device dependencies
+-little memory and storage in relation to laptops/pcs
+-screen size changing
+-one single frame handling at a time
+-other peripherals are not guranteed
+
+
+
+
 
 
 
