@@ -1,4 +1,12 @@
 user interfaces
+-UI elements
+--element attiributes
+---id
+--adding elements:
+---drag and drop in design view
+---code them in text view
+--constraining to relative elements - so the default of a floating button won't be a problem
+--adding functionality - changing the activity logic
 -modern layouts
 --buttons
 --text views

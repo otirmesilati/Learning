@@ -2,20 +2,26 @@ android studio
 -dependencies
 --jdk
 --virtual device emulator
+-android profiler - monitoring
 -package name - unique for each app, (convention to put web name backwards)
 -api level: older machines support
 --bigger level - more functionalities
 --95% device support is preferable
+-types of files
+--layout files - View portion, looks/styling of app(equivilent of CSS)
+--java files - Controller portion, app logic
 -project view - a lot of stuff on screen
 -android view structure - a smaller portion of project view
---manifests
---java
+--manifests: artifacts the code
+--java: represents controller
 ---main activity
---res
+--res: represents view, can hold resources
 ---layout
 ----activity_main.xml
+-----design view
+-----text view
 ---values
-
+-gradle scripts: artifiacts projects into APK
 
 
 device dependencies
@@ -23,7 +29,7 @@ device dependencies
 -screen size changing
 -one single frame handling at a time
 -other peripherals are not guranteed
-
+-going to places where there is no connection 
 
 
 

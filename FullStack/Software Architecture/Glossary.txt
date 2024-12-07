@@ -128,7 +128,12 @@ tablet skills - umling the design patterns
 -- error handling patterns
 --- what here? if the types of messages mostly go to processes mapping
 
-
+--a(ction)d(omain)r(esponder)
+---m(odel)v(iew)c(ontroller)
+----controller recivrd request
+----controller forwards signals model's data
+----controller manupilates data and signals view
+----view returns a response
 
 
 
