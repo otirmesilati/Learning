@@ -82,6 +82,12 @@ are available */
 
 //   ^ ^ ^ ^ ^ Variable input ^ ^ ^ ^ ^
 
+void fun_streams(){
+
+    char character;
+    scanf(" %c", &character);  // Reads a character without waiting for Enter
+
+}
 // input of string - mention the problem of entering a space?
 
 //   ^ ^ ^ ^ ^ Console Output ^ ^ ^ ^ ^ 
