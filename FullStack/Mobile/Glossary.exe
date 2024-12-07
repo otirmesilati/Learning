@@ -22,13 +22,31 @@ app store
 
 
 
+Webbing:
+-mobile websites are websites that are adapted to mobile
+-WebApps - websites that are wrapped in an app(Works on many devices)
+--React native!
 
 
-Mobile depedencies:
-- screen size varies
-- device memory is relatively small
-- one to two frames at a time 
-- 
+
+
+
+
+
+
+
+device dependencies
+-little memory and storage in relation to laptops/pcs
+-screen size changing
+-one single frame handling at a time
+-other peripherals are not guranteed
+-going to places where there is no connection 
+
+
+
+
+
+
 
 
 

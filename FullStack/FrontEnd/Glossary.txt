@@ -189,3 +189,21 @@ Net Ninja's TailWind:
 8. 
 9. 
 
+
+
+
+
+
+
+
+
+User-Friendly:
+-keep interface simple
+-consistant theme 
+-providing event feeback (button clicks, focusing on elements, etc..)
+-minimise memory load
+-
+
+
+
+
