@@ -1,0 +1,15 @@
+device dependencies
+-little memory and storage in relation to laptops/pcs
+-screen size changing
+-one single frame handling at a time
+-other peripherals are not guranteed
+
+
+
+
+
+
+
+
+
+

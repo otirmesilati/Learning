@@ -1,0 +1,13 @@
+android studio
+-dependencies
+--jdk
+--virtual device emulator
+
+
+
+
+
+
+
+
+
