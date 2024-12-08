@@ -36,14 +36,21 @@ android studio
 -essential components
 --activities - proccesses
 ---visual UI
----infrastructured as an hierarchy class
+---infrastructured as an hierarchy of classes
 ---each activity is independant of others
----
+---one activity is the first to be presented to the user and acts as a main proccess which all others run on
+---each activity starts the next one
 --services - background processes
+---infrastructed as an hierarchy of classes
+---possible to connect to a service through an intended interface
+---also run in the main 
 --broadcast receivers - mobile signals  
-conternt providers - enables outer mobile communiation
-
-
+---start activities to respond to information
+---may use notification manager to alert the user
+--content providers - enables outer mobile communiation
+---handles communication API
+---it's data probably stored at a designated DB
+----the data can be accessed through contentresolver (which can talk to any content provider)
 
 
 
