@@ -36,6 +36,7 @@ Webbing:
 
 
 device dependencies
+-device libraries (provide database, graphics, security, networking options..)
 -little memory and storage in relation to laptops/pcs
 -screen size changing
 -one single frame handling at a time
@@ -45,12 +46,16 @@ device dependencies
 
 
 
+Android
+-java based, java runtime included
+-application framework for ease of work
+-regular download
+-linux based
 
 
 
 
+IOS
+-only download from store
+-linux based
 
-Stores:
--Iphone: only download from appstore
-
--Android: Allowed download from links/alternative stores, though will get warnings
