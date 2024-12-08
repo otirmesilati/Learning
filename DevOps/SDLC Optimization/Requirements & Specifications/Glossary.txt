@@ -2,8 +2,26 @@ App Dev
 -Goal definition
 -Declaring desired audience
 -Define app medium and context
--list functionalities
+-list functional specifications
 
+
+
+
+pid
+-goals
+-scope
+-stakeholders
+-timeline
+-resources
+-risk
+srs
+-data requirements
+-interface requirements
+-functional requiremenets
+-non-functional requirements
+-system architecture
+-use cases
+-user stories
 
 
 

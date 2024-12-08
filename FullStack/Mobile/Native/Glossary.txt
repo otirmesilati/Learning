@@ -1,5 +1,6 @@
 android studio
 -dependencies
+--sdk
 --jdk
 --virtual device emulator
 -android profiler - monitoring
