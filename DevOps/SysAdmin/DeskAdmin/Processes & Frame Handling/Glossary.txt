@@ -1,3 +1,5 @@
+
+Personal Computer's Processing
 I(nter)P(rocess)C(ommunication)
 processes
 -ready
@@ -12,6 +14,16 @@ OS receive interrupts from processes to handle events
 
 
 
+
+
+
+
+
+Mobile Processing
+-each application runs its own linux process - a single process each time
+-when an app is no longer the one focused - it's proccesses die
+-each process has a unique pid
+-processes communicate resources to one another (communication sharing)
 
 
 

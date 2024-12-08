@@ -2,17 +2,26 @@ android studio
 -dependencies
 --sdk
 --jdk
---virtual device emulator
+--virtual device emulator (A(ndroid)V(irtual)D(evice) manager)
 -android profiler - monitoring
--package name - unique for each app, (convention to put web name backwards)
--api level: older machines support
---bigger level - more functionalities
---95% device support is preferable
+
+
+-install
+--package name - unique for each app, (convention to put web name backwards)
+--api level: older machines support
+---bigger level - more functionalities
+---95% device support is preferable
+
+
 -types of files
 --layout files - View portion, looks/styling of app(equivilent of CSS)
 --java files - Controller portion, app logic
+
+
+-project explorer
 -project view - a lot of stuff on screen
 -android view structure - a smaller portion of project view
+--tests packages
 --manifests: artifacts the code
 --java: represents controller
 ---main activity
@@ -24,8 +33,15 @@ android studio
 ---values
 -gradle scripts: artifiacts projects into APK
 
-
-
+-essential components
+--activities - proccesses
+---visual UI
+---infrastructured as an hierarchy class
+---each activity is independant of others
+---
+--services - background processes
+--broadcast receivers - mobile signals  
+conternt providers - enables outer mobile communiation
 
 
 
