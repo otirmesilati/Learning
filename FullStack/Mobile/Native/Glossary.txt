@@ -106,4 +106,10 @@ nextBtn.setOnClickListener(new View.onClickListener(){
         
     }
 });
-
+important note on the difference between calls and callbacks:
+-funcation calls: message passing/invoking/whatever!
+-function callbacks: function as arguments + message passing them later
+--enabled in python: First Class Functions
+--enabled in java: 
+---interfaces ("sent as arugments" - interfaces as parameters + polymorphed at runtime)
+---lambdas: can literally be passed around as parameters and then called later
