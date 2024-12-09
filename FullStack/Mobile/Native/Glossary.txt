@@ -23,6 +23,12 @@ android studio
 -android view structure - a smaller portion of project view
 --tests packages
 --manifests: artifacts the code
+---written in XML
+---bundle requirements for the APK, includes:
+----components and activities
+----resources
+----libraries
+----permissions
 --java: represents controller
 ---main activity
 --res: represents view, can hold resources
@@ -37,9 +43,21 @@ android studio
 --activities - proccesses
 ---visual UI
 ---infrastructured as an hierarchy of classes
+----appcompactactivity - sdk activity
+----mainactivity
 ---each activity is independant of others
 ---one activity is the first to be presented to the user and acts as a main proccess which all others run on
----each activity starts the next one
+---each activity starts the next one - according to initial intent
+----Activity LifeCycle:
+-----On create function (acts as ctor)
+-----Activity in view
+-----Activity in background
+----startActivity function - returns data to initiator through onActivity intent
+----passing additional intents through onNewIntent
+---intents - messaging android that an activity is needed
+----holds message content
+----request to get resources
+----names the action anounced in the broadcast reciever
 --services - background processes
 ---infrastructed as an hierarchy of classes
 ---possible to connect to a service through an intended interface
@@ -51,11 +69,6 @@ android studio
 ---handles communication API
 ---it's data probably stored at a designated DB
 ----the data can be accessed through contentresolver (which can talk to any content provider)
-
-
-
-
-
 
 
 
