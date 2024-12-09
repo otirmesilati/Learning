@@ -19,6 +19,16 @@ OS receive interrupts from processes to handle events
 
 
 
+paralleling proccesses:
+-2 processes running in parallel, each has 2 stage, how it works:
+-choose either stage 1 proccess 1, or stage 1 proccess 2, first chosen:
+-choose either stage 2 proccess 1, or stage 1 process 2, and so on...
+
+
+
+
+
+
 Mobile Processing
 -each application runs its own linux process - a single process each time
 -when an app is no longer the one focused - it's proccesses die

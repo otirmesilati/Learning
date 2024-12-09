@@ -48,10 +48,20 @@ android studio
 ---each activity is independant of others
 ---one activity is the first to be presented to the user and acts as a main proccess which all others run on
 ---each activity starts the next one - according to initial intent
+
+
+
+
+
 ----Activity LifeCycle:
------On create function (acts as ctor)
------Activity in view
------Activity in background
+-----onCreate function (acts as ctor)
+-----onStart - put the activity in the stack and viewable
+-----onResume - the activity is functionable
+-----onPause - the activity is not visible, running in the background
+-----onStop - the activity is not running anymore, can transition to onStart
+-----onDestroy - kill activity
+
+-----finish() or finishActivity by another activity
 ----startActivity function - returns data to initiator through onActivity intent
 ----passing additional intents through onNewIntent
 ---intents - messaging android that an activity is needed
@@ -72,10 +82,15 @@ android studio
 
 
 
-creating a new activity:
-Intent my_intent = new Intent(this.)
+creating a new activity: (Java)
+Intent my_intent = new Intent(this.MainActivity2.class);
+startActivity(my_intent);
 
-
+logging the debug process(direct debug is not the same with the AVD container):
+protected void onStart() {
+    super.onStart();
+    Log.d("Tag", "onStart);
+}
 
 
 
