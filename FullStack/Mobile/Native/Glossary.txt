@@ -113,3 +113,15 @@ important note on the difference between calls and callbacks:
 --enabled in java: 
 ---interfaces ("sent as arugments" - interfaces as parameters + polymorphed at runtime)
 ---lambdas: can literally be passed around as parameters and then called later
+
+
+
+
+
+
+
+
+
+
+
+
