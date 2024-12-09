@@ -12,7 +12,7 @@ design
 
 user interfaces editor
 -UI components rely on:
---views - visual components
+--views - visual components, are basically rectangles that are attributed by left and top
 ---text view
 ---button
 --viewgroup - visual organisers

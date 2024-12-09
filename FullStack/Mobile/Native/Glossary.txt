@@ -61,6 +61,8 @@ android studio
 -----onStop - the activity is not running anymore, can transition to onStart
 -----onDestroy - kill activity
 
+-----requestFocus to force into a specific view and setVisibility to show or hide views
+-----getLeft/Top/Right/Bottom for the view pixels location
 -----finish() or finishActivity by another activity
 ----startActivity function - returns data to initiator through onActivity intent
 ----passing additional intents through onNewIntent
@@ -97,4 +99,11 @@ TextView title = findViewById(R.id.mainactivity_title);
 title.setText("This is main title");
 
 
+Trigering on click:
+nextBtn.setOnClickListener(new View.onClickListener(){
+    @Override
+    public void onClick(View view){
+        
+    }
+});
 
