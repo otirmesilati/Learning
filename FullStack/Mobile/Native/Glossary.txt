@@ -32,7 +32,7 @@ android studio
 --java: represents controller
 ---main activity
 --res: represents view, can hold resources
----layout
+---layout - loaded in onCreate method, or called in setContentView by passing the refence to the layout resource (R.layout.layout_file_name)
 ----activity_main.xml
 -----design view
 -----text view

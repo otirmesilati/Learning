@@ -11,9 +11,18 @@ design
 
 
 user interfaces editor
--UI elements
---element attiributes
----id
+-UI components rely on:
+--views - visual components
+---text view
+---button
+--viewgroup - visual organisers
+--setContentView does the connection between the two
+--layout file is the container config - responsible for describing the instantiation of both
+---helps model the code as MVC and separate logic from view: controller: java package, view: res package
+--component attiributes
+---id: unique value for identification
+---layout width/height/center in parent - alligning relative to parent
+---text color/style - typography
 ---text - the actual text that is visualized
 --adding elements:
 ---drag and drop in design view

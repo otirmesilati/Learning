@@ -14,7 +14,7 @@
         <Item>6</Item>
         <Item>7</Item>
     </Array>
-    <Object_key_value_pairs>app.js</Object_key_value_pairs>
+    <Object_key_value_pairs>app:key="value"</Object_key_value_pairs>
     <scripts>
         <start>node app.js</start>
     </scripts>
