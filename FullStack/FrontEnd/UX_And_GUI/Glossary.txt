@@ -10,10 +10,11 @@ design
 
 
 
-user interfaces
+user interfaces editor
 -UI elements
 --element attiributes
 ---id
+---text - the actual text that is visualized
 --adding elements:
 ---drag and drop in design view
 ---code them in text view

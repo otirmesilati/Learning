@@ -72,7 +72,8 @@ android studio
 
 
 
-
+creating a new activity:
+Intent my_intent = new Intent(this.)
 
 
 
