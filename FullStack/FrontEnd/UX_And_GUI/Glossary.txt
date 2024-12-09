@@ -20,7 +20,7 @@ user interfaces editor
 --layout file is the container config - responsible for describing the instantiation of both
 ---helps model the code as MVC and separate logic from view: controller: java package, view: res package
 --component attiributes
----id: unique value for identification
+---id: unique value for identification, we'll name them according to the activities they originate from(to find them from id)
 ---layout width/height/center in parent - alligning relative to parent
 ---text color/style - typography
 ---text - the actual text that is visualized

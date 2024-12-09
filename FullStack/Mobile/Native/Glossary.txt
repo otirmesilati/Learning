@@ -92,7 +92,9 @@ protected void onStart() {
     Log.d("Tag", "onStart);
 }
 
-
+identifying components + changing them in a comftorable way(creating local variables that connect to the layouts):
+TextView title = findViewById(R.id.mainactivity_title);
+title.setText("This is main title");
 
 
 
