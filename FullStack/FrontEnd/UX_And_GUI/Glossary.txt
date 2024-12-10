@@ -14,10 +14,26 @@ user interfaces editor
 -UI components rely on:
 --views - visual components, are basically rectangles that are attributed by left and top
 ---text view
+----editText: allows 
+-----phone number property - for inputting phone numbers
+-----password property - for inputting password
+-----auto complete property
 ---button
+----Simple Button
+----Image Button
+----Toggle Button
+----Check Box
+----Radio Button
 --viewgroup - visual organisers
 --setContentView does the connection between the two
 --layout file is the container config - responsible for describing the instantiation of both
+---layout components
+----constraintlayout
+----linearlayout
+----tablelayout
+----relativelayout
+----absolutelayout
+----framelayout
 ---helps model the code as MVC and separate logic from view: controller: java package, view: res package
 --component attiributes
 ---id: unique value for identification, we'll name them according to the activities they originate from(to find them from id)
