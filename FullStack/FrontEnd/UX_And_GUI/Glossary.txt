@@ -29,11 +29,11 @@ user interfaces editor
 --layout file is the container config - responsible for describing the instantiation of both
 ---layout components
 ----constraintlayout
-----linearlayout
-----tablelayout
-----relativelayout
+----linearlayout - hor/vert line organization
+----tablelayout - matrix organization
+----relativelayout 
 ----absolutelayout
-----framelayout
+----framelayout - one on top of other organiztion
 ---helps model the code as MVC and separate logic from view: controller: java package, view: res package
 --component attiributes
 ---id: unique value for identification, we'll name them according to the activities they originate from(to find them from id)
@@ -52,6 +52,17 @@ user interfaces editor
 --fonts
 --listview & recycler view
 material design
+
+Dimensions
+-pixels (px)
+-inches (in)
+-milimeters (mm)
+-points (pt)
+-density independant pixels (dp)
+-scale independant pixels (sp)
+
+whats the small thing that measures pictures? pictures -> pics -> pix -> pixel!
+
 
 to look at:
 
