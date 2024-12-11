@@ -419,6 +419,21 @@ docker start # <container ID>/<container name> - restart functionality
 
 
 
+#   ^ ^ ^ ^ ^ NodeJS Runtime environment ^ ^ ^ ^ ^
+
+#going into the env
+
+node 
+
+
+
+
+
+
+
+
+
+
 #   ^ ^ ^ ^ ^ MongoDB Shell ^ ^ ^ ^ ^
 # rewrite the comments nicely later
 
