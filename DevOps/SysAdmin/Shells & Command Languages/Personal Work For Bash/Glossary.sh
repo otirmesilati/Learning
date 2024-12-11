@@ -425,6 +425,34 @@ docker start # <container ID>/<container name> - restart functionality
 
 node 
 
+# running app in env
+
+node file_name
+
+#npm
+
+#generating json
+
+npm init -y
+
+#launch scripts
+
+npm start #launching start script
+npm run #launching a script
+
+
+
+
+
+
+#react
+
+npx create-reate-app my_app
+
+npm start 
+# open your browser and navigate to http://localhost:3000/
+
+
 
 
 
