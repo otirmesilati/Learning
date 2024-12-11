@@ -232,6 +232,17 @@ React
 -Javascript library for nice interfaces
 -DOM management is delegated to react
 --all we need is to use the React components
+---class based components
+---function based components
+
+
+-react-app defualt structure
+--node_modules - third party libraries
+--public - for View
+--src - for controller
+---App.tsx - the app component
+--package - project configuration
+--tsconfig - typescript compiler configuration
 
 
 
