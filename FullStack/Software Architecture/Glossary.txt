@@ -1,76 +1,10 @@
-< < < < < < < < Dependencies > > > > > > > >
-
-% % % % % % % Static Libraries % % % % % % %
-
-- Linked at compile time
-
-
-
-
-
-
-
-% % % % % % % Shared Library % % % % % % %
-
-- API called at runtime
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- Design patterns are usually associated with code level commonalities. It provides various schemes for refining and building smaller subsystems. It is usually influenced by programming language. Some patterns pale into insignificance due to language paradigms. Design patterns are medium-scale tactics that flesh out some of the structure and behavior of entities and their relationships.
-
-While architectural patterns are seen as commonality at higher level than design patterns. Architectural patterns are high-level strategies that concerns large-scale components, the global properties and mechanisms of a system.
-
-How are patterns obtained? Through:
-
-re-use,
-classification
-and finally abstraction to distill the commonality.
-If you have followed the thoughts laid above. You will see that Singleton is a "design pattern" while MVC is one of the "architectural" pattern to deal with separation of concerns.
-
-
-
-http://en.wikipedia.org/wiki/Architectural_pattern_(computer_science)
-http://en.wikipedia.org/wiki/Design_pattern
-http://en.wikipedia.org/wiki/Anti-pattern
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Application server
+-communication to back:
+--peer to peer (no server, shared through other clients)
+--client server (https, tcp udp, web services):
+---one way communication, client tom server: HTTP
+---one way communication, server to client: sockets
+---two way communication: socket.io
 
 
 
@@ -208,7 +142,106 @@ static vs shared libraries
 
 
 
+
+
+
 Frameworks
+
+
+
+
+
+
+
+
+
+
+< < < < < < < < Dependencies > > > > > > > >
+
+% % % % % % % Static Libraries % % % % % % %
+
+- Linked at compile time
+
+
+
+
+
+
+
+% % % % % % % Shared Library % % % % % % %
+
+- API called at runtime
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Design patterns are usually associated with code level commonalities. It provides various schemes for refining and building smaller subsystems. It is usually influenced by programming language. Some patterns pale into insignificance due to language paradigms. Design patterns are medium-scale tactics that flesh out some of the structure and behavior of entities and their relationships.
+
+While architectural patterns are seen as commonality at higher level than design patterns. Architectural patterns are high-level strategies that concerns large-scale components, the global properties and mechanisms of a system.
+
+How are patterns obtained? Through:
+
+re-use,
+classification
+and finally abstraction to distill the commonality.
+If you have followed the thoughts laid above. You will see that Singleton is a "design pattern" while MVC is one of the "architectural" pattern to deal with separation of concerns.
+
+
+
+http://en.wikipedia.org/wiki/Architectural_pattern_(computer_science)
+http://en.wikipedia.org/wiki/Design_pattern
+http://en.wikipedia.org/wiki/Anti-pattern
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

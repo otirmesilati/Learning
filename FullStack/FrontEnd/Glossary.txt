@@ -218,12 +218,6 @@ The User interacts with the front
 ---Not runs Bare Metal (ie runs on browser that runs on OS)
 ---Resources are more limited
 ---Very portable (runs on many machines in many places)
--communication to back:
---peer to peer (no server, shared through other clients)
---client server (https, tcp udp, web services):
----one way communication, client tom server: HTTP
----one way communication, server to client: socket
----two way communication: socket.io
 
 
 

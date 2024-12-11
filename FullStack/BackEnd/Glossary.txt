@@ -1,12 +1,12 @@
-static vs shared libraries
-- static libraries is static copied code : lib
-- shared libraries is dynamic linking : dll, dylib
--- most dependencies are shared libraries! -> to enable sharing and wastefull minimise on prem copies
---- dependency hell is real, direct importing of a lot of libraries can cause it
----- unlike regular installers, package managers try and solve this versioning issue
------ tools like npm and maven handle libraries like mongoose to not cause dependency hell
+scalabile problems:
+-more incoming requests than responses
 
-- mern, django, firebase, where to put restful? in arch?
+
+
+
+
+
+
 
 
 Map from the following:
