@@ -207,3 +207,25 @@ User-Friendly:
 
 
 
+
+
+
+
+The User interacts with the front 
+-Mostly Browserer based today
+--Not downloaded through shared infrastructure like NTFS
+--Browser Dependant:
+---Not runs Bare Metal (ie runs on browser that runs on OS)
+---Resources are more limited
+---Very portable (runs on many machines in many places)
+
+
+
+
+
+
+
+
+
+
+

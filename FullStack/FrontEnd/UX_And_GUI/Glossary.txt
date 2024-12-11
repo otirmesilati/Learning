@@ -40,6 +40,7 @@ user interfaces editor
 ---layout width/height/center in parent - alligning relative to parent
 ---text color/style - typography
 ---text - the actual text that is visualized
+---gravity - for adjusting the positioning of the components
 --adding elements:
 ---drag and drop in design view
 ---code them in text view
@@ -60,6 +61,7 @@ Dimensions
 -points (pt)
 -density independant pixels (dp)
 -scale independant pixels (sp)
+
 
 whats the small thing that measures pictures? pictures -> pics -> pix -> pixel!
 

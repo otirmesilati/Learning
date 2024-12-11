@@ -25,6 +25,7 @@ android studio
 --manifests: artifacts the code
 ---written in XML
 ---bundle requirements for the APK, includes:
+---is the reason the OS knows when the device use resources (and warn in case of permissions)
 ----components and activities
 ----resources
 ----libraries
