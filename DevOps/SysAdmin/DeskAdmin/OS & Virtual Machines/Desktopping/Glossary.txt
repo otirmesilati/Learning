@@ -8,6 +8,10 @@ windows:
 
 
 
+a small tweak to the mapping:
+-GUI Desktopping: focus on visuals - taskbar(and dfs from there), desktop background (and dfs from there) etc..
+-Terminal Desktopping: batch(+posh), bash
+
 
 
 

@@ -1,6 +1,21 @@
 :: Yet to find an online CMD emulator
 
 
+::vars
+echo %computername%
+
+echo %os%
+
+echo %number_of_processors%
+echo %processor_architecture%
+
+echo %username%
+
+
+
+
+
+
 
 
 
