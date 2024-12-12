@@ -1,8 +1,8 @@
 scalabile problems:
 -more incoming requests than responses
 
-
-
+web server - static pages serving and request handling
+app server - app logic handling 
 
 
 
