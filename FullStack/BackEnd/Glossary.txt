@@ -2,10 +2,22 @@ scalabile problems:
 -more incoming requests than responses
 
 web server - static pages serving and request handling
+-express - web server building
+--my_app.get - first response function - the response to recieve
+--my_app.listen - opening a port to listen to
+
 app server - app logic handling 
-
-
-
+-node js
+--file structure
+---package.json - project configuration
+----name, version, description, author, license, homepage
+----scripts
+----repository
+----bugs
+----dependencies
+---node-modules - node libraries
+---package-lock - version management of dependency versions
+--nodemon utility - restarts app after changes are made
 
 
 

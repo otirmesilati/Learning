@@ -228,12 +228,12 @@ The User interacts with the front
 
 
 UI toolkits:
-React
--Javascript library for nice interfaces
--DOM management is delegated to react
---all we need is to use the React components
----class based components
----function based components
+-React
+--Javascript library for nice interfaces
+--DOM management is delegated to react
+---all we need is to use the React components
+----class based components
+----function based components
 
 
 -react-app defualt structure

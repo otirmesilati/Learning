@@ -431,6 +431,8 @@ node file_name
 
 #npm
 
+npm install 
+
 #generating json
 
 npm init -y
