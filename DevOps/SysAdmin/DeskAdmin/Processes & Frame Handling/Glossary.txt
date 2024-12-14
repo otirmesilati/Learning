@@ -1,15 +1,12 @@
+< < < < < < < < Standard Processes > > > > > > > > 
 
-Personal Computer's Processing
-I(nter)P(rocess)C(ommunication)
-processes
--ready
--run
--sleep
--wait
--kill
+% % % % % % % Process States % % % % % % %
 
-recieve signals from the OS to handle events
-OS receive interrupts from processes to handle events
+Running
+Ready
+Wait
+Sleep
+Kill
 
 
 
@@ -19,59 +16,24 @@ OS receive interrupts from processes to handle events
 
 
 
-paralleling proccesses:
--2 processes running in parallel, each has 2 stage, how it works:
--choose either stage 1 proccess 1, or stage 1 proccess 2, first chosen:
--choose either stage 2 proccess 1, or stage 1 process 2, and so on...
+% % % % % % % Inter-Process Communication % % % % % % %
 
+& & & & & & Signal Handling & & & & & &
 
+-signalling callbacks
+-recieve signals from the OS to handle events
+-OS receive interrupts from processes to handle events
 
+-paralleling proccesses:
+--2 processes running in parallel, each has 2 stage, how it works:
+--choose either stage 1 proccess 1, or stage 1 proccess 2, first chosen:
+--choose either stage 2 proccess 1, or stage 1 process 2, and so on...
 
-
-
-Mobile Processing
--each application runs its own linux process - a single process each time
--when an app is no longer the one focused - it's proccesses die
--each process has a unique pid
--processes communicate resources to one another (communication sharing)
-
-
-
-
-
-
-
-
-
-
-map to nvim portion, difference between tree sitter and LSP:
--------------
-LSP is a protocol while tree-sitter is a parsing tool and library. LSP is a protocol developed by Microsoft for IDEs to communicate with a separate process 
-to provide annotations and insight into source code. Practically, tree-sitter is usually used for syntax highlighting, 
-while servers implementing LSP are used for compilation errors, warnings, jump to definition, linter warnings, symbol highlighting, etc etc etc.
-
-
-	
-leephillips on March 13, 2022
-
-Tree-sitter works like a syntax highlighting plugin, and doesnt require communication with an external process. Its like syntax highlighting but 
-with a deeper understanding of the programming language, not based just on regular expressions. So not only is the highlighting better,
-but you can do more things, such as selecting blocks or jumping among them. One of my favorite goodies is being able to ask the editor what 
-function my cursor is inside.
---------------
-
-
-
-nvim video list?
-
-
-
-
-
-
-
-
-nvim parts to re-map?
+-Mobile Processing
+--each application runs its own linux process - a single process each time
+--when an app is no longer the one focused - it's proccesses die
+--each process has a unique pid
+--processes communicate resources to one another (communication sharing)
 
 
 
@@ -81,12 +43,16 @@ nvim parts to re-map?
 
 
 
+< < < < < < < Frame Processes: Families/SoftWare Suites > > > > > > > 
 
 
 
 
 
-< < < % % % % Frame Families/SoftWare Suites % % % % % % %
+
+
+
+
 - Windows System Utility Apps (reorder what's below in a meaningful way)
 -- control panel (control of Environment, system preferences, personalization)
 -- event viewer (view logging, monitoring, warnings)
@@ -103,6 +69,22 @@ what about dedicated folders for these? utilities folder? wasn't there another o
 
 
 - Office Suite
+-- regular 4
+---word
+----sc - winword
+---excel
+----sc - excel
+---powerpoint
+----sc- powerpnt
+---outlook
+---- sc - outlook
+--what here?
+---access
+
+
+
+
+
 - Photoshop Suite
 
 
@@ -257,6 +239,27 @@ Windows Naming -> Notepad++.exe
 
 
 ^ ^ ^ ^ ^ NeoVim ^ ^ ^ ^ ^
+
+map to nvim portion, difference between tree sitter and LSP:
+-------------
+LSP is a protocol while tree-sitter is a parsing tool and library. LSP is a protocol developed by Microsoft for IDEs to communicate with a separate process 
+to provide annotations and insight into source code. Practically, tree-sitter is usually used for syntax highlighting, 
+while servers implementing LSP are used for compilation errors, warnings, jump to definition, linter warnings, symbol highlighting, etc etc etc.
+
+
+	
+leephillips on March 13, 2022
+
+Tree-sitter works like a syntax highlighting plugin, and doesnt require communication with an external process. Its like syntax highlighting but 
+with a deeper understanding of the programming language, not based just on regular expressions. So not only is the highlighting better,
+but you can do more things, such as selecting blocks or jumping among them. One of my favorite goodies is being able to ask the editor what 
+function my cursor is inside.
+--------------
+
+
+
+nvim video list?
+
 
 ^ ^ ^ ^ T(ext)U(ser)I(nterface)L(ine) ^ ^ ^ ^
 
