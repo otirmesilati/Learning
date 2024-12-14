@@ -73,6 +73,13 @@ Kill
 
 - Windows System Utility Apps (reorder what's below in a meaningful way)
 -- control panel (control of Environment, system preferences, personalization)
+---control panel -> control.exe
+--defrag
+---defrag -> defrag.exe
+--media player
+---media player -> dvdplay.exe
+--dialer
+---dialer -> dialer.exe
 -- event viewer (view logging, monitoring, warnings)
 -- task manager (process handling)
 -- network center (network config)
@@ -85,6 +92,11 @@ Kill
 
 what about dedicated folders for these? utilities folder? wasn't there another one? how to map those?
 
+-Settings Sections
+--Display: Settings -> System Default    -> DpiScaling.exe
+--Behaviour 
+--Display Side Window     -> DisplaySwitch.exe
+
 
 
 
@@ -96,6 +108,8 @@ what about dedicated folders for these? utilities folder? wasn't there another o
 & & & & & & Adobe & & & & & & 
 
 - Photoshop Suite?
+
+
 
 
 
@@ -157,24 +171,7 @@ what about dedicated folders for these? utilities folder? wasn't there another o
 
 
 
-
-
-
-
-control panel -> control.exe
-defrag -> defrag.exe
-media player -> dvdplay.exe
-dialer -> dialer.exe
-
- ^ ^ ^ ^ Settings Sections ^ ^ ^ ^
-
-    Display: Settings -> System Default    -> DpiScaling.exe
-
-    ^ ^ ^ ^ Behaviour ^ ^ ^ ^ 
-
-    Display Side Window     -> DisplaySwitch.exe
-
-
+& & & & & & W(ork)L(oad)A(utomation) Manager/Job Schedulers & & & & & &
 job schedulers
 - task scheduler
 -- tasks
@@ -273,7 +270,16 @@ job schedulers
 
 & & & & & & Editors & & & & & &
 
--notepad
+map/dfs like this(from functionality to visuals):
+-notepad -->> Notepad.exe 
+--GUI
+---MenuBar - Top
+---Editor Area - center
+---StatusBar - Bottom
+
+----funftionalities
+-----text manipulation: <Menu Bar> -> edit -->> Alt + e
+---
 -notepad++
 -vsc
 -vim
@@ -286,77 +292,15 @@ job schedulers
 - desktop publishers
 
 
+-visual studio code -->> Code.exe
 
+-notepadd++ -->> Notepad++.exe
 
+-vim -->> vim file_name
+--CLI
+--nvim -->> nvim file_name
+---CLI
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-& & & & & & & Editors & & & & & &
-
-^ ^ ^ ^ ^ NotePad ^ ^ ^ ^ ^
-
-^ ^ ^ ^ text manipulation - edit 
-
-Windows Naming -> Notepad.exe
-
-MenuBar
-Editor Area
-StatusBar
-
-what more? (look at the ides below)
-
-vsc? notepad++?
-
-Windows Naming -> Code.exe
-Windows Naming -> Notepad++.exe
-
-
-& & & & & & Vim ^ ^ ^ ^ ^
-
-
-
-^ ^ ^ ^ ^ NeoVim ^ ^ ^ ^ ^
 
 map to nvim portion, difference between tree sitter and LSP:
 -------------
@@ -373,6 +317,94 @@ with a deeper understanding of the programming language, not based just on regul
 but you can do more things, such as selecting blocks or jumping among them. One of my favorite goodies is being able to ask the editor what 
 function my cursor is inside.
 --------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
