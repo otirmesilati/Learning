@@ -71,6 +71,7 @@ Left-Click Notification Area Button --> spr + a
 
 & & & & & & Microsoft Office & & & & & &
 
+maybe move the shortcuts to the individual frames mapping below?
 -- regular 4
 ---word
 ----sc - winword
@@ -97,13 +98,13 @@ Left-Click Notification Area Button --> spr + a
 -- control panel (control of Environment, system preferences, personalization)
 ---control panel -> control.exe
 --defrag
----defrag -> defrag.exe
+---defrag -->> defrag.exe
 --media player
----media player -> dvdplay.exe
+---media player -->> dvdplay.exe
 --dialer
----dialer -> dialer.exe
--- event viewer (view logging, monitoring, warnings)
--- task manager (process handling)
+---dialer -->> dialer.exe
+-- event viewer (view logging, monitoring, warnings) -->> eventvwr.exe
+-- task manager (process handling) -->> taskmgr.exe
 -- network center (network config)
 -- resource monitor<refmon> (hardware monitoring)
 -- performance monitor<perfmon> (a broader system monitor than refmon)
@@ -111,6 +112,28 @@ Left-Click Notification Area Button --> spr + a
 -- regestry editor (windows native DB)
 -- windows disk-cleaner manager (space freer)
 -- disk manager (as GUI api) & Disk Part (as CLI/terminal/shell api) 
+
+
+map the following:
+?? -->> charmap
+?? -->> appwiz.cpl
+?? -->> compmgmt.msc
+?? -->>
+?? -->>
+?? -->>
+?? -->> control /name Microsoft.BackupAndRestoreCenter
+?? -->> control /name Microsoft.BackupAndRestoreCenter
+?? -->> control /name Microsoft.BitLockerDriveEncryption
+?? -->> control /name Microsoft.AutoPlay
+?? -->> control /name Microsoft.CredentialManager
+
+?? -->> control /name Microsoft.BitLockerDriveEncryption
+?? -->> control /name Microsoft.BitLockerDriveEncryption
+?? -->> control /name Microsoft.BitLockerDriveEncryption
+?? -->> control /name Microsoft.BitLockerDriveEncryption
+
+
+
 
 what about dedicated folders for these? utilities folder? wasn't there another one? how to map those?
 
@@ -240,7 +263,8 @@ job schedulers
 -- packer
 -- apt
 --winget
-
+--oh-my-posh
+--mocha
 
 
 
@@ -683,20 +707,7 @@ mongodbcompass
 
 
 
-& & & & & & Windows NT Desktopping SCs & & & & & &
-
-^ ^ ^ ^ ^ Windows 10 Navigation ^ ^ ^ ^ ^ 
-
-move this - windows versions should contian relatively little stuff, but to where?
-1. Launch Run command: -> super + r
-2. Launch TaskManager: -> ctrl + shft + esc
-3. Launch n-th pinned Icon in TaskBar: ->super+<Number>
-4. Round-Robin focus between open windows: ->alt + tab
-5. Round-Robin focus between open windows in reverse: ->shft + alt + tab
-6. Open active/open window menu: ->super + tab 
-7.
-
-
+move this to the desktopping portion
 ^ ^ ^ ^ ^ MacOS Deskttoping SCs ^ ^ ^ ^ ^
 
 

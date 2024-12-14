@@ -25,6 +25,50 @@ a small tweak to the mapping(if not present):
 
 
 
+
+
+
+
+
+merge this to the below portion 
+& & & & & & Windows NT Desktopping SCs & & & & & &
+
+^ ^ ^ ^ ^ Windows 10 Navigation ^ ^ ^ ^ ^ 
+
+move this - windows versions should contian relatively little stuff, but to where?
+1. Launch Run command: -> super + r
+2. Launch TaskManager: -> ctrl + shft + esc
+3. Launch n-th pinned Icon in TaskBar: ->super+<Number>
+4. Round-Robin focus between open windows: ->alt + tab
+5. Round-Robin focus between open windows in reverse: ->shft + alt + tab
+6. Open active/open window menu: ->super + tab 
+7.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 & & & & & & Windows Desktopping & & & & & &
 
 ^ ^ ^ ^ ^ Desktop Background ^ ^ ^ ^ ^
