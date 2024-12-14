@@ -144,6 +144,58 @@ what about dedicated folders for these? utilities folder? wasn't there another o
 
 
 
+& & & & & & Shells & & & & & &
+
+-cmd 
+--command prompt -> CMD.exe
+
+
+
+
+
+
+
+
+
+
+
+
+
+control panel -> control.exe
+defrag -> defrag.exe
+media player -> dvdplay.exe
+dialer -> dialer.exe
+
+ ^ ^ ^ ^ Settings Sections ^ ^ ^ ^
+
+    Display: Settings -> System Default    -> DpiScaling.exe
+
+    ^ ^ ^ ^ Behaviour ^ ^ ^ ^ 
+
+    Display Side Window     -> DisplaySwitch.exe
+
+
+job schedulers
+- task scheduler
+-- tasks
+--- when (time, event)
+--- what (execute, send email, display message)
+
+- CICD schdeuler
+-- jobs
+--- local machine
+--- network
+--- nodes
+-- pipelines 
+
+
+
+
+
+
+
+
+
 & & & & & & Installers & & & & & &
 
 - installers don't take into consideration any other software and versions than the one it installs -> hurt other install dependencies
@@ -273,35 +325,6 @@ what about dedicated folders for these? utilities folder? wasn't there another o
 
 
 
-shells 
-command prompt -> CMD.exe
-
-control panel -> control.exe
-defrag -> defrag.exe
-media player -> dvdplay.exe
-dialer -> dialer.exe
-
- ^ ^ ^ ^ Settings Sections ^ ^ ^ ^
-
-    Display: Settings -> System Default    -> DpiScaling.exe
-
-    ^ ^ ^ ^ Behaviour ^ ^ ^ ^ 
-
-    Display Side Window     -> DisplaySwitch.exe
-
-
-job schedulers
-- task scheduler
--- tasks
---- when (time, event)
---- what (execute, send email, display message)
-
-- CICD schdeuler
--- jobs
---- local machine
---- network
---- nodes
--- pipelines 
 
 
 
@@ -312,6 +335,8 @@ job schedulers
 & & & & & & & Editors & & & & & &
 
 ^ ^ ^ ^ ^ NotePad ^ ^ ^ ^ ^
+
+^ ^ ^ ^ text manipulation - edit 
 
 Windows Naming -> Notepad.exe
 
