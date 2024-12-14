@@ -43,32 +43,12 @@ Kill
 
 
 
-< < < < < < < Frame Processes: Families/SoftWare Suites > > > > > > > 
+< < < < < < < Frame Processes > > > > > > > 
 
+% % % % % % % Frame Suites/Families % % % % % % % 
 
+& & & & & & Microsoft Office & & & & & &
 
-
-
-
-
-
-
-- Windows System Utility Apps (reorder what's below in a meaningful way)
--- control panel (control of Environment, system preferences, personalization)
--- event viewer (view logging, monitoring, warnings)
--- task manager (process handling)
--- network center (network config)
--- resource monitor<refmon> (hardware monitoring)
--- performance monitor<perfmon> (a broader system monitor than refmon)
--- system configuration<msconfig>
--- regestry editor (windows native DB)
--- windows disk-cleaner manager (space freer)
--- disk manager (as GUI api) & Disk Part (as CLI/terminal/shell api) 
-
-what about dedicated folders for these? utilities folder? wasn't there another one? how to map those?
-
-
-- Office Suite
 -- regular 4
 ---word
 ----sc - winword
@@ -85,7 +65,25 @@ what about dedicated folders for these? utilities folder? wasn't there another o
 
 
 
-- Photoshop Suite
+
+
+
+
+& & & & & & Windows System Utility & & & & & & 
+
+- Windows System Utility Apps (reorder what's below in a meaningful way)
+-- control panel (control of Environment, system preferences, personalization)
+-- event viewer (view logging, monitoring, warnings)
+-- task manager (process handling)
+-- network center (network config)
+-- resource monitor<refmon> (hardware monitoring)
+-- performance monitor<perfmon> (a broader system monitor than refmon)
+-- system configuration<msconfig>
+-- regestry editor (windows native DB)
+-- windows disk-cleaner manager (space freer)
+-- disk manager (as GUI api) & Disk Part (as CLI/terminal/shell api) 
+
+what about dedicated folders for these? utilities folder? wasn't there another one? how to map those?
 
 
 
@@ -93,36 +91,59 @@ what about dedicated folders for these? utilities folder? wasn't there another o
 
 
 
-<<<<<<<< Frame Categories % % % % % % % 
 
-Maximize
-Restore
-MiniMize
-Size
-Close
+
+& & & & & & Adobe & & & & & & 
+
+- Photoshop Suite?
 
 
 
 
 
-package managers vs installers:
-- installers don't take into consideration any other software than the one it installs -> hurt other install dependencies
-- package managers do -> thus also take into consideration of handling version conflicts -> minimize dependency hell
+
+
+% % % % % % % Frame States % % % % % % % 
+
+- Maximize
+- Restore
+- MiniMize
+- Size
+- Close
+
+
+
+
+
+
+
+
+
+% % % % % % % Frame Based on Application Types % % % % % % % 
+
+& & & & & & Installers & & & & & &
+
+- installers don't take into consideration any other software and versions than the one it installs -> hurt other install dependencies
+
+
+
+
+
+
+
+& & & & & & Package Managers & & & & & &
+
+- package managers take into consideration other versions -> thus also take into consideration of handling version conflicts -> minimize dependency hell
 - packmans: pip(for python packages).. what more?
-
-
-how to order the following?
-- homebrew
-- choco
--- 
-- pip
-- scoop
-- packer
-
-
-
-
-what more desktop apps? (file browsers? internet browser?...)
+-examples
+-- homebrew
+-- choco
+-- npm 
+-- pip
+-- scoop
+-- packer
+-- apt
+--winget
 
 
 
