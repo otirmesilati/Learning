@@ -43,12 +43,87 @@ Kill
 
 
 
-< < < < < < < Frame Processes > > > > > > > 
+< < < < < < < Linux Frame Processes > > > > > > > 
+
+% % % % % % % Linux Frame Suites/Families % % % % % % % 
+
+& & & & & & ? Office & & & & & &
 
 
 
 
 
+
+
+
+
+& & & & & & Linux System Utility & & & & & & 
+
+
+
+
+
+
+
+
+
+% % % % % % % Linux Frame Manipulation % % % % % % % 
+
+- Maximize
+- Restore
+- MiniMize
+- Size
+- Close
+
+
+
+
+
+
+
+
+
+% % % % % % % Linux Frames - Application Types % % % % % % % 
+
+continue to map from here
+& & & & & & HyperVisors & & & & & &
+& & & & & & Container Manager & & & & & &
+& & & & & & Shells & & & & & &
+& & & & & & W(ork)L(oad)A(utomation) Manager/Job Schedulers & & & & & &
+& & & & & & Installers & & & & & &
+& & & & & & Package Managers & & & & & &
+^ ^ ^ ^ ^ FTP File Managers ^ ^ ^ ^ ^ 
+& & & & & & Web Browsers & & & & & &
+& & & & & & Editors & & & & & &
+^ ^ ^ ^ ^ Word Processors ^ ^ ^ ^ ^
+^ ^ ^ ^ ^ Code Editors ^ ^ ^ ^ ^
+^ ^ ^ ^ ^ IDES ^ ^ ^ ^ ^
+
+& & & & & & Editors & & & & & &
+
+map/dfs like this(from functionality to visuals):
+-notepad -->> Notepad.exe 
+--GUI
+---MenuBar -<Top>
+---Editor Area -<Center>
+---StatusBar -<Bottom>
+
+----funftionalities
+-----text manipulation: <Menu Bar> -> edit -->> Alt + e
+---
+-notepad++
+-vsc
+-vim
+
+
+
+
+
+
+
+
+
+< < < < < < < Windows Frame Processes > > > > > > > 
 
 where to map this to?  maybe the frame manipulation? 
 % % % % % % % OS Desktopping SCs & Global SCs % % % % % % %
@@ -67,7 +142,7 @@ Left-Click Notification Area Button --> spr + a
 
 
 
-% % % % % % % Frame Suites/Families % % % % % % % 
+% % % % % % % Windows Frame Suites/Families % % % % % % % 
 
 & & & & & & Microsoft Office & & & & & &
 
@@ -162,7 +237,7 @@ what about dedicated folders for these? utilities folder? wasn't there another o
 
 
 
-% % % % % % % Frame Manipulation % % % % % % % 
+% % % % % % % Windows Frame Manipulation % % % % % % % 
 
 - Maximize
 - Restore
@@ -178,7 +253,7 @@ what about dedicated folders for these? utilities folder? wasn't there another o
 
 
 
-% % % % % % % Frame Based on Application Types % % % % % % % 
+% % % % % % % Windows Frames - Application Types % % % % % % % 
 
 & & & & & & HyperVisors & & & & & &
 
