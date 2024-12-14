@@ -18,8 +18,12 @@ app server - app logic handling
 ---node-modules - node libraries
 ---package-lock - version management of dependency versions
 --nodemon utility - restarts app after changes are made
+--dotenv - parameters configuration
 
-
+-routing
+--pathing to resources - activating functions in the backend
+--routing handlers:
+---express' router object
 
 Map from the following:
 1. 

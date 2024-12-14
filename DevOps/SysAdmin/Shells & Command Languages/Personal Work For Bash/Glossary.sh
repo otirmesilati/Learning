@@ -432,6 +432,9 @@ node file_name
 #npm
 
 npm install 
+npm install nodemon
+npm install --save-dev nodemon # install on current environment
+npm install dotenv
 
 #generating json
 
