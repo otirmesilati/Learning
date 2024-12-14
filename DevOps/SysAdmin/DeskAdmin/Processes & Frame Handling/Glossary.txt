@@ -45,6 +45,28 @@ Kill
 
 < < < < < < < Frame Processes > > > > > > > 
 
+
+
+
+
+
+where to map this to?  maybe the frame manipulation? 
+% % % % % % % OS Desktopping SCs & Global SCs % % % % % % %
+
+
+Desktop Backround View/Minimize all windows --> spr + d 
+Left-Click Start Button --> spr
+Focus On Search-Box --> spr + <Text>
+Left-Click <Digit> Pinned App Icon --> spr + <Digit>
+Left-Click System Tray Arrow --> spr + b
+Left-Click Notification Area Button --> spr + a
+
+
+
+
+
+
+
 % % % % % % % Frame Suites/Families % % % % % % % 
 
 & & & & & & Microsoft Office & & & & & &
@@ -117,7 +139,7 @@ what about dedicated folders for these? utilities folder? wasn't there another o
 
 
 
-% % % % % % % Frame States % % % % % % % 
+% % % % % % % Frame Manipulation % % % % % % % 
 
 - Maximize
 - Restore
@@ -273,9 +295,9 @@ job schedulers
 map/dfs like this(from functionality to visuals):
 -notepad -->> Notepad.exe 
 --GUI
----MenuBar - Top
----Editor Area - center
----StatusBar - Bottom
+---MenuBar -<Top>
+---Editor Area -<Center>
+---StatusBar -<Bottom>
 
 ----funftionalities
 -----text manipulation: <Menu Bar> -> edit -->> Alt + e
@@ -313,27 +335,28 @@ Insert - For reading + writing -->> ?
 -----? file explorer
 -----? git integration
 -----fuzzy finder ?
-
-
-
+--dot files - nvim will look at it every time it loads the condif
+---file structure
+----lua folder - loads all the imports from there
+----user
+-----core
+------colorscheme
+------options
+-------using the vim global variable
+--------relative numbers present (add lua code here)
+--------cursor line number is shown (add lua code here)
 
 
 
 merge-map the following to the above:
 
-nvim 
--init lua
--- nvim will look at it every time it loads the condif
---- imports all the libraries from the lua folder
--lua
--- dependencies
---user
----core
-----colorscheme
-----options (vil opt global)
------ using the vim global variable
------- relative numbers present
------- curson line number is shown
+
+
+
+
+
+
+
 ------ tabbing two spaces
 ------ case insensitive for lower case and sensitive for upper case search in TUIL
 ------ enabling true terminal color schemes and dark background
@@ -374,126 +397,120 @@ function my cursor is inside.
 
 ^ ^ ^ ^ ^ IDES ^ ^ ^ ^ ^
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-& & & & & & IDEs & & & & & &
-
-^ ^ ^ ^ ^ Eclipse ^ ^ ^ ^ ^
-Windows Naming -> Eclipse.exe
-
-^ ^ ^ ^ Eclipse Perspective ^ ^ ^ ^
-
-default perspective:
-- MenuBar
-- ToolBar
+-eclipse -->> Eclipse.exe
+--perspective - visual representation of components
+---defualt perspective
+---- MenuBar -<Top>
+----ToolBar -<Top, Below Menubar>
 - Package-Explorer View
 - Editor Area
 - Outline View
 - Problems View
 
+
+
+
+
+
+
+
+
+
 ^ ^ ^ ^ File Creation ^ ^ ^ ^
 
 project: -> file -> new -> java project 
 class: -> file -> new -> class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ^ ^ ^ ^ ^ Visual Studio ^ ^ ^ ^ ^
@@ -657,8 +674,6 @@ mongodbcompass
 
 
 
-merge mape this to the frame mappings above
-< < < < < < < < ShortCuts > > > > > > > >   
 
 
 
@@ -666,17 +681,6 @@ merge mape this to the frame mappings above
 
 
 
-
-
-% % % % % % % OS Desktopping SCs & Global SCs % % % % % % %
-
-
-Desktop Backround View/Minimize all windows --> spr + d 
-Left-Click Start Button --> spr
-Focus On Search-Box --> spr + <Text>
-Left-Click <Digit> Pinned App Icon --> spr + <Digit>
-Left-Click System Tray Arrow --> spr + b
-Left-Click Notification Area Button --> spr + a
 
 
 & & & & & & Windows NT Desktopping SCs & & & & & &
