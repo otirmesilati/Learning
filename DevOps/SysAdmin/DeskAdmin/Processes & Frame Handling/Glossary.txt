@@ -121,9 +121,34 @@ what about dedicated folders for these? utilities folder? wasn't there another o
 
 % % % % % % % Frame Based on Application Types % % % % % % % 
 
+& & & & & & HyperVisors & & & & & &
+
+-Spinning multiple kernels(move to virtualization?)
+- hypervisors as supervisors of kernels (maybe move to virtualization?)
+-examples
+--qemu
+---virt-manager
+--virtual box
+
+
+& & & & & & Container Manager & & & & & &
+
+-Os Kernel(move to containerization?)
+-docker desktop
+
+
+
+
+
+
+
+
+
 & & & & & & Installers & & & & & &
 
 - installers don't take into consideration any other software and versions than the one it installs -> hurt other install dependencies
+
+
 
 
 
@@ -153,24 +178,22 @@ what about dedicated folders for these? utilities folder? wasn't there another o
 
 
 
-^ ^ ^ ^ ? file browser (manager) - api calls inside the machine (leave it in the title? write this somewhere else? important intuition)
+& & & & & & File Managers/Browsers & & & & & & 
 
-mc's windows file manager? apple's files? total commander? Linux' thunar, nautilus, xfe(xfileexplorer), gnome files, dolphin, pcman?...
+-windows file explorer
+-thunar
+-dolphin
+-xfe
 
-non GUId file managers? 
-
-^ ^ ^ ? internet browser - file browser + api calls outside the machine(same sentiment as above, important to adress)
-
-chrome? firefox? edge? 
-
-package manager?
-
+-api calls inside the machine (leave it in the title? write this somewhere else? important intuition)
+-mc's windows file manager? apple's files? total commander? Linux' thunar, nautilus, xfe(xfileexplorer), gnome files, dolphin, pcman?...
+-non GUId file managers?
 
 
+^ ^ ^ ^ ^ FTP File Managers ^ ^ ^ ^ ^ 
 
-
-file ftp file browser
--filezilla
+-file zilla
+-commander one
 
 
 
@@ -180,23 +203,72 @@ file ftp file browser
 
 
 
+& & & & & & Web Browsers & & & & & &
+
+- file browser + api calls outside the machine(same sentiment as above, important to adress)
+-chrome
+-firefox
+-edge? 
+-Tor
 
 
 
 
 
-& & & & & & HyperVisors - Supervisors of Kernels & & & & & &
-
-^ ^ ^ ^ ^ Virtual-Box ^ ^ ^ ^ ^
-Windows Naming -> ?
 
 
-^ ^ ^ ^ ^ Virt-Manager (built on top of KVM/QEMU..) ^ ^ ^ ^ ^
-Windows Naming -> ?
 
 
-^ ^ ^ ^ ^ Docker-Desktop ^ ^ ^ ^ ^
-Windows Naming -> ?
+& & & & & & Editors & & & & & &
+
+-notepad
+-notepad++
+-vsc
+-vim
+
+^ ^ ^ ^ ^ Word Processors ^ ^ ^ ^ ^
+
+- wordpad
+- word
+
+- desktop publishers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
