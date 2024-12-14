@@ -291,10 +291,12 @@ map/dfs like this(from functionality to visuals):
 
 - desktop publishers
 
+^ ^ ^ ^ ^ Code Editors ^ ^ ^ ^ ^
+
 
 -visual studio code -->> Code.exe
 
--notepadd++ -->> Notepad++.exe
+-notepad++ -->> Notepad++.exe
 
 -vim -->> vim file_name
 --CLI
@@ -311,7 +313,6 @@ Insert - For reading + writing -->> ?
 -----? file explorer
 -----? git integration
 -----fuzzy finder ?
-
 
 
 
@@ -371,7 +372,7 @@ function my cursor is inside.
 --------------
 
 
-
+^ ^ ^ ^ ^ IDES ^ ^ ^ ^ ^
 
 
 
@@ -584,6 +585,79 @@ mongodbcompass
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+merge mape this to the frame mappings above
 < < < < < < < < ShortCuts > > > > > > > >   
 
 
