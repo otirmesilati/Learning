@@ -300,6 +300,58 @@ map/dfs like this(from functionality to visuals):
 --CLI
 --nvim -->> nvim file_name
 ---CLI
+----T(ext)U(ser)I(nterface)L(ine) -->> ?
+-----normal - for reading -->> ?
+-----Visual - Normal + text select -->> ?
+Insert - For reading + writing -->> ?
+----Configurations
+-----Lualine TUIL
+-----TreeSitter Syntax HighLighting 
+-----? Code Snippets
+-----? file explorer
+-----? git integration
+-----fuzzy finder ?
+
+
+
+
+
+
+
+merge-map the following to the above:
+
+nvim 
+-init lua
+-- nvim will look at it every time it loads the condif
+--- imports all the libraries from the lua folder
+-lua
+-- dependencies
+--user
+---core
+----colorscheme
+----options (vil opt global)
+----- using the vim global variable
+------ relative numbers present
+------ curson line number is shown
+------ tabbing two spaces
+------ case insensitive for lower case and sensitive for upper case search in TUIL
+------ enabling true terminal color schemes and dark background
+------ enabling system clipboard
+------ enabling split h/v window
+----keymaps
+----- leader key configuration
+----- nvim navigator (between split panes)
+----- split panes maximizer
+----- vim motions suround and replace
+---plugins
+----lualine
+----telescope
+----nvimtree
+----comments
+----- enables commeting out line with gcc
+---plugins-setup
+
+
 
 
 map to nvim portion, difference between tree sitter and LSP:
@@ -408,56 +460,11 @@ function my cursor is inside.
 
 
 
-nvim video list?
 
 
-^ ^ ^ ^ T(ext)U(ser)I(nterface)L(ine) ^ ^ ^ ^
 
-^ ^ ^ Modes ^ ^ ^
 
-Normal - For reading
-Visual - Normal + text select
-Insert - For reading + writing
 
-^ ^ ^ ^ Configurations ^ ^ ^ ^
-
-TUIL(lualine)
-syntax highlighting (treesitter)
-code snippets (lsp)
-file explorer
-git integration
-fuzzy finder
-
-nvim 
--init lua
--- nvim will look at it every time it loads the condif
---- imports all the libraries from the lua folder
--lua
--- dependencies
---user
----core
-----colorscheme
-----options (vil opt global)
------ using the vim global variable
------- relative numbers present
------- curson line number is shown
------- tabbing two spaces
------- case insensitive for lower case and sensitive for upper case search in TUIL
------- enabling true terminal color schemes and dark background
------- enabling system clipboard
------- enabling split h/v window
-----keymaps
------ leader key configuration
------ nvim navigator (between split panes)
------ split panes maximizer
------ vim motions suround and replace
----plugins
-----lualine
-----telescope
-----nvimtree
-----comments
------ enables commeting out line with gcc
----plugins-setup
 
 
 
