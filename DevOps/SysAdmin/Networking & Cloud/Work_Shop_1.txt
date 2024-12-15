@@ -144,12 +144,20 @@ Device Network
 -- de-encapsulates a packet, and checks where to send it (via it's IP)
 -- switch(L2 element)
 --- 24+ RJ 45 interfaces/ports
+-L(ocal)A(area)N(etwork) - group of devices taht will recieve broadcast frame (broadcast domain)
+--broadcast problem : unnecessary and non secure (packets that dont go through router before reaching different department destination) broadcast traffic solution
+--- splitting to separate subnets
+--- switch in split subnet problem - can break router's virtual separation by broadcasting frames
+---- pyhsical solution: buy a different switch for each subnet and seperate physically 
+---- V(irtual)LAN - L2 separation
+----- each port is grouped into a VLAN - thus stopping different subnet communication
+-- According To the switches
 - Network Movement
--- L2 Level:
+-- L2 Level: Pathing
 --- Each device has MAC adress
 --- Each port has type (F0/0, f0/1.. For fast internet)
 --- MAC Tables On Switch - Dynamic Learning MAC addresses
----- Learning/Binding MAC addresses to ports which they arrived from
+---- Dynamic: Learning/Binding MAC addresses to ports which they arrived from
 ---- The Learning proccess only happens when a packet arrives at a switch (Not when forwarded)
 ---- Not knowing where to send packets to? -> flood ports(send to every port except where the packet was recieved from)
 ---- Elements that get Un-wanted frames -> Drops the packets 
@@ -167,8 +175,14 @@ Device Network
 ---- IP ping (ICMP)
 ----- ICMP request
 ----- ICMP reply
--LAN
--- According To the switches
+-- L3 Level: Routing
+--- Each device has an IP
+--- Routing tables on Routers - To check if there are known routes
+---- Dynamic(OSPF): Learning/Binding IP Address And Sharing routing tables
+----- Destination IP is itself? receive the packet
+----- Destination IP is direct? forward it
+----- Destination IP is not direct? send to next hop
+--- Static routing: manually configuring routes
 
 
 
