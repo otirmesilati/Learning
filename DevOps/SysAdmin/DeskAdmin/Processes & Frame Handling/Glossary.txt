@@ -69,6 +69,7 @@ Kill
 
 % % % % % % % Linux Frame Manipulation % % % % % % % 
 
+what to leave here from here?
 - Maximize
 - Restore
 - MiniMize
@@ -85,19 +86,210 @@ Kill
 
 % % % % % % % Linux Frames - Application Types % % % % % % % 
 
-continue to map from here
 & & & & & & HyperVisors & & & & & &
+
+
+
+
+
+
+
+
+
 & & & & & & Container Manager & & & & & &
+
+
+
+
+
+
+
+
+
 & & & & & & Shells & & & & & &
+
+
+
+
+
+
+
+
+
 & & & & & & W(ork)L(oad)A(utomation) Manager/Job Schedulers & & & & & &
+
+
+
+
+
+
+
+
+
 & & & & & & Installers & & & & & &
+
+-the linux installers?
+
+
+
+
+
+
+
+
+
 & & & & & & Package Managers & & & & & &
+
+-apt? what more?
+
+
+
+
+
+
+
+
+
 ^ ^ ^ ^ ^ FTP File Managers ^ ^ ^ ^ ^ 
+
+
+
+
+
+
+
+
+
 & & & & & & Web Browsers & & & & & &
+
+- firefoex?
+
+
+
+
+
+
+
+
+
 & & & & & & Editors & & & & & &
+
+-mousepad? 
+
+
+
+
+
+
+
+
+
 ^ ^ ^ ^ ^ Word Processors ^ ^ ^ ^ ^
+
+-libreword?
+
+
+
+
+
+
+
+
+
 ^ ^ ^ ^ ^ Code Editors ^ ^ ^ ^ ^
+
+-vim -->> vim file_name
+--CLI
+--nvim -->> nvim file_name
+---CLI
+----T(ext)U(ser)I(nterface)L(ine) -->> ?
+-----normal - for reading -->> ?
+-----Visual - Normal + text select -->> ?
+Insert - For reading + writing -->> ?
+----Configurations
+-----Lualine TUIL
+-----TreeSitter Syntax HighLighting 
+-----? Code Snippets
+-----? file explorer
+-----? git integration
+-----fuzzy finder ?
+--dot files - nvim will look at it every time it loads the condif
+---file structure
+----lua folder - loads all the imports from there
+----user
+-----core
+------colorscheme
+------options
+-------using the vim global variable
+--------relative numbers present (add lua code here)
+--------cursor line number is shown (add lua code here)
+
+
+
+merge-map the following to the above:
+
+
+
+
+
+
+
+
+------ tabbing two spaces
+------ case insensitive for lower case and sensitive for upper case search in TUIL
+------ enabling true terminal color schemes and dark background
+------ enabling system clipboard
+------ enabling split h/v window
+----keymaps
+----- leader key configuration
+----- nvim navigator (between split panes)
+----- split panes maximizer
+----- vim motions suround and replace
+---plugins
+----lualine
+----telescope
+----nvimtree
+----comments
+----- enables commeting out line with gcc
+---plugins-setup
+
+
+
+
+map to nvim portion, difference between tree sitter and LSP:
+-------------
+LSP is a protocol while tree-sitter is a parsing tool and library. LSP is a protocol developed by Microsoft for IDEs to communicate with a separate process 
+to provide annotations and insight into source code. Practically, tree-sitter is usually used for syntax highlighting, 
+while servers implementing LSP are used for compilation errors, warnings, jump to definition, linter warnings, symbol highlighting, etc etc etc.
+
+
+	
+leephillips on March 13, 2022
+
+Tree-sitter works like a syntax highlighting plugin, and doesnt require communication with an external process. Its like syntax highlighting but 
+with a deeper understanding of the programming language, not based just on regular expressions. So not only is the highlighting better,
+but you can do more things, such as selecting blocks or jumping among them. One of my favorite goodies is being able to ask the editor what 
+function my cursor is inside.
+--------------
+
+
+
+
+
+
+
+
+
+
 ^ ^ ^ ^ ^ IDES ^ ^ ^ ^ ^
+
+
+
+
+
+
+
+
 
 & & & & & & Editors & & & & & &
 
@@ -419,79 +611,6 @@ map/dfs like this(from functionality to visuals):
 
 -notepad++ -->> Notepad++.exe
 
--vim -->> vim file_name
---CLI
---nvim -->> nvim file_name
----CLI
-----T(ext)U(ser)I(nterface)L(ine) -->> ?
------normal - for reading -->> ?
------Visual - Normal + text select -->> ?
-Insert - For reading + writing -->> ?
-----Configurations
------Lualine TUIL
------TreeSitter Syntax HighLighting 
------? Code Snippets
------? file explorer
------? git integration
------fuzzy finder ?
---dot files - nvim will look at it every time it loads the condif
----file structure
-----lua folder - loads all the imports from there
-----user
------core
-------colorscheme
-------options
--------using the vim global variable
---------relative numbers present (add lua code here)
---------cursor line number is shown (add lua code here)
-
-
-
-merge-map the following to the above:
-
-
-
-
-
-
-
-
------- tabbing two spaces
------- case insensitive for lower case and sensitive for upper case search in TUIL
------- enabling true terminal color schemes and dark background
------- enabling system clipboard
------- enabling split h/v window
-----keymaps
------ leader key configuration
------ nvim navigator (between split panes)
------ split panes maximizer
------ vim motions suround and replace
----plugins
-----lualine
-----telescope
-----nvimtree
-----comments
------ enables commeting out line with gcc
----plugins-setup
-
-
-
-
-map to nvim portion, difference between tree sitter and LSP:
--------------
-LSP is a protocol while tree-sitter is a parsing tool and library. LSP is a protocol developed by Microsoft for IDEs to communicate with a separate process 
-to provide annotations and insight into source code. Practically, tree-sitter is usually used for syntax highlighting, 
-while servers implementing LSP are used for compilation errors, warnings, jump to definition, linter warnings, symbol highlighting, etc etc etc.
-
-
-	
-leephillips on March 13, 2022
-
-Tree-sitter works like a syntax highlighting plugin, and doesnt require communication with an external process. Its like syntax highlighting but 
-with a deeper understanding of the programming language, not based just on regular expressions. So not only is the highlighting better,
-but you can do more things, such as selecting blocks or jumping among them. One of my favorite goodies is being able to ask the editor what 
-function my cursor is inside.
---------------
 
 
 ^ ^ ^ ^ ^ IDES ^ ^ ^ ^ ^
