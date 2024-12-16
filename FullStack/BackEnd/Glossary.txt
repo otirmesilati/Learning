@@ -17,9 +17,32 @@ FS Project
 --- passing the functionality as an arrow callback -> in the function, ('/', (req, res) => {})
 ----responsing a Hello World -> {res.send('Hello World!);}
 
--start the web server listening
+-start the web server on a port
 --using the express set functionality -> in app.js, app.listen();
 --- passing the functionality as an arrow callback -> in the function, (port , () => {})
+---Notifying in the terminal for success -> console.log('Yay');
+
+Setting up REST client
+-requests file -> create requests.rest file
+-- making the former get request through the client -> in requests.rest, GET http://localhost:3001
+-- testing -> pressing the Send Request option 
+
+Setting up nodemon for comfortablity refresh
+-install nodemon -> npm i --save-dev nodemon 
+-updating package json
+--running nodemon -> "devstart: nodemon app.js" 
+
+Setting up dotenv for Constants environment
+-install env -> npm install dotenv
+--file creation -> creating .env file
+--defining the port constant -> PORT = 3000
+
+Update - app.listen() function by dotenv update
+- reading the constant from dotenv
+-- importing the ditenv file -> in app,js, "const dotenv = require('dotenv').config();"
+-- creating a local port variable -> "const port = process.env.PORT;"
+--- Change the existing port -> from const PORT = 3000; ==> const PORT = process.env.PORT;
+
 
 
 
