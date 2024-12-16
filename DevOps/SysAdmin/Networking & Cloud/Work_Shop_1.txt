@@ -144,6 +144,7 @@ Device Network
 -- de-encapsulates a packet, and checks where to send it (via it's IP)
 -- switch(L2 element)
 --- 24+ RJ 45 interfaces/ports
+
 -L(ocal)A(area)N(etwork) - group of devices taht will recieve broadcast frame (broadcast domain)
 --broadcast problem : unnecessary and non secure (packets that dont go through router before reaching different department destination) broadcast traffic solution
 --- splitting to separate subnets
@@ -151,7 +152,9 @@ Device Network
 ---- pyhsical solution: buy a different switch for each subnet and seperate physically 
 ---- V(irtual)LAN - L2 separation
 ----- each port is grouped into a VLAN - thus stopping different subnet communication
+------to many subnets and to little amount if ports? trunk! - all in one!
 -- According To the switches
+
 - Network Movement
 -- L2 Level: Pathing
 --- Each device has MAC adress
@@ -175,6 +178,7 @@ Device Network
 ---- IP ping (ICMP)
 ----- ICMP request
 ----- ICMP reply
+
 -- L3 Level: Routing
 --- Each device has an IP
 --- Routing tables on Routers - To check if there are known routes
