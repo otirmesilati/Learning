@@ -43,6 +43,21 @@ Update - app.listen() function by dotenv update
 -- creating a local port variable -> "const port = process.env.PORT;"
 --- Change the existing port -> from const PORT = 3000; ==> const PORT = process.env.PORT;
 
+Building the Routing Logic
+- for checking purposes, we'll expand our backend logic 
+--change the get function to be routed to post logic -> change '/' path to '/test'
+--adding two get and post functions in the back to app.js
+-> app.get('/post', (req, res)) {res.send('app get post')}
+-> app.post('/post', (req, res)) {res.send('app post post')}
+-- And Update on the front - the REST client requests:
+-> Change GET http://localhost:3001 ==> GET http://localhost:3001
+--Adding the two client requests
+-> GET http://localhost:3001/post
+-> POST http://localhost:3001/test
+
+
+
+
 
 
 
