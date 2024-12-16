@@ -55,11 +55,15 @@ Building the Routing Logic
 -> GET http://localhost:3001/post
 -> POST http://localhost:3001/test
 
-
-
-
-
-
+-Setting up the routing logic
+-- Moving the post function into routes/post_routes.js
+--importing express -> in post_routes.js
+-- Adding the express' router --> in post_routes.js, const router = express.Router();
+-- Delegating App's client API logic to the express router -> changing app.get and app.post to router.get and router.post
+--exporting to app.js
+--- enable exportation -> in routes_post.js, "module.exports = router;"
+--- using routing logic in app.js -> in app.js, "app.use();"
+--- chain of responsibility into the route in the function -> in the parantheses, put the two parameters "'/post', post_routes"
 
 
 
