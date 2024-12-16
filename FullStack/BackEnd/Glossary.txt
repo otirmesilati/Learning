@@ -1,4 +1,4 @@
-move this:
+move this to the appropriate mapping (maybe big projects mapping?):
 FS Project
 
 - Setting up app server -> run on terminal "npm init" 
@@ -64,6 +64,28 @@ Building the Routing Logic
 --- enable exportation -> in routes_post.js, "module.exports = router;"
 --- using routing logic in app.js -> in app.js, "app.use();"
 --- chain of responsibility into the route in the function -> in the parantheses, put the two parameters "'/post', post_routes"
+
+-Setting up the controller logic
+-- Creating the Controllers Folder
+-- Moving functionality logic from routing to controller
+--- make the post.js file
+---- move the functions from routes to post.js
+---- export the function
+----connect to app.js
+
+-Setting up DataBase - using mongoose
+-- install the mongoose packages -> run in terminal "npm i mongoose"
+--requiring the mongoose dependency -> in app.js, "const mongoose = require('mongoose');"
+--connecnt the DB
+--- connecting the DB through the connect function -> in app.js "mongoose.connect();"
+----passing the url -> "process.env.DATABASE_URL, {useNewUrlParses: true}"
+---wrapping the connection inside a local variable -> in app.js "const db = mongoose.connection"
+---error handling
+---- fail -> db.on('error', error=>{console.error(error)});
+---- success -> db.once('open', ()=>{console.log('Connected to MongoDB');});
+
+
+
 
 
 
