@@ -1,13 +1,26 @@
 move this:
 FS Project
+
 - Setting up app server -> run on terminal "npm init" 
 -- fill in the Detailes of the project
+
 - Setup Gitignore with node_modules - so it be problematic later on
 -initiating the web server -> run on terminal "npm i express"
 --Automatically created - package json
+
 -creating the main app module -> creating app.js file
 -Using the express library -> in the app.js, "const express = require('express');"
 -- calling it as a function -> in the app.js, "const app = express();"
+
+-creating basic request
+--Using the express get functionality -> in app.js, app.get(); 
+--- passing the functionality as an arrow callback -> in the function, ('/', (req, res) => {})
+----responsing a Hello World -> {res.send('Hello World!);}
+
+-start the web server listening
+--using the express set functionality -> in app.js, app.listen();
+--- passing the functionality as an arrow callback -> in the function, (port , () => {})
+
 
 
 
