@@ -1,10 +1,16 @@
 move this:
 FS Project
-- Setting up app server -> run on terminal npm init 
+- Setting up app server -> run on terminal "npm init" 
 -- fill in the Detailes of the project
 - Setup Gitignore with node_modules - so it be problematic later on
--initiating the web server -> run on terminal npm i express
+-initiating the web server -> run on terminal "npm i express"
 --Automatically created - package json
+-creating the main app module -> creating app.js file
+-Using the express library -> in the app.js, "const express = require('express');"
+-- calling it as a function -> in the app.js, "const app = express();"
+
+
+
 
 
 
