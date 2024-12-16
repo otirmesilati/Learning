@@ -84,7 +84,23 @@ Building the Routing Logic
 ---- fail -> db.on('error', error=>{console.error(error)});
 ---- success -> db.once('open', ()=>{console.log('Connected to MongoDB');});
 
+Building the post's model
+- Creating a new models folder
+--creating a post model js file
+---requiring mongoose, in post models
+---Building the post schema
+---- wrapping the schema in postSchema variable -> in post_model, "const postSchema = new mongoose.Schema({});"
+-----Two attributes:
+------ Message string attribute
+------ Sender string attribute 
+---exporting the model -> in post_model.js, "module.exports = mongoose.model('Post',postSchema);"
 
+Configuring a response parses
+- Using the body Parser -> run in terminal "npm i body-parser"
+--making the local wrapper -> in app.js, "const body-parser = require('body-parser');"
+--using the url encoder and a json encoder:
+-> app.use(bodyParser.urlencoded({extended: true, limit: '1mb'}));
+-> app.use(bodyParses.json());
 
 
 
