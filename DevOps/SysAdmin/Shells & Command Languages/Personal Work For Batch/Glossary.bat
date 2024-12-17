@@ -356,8 +356,13 @@ rem For Line documentation - actual command
 
 ::   ^ ^ ^ ^ ^ Variable input ^ ^ ^ ^ ^
 
+:: Using set /p to get input from user
+set /p my_input=Enter your input:
+
 ::   ^ ^ ^ ^ ^ Console Output ^ ^ ^ ^ ^ 
 
+echo "Hello World" # standard ouput to terminal
+echo hello world # same output
 
 
 
@@ -422,15 +427,15 @@ rem No Binary literals
 ::   All of the arithmetic operators work in batch files. The following example shows arithmetic operators can be used in batch files.
 
 @echo off 
-SET /A a = 5 
-SET /A b = 10 
-SET /A c = %a% + %b% 
+set /A a = 5 
+set /A b = 10 
+set /A c = %a% + %b% 
 echo %c% 
-SET /A c = %a% - %b% 
+set /A c = %a% - %b% 
 echo %c% 
-SET /A c = %b% / %a% 
+set /A c = %b% / %a% 
 echo %c% 
-SET /A c = %b% * %a% 
+set /A c = %b% * %a% 
 echo %c%
 ::   The above command produces the following output.
 
