@@ -592,24 +592,13 @@ exit
 
 #   ^ ^ ^ ^ ^ Variable input ^ ^ ^ ^ ^
 
-# input of string - mention the problem of entering a space?
+read my_input # entering  Alice Bob  will fill the buffer, solution: enter "Alice Bob" instead
+read -p "Enter your input:" my_input #display a message 
 
 #   ^ ^ ^ ^ ^ Console Output ^ ^ ^ ^ ^ 
 
 echo "Hello World" # standard ouput to terminal
 echo hello world # same output
-
-
-
-
-
-
-
-#   & & & & & & Data Streaming & & & & & & 
-
-#   ^ ^ ^ ^ ^ Variable input ^ ^ ^ ^ ^
-
-#   ^ ^ ^ ^ ^ Console Output ^ ^ ^ ^ ^ 
 
 
 
@@ -743,7 +732,7 @@ echo $c
 
 #   ^ ^ ^ ^ ^ Variables & & & & & &
 
-# Bash is loosely types
+# Bash is loosely typed
 
 my_num=1
 my_string=the1iswasastring
