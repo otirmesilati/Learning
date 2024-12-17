@@ -102,6 +102,21 @@ Configuring a response parses
 -> app.use(bodyParser.urlencoded({extended: true, limit: '1mb'}));
 -> app.use(bodyParses.json());
 
+Saving a new post in Database
+-require the model -> "const Post = require('../models/post_model');"
+- two objects creation for - post c'tor and save functionality
+--post ctor
+---create a new post object -> in post.js, "const post = Post()"
+---input inside the paranthese the whole message/sender json
+-save functionality
+--defining the save function -> in post.js, "post.save()
+---callbacking inside for saving with error handling -> inside paranthese, (err, newPost)=>
+----handling the errors
+-----err invoked ==> raise status 400 -> res.status(400).send({})
+------ failed -> 'status' : 'failed'
+------ message providing -> 'message' : err.message
+----handling success the same way just with status 200 and a new post
+
 
 
 

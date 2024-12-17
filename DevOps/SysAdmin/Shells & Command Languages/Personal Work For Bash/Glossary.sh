@@ -18,6 +18,15 @@ env # list environment variables
 
 #   % % % % % % % Frame Handling % % % % % % %
 
+# Setting up a script
+#!/path_to_interpreter - the two symbols #! are the sehebang operator
+chmod u+x my_script
+
+
+
+
+
+
 
 
 
