@@ -114,10 +114,18 @@ Saving a new post in the DB
 - sending the response back -> res.status(200).send(newPost);
 - inputting an error handling behaviour
 
-Posting in the DB
+Listing posts in the DB (Basically the same implemantation as the above step)
 -changing the getAllPosts function into async
 -adding the try and catch blocks
--- in the try block, invoking the post's find -> "const posts =Post.find();" 
+-- in the try block, invoking the post's find -> "const posts = await Post.find();" 
+
+Finding the post by id in the DB(same implementation as the two above)
+-Creating getPostById
+--adding the getPostById to the 
+--- print the id in the terminal -> "console.log('getPostById:' + req.params.id);"
+-add an appropriate route -> in post_routes, "router.post('/:id'. Post.getById);"
+
+
 
 
 
