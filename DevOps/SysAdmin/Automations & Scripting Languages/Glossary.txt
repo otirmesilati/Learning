@@ -34,7 +34,7 @@ At the point's intro:
 
 - tool creation for automating tasks
 - pipeline design for artifacts 
-- prepare testing solutions for feedback broviding
+- prepare testing solutions for feedback providing
 - prepare data visualization for stakeholders + provide the inteligence needed
 - system monitoring
 

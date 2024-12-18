@@ -114,7 +114,10 @@ Saving a new post in the DB
 - sending the response back -> res.status(200).send(newPost);
 - inputting an error handling behaviour
 
-
+Posting in the DB
+-changing the getAllPosts function into async
+-adding the try and catch blocks
+-- in the try block, invoking the post's find -> "const posts =Post.find();" 
 
 
 
