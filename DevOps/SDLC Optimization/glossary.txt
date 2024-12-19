@@ -31,17 +31,19 @@ ci
 
 ci tools
 - jenkins
--- jobs - scripts proccesses
+--enables automation functionality, like python(jobs - scripts proccesses)
 ---written in bash
 --- theres a python library for running jenkins jobs
 --- Triggering jobs
 ---- build periodically cron writing
 --logs:
 --- log history available
---perks:
---- machine administration is shared
---- jenkins user administration is enabled
---- portable
+----Who ran job?
+----When did he run it? how long did it take?
+----machine administration can be shared
+-----operate on a single node
+-----Scripts can be shared
+--portable
 -- jenkins pipelines(basically scripts)
 --- groovy language
 -circleci
