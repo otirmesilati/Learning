@@ -123,7 +123,18 @@ Finding the post by id in the DB(same implementation as the two above)
 -Creating getPostById
 --adding the getPostById to the 
 --- print the id in the terminal -> "console.log('getPostById:' + req.params.id);"
+-adding the try and catch blocks
 -add an appropriate route -> in post_routes, "router.post('/:id'. Post.getById);"
+-creating another post request, with the id this time
+-> in requests.rest, GET http:localhost:3001/post/<enter valid id>
+
+Doing the same for sending more parameters (sender)
+-change the getallposts to contain parameters
+
+
+
+
+
 
 
 

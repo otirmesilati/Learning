@@ -10,18 +10,27 @@ Map from the following:
 
 
 
+pytest
+
+
 Check Testing
-- gherkin: given-when-then
-- give an example
+- gherkin scenario: given-when-then
+- give an example for the scenario
+- 
 
 
+pass or fail
+encapsulated
 
 
-
-
-
-
-
+JEST
+-unit tests
+-testing rest client
+--esier
+--function and parameters checking
+-testing express
+--a bit harder
+--testing API - checking browser api
 
 
 
