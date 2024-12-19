@@ -142,7 +142,7 @@ Doing the same for sending more parameters (sender)
 
 
 
-scalabile problems:
+scalable problems:
 -more incoming requests than responses
 
 web server - static pages serving and request handling

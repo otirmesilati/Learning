@@ -1,5 +1,32 @@
 
 
+- environments (servers) along the SLDC:
+-- local (mostly dev's computers)
+-- staging (for testing and demos)
+-- production (the product is in customer hands!) -> open netflix.com, that's their production environment
+
+common questions:
+- how long does it take to go from one step to the next>
+- how long does the whole process take?
+- what is slowing us down that i can remove?
+
+
+
+
+ci
+-the process of getting the envrionments to make SLDC efficient
+--getting the dev environment ready at morning and shutting it down via scripts at night
+---save up the environment costs 
+
+
+
+
+
+
+
+
+
+
 
 
 ci tools
@@ -28,15 +55,18 @@ gitlab?
 
 
 
-- environments (servers) along the SLDC:
--- local (mostly dev's computers)
--- staging (for testing and demos)
--- production (the product is in customer hands!) -> open netflix.com, that's their production environment
 
-common questions:
-- how long does it take to go from one step to the next>
-- how long does the whole process take?
-- what is slowing us down that i can remove?
+
+
+
+
+
+
+
+
+
+
+
 
 
 
