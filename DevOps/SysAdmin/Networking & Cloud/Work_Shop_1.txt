@@ -104,6 +104,9 @@ cisco i(nterworking)o(perating)s(ystem)
 -- arp table -> show mac adress-table
 -- clear arp table -> clear mac adress-table dynamic
 -- clear are table line -> clear mac adress-table dynamic interface <interface_id>
+
+--listing vlan port groups -> show vlan brief (1, 1002-1005 vlans are defaults)
+
 -global configuration mode -> configure terminal
 --making a password -> enable password <password to make>
 --view running config file -> show running-config
@@ -149,11 +152,11 @@ Device Network
 --broadcast problem : unnecessary and non secure (packets that dont go through router before reaching different department destination) broadcast traffic solution
 --- splitting to separate subnets
 --- switch in split subnet problem - can break router's virtual separation by broadcasting frames
----- pyhsical solution: buy a different switch for each subnet and seperate physically 
----- V(irtual)LAN - L2 separation
------ each port is grouped into a VLAN - thus stopping different subnet communication
+---- pyhsical separation solution: buy a different switch for each subnet 
+---- Logical separation solution: V(irtual)LAN 
+----- a number of ports are grouped into a VLAN - thus stopping different subnet communication
 ------to many subnets and to little amount if ports? trunk! - all in one!
--- According To the switches
+
 
 - Network Movement
 -- L2 Level: Pathing

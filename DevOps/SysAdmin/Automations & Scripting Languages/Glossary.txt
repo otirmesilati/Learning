@@ -32,14 +32,6 @@ At the point's intro:
 
 
 
-- tool creation for automating tasks
-- pipeline design for artifacts 
-- prepare testing solutions for feedback providing
-- prepare data visualization for stakeholders + provide the inteligence needed
-- system monitoring
-
-- goal : better delivering quality
-
 
 
 
@@ -78,8 +70,24 @@ hot to run in terminals(move to bash and batch):
 
 
 
-deployment automation
--ci tools
+- tool creation for automating tasks
+- pipeline design for artifacts 
+- prepare testing solutions for feedback providing
+- prepare data visualization for stakeholders + provide the inteligence needed
+- system monitoring
+
+- goal : better delivering quality
+
+
+
+
+
+
+
+
+
+
+-ci tools - automating integration of merges & automating tests 
 --until 2015 - the main ci tool is jenkins, from then on - configurations in gitlab ci
 -- jenkins (one of the defining devops tools) - not how we define the artifact, but how we run it
 ---enables automation functionality, like python(jobs - scripts proccesses)
@@ -112,7 +120,7 @@ deployment automation
 
 
 
-
+cd tools - deployment automation
 
 
 
@@ -123,15 +131,13 @@ deployment automation
 
 ^ ^ ^ ^ ^ Shared Automation Libraries ^ ^ ^ ^ ^
 
-CRUD HTTP operations
-
-^ ^ ^ ^ Requests ^ ^ ^ ^
-
 pip install requests
 
-get -> returns HTTP status code
+^ ^ ^ ^ CRUD HTTP user operations simulation ^ ^ ^ ^
 
+^ ^ ^ ^ user simulated Requests ^ ^ ^ ^
 
+returns HTTP status code -> paths.get
 
 ^ ^ ^ ^ Selenium ^ ^ ^ ^
 
