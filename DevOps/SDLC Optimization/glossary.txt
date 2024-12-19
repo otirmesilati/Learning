@@ -17,7 +17,8 @@ ci
 -the process of getting the envrionments to make SLDC efficient
 --getting the dev environment ready at morning and shutting it down via scripts at night
 ---save up the environment costs 
-
+cd
+- the deployment of the application
 
 
 
@@ -35,7 +36,7 @@ ci tools
 ---written in bash
 --- theres a python library for running jenkins jobs
 --- Triggering jobs
----- build periodically cron writing
+---- By time - CRON scheduling
 --logs:
 --- log history available
 ----Who ran job?
@@ -44,9 +45,17 @@ ci tools
 -----operate on a single node
 -----Scripts can be shared
 --portable
+--Sudden Spike in job demand
+---Job Orchestration done in nodes/agents (done by many machines, to deload from one machine the logs, tests..)
+----Delagating the workload:
+-----Master jenkins server
+-----Logs sit on another agent
+-----Building the application on another agent
+-----Running the python scripts by another agent
 -- jenkins pipelines(basically scripts)
 --- groovy language
 -circleci
+githubactions
 gitlab?
 
 
