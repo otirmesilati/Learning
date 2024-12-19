@@ -34,7 +34,8 @@ cd
 
 
 ci tools
-- jenkins (one of the defining devops tools)
+-until 2015 - the main ci tool is jenkins, from then on - configurations in gitlab ci
+- jenkins (one of the defining devops tools) - not how we define the artifact, but how we run it
 --enables automation functionality, like python(jobs - scripts proccesses)
 ---written in bash
 --- theres a python library for running jenkins jobs
@@ -55,13 +56,13 @@ ci tools
 -----Logs sit on another agent
 -----Building the application on another agent
 -----Running the python scripts by another agent
--- jenkins pipelines(basically scripts)
---- groovy language
+-- jenkins pipelines(basically scripts) - the answer to the gitlabci
+--- groovy language - Moving to an IDE like environment
 --Environment configurations:
 ---jenkins can declare environment variables
 -circleci
 githubactions
-gitlab?
+gitlabci?
 
 
 

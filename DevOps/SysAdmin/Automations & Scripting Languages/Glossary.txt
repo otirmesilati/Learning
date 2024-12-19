@@ -45,7 +45,7 @@ At the point's intro:
 
 
 
-hot to run in terminals:
+hot to run in terminals(move to bash and batch):
 
 -script
 
@@ -69,6 +69,49 @@ hot to run in terminals:
 -- bash .bsh:
 -- powershell .ps1:
 -- ps?
+
+
+
+
+
+
+
+
+
+deployment automation
+-ci tools
+--until 2015 - the main ci tool is jenkins, from then on - configurations in gitlab ci
+-- jenkins (one of the defining devops tools) - not how we define the artifact, but how we run it
+---enables automation functionality, like python(jobs - scripts proccesses)
+----written in bash
+---- theres a python library for running jenkins jobs
+---- Triggering jobs
+----- By time - CRON scheduling
+---logs:
+---- log history available
+-----Who ran job?
+-----When did he run it? how long did it take?
+-----machine administration can be shared
+------operate on a single node
+------Scripts can be shared
+---portable
+---Sudden Spike in job demand
+----Job Orchestration done in nodes/agents (done by many machines, to deload from one machine the logs, tests..)
+-----Delagating the workload:
+------Master jenkins server
+------Logs sit on another agent
+------Building the application on another agent
+------Running the python scripts by another agent
+--- jenkins pipelines(basically scripts) - the answer to the gitlabci
+---- groovy language - Moving to an IDE like environment
+---Environment configurations:
+----jenkins can declare environment variables
+--circleci
+--githubactions
+--gitlabci
+
+
+
 
 
 
