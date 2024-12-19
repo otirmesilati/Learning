@@ -13,14 +13,17 @@ common questions:
 
 
 
+
+
+
+
+
 ci
 -the process of getting the envrionments to make SLDC efficient
 --getting the dev environment ready at morning and shutting it down via scripts at night
 ---save up the environment costs 
 cd
-- the deployment of the application
-
-
+-the deployment of the application
 
 
 
@@ -31,7 +34,7 @@ cd
 
 
 ci tools
-- jenkins
+- jenkins (one of the defining devops tools)
 --enables automation functionality, like python(jobs - scripts proccesses)
 ---written in bash
 --- theres a python library for running jenkins jobs
@@ -54,6 +57,8 @@ ci tools
 -----Running the python scripts by another agent
 -- jenkins pipelines(basically scripts)
 --- groovy language
+--Environment configurations:
+---jenkins can declare environment variables
 -circleci
 githubactions
 gitlab?
