@@ -105,7 +105,14 @@ cisco i(nterworking)o(perating)s(ystem)
 -- clear arp table -> clear mac adress-table dynamic
 -- clear are table line -> clear mac adress-table dynamic interface <interface_id>
 
---listing vlan port groups -> show vlan brief (1, 1002-1005 vlans are defaults)
+--vlan configs:
+---enter/create vlan config mode -> vlan <number>
+----changing vlan name -> name new_name
+---listing vlan port groups -> show vlan brief (1, 1002-1005 vlans are defaults)
+---selecting ports as access ports -> switchport mode access
+--- changing to a specific access port -> switchport access vlan <number>
+
+
 
 -global configuration mode -> configure terminal
 --making a password -> enable password <password to make>
@@ -146,6 +153,8 @@ Device Network
 -- router(L3 element)
 -- de-encapsulates a packet, and checks where to send it (via it's IP)
 -- switch(L2 element)
+---switch's access ports are definitavly switch interfaces meant for vlans
+----trunk port = multiple-vlan functioning access port
 --- 24+ RJ 45 interfaces/ports
 
 -L(ocal)A(area)N(etwork) - group of devices taht will recieve broadcast frame (broadcast domain)
