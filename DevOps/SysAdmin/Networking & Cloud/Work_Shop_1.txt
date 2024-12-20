@@ -159,12 +159,18 @@ Device Network
 
 -L(ocal)A(area)N(etwork) - group of devices taht will recieve broadcast frame (broadcast domain)
 --broadcast problem : unnecessary and non secure (packets that dont go through router before reaching different department destination) broadcast traffic solution
---- splitting to separate subnets
---- switch in split subnet problem - can break router's virtual separation by broadcasting frames
----- pyhsical separation solution: buy a different switch for each subnet 
----- Logical separation solution: V(irtual)LAN 
------ a number of ports are grouped into a VLAN - thus stopping different subnet communication
-------to many subnets and to little amount if ports? trunk! - all in one!
+---splitting to separate subnets
+---switch in split subnet problem - can break router's virtual separation by broadcasting frames
+----pyhsical separation solution: buy a different switch for each subnet 
+----Logical separation solution: V(irtual)LAN - grouping switchports 
+-----using same accessports for different vlans - trunk
+------trunking works with vlan tagging the frames
+-------trunk ports = tagged ports
+-------Regular Access ports = untagged ports
+
+
+
+
 
 
 - Network Movement

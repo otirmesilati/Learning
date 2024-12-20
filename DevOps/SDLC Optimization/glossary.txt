@@ -20,49 +20,42 @@ common questions:
 
 ci
 -the process of getting the envrionments to make SLDC efficient
---getting the dev environment ready at morning and shutting it down via scripts at night
+--doing it through jobs - running scripts 
+---run this code
+---trigger it in:
+----times
+-----getting the dev environment ready at morning and shutting it down via scripts at night
+-----shutting it down on holidays and weekends
+----events
+-----After succesful run send an email to inform other individuals
+--good ci? - run this artifact
+-ci tools are not enough alone for a software department, it is not practical
+--running a job unmanaged
+--not in one place
+--until 2015 - the main ci tool is jenkins, from then on - configurations in gitlab ci
+---gitlabs started working with yaml files instead of the jenkins stages
+----jenkins reacted with jenkins-pipelines to codify the jobs
+
+-gitflow - version control standard
+-- master branch - used for production environment
+---dev branch - used for dev environment
+---release - going from dev to production
+---hotfix to fix prod bugs
+
+
+
+
+
+
+
+
+
+
+
+
 ---save up the environment costs 
 cd
 -the deployment of the application
-
-
-
-
-
-
-
-
-
-ci tools
--until 2015 - the main ci tool is jenkins, from then on - configurations in gitlab ci
-- jenkins (one of the defining devops tools) - not how we define the artifact, but how we run it
---enables automation functionality, like python(jobs - scripts proccesses)
----written in bash
---- theres a python library for running jenkins jobs
---- Triggering jobs
----- By time - CRON scheduling
---logs:
---- log history available
-----Who ran job?
-----When did he run it? how long did it take?
-----machine administration can be shared
------operate on a single node
------Scripts can be shared
---portable
---Sudden Spike in job demand
----Job Orchestration done in nodes/agents (done by many machines, to deload from one machine the logs, tests..)
-----Delagating the workload:
------Master jenkins server
------Logs sit on another agent
------Building the application on another agent
------Running the python scripts by another agent
--- jenkins pipelines(basically scripts) - the answer to the gitlabci
---- groovy language - Moving to an IDE like environment
---Environment configurations:
----jenkins can declare environment variables
--circleci
-githubactions
-gitlabci?
 
 
 

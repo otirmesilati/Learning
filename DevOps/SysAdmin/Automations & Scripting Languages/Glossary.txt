@@ -88,7 +88,6 @@ hot to run in terminals(move to bash and batch):
 
 
 -ci tools - automating integration of merges & automating tests 
---until 2015 - the main ci tool is jenkins, from then on - configurations in gitlab ci
 -- jenkins (one of the defining devops tools) - not how we define the artifact, but how we run it
 ---enables automation functionality, like python(jobs - scripts proccesses)
 ----written in bash
@@ -110,13 +109,23 @@ hot to run in terminals(move to bash and batch):
 ------Logs sit on another agent
 ------Building the application on another agent
 ------Running the python scripts by another agent
---- jenkins pipelines(basically scripts) - the answer to the gitlabci
----- groovy language - Moving to an IDE like environment
+--- jenkins pipelines(groups of scripts, mostly codified) - the answer to the gitlabci
+----groovy language
+----comfortably Moving to an IDE like environment
+-----machine running it -> node()
+-----stage -> job to run
+------inside the stage - the groovy scripts
 ---Environment configurations:
 ----jenkins can declare environment variables
 --circleci
 --githubactions
 --gitlabci
+
+
+
+
+
+
 
 
 
