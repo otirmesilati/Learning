@@ -41,6 +41,13 @@ ci
 ---dev branch - used for dev environment
 ---release - going from dev to production
 ---hotfix to fix prod bugs
+--jenkins git-flow integration: source of truth + actions
+---commiting straight into remote - bad practice, loads of bugs in the remote
+----solution: shift-left perspective, instead of pushing it essily to remote with a lot of bugs later, we do a lot of testing and bug fixing in the begining - and push it easily to the remote
+(it's called that becuase visually, it looks like we mirror shifted a graph)
+---communicated event triggers - push, pull, commit - enable job scheduling
+---cloning the source of truth into workspaces (local scheduler replica)
+
 
 
 
