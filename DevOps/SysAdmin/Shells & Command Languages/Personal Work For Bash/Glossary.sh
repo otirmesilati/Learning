@@ -460,6 +460,34 @@ docker tag image_name image_URL
 
 
 
+
+
+#k8s
+
+#get 
+
+kubectl get pods
+kubectl get nodes
+kubectl get nodes -o wide # detailed
+
+#desc
+
+kubectl describe node node_name
+
+kubectl delete pod pod_name
+
+#deployment
+
+
+
+
+
+
+
+
+
+
+
 #   ^ ^ ^ ^ ^ NodeJS Runtime environment ^ ^ ^ ^ ^
 
 #going into the env
