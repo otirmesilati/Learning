@@ -79,9 +79,16 @@ horn's:
 - need to check if OS virtualization is enabled
 
 
-Nana's Short Kubernetes video:
 
-- the need? the rise of many many microservices usage
+
+-kubernetes master (application) 
+--delegate and manage container work (build, start, run..) to nodes
+
+
+
+-kubernetes cli kubectl
+
+- managing containers (microservices, tec..)
 -- the pros of using an Orchestration tool
 --- high availability / no downtime (think leader follower pattern)
 --- scalability (think leader follower pattern)

@@ -18,10 +18,6 @@ env # list environment variables
 
 #   % % % % % % % Frame Handling % % % % % % %
 
-# Setting up a script
-#!/path_to_interpreter - the two symbols #! are the sehebang operator
-chmod u+x my_script
-
 
 
 
@@ -271,6 +267,16 @@ kill process_id
 
 
 
+
+#network 
+curl my_http_request
+
+
+
+
+
+
+
 # awk? pg? more? kill? top? ping? ftp? telnet? finger?
 # PART 3 - Advanced Unix
 # sed? df? du? mount? groupadd? groupmod? useradd? userdel? logger? trap? 
@@ -280,7 +286,7 @@ kill process_id
 
 #   ^ ^ ^ ^ Script Creation ^ ^ ^ ^  
 
-#!/bin/sh
+#!/bin/sh    - first two symbols make up the shebang operator
 chmod +x my_bash_file.sh
 ./my_bash_file.sh  
 
@@ -419,7 +425,7 @@ docker run # <type>:<version>
 docker run --name docker_name # -> passing a name for the container
 docker run -d # <type>:<version> -> (used to avoid logs filling terminal window) detach flag
 docker run -p # <host port to bind to>:<app port> <type>:<version> -> (exposing a container to our local network) publish flag 
-docker run -e reasource_path # -> adding an argument to the docker run 
+docker run -e environment_var_or_resource_path # -> an enironment variable to the container 
 
 docker stop # <container ID>/<container name> - pause functionality
 
@@ -431,7 +437,22 @@ docker exec container_name # entering the machine
 docker exec container_name sh # doing it through a bash shell interface
 docker exec -it container_name sh # make it stick after command run
 
+#overlay
 
+docker network create my_subnet # creating the shared containers network
+docker network inspect my_subnet # checking network configuration 
+
+#running in the overlay
+
+docker run -d --name contianer_name --network overlay_name # <type>:<version> 
+
+#docker compose for run command
+
+docker compose up -d
+
+#dockerhub
+
+docker tag image_name image_URL
 
 
 

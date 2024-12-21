@@ -62,12 +62,19 @@ transitioning from ci to cd
 
 
 ---save up the environment costs 
-cd
+cd - deployment automation
+-unlike ci, very repetitive 
 -the deployment of the application
 -downloading the artifact from source
 --opening it's contents
-
-
+--installing
+--deploying using docker
+---in compression:
+----making a designated folder
+----bundling the artifact
+----bundling the dockerfile
+----running the container
+-----docker composing the run command with yamls
 
 
 
