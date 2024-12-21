@@ -237,7 +237,7 @@ chgrp new_group my_file
 
 #tar
 tar -cfzv mypackage.tar.gz package # compressing
-
+tar -xvzf mypackage.tar.gz # extracting
 
 
 
@@ -271,7 +271,7 @@ kill process_id
 
 
 
-# pg? more? kill? top? ping? ftp? telnet? finger?
+# awk? pg? more? kill? top? ping? ftp? telnet? finger?
 # PART 3 - Advanced Unix
 # sed? df? du? mount? groupadd? groupmod? useradd? userdel? logger? trap? 
 # man? history? find? 

@@ -18,7 +18,7 @@ common questions:
 
 
 
-ci
+ci - tests and merge automations
 -the process of getting the envrionments to make SLDC efficient
 --doing it through jobs - running scripts 
 ---run this code
@@ -48,9 +48,10 @@ ci
 ---communicated event triggers - push, pull, commit - enable job scheduling
 ---cloning the source of truth into workspaces (local scheduler replica)
 
-
-
-
+transitioning from ci to cd
+-artifact goes through the stages
+--its important it goes out with all it's dependencies, including permissions
+---targz/zip files
 
 
 
@@ -63,7 +64,8 @@ ci
 ---save up the environment costs 
 cd
 -the deployment of the application
-
+-downloading the artifact from source
+--opening it's contents
 
 
 

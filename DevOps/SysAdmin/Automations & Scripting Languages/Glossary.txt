@@ -117,6 +117,21 @@ hot to run in terminals(move to bash and batch):
 ------inside the stage - the groovy scripts
 ---Environment configurations:
 ----jenkins can declare environment variables
+--githubci
+---first section - trigger definition:
+----trigger initiation -> on:
+----what kind of trigger -> push:
+----relative to what -> branches: -<branch_name>
+---second section - jobs definition:
+----pipeline jobs declaration -> jobs:
+----name of pipeline -> list-files:
+----macine to run on -> <os_type-version>
+----Job definition -> steps:
+
+
+
+
+
 --circleci
 --githubactions
 --gitlabci
