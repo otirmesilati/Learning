@@ -408,17 +408,28 @@ docker ps -a   # view all containers
 
 docker logs container_id #  or container name
 
+#image generation
+
+docker build -t source_path destination_path # looks for a docker file in path 
+docker build -t source_path destination_path -f file_name # if theres no file prior
+
 #   ^ ^ ^ Docker Container Running ^ ^ ^
 
 docker run # <type>:<version>
-docker run --name # <docker name> -> passing a name for the container
+docker run --name docker_name # -> passing a name for the container
 docker run -d # <type>:<version> -> (used to avoid logs filling terminal window) detach flag
 docker run -p # <host port to bind to>:<app port> <type>:<version> -> (exposing a container to our local network) publish flag 
-docker run -e # <resource path> -> adding an argument to the docker run 
+docker run -e reasource_path # -> adding an argument to the docker run 
 
 docker stop # <container ID>/<container name> - pause functionality
 
 docker start # <container ID>/<container name> - restart functionality
+
+#   ^ ^ ^ Docker Container Interface ^ ^ ^
+
+docker exec container_name # entering the machine
+docker exec container_name sh # doing it through a bash shell interface
+docker exec -it container_name sh # make it stick after command run
 
 
 
