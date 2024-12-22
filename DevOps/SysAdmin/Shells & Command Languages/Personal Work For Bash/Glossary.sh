@@ -467,8 +467,13 @@ docker tag image_name image_URL
 #get 
 
 kubectl get pods
+
+kubectl describe pod pod_name
+
 kubectl get nodes
 kubectl get nodes -o wide # detailed
+
+kubectl describe node node_name
 
 #desc
 
@@ -476,9 +481,9 @@ kubectl describe node node_name
 
 kubectl delete pod pod_name
 
-#deployment
+#deployment component
 
-
+kubectl scale deployment deployment_name --replicas= #<number of replicas>
 
 
 
