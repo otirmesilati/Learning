@@ -20,6 +20,7 @@ common questions:
 
 ci - tests and merge automations
 -the process of getting the envrionments to make SLDC efficient
+-ci tools work closely with the version control repository (github) manager as their source of truth
 --doing it through jobs - running scripts 
 ---run this code
 ---trigger it in:
@@ -48,7 +49,16 @@ ci - tests and merge automations
 ---communicated event triggers - push, pull, commit - enable job scheduling
 ---cloning the source of truth into workspaces (local scheduler replica)
 
+
+
+
+
+
+
+
+
 transitioning from ci to cd
+-cd tools work closely with the registry (dockerhub) and nexus repository (?) as their source of truth
 -artifact goes through the stages
 --its important it goes out with all it's dependencies, including permissions
 ---targz/zip files
