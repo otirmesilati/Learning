@@ -452,10 +452,15 @@ docker compose up -d
 
 #dockerhub
 
-docker tag image_name image_URL
+docker tag repo_name repo_URL_path
 
+#pushing images
 
+docker push image_URL_path
 
+#pulling images
+
+docker pull image_URL_path
 
 
 

@@ -2,6 +2,10 @@
 
 FROM path:verison-os 
 
+#cding
+
+WORKDIR /cd_into_here
+
 # Transfering data to the machine
 
 COPY app_from_outside /path_to_put_it
