@@ -498,6 +498,20 @@ kubectl scale deployment deployment_name --replicas= #<number of replicas>
 
 
 
+minikube start
+
+minikube status
+
+
+
+
+
+
+
+
+
+
+
 #   ^ ^ ^ ^ ^ NodeJS Runtime environment ^ ^ ^ ^ ^
 
 #going into the env
