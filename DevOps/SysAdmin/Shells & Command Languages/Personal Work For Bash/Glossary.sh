@@ -467,6 +467,22 @@ docker pull image_URL_path
 
 
 
+
+
+
+#nexus
+
+docker pull sonatype/nexus3
+
+docker run -d -p 8084:8084 --name nexus_assignment sonatype/nexus3
+
+docker exec -it nexus cat /nexus-data/admin.password
+
+
+
+
+
+
 #k8s
 
 #get 
@@ -500,7 +516,21 @@ kubectl scale deployment deployment_name --replicas= #<number of replicas>
 
 minikube start
 
+minikube start --driver=docker
+
+minikube stop
+
 minikube status
+
+minikube ssh
+
+minikube ip
+
+minikube delete
+
+
+
+
 
 
 
