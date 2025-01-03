@@ -544,15 +544,24 @@ dynamic resources:
 
 - storage not on premise
 hosting models:
-- dedicated server: 1 machine - 1 business - 1 web app
-- virtual private server: 1 machine - 1 business - many web apss
-- shared hosting: 1 machine - many business - many web apps 
-- cloud hosting: many machines (virtualized) - many business - many web apps
+-dedicated server: 1 machine - 1 business - 1 web app
+-virtual private server: 1 machine - 1 business - many web apss
+-shared hosting: 1 machine - many business - many web apps 
+-cloud hosting: many machines (virtualized) - many business - many web apps
 Amazon Web Servicess
 - Amazon C(loud)S(ervice)P(rovider)
 -- services accesible via single api
 -- rich monitoring, infrastructure as code, automation 
 -- cloud platform is a basic CSP without all these features
+
+
+
+
+
+
+
+
+
 
 
 
