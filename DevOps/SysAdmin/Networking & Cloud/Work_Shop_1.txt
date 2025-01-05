@@ -548,8 +548,13 @@ dynamic resources:
 
 -Amazon Web Servicess
 --A(mazon)W(eb)S(ervices) - the Amazon C(loud)S(ervice)P(rovider)
----many services centralized in one place
----rich monitoring, infrastructure as code, automation 
+---many services centralized in one Saas place 
+----able to be chained into cloud architectures
+----accesible via unified API
+----priced through metered billing (usage pricing)
+----rich monitoring for the services - AWS cloudtrail
+----Iaas options: networking + compute + storage etc..
+----Automation and dev tools are offered
 ---cloud platform is a basic CSP without all these features
 
 
