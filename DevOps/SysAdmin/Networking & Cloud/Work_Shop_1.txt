@@ -166,8 +166,11 @@ Device Network
 -----using same accessports for different vlans - trunk
 ------trunking works with vlan tagging the frames
 -------trunk ports = tagged ports
+--------enables inter VLAN routing - switching between vlans according to the packets
+-------trunking protocols:
+--------I(nter)S(witch)R(outing) - old proprietary protocol 
+--------IEEE 802.1Q - industry standard
 -------Regular Access ports = untagged ports
-
 
 
 
