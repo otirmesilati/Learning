@@ -401,6 +401,8 @@ exit
 
 #   ^ ^ ^ ^ ^ Docker CLI Client ^ ^ ^ ^ ^
 
+docker context use default # for managing contexts
+
 #   ^ ^ ^ ^ Docker Image Handling ^ ^ ^ ^
 
 docker images 
@@ -485,6 +487,8 @@ docker exec -it nexus cat /nexus-data/admin.password
 
 #k8s
 
+kubectl cluster-info
+
 #get 
 
 kubectl get pods
@@ -496,6 +500,16 @@ kubectl get nodes -o wide # detailed
 
 kubectl describe node node_name
 
+kubectl get services # OR kubectl get svc
+
+kubectl get deployment
+
+kubectl get configmap
+
+kubectl get secret
+
+# deployments? configmaps? sercrets?
+
 #desc
 
 kubectl describe node node_name
@@ -506,6 +520,8 @@ kubectl delete pod pod_name
 
 kubectl scale deployment deployment_name --replicas= #<number of replicas>
 
+kubectl apply -f file_name
+#--prune?
 
 
 
