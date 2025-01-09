@@ -439,6 +439,10 @@ docker exec container_name # entering the machine
 docker exec container_name sh # doing it through a bash shell interface
 docker exec -it container_name sh # make it stick after command run
 
+#inspect
+
+docker inspect container_name
+
 #overlay
 
 docker network create my_subnet # creating the shared containers network
@@ -476,7 +480,9 @@ docker pull image_URL_path
 
 docker pull sonatype/nexus3
 
-docker run -d -p 8084:8084 --name nexus_assignment sonatype/nexus3
+docker login http://localhost:5000 --username jenkins_user_1 --password jenkinsuser1
+
+docker run -d -p 8081:8081 --name nexus_assignment sonatype/nexus3
 
 docker exec -it nexus cat /nexus-data/admin.password
 
