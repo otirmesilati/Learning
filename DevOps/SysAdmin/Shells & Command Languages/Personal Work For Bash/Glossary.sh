@@ -173,7 +173,8 @@ rm file_to_delete
 rm file_1_to_delete file_2_to_delete
 
 rm -r directory_to_delete # will also remove all it's contents
-rm -f file_to_delete # skip the asking and do the remove 
+rm -f file_to_delete # f:force, skip the asking and do the remove 
+rm -vf file_to_delte # v:verbose, prints the items that are deleted
 
 rm -i file_to_delete # Asks nicely 
 
