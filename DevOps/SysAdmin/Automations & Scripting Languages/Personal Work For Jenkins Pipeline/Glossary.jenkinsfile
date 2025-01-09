@@ -1,0 +1,89 @@
+// pipeline
+
+// agent 
+
+// environment
+
+
+
+
+
+
+
+
+
+pipeline {
+
+
+    agent any
+
+
+    environment{
+ 
+        DOCKER_REGISTRY_PORT = 5000
+        DOCKER_NEXUS_REPO_NAME = 'fm_repo'
+        NEXUS_USER = 'jenkins_user_1'
+        NEXUS_PASSWORD = 'jenkinsuser1'
+        DOCKER_REGISTRY_URL = 'localhost:5000'
+        
+    }
+ 
+    stages {
+        stage('CloningProjectFromGithub') {
+            steps {
+                git branch: 'main', url: 'https://github.com/Textualize/frogmouth'
+                bat 'dir' // Checking if clone was successful
+            }
+        }
+ 
+        stage('DockerBuildingTheProject') {
+            steps {
+                // Moving into project folder
+                bat '''
+                    cd C:\\Users\\otirm_2hwnj4i\\Desktop\\complete_assignment
+                    type frog_mouth.Dockerfile
+                    docker build -t frog_mouth:latest -f frog_mouth.Dockerfile .
+                    echo DOCKER_REGISTRY_PORT: %DOCKER_REGISTRY_PORT%
+                    echo DOCKER_NEXUS_REPO_NAME: %DOCKER_NEXUS_REPO_NAME%
+                    echo NEXUS_USER: %NEXUS_USER%
+                    
+                '''
+            }
+        }
+        
+        stage('LoginToNexusWithJenkinsUser') {
+            steps {
+                bat '''
+                    docker login %DOCKER_REGISTRY_URL% --username %NEXUS_USER% --password %NEXUS_PASSWORD%
+                '''
+            }
+        }
+
+        stage('PushingProjectsDockerFileToNexus') {
+            steps {
+                bat '''
+                    docker tag frog_mouth:latest %DOCKER_REGISTRY_URL%/%DOCKER_NEXUS_REPO_NAME%/frogmouth:latest
+                    docker push %DOCKER_REGISTRY_URL%/%DOCKER_NEXUS_REPO_NAME%/frogmouth:latest
+                '''
+            }
+        }
+
+        stage('InstallingMinikube') {
+            steps {
+                bat '''
+                    REM Install Minikube if it's not installed
+                '''
+            }
+        }
+
+        stage('DeployingToMinikube'){
+            steps{
+                script{
+                    bat '''
+                        echo hi
+                    '''
+                }
+            }
+        }
+    }
+}
