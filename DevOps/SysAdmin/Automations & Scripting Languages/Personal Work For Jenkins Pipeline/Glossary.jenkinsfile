@@ -1,12 +1,18 @@
 pipeline{
-    agent agent_name{
+    agent agent_name
+    
+    environment{
+
+        FIRST_VAR = 1
+        SECOND_VAR = 2
 
     }
+
+    stages{
+
+    }    
+    
 }
-
-// environment
-
-// stages
 
 // stage
 
