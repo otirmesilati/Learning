@@ -1,6 +1,8 @@
-// pipeline
+pipeline{
+    agent agent_name{
 
-// agent 
+    }
+}
 
 // environment
 
@@ -11,6 +13,8 @@
 // steps
 
 // script
+
+
 
 
 
