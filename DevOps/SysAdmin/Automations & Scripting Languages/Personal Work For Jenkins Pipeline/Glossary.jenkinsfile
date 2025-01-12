@@ -1,4 +1,5 @@
 pipeline{
+    
     agent agent_name
     
     environment{
@@ -10,13 +11,23 @@ pipeline{
 
     stages{
 
+        stage('FirstStage'){
+
+            // stagey stuff
+
+        }
+
+        stage('SecondStage'){
+
+            stepsP{
+
+            }
+
+        }
+
     }    
     
 }
-
-// stage
-
-// steps
 
 // script
 
