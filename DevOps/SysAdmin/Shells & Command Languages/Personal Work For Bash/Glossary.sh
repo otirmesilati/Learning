@@ -494,6 +494,11 @@ docker exec -it nexus cat /nexus-data/admin.password
 
 #k8s
 
+kubectl config use-context context_name
+kubectl config current-context
+kubectl config get-contexts
+
+
 kubectl cluster-info
 
 #get 
