@@ -521,6 +521,10 @@ kubectl get secret
 
 kubectl describe node node_name
 
+kubectl run -it alpine --image=alpine # pod named alpine with alpine image container
+kubectl run -it alpine --image=alpine --command -- /bin/sh # runs bash
+kubectl run -it --rm alpine --image=alpine --command -- /bin/sh # deletes container after finishing with bash
+
 kubectl delete pod pod_name
 
 #deployment component
