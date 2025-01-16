@@ -34,5 +34,14 @@ My Object:
     express: "4.17.1"
 ---
 # k8s manifests
+
+apiVersion: my_version
+
 # pods
+kind_1: my_kind
+metadata_1:
+  name_1: my_pod_name
+# whats next?
+
+
 # replicasets
