@@ -48,3 +48,17 @@ spec_1:
       image_1: my_pod_image
 
 # replicasets
+
+spec_2:
+  replicas_2: 3
+  selector_2:
+    matchLabels_2:
+      app_2: my_app
+  template_2:
+    metadata_2:
+      labels_2:
+        app_2: my_app
+    spec_2:
+      containers_2:
+        - name_2: some_replicaset_name_could_be_another
+        - image_2: my_replicaset_image_2 
