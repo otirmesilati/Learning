@@ -235,8 +235,7 @@ chgrp new_group my_file
 #tar
 tar -cfzv mypackage.tar.gz package # compressing
 tar -xvzf mypackage.tar.gz # extracting
-
-
+unzip mypackage.zip
 
 
 #network
