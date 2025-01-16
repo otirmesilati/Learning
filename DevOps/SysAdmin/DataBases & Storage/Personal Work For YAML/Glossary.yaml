@@ -38,10 +38,13 @@ My Object:
 apiVersion: my_version
 
 # pods
-kind_1: my_kind
-metadata_1:
-  name_1: my_pod_name
-# whats next?
 
+kind_1: my_pod
+metadata_1:
+  name_1: some_pod_name
+spec_1:
+  containers_1:
+    - name_1: some_pod_name_could_be_another
+      image_1: my_pod_image
 
 # replicasets
