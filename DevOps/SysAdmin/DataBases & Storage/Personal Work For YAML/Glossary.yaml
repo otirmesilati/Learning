@@ -62,3 +62,5 @@ spec_2:
       containers_2:
         - name_2: some_replicaset_name_could_be_another
         - image_2: my_replicaset_image_2 
+
+#helmcharts?
