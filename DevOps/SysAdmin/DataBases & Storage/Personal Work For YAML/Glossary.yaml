@@ -33,6 +33,8 @@ My Object:
   dependencies:
     express: "4.17.1"
 ---
+#docker compose
+
 # k8s manifests
 
 apiVersion: my_version
