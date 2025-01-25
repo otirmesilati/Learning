@@ -308,7 +308,9 @@ wsl --set-default my_distro
 
 wsl -d my_distro
 
+wsl -l -o # all online options
 
+wsl -l -v # what's currently installed
 
 
 
