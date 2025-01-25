@@ -304,14 +304,17 @@ chmod +x my_bash_file.sh
 
 #wsl
 
+wsl --install -d my_distro
+wsl --unregister my_distro
+
 wsl --set-default my_distro
 
-wsl -d my_distro
+wsl -d my_distro # launch distro's shell
 
 wsl -l -o # all online options
 
-wsl -l -v # what's currently installed
-
+wsl -l # what's currently installed
+wsl -l -v # including version
 
 
 
