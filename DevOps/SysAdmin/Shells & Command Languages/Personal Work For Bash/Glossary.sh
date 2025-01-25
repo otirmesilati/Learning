@@ -302,6 +302,18 @@ chmod +x my_bash_file.sh
 
 
 
+#wsl
+
+wsl --set-default my_distro
+
+wsl -d my_distro
+
+
+
+
+
+
+
 #   & & & & & & Bash Orientations & & & & & & 
 
 #   ^ ^ ^ ^ ^ Git Bash ^ ^ ^ ^ ^
