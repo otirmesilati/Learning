@@ -160,6 +160,7 @@ PS2 - enter variable incase a command isn't complete
 $$ - current shell ID process number
 $UID - current user ID number
 
+$OLDPWD
 $PWD - current directory path
 $HOME - home directory path
 

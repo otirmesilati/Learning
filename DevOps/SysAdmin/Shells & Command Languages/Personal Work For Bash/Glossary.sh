@@ -117,6 +117,7 @@ ln -s my_regular_link_shortcut
 #   ^ ^ ^ ^ ^ Displaying Contents ^ ^ ^ ^ ^
 
 cat file_name 
+tac file_name_same_just_print_order_reversed
 
 #   ^ ^ ^ ^ Displaying Options ^ ^ ^ ^
 
