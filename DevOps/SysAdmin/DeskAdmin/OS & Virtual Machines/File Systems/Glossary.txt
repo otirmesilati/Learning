@@ -11,7 +11,7 @@ Backslash as Path Separators
 Windows System dlls 
 Windows System Executables
 
-^ ^ ^ ^ Apps ^ ^ ^ ^
+ ^ ^ ^ ^ Apps ^ ^ ^ ^
 
 Command Prompt
 Control Panel -> control.exe
@@ -137,16 +137,20 @@ move this? to desktopping?
 /lib - important libraries
 /dev - device files
 
-/usr - mostly public user files
+/usr - mostly public user files and user programs
 
 ^ ^ ^ ^ ^ Data Directories ^ ^ ^ ^ ^
 
 /proc - system state in terms of running processes
 /tmp - temporary files
+/opt - optional third party data
 /var - logs and DBs 
 /etc - configs, startups and more scripts , /etc/profile - sysadmin file, shell initilize information (type of terminal and misc for it, list of command saved directories)
 
-if ypu move the top portion(linux file system), leave this here?
+/lost+found - recovered files (after system check) directory
+/media - mounted removeable media
+
+if you move the top portion(linux file system), leave this here?
 ^ ^ ^ ^ ^ Environment variables ^ ^ ^ ^ ^
 
 PATH - specifies location for commands
