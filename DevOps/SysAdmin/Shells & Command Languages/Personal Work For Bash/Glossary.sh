@@ -47,6 +47,8 @@ cd - # switching to last directory
 ls
 ls directory_name
 
+ls --color # sometimes needed, sometimes done by default
+
 ls -1 # Ls'ing 1 file per line in the output
 
 
@@ -77,6 +79,14 @@ ls -la # All Directories + User OwnerShip
 ls -g # Detailed - Group Ownership
 
 ls -R # All Directories recursively on child items
+ls -F # for file types 
+
+# tree - visualizing ls -R command  
+
+tree 
+
+tree -d # only doing so for directories
+tree -C # colorised
 
 #ls l?
 
@@ -179,8 +189,10 @@ rm -vf file_to_delte # v:verbose, prints the items that are deleted
 
 rm -i file_to_delete # Asks nicely 
 
-rmdir directory_to_delete 
-rmdir directory_1_to_delete directory_2_to_delete
+rmdir empty_directory_to_delete 
+rmdir empty_directory_1_to_delete empty_directory_2_to_delete
+
+rmdir -rf directory_to_delete # recursively deletes contents and child contents
 
 
 
@@ -192,6 +204,12 @@ rmdir directory_1_to_delete directory_2_to_delete
 
 #   & & & & & & File Permissions & & & & & &
 
+# persmission checking
+
+groups
+id -Gn # alias for groups
+
+groups user_name
 
 #   ^ ^ ^ ^ ^ Changing File Permissions ^ ^ ^ ^
 
