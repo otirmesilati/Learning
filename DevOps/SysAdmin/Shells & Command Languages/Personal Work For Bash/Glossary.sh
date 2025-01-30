@@ -110,6 +110,16 @@ find path_to_search --name "*v" # files ending with a v
 
 find path_to_search -mtime +10 -mtime -90 # between 10 to 90 days old
 
+find path_to_search -size +1M # 1 mega byte or greater
+
+find path_to_search -type d # searches for directories
+
+find path_to_search -newer file_name # searches for files that were created after said file
+
+
+
+
+
 
 
 
