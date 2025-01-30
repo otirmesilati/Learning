@@ -98,6 +98,22 @@ tree -C # colorised
 
 
 
+
+
+#find
+
+find 
+find . # same as above
+
+find path_to_search --name file_name
+find path_to_search --name "*v" # files ending with a v
+
+find path_to_search -mtime +10 -mtime -90 # between 10 to 90 days old
+
+
+
+
+
 #   & & & & & & Text Files Content & & & & & &
 
 #   ^ ^ ^ ^ ^ File Creation ^ ^ ^ ^ ^  
