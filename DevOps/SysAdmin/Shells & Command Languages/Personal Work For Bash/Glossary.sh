@@ -1077,71 +1077,44 @@ do
 done
 
 
-#   ^ ^ ^ Do-While Loops ^ ^ ^
+#   No native do-while loops
 
-# ::   int do_while_index = -1;
-# ::   do
-# ::   {
-# ::       ++do_while_index;
-# ::       // do-while procedure
-# ::   } while(do_while_index <= 5); //condition checking AFTER the procedure ran
+for ((for_index=0; for_index<=5; for_index++)); do
+    # for procedure
+done
 
-
-#   ^ ^ ^ ^ For Loops ^ ^ ^ ^
-
-# ::   for(int for_index = 0; for_index <= 5 ; ++for_index) // same as above examples
-# ::   {
-# ::     for procedure
-# ::   }
-
+for i in {1..5}; do
+    # for procedure 
+done
 
 
 #   ^ ^ ^ ^ Empty portions in for loop ^ ^ ^ ^
 # ::   no init? not condition? no counter?
 
-# ::   for(;;)
-# ::   for(;;)
-# ::   for(;;)
-
-# ::   }
+for ((;;)); do
+    # This is an infinite loop
+done
 
 #   ^ ^ ^ ^ ^ Functions ^ ^ ^ ^ ^ 
 
-# ::   int int_return_function(){}
-# ::   also_int_return_function(){} // defualt int type - though may cause a warning
-
-# ::   ^ ^ ^ ^ Function prototyping ^ ^ ^ ^
-
-# ::   void void_prtp_func_1(); // function declaration
-# ::   void void_prtp_func_2();
-# ::   main procedure
-# ::   void void_prtp_func_1(){ return; } // function definition
-# ::   void void_prtp_func_2(){} // in void functions - the return statement may be omitted and the function will return in closing block
-
-# ::   add to tablet: 1. static stack segment layout (building the stack) + dynamic stack segment allocation in function calls (changing the values and releasing the layout parts) 
-
+# No function prototyping in Bash
 
 # ::   ^ ^ ^ ^  Argument Passing ^ ^ ^ ^ 
 
-# ::   ^ ^ ^ Passing By Value ^ ^ ^
+# ::   ^ ^ ^ Passing By Value (Only type of Argument passing) ^ ^ ^
 
-# ::   void pass_by_value(int val){}
+pass_by_value() {
+    local val=$1  # Capture the first argument passed to the function
+    # function body
+}
 
-# ::   ^ ^ ^ Passing By Adress ^ ^ ^
+# No Anon functions
 
-# ::   void pass_by_adress(int* adr){}
-# ::   add this - pass_by_adress_2(int adr[]){} ? or in the array section ? 
+# No Recursive functions
 
-
-# ::   anon function? from version 11? what's the syntax?
-
-# ::   ^ ^ ^ ^ Recursive Functions ^ ^ ^ ^
-
-# ::   void rec_func(){rec_func();} // infinite loop logic
+# No Pointer functions
 
 
-# ::   ^ ^ ^ ^ Pointer Functions ^ ^ ^ ^
-# ::   finish this from lecture 12
 
 
 
