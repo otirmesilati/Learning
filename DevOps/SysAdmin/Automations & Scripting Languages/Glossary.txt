@@ -42,17 +42,13 @@ hot to run in terminals(move to bash and batch):
 -script
 
 -- python .py: [python installed] --> python file_name.py
---js?
---ruby?
---php?
---perl?
---c#?
---go?
---R?
---tcl?
---hs?
---rs?
---swift?
+-- javascript .js : [node installed] --> node file_name.js
+--ruby .rb: [ruby installed] --> ruby file_name.rb
+--php? .php: [php installed] --> php file_name.php
+--perl? .perl: [perl installed] --> perl file_name.perl
+--c#? .cs: [.NET SDK (compilation) + mono (execution)] --> csc file_name.cs && mono file_name.exe 
+--go? .go: [go installed] --> go run file_name.go 
+--R? .r: [R installed] --> Rscript file_name.r
 
 
 -command
