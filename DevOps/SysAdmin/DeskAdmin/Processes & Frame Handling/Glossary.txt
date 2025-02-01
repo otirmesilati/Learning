@@ -1344,6 +1344,12 @@ j *cursor goes down for one letter*
 k *cursor goes up for one letter*
 l *cursor goes right for one letter*
 
+w - right one word
+b - left one word
+
+^ - line begining 
+$ - line end 
+
 1. one line jump navigation: j(DOWN)/k(UP)
 2. multiple line jump navigation: <Number> + j(DOWN)/k(UP)
 3. [smartcase dependent]Searching-vim level: /<Search Term> 
