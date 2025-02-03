@@ -464,6 +464,7 @@ exit
 #   ^ ^ ^ ^ ^ Docker CLI Client ^ ^ ^ ^ ^
 
 docker context use default # for managing contexts
+docker context show
 
 #   ^ ^ ^ ^ Docker Image Handling ^ ^ ^ ^
 
