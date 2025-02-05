@@ -121,8 +121,33 @@ debian:
 1. whereis
 2. whatis
 
+--- stopped at wget ---
+
+// &&&&&& App launcher &&&&&&
+// ^^^ General ^^^
+1. Terminal: -xfc4-terminal -> CTRL+ALT+T
+2. Task Manager: -xfce4-taskmanager -> CTRL+ALT+S
+3. Mousepad: -mousepad -> CTRL+ALT+M
+4. FireFox: 
+5.
+6.
 
 
+non finder able
+1.
+2.
+3.
+
+Navigation 
+
+-- stopped at setting editor--
+
+Non finder-able
+
+Menus:
+1.
+2.
+3.
 
 
 
