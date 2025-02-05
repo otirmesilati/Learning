@@ -114,7 +114,12 @@ ubuntu:
 Control Panel (left-side bar)
 Menu Bar(pops up in frame handling to the left in the upper bar, like app menu in macos)
 Task Bar (right side of the menu bar)
-debian?
+
+debian:
+
+// Shell commands and shortcuts:
+1. whereis
+2. whatis
 
 
 
