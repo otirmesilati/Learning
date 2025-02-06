@@ -125,7 +125,21 @@ Keyboard Short-cuts:
 2. Run Command:
 3. System Monitor
 4. Nautilus
-5. 
+5. FireFox:
+6. Text Editor: 
+7. Calculator:
+8. Software Updater: 
+
+// &&&&&& Navigation &&&&&& 
+1. Overview and Search
+2. Desktop View 
+3. Lock Screen
+4. Switch Workspace
+5. Open Quick-Settings
+6. Open Settings
+7. Positioning Windows
+8.
+9.
 
 
 
