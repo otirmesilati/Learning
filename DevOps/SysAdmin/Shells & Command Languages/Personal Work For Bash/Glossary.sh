@@ -811,6 +811,7 @@ exit
 
 read my_input # *terminal goes to next line* <text_to_input> ,entering  Alice Bob  will fill the buffer, solution: enter "Alice Bob" instead
 read -p "Enter your input:" my_input #display a message 
+read -p $"Enter your\n input:" my_input #enabling escape characters 
 
 #   ^ ^ ^ ^ ^ Console Output ^ ^ ^ ^ ^ 
 
