@@ -54,7 +54,7 @@ hot to run in terminals(move to bash and batch):
 -command
 
 -- batch .bat:
--- bash .bsh:
+-- bash .bsh: [bash installed] --> bash file_name.bsh
 -- powershell .ps1:
 -- ps?
 
