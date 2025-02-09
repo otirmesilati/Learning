@@ -30,7 +30,7 @@ env # list environment variables
 
 pwd # print current (dubbed working) directory
 
-#   ^ ^ ^ ^ ^ Changing File Directories ^ ^ ^ ^ ^
+#   ^ ^ ^ ^ & & & & & & Changing File Directories ^ ^ ^ ^ ^
 
 cd new_file # Relative path
 cd new_file_1/new_file_2 # Absolute path
@@ -92,10 +92,11 @@ tree -C # colorised
 
 # version checking: python -V
 
+#   & & & & & & App Launching
 
+# bashrc command to add: 
 
-
-
+chrome --new-window https://www.google.com
 
 
 
