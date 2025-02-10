@@ -819,6 +819,8 @@ read -p $"Enter your\n input:" my_input #enabling escape characters
 echo "Hello World" # standard ouput to terminal
 echo hello world # same output
 
+cut -d ',' -f 1 # cutting off a stream of text before the first ',' 
+
 
 
 
