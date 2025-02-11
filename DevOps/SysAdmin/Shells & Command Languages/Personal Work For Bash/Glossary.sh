@@ -362,6 +362,13 @@ wsl -l -o # all online options
 wsl -l # what's currently installed
 wsl -l -v # including version
 
+wsl bash -c "your-bash-command"
+
+
+
+
+
+
 
 
 
