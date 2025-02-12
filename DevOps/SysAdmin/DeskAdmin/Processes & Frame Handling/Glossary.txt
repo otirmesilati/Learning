@@ -242,7 +242,7 @@ Insert - For reading + writing -->> ?
 -----? Code Snippets
 -----? file explorer
 -----? git integration
------fuzzy finder ?
+-----telescope fuzzy finder 
 --dot files - nvim will look at it every time it loads the condif
 ---file structure
 ----lua folder - loads all the imports from there
