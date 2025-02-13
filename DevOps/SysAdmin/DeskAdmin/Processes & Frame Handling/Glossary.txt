@@ -1295,13 +1295,19 @@ shift + g - end of the file
 
 - operators:
 
-d - delete
-c(change = delete + go to insert mode) + i + opening curly brace - change everything inside curly braces
+d - delete operator
 dd - delete the whole line
+
+c - change operator
+c(change = delete + go to insert mode) + i + opening curly brace - change everything inside curly braces
+
 . - repeat previous action again
 
-u - undo
-control + r - redo
+u - undo operator
+control + r - redo operator
+
+/ - search operator
+/ + enter + n (to go to next find) - Search
 
 -- combimotions: (keep this? or just suffice for the above portion?)
 delete a word: d+w
