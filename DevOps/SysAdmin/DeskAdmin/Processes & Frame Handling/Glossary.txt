@@ -1298,7 +1298,10 @@ shift + g - end of the file
 d - delete
 c(change = delete + go to insert mode) + i + opening curly brace - change everything inside curly braces
 dd - delete the whole line
+. - repeat previous action again
 
+u - undo
+control + r - redo
 
 -- combimotions: (keep this? or just suffice for the above portion?)
 delete a word: d+w
