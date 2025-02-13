@@ -1287,6 +1287,7 @@ surround: y+s+@+character to surround
 - motions:
 hjkl - arrows
 w , b - next, previous begining of word
+e - end of the current word
 0 , $ - begining , end of the line 
 d - delete
 -- combimotions: 
