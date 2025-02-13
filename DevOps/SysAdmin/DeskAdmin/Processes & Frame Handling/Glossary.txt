@@ -1285,11 +1285,16 @@ surround: y+s+@+character to surround
 
 
 - motions:
-hjkl - arrows
+h(left)j(down)k(up)l(right) - arrows
 w , b - next, previous begining of word
 e - end of the current word
 0 , $ - begining , end of the line 
+
+gg - begining of the file
+shift + g - end of the file
+
 d - delete
+
 -- combimotions: 
 delete a word: d+s
 delete a line: dd
