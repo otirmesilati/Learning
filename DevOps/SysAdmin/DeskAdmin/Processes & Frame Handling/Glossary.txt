@@ -1293,11 +1293,14 @@ e - end of the current word
 gg - begining of the file
 shift + g - end of the file
 
-d - delete
+- operators:
 
--- combimotions: 
-delete a word: d+s
-delete a line: dd
+d - delete
+dd - delete the whole line
+
+
+-- combimotions: (keep this? or just suffice for the above portion?)
+delete a word: d+w
 replace a symbol: c+s
 replace a word: g+r+w
 - comments plugin:
