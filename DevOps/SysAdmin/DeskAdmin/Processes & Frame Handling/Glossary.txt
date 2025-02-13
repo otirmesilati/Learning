@@ -1296,6 +1296,7 @@ shift + g - end of the file
 - operators:
 
 d - delete
+c(change = delete + go to insert mode) + i + opening curly brace - change everything inside curly braces
 dd - delete the whole line
 
 
