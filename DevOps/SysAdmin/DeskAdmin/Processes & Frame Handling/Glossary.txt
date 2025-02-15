@@ -1388,7 +1388,8 @@ $ - line end
 1. [normal mode] New vertical pane -> <leader> + s + v
 2. [normal mode] New Horizontal pane -> <leader> + s + h
 3. [normal mode] Close Focused pane -> <leader> + s + x
-4.
+
+4. maximise/minimize pane -> <leader> + s + m
 
 // ^ ^ ^ Nvim Tabs ^ ^ ^
 
