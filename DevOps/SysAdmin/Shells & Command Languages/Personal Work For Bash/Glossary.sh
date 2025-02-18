@@ -478,6 +478,8 @@ docker context show
 
 docker images 
 
+docker rmi image_name_or_id # removing an image from docker
+
 docker pull # <type>:<image tag(version)> -> (isn't a must, run will pull images it doesn't have locally)
 
 #   ^ ^ ^ ^ Docker Container Handling ^ ^ ^ ^
