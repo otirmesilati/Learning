@@ -16,9 +16,12 @@ $? # last command succesful?
 
 env # list environment variables
 
-man
+man command # get manual entry (system info) on the command
 
 #   % % % % % % % Frame Handling % % % % % % %
+
+nohup process_exe_path  # detach launch of a frame
+nohup process_exe_path & # detach + backgrounf the frame
 
 exit
 
@@ -64,26 +67,27 @@ ls -S # Sorts by size
 ls -t # Sorts by last modification time
 ls -r # Sorts in reverse-to-defualt order
 
-ls -lt # combinations
-
 #   ^ ^ ^ Adding Options ^ ^ ^
 
 ls -i # Adds Inode Numbering
-ls -s # Adds size
+ls -s # Adds disc block size
 
 #   ^ ^ ^ More Items Options ^ ^ ^
 
 ls -a # All Directories
 ls -d # Directories Only
+ls -F # for file types 
+
 
 #   ^ ^ ^ Detailed Options ^ ^ ^
 
 ls -l # Detailed - User Ownership
-ls -la # All Directories + User OwnerShip
 ls -g # Detailed - Group Ownership
 
 ls -R # All Directories recursively on child items
-ls -F # for file types 
+
+ls -lt # combinations
+
 
 # tree - visualizing ls -R command  
 
