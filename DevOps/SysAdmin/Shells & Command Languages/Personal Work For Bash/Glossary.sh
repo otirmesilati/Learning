@@ -16,7 +16,11 @@ $? # last command succesful?
 
 env # list environment variables
 
+man
+
 #   % % % % % % % Frame Handling % % % % % % %
+
+exit
 
 
 
@@ -317,16 +321,16 @@ kill process_id
 #network 
 curl my_http_request
 
+ip a
 
-
-
-
+ssh ip_address
+ssh user_name@ip_address # Will be prompted to enter password later
 
 
 # awk? pg? more? kill? top? ping? ftp? telnet? finger?
 # PART 3 - Advanced Unix
 # sed? df? du? mount? groupadd? groupmod? useradd? userdel? logger? trap? 
-# man? history? find? 
+#  history? find? 
 # Part 4? Part 5?
 
 
@@ -339,6 +343,24 @@ chmod +x my_bash_file.sh
 
 #   ^ ^ ^ ^ Extended Script Creation ^ ^ ^ ^ 
 #useful environment variables commands? cal (calender)? password? whoami and who am i? users and who and w?
+
+
+
+
+
+
+
+
+
+#package mans
+
+#apt
+
+apt --version
+
+apt list --installed 
+
+
 
 
 
@@ -461,7 +483,7 @@ git clone github_URL
 git pull
 git pull repo_name branch_name 
 
-exit
+
 
 
 
@@ -748,7 +770,7 @@ db.collection_name.find({rating: {$lte: 7}}) # less then - equal
 var name_to_assign = "name"
 name_to_assign = "other_name"
 
-exit
+
 
 
 
