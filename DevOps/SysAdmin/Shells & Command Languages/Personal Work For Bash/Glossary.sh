@@ -23,6 +23,13 @@ man command # get manual entry (system info) on the command
 nohup process_exe_path  # detach launch of a frame
 nohup process_exe_path & # detach + backgrounf the frame
 
+path_or_command_if_app_to_launch file_to_be_edited_with_app
+less my_file.txt
+nano my_file.txt
+vi my_file.txt
+vim my_file.txt
+nvim my_file.txt
+
 exit
 
 
@@ -147,10 +154,6 @@ mkdir -p make_all_the_parent_files_in_this_path # (declarative) if any folders i
 #   ^ ^ ^ ^ Files ^ ^ ^ ^ 
 
 touch my_file
-
-vi my_file.txt
-vim my_file.txt
-nvim my_file.txt
 
 
 #   ^ ^ ^ ^ Creating File Links (Shortcuts/file references - deleting them won't affect the original) ^ ^ ^ ^
