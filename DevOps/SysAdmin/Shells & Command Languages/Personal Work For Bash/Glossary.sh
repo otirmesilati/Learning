@@ -605,6 +605,7 @@ kubectl cluster-info
 #get 
 
 kubectl get pods
+kubectl get pods -l label_key=label_value
 
 kubectl describe pod pod_name
 
