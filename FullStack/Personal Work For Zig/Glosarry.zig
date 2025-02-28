@@ -1,779 +1,824 @@
-// // C Online Emulator: https://www.onlinegdb.com/online_c_compiler
+// C Online Emulator: https://www.onlinegdb.com/online_c_compiler
 
-// // where to put bitmasking? watch video below:
-// // https://www.youtube.com/watch?v=wvtFGa6XJDU
-// // Add the material from the self made "Nekodot summary" if it still exists :)
+// where to put bitmasking? watch video below:
+// https://www.youtube.com/watch?v=wvtFGa6XJDU
+// Add the material from the self-made "Nekodot summary" if it still exists :)
 
-// //   < < < < < < < <   Language Principles   > > > > > > > >
+//   < < < < < < < <   Language Principles   > > > > > > > >   
 
-// //   < < < < < < < <   Procedural Principles   > > > > > > > >
-// //   < < < < < < < <   Generic Principles   > > > > > > > >
+//   < < < < < < < <   Procedural Principles   > > > > > > > >   
+//   < < < < < < < <   Generic Principles   > > > > > > > >   
 
-// //   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &
 
-// //   ^ ^ ^ ^ ^ Static Libraries ^ ^ ^ ^ ^
 
-// #include <stdio.h> // C IO Library Files
-// #include <string.h> //? gets? puts? strlen? strcmp (ASCII gimetry compare function)? strcpy(writing function)? strcat(concat from null)?
 
-// //   ^ ^ ^ ^ ^ Shared Libraries ^ ^ ^ ^ ^
+//   & & & & & & Resources: Rich API, Libraries, and Frameworks & & & & & &
 
-// // iostream? stdio.h? GUI libraries?
-// // pragma once? namespace ? (finish mapping this)
-// // rich API? primitives and objects API? collections?
+//   ^ ^ ^ ^ ^ Static Libraries ^ ^ ^ ^ ^
 
-// //   & & & & & & Comments & & & & & &
+const std = @import("std"); // Zig IO Library
+const fmt = std.debug // Format functions
 
-// // Single Line comment
+//   ^ ^ ^ ^ ^ Shared Libraries ^ ^ ^ ^ ^
 
-// /* multiple line
-// comments
-// */
 
-// /* Nested
-// // Comments //
-// are available */
+// iostream? stdio.h? GUI libraries?
+// pragma once? namespace ? (finish mapping this)
+// rich API? primitives and objects API? collections?
 
-// // docs? logs?
 
-// //   & & & & & & Data Streaming & & & & & &
 
-// //   ^ ^ ^ ^ ^ Variable input ^ ^ ^ ^ ^
 
-// // input of string - mention the problem of entering a space?
 
-// //   ^ ^ ^ ^ ^ Console Output ^ ^ ^ ^ ^
 
-// //   & & & & & & Literals (+ defined unary literal operators) & & & & & &
+//   & & & & & & Comments & & & & & &
 
-// //   ^ ^ ^ ^ ^ Expressions ^ ^ ^ ^ ^ //
+// Single Line comment
 
-// void fun_literals(){
+/*
+multiple line
+comments
+*/
 
-// //   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
+/* Nested
+// Comments //
+are available */
 
-// 123;
-// // no underscore format for numbers like 1,234!
-// -123;
+// docs? logs?
 
-// //  ^ ^ ^ ^ Coding Modifiers ^ ^ ^ ^
 
-// //  ^ ^ ^ Radixed modifier ^ ^ ^
 
-// 0x12AB;
-// 012; // octal literals written without o //
-// 0b110011;
 
-// //   ^ ^ ^ Un-Signed Modifier Suffix operators ^ ^ ^
 
-// 1u;
-// -2U; // will work sometimes and sometimes not: will be translated: 2's complement on the value -> new unsigned value
 
-// //   ^ ^ ^ Long Modifier Suffix operators
+//   & & & & & & Data Streaming & & & & & & 
 
-// 1l;
-// -2L;
-// 3ll;
-// 4LL;
+//   ^ ^ ^ ^ ^ Variable input ^ ^ ^ ^ ^
 
-// //   ^ ^ ^ ^ ^ Floats ^ ^ ^ ^ ^
-// // add f suffix //
-// 1.2;
-// -3.4;
+fn fun_streams() void {
+    var character: u8 = 0;
+    try std.io.getStdIn().readByte(&character);  // Reads a character without waiting for Enter
+}
 
-// //   ^ ^ ^ ^ Sceientific Notation Encoding  ^ ^ ^ ^
+// input of string - mention the problem of entering a space?
 
-// 1e2;
-// 1e-3;
-// 1e4L;   // combining //
+//   ^ ^ ^ ^ ^ Console Output ^ ^ ^ ^ ^ 
 
-// //   ^ ^ ^ ^ ^ Characters & Charlist (strings) ^ ^ ^ ^ ^
 
-// 'a';
-// // {'b', 'c'};
 
-// }
 
-// // More Material:
-// // https://web.archive.org/web/20130807052041/http://cpp.comsci.us/etymology/literals.html
-// // https://en.cppreference.com/w/cpp/language/floating_literal //
 
-// //   & & & & & & String Formatting & & & & & &
 
-// void fun_string_formats(){
 
-// int number = 1;
-// double dvalue = 2.344444;
-// int undef_behav = 4;
 
-// //   ^ ^ ^ ^ ^ Format Specifier Fields ^ ^ ^ ^ ^
 
-// //   ^ ^ ^ ^ Flags ^ ^ ^ ^
+//   & & & & & & Literals (+ defined unary literal operators) & & & & & &
 
-// //   ^ ^ ^ Precision ^ ^ ^
+//   ^ ^ ^ ^ ^ Expressions ^ ^ ^ ^ ^ //
 
-// printf("%d %.2lf", number, dvalue); // two digits left of decimal point
-// // what about two digits to the right?
+fn fun_literals() void {
 
-// //width?
+    //   ^ ^ ^ ^ ^ Integers ^ ^ ^ ^ ^
 
-// //   ^ ^ ^ Length ^ ^ ^
+    const a = 123;
+    const b = -123;
 
-// printf("%ld", 1); // long
-// printf("%lf", 2.34); // double
+    //  ^ ^ ^ ^ Coding Modifiers ^ ^ ^ ^
 
-// //   ^ ^ ^ Types ^ ^ ^
+    //  ^ ^ ^ Radixed modifier ^ ^ ^
 
-// printf("%c", 'a'); // char
-// printf("%d", 1); // int
-// printf("%f", 2.3); // float
+    const hex = 0x12AB;
+    const octal = 012; // octal literals written without o
+    const bin = 0b110011;
 
-// printf("%c", undef_behav); // wrong type field - undefined behaviour!
+    //   ^ ^ ^ Un-Signed Modifier Suffix operators ^ ^ ^
 
-// //custom field?
-// // complete this section from here: https://en.wikipedia.org/wiki/Printf
-// }
+    const u = 1u;
+    const U = -2U; // will work sometimes and sometimes not
 
-// //   & & & & & & Operators & & & & & &
+    //   ^ ^ ^ Long Modifier Suffix operators
 
-// void fun_operators()
-// {
+    const l = 1l;
+    const L = -2L;
+    const ll = 3ll;
+    const LL = 4LL;
 
-// int first_check;  // Declarations without assignments - Assigned currently placed values ("Garbage Values")
-// int second_check;
+    //   ^ ^ ^ ^ ^ Floats ^ ^ ^ ^ ^
 
-// double sum_temps;
-// int five = 5, three = 3, zero = 0;
-// int first_explicit_conv, second_explicit_conv;
-// int explicit_conv_assignment;
+    const f1 = 1.2;
+    const f2 = -3.4;
 
-// //   ^ ^ ^ ^ ^ Expression Values ^ ^ ^ ^ ^
+    //   ^ ^ ^ ^ Scientific Notation Encoding  ^ ^ ^ ^
 
-// //   ^ ^ ^ ^ (g-value)l-values : memory allocated and mutable terms ^ ^ ^ ^
+    const e1 = 1e2;
+    const e2 = 1e-3;
+    const e3 = 1e4L;   // combining
 
-// int my_lvalue;
+    //   ^ ^ ^ ^ ^ Characters & Charlist (strings) ^ ^ ^ ^ ^
 
-// //   ^ ^ ^ ^ (g-value)r-values : NOT lvals, no persistent memory -> temporary ^ ^ ^ ^
+    const c: u8 = 'a';
+    // const str = {'b', 'c'}; // Charlist syntax might differ in Zig
+}
 
-// 0;
-// '1';
-// // {'m', 'y', '_', 'r', 'v', 'a', 'l', 'u', 'e'};
-// // int *invalid_pointer = &10;   can be abbreviated "rval compilation error" - these aren't memory persistent values like lvalues -> no address
 
-// (1 + 2); // No Identity : p(ure)-rval
 
-// //   ^ ^ ^ ^ x-values : about to be moved from scope ^ ^ ^ ^
 
-// // void x_val_func(int my_xval)
-// // {
-// //    return my_xval;
-// //}
 
-// //   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
 
-// int first = 1;
-// first = 2;
 
-// //   ^ ^ ^ ^ Multiple Assignment ^ ^ ^ ^
+// More Material:
+// https://web.archive.org/web/20130807052041/http://cpp.comsci.us/etymology/literals.html
+// https://en.cppreference.com/w/cpp/language/floating_literal //
 
-// int first_multi_assign, second_multi_assign; // multiple operations
-// first_multi_assign = second_multi_assign = 1; // chain assignment
 
-// //   ^ ^ ^ ^ ^ Casting Operators : C type conversion ^ ^ ^ ^ ^
 
-// //   ^ ^ ^ ^ Implicit Automatic/Widening Conversion ^ ^ ^ ^
 
-// int first_temp, second_temp;
-// int int_elm = -1;
-// signed char s_char_elm = '0';
-// long long_elm = "1";
-// float float_elm = 2.00;
-// double double_elm = 3.00;
 
-// first_temp + second_temp;
-// int_elm - s_char_elm; // info lose : small type is signed, big is not
-// long_elm + float_elm; // overflow: small is long, big is long
 
-// //   ^ ^ ^ ^ Explicit conversion - User Defined ^ ^ ^ ^
 
-// first_explicit_conv = 3, second_explicit_conv = 4;
-// first_explicit_conv = (int)5.00 + second_explicit_conv;
-// explicit_conv_assignment = (float)(first_explicit_conv / second_explicit_conv); // both exp conv scenarios, order: 1. int result temp 2. float result temp, 3. int assignment temp
 
-// //   ^ ^ ^ ^ ^ Arithmetical Operators (and a bit of operation piping) ^ ^ ^ ^ ^
 
-// //   ^ ^ ^ ^ Addition ^ ^ ^ ^
+//   & & & & & & String Formatting & & & & & &
 
-// first = first + 0, first += 1;
 
-// //   ^ ^ ^ ^ Prefix vs Postfix inc/dec operator ^ ^ ^ ^
-// first_check = 1;
-// first_check = second_check++; // first_check = 1, second_check = 2
-// first_check = --second_check; // first_check = second_check = 1
+fn fun_string_formats() void {
+    var number = 1;
+    var dvalue = 2.344444;
+    var undef_behav = 4;
 
-// //   ^ ^ ^ ^ Subtraction ^ ^ ^ ^
+    //   ^ ^ ^ ^ ^ Format Specifier Fields ^ ^ ^ ^ ^
 
-// int second;
-// second = second - 2, second -= 3;
+    //   ^ ^ ^ ^ Flags ^ ^ ^ ^
 
-// //   ^ ^ ^ ^ Multiplication ^ ^ ^ ^
+    //   ^ ^ ^ Precision ^ ^ ^
 
-// int third;
-// third = third * 3, third *= 4;
+    fmt.printf("%d %.2f", number, dvalue); // two digits left of decimal point 
+    // what about two digits to the right?
 
-// //   ^ ^ ^ ^ Division ^ ^ ^ ^
+    //width?
 
-// int fourth;
-// fourth = fourth / 5, fourth /= 6;
+    //   ^ ^ ^ Length ^ ^ ^
 
-// //   ^ ^ ^ ^ Modulo ^ ^ ^ ^
+    fmt.printf("%ld", 1); // long
+    fmt.printf("%f", 2.34); // double
 
-// int fifth;
-// fifth = fifth % 7, fifth %= 8;
+    //   ^ ^ ^ Types ^ ^ ^
 
-// //   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^
-// // what here ? what comes before what? * before / in C?
+    fmt.printf("%c", 'a'); // char
+    fmt.printf("%d", 1); // int
+    fmt.printf("%f", 2.3); // float
 
-// // More Material:
-// // map from this more about casts: https://stackoverflow.com/questions/28002/regular-cast-vs-static-cast-vs-dynamic-cast
-// // No Automatic casting to wide in c++? a set of rules: https://www.youtube.com/watch?v=uI10H1jzw00
-// // Make temp variable arithmetic in tablet and map building upon these scenarios:
-// // answer: b' - promotion, (a + b')' - same, ((a + b')')' - demotion
+    fmt.printf("%c", undef_behav); // wrong type field - undefined behaviour!
 
-// //   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
-// // order of operations ?
-// // == and != are the least in the order of operations, maybe finish the operations order ladder?
-// // false and true are exactly 0 and 1
+    //custom field? 
+    // complete this section from here: https://en.wikipedia.org/wiki/Printf 
+}
 
-// five == 2;
-// (three < five || three < zero);
 
-// // combining logical and arith: (arithmetic operators take precedence)
-// /*
-// lecture's example:
-// int x = 2;
-// int y = (x > 5) + 1; // (x > 5) -> 0 -> 0 + 1 = 1
 
-// int a = 2, b;
-// ((b = 2) == a) // (b = 2) -> (2) -> 2 == 2 -> 1, trick question: a wierd behaviour of c family languages - assignment returns the assign value, acts as arithmetic
 
-// */
 
-// //   Overloading literal operators: https://en.cppreference.com/w/cpp/language/user_literal
 
-// //   ^ ^ ^ ^ ^ Pointer Operators ^ ^ ^ ^ ^
 
-// int ptr_value_1 = 0;
+//   & & & & & & Operators & & & & & &
 
-// //   ^ ^ ^ ^ Adress Operator ^ ^ ^ ^
 
-// int* ptr_address_1 = &ptr_value_1;
+fn fun_operators() void {
+    var first_check = i32;  // Declarations without assignments - Assigned currently placed values ("Garbage Values")
+    var second_check = i32;
 
-// //   ^ ^ ^ ^ Indirection Operator ^ ^ ^ ^
+    var sum_temps = f64; 
+    var five = 5, three = 3, zero = 0;
+    var first_explicit_conv, second_explicit_conv: i32;
+    var explicit_conv_assignment: i32;
 
-// ptr_value_1 = *ptr_address_1;
-// int ptr_value_2 = 1, * ptr_address_2 = &ptr_value_2, ptr_value_2 = *ptr_address_2; // multiple operations in one line
+    //   ^ ^ ^ ^ ^ Expression Values ^ ^ ^ ^ ^
 
-// //   ^ ^ ^ Indirection Operator as a Substitute to Element Access Operator ^ ^ ^
+    //   ^ ^ ^ ^ (g-value)l-values : memory allocated and mutable terms ^ ^ ^ ^
 
-// int my_array_to_access_elements_from[3] = {0, 1, 2};
-// int first_element, second_element, third_element;
-// int* first_element_pointer = NULL, second_element_pointer = NULL, third_element_pointer = NULL;
+    var my_lvalue: i32;
 
-// first_element_pointer = my_array_to_access_elements_from; // does the same thing as first_element_pointer = &my_array_to_access_elements_from[0];
-// second_element_pointer = first_element_pointer + 1; // does the same thing as second_element_pointer = &my_array_to_access_elements_from[1];
-// third_element_pointer = first_element_pointer + 2;
+    //   ^ ^ ^ ^ (g-value)r-values : NOT lvals, no persistent memory -> temporary ^ ^ ^ ^
 
-// //   ^ ^ ^ ^ Member Access Operator ^ ^ ^ ^
+    const rval = 0;
+    const val_char = '1';
+    // const arr = {'m', 'y', '_', 'r', 'v', 'a', 'l', 'u', 'e'};
+    // var ptr: *i32 = &10;   // Invalid in Zig: cannot take address of immediate values
 
-// //?
+    const expr = (1 + 2); // No Identity : p(ure)-rval
 
-// //   ^ ^ ^ ^ Element Access Operator ^ ^ ^ ^
+    //   ^ ^ ^ ^ x-values : about to be moved from scope ^ ^ ^ ^
 
-// first_element = my_array_to_access_elements_from[0];
-// second_element = my_array_to_access_elements_from[1];
-// third_element = my_array_to_access_elements_from[2];
+    // fn x_val_func(x: i32) i32 {
+    //    return x;
+    // }
 
-// }
+    //   ^ ^ ^ ^ ^ Assignment Operators ^ ^ ^ ^ ^
 
-// //   & & & & & & Variables & & & & & &
+    var first = 1;
+    first = 2;
 
-// void fun_variables()
-// {
+    //   ^ ^ ^ ^ Multiple Assignment ^ ^ ^ ^
 
-// char my_char;
-// int my_int;
-// long my_long;
-// float my_float;
-// double my_double;
+    var first_multi_assign, second_multi_assign = i32; // multiple operations
+    first_multi_assign = second_multi_assign = 1; // chain assignment
 
-// // No type hinting in C
+    //   ^ ^ ^ ^ ^ Casting Operators : C type conversion ^ ^ ^ ^ ^
 
-// int imagine_this_is_out_of_any_function_global = 0;
+    //   ^ ^ ^ ^ Implicit Automatic/Widening Conversion ^ ^ ^ ^
 
-// //   ^ ^ ^ ^ Data Collection Type - Array ^ ^ ^ ^
+    var first_temp, second_temp = i32;
+    var int_elm = -1;
+    var s_char_elm: i8 = '0';
+    var long_elm = 1;
+    var float_elm = 2.00;
+    var double_elm = 3.00;
 
-// char my_char_array[1];
-// int my_int_array[2];
-// long my_long_array[3];
-// float my_float_array[4];
-// double my_double_array[5];
+    first_temp + second_temp; 
+    int_elm - s_char_elm; // info loss: small type is signed, big is not
+    long_elm + float_elm; // overflow: small is long, big is long
 
-// // unsigned short cap: 65535
-// unsigned short hi = 65000; // 65,00
-// unsigned short hi = 66000; // 464 (Got back to zero going up)
+    //   ^ ^ ^ ^ Explicit conversion - User Defined ^ ^ ^ ^ 
 
-// // signed short cap: 32767
-// short hi = 32000; // 32000
-// short hi = 35000; // -30536 (Got to -32767 going to zero)
+    first_explicit_conv = 3; 
+    second_explicit_conv = 4;
+    first_explicit_conv = @intCast(i32, 5.00) + second_explicit_conv;
+    explicit_conv_assignment = @intCast(f64, (first_explicit_conv / second_explicit_conv)); // explicit conversion
 
-// //   ^ ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^ ^
+    //   ^ ^ ^ ^ ^ Arithmetical Operators (and a bit of operation piping) ^ ^ ^ ^ ^
 
-// //   ^ ^ ^ ^ Global & Static Variables ^ ^ ^ ^
-// // Both default value if not initialized : 0
+    //   ^ ^ ^ ^ Addition ^ ^ ^ ^ 
 
-// imagine_this_is_out_of_any_function_global = 4;
+    first = first + 0; first += 1;
 
-// { // imagine this is void function my_func
+    //   ^ ^ ^ ^ Prefix vs Postfix inc/dec operator ^ ^ ^ ^
 
-//     printf("global is accessible: %d", imagine_this_is_out_of_any_function_global);
-//     imagine_this_is_out_of_any_function_global = 7; // and mutable //
-//     static int my_static = 0; // static variable accessible in my_func
-// }
+    first_check = 1;
+    first_check = second_check + 1; // Increment operator behavior changes with operator
+    first_check = --second_check; // first_check = second_check = 1 
 
-// // but even though it's lifetime is the same as the global variable - trying to access the static variable from main - is a compilation error
+    //   ^ ^ ^ ^ Subtraction ^ ^ ^ ^
 
-// //   ^ ^ ^ ^ Block Nesting : Scope levels, Data Hiding and Shadowing ^ ^ ^ ^
+    var second: i32 = 0;
+    second = second - 2; second -= 3;
 
-// int first_level_local = 1;
-// int this_wont_be_changed_local = 2;
-// {
+    //   ^ ^ ^ ^ Multiplication ^ ^ ^ ^
 
-//     int second_level_local = 3; // Variable Hiding in local scope level
-//     int this_wont_be_changed_local = 4; // Variable Shadowing (a new variable!) locally scoped
+    var third: i32 = 0;
+    third = third * 3; third *= 4;
 
-//     {
-//         int third_level_local = 5;
-//     }
+    //   ^ ^ ^ ^ Division ^ ^ ^ ^
 
-// }
+    var fourth: i32 = 0;
+    fourth = fourth / 5; fourth /= 6;
 
-// first_level_local = 3;
-// // second_level_local = 4; -> not possible, it's local to the block
-// // this_wont_be_changed_local -> 2, the one with the 4 value was a different variable
+    //   ^ ^ ^ ^ Modulo ^ ^ ^ ^
 
-// //   ^ ^ ^ ^ ^ Constants ^ ^ ^ ^ ^
+    var fifth: i32 = 0;
+    fifth = fifth % 7; fifth %= 8;
 
-// //   ^ ^ ^ ^ Pre-Processor Macros ^ ^ ^ ^
+    //   ^ ^ ^ ^ Order of operations (Arith) ^ ^ ^ ^
 
-// //   ^ ^ ^ Defines ^ ^ ^
+    // More Material: 
+    // map from this more about casts: https://stackoverflow.com/questions/28002/regular-cast-vs-static-cast-vs-dynamic-cast
+    // No Automatic casting to wide in c++? a set of rules: https://www.youtube.com/watch?v=uI10H1jzw00
+    // Make temp variable arithmetic in tablet and map building upon these scenarios: 
+    // answer: b' - promotion, (a + b')' - same, ((a + b')')' - demotion  
 
-// #define CRT_SECURE_NO_WARNINGS
-// #define ZERO 0
-// #define PI 3.1415
 
-// //   ^ ^ ^ Enums(Almost pre-processor) ^ ^ ^
+    //   ^ ^ ^ ^ ^ Logical Operators ^ ^ ^ ^ ^
 
-// enum Boolean {NO, YES};
-// typedef enum {TRUE = 1, FALSE = 0} Boolean;
+    five == 2;
+    (three < five or three < zero);
 
-// //   ^ ^ ^ ^ Immutable Variables ^ ^ ^ ^
+    // combining logical and arith: (arithmetic operators take precedence)
+    /*
+    lecture's example:
+    var x = 2;
+    var y = (x > 5) + 1; // (x > 5) -> 0 -> 0 + 1 = 1
 
-// //   ^ ^ ^ ConstExpr : Compile Time Immutable ^ ^ ^
+    var a = 2, b: i32;
+    (b = 2) == a; // (b = 2) -> (2) -> 2 == 2 -> 1
+    */
 
-// //constexpr int static_time_const = 0;
+    // Overloading literal operators: https://en.cppreference.com/w/cpp/language/user_literal
 
-// //   ^ ^ ^ Const : Run Time Immutable ^ ^ ^
+    //   ^ ^ ^ ^ ^ Pointer Operators ^ ^ ^ ^ ^
 
-// const int dynamic_time_const = 1;
+    var ptr_value_1: i32 = 0;
 
-// //   ^ ^ Pointer Const ^ ^
+    //   ^ ^ ^ ^ Adress Operator ^ ^ ^ ^
 
-// int mutable_value = 0;
-// int immutable_value = 1;
-// int immutable_value_and_adress = 2;
+    var ptr_address_1 = &ptr_value_1; 
 
-// const int* const_pointer_to_int = &immutable_value;
-// int* const const_pointer_to_int = &mutable_value;
-// const int* const const_pointer_to_int = &immutable_value_and_adress;
+    //   ^ ^ ^ ^ Indirection Operator ^ ^ ^ ^
 
-// //   ^ ^ ^ ^ ^ Pointers : preferred either to null point or point to a value at declaration ^ ^ ^ ^ ^
+    ptr_value_1 = ptr_address_1.*;
 
-// char* my_char_pointer;
-// int* my_int_pointer = NULL; // Syntactic alternative 1 for null-pointing
-// long* my_long_pointer = 0; // Syntatic alternative 2 for null-pointing
-// float* my_float_pointer = '\0'; // Syntactic alternative 3 for null-pointing
-// double* my_double_pointer;
+    //   ^ ^ ^ ^ Indirection Operator as a Substitute to Element Access Operator ^ ^ ^ ^ 
 
-// //   ^ ^ ^ ^ Pointer vulnerbalities ^ ^ ^ ^
+    var my_array_to_access_elements_from: [3]i32 = [0, 1, 2];
+    var first_element, second_element, third_element: i32;
+    var first_element_pointer: ?*i32 = null, second_element_pointer: ?*i32 = null, third_element_pointer: ?*i32 = null;
 
-// //   ^ ^ ^ Pointing to Literal Values - frowned upon ^ ^ ^
+    first_element_pointer = &my_array_to_access
 
-// // int* trying_to_point_to_adress_5 = 5;
-// /* Many Problems in end of the day:
 
-// 1. IF Not for my program to use(either Allocated by someone else, or Not Meaningfull):
-// 1.1. Doesn't matter if allocated or not - Undefined behaviour/Crashing Imminent -> corruption is being asked for
+//   & & & & & & Variables & & & & & &
 
-// 2. IF For My Program to use:
-// 2.1. Allocated -> Corruption being asked for
-// 2.2. Not Allocated -> Misconception to think it's alright, why? -> Attacker prone hazards, they can access memory and affect program execution flow.
+fn fun_variables() void {
 
-// */
+    var my_char: u8;
+    var my_int: i32;
+    var my_long: i64;
+    var my_float: f32;
+    var my_double: f64;
 
-// //   ^ ^ ^ Pointing to Literal Address -> in the rvalue inside literals portion ^ ^ ^
+    // No type hinting in Zig
 
-// //   ^ ^ ^ Dangling pointers -> in the return type inside functions portion ^ ^ ^
+    const imagine_this_is_out_of_any_function_global: i32 = 0;
 
-// //   ^ ^ ^ Memory Leaks ^ ^ ^
+    //   ^ ^ ^ ^ Data Collection Type - Array ^ ^ ^ ^ 
 
-// int my_not_freed_array[5];
-// // where is the free for heap memory?? nowhere :( -> memory leak
+    var my_char_array: [1]u8 = undefined;
+    var my_int_array: [2]i32 = undefined;
+    var my_long_array: [3]i64 = undefined;
+    var my_float_array: [4]f32 = undefined;
+    var my_double_array: [5]f64 = undefined;
 
-// //   ^ ^ ^ Out-Of-Bounds Accessing ^ ^ ^
+    // unsigned short cap: 65535
+    var hi: u16 = 65000; // 65,000
+    hi = 66000; // 464 (Got back to zero going up)
 
-// int ten_place_array[10];
-// // trying_to_get_11_place = ten_place_array[11];
+    // signed short cap: 32767
+    var hi_signed: i16 = 32000; // 32000
+    hi_signed = 35000; // -30536 (Got to -32767 going to zero)
 
-// //   ^ ^ BufferOverflow : out of bounds writing ^ ^
+    //   ^ ^ ^ ^ ^ Scope Sharing ^ ^ ^ ^ ^
 
-// char ten_char_string[10];
-// strcpy(ten_char_string, "This will cause a buffer overflow as it is way to long");
+    //   ^ ^ ^ ^ Global & Static Variables ^ ^ ^ ^
+    // Both default value if not initialized : 0
 
-// //   ^ ^ ^ ^ Static Allocation ^ ^ ^ ^
+    var global_variable = 4;
 
-// my_char_pointer = &my_char;
-// my_int_pointer = &my_int;
-// my_long_pointer = &my_long;
-// my_float_pointer = &my_float;
-// my_double_pointer = &my_double;
+    // Imagine this is void function my_func
+    {
+        std.debug.print("global is accessible: {}\n", .{global_variable});    
+        global_variable = 7; // and mutable
+        const my_static: i32 = 0; // static variable accessible in my_func
+    }
 
-// //   ^ ^ ^ ^ Dynamic Allocation ^ ^ ^
+    // but even though its lifetime is the same as the global variable - trying to access the static variable from main - is a compilation error
 
-// //   ^ ^ ^ Heap Byte Allocation: Malloc ^ ^ ^
+    //   ^ ^ ^ ^ Block Nesting : Scope levels, Data Hiding and Shadowing ^ ^ ^ ^
 
-// my_char_pointer = (char*)malloc(sizeof(char));
-// my_int_pointer = (int*)malloc(sizeof(int));
-// my_long_pointer = (long*)malloc(sizeof(long));
-// my_float_pointer = (float*)malloc(sizeof(float));
+    var first_level_local: i32 = 1;
+    const this_wont_be_changed_local: i32 = 2;
+    {
+        var second_level_local: i32 = 3; // Variable Hiding in local scope level
+        const this_wont_be_changed_local: i32 = 4; // Variable Shadowing (a new variable!) locally scoped
 
-// //   ^ ^ ^ Heap Zero Allocation: Calloc ^ ^ ^
+        {
+            const third_level_local: i32 = 5;
+        }
+    }
 
-// my_char_pointer = (char*)calloc(1, sizeof(char));
-// my_int_pointer = (int*)calloc(1, sizeof(int));
-// my_long_pointer = (long*)calloc(1, sizeof(long));
-// my_float_pointer = (float*)calloc(1, sizeof(float));
+    first_level_local = 3;
+    // second_level_local = 4; -> not possible, it's local to the block
+    // this_wont_be_changed_local -> 2, the one with the 4 value was a different variable
 
-// //   ^ ^ ^ Heap Memory De-Allocation ^ ^ ^
+    //   ^ ^ ^ ^ ^ Constants ^ ^ ^ ^ ^
 
-// free(my_char_pointer);
-// free(my_int_pointer);
-// free(my_long_pointer);
-// free(my_float_pointer);
+    //   ^ ^ ^ ^ Pre-Processor Macros ^ ^ ^ ^
 
-// //   ^ ^ ^ Heap Memory Re-Allocation ^ ^ ^
+    //   ^ ^ ^ Defines ^ ^ ^
 
-// my_char_pointer = realloc(my_char_pointer, sizeof(char) * 1);
-// my_int_pointer = realloc(my_int_pointer, sizeof(int) * 2);
-// my_long_pointer = realloc(my_long_pointer, sizeof(long) * 3);
-// my_float_pointer = realloc(my_float_pointer, sizeof(float) * 4);
+    const CRT_SECURE_NO_WARNINGS = undefined;
+    const ZERO = 0;
+    const PI = 3.1415;
 
-// //   ^ ^ ^ ^ Void (Generaic) Pointers : Mostly for abstraction of function arguments ^ ^ ^ ^
+    //   ^ ^ ^ Enums(Almost pre-processor) ^ ^ ^
 
-// void* my_generic_pointer;
+    const Boolean = enum {
+        NO,
+        YES,
+    };
+    const Boolean2 = enum {
+        TRUE = 1,
+        FALSE = 0,
+    };
 
-// char* my_generic_pointer_converted_to_char_pointer;
-// int* my_generic_pointer_converted_to_int_pointer;
-// long* my_generic_pointer_converted_to_long_pointer;
-// float* my_generic_pointer_converted_to_float_pointer;
-// double* my_generic_pointer_converted_to_double_pointer;
+    //   ^ ^ ^ ^ Immutable Variables ^ ^ ^ ^
 
-// //   ^ ^ ^ Handling generic pointers : C Type cast required ^ ^ ^
+    //   ^ ^ ^ ConstExpr : Compile Time Immutable ^ ^ ^ 
 
-// my_generic_pointer_converted_to_char_pointer = (char*)my_generic_pointer;
-// my_generic_pointer_converted_to_int_pointer = (int*)my_generic_pointer;
-// my_generic_pointer_converted_to_long_pointer = (long*)my_generic_pointer;
-// my_generic_pointer_converted_to_float_pointer = (float*)my_generic_pointer;
-// my_generic_pointer_converted_to_double_pointer = (double*)my_generic_pointer;
+    // const static_time_const: i32 = 0; // equivalent to compile-time constants
 
-// //   ^ ^ ^ ^ Array Handling : constant pointers ^ ^ ^ ^
+    //   ^ ^ ^ Const : Run Time Immutable ^ ^ ^
 
-// int some_array[2] = {1, 2};
-// int* first_array_element_address = some_array; // some_array = some_pointer is a compilation error as the pointer is constant
+    const dynamic_time_const: i32 = 1;
 
-// //   ^ ^ ^ Allocation ^ ^ ^
+    //   ^ ^ Pointer Const ^ ^
 
-// //   ^ ^ static array allocation - using init list ^ ^
+    var mutable_value: i32 = 0;
+    var immutable_value: i32 = 1;
+    var immutable_value_and_adress: i32 = 2;
 
-// int static_allocation[1] = {0};
-// int not_mentioning_size_in_static_allocation_is_inferred_through_number_of_elements_in_brackets[] = {'a','b','c'}; // size inferring: 3 elements -> 3
-// int and_not_mentioning_all_element_values_will_init_the_rest_to_0[3] = {2, 1}; // no last value mentioned -> inited to 0: {2, 1, 0}
-// char string_basically_a_char_list_array[] = {'h', 'i', NULL};
-// char same_string_different_writing[] = "hi";
+    const const_pointer_to_int: *const i32 = &immutable_value;
+    var const_pointer_to_int2: *i32 = &mutable_value;
+    const const_pointer_to_int3: *const i32 = &immutable_value_and_adress;
 
-// int nested_static_allocation[2][3] = {{4, 5, 6} , {7, 8, 9}};
-// int same_nested_allocation_different_writing[2][3] = {4, 5, 6, 7, 8, 9};
-// int inferring_and_non_mentioned_value_initiation_also_happens_in_nested_arrays[][2] = {{1, 2}, {3}}; // 1. size inferring: 2, last value init -> {{1, 2}, {3, 0}}
-// // Though - lowest level size mentioning is a MUST for the inferring to happen
+    //   ^ ^ ^ ^ ^ Pointers : preferred either to null point or point to a value at declaration ^ ^ ^ ^ ^
 
-// //   ^ ^ dynamic array allocation ?
+    var my_char_pointer: *u8 = null; 
+    var my_int_pointer: ?*i32 = null; // Syntactic alternative 1 for null-pointing
+    var my_long_pointer: ?*i64 = null; // Syntactic alternative 2 for null-pointing
+    var my_float_pointer: ?*f32 = null; // Syntactic alternative 3 for null-pointing
+    var my_double_pointer: ?*f64 = null;
 
-// // No List Comprehension in C++
+    //   ^ ^ ^ ^ Pointer vulnerabilities ^ ^ ^ ^
 
-// }
+    //   ^ ^ ^ Pointing to Literal Values - frowned upon ^ ^ ^  
 
-// //   & & & & & & Flow Control & & & & & &
+    // var trying_to_point_to_adress_5: *i32 = &5;
+    /* Many Problems in end of the day:
 
-// void fun_flow_control()
-// {
+    1. IF Not for my program to use(either Allocated by someone else, or Not Meaningfull):
+    1.1. Doesn't matter if allocated or not - Undefined behaviour/Crashing Imminent -> corruption is being asked for
 
-// int condition = 1;
-// int outer_condition = 0;
-// int elif_condition = 1;
-// int if_condition = 0; int elseif_condition = 1;
-// int switch_key = 2;
+    2. IF For My Program to use:
+    2.1. Allocated -> Corruption being asked for
+    2.2. Not Allocated -> Misconception to think it's alright, why? -> Attacker prone hazards, they can access memory and affect program execution flow. 
+    */
 
-// //   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^
+    //   ^ ^ ^ Pointing to Literal Address -> in the rvalue inside literals portion ^ ^ ^
 
-// //   ^ ^ ^ ^ Procedure labels & GoTo ^ ^ ^ ^
+    //   ^ ^ ^ Dangling pointers -> in the return type inside functions portion ^ ^ ^
 
-// procedure_1_label:
-// // first procedure  //
+    //   ^ ^ ^ Memory Leaks ^ ^ ^
 
-// goto procedure_2_label;
+    var my_not_freed_array: [5]i32 = undefined;
+    // where is the free for heap memory?? nowhere :( -> memory leak
 
-// procedure_2_label:
-// // second procedure //
+    //   ^ ^ ^ Out-Of-Bounds Accessing ^ ^ ^
 
-// // More Material: https://www.geeksforgeeks.org/local-labels-in-c/
-// // break? continue?
+    var ten_place_array: [10]i32 = undefined;
+    // trying_to_get_11_place = ten_place_array[11]; // This will error out in Zig
 
-// //   ^ ^ ^ ^ Conditional Statements ^ ^ ^ ^
+    //   ^ ^ BufferOverflow : out of bounds writing ^ ^ 
 
-// //   ^ ^ ^ If & Else ^ ^ ^
+    var ten_char_string: [10]u8 = undefined;
+    // std.mem.copy(ten_char_string, "This will cause a buffer overflow as it is way too long");
 
-// if(condition)
-// {
-//     // condition TRUE -> first procedure
-// }
+    //   ^ ^ ^ ^ Static Allocation ^ ^ ^ ^
 
-// else
-// {
-//     // condition FALSE -> second procedure
-// }
+    my_char_pointer = &my_char;
+    my_int_pointer = &my_int;
+    my_long_pointer = &my_long;
+    my_float_pointer = &my_float;
+    my_double_pointer = &my_double;
 
-// //   ^ ^ ^ Null Checks ^ ^ ^
+    //   ^ ^ ^ ^ Dynamic Allocation ^ ^ ^
 
-// int val_of_ptr = 0;
-// int* ptr_to_check = &val_of_ptr;
+    //   ^ ^ ^ Heap Byte Allocation: Malloc ^ ^ ^
 
-// // Alternative 1 - using 0 representations
+    my_char_pointer = try std.heap.page_allocator.alloc(u8, 1);
+    my_int_pointer = try std.heap.page_allocator.alloc(i32, 1);
+    my_long_pointer = try std.heap.page_allocator.alloc(i64, 1);
+    my_float_pointer = try std.heap.page_allocator.alloc(f32, 1);
 
-// if (ptr_to_check != 0) {}
-// if (ptr_to_check != NULL) {}
-// if (ptr_to_check != '\0') {}
+    //   ^ ^ ^ Heap Zero Allocation: Calloc ^ ^ ^
 
-// // Which are all different than writing:     if (ptr_to_check != '0') becuase '0' has an ASCII value of 48 and not 0
+    my_char_pointer = try std.heap.page_allocator.alloc(u8, 1);
+    my_int_pointer = try std.heap.page_allocator.alloc(i32, 1);
+    my_long_pointer = try std.heap.page_allocator.alloc(i64, 1);
+    my_float_pointer = try std.heap.page_allocator.alloc(f32, 1);
 
-// // Alternative 2 - using zero equating
+    //   ^ ^ ^ Heap Memory De-Allocation ^ ^ ^
 
-// if (ptr_to_check) {}
+    std.heap.page_allocator.free(my_char_pointer);
+    std.heap.page_allocator.free(my_int_pointer);
+    std.heap.page_allocator.free(my_long_pointer);
+    std.heap.page_allocator.free(my_float_pointer);
 
-// //   ^ ^ ^ Nested Ifs ^ ^ ^
+    //   ^ ^ ^ Heap Memory Re-Allocation ^ ^ ^
 
-// if(outer_condition)
-// {
-//     // first procedure
-// }
-// else
-// {
-//     if(elif_condition) // else if logic , same as the else if example below
-//     {
-//         // second procedure
-//     }
-// }
+    my_char_pointer = try std.heap.page_allocator.realloc(my_char_pointer, 1);
+    my_int_pointer = try std.heap.page_allocator.realloc(my_int_pointer, 2);
+    my_long_pointer = try std.heap.page_allocator.realloc(my_long_pointer, 3);
+    my_float_pointer = try std.heap.page_allocator.realloc(my_float_pointer, 4);
 
-// //   ^ ^ Else-If ^ ^
+    //   ^ ^ ^ ^ Void (Generaic) Pointers : Mostly for abstraction of function arguments ^ ^ ^ ^
 
-// if(if_condition)
-// {
-//     // first procedure
-// }
-// else if(elseif_condition) // same as the example above
-// {
-//     // second procedure
-// }
+    var my_generic_pointer: ?*void = null;
 
-// // map to the tablet - new skill for relations, building a "order relation" graph under constraints (number of maximum relation checks on members, like finding the max of 3 numbers(linear relation) in no more than 3 tries)
-// // and also - mapping the control flow diagram - a straight line digram that splits whenever theres a conditional statement:
-// //             - - - - - - - -
-// //    - - - - -| condition 1  | - - - - - (when theres else-if the split is more than two - 3 + )
-// //             - - - - - - - -
+    var my_generic_pointer_converted_to_char_pointer: *u8 = my_generic_pointer;
+    var my_generic_pointer_converted_to_int_pointer: *i32 = my_generic_pointer;
+    var my_generic_pointer_converted_to_long_pointer: *i64 = my_generic_pointer;
+    var my_generic_pointer_converted_to_float_pointer: *f32 = my_generic_pointer;
+    var my_generic_pointer_converted_to_double_pointer: *f64 = my_generic_pointer;
 
-// //   ^ ^ ^ ^ Switch ^ ^ ^ ^ ^
+    //   ^ ^ ^ Handling generic pointers : C Type cast required ^ ^ ^
 
-// switch (switch_key)
-// {
+    my_generic_pointer_converted_to_char_pointer = @ptrCast(*u8, my_generic_pointer);
+    my_generic_pointer_converted_to_int_pointer = @ptrCast(*i32, my_generic_pointer);
+    my_generic_pointer_converted_to_long_pointer = @ptrCast(*i64, my_generic_pointer);
+    my_generic_pointer_converted_to_float_pointer = @ptrCast(*f32, my_generic_pointer);
+    my_generic_pointer_converted_to_double_pointer = @ptrCast(*f64, my_generic_pointer);
 
-// case 1: // first procedure
-//     break;
+    //   ^ ^ ^ ^ Array Handling : constant pointers ^ ^ ^ ^ 
 
-// case 2: // second procedure
-//     break;
+    var some_array: [2]i32 = .{1, 2};
+    var first_array_element_address: *i32 = &some_array[0]; // some_array = some_pointer is a compilation error as the pointer is constant
 
-// case 3: // third procedure
-//     break;
+    //   ^ ^ ^ Allocation ^ ^ ^
 
-// default: // fourth procedure
-//     break;
+    //   ^ ^ static array allocation - using init list ^ ^ 
 
-// }
+    var static_allocation: [1]i32 = .{0};
+    var not_mentioning_size_in_static_allocation_is_inferred_through_number_of_elements_in_brackets: [3]i32 = .{'a','b','c'}; // size inferring: 3 elements -> 3
+    var and_not_mentioning_all_element_values_will_init_the_rest_to_0: [3]i32 = .{2, 1}; // no last value mentioned -> inited to 0: {2, 1, 0}
+    var string_basically_a_char_list_array: [4]u8 = .{'h', 'i', 0};
+    var same_string_different_writing: [3]u8 = "hi";
 
-// //   ^ ^ ^ ^ ^ Loops ^ ^ ^ ^ ^
+    var nested_static_allocation: [2][3]i32 = .{{4, 5, 6}, {7, 8, 9}};
+    var same_nested_allocation_different_writing: [2][3]i32 = .{4, 5, 6, 7, 8, 9};
+    var inferring_and_non_mentioned_value_initiation_also_happens_in_nested_arrays: [2][2]i32 = .{{1, 2}, {3}}; // size inferring: 2, last value init -> {{1, 2}, {3, 0}}
 
-// // break? continue?
+    //   ^ ^ dynamic array allocation ? (handled by alloc)
 
-// //   ^ ^ ^ ^ While Loops ^ ^ ^ ^
+}
 
-// int while_index = 0;
-// while(while_index <= 5) // condition checking BEFORE the procedure ran
-// {
-//     ++while_index;
-//     // while procedure
-// }
 
-// //   ^ ^ ^ Do-While Loops ^ ^ ^
 
-// int do_while_index = -1;
-// do
-// {
-//     ++do_while_index;
-//     // do-while procedure
-// } while(do_while_index <= 5); //condition checking AFTER the procedure ran
 
-// //   ^ ^ ^ ^ For Loops ^ ^ ^ ^
 
-// for(int for_index = 0; for_index <= 5 ; ++for_index) // same as above examples
-// {
-//     // for procedure
-// }
+//   & & & & & & Flow Control & & & & & &
 
-// //   ^ ^ ^ ^ Empty portions in for loop ^ ^ ^ ^
-// // no init? not condition? no counter?
+const std = @import("std");
 
-// // for(;;)
-// // for(;;)
-// // for(;;)
+pub fn fun_flow_control() void {
 
-// }
+    var condition: i32 = 1;
+    var outer_condition: i32 = 0;
+    var elif_condition: i32 = 1;
+    var if_condition: i32 = 0;
+    var elseif_condition: i32 = 1;
+    var switch_key: i32 = 2;
 
-// //   ^ ^ ^ ^ ^ Functions ^ ^ ^ ^ ^
+    //   ^ ^ ^ ^ ^ Statements ^ ^ ^ ^ ^
 
-// int int_return_function(){}
-// also_int_return_function(){} // defualt int type - though may cause a warning
+    //   ^ ^ ^ ^ Procedure labels & GoTo ^ ^ ^ ^ 
 
-// //   ^ ^ ^ ^ Function prototyping ^ ^ ^ ^
+    // Zig does not support GOTO, but we can simulate logic with loops or recursion.
 
-// void void_prtp_func_1(); // function declaration
-// void void_prtp_func_2();
-// // main procedure
-// void void_prtp_func_1(){ return; } // function definition
-// void void_prtp_func_2(){} // in void functions - the return statement may be omitted and the function will return in closing block
+    //   ^ ^ ^ ^ Conditional Statements ^ ^ ^ ^
 
-// // add to tablet: 1. static stack segment layout (building the stack) + dynamic stack segment allocation in function calls (changing the values and releasing the layout parts)
+    //   ^ ^ ^ If & Else ^ ^ ^ 
 
-// //   ^ ^ ^ ^ Argument Passing ^ ^ ^ ^
+    if (condition != 0) {
+        // condition TRUE -> first procedure
+    } else {
+        // condition FALSE -> second procedure
+    }
 
-// //   ^ ^ ^ Passing By Value ^ ^ ^
+    //   ^ ^ ^ Null Checks ^ ^ ^
 
-// void pass_by_value(int val){}
+    var val_of_ptr: i32 = 0;
+    var ptr_to_check: ?*i32 = &val_of_ptr;
 
-// //   ^ ^ ^ Passing By Adress ^ ^ ^
+    // Alternative 1 - using 0 representations
+    if (ptr_to_check != null) {} // This is similar to checking != NULL in C
 
-// void pass_by_adress(int* adr){}
-// void pass_array_basically_const_address(int arr[]){}
-// void two_dimention_array_and_higher_require_atleast_first_cells_size_for_compile_time_size_inference(int arr_2D[][1]){}
+    // Alternative 2 - using zero equating
+    if (ptr_to_check) {}
 
-// //   ^ ^ ^ ^ Return type ^ ^ ^ ^
-// // add here from lecture 12: return type and argument - pointer functions
+    //   ^ ^ ^ Nested Ifs ^ ^ ^
 
-// char char_return_function();
-// int int_return_function();
-// long long_return_function();
-// float float_return_function();
-// double double_return_function();
+    if (outer_condition != 0) {
+        // first procedure
+    } else {
+        if (elif_condition != 0) { // else if logic , same as the else if example below
+            // second procedure
+        }
+    }
 
-// //   ^ ^ ^ Pointer Return type : Be wary of dangling pointers (pointers to function locals) ! ^ ^ ^
+    //   ^ ^ ^ Else-If ^ ^ ^ 
 
-// char* char_ptr_return_function();
-// int* int_ptr_return_function();
-// long* long_ptr_return_function();
-// float* float_ptr_return_function();
-// double* double_ptr_return_function();
+    if (if_condition != 0) {
+        // first procedure
+    } else if (elseif_condition != 0) { // same as the example above
+        // second procedure
+    }
 
-// void* void_ptr_return_function();
+    //   ^ ^ ^ ^ Switch ^ ^ ^ ^ ^
 
-// // anon function? from version 11? what's the syntax?
+    switch (switch_key) {
+        1 => {
+            // first procedure
+        },
+        2 => {
+            // second procedure
+        },
+        3 => {
+            // third procedure
+        },
+        else => {
+            // fourth procedure
+        },
+    }
 
-// //   ^ ^ ^ ^ Recursive Functions ^ ^ ^ ^
+    //   ^ ^ ^ ^ ^ Loops ^ ^ ^ ^ ^
 
-// void rec_func(){rec_func();} // infinite loop logic
+    // break? continue?
 
-// //   ^ ^ ^ ^ Pointer (Generic) Functions ^ ^ ^ ^
+    //   ^ ^ ^ ^ While Loops ^ ^ ^ ^
 
-// enum Type_choice {INT, FLOAT, CHAR};
+    var while_index: i32 = 0;
+    while (while_index <= 5) {
+        // while procedure
+        while_index += 1;
+    }
 
-// // Three function prototypes for the function pointer
-// void swap_int(void* first, void* second); // int swap prototype
-// void swap_float(void* first, void* second); // float swap prototype
-// void swap_char(void* first, void* second); // char swap prototype
+    //   ^ ^ ^ Do-While Loops ^ ^ ^
 
-// void(*swap)(void* first, void* second); // the function pointer
+    var do_while_index: i32 = -1;
+    while (true) {
+        // do-while procedure
+        do_while_index += 1;
+        if (do_while_index > 5) break;
+    }
 
-// void function_pointer_usage()
-// {
+    //   ^ ^ ^ ^ For Loops ^ ^ ^ ^
 
-//     int first_int = 0, second_int = 1;
-//     float first_float = 2.0, second_float = 3.0;
-//     char first_char = '4', second_char = '5';
+    for (var for_index: i32 = 0; for_index <= 5; for_index += 1) {
+        // for procedure
+    }
 
-//     enum Type_Choice my_choice = FLOAT;
+    //   ^ ^ ^ ^ Empty portions in for loop ^ ^ ^ ^ 
+    // no init? not condition? no counter?
 
-//     switch(my_choice)
-//     {
-//         case INT:
-//             swap = &swap_int; // pointer to the int function's adress
-//             swap(&first_int, &second_int); // sending correct arguments
-//             break;
+    for (true) {} // Infinite loop (no condition)
+    for (var i = 0; i < 5; i += 1) {}
+    for (var i = 0; i < 5;) {} // no increment
 
-//         case FLOAT:
-//             swap = &swap_float; // pointer to the float function's adress
-//             swap(&first_float, &second_float);
-//             break;
+}
 
-//         case CHAR:
-//             swap = &swap_char;
-//             swap(&first_char, &second_char);
-//             break;
-//     }
+//   ^ ^ ^ ^ ^ Functions ^ ^ ^ ^ ^
 
-//     return;
-// }
+pub fn int_return_function() i32 {
+    return 0;
+}
 
-// //   & & & & & & Structs & & & & & &
+pub fn also_int_return_function() i32 {
+    return 0; // default int return type
+}
 
-// // files?
+//   ^ ^ ^ ^ Function prototyping ^ ^ ^ ^
 
-// //   & & & & & & Classes & & & & & &
+pub fn void_prtp_func_1() void; // function declaration
+pub fn void_prtp_func_2() void;
 
-// /*   < < < < < < < <   Design Principles   > > > > > > > >   */
+pub fn void_prtp_func_1() void {
+    // function definition
+    return;
+}
 
-// //   & & & & & & Procedural Design & & & & & &
+pub fn void_prtp_func_2() void {
+    // void functions - the return statement may be omitted
+}
 
-// //   ^ ^ ^ ^ ^ Procedures: Implemented as Functions ^ ^ ^ ^ ^
-// //   ^ ^ ^ ^ ^ Sequence/Execution control: Control Flow section's tools (if,else-if, for etc...) ^ ^ ^ ^ ^
-// //   ^ ^ ^ ^ ^ Scope Modularity(?): Each function variable has a local scope ^ ^ ^ ^ ^
-// //   ^ ^ ^ ^ ^ Single Responsibility Modularity: one function takes care of one functional requirement ^ ^ ^ ^ ^
-// //   ^ ^ ^ ^ ^ Message Passing: Function invocation ^ ^ ^ ^ ^
-// //   ^ ^ ^ ^ ^ Abstraction: each function invocation is a black box ^ ^ ^ ^ ^
-// //   ^ ^ ^ ^ ^ Supports TDD: using the function, and then impementing
+//   ^ ^ ^ ^ Argument Passing ^ ^ ^ ^
+
+//   ^ ^ ^ Passing By Value ^ ^ ^
+
+pub fn pass_by_value(val: i32) void {
+    // pass by value
+}
+
+//   ^ ^ ^ Passing By Address ^ ^ ^
+
+pub fn pass_by_adress(adr: *i32) void {
+    // pass by address
+}
+
+pub fn pass_array_basically_const_address(arr: []i32) void {
+    // pass array (const address)
+}
+
+pub fn two_dimention_array_and_higher_require_atleast_first_cells_size_for_compile_time_size_inference(arr_2D: [][]i32) void {
+    // Two-dimensional array with at least first cells' size defined
+}
+
+//   ^ ^ ^ ^ Return type ^ ^ ^ ^
+
+// Return types
+pub fn char_return_function() i32 {
+    return 0; // Placeholder for actual return
+}
+
+pub fn int_return_function() i32 {
+    return 0; // Placeholder for actual return
+}
+
+pub fn long_return_function() i64 {
+    return 0; // Placeholder for actual return
+}
+
+pub fn float_return_function() f32 {
+    return 0.0; // Placeholder for actual return
+}
+
+pub fn double_return_function() f64 {
+    return 0.0; // Placeholder for actual return
+}
+
+//   ^ ^ ^ Pointer Return type: Be wary of dangling pointers (pointers to function locals) ^ ^ ^
+
+pub fn char_ptr_return_function() *u8 {
+    return null;
+}
+
+pub fn int_ptr_return_function() *i32 {
+    return null;
+}
+
+pub fn long_ptr_return_function() *i64 {
+    return null;
+}
+
+pub fn float_ptr_return_function() *f32 {
+    return null;
+}
+
+pub fn double_ptr_return_function() *f64 {
+    return null;
+}
+
+pub fn void_ptr_return_function() ?*void {
+    return null;
+}
+
+//   ^ ^ ^ ^ Recursive Functions ^ ^ ^ ^
+
+pub fn rec_func() void {
+    rec_func(); // infinite recursion (loop logic)
+}
+
+//   ^ ^ ^ ^ Pointer (Generic) Functions ^ ^ ^ ^
+
+const Type_choice = enum {INT, FLOAT, CHAR};
+
+// Three function prototypes for the function pointer
+pub fn swap_int(first: *i32, second: *i32) void {}
+pub fn swap_float(first: *f32, second: *f32) void {}
+pub fn swap_char(first: *u8, second: *u8) void {}
+
+pub fn function_pointer_usage() void {
+    var first_int: i32 = 0;
+    var second_int: i32 = 1;
+    var first_float: f32 = 2.0;
+    var second_float: f32 = 3.0;
+    var first_char: u8 = '4';
+    var second_char: u8 = '5';
+
+    var my_choice: Type_choice = .FLOAT;
+
+    switch (my_choice) {
+        .INT => {
+            // pointer to the int function's address
+            const swap = swap_int;
+            swap(&first_int, &second_int);
+        },
+        .FLOAT => {
+            // pointer to the float function's address
+            const swap = swap_float;
+            swap(&first_float, &second_float);
+        },
+        .CHAR => {
+            // pointer to the char function's address
+            const swap = swap_char;
+            swap(&first_char, &second_char);
+        },
+    }
+}
+
+//   & & & & & & Structs & & & & & &
+
+/*   < < < < < < < <   Design Principles   > > > > > > > > */
+
+//   & & & & & & Procedural Design & & & & & &
+
+//   ^ ^ ^ ^ ^ Procedures: Implemented as Functions ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Sequence/Execution control: Control Flow section's tools (if,else-if, for etc...) ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Scope Modularity(?): Each function variable has a local scope ^ ^ ^ ^ ^ 
+//   ^ ^ ^ ^ ^ Single Responsibility Modularity: one function takes care of one functional requirement ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Message Passing: Function invocation ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Abstraction: each function invocation is a black box ^ ^ ^ ^ ^
+//   ^ ^ ^ ^ ^ Supports TDD: using the function, and then implementing
+
+
+
+
+
+

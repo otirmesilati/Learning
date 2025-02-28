@@ -153,8 +153,7 @@ mkdir -p make_all_the_parent_files_in_this_path # (declarative) if any folders i
 
 #   ^ ^ ^ ^ Files ^ ^ ^ ^ 
 
-touch my_file
-
+touch my_file # create or change permissions
 
 #   ^ ^ ^ ^ Creating File Links (Shortcuts/file references - deleting them won't affect the original) ^ ^ ^ ^
 
@@ -173,7 +172,7 @@ cat -b file_name # Numbering lines
 
 #   ^ ^ ^ Editing Contents ^ ^ ^ 
 
-cat > file_name 
+cat > file_name # control D to save, control C not recommended but might work sometimes
 
 
 #   ^ ^ ^ Sorting contents ^ ^ ^
