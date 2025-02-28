@@ -2,12 +2,6 @@
 
 
 
-// where to put bitmasking? watch video below:
-// https://www.youtube.com/watch?v=wvtFGa6XJDU
-// Add the material from the self made "Nekodot summary" if it still exists :)
-
-
-
 
 
 
@@ -25,7 +19,6 @@
 
 
 //   < < < < < < < <   Procedural Principles   > > > > > > > >   
-//   < < < < < < < <   Generic Principles   > > > > > > > >   
 
 
 
@@ -40,14 +33,13 @@
 //   ^ ^ ^ ^ ^ Static Libraries ^ ^ ^ ^ ^
 
 #include <stdio.h> // C IO Library Files 
-#include <string.h> //? gets? puts? strlen? strcmp (ASCII gimetry compare function)? strcpy(writing function)? strcat(concat from null)?
+#include <string.h> 
+
 
 //   ^ ^ ^ ^ ^ Shared Libraries ^ ^ ^ ^ ^
 
-
-// iostream? stdio.h? GUI libraries?
-// pragma once? namespace ? (finish mapping this)
-// rich API? primitives and objects API? collections?
+// run in terminal with gcc compiler: 
+// gcc -shared -o library_destination_path.so -fPIC library_source_path.c
 
 
 
@@ -69,7 +61,15 @@ comments
 // Comments //
 are available */
 
-// docs? logs?
+/** Documentation 
+ * @brief code portion brief
+ * 
+ * @param parameter info
+ */
+
+// Logs:
+// in-built: printf, fprintf invocation
+// external: syslog or zlog
 
 
 
@@ -340,6 +340,15 @@ fifth = fifth % 7, fifth %= 8;
 // order of operations ?
 // == and != are the least in the order of operations, maybe finish the operations order ladder?
 // false and true are exactly 0 and 1
+
+
+//bit masking
+int six = 0b110; // binary 110
+six |= 0b101; // binary 111
+six &= 0b011; // binary 011
+six ^= 0b100; // binary 100
+six >>= 1; // binary 010
+six <<= 1; // binary 100
 
 five == 2;
 (three < five || three < zero);
@@ -914,6 +923,16 @@ void function_pointer_usage()
 
     return;
 }
+
+
+
+
+
+
+
+
+
+//   < < < < < < < <   Generic Principles   > > > > > > > >   
 
 
 

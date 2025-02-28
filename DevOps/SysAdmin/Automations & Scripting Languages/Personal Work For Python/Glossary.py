@@ -18,7 +18,6 @@
 
 
 
-
 #   < < < < < < < <   Procedural Principles   > > > > > > > >   
 
 
@@ -33,21 +32,30 @@
 
 #   ^ ^ ^ ^ ^ Static Libraries ^ ^ ^ ^ ^
 
-import functools # a module(element of a library) for working with functions, 2 classes: partial(fix arguments) and partialmethod
 #   Standard Library is built in, not need to be imported
-# GUI? Libraries DataBases 
+import functools # a module(element of a library) for working with functions, 2 classes: partial(fix arguments) and partialmethod
 import datetime # current time API
 
-#   ^ ^ ^ ^ ^ Importing Aliases ^ ^ ^ ^ ^
+
+#   ^ ^ ^ ^ Importing Aliases ^ ^ ^ ^
 
 import datetime as timies  
 
 #   ^ ^ ^ ^ ^ Shared Libraries ^ ^ ^ ^ ^
 
+# Using Python's dynamic binding for dynamically linked libraries
+
 #   ^ ^ ^ ^ Shared Automation Libraries ^ ^ ^ ^ 
 
-# import requests
+# import requests, requests:
 import selenium
+
+
+
+
+
+
+
 
 
 #   & & & & & & Comments & & & & & & 
@@ -56,15 +64,21 @@ import selenium
 # Single Line comments
 
 
-# No multi line comments 
-# So we just concat single line comments
-#docs? logs?
-
 """ 
-Documentation
-Annotation
+Multi
+Line
+Comments
+And also 
+Docs:
+
+function info
+
+parameters: parameter info
+
+return: return value
 """
 
+# Logs are imported through the logging library
 
 
 
@@ -80,9 +94,9 @@ Annotation
 
 my_input = input("enter input")
 
+
 #   ^ ^ ^ ^ ^ Console Output ^ ^ ^ ^ ^ 
 
-output = input
 print(output)
 
 
