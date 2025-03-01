@@ -87,11 +87,13 @@ void fun_streams(){
 
     char character;
     scanf(" %c", &character);  // Reads a character without waiting for Enter
-
-}
-// input of string - mention the problem of entering a space?
+    getchar();  // Removes the Enter from the input buffer
 
 //   ^ ^ ^ ^ ^ Console Output ^ ^ ^ ^ ^ 
+
+    printf("char: %c", character);
+
+}
 
 
 
@@ -159,20 +161,11 @@ void fun_literals(){
 
 
 
-// More Material:
-// https://web.archive.org/web/20130807052041/http://cpp.comsci.us/etymology/literals.html
-// https://en.cppreference.com/w/cpp/language/floating_literal //
-
-
-
-
-
 
 
 
 
 //   & & & & & & String Formatting & & & & & &
-
 
 void fun_string_formats(){
 

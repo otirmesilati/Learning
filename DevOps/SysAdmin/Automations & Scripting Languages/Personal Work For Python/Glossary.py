@@ -97,7 +97,9 @@ my_input = input("enter input")
 
 #   ^ ^ ^ ^ ^ Console Output ^ ^ ^ ^ ^ 
 
-print(output)
+print(my_input)
+
+
 
 
 
@@ -106,8 +108,6 @@ print(output)
 
 
 #   & & & & & & Literals & & & & & & 
-# strings and chars?
-
 
 def fun_literals():
     
@@ -118,7 +118,7 @@ def fun_literals():
     1_234
     -123
     1 +2j # There are also complex number "Integers"!
-    pass
+    
 
 
 
@@ -144,8 +144,12 @@ def fun_literals():
 
 #   ^ ^ ^ ^ ^ Characters & Strings ^ ^ ^ ^ ^
 
-    'a'
-    "bc"
+    'a', "bc"
+    True, False
+    None
+
+
+
 
 
 
