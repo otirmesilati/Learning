@@ -1,2 +1,18 @@
-snapshots:
+infrastructure provisioning:
+
+create machines:
+
+create snapshots:
 -provision new machine - call it clean
+--vm setup:
+---selecting vm
+----create new vm
+----allocate resources
+----select ISO
+
+setup cluster:
+-create server
+-configure server
+-create client
+-configure client
+-connect clients to server
