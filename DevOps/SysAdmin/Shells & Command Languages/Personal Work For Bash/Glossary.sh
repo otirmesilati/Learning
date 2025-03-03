@@ -634,12 +634,19 @@ kubectl run -it --rm alpine --image=alpine --command -- /bin/sh # deletes contai
 
 kubectl delete pod pod_name
 
+
+
+
+kubectl create configmap nginx-config --from-literal=message="Add Text Here"
+
 #deployment component
 
 kubectl scale deployment deployment_name --replicas= #<number of replicas>
 
 kubectl apply -f file_name
 #--prune?
+
+
 
 
 minikube start
@@ -670,6 +677,7 @@ ansible servers -m shell -a "ls" # exec interactive shell (ls command) module on
 ansible servers -a "ls" # same same new name
 
 ansible-playbook playbook_name
+
 
 
 
