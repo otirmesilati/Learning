@@ -1,6 +1,15 @@
-infrastructure provisioning:
+Machine infrastructure provisioning:
 
 create machines:
+?
+
+
+server provisioning:
+-ubuntu server:
+--language choice
+--full/minimized install
+--network interface setup
+--storage map
 
 create snapshots:
 -provision new machine - call it clean
@@ -16,3 +25,8 @@ setup cluster:
 -create client
 -configure client
 -connect clients to server
+
+
+
+Container infrastructure provisioning:
+
