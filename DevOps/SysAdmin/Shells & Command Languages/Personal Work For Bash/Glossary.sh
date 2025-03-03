@@ -329,9 +329,10 @@ curl my_http_request
 
 ip a
 
-ssh ip_address
+ssh ip_address_or_machine_name
 ssh user_name@ip_address # Will be prompted to enter password later
-
+ssh-keygen
+ssh-copy-id machine_to_send_key_to
 
 # awk? pg? more? kill? top? ping? ftp? telnet? finger?
 # PART 3 - Advanced Unix
@@ -641,12 +642,6 @@ kubectl apply -f file_name
 #--prune?
 
 
-
-
-
-
-
-
 minikube start
 
 minikube start --driver=docker
@@ -667,6 +662,14 @@ minikube delete
 
 
 
+
+
+ansible -i hosts servers -m ping # pings machines in "servers" inventory group
+
+ansible servers -m shell -a "ls" # exec interactive shell (ls command) module on servers
+ansible servers -a "ls" # same same new name
+
+ansible-playbook playbook_name
 
 
 

@@ -1,0 +1,8 @@
+---
+- name: Basic Playbook Example
+  hosts: all
+  tasks:
+    - name: Install a package
+      apt:
+        name: nginx
+        state: present
