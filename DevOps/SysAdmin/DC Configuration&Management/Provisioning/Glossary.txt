@@ -19,6 +19,8 @@ create snapshots:
 ----allocate resources
 ----select ISO
 
+
+
 setup cluster:
 -create server
 -configure server
@@ -30,3 +32,5 @@ setup cluster:
 
 Container infrastructure provisioning:
 
+setup k8s cluster:
+?

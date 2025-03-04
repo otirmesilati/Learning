@@ -677,8 +677,8 @@ ansible servers -m shell -a "ls" # exec interactive shell (ls command) module on
 ansible servers -a "ls" # same same new name
 
 ansible-playbook playbook_name
-
-
+ansible-playbook playbook_name --tags=tag_name
+ansible-playbook playbook_name --skip-tags=tag_name
 
 
 
