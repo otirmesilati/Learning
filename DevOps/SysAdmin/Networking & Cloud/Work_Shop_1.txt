@@ -240,7 +240,7 @@ tcp ip model
 transport
 - full-duplex : send + recieve + same time
 - Straight through cable -> Router/PC To switch 
-- Cross Oover cable -> Switch to same, Router/PC To same
+- Cross Over cable -> Switch to same, Router/PC To same
 
 
 transport speed
