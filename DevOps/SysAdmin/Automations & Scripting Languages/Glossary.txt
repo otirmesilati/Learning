@@ -40,7 +40,7 @@ At the point's intro:
 hot to run in terminals(move to bash and batch):
 
 -script
-
+(maybe move this to bash to the launching app part?)
 -- python .py: [python installed] --> python file_name.py
 -- javascript .js : [node installed] --> node file_name.js
 --ruby .rb: [ruby installed] --> ruby file_name.rb

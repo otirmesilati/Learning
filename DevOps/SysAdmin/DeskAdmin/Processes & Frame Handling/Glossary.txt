@@ -228,34 +228,6 @@ what to leave here from here?
 
 ^ ^ ^ ^ ^ Code Editors ^ ^ ^ ^ ^
 
--vim -->> vim file_name
---CLI
---nvim -->> nvim file_name
----CLI
-----T(ext)U(ser)I(nterface)L(ine) -->> ?
------normal - for reading -->> ?
------Visual - Normal + text select -->> ?
-Insert - For reading + writing -->> ?
-----Configurations
------Lualine TUIL
------TreeSitter Syntax HighLighting 
------? Code Snippets
------? file explorer
------? git integration
------telescope fuzzy finder 
---dot files - nvim will look at it every time it loads the condif
----file structure
-----lua folder - loads all the imports from there
-----user
------core
-------colorscheme
-------options
--------using the vim global variable
---------relative numbers present (add lua code here)
---------cursor line number is shown (add lua code here)
-
-
-
 merge-map the following to the above:
 
 

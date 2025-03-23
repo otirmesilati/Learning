@@ -231,7 +231,7 @@ git files
 - a directory that grows as the project continues
 - .git/log is the directory that saves the changes of the directory
 
-.gitignoe directory
+.gitignore directory
 - leaves out files for staging 
 
 .gitconfig directory
