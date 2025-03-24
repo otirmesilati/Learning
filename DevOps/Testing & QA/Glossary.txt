@@ -24,7 +24,14 @@ encapsulated
 
 
 JEST
+-system tests
+-api tests
 -unit tests
+--checking if features are propely in place
+--replaces manual checking of output
+---time wasteful
+---no metrics for testing coverage
+---unfamiliarity with the system
 -testing rest client
 --esier
 --function and parameters checking
@@ -32,7 +39,8 @@ JEST
 --a bit harder
 --testing API - checking browser api
 
-
+-test driven develoment
+-- writing the test first and then the 
 
 
 
