@@ -538,11 +538,19 @@ dynamic resources:
 
 
 
+Hardware:
+- switches
+-- 2960 catalyst switch
+- routers:
+-- 2911 cisco proprietary router
+firewall:
+-- 5505 cisco firewall
 
 
 
-
-
+packet traces:
+- add model names to devices: upper menu -> prefenerences -> interface -> show device name labels
+- change different text visual preferences: upper menu -> prefenerences -> Font 
 
 
 
