@@ -548,6 +548,7 @@ firewall:
 
 
 
+
 packet traces:
 - add model names to devices: upper menu -> prefenerences -> interface -> show device name labels
 - change different text visual preferences: upper menu -> prefenerences -> Font 
