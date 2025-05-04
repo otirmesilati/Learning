@@ -2,3 +2,10 @@ permissions
 -windows permissions
 
 -linux permission
+
+stages:
+1. External recon - Gathering Information
+2. Enumeration - Vulnerability Scanning
+3. Exploitation - Through Any User
+4. Privilege Escalation - Through Admin User
+5. 
