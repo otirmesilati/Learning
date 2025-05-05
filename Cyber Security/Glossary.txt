@@ -9,3 +9,10 @@ stages:
 3. Exploitation - Through Any User
 4. Privilege Escalation - Through Admin User
 5. 
+
+
+steps:
+
+Enum:
+
+scan: 
