@@ -18,6 +18,7 @@ JSON crack: https://www.youtube.com/watch?v=4zQwef_Pnqw
  
 
 
+(MOVE TO FS)
 - file is the basic element of file systems for storage
 - a stream is file of data to be transferred (either from - input, or to - output)
 -- mostly will be called buffers

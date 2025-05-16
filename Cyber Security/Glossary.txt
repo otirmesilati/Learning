@@ -1,7 +1,11 @@
-permissions
+permissions(Move to file systems)
 -windows permissions
 
 -linux permission
+
+
+
+
 
 stages:
 1. External recon - Gathering Information
