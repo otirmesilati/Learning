@@ -18,13 +18,6 @@ JSON crack: https://www.youtube.com/watch?v=4zQwef_Pnqw
  
 
 
-(MOVE TO FS)
-- file is the basic element of file systems for storage
-- a stream is file of data to be transferred (either from - input, or to - output)
--- mostly will be called buffers
--- message passing with a DB
--- ends with end of file marker
-- stream processing is immediate, while batch processing is spread in chunked intervals
 
 
 
@@ -106,26 +99,6 @@ example of a SQL command to query the tables: select * from authors
 
 
 
-move this to frame handling:
-
-Excel Keyboard ShortCuts:
-
-Navigation:
-1. Focus on namebox: ->ALT+F3
-2. Focus on A1 cell: -> CTRL+HOME
-3. Focus on last occupied Horizontal and Vertical cell: CTRL+END
-4 Focus on last occupied cell/limit of sheet: -> CTRL+Arrow 
-5. Focus on row: CTRL+SPC
-5. Focus on column: SHFT+SPC
-5. Spreadsheet titles: ->F6
-
-Launchers:
-1. Move or Copy: ->ALT+E+M
-
-Edit:
-1. Add row/column (depends on focus):CTRL++
-
-NeoVim Keyboard Shortcuts: (move this)
 
 
 
