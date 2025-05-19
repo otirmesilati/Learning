@@ -343,6 +343,14 @@ Left-Click Notification Area Button --> spr + a
 maybe move the shortcuts to the individual frames mapping below?
 -- regular 4
 ---word
+----GUI
+-----title bar
+-----ribbon
+------menu bar
+------toolbar
+-----ruler
+-----Document Area
+-----Status bar
 ----sc - winword
 ---excel
 ----sc - excel
@@ -593,6 +601,12 @@ job schedulers
 
 - file browser + api calls outside the machine(same sentiment as above, important to adress)
 -chrome
+--GUI
+---tabs row
+---top toolbar
+---bookmarks bar
+---Content Area
+
 -firefox
 -edge? 
 -Tor
