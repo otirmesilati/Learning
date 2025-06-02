@@ -1,7 +1,4 @@
-permissions(Move to file systems)
--windows permissions
 
--linux permission
 
 
 
