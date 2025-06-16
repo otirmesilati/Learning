@@ -46,7 +46,7 @@ Kill
 
 
 
-% % % % % % % Inter-Process Communication % % % % % % %
+% % % % % % % Inter-Process Communication(IPC) % % % % % % %
 
 & & & & & & Signal Handling & & & & & &
 
