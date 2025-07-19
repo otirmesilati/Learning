@@ -5,7 +5,7 @@
 // 2. lecture_1_main
 
 // ----------------------------------------- Simple Applicative examples ----------------------------------------
-# define _CRT_SECURE_NO_WARNINGS // use this in case of unwanted scanf_s and not needed warnings //
+#define _CRT_SECURE_NO_WARNINGS // use this in case of unwanted scanf_s and not needed warnings //
 #include <stdio.h>
 
 void input_main();
