@@ -9,6 +9,13 @@
 
 ### Theory 
 
+- > *Procedural*
+
+- >> **
+
+- > *Object Oriented*
+- > *Functional* 
+
 ### Practice
 
 
