@@ -13,7 +13,7 @@
 
 
 
-## Code Design
+## Language Features
 
 
 ### Theory
@@ -22,7 +22,7 @@
 
 
 
-## Language Features
+## Code Design
 
 
 ### Theory
@@ -57,6 +57,10 @@
 
 
 
+## Frameworks
+
+
+
 ## Testing 
 
 
@@ -66,10 +70,6 @@
 
 
 ## Jenkins
-
-
-
-## Frameworks
 
 
 
@@ -117,6 +117,10 @@
 
 
 ## Networking
+
+
+
+## Databases
 
 
 
