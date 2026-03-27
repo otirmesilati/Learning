@@ -130,21 +130,54 @@
 ### Theory
 
 - > *Procedural*
+
 - >> **Libraries**
 - >> **Environmental DI**
 - >> **Records**
 - > **Data Streaming**
 - > **Primitive Literals**
 - > **String Formatting**
-- > *Operators*
-- > *Variables*
-- > *Flow Control*
+- > **Operators**
+- > **Variables**
+- > **Flow Control**
 
 - > *Object Oriented*
 
+- >> **ADT Implementation**
+- >> **Abstraction**
+- >> **Encapsulation**
+- >> **Inheritance**
+- >> **Polymorphism**
+- >>> **Dynamic Dispatch**
+- >>> **Alternative - Reflective Programming**
+- >>>> **RTTI**
+- >>>> **Instanceof**
+- >> **Exceptions**
+
 - > *Functional*
 
+- >> **Immutability**
+- >> **Pure Functions**
+- >> **First Order Functions**
+- >> **Function Composition**
+- >> **Declarative vs imperative syntax**
+
+ex: let sum = 0;
+for (let i = 0; i < arr.length; i++) {
+  sum += arr[i];
+} VS const sum = arr.reduce((a, b) => a + b, 0);
+
+- >> **Common Features (maybe move these to the others ?)**
+- >>> **No Side Effects**
+- >>> **Recursion replacing loops**
+- >>> **Referential Transperancy**
+- >>> **Lazy Evaluation**
+
 ### Practice
+
+- > *Procedural*
+- > *Object Oriented*
+- > *Functional*
 
 
 
@@ -152,6 +185,15 @@
 
 
 ### Theory
+
+- > *Design Patterns*
+
+- >> **Creational**
+- >> **Structural**
+- >> **Behavioral**
+
+- > *Generics*
+- >> **Templates**
 
 ### Practice
 
