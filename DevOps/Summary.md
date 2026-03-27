@@ -299,7 +299,9 @@ for (let i = 0; i < arr.length; i++) {
 
 
 - > *ASP .NET core*
+
 - > *Flask*
+
 - > *ExpressJs*
 
 
@@ -313,7 +315,9 @@ for (let i = 0; i < arr.length; i++) {
 ### Theory
 
 - > *Unit Tests*
+
 - > *Integration Tests*
+
 - > *AB Testing*
 
 
@@ -326,12 +330,47 @@ for (let i = 0; i < arr.length; i++) {
 
 ### Theory
 
+- > *Local repository*
+
+- > *Commits*
+
+- > *Branches*
+
+- > *Merging*
+
+- > *Remote Repository*
+
+- > *Version traversal*
+
 
 ### Practice
 
 
 
 ## Jenkins
+
+- > *Intro & CICD*
+
+- > *Architecture & Workers*
+
+- > *Workspace*
+
+- > *Jobs*
+
+- > *Projects*
+- >> **Freestyle Project**
+- >> **Jenkins Pipeline**
+- >>> **Sections**
+- >>>> **Environment**
+- >>>> **Stages**
+- >>>> **Container**
+- >>>> **PodTemplate**
+- >>> **Variables**
+- >>> **Build streaming**
+
+- > *Plugins*
+
+- > *Fingerprints*
 
 
 ### Theory 
