@@ -59,7 +59,7 @@
 - >> **Wierdos**
 - >>> **Java Gleam Go**
 - >> **Interpreted**
-- >>> **VimScript/Lua/JavaScript/Ruby/Python/R/Perl**
+- >>> **VimScript/Lua/JavaScript/Ruby/Python/R/Perl/VB**
 - >> **Run Through Shell**
 - >>> **Bash, Posh, CMD**
 
@@ -83,7 +83,44 @@
 
 - > *Binary/On-Memory/Deleted*
 
+- >> **Zig**
+- >>> **1. Q: Compile & Run a zig program**
+- >> **Kotlin**
+- >>> **1. Q: Compile & Run a kotlin program**
+- >> **Dart**
+- >>> **1. Q: Compile & Run a dart program**
+- >> **Elixir**
+- >>> **1. Q: Compile & Run an Elixir program**
+- >> **Clojure**
+- >>> **1. Q: compile & Run a clojure program**
 
+- > *Interpreted*
+
+- >> **VimScript**
+- >>> **1. Q: Run a VimScript script inside the editor**
+- >> **Lua**
+- >>> **1. Q: Run a Lua script**
+- >> **JavaScript**
+- >>> **1. Q: Run a JavaScript script**
+- >> **Ruby**
+- >>> **1. Q: Run a ruby script**
+- >> **Python**
+- >>> **1. Q: Run a python script**
+- >> **R**
+- >>> **1. Q: Run an R script**
+- >> **Perl**
+- >>> **1. Q: Run a perl script**
+- >> **VisualBasic**
+- >>> **1. Q: Run a Visual Basic Program**
+
+- > *OS through shell runs*
+
+- >> **Bash**
+- >>> **1. Q: Run a bash script**
+- >> **PowerShell**
+- >>> **1. Q: Run a powershell script**
+- >> **CMD**
+- >>> **1. Q: Run a batch script**
 
 ## Language Features
 
