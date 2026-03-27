@@ -266,6 +266,12 @@ for (let i = 0; i < arr.length; i++) {
 - >> **JavaScript**
 - >>> **DOM**
 - >> **Postman**
+- >>> **Intro**
+- >>>> **APIs & entrypoints**
+- >>> **Workspace**
+- >>>> **Variables**
+- >>> **GET requests**
+- >>> **POST requests**
 - >> **Axios**
 - >> **React**
 - >> **DevTools**
@@ -278,6 +284,7 @@ for (let i = 0; i < arr.length; i++) {
 - >>> **Static Pages**
 - >>> **Dynamic Pages**
 - >> **Routing**
+- >>> **Request routing**
 - >>> **Middleware**
 - >> **Authentication & Authorization**
 - >>> **JWT**
@@ -297,10 +304,23 @@ for (let i = 0; i < arr.length; i++) {
 
 ### Theory
 
+- > *Technology stacks*
+- >> **LAMP**
+- >> **MERN**
 
 - > *ASP .NET core*
+- >> **Projects**
+- >> **Architecture**
 
 - > *Flask*
+
+- > *Ruby on rails*
+- >> **Projects**
+- >> **Architecture**
+
+- > *Laravel*
+- >> **Projects**
+- >> **Architecture**
 
 - > *ExpressJs*
 
@@ -349,6 +369,10 @@ for (let i = 0; i < arr.length; i++) {
 
 ## Jenkins
 
+
+### Theory 
+
+
 - > *Intro & CICD*
 
 - > *Architecture & Workers*
@@ -373,9 +397,6 @@ for (let i = 0; i < arr.length; i++) {
 - > *Fingerprints*
 
 
-### Theory 
-
-
 ### Practice
 
 
@@ -385,6 +406,18 @@ for (let i = 0; i < arr.length; i++) {
 
 ### Theory
 
+- > *Intro & Service mesh*
+
+- > *Architecture*
+
+- > *Gateways*
+- >> **Ingress**
+- >>> **Virtual service**
+- >> **Egress**
+
+- > *Traffic management*
+
+- > *Envoy proxies* 
 
 ### Practice
 
@@ -415,14 +448,35 @@ for (let i = 0; i < arr.length; i++) {
 
 ### Theory 
 
+- > *Intro*
+
+- > *Devops methodology*
+
+- > *12 Factor app*
+
 ### Practice
 
 
 
-## Linux 
+## System 
 
 
 ### Theory
+
+- > *System fundementals in linux*
+- >> **Devices**
+- >> **Boot**
+- >>> **BIOS**
+- >>> **UEFI**
+- >> **BootLoader**
+- >>> **Grub**
+- >> **Init systems**
+
+- > *Windows system additions*
+
+- > *MacOS system additions*
+
+- > *Other systems*
 
 ### Practice
 
@@ -459,92 +513,3 @@ for (let i = 0; i < arr.length; i++) {
 
 
 ## Prometheus
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* ## Libraries
-
-* ## Records
-
-* ## Streams
-
-* ## Literals
-
-* ## String Formatting
-
-* ## Operators
-
-* ## Variables
-
-* ## Control Flow 
-
-
-
-
-
-
-
-
-
-
-# Run Away
-
-
-
-* ## Procedural
-
-* ## OOP
-
-* ## Functional
-
-* ## Scripting
-
-* ## Command
-
