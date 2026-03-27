@@ -189,26 +189,64 @@ for (let i = 0; i < arr.length; i++) {
 - > *Design Patterns*
 
 - >> **Creational**
+- >>> **Singleton**
+- >>> **Prototype**
+- >>> **Builder**
+- >>> **Factories**
 - >> **Structural**
+- >>> **Adapter**
+- >>> **Decorator**
+- >>> **Facade**
+- >>> **Proxy**
+- >>> **Composite**
+- >>> **FlyWeight**
+- >>> **Bridge**
 - >> **Behavioral**
+- >>> **Strategy**
+- >>> **State**
+- >>> **Memento**
+- >>> **Delegator**
+- >>> **Iterator**
+- >>> **Mediator**
+- >>> **Visitor**
+- >>> **CoR**
+- >>>> **CoR vs Pipeline**
+- >>> **Observer**
+- >>> **Command**
+- >>> **Template Method**
 
 - > *Generics*
 - >> **Templates**
 
 ### Practice
 
+- > *Creational*
+
+- >> **Singleton**
+- >>> **Problems it solves**
+- >>> **Why**
+- >>> **UML**
+- >>> **Implementation**
+
+- > *Structural*
+
+- > *Behavioral*
 
 
 ## Embedded
 
+- >> **opcode**
 
-## Theory
+### Theory
 
-## Practice
+### Practice
 
 
 
-## Mobile
+## Desktop & Mobile
+
+- >> **app stores**
+- >> **emulator vs simulator**
 
 ### Theory
 
@@ -221,6 +259,35 @@ for (let i = 0; i < arr.length; i++) {
 
 ### Theory
 
+- > *Client Side*
+- >> **Intro**
+- >> **HTML**
+- >> **CSS**
+- >> **JavaScript**
+- >>> **DOM**
+- >> **Postman**
+- >> **Axios**
+- >> **React**
+- >> **DevTools**
+
+- > *Server Side*
+- >> **Intro**
+- >>> **Servers & Runtime environments**
+- >>>> **NodeJS**
+- >> **Page Serving**
+- >>> **Static Pages**
+- >>> **Dynamic Pages**
+- >> **Routing**
+- >>> **Middleware**
+- >> **Authentication & Authorization**
+- >>> **JWT**
+- >> **MicroServices**
+- >> **Dependencies**
+- >>> **NPM**
+- >>> **Linters**
+- >> **Integrations & communications**
+
+
 ### Practice
 
 
@@ -228,21 +295,59 @@ for (let i = 0; i < arr.length; i++) {
 ## Frameworks
 
 
+### Theory
+
+
+- > *ASP .NET core*
+- > *Flask*
+- > *ExpressJs*
+
+
+### Practice
+
+
 
 ## Testing 
+
+
+### Theory
+
+- > *Unit Tests*
+- > *Integration Tests*
+- > *AB Testing*
+
+
+### Practice
 
 
 
 ## Git
 
 
+### Theory
+
+
+### Practice
+
+
 
 ## Jenkins
+
+
+### Theory 
+
+
+### Practice
 
 
 
 ## Istio
 
+
+### Theory
+
+
+### Practice
 
 
 
