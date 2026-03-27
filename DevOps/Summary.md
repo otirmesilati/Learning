@@ -465,12 +465,35 @@ for (let i = 0; i < arr.length; i++) {
 
 - > *System fundementals in linux*
 - >> **Devices**
+- >>> **Peripherals**
+- >>> **Network Devices**
 - >> **Boot**
 - >>> **BIOS**
 - >>> **UEFI**
 - >> **BootLoader**
 - >>> **Grub**
 - >> **Init systems**
+- >>> **SysVInit**
+- >>> **SystemD**
+- >> **Run-Levels**
+- >>> **Boot targets**
+- >> **Architecture**
+- >>> **Computing**
+- >>> **Memory**
+- >>> **Storage & File-System**
+- >>>> **Partitions**
+- >>>> **Disk management**
+- >>> **Execution domains**
+- >>>> **Runtime-Environments**
+- >>>>> **Bare-Metal**
+- >>>>> **Virtualization**
+- >>>>> **Containerization**
+- >>>> **User-Space**
+- >>>> **Kernel-Space**
+- >>>> **Variables**
+- >> **System-Management**
+- >>> **Performance monitoring**
+- >>> **Backup strategies**
 
 - > *Windows system additions*
 
@@ -484,6 +507,10 @@ for (let i = 0; i < arr.length; i++) {
 
 ## Networking
 
+
+### Theory
+
+### Practice
 
 
 ## Databases
