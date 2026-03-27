@@ -122,10 +122,27 @@
 - >> **CMD**
 - >>> **1. Q: Run a batch script**
 
+
+
 ## Language Features
 
 
 ### Theory
+
+- > *Procedural*
+- >> **Libraries**
+- >> **Environmental DI**
+- >> **Records**
+- > **Data Streaming**
+- > **Primitive Literals**
+- > **String Formatting**
+- > *Operators*
+- > *Variables*
+- > *Flow Control*
+
+- > *Object Oriented*
+
+- > *Functional*
 
 ### Practice
 
