@@ -385,6 +385,7 @@ for (let i = 0; i < arr.length; i++) {
 
 
 - > *Intro & CICD*
+- >> **Application deployments using CICD**
 
 - > *Architecture & Workers*
 
@@ -464,6 +465,18 @@ for (let i = 0; i < arr.length; i++) {
 - > *Devops methodology*
 
 - > *12 Factor app*
+- >> **Single Code-Base**
+- >> **Declare & Isolate Dependencies**
+- >> **Configuration**
+- >> **Backing Services**
+- >> **Build, Release, Run**
+- >> **Concurrency**
+- >> **Port Binding**
+- >> **Disposibility**
+- >> **Dev-Prod Duality**
+- >> **Logs**
+- >> **Admin Process**
+
 
 ### Practice
 
@@ -477,14 +490,36 @@ for (let i = 0; i < arr.length; i++) {
 - >> **Betty Business**
 - >>> **Problems**
 - >>> **Solution**
-- >>> **Relization**
+- >>> **Realization**
 - >>> **Consequence**
 - >> **Danzo Dev**
 - >>> **Problems**
 - >>> **Solution**
-- >>> **Relization**
+- >>> **Realization**
 - >>> **Consequence**
 - >> **Ozzie Ops**
+- >>> **Problems**
+- >>> **Solution**
+- >>> **Realization**
+- >>> **Consequence**
+- >> **Qing QA**
+- >>> **Problems**
+- >>> **Solution**
+- >>> **Realization**
+- >>> **Consequence**
+- >> **Petier Product**
+- >>> **Problems**
+- >>> **Solution**
+- >>> **Realization**
+- >>> **Consequence**
+- >> **Samhita Security**
+- >>> **Problems**
+- >>> **Solution**
+- >>> **Realization**
+- >>> **Consequence**
+- >> **Diego Data**
+- >>> **Problems**
+- >> **Annie Architect**
 
 
 ## System 
@@ -532,6 +567,32 @@ for (let i = 0; i < arr.length; i++) {
 
 ### Practice
 
+- > *Scripting*
+
+- > *Boot*
+
+- > *Environmental information*
+
+- > *Navigation*
+
+- > *FS manipulation*
+
+- > *Streams and pagers*
+
+- > *Editors*
+
+- > *Filters*
+
+- > *System level Role-Based-Access*
+- >> **System level A&A**
+
+- > *Package managers*
+
+- > *System level Observability*
+- >> **Processes**
+- >>> ***Services & Daemons***
+
+- > *Configurations & Application state*
 
 
 ## Networking
@@ -564,7 +625,7 @@ for (let i = 0; i < arr.length; i++) {
 
 - > *Domain-Name-System*
 
-- > *A&A*
+- > *Network level A&A*
 - >> **Authentication**
 - >> **Authorization**
 
@@ -623,6 +684,8 @@ for (let i = 0; i < arr.length; i++) {
 
 - > *Container orchestration fundementals*
 - >> **Docker Swarm**
+
+- > *Aplication Deployment*
 
 ### Practice
 
