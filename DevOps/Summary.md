@@ -457,6 +457,8 @@ for (let i = 0; i < arr.length; i++) {
 
 ### Practice
 
+- > *Install*
+
 - > *Service mesh*
 
 - > *Architecture*
@@ -749,6 +751,8 @@ for (let i = 0; i < arr.length; i++) {
 
 ### Practice
 
+- > *Install*
+
 - > *Container Running*
 
 - > *Image handling*
@@ -810,6 +814,8 @@ for (let i = 0; i < arr.length; i++) {
 
 
 ### Practice
+
+- > *Install*
 
 - > *ClI*
 
@@ -913,8 +919,16 @@ for (let i = 0; i < arr.length; i++) {
 
 ### Theory
 
+- > *Intro*
+
 
 ### Practice
+
+- > *Install*
+
+- > *Configuration files*
+
+- > *Variables*
 
 
 
@@ -923,5 +937,15 @@ for (let i = 0; i < arr.length; i++) {
 
 ## Theory
 
+- > *Intro*
+- >> **IaC**
+- >> **HCL**
+
+- > *Providers*
+
+- > *Variables*
+
 
 ## Practice
+
+- > *Install*
