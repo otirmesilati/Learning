@@ -365,6 +365,8 @@ for (let i = 0; i < arr.length; i++) {
 
 ### Practice
 
+- > *Install*
+
 - > *Repo Basics*
 
 - > *Commits*
@@ -411,6 +413,28 @@ for (let i = 0; i < arr.length; i++) {
 
 ### Practice
 
+- > *Install* 
+
+- > *Intro & CICD*
+- >> **Application deployments using CICD**
+
+- > *Architecture & Workers*
+
+- > *Workspace*
+
+- > *Jobs*
+
+- > *Projects*
+- >> **Freestyle Project**
+- >> **Jenkins Pipeline**
+- >>> **Sections**
+- >>>> **Environment**
+- >>>> **Stages**
+- >>>> **Container**
+- >>>> **PodTemplate**
+- >>> **Variables**
+- >>> **Build streaming**
+
 
 
 ## Istio
@@ -433,6 +457,12 @@ for (let i = 0; i < arr.length; i++) {
 
 ### Practice
 
+- > *Service mesh*
+
+- > *Architecture*
+- >> **CLI**
+
+- > *Traffic Management*
 
 
 
@@ -449,7 +479,7 @@ for (let i = 0; i < arr.length; i++) {
 
 
 
-# Ops
+# Ops (Add Ansible and Terraform)
 
 
 
@@ -781,6 +811,17 @@ for (let i = 0; i < arr.length; i++) {
 
 ### Practice
 
+- > *ClI*
+
+- > *Pods*
+
+- > *Manifests*
+
+- > *ReplicaSet*
+- >> **Replication Controller**
+
+- > *Deployment*
+
 
 
 ## Helm 
@@ -804,6 +845,19 @@ for (let i = 0; i < arr.length; i++) {
 - > *Bitnami*
 
 ### Practice
+
+- > *Install*
+
+- > *Architecture*
+- >> **CLI**
+
+- > *Charts*
+- >> **Chart Parameters**
+- >>> **Templating**
+
+- > *Rollouts*
+
+- > *Bitnami*
 
 
 
