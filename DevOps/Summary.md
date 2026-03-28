@@ -530,6 +530,8 @@ for (let i = 0; i < arr.length; i++) {
 - > *System fundementals in linux*
 - >> **Devices**
 - >>> **Peripherals**
+- >>>> **Keyboard**
+- >>>>> **Keyboarding**
 - >>> **Network Devices**
 - >> **Boot**
 - >>> **BIOS**
@@ -558,6 +560,8 @@ for (let i = 0; i < arr.length; i++) {
 - >> **System-Management**
 - >>> **Performance monitoring**
 - >>> **Backup strategies**
+
+- > *Desktop Metaphor*
 
 - > *Windows system additions*
 
@@ -631,8 +635,34 @@ for (let i = 0; i < arr.length; i++) {
 
 ### Practice
 
+- > *Environmental information*
+- >> **NICs**
+
+- > *Network Traffic*
+- >> **Packets**
+- >> **Protocols**
+- >>> **ARP**
+
 - > *Reachability Utils*
 - >> **Protocol Clients**
+
+- > *Subnetting*
+- >> **LANs**
+- >>> **VLANs**
+- >> **WANs**
+
+- > *network traffic managin devices*
+- >> **Switch**
+- >>> **Network Switching**
+- >> **Router**
+- >>> **Network Routing**
+- >>> *IOS command language*
+
+- > *DNS*
+
+- > 
+
+- > *Security*
 
 - > *UFW*
 
@@ -690,6 +720,26 @@ for (let i = 0; i < arr.length; i++) {
 ### Practice
 
 - > *Container Running*
+
+- > *Image handling*
+
+- > *Container commands*
+
+- > *Container Port Mapping*
+
+- > *Container Storage*
+
+- > *Analyzing Containers*
+
+- > *DockerFile Basics*
+
+- > *Docker Compose*
+
+- > *Docker Engine*
+
+- > *Docker Registry*
+
+
 
 
 ## Kubernetes
