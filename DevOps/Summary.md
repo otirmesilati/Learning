@@ -365,6 +365,17 @@ for (let i = 0; i < arr.length; i++) {
 
 ### Practice
 
+- > *Repo Basics*
+
+- > *Commits*
+
+- > *Branches*
+
+- > *Commiting back into branches*
+
+- > *Local repository copies*
+
+- > *Remote repository*
 
 
 ## Jenkins
@@ -406,9 +417,11 @@ for (let i = 0; i < arr.length; i++) {
 
 ### Theory
 
-- > *Intro & Service mesh*
+- > *Intro*
+- >> **Service mesh**
 
 - > *Architecture*
+- >> **Envoy**
 
 - > *Gateways*
 - >> **Ingress**
@@ -416,8 +429,6 @@ for (let i = 0; i < arr.length; i++) {
 - >> **Egress**
 
 - > *Traffic management*
-
-- > *Envoy proxies* 
 
 ### Practice
 
@@ -456,6 +467,24 @@ for (let i = 0; i < arr.length; i++) {
 
 ### Practice
 
+- > *Anti-Patterns*
+
+- > *For-Patterns*
+
+- > *Faulty-Setups*
+
+- > *Work-Place struggles*
+- >> **Betty Business**
+- >>> **Problems**
+- >>> **Solution**
+- >>> **Relization**
+- >>> **Consequence**
+- >> **Danzo Dev**
+- >>> **Problems**
+- >>> **Solution**
+- >>> **Relization**
+- >>> **Consequence**
+- >> **Ozzie Ops**
 
 
 ## System 
@@ -510,17 +539,90 @@ for (let i = 0; i < arr.length; i++) {
 
 ### Theory
 
+- > *Intro*
+
+- > *NICs*
+
+- > *Protocol models & suites*
+- >> **Network models(is this where oci and tcp/ip are?)**
+- >>> **OCI**
+- >> **Network Suite**
+- >>> **TCP/IP**
+
+- > *Protocols*
+- >> **Layers 2-4**
+- >>> **Internet Protocol**
+- >> **Layers 5-7** 
+- >>> **Hyper Text Transfer Protocol**
+- >>>> **Hyper Text Transfer Protocol Secure**
+- >>> **Secure Shell Protocol**
+- >>>> **Secure Copy**
+- >>>> **Secure Shell File Transfer Protocol**
+- >>> **Dynamic Host Configuration Protocol**
+
+- > *Subnetting*
+
+- > *Domain-Name-System*
+
+- > *A&A*
+- >> **Authentication**
+- >> **Authorization**
+
 ### Practice
+
+- > *Reachability Utils*
+- >> **Protocol Clients**
+
+- > *UFW*
+
+- > *GPG*
 
 
 ## Databases
 
 
 
-## Docker 
+## Docker
 
 
 ### Theory
+
+- > *Engine & Runtime*
+
+- > *Unified File System*
+- >> **Eficient Rebuilds**
+- >> **Build history**
+- >> **Container layers**
+- >>> **Meta-data layer**
+- >> **Copy-on-Write**
+
+- > *Docker images*
+- >> **Classic Linux containers**
+- >> **Windows Containers**
+- >> **MacOS Containers**
+
+- > *DockerFile*
+- >> **Directives**
+- >> **Dockerfile repositories**
+
+- > *Container life-cycle*
+
+- > *Container storage*
+
+- > *Container networking*
+
+- > *Containerizing microservices*
+
+- > *Docker-Compose*
+- >> **Docker Compose services**
+
+- > *Docker in CICD*
+
+- > *Docker security*
+- >> **Namespaces**
+
+- > *Container orchestration fundementals*
+- >> **Docker Swarm**
 
 ### Practice
 
@@ -530,8 +632,65 @@ for (let i = 0; i < arr.length; i++) {
 ## Kubernetes
 
 
+### Theory
+
+- > *Intro*
+
+- > *Architecture*
+- >> **CLI**
+- >> **API Server**
+- >> **Controllers**
+- >> **etcd**
+- >> **Scheduler**
+- >> **Kubelet**
+
+- > *Container Runtime Interface*
+
+- > *App Deployment*
+- >> **Pods**
+- >>> **pod manifest**
+- >> **Replica-Set**
+- >>> **RS manifest**
+- >> **Deployment**
+
+- > *Cluster Storage*
+- >> **Storage class**
+- >> **Persistant volume**
+- >> **Mounts**
+- >> **Bind Mounts**
+
+- > *Cluster Networking*
+- >> **Services**
+
+- > *Cluster Security*
+- >> *Service account*
+
+
+### Practice
+
+
 
 ## Helm 
+
+
+### Theory
+
+- > *Intro*
+- >> **History**
+
+- > *Architecture*
+- >> **CLI**
+- >> 
+
+- > *Charts*
+- >> **Chart Parameters**
+- >>> **Templating**
+
+- > *Rollouts*
+
+- > *Bitnami*
+
+### Practice
 
 
 
