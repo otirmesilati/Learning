@@ -479,7 +479,7 @@ for (let i = 0; i < arr.length; i++) {
 
 
 
-# Ops (Add Ansible and Terraform)
+# Ops 
 
 
 
@@ -854,6 +854,7 @@ for (let i = 0; i < arr.length; i++) {
 - > *Charts*
 - >> **Chart Parameters**
 - >>> **Templating**
+- >>>> **function templating**
 
 - > *Rollouts*
 
@@ -864,5 +865,63 @@ for (let i = 0; i < arr.length; i++) {
 ## ArgoCD
 
 
+### Theory
+
+- > *Intro*
+- >> **Pull vs Push based methods**
+
+- > *GitOps*
+
+
+### Practice
+
+- > *Install* 
+
+
 
 ## Prometheus
+
+
+### Theory
+
+- > *Intro*
+
+- > *Observability* 
+- >> **Logs**
+- >> **Traces**
+- >> **Metrics**
+
+- > *Architecture*
+
+
+### Practice
+
+- > *Install*
+- >> **Prometheus install**
+- >> **Alert Manager**
+- >> **Grafana**
+- >> **Exporters**
+
+- > *Architecture*
+
+- > *PromQL*
+
+
+
+## Ansible 
+
+
+### Theory
+
+
+### Practice
+
+
+
+## Terraform
+
+
+## Theory
+
+
+## Practice
