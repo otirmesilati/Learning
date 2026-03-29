@@ -490,9 +490,41 @@ for (let i = 0; i < arr.length; i++) {
 ## DevOps Culture
 
 
-### Theory 
+### Theory (maybe try to nest some of these?)
 
 - > *Intro*
+- >> **The tech Struggle**
+- >>> **Q: 8 titles**
+- $$$ **A: Business, Dev, Ops, QA, Product, Security, Data, Solution Architect** 
+- >>> **Q: Common scalability problems**
+- $$$ **A: Team mis-allignment, Communication loosens**
+- >>> **Q: Paradox**
+- $$$ **A: Intentions are good, results are not so good**
+- >>> **Q: Common end goal**
+- $$$ **A: Deliver software**
+- >>> **Q: DevOps solution**
+- $$$ **A: Streamline sotware delivery**
+- >>> **Q: Common practices**
+- $$$ **A: Strong communication, collaboration, blameless investigation, reducing operational maintenance, improving processes, reducing tech debt, creating trust, managing expectations, enable transperancy**
+- >>> **Q: Shared values**
+- $$$ **A: Engage in courage, promote honesty, unity**
+- >> **IT provisioning hickups**
+- >>> **Q: Process**
+- $$$ **A: business requirements -> analysts convert to tech requirements -> solution architect designs -> field engineers set up -> hand over to application team**
+- >>> **Q: Disadventages**
+- >>> **Q: Solutions**
+- >>> **Q: First Solutions**
+- >> **Humble beginings**
+- >> **Let's talk DevOps**
+- >> **The Similar philosophies**
+- >> **Basic system and developer tools**
+- >> **Naive setup**
+- >> **DevOps solutions**
+- >> **CI solutions**
+- >> **CD solutions**
+- >> **infrastructure set ups & monitoring solutions**
+- >> **culture and work methodology**
+- >> **software delivery process automation**
 
 - > *Devops methodology*
 
