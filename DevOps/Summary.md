@@ -175,9 +175,9 @@ for (let i = 0; i < arr.length; i++) {
 
 ### Practice
 
-- > *Procedural*
-- > *Object Oriented*
-- > *Functional*
+- > *5 Coding questions intro*
+- > *Point Class*
+- > *Banking account dispatch function*
 
 
 
@@ -220,17 +220,12 @@ for (let i = 0; i < arr.length; i++) {
 
 ### Practice
 
-- > *Creational*
 
-- >> **Singleton**
+- > **Singleton**
 - >>> **Problems it solves**
 - >>> **Why**
 - >>> **UML**
 - >>> **Implementation**
-
-- > *Structural*
-
-- > *Behavioral*
 
 
 ## Embedded
@@ -281,6 +276,8 @@ for (let i = 0; i < arr.length; i++) {
 - >>> **DOM**
 - >> **Postman**
 - >>> **Intro**
+- >>>> **Q: what is postman?**
+- $$$$ **A: Cient tool for creating/sending/receive API calls**
 - >>>> **APIs & entrypoints**
 - >>> **Workspace**
 - >>>> **Variables**
@@ -733,8 +730,6 @@ for (let i = 0; i < arr.length; i++) {
 - >>>> **Secure Shell File Transfer Protocol**
 - >>> **Dynamic Host Configuration Protocol**
 
-- > *Postman*
-
 - > *Subnetting*
 
 - > *Domain-Name-System*
@@ -761,6 +756,8 @@ for (let i = 0; i < arr.length; i++) {
 - $$$$ **A: HTML Document**
 - >>>> **Q: Common endpoints to receive requests,term for the reqs?**
 - $$$$ **A: API endpoiints, API calls**
+- >>>> **Q: Term for mapping requests to endpoints?**
+- $$$$ **A: Routing**
 - >>>> **Q: Term for mapping requests to endpoints?**
 - $$$$ **A: Routing**
 
@@ -799,6 +796,36 @@ for (let i = 0; i < arr.length; i++) {
 
 - > *GPG*
 
+- > *Postman*
+- >> *General*
+- >>> **Q: What will web APIs mostly be shown as ?**
+- $$$ **A: JSONs**
+- >>> **Q: How could we find the API features beforehand ?**
+- $$$ **A: Reading the docs**
+- >>> **Q: What are the general meanings of the status codes?**
+- $$$ **A: 200 - Approved, 400 - request error, 500 - server error**
+- >> **GET REST API calls**
+- >>> **Q: How to send a GET request to https://simple-books-api.click/?**
+- $$$ **A: Add to the request URL https://simple-books-api.click/status and press Send**
+- >>> **Q: How to re-use requests?**
+- $$$ **A: Save them inside a collection**
+- >>> **Q: How to untangle hard coding of domain names?**
+- $$$ **A: By using request variables**
+- >>> **Q: How to add query params to a request?**
+- $$$ **A: adding it at the end of the FQDN**
+- >> **POST REST API calls**
+- >>> **Q: what is also sent with the request?**
+- $$$ **A: a payload**
+- >>> **Q: Access modifiers on API endpoints? how to access the latter?**
+- $$$ **A: either public or private endpoints, using auth tools**
+- >>> **Q: Where are the authentication details usually passed in?**
+- $$$ **A: In the headers portion of the request**
+- >> **UPDATE REST API calls**
+- >> **DELETE REST API calls**
+- >> *gRPC cabaplities*
+- >> *API Testing*
+- >>> **Q: In what programming language will we write our tests?**
+- $$$ **A: In JavaScript**
 
 ## DataStores
 
