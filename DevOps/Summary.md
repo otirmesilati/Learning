@@ -755,11 +755,14 @@ for (let i = 0; i < arr.length; i++) {
 - >>>> **Q: what file will a response contain?**
 - $$$$ **A: HTML Document**
 - >>>> **Q: Common endpoints to receive requests,term for the reqs?**
-- $$$$ **A: API endpoiints, API calls**
+- $$$$ **A: API endpoints, API calls**
+- >>>> **Q: basic request features?**
+- $$$$ **A: method, url, header, payload, query params**
 - >>>> **Q: Term for mapping requests to endpoints?**
 - $$$$ **A: Routing**
-- >>>> **Q: Term for mapping requests to endpoints?**
-- $$$$ **A: Routing**
+- >>> **Document Object Model**
+- >>>> **Q: what's a DOM?**
+- $$$$ **A: In memory tree Data Structure representing the html file to return**
 
 ### Practice
 
@@ -809,8 +812,8 @@ for (let i = 0; i < arr.length; i++) {
 - $$$ **A: Add to the request URL https://simple-books-api.click/status and press Send**
 - >>> **Q: How to re-use requests?**
 - $$$ **A: Save them inside a collection**
-- >>> **Q: How to untangle hard coding of domain names?**
-- $$$ **A: By using request variables**
+- >>> **Q: How to untangle hard coding of domain names? shared?**
+- $$$ **A: By using request variables, initial value**
 - >>> **Q: How to add query params to a request?**
 - $$$ **A: adding it at the end of the FQDN**
 - >> **POST REST API calls**
@@ -820,12 +823,19 @@ for (let i = 0; i < arr.length; i++) {
 - $$$ **A: either public or private endpoints, using auth tools**
 - >>> **Q: Where are the authentication details usually passed in?**
 - $$$ **A: In the headers portion of the request**
+- >>> **Q: Basic Auth vs Bearer token?**
+- $$$ **A: B64 Encoded vs opaque, expirable ouath supporting json**
 - >> **UPDATE REST API calls**
 - >> **DELETE REST API calls**
 - >> *gRPC cabaplities*
 - >> *API Testing*
 - >>> **Q: In what programming language will we write our tests?**
 - $$$ **A: In JavaScript**
+- >>> **Q: how can we check if the request went through?**
+- $$$ **A: by testing the status code**
+
+- > *Axios*
+
 
 ## DataStores
 
