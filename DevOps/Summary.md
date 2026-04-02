@@ -245,8 +245,16 @@ for (let i = 0; i < arr.length; i++) {
 
 ## Desktop & Mobile
 
+- > *Mobile*
 - >> **app stores**
+- >>> **Q: What is a mobile application ?**
+- >>> **Q: Application needs to be approved on ?**
+- $$$ **A: on the store**
+- >>> **Q: Apple compared to Samsung ?**
+- $$$ **A: More stricter for approving apps, downloadable APKs**
 - >> **emulator vs simulator**
+
+- > *Desktop*
 
 ### Theory
 
@@ -261,6 +269,12 @@ for (let i = 0; i < arr.length; i++) {
 
 - > *Client Side*
 - >> **Intro**
+- >>> **Q: Three basic components, and their roles ?**
+- $$$ **A: HTML - structure, CSS - appearance, JS - functionality**
+- >>> **Q: Where does the front run ?**
+- $$$ **A: User's web-browser**
+- >>> **Q: Benefits of running on the browser?**
+- $$$ **A: Portable, RE tight coupling untangle**
 - >> **HTML**
 - >> **CSS**
 - >> **JavaScript**
@@ -303,9 +317,24 @@ for (let i = 0; i < arr.length; i++) {
 - >>> **FS Module**
 - >> **DI'd Environment Variables**
 - >> **Middleware**
+- >> **Developer Tools**
+- >>> **Nodemon**
+- >>> **EsLint**
 
 
 ### Practice
+
+- > *HTML*
+
+- > *CSS*
+
+- > **NodeJS**
+- >> **Project & Dependencies**
+- >> **Modules**
+- >> **Routes**
+- >> **Developer Tools**
+
+- > *DevTools Debugger*
 
 
 
@@ -319,22 +348,21 @@ for (let i = 0; i < arr.length; i++) {
 - >> **MERN**
 
 - > *FrontEnd*
+- >> *ReactJS*
+- >>> **Intro**
+- >>> **Project Structure**
 
 - > *BackEnd*
 - >> *ASP .NET core*
 - >>> **Projects**
 - >>> **Architecture**
-
 - >> *Flask*
-
 - >> *Ruby on rails*
 - >>> **Projects**
 - >>> **Architecture**
-
 - >> *Laravel*
 - >>> **Projects**
 - >>> **Architecture**
-
 - > *ExpressJs*
 - >> **Intro**
 - >> **Backend features**
@@ -714,6 +742,27 @@ for (let i = 0; i < arr.length; i++) {
 - > *Network level A&A*
 - >> **Authentication**
 - >> **Authorization**
+
+- > *Network Topologies*
+- >> **Client-Server**
+- >>> **Protocols used**
+- >>>> **Q: Common protocols used for application layer?**
+- $$$$ **A: HTTP/S, S/FTP, SMTP, DNS**
+- >>>> **Q: Common protocols used for Transport layer?**
+- $$$$ **A: TCP, UDP**
+- >>>> **Q: Common protocols used for remote access?**
+- $$$$ **A: SSH, Telnet**
+- >>>> **Q: Common protocols used for API communication?**
+- $$$$ **A: REST, gRPC, WebSocket**
+- >>> **HTTP request & response**
+- >>>> **Q: term for out going communication ? reply to it ?**
+- $$$$ **A: request, response**
+- >>>> **Q: what file will a response contain?**
+- $$$$ **A: HTML Document**
+- >>>> **Q: Common endpoints to receive requests,term for the reqs?**
+- $$$$ **A: API endpoiints, API calls**
+- >>>> **Q: Term for mapping requests to endpoints?**
+- $$$$ **A: Routing**
 
 ### Practice
 
