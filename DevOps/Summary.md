@@ -279,7 +279,6 @@ for (let i = 0; i < arr.length; i++) {
 - > *Server Side*
 - >> **Intro**
 - >>> **Servers & Runtime environments**
-- >>>> **NodeJS**
 - >> **Page Serving**
 - >>> **Static Pages**
 - >>> **Dynamic Pages**
@@ -293,6 +292,17 @@ for (let i = 0; i < arr.length; i++) {
 - >>> **NPM**
 - >>> **Linters**
 - >> **Integrations & communications**
+
+- > *NodeJS*
+- >> **Intro**
+- >> **Event Loop**
+- >> **NPM**
+- >> **Node Application Structure**
+- >> **Module Systems**
+- >>> **HTTP Module**
+- >>> **FS Module**
+- >> **DI'd Environment Variables**
+- >> **Middleware**
 
 
 ### Practice
@@ -308,21 +318,27 @@ for (let i = 0; i < arr.length; i++) {
 - >> **LAMP**
 - >> **MERN**
 
-- > *ASP .NET core*
-- >> **Projects**
-- >> **Architecture**
+- > *FrontEnd*
 
-- > *Flask*
+- > *BackEnd*
+- >> *ASP .NET core*
+- >>> **Projects**
+- >>> **Architecture**
 
-- > *Ruby on rails*
-- >> **Projects**
-- >> **Architecture**
+- >> *Flask*
 
-- > *Laravel*
-- >> **Projects**
-- >> **Architecture**
+- >> *Ruby on rails*
+- >>> **Projects**
+- >>> **Architecture**
+
+- >> *Laravel*
+- >>> **Projects**
+- >>> **Architecture**
 
 - > *ExpressJs*
+- >> **Intro**
+- >> **Backend features**
+- >> **Page Serving**
 
 
 ### Practice
@@ -689,6 +705,8 @@ for (let i = 0; i < arr.length; i++) {
 - >>>> **Secure Shell File Transfer Protocol**
 - >>> **Dynamic Host Configuration Protocol**
 
+- > *Postman*
+
 - > *Subnetting*
 
 - > *Domain-Name-System*
@@ -733,7 +751,29 @@ for (let i = 0; i < arr.length; i++) {
 - > *GPG*
 
 
-## Databases
+## DataStores
+
+- > *Storage strategy*
+- >> **In Memory**
+- >> **On-Disk**
+
+- > *Data Model*
+- >> **Relational**
+- >> **Non-Relational**
+
+- > *Role*
+- >> **System Of Record**
+- >> **Cache**
+- >> **Search**
+- >> **Event Log**
+
+
+### Theory
+
+- > 
+
+
+### Practice
 
 
 
