@@ -134,12 +134,12 @@
 - >> **Libraries**
 - >> **Environmental DI**
 - >> **Records**
-- > **Data Streaming**
-- > **Primitive Literals**
-- > **String Formatting**
-- > **Operators**
-- > **Variables**
-- > **Flow Control**
+- >> **Data Streaming**
+- >> **Primitive Literals**
+- >> **String Formatting**
+- >> **Operators**
+- >> **Variables**
+- >> **Flow Control**
 
 - > *Object Oriented*
 
@@ -217,6 +217,9 @@ for (let i = 0; i < arr.length; i++) {
 
 - > *Generics*
 - >> **Templates**
+- >> **Collections**
+- >> **Sorting**
+- >> **Searching**
 
 ### Practice
 
@@ -251,13 +254,23 @@ for (let i = 0; i < arr.length; i++) {
 
 - > *Desktop*
 
+- >> **Microsoft Apps with VB**
+- >>> **Project Strcuture**
+- >>>> **Q: Added files to a normal VB project?**
+- $$$$ **A: Forms, Designer, resx for assets**
+- >>> **Views**
+- >>>> **Q: how do we add GUI components?**
+- $$$$ **A: In the design view, and watch the code's view added section as a result**
+- >>>> **Q: How to handle a components fields?**
+- $$$$ **A: By changing them in the properties window**
+
 ### Theory
 
 ### Practice
 
 
 
-## WebDev
+## Web Development
 
 
 ### Theory
@@ -332,6 +345,10 @@ for (let i = 0; i < arr.length; i++) {
 - >> **Developer Tools**
 
 - > *DevTools Debugger*
+
+
+
+## Game Development
 
 
 
@@ -763,6 +780,8 @@ for (let i = 0; i < arr.length; i++) {
 - >>> **Document Object Model**
 - >>>> **Q: what's a DOM?**
 - $$$$ **A: In memory tree Data Structure representing the html file to return**
+- >>>> **Q: Purpose ?**
+- $$$$ **A: To render site's elements**
 
 ### Practice
 
@@ -835,6 +854,15 @@ for (let i = 0; i < arr.length; i++) {
 - $$$ **A: by testing the status code**
 
 - > *Axios*
+- >> **General**
+- >>> **Q: What ?**
+- $$$ **A: Programmatic API request building Library**
+- >>> **Q: Used for?**
+- $$$ **A: Retrieving data from 3rd party API**
+- >>> **Q: Axios vs Postman?**
+- $$$ **A: Programmatic automations vs GUI'd interface**
+- >>> **Q: Main features?**
+- $$$ **A: CRUD, simultaneous requests, custome headers, transform responses, Error handling, Cancel tokens** 
 
 
 ## DataStores
