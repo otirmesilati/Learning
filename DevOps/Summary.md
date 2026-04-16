@@ -235,6 +235,10 @@ for (let i = 0; i < arr.length; i++) {
 
 - >> **opcode**
 
+- > Firmware Engineering
+
+- > System Engineering
+
 ### Theory
 
 ### Practice
@@ -727,7 +731,14 @@ for (let i = 0; i < arr.length; i++) {
 ### Theory
 
 - > *Intro*
-
+- >> **Network Devices**
+- >>> **Q: What is a network?**
+- $$$ **A: group of systems and peripherals called network devices**
+- >>> **Q: Device examples?**
+- $$$ **A: PC, Laptop, phone, switch, router, firewall, etc..**
+- >>> **Q: roles of switch/router/firewall?**
+- $$$ **A: connecting two devices across same/other LAN, enforce traffic rules enforcing blocks and mitigations**
+- >> **Device Communication**
 - > *NICs*
 
 - > *Protocol models & suites*
@@ -968,6 +979,12 @@ for (let i = 0; i < arr.length; i++) {
 ### Theory
 
 - > *Intro*
+- >> **The Need**
+- >>> **Q: built by, and for? what is it now?**
+- $$$ **A: google, handling application deployment in production mode
+(like misfit dependencies, long setup times, multiple environments, problems with scaling easily from storage and network perspectives) OSS container orchestrator**
+- >>> **Q: Container Orchestrator?**
+- $$$ **A: Automatic container state reconciler**
 
 - > *Architecture*
 - >> **CLI**
