@@ -983,16 +983,59 @@ for (let i = 0; i < arr.length; i++) {
 - >>> **Q: built by, and for? what is it now?**
 - $$$ **A: google, handling application deployment in production mode
 (like misfit dependencies, long setup times, multiple environments, problems with scaling easily from storage and network perspectives) OSS container orchestrator**
-- >>> **Q: Container Orchestrator?**
-- $$$ **A: Automatic container state reconciler**
+- >> **General**
+- >>> **Q: Container Orchestrator? more roles? name meaning?**
+- $$$ **A: Automatic container state reconciler, provides storage and networking capabilities for REs, scaling strategies.
+Kabarnit(captain)**
+- >>> **Q: Supports how many deployment architecture?**
+- $$$ **A: multiple**
+- >>> **Q: Decouples?**
+- $$$ **A: App from infrastructure**
+- >>> **Q: ways to set up locally? enterprise? hosted cloud platform?**
+- $$$ **A: Docker Desktop, Minikube, kind for local setups, kubeadm for enterprise, GKE/EKS/AKS in the big three cloud platforms**
+
+- >> **Resources**
+- >>> **Q: Nodes (workers/minions) ? a group of nodes ?**
+- $$$ **A: Machines to run workload on, cluster**
+- >>> **Master node/Control Plane? role ?**
+- $$$ **A node that monitors other nodes, monitors, load balances jobs on fail, holds the api server**
+- >>> **Q: What do we require every node to have ?**
+- $$$ **A: A container runtime to is it will be able to run containers**
+- >>> **Q: where is info gathered from the communication of the master node's API server to the kubelets?*
+- $$$ **A: In the etcd data store**
 
 - > *Architecture*
 - >> **CLI**
+- >>> **Q: Intuition?**
+- $$$ **A: Enable commands as HTTP requests passed to the API**
+- >>> **Q: Main CLIs?**
+- $$$ **A: top level CLI - kubectl, ctr - communicating with the containerd daemon, crictl - cli client for communicating with the CRI compatible runtime engine via gRPC exposed unix socket endpoint, nerdctl - can mostly replace ctr, adding a lot of user friendly options and docker cli like feel, operating at bit of a higher level**
 - >> **API Server**
+- >>> **Q: Intuition?**
+- $$$ **A: Handles CLI requests by checking "synatx"**
 - >> **Controllers**
+- >>> **Q: Intuition?**
+- $$$ **A: monitor resource objects and reconcile state**
 - >> **etcd**
+- >>> **Q: Intuition?**
+- $$$ **A: Key-Value store for cluster data**
 - >> **Scheduler**
+- >>> **Q: Intuition?**
+- $$$ **A: watches and selects on which node pods needs to run according to resource quotas, contstraints, and policies**
 - >> **Kubelet**
+- >>> **Q: Intuition?**
+- $$$ **A: running on each node, monitors and reconciles pod state on the node using the runtime**
+- >> **ContainQ:er Runtime Interface**
+- >>> **Q: Intuition?**
+- $$$ **A: Adapter to the Container runtime, that needs to imperativly run/stop containers**
+- >>> **Q: Container Runtime Engine ?**
+- $$$ **A: wrapper of the runtime + CLI + helper tools**
+- >>> **Q: Kubernetes runtime dependency shift ? new docker component?**
+- $$$ **A: used to be tightly coupled to the docker runtime, it loosened the coupling later by introducing the CRI adapter, which enables any OCI compatible runtime engine, the containerd project is docker's newly O(pen)C(ontainer)I(nitiative) compatible runtime engine**
+- >>> **Q: temporary solution to make the tightly coupled docker runtime CRI alligned? in what version was it removed ?**
+- $$$ **A: dockershim, 1.24**
+- >>> **Q: what would a valid CRI approved runtime engine would usually include ? **
+- $$$ **A: An imagespec to allow pushing/pulling images, a runtime spec to allow for running containers, and a corresponding CLI**
 
 - > *Container Runtime Interface*
 
@@ -1019,6 +1062,8 @@ for (let i = 0; i < arr.length; i++) {
 ### Practice
 
 - > *Install*
+- >> **Q: what does it mean to install k8s?**
+- $$ *A: install all the architectural components**
 
 - > *ClI*
 
