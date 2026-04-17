@@ -57,7 +57,7 @@
 - >> **Binary/On-Memory/Deleted**
 - >>> **Zig/Kotlin/Dart/Elixir/Clojure**
 - >> **Wierdos**
-- >>> **Java Gleam Go**
+- >>> **Java/Gleam/Go/C#**
 - >> **Interpreted**
 - >>> **VimScript/Lua/JavaScript/Ruby/Python/R/Perl/VB**
 - >> **Run Through Shell**
@@ -995,6 +995,10 @@ Kabarnit(captain)**
 - $$$ **A: Docker Desktop, Minikube, kind for local setups, kubeadm for enterprise, GKE/EKS/AKS in the big three cloud platforms**
 
 - >> **Resources**
+- >>> **Q: Main goal? groups enabling extendibility?**
+- $$$ **A: To bring forth applications together, API groups**
+- >>> **Q: Two types? two ways of defining the objects?**
+- $$$ **A: Resource types (classes) and objects (instances), programatically using manifests and manually using CLIs**
 - >>> **Q: Nodes (workers/minions) ? a group of nodes ?**
 - $$$ **A: Machines to run workload on, cluster**
 - >>> **Master node/Control Plane? role ?**
