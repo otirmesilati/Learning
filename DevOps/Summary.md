@@ -997,6 +997,13 @@ Kabarnit(captain)**
 - >> **Resources**
 - >>> **Q: Main goal? groups enabling extendibility?**
 - $$$ **A: To bring forth applications together, API groups**
+- >>> **Q: what are the api groups?**
+- $$$ **A: v1 - pods, nodes, services, configmaps, secrets
+apps/v1 - replicasets, deployments, demonset, statefulsets
+apiextension/v1 - CRD, CR
+batch/v1 - 
+storage/v1 - 
+networking/v1 -**
 - >>> **Q: Two types? two ways of defining the objects?**
 - $$$ **A: Resource types (classes) and objects (instances), programatically using manifests and manually using CLIs**
 - >>> **Nodes**
@@ -1087,7 +1094,9 @@ Kabarnit(captain)**
 - >>> **Read & Update**
 - >>>> **Q: How to get infromation about a resource?**
 - $$$$ **A: either use describe for human friendly explanaition, or get as close to the source using the get -o yaml format**
-- >>>> **Q: attributes when read ?**
+- >>>> **Q: Re-accuring attributes in all YAML manifests**
+- $$$$ **A: APigroup, kind, metadata, spec**
+- >>>> **Q: specific attributes when read ?**
 - $$$$ **A: pod - status, container status, restarts, node, age
 rs -  desired/current/ready pods, container, images, selector
 deployment - 
