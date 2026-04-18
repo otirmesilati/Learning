@@ -999,14 +999,18 @@ Kabarnit(captain)**
 - $$$ **A: To bring forth applications together, API groups**
 - >>> **Q: Two types? two ways of defining the objects?**
 - $$$ **A: Resource types (classes) and objects (instances), programatically using manifests and manually using CLIs**
-- >>> **Q: Nodes (workers/minions) ? a group of nodes ?**
-- $$$ **A: Machines to run workload on, cluster**
-- >>> **Master node/Control Plane? role ?**
-- $$$ **A node that monitors other nodes, monitors, load balances jobs on fail, holds the api server**
-- >>> **Q: What do we require every node to have ?**
-- $$$ **A: A container runtime to is it will be able to run containers**
-- >>> **Q: where is info gathered from the communication of the master node's API server to the kubelets?*
-- $$$ **A: In the etcd data store**
+- >>> **Nodes**
+- >>>> **Q: Nodes (workers/minions) ? a group of nodes ?**
+- $$$$ **A: Machines to run workload on, cluster**
+- >>>> **Master node/Control Plane? role ?**
+- $$$$ **A node that monitors other nodes, monitors, load balances jobs on fail, holds the api server**
+- >>>> **Q: What do we require every node to have ?**
+- $$$$ **A: A container runtime to is it will be able to run containers**
+- >>>> **Q: where is info gathered from the communication of the master node's API server to the kubelets?*
+- $$$$ **A: In the etcd data store**
+- >>> **Pods**
+- >>>> **Q: what ?**
+- $$$$ **A: container wrappers**
 
 - > *Architecture*
 - >> **CLI**
@@ -1067,9 +1071,36 @@ Kabarnit(captain)**
 
 - > *Install*
 - >> **Q: what does it mean to install k8s?**
-- $$ *A: install all the architectural components**
+- $$ **A: install all the architectural components**
+- >> **Q: how to install minikube?**
+- >> **Q: how to install kubeadm**
 
-- > *ClI*
+- > *Resources*
+- >> **Instances**
+- >>> **Create & Delete**
+- >>>> **Q: Create a resource manually, how to draft?**
+- $$$$ **A: kubectl run/create <arguments>, using client dry-run**
+- >>>> **Q: How to create a resource programmatically ?**
+- $$$$ **A: create the draft, edit, and kubectl apply -f**
+- >>>> **Q: How to delete a resource manually ?**
+- $$$$ **A: kubectl delete <arguments>**
+- >>> **Read & Update**
+- >>>> **Q: How to get infromation about a resource?**
+- $$$$ **A: either use describe for human friendly explanaition, or get as close to the source using the get -o yaml format**
+- >>>> **Q: attributes when read ?**
+- $$$$ **A: pod - status, container status, restarts, node, age
+rs -  desired/current/ready pods, container, images, selector
+deployment - 
+service - 
+node**
+
+- > *Architecture*
+- >> **configuration**
+- >>> **Q: how to get information about APIserver and coreDNS URLs?**
+- $$$ **A: kubectl cluster-info**
+- >> **ClI**
+- >>> **Q: how do nerdctl commands work? compared to others?**
+- $$$ **A: They are paralleling docker commands, richer API**
 
 - > *Pods*
 
