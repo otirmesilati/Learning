@@ -1001,9 +1001,10 @@ Kabarnit(captain)**
 - $$$ **A: v1 - pods, nodes, services, configmaps, secrets
 apps/v1 - replicasets, deployments, demonset, statefulsets
 apiextension/v1 - CRD, CR
-batch/v1 - 
-storage/v1 - 
-networking/v1 -**
+batch/v1 - Jobs, CronJobs
+storage/v1 - StorageClass, CSIDriver, VolumeAttachment
+networking/v1 - Ingress, NetworkPolicy
+rbac/v1 - roles, rolebindings, ClusterRoles**
 - >>> **Q: Two types? two ways of defining the objects?**
 - $$$ **A: Resource types (classes) and objects (instances), programatically using manifests and manually using CLIs**
 - >>> **Nodes**
@@ -1079,7 +1080,17 @@ networking/v1 -**
 - > *Install*
 - >> **Q: what does it mean to install k8s?**
 - $$ **A: install all the architectural components**
-- >> **Q: how to install minikube?**
+- >> **kubeadm**
+- >> **minikube**
+- >>> **Q: how to install minikube using apt? manually ?**
+- $$$ **A: to install using apt, assuming docker installed:
+update index packages: sudo apt update
+sudo apt install -y curl wget apt-transport-https ca-certifactes conntrack
+ download minikube: curl -LO
+ install minikube binary:
+ download and install kubectl: curl -LO
+ start minikube: minikube
+to install manually:**
 - >> **Q: how to install kubeadm**
 
 - > *Resources*
@@ -1093,15 +1104,23 @@ networking/v1 -**
 - $$$$ **A: kubectl delete <arguments>**
 - >>> **Read & Update**
 - >>>> **Q: How to get infromation about a resource?**
-- $$$$ **A: either use describe for human friendly explanaition, or get as close to the source using the get -o yaml format**
+- $$$$ **A: either use describe for human friendly explanaition, or get as close to the source manifest using the get -o yaml format**
 - >>>> **Q: Re-accuring attributes in all YAML manifests**
 - $$$$ **A: APigroup, kind, metadata, spec**
 - >>>> **Q: specific attributes when read ?**
 - $$$$ **A: pod - status, container status, restarts, node, age
 rs -  desired/current/ready pods, container, images, selector
-deployment - 
+deployment - ready pods(like rs, because its mostly overlookded in rs), up-to-date, available, age, containers, images, selector  
 service - 
-node**
+node -**
+- >>> **Pods**
+- >>>> **Q: Benefits?**
+- $$$$ **A: Applications highly available - multi instance/nodes**
+- >>>> **Q: why wouldn't we want all application components in the same pod?**
+- $$$$ **A: single responsibility benefits - Independent extensibility for scalability, seperation of concerns, fault isolation - application error wise, and security wise**
+- >>>> **Q: when would we have multi container pods ? typical use?**
+- $$$$ **A: Side-car pattern, when we have application helpers that our application is dependant on, file data processing, scripts
+rule of thumb - when we have many pods dependant on other pods scattered on the cluster and we lose track easily**
 
 - > *Architecture*
 - >> **configuration**
